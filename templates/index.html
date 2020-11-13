@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ config.description }}">
+    <link href="{{ get_url(path="/style.css", cachebust=true) | safe }}" rel="stylesheet">
+    <title>{{ config.title }}</title>
+  </head>
+
+  <body>
+    <div class="content">
+      {% block content %}
+      spitlo.com
+      {% endblock content %}
+    </div>
+
+    <div class="path">
+    </div>
+
+    {% block script %}
+    {% endblock script %}
+  </body>
+</html>
