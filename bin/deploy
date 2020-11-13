@@ -4,3 +4,4 @@ set -eu
 zola build --output-dir ./docs
 git add ./docs
 git commit -m "Deploy site $(date '+%Y-%m-%d %H:%M')"
+git push
