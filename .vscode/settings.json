@@ -5,4 +5,7 @@
   "files.associations": {
     "*.html": "tera",
   },
+  "emmet.includeLanguages": {
+    "tera": "html",
+  },
 }
