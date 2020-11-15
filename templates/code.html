@@ -1,0 +1,27 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+
+{% block content %}
+  <div class="project code">
+    <h1>Code</h1>
+
+    {# <pre>{{ __tera_context }}</pre> #}
+
+    <ul>
+      {% for project in section.pages %}
+        <li>
+          <a href="{{ project.permalink }}">{{ project.title }}</a>
+          {% if project.taxonomies.technologies %}
+            {% for language in project.taxonomies.technologies %}
+              {{ macros::icon(slug=language, size="small") }}
+            {% endfor %}
+          {% endif %}
+          {% if project.content %}
+            {{ project.content | safe | striptags | truncate(length=100) }}
+            <a href="{{ project.permalink }}">Continue</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}

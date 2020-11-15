@@ -1,0 +1,36 @@
+{% macro icon(slug, size="medium") %}
+  <span class="icon {{slug}} {% if size %}{{size}}{% endif %}"">
+    {% set slugged = slug | slugify %}
+    {% set icon_path = "static/icons/"  ~  slugged ~  ".svg" %}
+    {% set icon_code = load_data(path=icon_path) %}
+    {{icon_code | safe}}
+  </span>
+{% endmacro icon %}
+
+{% macro balls(amount=3, width=250, height=250) %}
+  {% set colors = [
+    "#0e070c",
+    "#e76f51",
+    "#b1b098",
+    "#3f5469",
+    "#aa9f9f",
+    "#dfcece",
+    "#5a6c7e",
+  ] %}
+  <div>
+    <svg width="{{width}}" height="{{height}}" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        {% for i in range(start=0, end=amount) %}
+          {% set max_size = width / 3|int(default=80) %}
+          {% set radius = get_random(start=30, end=max_size) %}
+          {% set color_amount = colors|length %}
+          {% set color_index = get_random(start=0, end=color_amount) %}
+          {% set color = colors[color_index] %}
+          {% set cx = get_random(start=0, end=width) %}
+          {% set cy = get_random(start=0, end=height) %}
+          <ellipse rx="{{radius}}" ry="{{radius}}" cy="{{cy}}" cx="{{cx}}" fill="{{color}}"/>
+        {% endfor %}
+      </g>
+    </svg>
+  </div>
+{% endmacro balls%}
