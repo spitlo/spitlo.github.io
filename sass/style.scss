@@ -1,5 +1,9 @@
 @import "constants";
 @import "fonts";
+@import "icons";
+
+@import "code";
+@import "project";
 
 html, body {
   height: 100%;
@@ -12,13 +16,13 @@ html, body {
 body {
   display: flex;
   background-color: $white;
-  background: url(images/background.svg)  no-repeat;
-  background-position-x: 75vw;
-  background-position-y: -32px;
+  background: url(images/background.svg) no-repeat;
+  background-position: top -1em right -8em;
   background-attachment: fixed;
+  transition: background-position 0.3s;
 }
 
-.contentWrapper, header, main, footer {
+.contentWrapper, body, html, header, main, footer {
   box-sizing: border-box;
 }
 
@@ -69,24 +73,21 @@ header {
 
   .logo {
     flex: 1;
-    font-family: 'Gangster Grotesk';
+    font-family: "Gangster Grotesk";
     font-weight: bold;
     font-size: 1.4em;
-    padding: .8em 0 1em 0;
+    padding: 1.1em 0 .7em 0;
   }
 
   nav {
-    flex: 1;
-    font-family: 'Gangster Grotesk';
+    flex: 2;
+    font-family: "Gangster Grotesk";
     text-align: right;;
 
     a {
       padding-bottom: 3px;
       border-bottom: transparent;
 
-      &:link {
-        // border-bottom: 3px solid $white;
-      }
       &:hover {
         border-bottom: 3px solid $orange!important;
       }
@@ -112,12 +113,25 @@ header {
 
 main {
   flex: auto;
-  // background-color: $white;
-  // padding: 0 1em;
+  padding: 0 1em;
+
+  a {
+
+    &.anchor {
+      color: $blue;
+      position: relative;
+      left: -8px;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 3px solid $red;
+      }
+    }
+  }
 }
 
 footer {
-  font-family: 'Victor Mono';
+  font-family: "Victor Mono", monospace;
   background-color: $blue;
   color: $white;
   width: 100vw;
@@ -125,21 +139,28 @@ footer {
   margin-left: calc(50% - 50vw);
   padding: 2.4em 0;
 
-  background: $blue url(images/footer-background.svg)  no-repeat;
+  background: $blue url(images/footer-background.svg) no-repeat;
   background-position: right -2em bottom -2em;
+  transition: background-position 0.3s;
 
   .credits {
     max-width: 70rem;
     margin: 0 auto;
-    padding: 1rem 1rem 2.4rem;
-    border-bottom: 1px solid $blueGray;
+    padding: 1rem;
     margin-bottom: 2.4em;
+
+    .hr {
+      margin-top: 2.4em;
+      max-width: 42rem;
+      border-bottom: 1px solid $blueGray;
+    }
   }
 
   .links {
     max-width: 70rem;
     margin: 0 auto;
     padding: 1rem;
+    font-size: .9em;
 
     .link {
       margin-right: 2.4em;
@@ -163,7 +184,7 @@ footer {
 }
 
 h1 {
-  font-family: 'Gangster Grotesk';
+  font-family: "Gangster Grotesk";
   font-weight: bold;
   font-style: normal;
   font-size: 4.2em;
@@ -180,7 +201,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Victor Mono";
+  font-family: "Victor Mono", monospace;
   font-size: 2.1em;
 }
 
@@ -189,7 +210,41 @@ h1 + h2 {
 }
 
 p {
-  font-family: "Victor Mono";
+  font-family: "Victor Mono", monospace;
   font-size: 1.2em;
   max-width: 48rem;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+ul {
+  font-family: "Victor Mono", monospace;
+  font-size: 1.2em;
+  list-style-type: square;
+}
+
+code, pre {
+  font-family: "Victor Mono", monospace;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: $mutedPink;
+  padding: 0 5px;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-position: top -30em right -8em;
+  }
+}
+
+@media (max-width: 920px) {
+  footer {
+    background-position: right -2em bottom -30em;
+  }
+}
+
+@media (max-width: 70rem) {
+  header {
+    margin: 1em 1em 2.4em;
+  }
 }

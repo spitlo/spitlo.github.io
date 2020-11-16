@@ -1,7 +1,7 @@
 <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
   <g>
     <ellipse ry="124" rx="124" cy="126.45313" cx="179.5" fill="#faba6f" />
-    <ellipse ry="60.5" rx="60.5" cy="157.95313" cx="61" fill="#5b9ba2" />
+    <ellipse ry="60.5" rx="60.5" cy="167.95313" cx="61" fill="#5b9ba2" />
     <ellipse ry="72" rx="72" cy="220.45313" cx="280.5" fill="#000000" />
   </g>
 </svg>

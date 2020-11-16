@@ -12,7 +12,7 @@
 
     <title>{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
 
-    {% if config.generate_rss %}
+    {% if config.generate_feed %}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
     {% endif %}
 
@@ -44,10 +44,11 @@
           <h2>And this header is smaller</h2>
           <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used before final copy is available, but it may also be used to temporarily replace copy in a process called greeking, which allows designers to consider form without the meaning of the text influencing the design.</p>
 
+          <!--{{ macros::balls(amount=12, width=800, height=220) }}-->
+
           <h2>Header in text</h2>
           <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.</p>
 
-          {{ macros::balls(amount=5) }}
 
           <p>Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors including Pages and Microsoft Word have since adopted Lorem ipsum as well.</p>
         {% endblock content %}
@@ -56,14 +57,26 @@
       <footer>
         <section class="credits">
           Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
-          Fonts: <a href="https://www.freshfonts.io/" target="_blank" rel="noopener noreferrer">Gangster Grotesk</a> and <a href="https://rubjo.github.io/victor-mono/" target="_blank" rel="noopener noreferrer">Victor Mono</a>
+          Fonts: <a href="https://www.freshfonts.io/" target="_blank" rel="noopener noreferrer">Gangster Grotesk</a> by <a href="http://www.adrienmidzic.fr/">Adrien Midzic</a> and <a href="https://rubjo.github.io/victor-mono/" target="_blank" rel="noopener noreferrer">Victor Mono</a> by <a href="https://github.com/rubjo">Rune B</a>
+          <div class="hr" />
         </section>
         <section class="links">
           <span class="link">
-            {{ macros::icon(slug="github", size="small") }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
+            {{ macros::icon(name="github", size="small") }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
           </span>
           <span class="link">
-            {{ macros::icon(slug="threema", size="small") }}<a href="https://threema.id/XXX000" target="_blank" rel="noopener noreferrer">XXX000</a>
+            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/XXX000" target="_blank" rel="noopener noreferrer">XXX000</a>
+          </span>
+          <span class="link">
+            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer">__@spitlo.com</a>
+          </span>
+          {% if config.generate_feed %}
+            <span class="link">
+              {{ macros::icon(name="rss", size="small") }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">/atom.xml</a>
+            </span>
+          {% endif %}
+          <span class="link">
+            {{ macros::icon(name="creative-commons", size="small") }}<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
           </span>
         </section>
       </footer>

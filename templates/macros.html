@@ -1,7 +1,7 @@
-{% macro icon(slug, size="medium") %}
-  <span class="icon {{slug}} {% if size %}{{size}}{% endif %}"">
-    {% set slugged = slug | slugify %}
-    {% set icon_path = "static/icons/"  ~  slugged ~  ".svg" %}
+{% macro icon(name, size="medium", colored=false) %}
+  {% set slug = name | slugify %}
+  <span class="icon {{slug}}{% if size %} {{size}}{% endif %}{% if colored %} colored{% endif %}"">
+    {% set icon_path = "static/icons/"  ~  slug ~  ".svg" %}
     {% set icon_code = load_data(path=icon_path) %}
     {{icon_code | safe}}
   </span>
@@ -16,12 +16,15 @@
     "#aa9f9f",
     "#dfcece",
     "#5a6c7e",
+    "#5ca6a2",
+    "#fff1f1",
+    "#e30000",
   ] %}
   <div>
     <svg width="{{width}}" height="{{height}}" xmlns="http://www.w3.org/2000/svg">
       <g>
         {% for i in range(start=0, end=amount) %}
-          {% set max_size = width / 3|int(default=80) %}
+          {% set max_size = width / 5|int(default=80) %}
           {% set radius = get_random(start=30, end=max_size) %}
           {% set color_amount = colors|length %}
           {% set color_index = get_random(start=0, end=color_amount) %}
@@ -33,4 +36,4 @@
       </g>
     </svg>
   </div>
-{% endmacro balls%}
+{% endmacro balls %}

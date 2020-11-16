@@ -1,0 +1,36 @@
+@import "constants";
+
+.project {
+  ul {
+    font-family: 'Victor Mono', monospace;
+    list-style: none;
+    display: grid;
+    grid-gap: 1.6em;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    margin: 2em 0;
+    padding: 0;
+
+    li {
+      padding: .8em;
+      background-color: #fffffb;
+      // border: 1px solid $lightSeagreen;
+      border-radius: 7px;
+      box-shadow: 5px 5px $black;
+
+      .excerpt {
+        padding: 0 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+
+      h2 {
+        margin: 0 0 .4em 0;
+        font-size: 1.8em;
+        border-bottom: 1px solid $orange;
+      }
+    }
+  }
+}

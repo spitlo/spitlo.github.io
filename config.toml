@@ -1,9 +1,10 @@
-compile_sass = true
-minify_html = true
-highlight_code = true
 build_search_index = true
+compile_sass = true
+generate_feed = true
+highlight_code = true
+minify_html = true
 
 base_url = "https://spitlo.com"
 taxonomies = [
-  { name = "technologies", rss = true },
+  { name = "technologies", feed = true },
 ]
