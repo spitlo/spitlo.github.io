@@ -4,6 +4,7 @@
 
 @import "code";
 @import "project";
+@import "technologies";
 
 html, body {
   height: 100%;
@@ -56,6 +57,11 @@ body {
   &.large {
     width: 48px;
     height: 48px;
+  }
+
+  &.huge {
+    width: 96px;
+    height: 96px;
   }
 }
 

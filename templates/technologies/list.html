@@ -4,13 +4,18 @@
 {% block content %}
   <h1>Technologies</h1>
 
-  <div class="technologies">
+  <section class="taxonomy technologies">
     {% for term in terms %}
-      {{ macros::icon(name=term.slug, size="large") }}
-      <h2><a href="{{ term.permalink }}">{{ term.name }}</a></h2>
+      <article>
+        <div class="image" style="background: url(data:image/svg+xml,{{ macros::balls(amount=16, width=200, height=200) | urlencode }}), #ffffff99">
+          {{ macros::icon(name=term.slug, size="huge", colored=true) }}
+        </div>
+        <div class="content">
+          <h2><a href="{{ term.permalink }}">{{ term.name }}</a></h2>
 
-      <h3>{{ term.pages|length }} project(s).</h3>
-      <br>
+          <h3>{{ term.pages|length }} project(s).</h3>
+        </div>
+      </article>
     {% endfor %}
-  </div>
+  </section>
 {% endblock content %}
