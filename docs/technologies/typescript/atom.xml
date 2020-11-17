@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - TypeScript</title>
+	<link href="https://spitlo.com/technologies/typescript/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-17T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/typescript/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Merc</title>
+		<published>2020-11-17T00:00:00+00:00</published>
+		<updated>2020-11-17T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/merc/" type="text/html"/>
+		<id>https://spitlo.com/code/merc/</id>
+		<content type="html">&lt;h2 id=&quot;a-gemini-client-written-for-deno&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-gemini-client-written-for-deno&quot; aria-label=&quot;Anchor link for: a-gemini-client-written-for-deno&quot;&gt;#&lt;&#x2F;a&gt;A Gemini client written for Deno&lt;&#x2F;h2&gt;
+&lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;solderpunk&quot;&gt;100 LOC demos&lt;&#x2F;a&gt; by solderpunk.&lt;&#x2F;p&gt;
+&lt;p&gt;The name is a nod to and a gentle jab at the tendency in both Deno and Gemini communities to name projects after dinosaurs and zodiac stuff, respectively. The &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Mercuriceratops&quot;&gt;mercuriceratops&lt;&#x2F;a&gt; is a dinosaur of the type species &lt;em&gt;Mercuriceratops gemini&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;div class=&quot;alert&quot;&gt;
+  This project is now on hold, since I can’t really figure out how to make Deno accept most certificates.
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;install-update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#install-update&quot; aria-label=&quot;Anchor link for: install-update&quot;&gt;#&lt;&#x2F;a&gt;Install&#x2F;update&lt;&#x2F;h2&gt;
+&lt;p&gt;See &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;mercuriceratops&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
+&lt;p&gt;To visit a Gemini page, enter the URL at the &lt;code&gt;URL&amp;gt;&lt;&#x2F;code&gt; prompt or start it with a URL as argument.
+Merc only handles Gemini links for now, and you can leave out the protocol part of the URL.
+To go back, enter &#x27;b&#x27; at the prompt. To quit, enter &#x27;q&#x27;.
+To search using gus.guru, enter &#x27;s&#x27; and then enter your query at the &lt;code&gt;SEARCH&amp;gt;&lt;&#x2F;code&gt; prompt.
+To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
+&lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;  -h, --help
+          Prints help end exits
+  -d, --dump
+          Prints document body and exits
+  -w, --width &amp;lt;number&amp;gt;
+          Wraps text at &amp;lt;number&amp;gt; columns
+  -p, --paginate &amp;lt;number&amp;gt;
+          Show &amp;lt;number&amp;gt; of rows at a time.
+          Defaults to 50 if no &amp;lt;number&amp;gt; is supplied
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Shopify Labels</title>
+		<published>2020-11-15T00:00:00+00:00</published>
+		<updated>2020-11-15T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
+		<id>https://spitlo.com/code/shopify-labels/</id>
+		<content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generate pages suitable for printing address labels.&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
+&lt;p&gt;No files are sent to the server, this is just a one page html&#x2F;javascript app.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s available online at &lt;a href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&quot;&gt;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

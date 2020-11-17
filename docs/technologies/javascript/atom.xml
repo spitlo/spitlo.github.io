@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - JavaScript</title>
+	<link href="https://spitlo.com/technologies/javascript/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-14T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/javascript/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Rotnot</title>
+		<published>2020-11-14T00:00:00+00:00</published>
+		<updated>2020-11-14T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
+		<id>https://spitlo.com/code/rotnot/</id>
+		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filename were either:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;&#x2F;code&gt;); or&lt;&#x2F;li&gt;
+&lt;li&gt;The actual midi note (&lt;code&gt;031.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The midi note is then written back to the wave file as part of the &amp;quot;Sampler Chunk&amp;quot;, in the &lt;code&gt;MIDI Unity Note&lt;&#x2F;code&gt; field.&lt;&#x2F;p&gt;
+&lt;p&gt;The &amp;quot;Instrument Chunk&amp;quot; har a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;&#x2F;code&gt;. Future versions might write to that as well.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
+&lt;p&gt;In the &lt;code&gt;rotnot&lt;&#x2F;code&gt; directory, enter:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;node&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; index.js
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;Rationale&lt;&#x2F;h2&gt;
+&lt;p&gt;I own a &lt;a href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

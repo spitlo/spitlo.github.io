@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - HTML5</title>
+	<link href="https://spitlo.com/technologies/html5/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-15T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/html5/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Shopify Labels</title>
+		<published>2020-11-15T00:00:00+00:00</published>
+		<updated>2020-11-15T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
+		<id>https://spitlo.com/code/shopify-labels/</id>
+		<content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generate pages suitable for printing address labels.&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
+&lt;p&gt;No files are sent to the server, this is just a one page html&#x2F;javascript app.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s available online at &lt;a href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&quot;&gt;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
