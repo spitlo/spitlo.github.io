@@ -20,7 +20,7 @@ At the moment it works on a bunch of multi sampled instruments I had available, 
 
 The midi note is then written back to the wave file as part of the "Sampler Chunk", in the `MIDI Unity Note` field.
 
-The "Instrument Chunk" har a field with similar purpose, `MIDI Unshifted Note`. Future versions might write to that as well.
+The "Instrument Chunk" has a field with similar purpose, `MIDI Unshifted Note`. Future versions might write to that as well.
 
 ## Usage
 
