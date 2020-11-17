@@ -1,5 +1,16 @@
+{% import "macros.html" as macros %}
 {% extends "index.html" %}
 
 {% block content %}
-  {# <pre>{{ __tera_context }}</pre> #}
+  <h1>Technologies</h1>
+
+  <div class="technologies">
+    {% for term in terms %}
+      {{ macros::icon(name=term.slug, size="large") }}
+      <h2><a href="{{ term.permalink }}">{{ term.name }}</a></h2>
+
+      <h3>{{ term.pages|length }} project(s).</h3>
+      <br>
+    {% endfor %}
+  </div>
 {% endblock content %}
