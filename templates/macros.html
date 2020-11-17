@@ -20,20 +20,18 @@
     "#fff1f1",
     "#e30000",
   ] %}
-  <div>
-    <svg width="{{width}}" height="{{height}}" xmlns="http://www.w3.org/2000/svg">
-      <g>
-        {% for i in range(start=0, end=amount) %}
-          {% set max_size = width / 5|int(default=80) %}
-          {% set radius = get_random(start=30, end=max_size) %}
-          {% set color_amount = colors|length %}
-          {% set color_index = get_random(start=0, end=color_amount) %}
-          {% set color = colors[color_index] %}
-          {% set cx = get_random(start=0, end=width) %}
-          {% set cy = get_random(start=0, end=height) %}
-          <ellipse rx="{{radius}}" ry="{{radius}}" cy="{{cy}}" cx="{{cx}}" fill="{{color}}"/>
-        {% endfor %}
-      </g>
-    </svg>
-  </div>
+  <svg width="{{width}}" height="{{height}}" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      {% for i in range(start=0, end=amount) %}
+        {% set max_size = width / 5|int(default=80) %}
+        {% set radius = get_random(start=30, end=max_size) %}
+        {% set color_amount = colors|length %}
+        {% set color_index = get_random(start=0, end=color_amount) %}
+        {% set color = colors[color_index] %}
+        {% set cx = get_random(start=0, end=width) %}
+        {% set cy = get_random(start=0, end=height) %}
+        <ellipse rx="{{radius}}" ry="{{radius}}" cy="{{cy}}" cx="{{cx}}" fill="{{color}}"/>
+      {% endfor %}
+    </g>
+  </svg>
 {% endmacro balls %}

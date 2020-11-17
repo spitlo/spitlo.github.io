@@ -4,6 +4,7 @@ generate_feed = true
 highlight_code = true
 highlight_theme = "ayu-light"
 minify_html = true
+title = "Spitlo.com"
 
 base_url = "https://spitlo.com"
 taxonomies = [

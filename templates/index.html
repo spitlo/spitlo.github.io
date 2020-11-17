@@ -10,7 +10,7 @@
 
     <meta name="description" content="{% if page.content %}{{ page.content | safe | striptags | truncate }}{% else %}{{ config.description }}{% endif %}">
 
-    <title>{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
+    <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
 
     {% if config.generate_feed %}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
@@ -18,8 +18,7 @@
 
     <link href="{{ get_url(path="/style.css", cachebust=true) | safe }}" rel="stylesheet">
 
-    {% block extra_head %}
-    {% endblock extra_head %}
+    {% block extra_head %}{% endblock extra_head %}
   </head>
 
   <body>
@@ -36,6 +35,18 @@
             <li><a href="{{ get_url(path="tags") }}">tags</a></li>
           </ul>
         </nav>
+        <nav class="breadcrumbs">
+          {% if section and section.components%}
+            {% set components = section.components %}
+          {% elif page and page.components %}
+            {% set components = page.components %}
+          {% endif %}
+          {% if components %}
+            {% for component in components %}
+
+            {% endfor %}
+          {% endif %}
+        </nav>
       </header>
 
       <main>
@@ -43,8 +54,6 @@
           <h1>This is a main header</h1>
           <h2>And this header is smaller</h2>
           <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used before final copy is available, but it may also be used to temporarily replace copy in a process called greeking, which allows designers to consider form without the meaning of the text influencing the design.</p>
-
-          <!--{{ macros::balls(amount=12, width=800, height=220) }}-->
 
           <h2>Header in text</h2>
           <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.</p>
@@ -54,6 +63,7 @@
         {% endblock content %}
       </main>
 
+      <div class="balls" style="background-image: url(data:image/svg+xml,{{ macros::balls(amount=32, width=1080, height=200) | urlencode }});"></div>
       <footer>
         <section class="credits">
           Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
@@ -80,6 +90,7 @@
           </span>
         </section>
       </footer>
+      <div class="balls" style="background-image: url(data:image/svg+xml,{{ macros::balls(amount=32, width=1080, height=200) | urlencode }});"></div>
     </div>
   </body>
 </html>

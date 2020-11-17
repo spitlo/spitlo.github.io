@@ -62,7 +62,7 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  height: 75px;
+  // height: 75px;
   margin: 1em 0 2.4em 0;
   border-bottom: 1px dashed $dirtyYellow;
 
@@ -80,7 +80,6 @@ header {
   }
 
   nav {
-    flex: 2;
     font-family: "Gangster Grotesk";
     text-align: right;;
 
@@ -114,6 +113,7 @@ header {
 main {
   flex: auto;
   padding: 0 1em;
+  margin-bottom: 4.8em;
 
   a {
 
@@ -135,7 +135,7 @@ footer {
   background-color: $blue;
   color: $white;
   width: 100vw;
-  margin-top: 4.8em;
+  margin-top: 2.2em;
   margin-left: calc(50% - 50vw);
   padding: 2.4em 0;
 
@@ -145,9 +145,8 @@ footer {
 
   .credits {
     max-width: 70rem;
-    margin: 0 auto;
+    margin: 0 auto 1.2em;
     padding: 1rem;
-    margin-bottom: 2.4em;
 
     .hr {
       margin-top: 2.4em;
@@ -183,6 +182,15 @@ footer {
   }
 }
 
+.balls {
+  display: none; // Hide balls for now
+  width: 100vw;
+  min-height: 2rem;
+  background-size: cover;
+  border-top: 4px solid $white;
+  margin-left: calc(50% - 50vw);
+}
+
 h1 {
   font-family: "Gangster Grotesk";
   font-weight: bold;
@@ -192,12 +200,12 @@ h1 {
   display: inline-block;
   margin-bottom: .5em;
 
-  // &::before {
-  //   content: "#";
-  //   margin-right: 6px;
-  //   color: $dirtyYellow;
-  //   font-size: .9em;
-  // }
+  &::before {
+    content: "#";
+    margin-right: 6px;
+    color: $dirtyYellow;
+    font-size: .9em;
+  }
 }
 
 h2 {
@@ -207,6 +215,11 @@ h2 {
 
 h1 + h2 {
   margin-top: 0;
+}
+
+h3 {
+  font-family: "Victor Mono", monospace;
+  font-size: 1.4em;
 }
 
 p {
@@ -231,9 +244,36 @@ code, pre {
   padding: 0 5px;
 }
 
-@media (max-width: 800px) {
+pre {
+  padding: 1em;
+  max-width: 45rem;
+}
+
+pre code {
+  background-color: unset;
+}
+
+.alert {
+  font-family: "Victor Mono", monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+  max-width: 45rem;
+  padding: 1em;
+  background-color: $mutedPink;
+
+  &.critical {
+    color: $white;
+    background-color: $red;
+  }
+}
+
+@media (max-width: 820px) {
   body {
     background-position: top -30em right -8em;
+  }
+
+  header nav {
+    // flex: 2;
   }
 }
 

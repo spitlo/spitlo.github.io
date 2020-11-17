@@ -50,3 +50,44 @@
     }
   }
 }
+
+.meta {
+  font-family: "Victor Mono", monospace;
+  font-size: .8em;
+  margin-left: -3px;
+  margin-bottom: 2.4em;
+
+  time, .words, .tech, .repo {
+    white-space: nowrap;
+
+    &::before {
+      color: $blue;
+      padding: 0 3px;
+      text-transform: uppercase;
+    }
+  }
+
+  time {
+    &::before {
+      content: "| Date:";
+    }
+  }
+
+  .words {
+    &::before {
+      content: "| Words:";
+    }
+  }
+
+  .tech {
+    &::before {
+      content: "| Tech:";
+    }
+  }
+
+  .repo {
+    &::before {
+      content: "| Repo:";
+    }
+  }
+}
