@@ -3,5 +3,8 @@ set -eu
 
 zola build --output-dir ./docs
 git add ./docs
+# TODO Remove this
+echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
+rm ./docs/sitemap.xml
 git commit -m "Deploy site $(date '+%Y-%m-%d %H:%M')"
 git push
