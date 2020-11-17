@@ -1,6 +1,7 @@
 +++
 title = "Dotfiles"
 description = "Various configs, scripts and aliases"
+date = 2013-07-06
 
 [taxonomies]
 technologies = ["Shell", "Python", "Perl", "JavaScript"]

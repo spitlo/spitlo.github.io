@@ -1,7 +1,7 @@
 +++
 title = "Merc"
 description = "A pretty basic client for Gemini, written for Deno"
-date = 2020-11-17
+date = 2020-05-16
 
 [taxonomies]
 technologies = ["Deno", "TypeScript", "Shell"]

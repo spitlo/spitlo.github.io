@@ -1,7 +1,7 @@
 +++
 title = "Rotnot"
 description = "Set root note for multi-samples"
-date = 2020-11-14
+date = 2020-04-05
 
 [taxonomies]
 technologies = ["JavaScript", "Shell"]

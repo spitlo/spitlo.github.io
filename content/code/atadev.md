@@ -1,7 +1,7 @@
 +++
 title = "At-a-dev"
 description = "Short message service for devs"
-date = 2020-11-16
+date = 2020-10-09
 
 [taxonomies]
 technologies = ["Shell"]
