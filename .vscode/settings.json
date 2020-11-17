@@ -11,6 +11,9 @@
   "files.associations": {
     "*.html": "tera",
   },
+  "files.exclude": {
+    "docs": true,
+  },
   "markdownlint.config": {
     "MD033": false,
   }
