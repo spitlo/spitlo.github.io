@@ -4,12 +4,12 @@
 	<link href="https://spitlo.com/technologies/javascript/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-11-14T00:00:00+00:00</updated>
+	<updated>2020-04-05T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/javascript/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Rotnot</title>
-		<published>2020-11-14T00:00:00+00:00</published>
-		<updated>2020-11-14T00:00:00+00:00</updated>
+		<published>2020-04-05T00:00:00+00:00</published>
+		<updated>2020-04-05T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
 		<id>https://spitlo.com/code/rotnot/</id>
 		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
@@ -27,6 +27,107 @@
 &lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;node&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; index.js
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;Rationale&lt;&#x2F;h2&gt;
 &lt;p&gt;I own a &lt;a href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Revercss</title>
+		<published>2014-12-05T00:00:00+00:00</published>
+		<updated>2014-12-05T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/revercss/" type="text/html"/>
+		<id>https://spitlo.com/code/revercss/</id>
+		<content type="html">&lt;p&gt;Revercss is a declaration-first paradigm for lean, consistent CSS and increased project maintainibility.&lt;&#x2F;p&gt;
+&lt;p&gt;This was made as a joke a many years ago, but I still kinda like the idea.&lt;&#x2F;p&gt;
+&lt;p&gt;I also made &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;gulp-revercss&#x2F;&quot;&gt;a gulp plugin for it&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;Perhaps I will have to make a syntax highlighting scheme for it as well.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;syntax&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#syntax&quot; aria-label=&quot;Anchor link for: syntax&quot;&gt;#&lt;&#x2F;a&gt;Syntax&lt;&#x2F;h2&gt;
+&lt;p&gt;In Revercss, style declarations are first-class citizens. Selectors belong to one or many declarations:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;color: red {
+  a, h1
+}
+
+color: rgba(100&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; 0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; 0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; .5) {
+  #logo,
+  ul.menu&amp;gt;li a
+}
+
+border: 2px solid {
+  button,
+  #logo,
+  ul.menu&amp;gt;li a
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;text-decoration&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: none {
+  ul.menu&amp;gt;li a
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;min-width&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: 200px {
+  button,
+  input[type=&amp;quot;text&amp;quot;]
+}
+
+padding: 8px {
+  button,
+  input,
+  ul.menu&amp;gt;li a
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;box-sizing&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;border-box &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;{
+  html
+}
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;box-sizing&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: inherit {
+  *, *&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;before, *:after
+}
+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;console-output&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#console-output&quot; aria-label=&quot;Anchor link for: console-output&quot;&gt;#&lt;&#x2F;a&gt;Console output&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;revercss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; example.revcss
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;file-output&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#file-output&quot; aria-label=&quot;Anchor link for: file-output&quot;&gt;#&lt;&#x2F;a&gt;File output&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;revercss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; example.revcss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; parsed.css
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;from-stdin&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#from-stdin&quot; aria-label=&quot;Anchor link for: from-stdin&quot;&gt;#&lt;&#x2F;a&gt;From stdin&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; example.revcss &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;revercss
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;  -c, --compact
+          Output compact CSS
+  -m, --minified
+          Output minified CSS
+  -t, --tabs
+          Use tabs instead of spaces in output
+  -s, --spaces
+          Number of spaces&#x2F;tabs to indent (default: 2)
+  -o, --outfile &amp;lt;file&amp;gt;
+          Write to FILE rather than the console
+  -h, --help
+          Display help and usage details
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Dotfiles</title>
+		<published>2013-07-06T00:00:00+00:00</published>
+		<updated>2013-07-06T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
+		<id>https://spitlo.com/code/dotfiles/</id>
+		<content type="html">&lt;p&gt;These are my dotfiles.&lt;&#x2F;p&gt;
+&lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.&lt;&#x2F;p&gt;
+&lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L438-L484&quot;&gt;cdp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This allows me to jump quickly into project folders. If the project contains an &lt;code&gt;.nvmrc&lt;&#x2F;code&gt; or &lt;code&gt;.python-version&lt;&#x2F;code&gt; file, the correct versions of &lt;code&gt;node&lt;&#x2F;code&gt; and &lt;code&gt;pyhton&lt;&#x2F;code&gt; are set.&lt;&#x2F;p&gt;
+&lt;p&gt;The function uses &lt;code&gt;$PROJECT_FOLDER&lt;&#x2F;code&gt; to know where to look. I set it in a file kept out of source control.&lt;&#x2F;p&gt;
+&lt;p&gt;There is a corresponding &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;6f41ade4e2ff75e7ddb147d727ec8ad53917d87a&#x2F;.bash_completions&#x2F;cdp&quot;&gt;bash completion script&lt;&#x2F;a&gt;, so if I set &lt;code&gt;$LOCAL_PROJECTS&lt;&#x2F;code&gt; to a space separated string of project names, I get tab completion and can navigate EVEN QUICKER!&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L119-L156&quot;&gt;xt&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;tar.png&quot; alt=&quot;XKCD: Tar&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 </feed>

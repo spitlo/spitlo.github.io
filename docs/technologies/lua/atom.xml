@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Lua</title>
+	<link href="https://spitlo.com/technologies/lua/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-02-12T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/lua/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Spoons</title>
+		<published>2020-02-12T00:00:00+00:00</published>
+		<updated>2020-02-12T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/spoons/" type="text/html"/>
+		<id>https://spitlo.com/code/spoons/</id>
+		<content type="html">&lt;p&gt;I use &lt;a href=&quot;https:&#x2F;&#x2F;www.hammerspoon.org&#x2F;&quot;&gt;Hammerspoon&lt;&#x2F;a&gt; together with &lt;a href=&quot;https:&#x2F;&#x2F;karabiner-elements.pqrs.org&#x2F;&quot;&gt;Karabiner-Elements&lt;&#x2F;a&gt; on macOS to set up keyboard shortcuts and window management.&lt;&#x2F;p&gt;
+&lt;p&gt;This repo contains a mix of some of the official Spoons and some of my own or customized Spoons, along with my Hammerspoon config.&lt;&#x2F;p&gt;
+&lt;p&gt;This WinWin Spoon included is customized to add a method, &lt;code&gt;smartStepResize&lt;&#x2F;code&gt;, that resizes the focused window &amp;quot;smartly&amp;quot; by one step.&lt;&#x2F;p&gt;
+&lt;p&gt;Smartly in this context means:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If window gravitates to the left, &lt;code&gt;right&lt;&#x2F;code&gt; and &lt;code&gt;left&lt;&#x2F;code&gt; expands and shrinks the window on the right border (see illustration).&lt;&#x2F;li&gt;
+&lt;li&gt;If window is more to the right, it resizes on the left border.&lt;&#x2F;li&gt;
+&lt;li&gt;The same principal applies to &lt;code&gt;up&lt;&#x2F;code&gt; and &lt;code&gt;down&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;When a window is full width or full height, it will shrink&#x2F;expand in the &#x27;direction&#x27; direction.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; +------------------+------------------+
+ |   +-------------------+             |
+ |   |              |    |             |
+ |   |              |  &amp;lt; | &amp;gt;           |
+ +-------------------------------------+
+ |   |         &#x2F;\   |    |             |
+ |   +-------------------+             |
+ |             \&#x2F;   |                  |
+ +------------------+------------------+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+	</entry>
+</feed>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Python</title>
+	<link href="https://spitlo.com/technologies/python/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2013-07-06T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/python/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Dotfiles</title>
+		<published>2013-07-06T00:00:00+00:00</published>
+		<updated>2013-07-06T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
+		<id>https://spitlo.com/code/dotfiles/</id>
+		<content type="html">&lt;p&gt;These are my dotfiles.&lt;&#x2F;p&gt;
+&lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.&lt;&#x2F;p&gt;
+&lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L438-L484&quot;&gt;cdp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This allows me to jump quickly into project folders. If the project contains an &lt;code&gt;.nvmrc&lt;&#x2F;code&gt; or &lt;code&gt;.python-version&lt;&#x2F;code&gt; file, the correct versions of &lt;code&gt;node&lt;&#x2F;code&gt; and &lt;code&gt;pyhton&lt;&#x2F;code&gt; are set.&lt;&#x2F;p&gt;
+&lt;p&gt;The function uses &lt;code&gt;$PROJECT_FOLDER&lt;&#x2F;code&gt; to know where to look. I set it in a file kept out of source control.&lt;&#x2F;p&gt;
+&lt;p&gt;There is a corresponding &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;6f41ade4e2ff75e7ddb147d727ec8ad53917d87a&#x2F;.bash_completions&#x2F;cdp&quot;&gt;bash completion script&lt;&#x2F;a&gt;, so if I set &lt;code&gt;$LOCAL_PROJECTS&lt;&#x2F;code&gt; to a space separated string of project names, I get tab completion and can navigate EVEN QUICKER!&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L119-L156&quot;&gt;xt&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;tar.png&quot; alt=&quot;XKCD: Tar&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
