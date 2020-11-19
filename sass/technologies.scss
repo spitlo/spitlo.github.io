@@ -1,23 +1,19 @@
 @import "constants";
 
 .taxonomy.technologies {
-  .image {
-    // display: inline-block;
-    width: 160px;
-    height: 160px;
+  article {
+    margin-bottom: 3rem;
 
     .icon {
       svg {
         filter: drop-shadow(0 0 12px $mutedPinkTransparent);
       }
     }
-  }
 
-  .content {
-    // display: inline-block;
-
-    h2 {
-      margin-top: 0;
+    .content {
+      h2 {
+        margin-top: 0;
+      }
     }
   }
 }

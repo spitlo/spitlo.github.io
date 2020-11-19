@@ -15,9 +15,7 @@
   <section class="taxonomy technologies">
     {% for term in terms %}
       <article>
-        <div class="image" style="background: url(data:image/svg+xml,{{ macros::balls(amount=16, width=200, height=200) | urlencode }}), #ffffff99">
-          {{ macros::icon(name=term.slug, size="huge", colored=true) }}
-        </div>
+        {{ macros::icon(name=term.slug, size="huge", colored=true) }}
         <div class="content">
           <h2><a href="{{ term.permalink }}">{{ term.name }}</a></h2>
 
