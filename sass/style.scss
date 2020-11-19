@@ -237,7 +237,7 @@ h1 {
   font-size: 4.2em;
   border-bottom: 7px solid $black;
   display: inline-block;
-  margin-bottom: .8em;
+  margin: .8em 0;
 
   &::before {
     content: "#";
