@@ -17,11 +17,41 @@ html, body {
 body {
   display: flex;
   background-color: $white;
-  background: url(images/background.svg) no-repeat;
   background-position: top -1em right -8em;
   background-attachment: fixed;
   transition: background-position 0.3s;
+  background-repeat: no-repeat;
+
+  &.circles {
+    background-image: url(images/background-circles.svg);
+
+    footer {
+      background-image: url(images/footer-background-circles.svg);
+    }
+  }
+
+  &.squares {
+    background-image: url(images/background-squares.svg);
+
+    footer {
+      background-image: url(images/footer-background-squares.svg);
+    }
+  }
+
+  &.triangles {
+    background-image: url(images/background-triangles.svg);
+
+    footer {
+      background-image: url(images/footer-background-triangles.svg);
+    }
+  }
 }
+
+
+
+
+
+
 
 .contentWrapper, body, html, header, main, footer {
   box-sizing: border-box;
@@ -142,14 +172,14 @@ main {
 
 footer {
   font-family: "Victor Mono", monospace;
-  background-color: $blue;
   color: $white;
   width: 100vw;
   margin-top: 2.2em;
   margin-left: calc(50% - 50vw);
   padding: 2.4em 0;
 
-  background: $blue url(images/footer-background.svg) no-repeat;
+  background-color: $blue;
+  background-repeat: no-repeat;
   background-position: right -2em bottom -2em;
   transition: background-position 0.3s;
 
