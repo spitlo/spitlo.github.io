@@ -24,15 +24,23 @@
   </head>
 
   {% set body_class = "circles" %}
+  {% set main_section = "home" %}
   {% if current_path and current_path is starting_with("/code") %}
     {% set body_class = "squares" %}
+    {% set main_section = "code" %}
   {% endif %}
   {% if current_path and current_path is starting_with("/technologies") %}
     {% set body_class = "squares" %}
+    {% set main_section = "code" %}
   {% endif %}
   {% if current_path and current_path is starting_with("/music") %}
     {% set body_class = "triangles" %}
+    {% set main_section = "music" %}
   {% endif %}
+  {% if current_path and current_path is starting_with("/tags") %}
+    {% set main_section = "tags" %}
+  {% endif %}
+
   <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
     <div class="contentWrapper">
        <header>
@@ -42,10 +50,10 @@
 
         <nav>
           <ul>
-            <li><a href="{{ get_url(path="/") }}" class="{% if current_path and current_path == "/" %}active{% endif %}">home</a></li>
-            <li><a href="{{ get_url(path="code") }}" class="{% if current_path and current_path is starting_with("/code") %}active{% endif %}">code</a></li>
-            <li><a href="{{ get_url(path="music") }}" class="{% if current_path and current_path is starting_with("/music") %}active{% endif %}">music</a></li>
-            <li><a href="{{ get_url(path="tags") }}">tags</a></li>
+            <li><a href="{{ get_url(path="/") }}" class="{% if main_section == "home" %}active{% endif %}">home</a></li>
+            <li><a href="{{ get_url(path="code") }}" class="{% if main_section == "code" %}active{% endif %}">code</a></li>
+            <li><a href="{{ get_url(path="music") }}" class="{% if main_section == "music" %}active{% endif %}">music</a></li>
+            <li><a href="{{ get_url(path="tags") }}" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
           </ul>
         </nav>
       </header>

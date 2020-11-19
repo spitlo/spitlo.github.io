@@ -1,6 +1,14 @@
 {% import "macros.html" as macros %}
 {% extends "index.html" %}
 
+{% block breadcrumbs%}
+  <nav class="breadcrumbs">
+    <a href="/">Home</a>>
+    <a href="/tags/">Tags</a>>
+    Technologies
+  </nav>
+{% endblock breadcrumbs%}
+
 {% block content %}
   <h1>Technologies</h1>
 
