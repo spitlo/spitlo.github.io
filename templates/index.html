@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="description" content="{% if page.content %}{{ page.content | safe | striptags | truncate }}{% else %}{{ config.description }}{% endif %}">
+    {% if page and page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% endif %}
 
     <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
 
@@ -21,7 +23,17 @@
     {% block extra_head %}{% endblock extra_head %}
   </head>
 
-  <body class="{% block body_class %}triangles{% endblock body_class %}">
+  {% set body_class = "circles" %}
+  {% if current_path and current_path is starting_with("/code") %}
+    {% set body_class = "squares" %}
+  {% endif %}
+  {% if current_path and current_path is starting_with("/technology") %}
+    {% set body_class = "squares" %}
+  {% endif %}
+  {% if current_path and current_path is starting_with("/music") %}
+    {% set body_class = "triangles" %}
+  {% endif %}
+  <body class="{% block body_class %}{{body_class}}{% endblock body_class %}">
     <div class="contentWrapper">
        <header>
         <div class="logo">
