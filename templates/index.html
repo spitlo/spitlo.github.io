@@ -33,12 +33,13 @@
   {% if current_path and current_path is starting_with("/music") %}
     {% set body_class = "triangles" %}
   {% endif %}
-  <body class="{% block body_class %}{{body_class}}{% endblock body_class %}">
+  <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
     <div class="contentWrapper">
        <header>
         <div class="logo">
           <a href="/">spitlo.com</a>
         </div>
+
         <nav>
           <ul>
             <li><a href="{{ get_url(path="/") }}" class="{% if current_path and current_path == "/" %}active{% endif %}">home</a></li>
@@ -47,21 +48,31 @@
             <li><a href="{{ get_url(path="tags") }}">tags</a></li>
           </ul>
         </nav>
-        <nav class="breadcrumbs">
-          {% if section and section.components%}
-            {% set components = section.components %}
-          {% elif page and page.components %}
-            {% set components = page.components %}
-          {% endif %}
-          {% if components %}
-            {% for component in components %}
-
-            {% endfor %}
-          {% endif %}
-        </nav>
       </header>
 
       <main>
+        {% block breadcrumbs %}
+          <nav class="breadcrumbs">
+            {% if page and page.ancestors %}
+              {% set ancestors = page.ancestors %}
+            {% elif section and section.ancestors %}
+              {% set ancestors = section.ancestors %}
+            {% endif %}
+
+            {% if ancestors %}
+              {% for ancestor in ancestors %}
+                {% set section = get_section(path=ancestor, metadata_only=true) %}
+                <a href="{{ section.permalink }}">{{ section.title }}</a> >
+              {% endfor %}
+              {% if page %}
+                {{ page.title }}
+              {% elif section %}
+                {{ section.title }}
+              {% endif %}
+            {% endif %}
+          </nav>
+        {% endblock breadcrumbs %}
+
         {% block content %}
           <h1>This is a main header</h1>
           <h2>And this header is smaller</h2>
