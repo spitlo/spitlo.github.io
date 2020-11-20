@@ -23,8 +23,8 @@
 &lt;p&gt;The &amp;quot;Instrument Chunk&amp;quot; has a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;&#x2F;code&gt;. Future versions might write to that as well.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
 &lt;p&gt;In the &lt;code&gt;rotnot&lt;&#x2F;code&gt; directory, enter:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;node&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; index.js
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;node index.js
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;Rationale&lt;&#x2F;h2&gt;
 &lt;p&gt;I own a &lt;a href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
 </content>
@@ -41,58 +41,58 @@
 &lt;p&gt;Perhaps I will have to make a syntax highlighting scheme for it as well.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;syntax&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#syntax&quot; aria-label=&quot;Anchor link for: syntax&quot;&gt;#&lt;&#x2F;a&gt;Syntax&lt;&#x2F;h2&gt;
 &lt;p&gt;In Revercss, style declarations are first-class citizens. Selectors belong to one or many declarations:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;color: red {
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;color: red &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   a, h1
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-color: rgba(100&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; 0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; 0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; .5) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;color: rgba(100, 0, 0, .5&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   #logo,
   ul.menu&amp;gt;li a
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-border: 2px solid {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;border: 2px solid &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   button,
   #logo,
   ul.menu&amp;gt;li a
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;text-decoration&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: none {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d7af;&quot;&gt;text-decoration&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;: none &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   ul.menu&amp;gt;li a
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;min-width&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: 200px {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d7af;&quot;&gt;min-width&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;: 200px &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   button,
   input[type=&amp;quot;text&amp;quot;]
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-padding: 8px {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;padding: 8px &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   button,
   input,
   ul.menu&amp;gt;li a
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;box-sizing&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;border-box &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d7af;&quot;&gt;box-sizing&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d7af;&quot;&gt;border-box &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
   html
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#399ee6;&quot;&gt;box-sizing&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;: inherit {
-  *, *&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;before, *:after
-}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d7af;&quot;&gt;box-sizing&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fed6af;&quot;&gt;: inherit &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffe000;&quot;&gt;{
+  *, *:before, *:after
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
 
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;console-output&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#console-output&quot; aria-label=&quot;Anchor link for: console-output&quot;&gt;#&lt;&#x2F;a&gt;Console output&lt;&#x2F;h3&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;revercss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; example.revcss
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;revercss example.revcss
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;file-output&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#file-output&quot; aria-label=&quot;Anchor link for: file-output&quot;&gt;#&lt;&#x2F;a&gt;File output&lt;&#x2F;h3&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;revercss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; example.revcss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; parsed.css
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;revercss example.revcss -o parsed.css
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;from-stdin&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#from-stdin&quot; aria-label=&quot;Anchor link for: from-stdin&quot;&gt;#&lt;&#x2F;a&gt;From stdin&lt;&#x2F;h3&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; example.revcss &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;revercss
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;cat example.revcss &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;revercss
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h2&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;  -c, --compact
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -c, --compact
           Output compact CSS
   -m, --minified
           Output minified CSS

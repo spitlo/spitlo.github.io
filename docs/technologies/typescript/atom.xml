@@ -40,8 +40,8 @@ To search using gus.guru, enter &#x27;s&#x27; and then enter your query at the &
 To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
 &lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h3&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;  -h, --help
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
           Prints help end exits
   -d, --dump
           Prints document body and exits

@@ -32,16 +32,16 @@
 &lt;p&gt;Use it as a command line tool and it will show you all your messages.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;usage-example&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-example&quot; aria-label=&quot;Anchor link for: usage-example&quot;&gt;#&lt;&#x2F;a&gt;Usage example&lt;&#x2F;h2&gt;
 &lt;p&gt;The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in &lt;code&gt;src&#x2F;index.js&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;&#x2F;&#x2F; @John Please use const and not var
-  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;a&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,
-  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;&#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;}
-&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;&#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;background-color:#303030;color:#fffb9d;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#dedede;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#ececec;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#dedede;&quot;&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; @John Please use const and not var
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  a: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#dedede;&quot;&gt;  b: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;font-weight:bold;color:#87d6d5;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; @Bella Please add a trailing comma here, see our style guide
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When John runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, he sees the following message:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
 ==========================
 On line 5:
   var myConst = { &#x2F;&#x2F; @John Please use const and not var
@@ -49,8 +49,8 @@ On line 9:
   &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When Bella runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, she sees the following message:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
 ==========================
 On line 7:
   b: 2 &#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
@@ -59,13 +59,13 @@ On line 9:
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Bella and John makes their respective changes and remove the relevant message.&lt;&#x2F;p&gt;
 &lt;p&gt;Perhaps one of them adds a new message:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#fa6e32;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ed9366;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;{
-  a&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,
-  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff8f40;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676ccc;&quot;&gt;,
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;}
-&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#abb0b6;&quot;&gt;&#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
-&#x2F;&#x2F; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#fffb9d;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;{
+  a: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;,
+  b: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;,
+}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;Installation&lt;&#x2F;h2&gt;
 &lt;p&gt;See &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;atadev&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
 </content>
@@ -104,8 +104,8 @@ To search using gus.guru, enter &#x27;s&#x27; and then enter your query at the &
 To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
 &lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h3&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#61676c;&quot;&gt;  -h, --help
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
           Prints help end exits
   -d, --dump
           Prints document body and exits
@@ -133,8 +133,8 @@ To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
 &lt;p&gt;The &amp;quot;Instrument Chunk&amp;quot; has a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;&#x2F;code&gt;. Future versions might write to that as well.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
 &lt;p&gt;In the &lt;code&gt;rotnot&lt;&#x2F;code&gt; directory, enter:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#fafafa;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;node&lt;&#x2F;span&gt;&lt;span style=&quot;color:#61676c;&quot;&gt; index.js
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;node index.js
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;Rationale&lt;&#x2F;h2&gt;
 &lt;p&gt;I own a &lt;a href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
 </content>
