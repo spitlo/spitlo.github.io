@@ -14,7 +14,7 @@ I use [Hammerspoon](https://www.hammerspoon.org/) together with [Karabiner-Eleme
 
 This repo contains a mix of some of the official Spoons and some of my own or customized Spoons, along with my Hammerspoon config.
 
-This WinWin Spoon included is customized to add a method, `smartStepResize`, that resizes the focused window "smartly" by one step.
+The WinWin Spoon included is customized to add a method, `smartStepResize`, that resizes the focused window "smartly" by one step.
 
 Smartly in this context means:
 
