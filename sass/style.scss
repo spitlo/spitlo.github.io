@@ -211,7 +211,7 @@ footer {
 
   .credits {
     max-width: 70rem;
-    margin: 0 auto 1.2em;
+    margin: 0 auto;
     padding: 1rem;
 
     .hr {
@@ -228,7 +228,9 @@ footer {
     font-size: .9em;
 
     .link {
-      margin-right: 2.4em;
+      display: inline-block;
+      margin: 1em 2.4em 0 0;
+      white-space: nowrap;
     }
 
     .icon {
@@ -352,6 +354,10 @@ pre code {
 @media (max-width: 920px) {
   footer {
     background-position: right -2em bottom -30em;
+
+    .links {
+      text-align: center;
+    }
   }
 }
 
