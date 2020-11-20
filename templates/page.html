@@ -2,33 +2,35 @@
 
 {% block content %}
   <h1>{{ page.title }}</h1>
-  {# <pre>{{ __tera_context }}</pre> #}
-  <div class="meta">
-    {% if page.date %}
-      <time datetime="{{ page.date }}">
-        {{ page.date | date(format="%Y-%m-%d") }}
-      </time>
-    {% endif %}
-    {% if page.word_count %}
-      <span class="words">
-        {{ page.word_count }}
-      </span>
-    {% endif %}
-    {% if page.taxonomies %}
-      {% if page.taxonomies.technologies %}
-        <span class="tech">
-          {% for tech in page.taxonomies.technologies %}
-            <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
-          {% endfor %}
+
+  {% if not page.extra.no_meta %}
+    <div class="meta">
+      {% if page.date %}
+        <time datetime="{{ page.date }}">
+          {{ page.date | date(format="%Y-%m-%d") }}
+        </time>
+      {% endif %}
+      {% if page.word_count %}
+        <span class="words">
+          {{ page.word_count }}
         </span>
       {% endif %}
-    {% endif %}
-    {% if page.extra and page.extra.repo %}
-      <span class="repo">
-        <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
-      </span>
-    {% endif %}
-  </div>
+      {% if page.taxonomies %}
+        {% if page.taxonomies.technologies %}
+          <span class="tech">
+            {% for tech in page.taxonomies.technologies %}
+              <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </span>
+        {% endif %}
+      {% endif %}
+      {% if page.extra and page.extra.repo %}
+        <span class="repo">
+          <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
+        </span>
+      {% endif %}
+    </div>
+  {% endif %}
 
   {{ page.content | safe }}
 

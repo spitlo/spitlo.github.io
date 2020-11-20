@@ -1,5 +1,8 @@
 +++
 title = "Tags"
+
+[extra]
+no_meta = true
 +++
 
 ## Technologies
