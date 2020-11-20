@@ -20,7 +20,7 @@ Use it as a command line tool and it will show you all your messages.
 
 The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in `src/index.js`:
 
-```javascript
+```javascript, hl_lines=1 3 5
 var myConst = { // @John Please use const and not var
   a: 1,
   b: 2 // @Bella Please add a trailing comma here, see our style guide
@@ -54,7 +54,7 @@ Bella and John makes their respective changes and remove the relevant message.
 
 Perhaps one of them adds a new message:
 
-```javascript
+```javascript, hl_lines=6
 const myConst = {
   a: 1,
   b: 2,

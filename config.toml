@@ -2,7 +2,7 @@ build_search_index = true
 compile_sass = true
 generate_feed = true
 highlight_code = true
-highlight_theme = "ayu-light"
+highlight_theme = "zenburn" # "nord" is nice to
 minify_html = true
 title = "Spitlo.com"
 
