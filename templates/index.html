@@ -70,13 +70,15 @@
             {% if ancestors %}
               {% for ancestor in ancestors %}
                 {% set section = get_section(path=ancestor, metadata_only=true) %}
-                <a href="{{ section.permalink }}">{{ section.title }}</a> >
+                <a class="crumb" href="{{ section.permalink }}">{{ section.title }}</a><span class="divider"> ></span>
               {% endfor %}
-              {% if page %}
-                {{ page.title }}
-              {% elif section %}
-                {{ section.title }}
-              {% endif %}
+              <span class="crumb current">
+                {% if page %}
+                  {{ page.title }}
+                {% elif section %}
+                  {{ section.title }}
+                {% endif %}
+              </span>
             {% endif %}
           </nav>
         {% endblock breadcrumbs %}

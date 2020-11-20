@@ -168,6 +168,33 @@ main {
   ul {
     font-size: 1rem;
   }
+
+  .breadcrumbs {
+    a:hover {
+      background-color: $red;
+    }
+
+    .crumb {
+      padding: 2px 8px;
+      background-color: $darkGray;
+      color: $white;
+      text-decoration: none;
+      font-family: "Victor Mono", monospace;
+      border-radius: 3px;
+
+      &.current {
+        border-width: 1px;
+        border-style: solid;
+        background-color: unset;
+        color: $darkGray;
+      }
+    }
+
+    .divider {
+      font-family: "Victor Mono", monospace;
+      font-size: .7em;
+    }
+  }
 }
 
 footer {
