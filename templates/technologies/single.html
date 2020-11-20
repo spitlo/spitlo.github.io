@@ -2,10 +2,12 @@
 
 {% block breadcrumbs%}
   <nav class="breadcrumbs">
-    <a href="/">Home</a>>
-    <a href="/tags/">Tags</a>>
-    <a href="/technologies/">Technology</a>>
-    {{ term.name }}
+    <a class="crumb" href="/">Home</a><span class="divider"> ></span>
+    <a class="crumb" href="/tags/">Tags</a><span class="divider"> ></span>
+    <a class="crumb" href="/technologies/">Technologies</a><span class="divider"> ></span>
+    <span class="crumb current">
+      {{ term.name }}
+    </span>
   </nav>
 {% endblock breadcrumbs%}
 
