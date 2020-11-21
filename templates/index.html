@@ -28,23 +28,25 @@
   {% if current_path and current_path is starting_with("/code") %}
     {% set body_class = "squares" %}
     {% set main_section = "code" %}
-  {% endif %}
-  {% if current_path and current_path is starting_with("/technologies") %}
+  {% elif current_path and current_path is starting_with("/technologies") %}
     {% set body_class = "squares" %}
     {% set main_section = "code" %}
-  {% endif %}
-  {% if current_path and current_path is starting_with("/music") %}
+  {% elif current_path and current_path is starting_with("/music") %}
     {% set body_class = "triangles" %}
     {% set main_section = "music" %}
-  {% endif %}
-  {% if current_path and current_path is starting_with("/tags") %}
+  {% elif current_path and current_path is starting_with("/tags") %}
     {% set main_section = "tags" %}
+  {% elif current_path and current_path == "/" %}
+    {% set main_section = "home" %}
+  {% else %}
+    {# This is a crude work-around for now, revisit #}
+    {% set main_section = "not-found" %}
   {% endif %}
 
   <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
     <div class="contentWrapper">
        <header>
-        <div class="logo">
+        <div class="logo {{ main_section }}">
           <a href="/">spitlo.com</a>
         </div>
 
@@ -56,6 +58,8 @@
             <li><a href="{{ get_url(path="tags") }}" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
           </ul>
         </nav>
+
+        <div class="colors" style="background-image: url(data:image/svg+xml,{{ macros::balls(amount=32, width=680, height=100) | urlencode }});"></div>
       </header>
 
       <main>

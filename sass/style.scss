@@ -138,6 +138,10 @@ header {
       }
     }
   }
+
+  .colors {
+    display: none;
+  }
 }
 
 main {
@@ -334,6 +338,110 @@ pre code {
   &.critical {
     color: $white;
     background-color: $red;
+  }
+}
+
+@media (max-width: 360px) {
+  header .logo {
+    &::before,
+    &::after {
+      content: "" !important;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    display: block;
+
+    .logo {
+      font-size: 2.4em;
+      text-align: center;
+      padding-bottom: 0.2em;
+
+
+      &::before,
+      &::after {
+        color: $dirtyYellow;
+        font-size: .7em;
+      }
+
+      &.home {
+        &::before {
+          content: "127.";
+          margin-right: -6px;
+        }
+
+        &::after {
+          content: ".1";
+          margin-left: -6px;
+        }
+      }
+
+      &.code {
+        &::before {
+          content: "<";
+          margin-right: -6px;
+        }
+
+        &::after {
+          content: "/>";
+          margin-left: -6px;
+        }
+      }
+
+      &.music {
+        &::before {
+          content: "♪";
+          margin-right: -6px;
+          font-size: .7em;
+        }
+
+        &::after {
+          content: "♫";
+          margin-left: -6px;
+          font-size: .7em;
+        }
+      }
+
+      &.tags {
+        &::before {
+          content: "#";
+          margin-right: -6px;
+          font-size: .7em;
+        }
+
+        &::after {
+          content: "";
+          margin-left: -6px;
+          font-size: .7em;
+        }
+      }
+
+      &.not-found {
+        &::before {
+          content: ">>-";
+          margin-right: -6px;
+        }
+
+        &::after {
+          content: "->";
+          margin-left: -6px;
+        }
+      }
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    .colors {
+      display: block;
+      width: 100%;
+      height: 20px;
+    }
   }
 }
 
