@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
+zola check
 zola build --output-dir ./docs
 # TODO Remove this
 echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
