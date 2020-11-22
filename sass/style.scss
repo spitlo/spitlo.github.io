@@ -442,6 +442,7 @@ pre code {
       width: 100%;
       height: 20px;
       transition: background-position-x 200s;
+      transition-delay: 1s;
 
       &:hover {
         background-position-x: -10000rem;
