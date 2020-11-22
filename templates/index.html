@@ -10,6 +10,8 @@
 
     {% if page and page.description %}
       <meta name="description" content="{{ page.description }}">
+    {% elif section and section.description %}
+      <meta name="description" content="{{ section.description }}">
     {% endif %}
 
     <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
