@@ -15,13 +15,13 @@
         _<br>
         {{ project.description }}
         <br>
-        <a class="continue" href="{{ project.permalink }}">Read more</a>
+        <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
     </div>
   {% elif project.content %}
     <div class="excerpt">
       _<br>
       {{ project.content | safe | striptags | truncate(length=100) }}
-      <a class="continue" href="{{ project.permalink }}">Continue</a>
+      <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
     </div>
   {% endif %}
 </li>
