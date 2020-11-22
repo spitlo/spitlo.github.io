@@ -166,10 +166,6 @@ main {
     max-width: 100%;
   }
 
-  ul {
-    font-size: 1rem;
-  }
-
   .breadcrumbs {
     a:hover {
       background-color: $red;
@@ -293,7 +289,7 @@ h3 {
   font-size: 1.4em;
 }
 
-p {
+p, ul {
   font-family: "Victor Mono", monospace;
   font-size: 1.2em;
   max-width: 48rem;
@@ -302,9 +298,11 @@ p {
 }
 
 ul {
-  font-family: "Victor Mono", monospace;
-  font-size: 1.2em;
   list-style-type: square;
+
+  li {
+    margin: .5em 0;
+  }
 }
 
 code, pre {
