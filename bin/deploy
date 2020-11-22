@@ -5,7 +5,7 @@ zola check
 zola build --output-dir ./docs
 # TODO Remove this
 echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
-rm ./docs/sitemap.xml
+rm ./docs/atom.xml
 git add ./docs
 git commit -m "Deploy site $(date '+%Y-%m-%d %H:%M')"
 git push
