@@ -10,7 +10,7 @@ technologies = ["Shell", "Python", "Perl", "JavaScript"]
 repo = "https://github.com/spitlo/dotfiles"
 +++
 
-These are my dotfiles.
+I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server.
 
 Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.
 
