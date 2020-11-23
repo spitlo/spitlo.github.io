@@ -29,3 +29,7 @@ Below are a few of my most used functions/aliases:
   This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.
 
   ![XKCD: Tar](https://imgs.xkcd.com/comics/tar.png)
+
+* [qrab](https://github.com/spitlo/dotfiles/blob/master/.functions#L706-L712)
+
+  This uses [`qrencode`](https://github.com/fukuchi/libqrencode) to create a QR code from whatever is in the clipboard and print it to the terminal. Very helpful when I need to move small pieces of information from my laptop to my phone quickly.
