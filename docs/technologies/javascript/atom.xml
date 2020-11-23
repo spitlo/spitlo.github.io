@@ -130,7 +130,7 @@
 		<updated>2013-07-06T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
 		<id>https://spitlo.com/code/dotfiles/</id>
-		<content type="html">&lt;p&gt;These are my dotfiles.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.&lt;&#x2F;p&gt;
 &lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -144,6 +144,10 @@
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L119-L156&quot;&gt;xt&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;tar.png&quot; alt=&quot;XKCD: Tar&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;master&#x2F;.functions#L706-L712&quot;&gt;qrab&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This uses &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fukuchi&#x2F;libqrencode&quot;&gt;&lt;code&gt;qrencode&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; to create a QR code from whatever is in the clipboard and print it to the terminal. Very helpful when I need to move small pieces of information from my laptop to my phone quickly.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
