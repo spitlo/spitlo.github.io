@@ -7,7 +7,7 @@
   </span>
 {% endmacro icon %}
 
-{% macro balls(amount=3, width=250, height=250) %}
+{% macro shapes(amount=3, width=250, height=250, type="circles") %}
   {% set colors = [
     "#0e070c",
     "#e76f51",
@@ -24,14 +24,26 @@
     <g>
       {% for i in range(start=0, end=amount) %}
         {% set max_size = width / 5|int(default=80) %}
-        {% set radius = get_random(start=30, end=max_size) %}
         {% set color_amount = colors|length %}
         {% set color_index = get_random(start=0, end=color_amount) %}
         {% set color = colors[color_index] %}
-        {% set cx = get_random(start=0, end=width) %}
-        {% set cy = get_random(start=0, end=height) %}
-        <ellipse rx="{{radius}}" ry="{{radius}}" cy="{{cy}}" cx="{{cx}}" fill="{{color}}"/>
+        {% if type == "circles" %}
+          {% set radius = get_random(start=30, end=max_size + 30) %}
+          {% set cx = get_random(start=0, end=width) %}
+          {% set cy = get_random(start=0, end=height) %}
+          <ellipse rx="{{radius}}" ry="{{radius}}" cy="{{cy}}" cx="{{cx}}" fill="{{color}}"/>
+        {% elif type == "squares" %}
+          {% set size = get_random(start=30, end=max_size) * 2 %}
+          {% set x = get_random(start=0, end=width) - size %}
+          {% set y = get_random(start=0, end=height) - size %}
+          <rect width="{{size}}" height="{{size}}" x="{{x}}" y="{{y}}" fill="{{color}}" />
+        {% elif type == "triangles" %}
+          {% set size = get_random(start=30, end=max_size) * 2 %}
+          {% set x = get_random(start=0, end=width) - size %}
+          {% set y = get_random(start=0, end=height) - size %}
+          <polygon points="{{x}} {{y}}, {{x + size * 0.5}} {{y + size}}, {{x - size * 0.5}} {{y + size}}" fill="{{color}}" />
+        {% endif %}
       {% endfor %}
     </g>
   </svg>
-{% endmacro balls %}
+{% endmacro shapes %}
