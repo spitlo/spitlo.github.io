@@ -53,10 +53,13 @@
 		<updated>2014-12-05T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/revercss/" type="text/html"/>
 		<id>https://spitlo.com/code/revercss/</id>
-		<content type="html">&lt;p&gt;Revercss is a declaration-first paradigm for lean, consistent CSS and increased project maintainibility.&lt;&#x2F;p&gt;
-&lt;p&gt;This was made as a joke a many years ago, but I still kinda like the idea.&lt;&#x2F;p&gt;
-&lt;p&gt;I also made &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;gulp-revercss&#x2F;&quot;&gt;a gulp plugin for it&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
-&lt;p&gt;Perhaps I will have to make a syntax highlighting scheme for it as well.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;Revercss was made as a joke many years ago, and &amp;quot;marketed&amp;quot; as&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a declaration-first paradigm for lean, consistent CSS and increased project maintainibility&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;But I still kinda like the idea, especially for small projects.&lt;&#x2F;p&gt;
+&lt;p&gt;I also made &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;gulp-revercss&#x2F;&quot;&gt;a gulp plugin for it&lt;&#x2F;a&gt; when that was still a thing.&lt;&#x2F;p&gt;
+&lt;p&gt;Perhaps I should make a syntax highlighting scheme for it as well.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;syntax&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#syntax&quot; aria-label=&quot;Anchor link for: syntax&quot;&gt;#&lt;&#x2F;a&gt;Syntax&lt;&#x2F;h2&gt;
 &lt;p&gt;In Revercss, style declarations are first-class citizens. Selectors belong to one or many declarations:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
@@ -130,26 +133,30 @@
 		<updated>2013-07-06T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
 		<id>https://spitlo.com/code/dotfiles/</id>
-		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make everything portable.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.&lt;&#x2F;p&gt;
 &lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L438-L484&quot;&gt;cdp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L438-L484&quot;&gt;&lt;code&gt;cdp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;This allows me to jump quickly into project folders. If the project contains an &lt;code&gt;.nvmrc&lt;&#x2F;code&gt; or &lt;code&gt;.python-version&lt;&#x2F;code&gt; file, the correct versions of &lt;code&gt;node&lt;&#x2F;code&gt; and &lt;code&gt;pyhton&lt;&#x2F;code&gt; are set.&lt;&#x2F;p&gt;
 &lt;p&gt;The function uses &lt;code&gt;$PROJECT_FOLDER&lt;&#x2F;code&gt; to know where to look. I set it in a file kept out of source control.&lt;&#x2F;p&gt;
 &lt;p&gt;There is a corresponding &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;6f41ade4e2ff75e7ddb147d727ec8ad53917d87a&#x2F;.bash_completions&#x2F;cdp&quot;&gt;bash completion script&lt;&#x2F;a&gt;, so if I set &lt;code&gt;$LOCAL_PROJECTS&lt;&#x2F;code&gt; to a space separated string of project names, I get tab completion and can navigate EVEN QUICKER!&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L119-L156&quot;&gt;xt&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;xt&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#xt&quot; aria-label=&quot;Anchor link for: xt&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L119-L156&quot;&gt;&lt;code&gt;xt&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;tar.png&quot; alt=&quot;XKCD: Tar&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;master&#x2F;.functions#L706-L712&quot;&gt;qrab&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;qrab&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#qrab&quot; aria-label=&quot;Anchor link for: qrab&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L706-L712&quot;&gt;&lt;code&gt;qrab&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;This uses &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fukuchi&#x2F;libqrencode&quot;&gt;&lt;code&gt;qrencode&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; to create a QR code from whatever is in the clipboard and print it to the terminal. Very helpful when I need to move small pieces of information from my laptop to my phone quickly.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;weather&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#weather&quot; aria-label=&quot;Anchor link for: weather&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L771-L773&quot;&gt;&lt;code&gt;weather&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I can never remember where to &lt;code&gt;curl&lt;&#x2F;code&gt; the weather from and what query strings to use, so now I just run &lt;code&gt;weather london&lt;&#x2F;code&gt; to get the London weather in a compact form.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dict&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#dict&quot; aria-label=&quot;Anchor link for: dict&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L527-L531&quot;&gt;&lt;code&gt;dict&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Basically the same as &lt;code&gt;weather&lt;&#x2F;code&gt; but for dictionary definitions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;squash&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#squash&quot; aria-label=&quot;Anchor link for: squash&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;bin&#x2F;squash&quot;&gt;&lt;code&gt;squash&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my harddrive. But they don’t need to look pretty. So every once in a while I run:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;find .&#x2F;media&#x2F;images -xdev -name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d6d680;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d68686;&quot;&gt;*.jpg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d6d680;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt; -mtime +360 -execdir squash {} &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#ff8080;&quot;&gt;\;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;code&gt;squash&lt;&#x2F;code&gt; uses ImageMagicks’s &lt;code&gt;mogrify&lt;&#x2F;code&gt; to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable &lt;code&gt;MINIMUM_SIZE&lt;&#x2F;code&gt; set, to only affect images of a significant size.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;update-tp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update-tp&quot; aria-label=&quot;Anchor link for: update-tp&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;bin&#x2F;update-tp&quot;&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt; helps me to update a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-packages&quot;&gt;Termux package&lt;&#x2F;a&gt; in my fork, than create a consistently worded commit so I can create a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 </feed>
