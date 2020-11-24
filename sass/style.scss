@@ -332,6 +332,25 @@ blockquote {
   padding-left: 1em;
 }
 
+details.toc {
+  font-family: "Victor Mono", monospace;
+  font-size: 1em;
+  font-weight: 300;
+
+  summary {
+    padding: 4px 8px;
+
+    &:focus {
+      outline: 1px solid $lightSeagreen;
+    }
+
+    &::marker {
+      // This doesn’t work in Chrome (Brave), but it shows up in Elements
+      color: $red;
+    }
+  }
+}
+
 .alert {
   font-family: "Victor Mono", monospace;
   font-size: 1.2em;
