@@ -10,9 +10,9 @@ technologies = ["Shell", "Python", "Perl", "JavaScript"]
 repo = "https://github.com/spitlo/dotfiles"
 +++
 
-I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make everything portable.
+I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.
 
-Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.
+Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.
 
 Below are a few of my most used functions/aliases:
 
@@ -54,4 +54,4 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
 
 ## [`update-tp`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/bin/update-tp)
 
-`update-tp` helps me to update a [Termux package](https://github.com/termux/termux-packages) in my fork, than create a consistently worded commit so I can create a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.
+`update-tp` helps me to update a [Termux package](https://github.com/termux/termux-packages) in my fork, then create a consistently worded commit so I can do a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.
