@@ -10,11 +10,13 @@ technologies = ["JavaScript"]
 repo = "https://github.com/spitlo/revercss"
 +++
 
-Revercss is a declaration-first paradigm for lean, consistent CSS and increased project maintainibility.
+Revercss was made as a joke many years ago, and "marketed" as
 
-This was made as a joke a many years ago, but I still kinda like the idea.
+> a declaration-first paradigm for lean, consistent CSS and increased project maintainibility
 
-I also made [a gulp plugin for it](https://github.com/spitlo/gulp-revercss/)!
+But I still kinda like the idea!
+
+I also made [a gulp plugin for it](https://github.com/spitlo/gulp-revercss/).
 
 Perhaps I will have to make a syntax highlighting scheme for it as well.
 
