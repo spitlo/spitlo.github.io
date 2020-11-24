@@ -339,6 +339,7 @@ details.toc {
 
   summary {
     padding: 4px 8px;
+    cursor: pointer;
 
     &:focus {
       outline: 1px solid $lightSeagreen;
