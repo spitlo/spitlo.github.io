@@ -14,11 +14,11 @@ Revercss was made as a joke many years ago, and "marketed" as
 
 > a declaration-first paradigm for lean, consistent CSS and increased project maintainibility
 
-But I still kinda like the idea!
+But I still kinda like the idea, especially for small projects.
 
-I also made [a gulp plugin for it](https://github.com/spitlo/gulp-revercss/).
+I also made [a gulp plugin for it](https://github.com/spitlo/gulp-revercss/) when that was still a thing.
 
-Perhaps I will have to make a syntax highlighting scheme for it as well.
+Perhaps I should make a syntax highlighting scheme for it as well.
 
 ## Syntax
 
