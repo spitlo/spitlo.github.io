@@ -46,6 +46,7 @@
   {% endif %}
 
   <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
+    <a id="top" />
     <div class="contentWrapper">
        <header>
         <div class="logo {{ main_section }}">
@@ -125,6 +126,9 @@
           {% endif %}
           <span class="link">
             {{ macros::icon(name="creative-commons", size="small") }}<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
+          </span>
+          <span class="link">
+            <a href="#top">Back to top</a>
           </span>
         </section>
       </footer>
