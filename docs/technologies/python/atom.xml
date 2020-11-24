@@ -12,8 +12,8 @@
 		<updated>2013-07-06T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
 		<id>https://spitlo.com/code/dotfiles/</id>
-		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make everything portable.&lt;&#x2F;p&gt;
-&lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
+&lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;
 &lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L438-L484&quot;&gt;&lt;code&gt;cdp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;This allows me to jump quickly into project folders. If the project contains an &lt;code&gt;.nvmrc&lt;&#x2F;code&gt; or &lt;code&gt;.python-version&lt;&#x2F;code&gt; file, the correct versions of &lt;code&gt;node&lt;&#x2F;code&gt; and &lt;code&gt;pyhton&lt;&#x2F;code&gt; are set.&lt;&#x2F;p&gt;
@@ -35,7 +35,7 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;code&gt;squash&lt;&#x2F;code&gt; uses ImageMagicks’s &lt;code&gt;mogrify&lt;&#x2F;code&gt; to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable &lt;code&gt;MINIMUM_SIZE&lt;&#x2F;code&gt; set, to only affect images of a significant size.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;update-tp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update-tp&quot; aria-label=&quot;Anchor link for: update-tp&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;bin&#x2F;update-tp&quot;&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt; helps me to update a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-packages&quot;&gt;Termux package&lt;&#x2F;a&gt; in my fork, than create a consistently worded commit so I can create a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt; helps me to update a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-packages&quot;&gt;Termux package&lt;&#x2F;a&gt; in my fork, then create a consistently worded commit so I can do a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 </feed>
