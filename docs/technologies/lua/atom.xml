@@ -24,6 +24,7 @@
 		<id>https://spitlo.com/code/spoons/</id>
 		<content type="html">&lt;p&gt;I use &lt;a href=&quot;https:&#x2F;&#x2F;www.hammerspoon.org&#x2F;&quot;&gt;Hammerspoon&lt;&#x2F;a&gt; together with &lt;a href=&quot;https:&#x2F;&#x2F;karabiner-elements.pqrs.org&#x2F;&quot;&gt;Karabiner-Elements&lt;&#x2F;a&gt; on macOS to set up keyboard shortcuts and window management.&lt;&#x2F;p&gt;
 &lt;p&gt;This repo contains a mix of some of the official Spoons and some of my own or customized Spoons, along with my Hammerspoon config.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;spoons&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#spoons&quot; aria-label=&quot;Anchor link for: spoons&quot;&gt;#&lt;&#x2F;a&gt;Spoons&lt;&#x2F;h2&gt;
 &lt;p&gt;The WinWin Spoon included is customized to add a method, &lt;code&gt;smartStepResize&lt;&#x2F;code&gt;, that resizes the focused window &amp;quot;smartly&amp;quot; by one step.&lt;&#x2F;p&gt;
 &lt;p&gt;Smartly in this context means:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -33,15 +34,33 @@
 &lt;li&gt;When a window is full width or full height, it will shrink&#x2F;expand in the &#x27;direction&#x27; direction.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt; +------------------+------------------+
- |   +-------------------+             |
- |   |              |    |             |
- |   |              |  &amp;lt; | &amp;gt;           |
- +-------------------------------------+
- |   |         &#x2F;\   |    |             |
- |   +-------------------+             |
- |             \&#x2F;   |                  |
- +------------------+------------------+
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  +------------------+------------------+
+  |   +-------------------+             |
+  |   |              |    |             |
+  |   |              |  &amp;lt; | &amp;gt;           |
+  +-------------------------------------+
+  |   |         &#x2F;\   |    |             |
+  |   +-------------------+             |
+  |             \&#x2F;   |                  |
+  +------------------+------------------+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;There is also a Spoon for quickly finding glyphs from the &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Miscellaneous_Symbols&quot;&gt;Miscellaneous Symbols&lt;&#x2F;a&gt;&amp;quot; and &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dingbat#Dingbats_Unicode_block&quot;&gt;Dingbats&lt;&#x2F;a&gt;&amp;quot; unicode blocks. I have it mapped to Hyper+s.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;config&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#config&quot; aria-label=&quot;Anchor link for: config&quot;&gt;#&lt;&#x2F;a&gt;Config&lt;&#x2F;h2&gt;
+&lt;p&gt;My Hammerspoon hyper key is &lt;code&gt;shift&lt;&#x2F;code&gt; + &lt;code&gt;ctrl&lt;&#x2F;code&gt; + &lt;code&gt;alt&lt;&#x2F;code&gt; + &lt;code&gt;cmd&lt;&#x2F;code&gt;. I use Karabiner to map &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; to that. The stuff I use most is probably the WinWin Spoon mentioned above. It uses a 2x2 grid, and I have mapped &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 1-9&lt;&#x2F;code&gt; to the different screens locations. So if I press &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 7&lt;&#x2F;code&gt;, the active window resizes to the top left corner of the screen, A1 (see below). The keys in between the corner keys resizes the window to fill the corresponding row. So &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 4&lt;&#x2F;code&gt; resizes the window to A1 and B1. &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 5&lt;&#x2F;code&gt; centers the window on the screen but does not maximize it.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;           1                  2
+  +------------------+------------------+
+  |                  |                  |
+A |                  |                  |
+  |                  |                  |
+  +-------------------------------------+
+  |                  |                  |
+B |                  |                  |
+  |                  |                  |
+  +------------------+------------------+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;On my laptop, I use Karabiner to map &lt;code&gt;Fn&lt;&#x2F;code&gt; + &lt;code&gt;Q&lt;&#x2F;code&gt; - &lt;code&gt;W&lt;&#x2F;code&gt; - &lt;code&gt;E&lt;&#x2F;code&gt;, &lt;code&gt;A&lt;&#x2F;code&gt; - &lt;code&gt;S&lt;&#x2F;code&gt; - &lt;code&gt;D&lt;&#x2F;code&gt; and &lt;code&gt;Z&lt;&#x2F;code&gt; - &lt;code&gt;X&lt;&#x2F;code&gt; - &lt;code&gt;C&lt;&#x2F;code&gt; to the keypad numbers to have the same functionality.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Caps Lock&lt;&#x2F;code&gt;+ &lt;code&gt;i&lt;&#x2F;code&gt;, &lt;code&gt;j&lt;&#x2F;code&gt;, &lt;code&gt;k&lt;&#x2F;code&gt; and &lt;code&gt;l&lt;&#x2F;code&gt; moves windows around. &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Arrow up&#x2F;down&#x2F;left&#x2F;right&lt;&#x2F;code&gt; resizes window with the smart resizing described above. &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;home&lt;&#x2F;code&gt; and &lt;code&gt;end&lt;&#x2F;code&gt; moves windows between screens.&lt;&#x2F;p&gt;
+</content>
 	</entry>
 </feed>
