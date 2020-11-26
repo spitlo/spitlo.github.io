@@ -14,7 +14,34 @@ I use [Hammerspoon](https://www.hammerspoon.org/) together with [Karabiner-Eleme
 
 This repo contains a mix of some of the official Spoons and some of my own or customized Spoons, along with my Hammerspoon config.
 
+## Config
+
+My Hammerspoon hyper key is `Shift` + `Ctrl` + `Alt` + `Cmd`. I use Karabiner to map `Caps Lock` to that. The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped `Hyper` + `Keypad 1-9` to the different screens locations. So if I press `Caps Lock` + `Keypad 7`, the active window resizes to the top left corner of the screen, A1 (see below). The keys in between the corner keys resizes the window to fill the corresponding row. So `Caps Lock` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Caps Lock` + `Keypad 5` centers the window on the screen but does not maximize it.
+
+```text
+           1                  2
+  +------------------+------------------+
+  |                  |                  |
+A |                  |                  |
+  |                  |                  |
+  +-------------------------------------+
+  |                  |                  |
+B |                  |                  |
+  |                  |                  |
+  +------------------+------------------+
+```
+
+On my laptop, I use Karabiner to map `Fn` + `Q/W/E`, `A/S/D` and `Z/X/C` to the keypad numbers to have the same functionality.
+
+`Hyper`+ `I`, `J`, `K` and `L` moves windows around. `Hyper` + `Arrow Up/Down/Left/Right` resizes window with the smart resizing described below. `Hyper` + `Home/End` moves windows between screens.
+
+`Alt` + `Tab` activates the next window of the current application, which is good for jumping between projects in VS Code for example.
+
+`Hyper` + `N` opens [nvAlt](https://brettterpstra.com/projects/nvalt/).
+
 ## Spoons
+
+### WinWin
 
 The WinWin Spoon included is customized to add a method, `smartStepResize`, that resizes the focused window "smartly" by one step.
 
@@ -37,25 +64,14 @@ Smartly in this context means:
   +------------------+------------------+
 ```
 
-There is also a Spoon for quickly finding glyphs from the "[Miscellaneous Symbols](https://en.wikipedia.org/wiki/Miscellaneous_Symbols)" and "[Dingbats](https://en.wikipedia.org/wiki/Dingbat#Dingbats_Unicode_block)" unicode blocks. I have it mapped to Hyper+s.
+### Symbats
 
-## Config
+There is also a Spoon for quickly finding glyphs from the "[Miscellaneous Symbols](https://en.wikipedia.org/wiki/Miscellaneous_Symbols)" and "[Dingbats](https://en.wikipedia.org/wiki/Dingbat#Dingbats_Unicode_block)" unicode blocks. I have it mapped to `Hyper` + `S`. When triggered, it shows a searchable list of symbols. When a symbol is selected, it gets copied to the clipboard.
 
-My Hammerspoon hyper key is `shift` + `ctrl` + `alt` + `cmd`. I use Karabiner to map `Caps Lock` to that. The stuff I use most is probably the WinWin Spoon mentioned above. It uses a 2x2 grid, and I have mapped `Hyper` + `Keypad 1-9` to the different screens locations. So if I press `Caps Lock` + `Keypad 7`, the active window resizes to the top left corner of the screen, A1 (see below). The keys in between the corner keys resizes the window to fill the corresponding row. So `Caps Lock` + `Keypad 4` resizes the window to A1 and B1. `Caps Lock` + `Keypad 5` centers the window on the screen but does not maximize it.
+### HttpStatus
 
-```text
-           1                  2
-  +------------------+------------------+
-  |                  |                  |
-A |                  |                  |
-  |                  |                  |
-  +-------------------------------------+
-  |                  |                  |
-B |                  |                  |
-  |                  |                  |
-  +------------------+------------------+
-```
+`Hyper` + `H` triggers something similar to Symbats but for HTTP response codes.
 
-On my laptop, I use Karabiner to map `Fn` + `Q` - `W` - `E`, `A` - `S` - `D` and `Z` - `X` - `C` to the keypad numbers to have the same functionality.
+### ClipboardTool
 
-`Caps Lock`+ `i`, `j`, `k` and `l` moves windows around. `Caps Lock` + `Arrow up/down/left/right` resizes window with the smart resizing described above. `Caps Lock` + `home` and `end` moves windows between screens.
+`Hyper` + `C` triggers something similar to Symbats and HttpStatus but for the clipboard.
