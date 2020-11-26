@@ -37,7 +37,7 @@ The keys in between the corner keys resizes the window to fill the corresponding
 
 On my laptop, I use Karabiner to map `Fn` + `Q/W/E`, `A/S/D` and `Z/X/C` to the keypad numbers to have the same functionality.
 
-`Hyper` + `I`, `J`, `K` and `L` moves windows around (Sorry, vim lovers). `Hyper` + `Arrow Up/Down/Left/Right` resizes window with the smart resizing described below. `Hyper` + `Home/End` moves windows between monitors.
+`Hyper` + `I`, `J`, `K` and `L` moves windows around (Sorry, vim lovers). `Hyper` + `Arrow Up/Down/Left/Right` resizes window with the smart resizing described below. `Hyper` + `Home/End` moves windows between monitors and `Hyper` + `M` maximizes the current window.
 
 `Alt` + `Tab` activates the next window of the current application, which is good for jumping between projects in VS Code for example.
 
