@@ -1,0 +1,95 @@
+@import "constants";
+
+@keyframes linkArrows {
+  25% {
+    content: "->";
+  }
+  50% {
+    content: "-->";
+  }
+  75% {
+    content: "---";
+  }
+  100% {
+    content: "- -";
+  }
+}
+
+.project.code,
+.term.code {
+  .technologies {
+    margin-bottom: .6em;
+
+    span.label {
+      color: $orange;
+      font-family: "Gangster Grotesk";
+      font-weight: bold;
+      font-size: .8em;
+      text-transform: uppercase;
+      vertical-align: top;
+    }
+    svg {
+      fill: $orange;
+    }
+  }
+
+  .excerpt {
+    a.continue {
+      font-size: .6em;
+      text-transform: uppercase;
+
+      &:after {
+        content: ">";
+        display: inline-block;
+        margin-left: 2px;
+      }
+      &:hover {
+        &:after {
+          animation: linkArrows .5s linear infinite;
+        }
+      }
+    }
+  }
+}
+
+.meta {
+  font-family: "Victor Mono", monospace;
+  font-size: .8em;
+  margin-left: -3px;
+  margin-bottom: 2.8em;
+  max-width: 55rem;
+
+  time, .words, .tech, .repo {
+    white-space: nowrap;
+
+    &::before {
+      color: $blue;
+      padding: 0 3px;
+      text-transform: uppercase;
+    }
+  }
+
+  time {
+    &::before {
+      content: "| Date:";
+    }
+  }
+
+  .words {
+    &::before {
+      content: "| Words:";
+    }
+  }
+
+  .tech {
+    &::before {
+      content: "| Tech:";
+    }
+  }
+
+  .repo {
+    &::before {
+      content: "| Repo:";
+    }
+  }
+}

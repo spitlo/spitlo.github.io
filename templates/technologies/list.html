@@ -1,0 +1,29 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+
+{% block breadcrumbs %}
+  <nav class="breadcrumbs">
+    <a class="crumb" href="/">Home</a><span class="divider"> ></span>
+    <a class="crumb" href="/tags/">Tags</a><span class="divider"> ></span>
+    <span class="crumb current">
+      Technologies
+    </span>
+  </nav>
+{% endblock breadcrumbs %}
+
+{% block content %}
+  <h1>Tags: Tech</h1>
+
+  <section class="taxonomy technologies">
+    {% for term in terms %}
+      <article>
+        {{ macros::icon(name=term.slug, size="huge", colored=true) }}
+        <div class="content">
+          <h2><a href="{{ term.permalink }}">{{ term.name }}</a></h2>
+
+          <h3>{{ term.pages|length }} project(s).</h3>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+{% endblock content %}

@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <h1>{{ page.title }}</h1>
+
+  {% if not page.extra.no_meta %}
+    <div class="meta">
+      {% if page.date %}
+        <time datetime="{{ page.date }}">
+          {{ page.date | date(format="%Y-%m-%d") }}
+        </time>
+      {% endif %}
+      {% if page.word_count %}
+        <span class="words">
+          {{ page.word_count }}
+        </span>
+      {% endif %}
+      {% if page.taxonomies %}
+        {% if page.taxonomies.technologies %}
+          <span class="tech">
+            {% for tech in page.taxonomies.technologies %}
+              <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </span>
+        {% endif %}
+      {% endif %}
+      {% if page.extra and page.extra.repo %}
+        <span class="repo">
+          <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
+        </span>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if page.word_count > 500 %}
+    <details class="toc">
+      <summary>Table of contents</summary>
+      <ul>
+        {% for h1 in page.toc %}
+          <li>
+            <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
+            {% if h1.children %}
+              <ul>
+                {% for h2 in h1.children %}
+                  <li>
+                    <a href="{{h2.permalink | safe}}">{{ h2.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endif %}
+
+  {{ page.content | safe }}
+
+  {% if page.earlier %}
+    Previous article: {{ page.earlier.permalink }}
+  {% endif %}
+  {% if page.later %}
+    Next article: {{ page.later.permalink }}
+  {% endif %}
+{% endblock content %}

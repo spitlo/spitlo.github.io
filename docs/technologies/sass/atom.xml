@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Sass</title>
+	<link href="https://spitlo.com/technologies/sass/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-13T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/sass/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Spitlo.com</title>
+		<published>2020-11-13T00:00:00+00:00</published>
+		<updated>2020-11-13T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+		<id>https://spitlo.com/code/spitlo-com/</id>
+		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and front-end skills, having done mostly back-end or React work the last few years.&lt;&#x2F;p&gt;
+&lt;p&gt;I also wanted to try out &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
+&lt;p&gt;Lastly, I guess it’s a nice low-stakes place to try stuff out and have fun, for example:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub hosting with a custom domain name&lt;&#x2F;li&gt;
+&lt;li&gt;For now, I deploy changes with a script in the &lt;code&gt;bin&#x2F;&lt;&#x2F;code&gt; directory, but I want to try out GitHub actions, and this site would be a good candidate for automatic deploys&lt;&#x2F;li&gt;
+&lt;li&gt;Handcoded SVGs and programatically generated SVGs&lt;&#x2F;li&gt;
+&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
+&lt;li&gt;Using AVIF&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Shopify Labels</title>
+		<published>2020-06-25T00:00:00+00:00</published>
+		<updated>2020-06-25T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
+		<id>https://spitlo.com/code/shopify-labels/</id>
+		<content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
+&lt;p&gt;No files are sent to the server, this is just a one page html&#x2F;javascript app.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s available online at &lt;a href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&quot;&gt;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

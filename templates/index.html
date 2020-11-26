@@ -1,0 +1,138 @@
+{% import "macros.html" as macros %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% if page and page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% elif section and section.description %}
+      <meta name="description" content="{{ section.description }}">
+    {% endif %}
+
+    <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
+
+    {% if config.generate_feed %}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endif %}
+
+    <link href="{{ get_url(path="/style.css", cachebust=true) | safe }}" rel="stylesheet">
+
+    {% block extra_head %}{% endblock extra_head %}
+  </head>
+
+  {% set body_class = "circles" %}
+  {% set main_section = "home" %}
+  {% if current_path and current_path is starting_with("/code") %}
+    {% set body_class = "squares" %}
+    {% set main_section = "code" %}
+  {% elif current_path and current_path is starting_with("/technologies") %}
+    {% set body_class = "squares" %}
+    {% set main_section = "code" %}
+  {% elif current_path and current_path is starting_with("/music") %}
+    {% set body_class = "triangles" %}
+    {% set main_section = "music" %}
+  {% elif current_path and current_path is starting_with("/tags") %}
+    {% set main_section = "tags" %}
+  {% elif current_path and current_path == "/" %}
+    {% set main_section = "home" %}
+  {% else %}
+    {# This is a crude work-around for now, revisit #}
+    {% set main_section = "not-found" %}
+  {% endif %}
+
+  <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
+    <a id="top" />
+    <div class="contentWrapper">
+       <header>
+        <div class="logo {{ main_section }}">
+          <a href="/">spitlo.com</a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="{{ get_url(path="/") }}" class="{% if main_section == "home" %}active{% endif %}">home</a></li>
+            <li><a href="{{ get_url(path="code") }}" class="{% if main_section == "code" %}active{% endif %}">code</a></li>
+            <li><a href="{{ get_url(path="music") }}" class="{% if main_section == "music" %}active{% endif %}">music</a></li>
+            <li><a href="{{ get_url(path="tags") }}" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
+          </ul>
+        </nav>
+
+        <div class="colors" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=24, width=680, height=100, type=body_class) | urlencode }});"></div>
+      </header>
+
+      <main>
+        {% block breadcrumbs %}
+          <nav class="breadcrumbs">
+            {% if page and page.ancestors %}
+              {% set ancestors = page.ancestors %}
+            {% elif section and section.ancestors %}
+              {% set ancestors = section.ancestors %}
+            {% endif %}
+
+            {% if ancestors %}
+              {% for ancestor in ancestors %}
+                {% set section = get_section(path=ancestor, metadata_only=true) %}
+                <a class="crumb" href="{{ section.permalink }}">{{ section.title }}</a><span class="divider"> ></span>
+              {% endfor %}
+              <span class="crumb current">
+                {% if page %}
+                  {{ page.title }}
+                {% elif section %}
+                  {{ section.title }}
+                {% endif %}
+              </span>
+            {% endif %}
+          </nav>
+        {% endblock breadcrumbs %}
+
+        {% block content %}
+          <h1>This is a web page</h1>
+          <h2>It has text on it</h2>
+          <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used before final copy is available, but it may also be used to temporarily replace copy in a process called greeking, which allows designers to consider form without the meaning of the text influencing the design.</p>
+
+          <h2>Header in text</h2>
+          <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.</p>
+
+
+          <p>Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors including Pages and Microsoft Word have since adopted Lorem ipsum as well.</p>
+        {% endblock content %}
+      </main>
+
+      <footer>
+        <section class="credits">
+          Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
+          Fonts: <a href="https://www.freshfonts.io/" target="_blank" rel="noopener noreferrer">Gangster Grotesk</a> by <a href="http://www.adrienmidzic.fr/">Adrien Midzic</a> and <a href="https://rubjo.github.io/victor-mono/" target="_blank" rel="noopener noreferrer">Victor Mono</a> by <a href="https://github.com/rubjo">Rune B</a>
+          <div class="hr" />
+        </section>
+        <section class="links">
+          <span class="link">
+            {{ macros::icon(name="github", size="small") }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
+          </span>
+          <span class="link">
+            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/XXX000" target="_blank" rel="noopener noreferrer">XXX000</a>
+          </span>
+          <span class="link">
+            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer">__@spitlo.com</a>
+          </span>
+          {% if config.generate_feed %}
+            <span class="link">
+              {{ macros::icon(name="rss", size="small") }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">/atom.xml</a>
+            </span>
+          {% endif %}
+          <span class="link">
+            {{ macros::icon(name="creative-commons", size="small") }}<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
+          </span>
+          <span class="link">
+            <a href="#top">Back to top</a>
+          </span>
+        </section>
+      </footer>
+      <div class="heel" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});"></div>
+    </div>
+  </body>
+</html>

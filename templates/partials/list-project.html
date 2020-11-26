@@ -1,0 +1,27 @@
+{% import "macros.html" as macros %}
+
+<li>
+  <a href="{{ project.permalink }}"><h2>{{ project.title }}</h2></a>
+  {% if project.taxonomies.technologies %}
+    <div class="technologies">
+      <span class="label">Tech:</span>
+      {% for tech in project.taxonomies.technologies %}
+        {{ macros::icon(name=tech, size="small") }}
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if project.description %}
+      <div class="excerpt">
+        _<br>
+        {{ project.description }}
+        <br>
+        <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
+    </div>
+  {% elif project.content %}
+    <div class="excerpt">
+      _<br>
+      {{ project.content | safe | striptags | truncate(length=100) }}
+      <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
+    </div>
+  {% endif %}
+</li>

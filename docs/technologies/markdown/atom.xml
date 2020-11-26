@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Markdown</title>
+	<link href="https://spitlo.com/technologies/markdown/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-13T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/markdown/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Spitlo.com</title>
+		<published>2020-11-13T00:00:00+00:00</published>
+		<updated>2020-11-13T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+		<id>https://spitlo.com/code/spitlo-com/</id>
+		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and front-end skills, having done mostly back-end or React work the last few years.&lt;&#x2F;p&gt;
+&lt;p&gt;I also wanted to try out &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
+&lt;p&gt;Lastly, I guess it’s a nice low-stakes place to try stuff out and have fun, for example:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub hosting with a custom domain name&lt;&#x2F;li&gt;
+&lt;li&gt;For now, I deploy changes with a script in the &lt;code&gt;bin&#x2F;&lt;&#x2F;code&gt; directory, but I want to try out GitHub actions, and this site would be a good candidate for automatic deploys&lt;&#x2F;li&gt;
+&lt;li&gt;Handcoded SVGs and programatically generated SVGs&lt;&#x2F;li&gt;
+&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
+&lt;li&gt;Using AVIF&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Case</title>
+		<published>2020-10-10T00:00:00+00:00</published>
+		<updated>2020-10-10T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/case/" type="text/html"/>
+		<id>https://spitlo.com/code/case/</id>
+		<content type="html">&lt;p&gt;Case is a plugin for the &lt;a href=&quot;https:&#x2F;&#x2F;micro-editor.github.io&#x2F;&quot;&gt;&lt;code&gt;micro&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; editor which I’m trying to switch to from &lt;code&gt;nano&lt;&#x2F;code&gt; for quick edits. It converts text between different case styles, like kebab case or pascal case.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s pretty basic at the moment, and only supports single cursors.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

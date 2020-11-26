@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  },
+  "emmet.includeLanguages": {
+    "tera": "html",
+  },
+  "files.autoSave": "off",
+  "files.associations": {
+    "*.html": "tera",
+  },
+  "files.exclude": {
+    "docs": true,
+  },
+  "markdownlint.config": {
+    "MD033": false,
+  }
+}

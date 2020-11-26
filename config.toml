@@ -1,0 +1,18 @@
+build_search_index = true
+compile_sass = true
+default_language = "en"
+generate_feed = true
+highlight_code = true
+highlight_theme = "zenburn" # "nord" is nice to
+minify_html = true
+
+title = "Spitlo.com"
+base_url = "https://spitlo.com"
+taxonomies = [
+  { name = "technologies", feed = true },
+]
+
+[link_checker]
+skip_anchor_prefixes = [
+  "https://github.com",
+]
