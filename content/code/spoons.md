@@ -16,13 +16,15 @@ This repo contains a mix of some of the official Spoons and some of my own or cu
 
 ## Config
 
-My Hammerspoon hyper key is `Shift` + `Ctrl` + `Alt` + `Cmd`. I use Karabiner to map `Caps Lock` to that. The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped `Hyper` + `Keypad 1-9` to the different screens locations. So if I press `Caps Lock` + `Keypad 7`, the active window resizes to the top left corner of the screen, A1 (see below). The keys in between the corner keys resizes the window to fill the corresponding row. So `Caps Lock` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Caps Lock` + `Keypad 5` centers the window on the screen but does not maximize it.
+My Hammerspoon hyper key is `Shift` + `Ctrl` + `Alt` + `Cmd`. I use Karabiner to map `Caps Lock` to that.
+
+The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped `Hyper` + `Keypad 1-9` to the different screens locations. So if I press `Caps Lock` + `Keypad 7`, the active window resizes to the top left corner of the screen, let’s call it A1:
 
 ```text
            1                  2
   +------------------+------------------+
   |                  |                  |
-A |                  |                  |
+A |        A1        |                  |
   |                  |                  |
   +-------------------------------------+
   |                  |                  |
@@ -31,9 +33,11 @@ B |                  |                  |
   +------------------+------------------+
 ```
 
+The keys in between the corner keys resizes the window to fill the corresponding row. So `Caps Lock` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Caps Lock` + `Keypad 5` centers the window on the screen but does not maximize it.
+
 On my laptop, I use Karabiner to map `Fn` + `Q/W/E`, `A/S/D` and `Z/X/C` to the keypad numbers to have the same functionality.
 
-`Hyper`+ `I`, `J`, `K` and `L` moves windows around. `Hyper` + `Arrow Up/Down/Left/Right` resizes window with the smart resizing described below. `Hyper` + `Home/End` moves windows between screens.
+`Hyper` + `I`, `J`, `K` and `L` moves windows around (Sorry, vim lovers). `Hyper` + `Arrow Up/Down/Left/Right` resizes window with the smart resizing described below. `Hyper` + `Home/End` moves windows between monitors.
 
 `Alt` + `Tab` activates the next window of the current application, which is good for jumping between projects in VS Code for example.
 
