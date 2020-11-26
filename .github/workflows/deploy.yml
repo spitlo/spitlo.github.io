@@ -12,9 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: shalzz/zola-deploy-action
-      uses: shalzz/zola-deploy-action@master
+    - name: spitlo/zola-deploy-action
+      uses: spitlo/zola-deploy-action@master
       env:
         PAGES_BRANCH: master
-        BUILD_FLAGS: --output-dir ./docs
         TOKEN: ${{ secrets.TOKEN }}
