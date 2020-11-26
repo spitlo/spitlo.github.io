@@ -1,0 +1,15 @@
+name: Deploy site
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    name: spitlo/zola-deploy-action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: spitlo/zola-deploy-action
+      uses: spitlo/zola-deploy-action@master
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
