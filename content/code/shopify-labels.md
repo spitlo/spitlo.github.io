@@ -1,6 +1,6 @@
 +++
 title = "Shopify Labels"
-description = "Create printable address labels for Shopify orders"
+description = "Make printable address labels for Shopify orders"
 date = 2020-06-25
 
 [taxonomies]
