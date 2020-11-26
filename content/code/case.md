@@ -1,6 +1,6 @@
 +++
 title = "Case"
-description = "A plugin for the micro editor to switch between a set of case styles (kebab, pascal, constant etc)"
+description = "A case-switching plugin for the micro editor"
 date = 2020-10-10
 
 [taxonomies]

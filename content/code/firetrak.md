@@ -1,6 +1,6 @@
 +++
 title = "Firetrak"
-description = "Develop locally with real https certificates using Traefik and Let’s Encrypt"
+description = "Develop locally with real https certificates"
 date = 2020-11-01
 
 [taxonomies]

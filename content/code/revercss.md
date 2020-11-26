@@ -1,6 +1,6 @@
 +++
 title = "Revercss"
-description = "Declaration-first paradigm for lean, consistent CSS and increased project maintainibility."
+description = "Declaration-first CSS paradigm"
 date = 2014-12-05
 
 [taxonomies]
