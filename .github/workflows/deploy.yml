@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: spitlo/zola-deploy-action@master
+      - name: spitlo/zola-deploy-action
         uses: spitlo/zola-deploy-action@master
         env:
           TOKEN: ${{ secrets.TOKEN }}
