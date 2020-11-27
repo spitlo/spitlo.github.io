@@ -11,4 +11,5 @@ jobs:
       - name: spitlo/zola-deploy-action
         uses: spitlo/zola-deploy-action@master
         env:
+          SITE_URL: "https://spitlo.com"
           TOKEN: ${{ secrets.TOKEN }}
