@@ -14,6 +14,7 @@
 		<id>https://spitlo.com/code/zola-deploy/</id>
 		<content type="html">&lt;p&gt;I prefer to keep my GitHub Pages files in a &lt;code&gt;docs&lt;&#x2F;code&gt; folder, and not in a separate branch.&lt;&#x2F;p&gt;
 &lt;p&gt;Both available actions for Zola deploys in the marketplace used the branch method, so I forked the simplest of them and made it even simpler.&lt;&#x2F;p&gt;
+&lt;p&gt;This action could be used on &lt;code&gt;push&lt;&#x2F;code&gt; for automatic deploys, but I use with the event &lt;code&gt;workflow_dispatch&lt;&#x2F;code&gt; to be able to trigger a deploy from inside GitHub.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 </feed>
