@@ -47,6 +47,10 @@
         <lastmod>2020-02-12</lastmod>
     </url>
     <url>
+        <loc>https://spitlo.com/code/zola-deploy/</loc>
+        <lastmod>2020-11-26</lastmod>
+    </url>
+    <url>
         <loc>https://spitlo.com/music/</loc>
     </url>
     <url>
@@ -57,6 +61,9 @@
     </url>
     <url>
         <loc>https://spitlo.com/technologies/deno/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/technologies/docker/</loc>
     </url>
     <url>
         <loc>https://spitlo.com/technologies/github/</loc>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Docker</title>
+	<link href="https://spitlo.com/technologies/docker/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-26T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/docker/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Zola Deploy</title>
+		<published>2020-11-26T00:00:00+00:00</published>
+		<updated>2020-11-26T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/zola-deploy/" type="text/html"/>
+		<id>https://spitlo.com/code/zola-deploy/</id>
+		<content type="html">&lt;p&gt;I prefer to keep my GitHub Pages files in a &lt;code&gt;docs&lt;&#x2F;code&gt; folder, and not in a separate branch.&lt;&#x2F;p&gt;
+&lt;p&gt;Both available actions for Zola deploys in the marketplace used the branch method, so I forked the simplest of them and made it even simpler.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;todo&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#todo&quot; aria-label=&quot;Anchor link for: todo&quot;&gt;#&lt;&#x2F;a&gt;TODO&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Fetch the latest Zola version automatically&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
