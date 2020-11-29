@@ -21,4 +21,5 @@ Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for e
 - Handcoded or programatically generated SVGs
 - Undocumented CSS stuff like animating the `content` value of `::before` and `::after` pseudo-elements
 - Newer/partially supported HTML elements like `<details>`
+- Ever so slightly dipping my toes into the Rust ecosystem
 - Using AVIF[?](https://github.com/getzola/zola/issues/1202)
