@@ -21,6 +21,7 @@
 &lt;li&gt;Handcoded or programatically generated SVGs&lt;&#x2F;li&gt;
 &lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
 &lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;
 &lt;li&gt;Using AVIF&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
