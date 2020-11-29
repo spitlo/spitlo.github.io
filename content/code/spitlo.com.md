@@ -10,14 +10,15 @@ technologies = ["GitHub", "Markdown", "HTML5", "JavaScript", "Sass", "Shell", "S
 repo = "https://github.com/spitlo/spitlo.github.io"
 +++
 
-I made this site mainly to improve my HTML and front-end skills, having done mostly back-end or React work the last few years.
+I made this site mainly to improve my HTML and front-end skills, having done mostly React and back-end work the last few years.
 
 I also wanted to try out [Zola](https://www.getzola.org/) and get away from JavaScript for a while.
 
-Lastly, I guess it’s a nice low-stakes place to try stuff out and have fun, for example:
+Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:
 
-- GitHub hosting with a custom domain name
-- For now, I deploy changes with a script in the `bin/` directory, but I want to try out GitHub actions, and this site would be a good candidate for automatic deploys
-- Handcoded SVGs and programatically generated SVGs
+- GitHub Pages hosting with a custom domain name
+- GitHub Actions
+- Handcoded or programatically generated SVGs
 - Undocumented CSS stuff like animating the `content` value of `::before` and `::after` pseudo-elements
+- Newer/partially supported HTML elements like `<details>`
 - Using AVIF[?](https://github.com/getzola/zola/issues/1202)
