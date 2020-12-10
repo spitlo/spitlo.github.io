@@ -30,6 +30,19 @@ for arg in "$@"; do
   fi
 done
 
+if [ "$(git symbolic-ref -q HEAD)" != "refs/heads/master" ]; then
+  echo "Deploying is only allowed from the '$MAIN_BRANCH' branch. Exiting."
+  exit 1
+fi
+
+if [ -n "$(git status --porcelain|grep -v '^??')" ]; then
+  echo "Please commit your changes before publishing."
+  exit 1
+else
+  echo -e "\n- Pushing local commits."
+  git push origin "$MAIN_BRANCH"
+fi
+
 # Get current tag, or create one if missing
 if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
   echo "Current tag is $current_tag"
@@ -72,4 +85,5 @@ rm ./docs/atom.xml
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
 git add ./docs
 git commit --message "Deploy site $(date '+%Y-%m-%d %H:%M'), version: $new_version"
-git push
+git push origin "$MAIN_BRANCH"
+git push origin "$MAIN_BRANCH" --tags
