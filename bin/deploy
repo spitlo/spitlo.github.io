@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 set -eu
 
+# shellcheck source=./env.globals
+source bin/env.globals
+
 DEFAULT_METHOD="patch"
+MAIN_BRANCH="master"
+INITIAL_VERSION="0.0.0"
 USAGE="
 ${BROWN}Usage${NC}: $0 [ARGUMENTS]
 Increases version of project naively (only major, minor and patch) based on git tag.
-Adds a tag with the new version and pushes to origin. The deploys site.
+Adds a tag with the new version. Then deploys site.
 ${BROWN}Arguments${NC}:
   [patch|minor|major]   Semver version change. Defaults to 'patch'.
 "
@@ -25,13 +30,46 @@ for arg in "$@"; do
   fi
 done
 
+# Get current tag, or create one if missing
+if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
+  echo "Current tag is $current_tag"
+
+  major=$(echo "$current_tag" | cut -d'.' -f 1)
+  minor=$(echo "$current_tag" | cut -d'.' -f 2)
+  patch=$(echo "$current_tag" | cut -d'.' -f 3)
+
+  case "$method" in
+    major)
+      major=$((major + 1))
+      minor=0
+      patch=0
+      ;;
+
+    minor )
+      minor=$((minor + 1))
+      patch=0
+      ;;
+
+    patch )
+      patch=$((patch + 1))
+      ;;
+  esac
+
+  new_version="$major.$minor.$patch"
+else
+  new_version="$INITIAL_VERSION"
+fi
+
 zola check
-zola build --output-dir ./docs
+SITE_VERSION="$new_version" zola build --output-dir ./docs
+
+git tag --annotate "v$new_version" --message "Version $new_version" # >/dev/null 2>&1
+
 # TODO Remove this
 echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
 rm ./docs/atom.xml
+
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
 git add ./docs
-new_version=$(bin/bump "$method" --no-push)
 git commit --message "Deploy site $(date '+%Y-%m-%d %H:%M'), version: $new_version"
 git push
