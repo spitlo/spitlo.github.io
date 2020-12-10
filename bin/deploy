@@ -1,6 +1,30 @@
 #!/usr/bin/env bash
 set -eu
 
+DEFAULT_METHOD="patch"
+USAGE="
+${BROWN}Usage${NC}: $0 [ARGUMENTS]
+Increases version of project naively (only major, minor and patch) based on git tag.
+Adds a tag with the new version and pushes to origin. The deploys site.
+${BROWN}Arguments${NC}:
+  [patch|minor|major]   Semver version change. Defaults to 'patch'.
+"
+
+method="$DEFAULT_METHOD"
+
+# Handle args
+for arg in "$@"; do
+  if [ "$arg" = "patch" ] || [ "$arg" = "minor" ] || [ "$arg" = "major" ]; then
+    method="$arg"
+  elif [ "$arg" = "help" ] || [ "$arg" = "--help" ] || [ "$arg" = "-h" ]; then
+    echo -e "$USAGE"
+    exit 0
+  else
+    echo "Unknown argument '$arg'"
+    exit 0
+  fi
+done
+
 zola check
 zola build --output-dir ./docs
 # TODO Remove this
@@ -8,5 +32,6 @@ echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
 rm ./docs/atom.xml
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
 git add ./docs
-git commit -m "Deploy site $(date '+%Y-%m-%d %H:%M')"
+new_version=$(bin/bump "$method" --no-push)
+git commit --message "Deploy site $(date '+%Y-%m-%d %H:%M'), version: $new_version"
 git push

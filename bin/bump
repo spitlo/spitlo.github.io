@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+set -eu
+
+DEFAULT_METHOD="patch"
+MAIN_BRANCH="master"
+INITIAL_VERSION="0.0.0"
+USAGE="
+${BROWN}Usage${NC}: $0 [ARGUMENTS]
+Increases version of project naively (only major, minor and patch) based on git tag.
+Adds a tag with the new version and pushes to origin.
+${BROWN}Arguments${NC}:
+  [patch|minor|major]   Semver version change. Defaults to 'patch'.
+"
+
+method="$DEFAULT_METHOD"
+do_push="yes"
+
+# Handle args
+for arg in "$@"; do
+  if [ "$arg" = "patch" ] || [ "$arg" = "minor" ] || [ "$arg" = "major" ]; then
+    method="$arg"
+  elif [ "$arg" = "--no-push" ] || [ "$arg" = "-n" ]; then
+    do_push="no"
+  elif [ "$arg" = "help" ] || [ "$arg" = "--help" ] || [ "$arg" = "-h" ]; then
+    echo -e "$USAGE"
+    exit 0
+  else
+    echo "Unknown argument '$arg'"
+    exit 0
+  fi
+done
+
+# rc=0
+# Get current tag, or create one if missing
+if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
+  echo "Current tag is $current_tag"
+
+  major=$(echo "$current_tag" | cut -d'.' -f 1)
+  minor=$(echo "$current_tag" | cut -d'.' -f 2)
+  patch=$(echo "$current_tag" | cut -d'.' -f 3)
+
+  case "$method" in
+    major)
+      major=$((major + 1))
+      minor=0
+      patch=0
+      ;;
+
+    minor )
+      minor=$((minor + 1))
+      patch=0
+      ;;
+
+    patch )
+      patch=$((patch + 1))
+      ;;
+  esac
+
+  new_version="$major.$minor.$patch"
+else
+  # Don’t use error code for now, assume tag is not set
+  new_version="$INITIAL_VERSION"
+fi
+
+git tag --annotate "v$new_version" --message "Version v$new_version" >/dev/null 2>&1
+
+if [ "$do_push" = "yes" ]; then
+  git push origin "$MAIN_BRANCH" >/dev/null 2>&1
+  git push --tags >/dev/null 2>&1
+fi
+
+echo "$new_version"
