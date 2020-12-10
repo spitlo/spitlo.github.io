@@ -105,8 +105,15 @@
 
       <footer>
         <section class="details">
+          {% set build_time = get_env(name="BUILD_TIME", default="unavailable") %}
           {% set site_version = get_env(name="SITE_VERSION", default="unavailable") %}
           {% set zola_version = get_env(name="ZOLA_VERSION", default="zola") %}
+          <span class="detail">
+            Built: {{ build_time }} CET
+          </span>
+          <span class="detail">
+            With: <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
+          </span>
           <span class="detail">
             Site version:
             {% if site_version == "unavailable" %}
@@ -114,9 +121,6 @@
             {% else %}
               <a href="https://github.com/spitlo/spitlo.github.io/releases/tag/{{ site_version }}" target="_blank" rel="noopener noreferrer">{{ site_version }}</a>
             {% endif %}
-          </span>
-          <span class="detail">
-            Built with: <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
           </span>
         </section>
         <section class="credits">

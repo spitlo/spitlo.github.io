@@ -224,6 +224,16 @@ footer {
     }
   }
 
+  .details {
+    font-size: .7em;
+
+    .detail {
+      background-color: $darkGray;
+      padding: 1px 6px;
+      margin-right: 6px;
+    }
+  }
+
   .links {
     max-width: 70rem;
     margin: 0 auto;

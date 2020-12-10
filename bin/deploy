@@ -74,9 +74,10 @@ else
 fi
 
 zola_version=$(zola --version) # Clean this up eventually, but use as is for now
+build_time=$(date '+%Y-%m-%d %H:%M')
 
 zola check
-SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" zola build --output-dir ./docs
+SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" BUILD_TIME="$build_time" zola build --output-dir ./docs
 
 # TODO Remove this
 echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
@@ -84,7 +85,7 @@ rm ./docs/atom.xml
 
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
 git add ./docs
-git commit --message "Deploy site $(date '+%Y-%m-%d %H:%M'), version: $new_version"
+git commit --message "Deploy site $build_time, version: $new_version"
 git push origin "$MAIN_BRANCH"
 git tag --annotate "v$new_version" --message "Version $new_version"
 git push --tags
