@@ -44,7 +44,7 @@ else
 fi
 
 # Get current tag, or create one if missing
-if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
+if current_tag=$(git describe --abbrev=0 2>&1); then
   echo "Current tag is $current_tag"
 
   major=$(echo "$current_tag" | tr -d 'v' | cut -d '.' -f 1)
@@ -85,6 +85,6 @@ rm ./docs/atom.xml
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
 git add ./docs
 git commit --message "Deploy site $(date '+%Y-%m-%d %H:%M'), version: $new_version"
-git tag --annotate "v$new_version" --message "Version $new_version"
 git push origin "$MAIN_BRANCH"
-git push origin "$MAIN_BRANCH" --tags
+git tag --annotate "v$new_version" --message "Version $new_version"
+git push --tags
