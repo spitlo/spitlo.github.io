@@ -104,6 +104,21 @@
       </main>
 
       <footer>
+        <section class="details">
+          {% set site_version = get_env(name="SITE_VERSION", default="unavailable") %}
+          {% set zola_version = get_env(name="ZOLA_VERSION", default="zola") %}
+          <span class="detail">
+            Site version:
+            {% if site_version == "unavailable" %}
+              <a href="https://github.com/spitlo/spitlo.github.io/" target="_blank" rel="noopener noreferrer">{{ site_version }}</a>
+            {% else %}
+              <a href="https://github.com/spitlo/spitlo.github.io/releases/tag/{{ site_version }}" target="_blank" rel="noopener noreferrer">{{ site_version }}</a>
+            {% endif %}
+          </span>
+          <span class="detail">
+            Built with: <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
+          </span>
+        </section>
         <section class="credits">
           Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
           Fonts: <a href="https://www.freshfonts.io/" target="_blank" rel="noopener noreferrer">Gangster Grotesk</a> by <a href="http://www.adrienmidzic.fr/">Adrien Midzic</a> and <a href="https://rubjo.github.io/victor-mono/" target="_blank" rel="noopener noreferrer">Victor Mono</a> by <a href="https://github.com/rubjo">Rune B</a>

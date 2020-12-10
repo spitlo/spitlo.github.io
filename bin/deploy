@@ -58,12 +58,12 @@ if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
       patch=0
       ;;
 
-    minor )
+    minor)
       minor=$((minor + 1))
       patch=0
       ;;
 
-    patch )
+    patch)
       patch=$((patch + 1))
       ;;
   esac
@@ -73,8 +73,10 @@ else
   new_version="$INITIAL_VERSION"
 fi
 
+zola_version=$(zola --version) # Clean this up eventually, but use as is for now
+
 zola check
-SITE_VERSION="$new_version" zola build --output-dir ./docs
+SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" zola build --output-dir ./docs
 
 # TODO Remove this
 echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
