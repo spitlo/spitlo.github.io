@@ -76,8 +76,6 @@ fi
 zola check
 SITE_VERSION="$new_version" zola build --output-dir ./docs
 
-git tag --annotate "v$new_version" --message "Version $new_version" # >/dev/null 2>&1
-
 # TODO Remove this
 echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
 rm ./docs/atom.xml
@@ -85,5 +83,6 @@ rm ./docs/atom.xml
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
 git add ./docs
 git commit --message "Deploy site $(date '+%Y-%m-%d %H:%M'), version: $new_version"
+git tag --annotate "v$new_version" --message "Version $new_version"
 git push origin "$MAIN_BRANCH"
 git push origin "$MAIN_BRANCH" --tags
