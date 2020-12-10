@@ -6,7 +6,7 @@ source bin/env.globals
 
 DEFAULT_METHOD="patch"
 MAIN_BRANCH="master"
-INITIAL_VERSION="v0.0.0"
+INITIAL_VERSION="0.0.0"
 USAGE="
 ${BROWN}Usage${NC}: $0 [ARGUMENTS]
 Increases version of project naively (only major, minor and patch) based on git tag.
