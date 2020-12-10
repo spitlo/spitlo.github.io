@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -eu
 
+# shellcheck source=./env.globals
+source bin/env.globals
+
 DEFAULT_METHOD="patch"
 MAIN_BRANCH="master"
 INITIAL_VERSION="0.0.0"
@@ -14,6 +17,7 @@ ${BROWN}Arguments${NC}:
 
 method="$DEFAULT_METHOD"
 do_push="yes"
+quiet="no"
 
 # Handle args
 for arg in "$@"; do
@@ -21,6 +25,8 @@ for arg in "$@"; do
     method="$arg"
   elif [ "$arg" = "--no-push" ] || [ "$arg" = "-n" ]; then
     do_push="no"
+  elif [ "$arg" = "--quiet" ] || [ "$arg" = "-q" ]; then
+    quiet="yes"
   elif [ "$arg" = "help" ] || [ "$arg" = "--help" ] || [ "$arg" = "-h" ]; then
     echo -e "$USAGE"
     exit 0
@@ -30,7 +36,6 @@ for arg in "$@"; do
   fi
 done
 
-# rc=0
 # Get current tag, or create one if missing
 if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
   echo "Current tag is $current_tag"
@@ -58,15 +63,25 @@ if current_tag=$(git describe --exact-match --abbrev=0 2>&1); then
 
   new_version="$major.$minor.$patch"
 else
-  # Don’t use error code for now, assume tag is not set
   new_version="$INITIAL_VERSION"
 fi
 
+if [ "$quiet" = "no" ]; then
+  echo "Setting version to $new_version and creating tag."
+fi
 git tag --annotate "v$new_version" --message "Version v$new_version" >/dev/null 2>&1
 
 if [ "$do_push" = "yes" ]; then
+  if [ "$quiet" = "no" ]; then
+    echo "Pushing tags"
+  fi
   git push origin "$MAIN_BRANCH" >/dev/null 2>&1
   git push --tags >/dev/null 2>&1
 fi
 
-echo "$new_version"
+if [ "$quiet" = "no" ]; then
+  echo "Success! Version set to $new_version."
+else
+  # Still output $new_version, so parent script can pick it up
+  echo "$new_version"
+fi
