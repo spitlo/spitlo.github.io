@@ -107,7 +107,7 @@
         <section class="details">
           {% set build_time = get_env(name="BUILD_TIME", default="unavailable") %}
           {% set site_version = get_env(name="SITE_VERSION", default="unavailable") %}
-          {% set zola_version = get_env(name="ZOLA_VERSION", default="unavailable") %}
+          {% set zola_version = get_env(name="ZOLA_VERSION", default="unavailable") | replace(from="zola ", to="") %}
           <span class="detail">
             Site:
             {% if site_version == "unavailable" %}
@@ -118,7 +118,12 @@
           </span>
           /
           <span class="detail">
-            Zola: <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">{{ zola_version | replace(from="zola ", to="") }}</a>
+            Zola:
+            {% if zola_version == "unavailable" %}
+              <a href="https://github.com/getzola/zola/" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
+            {% else %}
+              <a href="https://github.com/getzola/zola/releases/tag/v{{ zola_version }}" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
+            {% endif %}
           </span>
           /
           <span class="detail">
