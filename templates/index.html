@@ -126,7 +126,7 @@
             {% if build_time == "unavailable" %}
               {{ build_time }}
             {% else %}
-              {{ build_time | date(format="%Y-%m-%d %H:%M") }} CET
+              <a href="https://www.britannica.com/on-this-day/{{ build_time | date(format="%B-%d") }}" target="_blank" rel="noopener noreferrer">{{ build_time | date(format="%Y-%m-%d %H:%M") }}</a> CET
             {% endif %}
           </span>
           /
