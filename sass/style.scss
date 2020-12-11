@@ -118,6 +118,7 @@ header {
     a {
       padding-bottom: 3px;
       border-bottom: transparent;
+      transition: border-bottom 100ms;
 
       &:hover {
         border-bottom: 3px solid $orange!important;
