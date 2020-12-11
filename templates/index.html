@@ -107,23 +107,29 @@
         <section class="details">
           {% set build_time = get_env(name="BUILD_TIME", default="unavailable") %}
           {% set site_version = get_env(name="SITE_VERSION", default="unavailable") %}
-          {% set zola_version = get_env(name="ZOLA_VERSION", default="zola") %}
+          {% set zola_version = get_env(name="ZOLA_VERSION", default="unavailable") %}
           <span class="detail">
-            Built: {{ build_time }} CET
-          </span>
-          /
-          <span class="detail">
-            With: <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
-          </span>
-          /
-          <span class="detail">
-            Site version:
+            Site:
             {% if site_version == "unavailable" %}
               <a href="https://github.com/spitlo/spitlo.github.io/" target="_blank" rel="noopener noreferrer">{{ site_version }}</a>
             {% else %}
               <a href="https://github.com/spitlo/spitlo.github.io/releases/tag/v{{ site_version }}" target="_blank" rel="noopener noreferrer">{{ site_version }}</a>
             {% endif %}
           </span>
+          /
+          <span class="detail">
+            Zola: <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">{{ zola_version | replace(from="zola ", to="") }}</a>
+          </span>
+          /
+          <span class="detail">
+            Built @
+            {% if build_time == "unavailable" %}
+              {{ build_time }}
+            {% else %}
+              {{ build_time | date(format="%Y-%m-%d %H:%M") }} CET
+            {% endif %}
+          </span>
+          /
         </section>
         <section class="credits">
           Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
