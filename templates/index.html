@@ -116,7 +116,7 @@
               <a href="https://github.com/spitlo/spitlo.github.io/releases/tag/v{{ site_version }}" target="_blank" rel="noopener noreferrer">{{ site_version }}</a>
             {% endif %}
           </span>
-          /
+          |
           <span class="detail">
             Zola:
             {% if zola_version == "unavailable" %}
@@ -125,7 +125,7 @@
               <a href="https://github.com/getzola/zola/releases/tag/v{{ zola_version }}" target="_blank" rel="noopener noreferrer">{{ zola_version }}</a>
             {% endif %}
           </span>
-          /
+          |
           <span class="detail">
             Built @
             {% if build_time == "unavailable" %}
@@ -134,7 +134,7 @@
               <a href="https://www.britannica.com/on-this-day/{{ build_time | date(format="%B-%d") }}" target="_blank" rel="noopener noreferrer">{{ build_time | date(format="%Y-%m-%d %H:%M") }}</a> CET
             {% endif %}
           </span>
-          /
+          |
         </section>
         <section class="credits">
           Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
