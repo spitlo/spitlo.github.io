@@ -1,13 +1,14 @@
 +++
 title = "Firetrak"
 description = "Develop locally with real https certificates"
-date = 2020-11-01
+date = 2020-12-01
 
 [taxonomies]
 technologies = ["Shell", "Let’s Encrypt"]
 
 [extra]
 repo = "https://github.com/spitlo/firetrak"
+first_commit = 2020-11-01
 +++
 
 Firetrak is used to develop locally with real https certificates using [Traefik](https://traefik.io) and [Let’s Encrypt](https://letsencrypt.org/).

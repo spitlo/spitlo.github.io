@@ -1,13 +1,14 @@
 +++
 title = "At-a-dev"
 description = "Short message service for devs"
-date = 2020-10-09
+date = 2020-11-16
 
 [taxonomies]
 technologies = ["Shell"]
 
 [extra]
 repo = "https://github.com/spitlo/atadev"
+first_commit = 2020-10-09
 +++
 
 At-a-dev is a simple bash script to enable `@`:ing other devs in code and getting notifications about mentions on `git pull`.

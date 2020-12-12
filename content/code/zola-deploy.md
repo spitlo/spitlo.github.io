@@ -8,6 +8,7 @@ technologies = ["Docker", "Shell"]
 
 [extra]
 repo = "https://github.com/spitlo/zola-deploy-action"
+first_commit = 2020-11-26
 +++
 
 I prefer to keep my GitHub Pages files in a `docs` folder, and not in a separate branch.

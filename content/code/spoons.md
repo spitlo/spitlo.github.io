@@ -1,13 +1,14 @@
 +++
 title = "Spoons"
 description = "My Hammerspoon config with some custom Spoons"
-date = 2020-02-12
+date = 2020-12-05
 
 [taxonomies]
 technologies = ["Lua"]
 
 [extra]
 repo = "https://github.com/spitlo/hammerspoon"
+first_commit = 2020-02-12
 +++
 
 I use [Hammerspoon](https://www.hammerspoon.org/) together with [Karabiner-Elements](https://karabiner-elements.pqrs.org/) on macOS to set up keyboard shortcuts and window management.

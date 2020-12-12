@@ -1,13 +1,14 @@
 +++
 title = "Revercss"
 description = "Declaration-first CSS paradigm"
-date = 2014-12-05
+date = 2020-12-05
 
 [taxonomies]
 technologies = ["JavaScript"]
 
 [extra]
 repo = "https://github.com/spitlo/revercss"
+first_commit = 2014-12-05
 +++
 
 Revercss was made as a joke many years ago, and "marketed" as

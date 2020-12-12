@@ -1,13 +1,14 @@
 +++
 title = "Merc"
 description = "A pretty basic client for Gemini, written for Deno"
-date = 2020-05-16
+date = 2020-11-16
 
 [taxonomies]
 technologies = ["Deno", "TypeScript", "Shell"]
 
 [extra]
 repo = "https://github.com/spitlo/mercuriceratops"
+first_commit = 2020-05-16
 +++
 
 ## A Gemini client written for Deno

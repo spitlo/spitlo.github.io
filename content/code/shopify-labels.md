@@ -1,13 +1,14 @@
 +++
 title = "Shopify Labels"
 description = "Make printable address labels for Shopify orders"
-date = 2020-06-25
+date = 2020-11-25
 
 [taxonomies]
 technologies = ["TypeScript", "HTML5", "Sass", "Shell"]
 
 [extra]
 repo = "https://github.com/spitlo/shopify-labels"
+first_commit = 2020-06-25
 +++
 
 This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.

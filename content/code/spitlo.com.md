@@ -1,13 +1,14 @@
 +++
 title = "Spitlo.com"
 description = "This site."
-date = 2020-11-13
+date = 2020-11-15
 
 [taxonomies]
 technologies = ["GitHub", "Markdown", "HTML5", "JavaScript", "Sass", "Shell", "Svg"]
 
 [extra]
 repo = "https://github.com/spitlo/spitlo.github.io"
+first_commit = 2020-11-13
 +++
 
 I made this site mainly to improve my HTML and front-end skills, having done mostly React and back-end work the last few years.

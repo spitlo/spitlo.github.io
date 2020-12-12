@@ -6,7 +6,7 @@
   {% if not page.extra.no_meta %}
     <div class="meta">
       {% if page.date %}
-        <time datetime="{{ page.date }}">
+        <time class="date" datetime="{{ page.date }}">
           {{ page.date | date(format="%Y-%m-%d") }}
         </time>
       {% endif %}
@@ -25,9 +25,15 @@
         {% endif %}
       {% endif %}
       {% if page.extra and page.extra.repo %}
+        <br>
         <span class="repo">
           <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
         </span>
+        {% if page.extra.first_commit %}
+          <time class="commit" datetime="{{ page.extra.first_commit }}">
+            {{ page.extra.first_commit | date(format="%Y-%m-%d") }}
+          </time>
+        {% endif %}
       {% endif %}
     </div>
   {% endif %}

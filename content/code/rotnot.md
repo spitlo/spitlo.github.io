@@ -1,13 +1,14 @@
 +++
 title = "Rotnot"
 description = "Set root note for multi-samples"
-date = 2020-04-05
+date = 2020-12-05
 
 [taxonomies]
 technologies = ["JavaScript", "Shell"]
 
 [extra]
 repo = "https://github.com/spitlo/rotnot"
+first_commit = 2020-04-05
 +++
 
 Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.

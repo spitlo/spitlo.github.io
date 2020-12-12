@@ -1,13 +1,14 @@
 +++
 title = "Dotfiles"
 description = "Various configs, scripts and aliases"
-date = 2013-07-06
+date = 2020-11-26
 
 [taxonomies]
 technologies = ["Shell", "Python", "Perl", "JavaScript"]
 
 [extra]
 repo = "https://github.com/spitlo/dotfiles"
+first_commit = 2013-07-06
 +++
 
 I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.

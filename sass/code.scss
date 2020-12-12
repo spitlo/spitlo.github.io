@@ -55,8 +55,16 @@
   }
 
   time {
-    &::before {
-      content: "| Date:";
+    &.date {
+      &::before {
+        content: "| Date:";
+      }
+    }
+
+    &.commit {
+      &::before {
+        content: "| First commit:";
+      }
     }
   }
 
