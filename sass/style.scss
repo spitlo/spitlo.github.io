@@ -301,9 +301,10 @@ footer {
     height: 0;
     top: unset;
     background-color: transparent;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid $white;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 280px solid $white;
+    right: -40px;
   }
 }
 
