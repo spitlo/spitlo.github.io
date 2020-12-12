@@ -246,6 +246,10 @@ footer {
       display: inline-block;
       margin: 1em 2.4em 0 0;
       white-space: nowrap;
+
+      &.shadow {
+        text-shadow: 1px 1px $blue;
+      }
     }
 
     .icon {
