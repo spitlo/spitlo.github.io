@@ -4,12 +4,12 @@
 	<link href="https://spitlo.com/technologies/typescript/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-06-25T00:00:00+00:00</updated>
+	<updated>2020-11-25T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/typescript/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Shopify Labels</title>
-		<published>2020-06-25T00:00:00+00:00</published>
-		<updated>2020-06-25T00:00:00+00:00</updated>
+		<published>2020-11-25T00:00:00+00:00</published>
+		<updated>2020-11-25T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
 		<id>https://spitlo.com/code/shopify-labels/</id>
 		<content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
@@ -20,8 +20,8 @@
 	</entry>
 	<entry xml:lang="en">
 		<title>Merc</title>
-		<published>2020-05-16T00:00:00+00:00</published>
-		<updated>2020-05-16T00:00:00+00:00</updated>
+		<published>2020-11-16T00:00:00+00:00</published>
+		<updated>2020-11-16T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/merc/" type="text/html"/>
 		<id>https://spitlo.com/code/merc/</id>
 		<content type="html">&lt;h2 id=&quot;a-gemini-client-written-for-deno&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-gemini-client-written-for-deno&quot; aria-label=&quot;Anchor link for: a-gemini-client-written-for-deno&quot;&gt;#&lt;&#x2F;a&gt;A Gemini client written for Deno&lt;&#x2F;h2&gt;

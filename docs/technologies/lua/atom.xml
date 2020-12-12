@@ -4,22 +4,12 @@
 	<link href="https://spitlo.com/technologies/lua/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-10-10T00:00:00+00:00</updated>
+	<updated>2020-12-05T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/lua/atom.xml</id>
 	<entry xml:lang="en">
-		<title>Case</title>
-		<published>2020-10-10T00:00:00+00:00</published>
-		<updated>2020-10-10T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/case/" type="text/html"/>
-		<id>https://spitlo.com/code/case/</id>
-		<content type="html">&lt;p&gt;Case is a plugin for the &lt;a href=&quot;https:&#x2F;&#x2F;micro-editor.github.io&#x2F;&quot;&gt;&lt;code&gt;micro&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; editor which I’m trying to switch to from &lt;code&gt;nano&lt;&#x2F;code&gt; for quick edits. It converts text between different case styles, like kebab case or pascal case.&lt;&#x2F;p&gt;
-&lt;p&gt;It’s pretty basic at the moment, and only supports single cursors.&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
 		<title>Spoons</title>
-		<published>2020-02-12T00:00:00+00:00</published>
-		<updated>2020-02-12T00:00:00+00:00</updated>
+		<published>2020-12-05T00:00:00+00:00</published>
+		<updated>2020-12-05T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/spoons/" type="text/html"/>
 		<id>https://spitlo.com/code/spoons/</id>
 		<content type="html">&lt;p&gt;I use &lt;a href=&quot;https:&#x2F;&#x2F;www.hammerspoon.org&#x2F;&quot;&gt;Hammerspoon&lt;&#x2F;a&gt; together with &lt;a href=&quot;https:&#x2F;&#x2F;karabiner-elements.pqrs.org&#x2F;&quot;&gt;Karabiner-Elements&lt;&#x2F;a&gt; on macOS to set up keyboard shortcuts and window management.&lt;&#x2F;p&gt;
@@ -70,6 +60,16 @@ B |                  |                  |
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;H&lt;&#x2F;code&gt; triggers something similar to Symbats but for HTTP response codes.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;clipboardtool&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#clipboardtool&quot; aria-label=&quot;Anchor link for: clipboardtool&quot;&gt;#&lt;&#x2F;a&gt;ClipboardTool&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;C&lt;&#x2F;code&gt; triggers something similar to Symbats and HttpStatus but for the clipboard.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Case</title>
+		<published>2020-11-23T00:00:00+00:00</published>
+		<updated>2020-11-23T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/case/" type="text/html"/>
+		<id>https://spitlo.com/code/case/</id>
+		<content type="html">&lt;p&gt;Case is a plugin for the &lt;a href=&quot;https:&#x2F;&#x2F;micro-editor.github.io&#x2F;&quot;&gt;&lt;code&gt;micro&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; editor which I’m trying to switch to from &lt;code&gt;nano&lt;&#x2F;code&gt; for quick edits. It converts text between different case styles, like kebab case or pascal case.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s pretty basic at the moment, and only supports single cursors.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 </feed>

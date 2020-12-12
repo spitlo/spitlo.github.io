@@ -4,12 +4,12 @@
 	<link href="https://spitlo.com/technologies/let-s-encrypt/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-11-01T00:00:00+00:00</updated>
+	<updated>2020-12-01T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/let-s-encrypt/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Firetrak</title>
-		<published>2020-11-01T00:00:00+00:00</published>
-		<updated>2020-11-01T00:00:00+00:00</updated>
+		<published>2020-12-01T00:00:00+00:00</published>
+		<updated>2020-12-01T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/firetrak/" type="text/html"/>
 		<id>https://spitlo.com/code/firetrak/</id>
 		<content type="html">&lt;p&gt;Firetrak is used to develop locally with real https certificates using &lt;a href=&quot;https:&#x2F;&#x2F;traefik.io&quot;&gt;Traefik&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;letsencrypt.org&#x2F;&quot;&gt;Let’s Encrypt&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;

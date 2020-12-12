@@ -4,55 +4,12 @@
 	<link href="https://spitlo.com/technologies/javascript/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-11-13T00:00:00+00:00</updated>
+	<updated>2020-12-05T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/javascript/atom.xml</id>
 	<entry xml:lang="en">
-		<title>Spitlo.com</title>
-		<published>2020-11-13T00:00:00+00:00</published>
-		<updated>2020-11-13T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
-		<id>https://spitlo.com/code/spitlo-com/</id>
-		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and front-end skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
-&lt;p&gt;I also wanted to try out &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
-&lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;GitHub Pages hosting with a custom domain name&lt;&#x2F;li&gt;
-&lt;li&gt;GitHub Actions&lt;&#x2F;li&gt;
-&lt;li&gt;Handcoded or programatically generated SVGs&lt;&#x2F;li&gt;
-&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
-&lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;
-&lt;li&gt;Using AVIF&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Rotnot</title>
-		<published>2020-04-05T00:00:00+00:00</published>
-		<updated>2020-04-05T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
-		<id>https://spitlo.com/code/rotnot/</id>
-		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filename were either:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;&#x2F;code&gt;); or&lt;&#x2F;li&gt;
-&lt;li&gt;The actual midi note (&lt;code&gt;031.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;The midi note is then written back to the wave file as part of the &amp;quot;Sampler Chunk&amp;quot;, in the &lt;code&gt;MIDI Unity Note&lt;&#x2F;code&gt; field.&lt;&#x2F;p&gt;
-&lt;p&gt;The &amp;quot;Instrument Chunk&amp;quot; has a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;&#x2F;code&gt;. Future versions might write to that as well.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
-&lt;p&gt;In the &lt;code&gt;rotnot&lt;&#x2F;code&gt; directory, enter:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;node index.js
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;Rationale&lt;&#x2F;h2&gt;
-&lt;p&gt;I own a &lt;a href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
 		<title>Revercss</title>
-		<published>2014-12-05T00:00:00+00:00</published>
-		<updated>2014-12-05T00:00:00+00:00</updated>
+		<published>2020-12-05T00:00:00+00:00</published>
+		<updated>2020-12-05T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/revercss/" type="text/html"/>
 		<id>https://spitlo.com/code/revercss/</id>
 		<content type="html">&lt;p&gt;Revercss was made as a joke many years ago, and &amp;quot;marketed&amp;quot; as&lt;&#x2F;p&gt;
@@ -130,9 +87,32 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
 	</entry>
 	<entry xml:lang="en">
+		<title>Rotnot</title>
+		<published>2020-12-05T00:00:00+00:00</published>
+		<updated>2020-12-05T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
+		<id>https://spitlo.com/code/rotnot/</id>
+		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filename were either:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;&#x2F;code&gt;); or&lt;&#x2F;li&gt;
+&lt;li&gt;The actual midi note (&lt;code&gt;031.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The midi note is then written back to the wave file as part of the &amp;quot;Sampler Chunk&amp;quot;, in the &lt;code&gt;MIDI Unity Note&lt;&#x2F;code&gt; field.&lt;&#x2F;p&gt;
+&lt;p&gt;The &amp;quot;Instrument Chunk&amp;quot; has a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;&#x2F;code&gt;. Future versions might write to that as well.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;Usage&lt;&#x2F;h2&gt;
+&lt;p&gt;In the &lt;code&gt;rotnot&lt;&#x2F;code&gt; directory, enter:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;node index.js
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;Rationale&lt;&#x2F;h2&gt;
+&lt;p&gt;I own a &lt;a href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
 		<title>Dotfiles</title>
-		<published>2013-07-06T00:00:00+00:00</published>
-		<updated>2013-07-06T00:00:00+00:00</updated>
+		<published>2020-11-26T00:00:00+00:00</published>
+		<updated>2020-11-26T00:00:00+00:00</updated>
 		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
 		<id>https://spitlo.com/code/dotfiles/</id>
 		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
@@ -159,6 +139,26 @@
 &lt;p&gt;&lt;code&gt;squash&lt;&#x2F;code&gt; uses ImageMagicks’s &lt;code&gt;mogrify&lt;&#x2F;code&gt; to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable &lt;code&gt;MINIMUM_SIZE&lt;&#x2F;code&gt; set, to only affect images of a significant size.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;update-tp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update-tp&quot; aria-label=&quot;Anchor link for: update-tp&quot;&gt;#&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;bin&#x2F;update-tp&quot;&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt; helps me to update a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-packages&quot;&gt;Termux package&lt;&#x2F;a&gt; in my fork, then create a consistently worded commit so I can do a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Spitlo.com</title>
+		<published>2020-11-15T00:00:00+00:00</published>
+		<updated>2020-11-15T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+		<id>https://spitlo.com/code/spitlo-com/</id>
+		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and front-end skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
+&lt;p&gt;I also wanted to try out &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
+&lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub Pages hosting with a custom domain name&lt;&#x2F;li&gt;
+&lt;li&gt;GitHub Actions&lt;&#x2F;li&gt;
+&lt;li&gt;Handcoded or programatically generated SVGs&lt;&#x2F;li&gt;
+&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
+&lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;
+&lt;li&gt;Using AVIF&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 </feed>
