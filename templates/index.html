@@ -164,7 +164,8 @@
           </span>
         </section>
       </footer>
-      <div class="heel" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});"></div>
+      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});">
+      </div>
     </div>
   </body>
 </html>
