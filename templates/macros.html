@@ -47,3 +47,33 @@
     </g>
   </svg>
 {% endmacro shapes %}
+
+{% macro cardinal(number=0) %}
+  {% set cardinals = [
+    'zero',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+    'ten',
+    'eleven',
+    'twelve',
+    'thirteen',
+    'fourteen',
+    'fifteen',
+    'sixteen',
+    'seventeen',
+    'eighteen',
+    'nineteen',
+  ] %}
+  {% if number < 20 %}
+    {{ cardinals | nth(n=number) }}
+  {% else %}
+    {{ number }}
+  {% endif %}
+{% endmacro cardinal %}

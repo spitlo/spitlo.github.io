@@ -14,16 +14,20 @@
 {% block content %}
   <h1>Tags: Tech</h1>
 
-  <section class="taxonomy technologies">
+  <ul class="taxonomy technologies">
     {% for term in terms %}
-      <article>
-        {{ macros::icon(name=term.slug, size="huge", colored=true) }}
+      <li>
+        <a href="{{ term.permalink }}">
+          {{ macros::icon(name=term.slug, size="huge", colored=true) }}
+        </a>
         <div class="content">
-          <h2><a href="{{ term.permalink }}">{{ term.name }}</a></h2>
-
-          <h3>{{ term.pages|length }} project(s).</h3>
+          <p>
+            {{ macros::cardinal(number=term.pages | length) | title }} project{{ term.pages | length | pluralize }} tagged with <span class="taxonomy">{{ term.name }}</span>.
+            <br>
+            <a class="continue" href="{{ term.permalink }}">View tag {{ term.name }}</a>
+          </p>
         </div>
-      </article>
+      </li>
     {% endfor %}
-  </section>
+  </ul>
 {% endblock content %}
