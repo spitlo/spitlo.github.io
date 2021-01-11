@@ -1,0 +1,7 @@
+<div {% if class %} class="{{ class }}" {% endif %}>
+  {{ body | safe }}
+  <noscript>Sorry! This page needs JavaScript to work properly. Fortunately, most of the web site doesn’t, so please
+    <a href="/">return to the start page</a>
+    or use the navigation above to pick a new destination.</noscript>
+  <script src="{{ page.path }}/{{ name }}.js"></script>
+</div>
