@@ -5,13 +5,16 @@
   .technologies {
     margin-bottom: .6em;
 
-    span.label {
-      color: $orange;
-      font-family: "Gangster Grotesk";
-      font-weight: bold;
-      font-size: .8em;
-      text-transform: uppercase;
-      vertical-align: top;
+    span {
+      margin-right: .5em;
+      &.label {
+        color: $orange;
+        font-family: "Gangster Grotesk";
+        font-weight: bold;
+        font-size: .8em;
+        text-transform: uppercase;
+        vertical-align: top;
+      }
     }
     svg {
       fill: $orange;
