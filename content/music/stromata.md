@@ -7,7 +7,27 @@ date = 2021-03-26
 #tags = ["Collaboration", "Electronic"]
 +++
 
-Stromata is a collaboration born out of boredom. It’s a form of musical back-and-forth where a piece of music is sent between me and kryptho and each iteration adds or subtracts something.
+Stromata is a collaboration born out of boredom. It’s a form of musical tennis where me and _kryptho_ sends a piece of music back and forth.
+
+## Rules
+
+Each iteration is a modified version of the previous version. The rules are pretty lax, basically:
+
+  1. You must use the file your receive in some way
+  2. You must return a consistently and predictably named file
+
+Other than that, anything goes. Examples of possible modifications (on a scale from pedestrian to hard core):
+
+- [ ] Convert to ogg, then back to original format
+- [ ] Play it on your computer, record it on your phone
+- [ ] Add harmonica
+- [ ] Add harmonica and lyrics
+- [ ] Play it on your computer, record it to your phone while playing harmonica. Save as ogg
+- [ ] Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (save as ogg)
+- [ ] Print the file. Keep only the pages whose numers are included in a fibonacci sequence (you will need an extra copy of page one). Scan these pages. Somehow make a song from that.
+- [ ] Using a magnetoencephalography helmet, record your reactions to the song. Convert those readings to frequencies. Convert the frequencies to actual tones. Record the tones. Add reverb.
+
+There are a lot of other modifications that are also possible/desirable.
 
 The first version, `a-000.wav` was sent on 2021-02-20 at 14:03 CET.
 

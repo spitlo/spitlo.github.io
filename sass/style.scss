@@ -206,6 +206,16 @@ main {
       margin: 0 4px 0 6px;
     }
   }
+
+  ol {
+    font-family: $paragraphFont;
+
+    li {
+      display: inline-block;
+      padding: 2px 6px;
+      margin-left: .6em;
+    }
+  }
 }
 
 footer {
@@ -348,7 +358,7 @@ h3 {
   font-size: 1.4em;
 }
 
-p, ul {
+p, ul, ol {
   font-family: $paragraphFont;
   font-size: 1.2em;
   max-width: 48rem;
@@ -440,7 +450,6 @@ td {
   border-left: 1px solid $mutedPink;
   border-bottom: 1px solid $mutedPink;
 }
-
 td:nth-child(1) {
   font-weight: bold;
 }
