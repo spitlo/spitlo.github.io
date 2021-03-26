@@ -235,8 +235,12 @@ footer {
     .detail {
       background-color: $darkGray;
       padding: 1px 6px;
-      margin-right: 6px;
+      margin: 0;
       white-space: nowrap;
+    }
+
+    .divider {
+      margin: 0 6px;
     }
   }
 
