@@ -19,7 +19,7 @@ Below are a few of my most used functions/aliases:
 
 ## [`cdp`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L438-L484)
 
-This allows me to jump quickly into project folders. If the project contains an `.nvmrc` or `.python-version` file, the correct versions of `node` and `pyhton` are set.
+This allows me to jump quickly into project folders. If the project contains an `.nvmrc` or `.python-version` file, the correct versions of `node` and `python` are set.
 
 The function uses `$PROJECT_FOLDER` to know where to look. I set it in a file kept out of source control.
 
