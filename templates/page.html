@@ -4,38 +4,53 @@
   <h1>{{ page.title }}</h1>
 
   {% if not page.extra.no_meta %}
-    <div class="meta">
+    <ul class="meta">
       {% if page.date %}
-        <time class="date" datetime="{{ page.date }}">
-          {{ page.date | date(format="%Y-%m-%d") }}
-        </time>
+        <li class="metaUnit">
+          <span class="label">Date:</span>
+          <time class="date" datetime="{{ page.date }}">
+            {{ page.date | date(format="%Y-%m-%d") }}
+          </time>
+        </li>
       {% endif %}
       {% if page.word_count %}
-        <span class="words">
-          {{ page.word_count }}
-        </span>
+        <li class="metaUnit">
+          <span class="label">Words:</span>
+          <span class="words">
+            {{ page.word_count }}
+          </span>
+        </li>
       {% endif %}
       {% if page.taxonomies %}
         {% if page.taxonomies.technologies %}
-          <span class="tech">
-            {% for tech in page.taxonomies.technologies %}
-              <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-          </span>
+          <li class="metaUnit">
+            <span class="label">Tech:</span>
+            <span class="tech">
+              {% for tech in page.taxonomies.technologies %}
+                <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
+              {% endfor %}
+            </span>
+          </li>
         {% endif %}
       {% endif %}
       {% if page.extra and page.extra.repo %}
         <br>
-        <span class="repo">
-          <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
-        </span>
+        <li class="metaUnit">
+          <span class="label">Repo:</span>
+          <span class="repo">
+            <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
+          </span>
+        </li>
         {% if page.extra.first_commit %}
-          <time class="commit" datetime="{{ page.extra.first_commit }}">
-            {{ page.extra.first_commit | date(format="%Y-%m-%d") }}
-          </time>
+          <li class="metaUnit">
+            <span class="label">First commit:</span>
+            <time class="commit" datetime="{{ page.extra.first_commit }}">
+              {{ page.extra.first_commit | date(format="%Y-%m-%d") }}
+            </time>
+          </li>
         {% endif %}
       {% endif %}
-    </div>
+    </ul>
   {% endif %}
 
   {% if page.word_count > 500 %}

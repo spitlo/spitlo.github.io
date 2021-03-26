@@ -5,13 +5,16 @@
   .technologies {
     margin-bottom: .6em;
 
-    span.label {
-      color: $orange;
-      font-family: "Gangster Grotesk";
-      font-weight: bold;
-      font-size: .8em;
-      text-transform: uppercase;
-      vertical-align: top;
+    span {
+      margin-right: .5em;
+      &.label {
+        color: $orange;
+        font-family: "Gangster Grotesk";
+        font-weight: bold;
+        font-size: .8em;
+        text-transform: uppercase;
+        vertical-align: top;
+      }
     }
     svg {
       fill: $orange;
@@ -37,52 +40,31 @@
   }
 }
 
-.meta {
+ul.meta {
   font-family: "Victor Mono", monospace;
   font-size: .8em;
   margin-left: -3px;
   margin-bottom: 2.8em;
   max-width: 55rem;
+  list-style-type: none;
+  padding-left: 0;
 
   time, .words, .tech, .repo {
     white-space: nowrap;
-
-    &::before {
-      color: $blue;
-      padding: 0 3px;
-      text-transform: uppercase;
-    }
   }
 
-  time {
-    &.date {
-      &::before {
-        content: "| Date:";
-      }
-    }
-
-    &.commit {
-      &::before {
-        content: "| First commit:";
-      }
-    }
+  li {
+    display: inline-block;
+    margin: 0;
   }
 
-  .words {
-    &::before {
-      content: "| Words:";
-    }
-  }
+  .label {
+    color: $blue;
+    padding: 0 3px;
+    text-transform: uppercase;
 
-  .tech {
     &::before {
-      content: "| Tech:";
-    }
-  }
-
-  .repo {
-    &::before {
-      content: "| Repo:";
+      content: "| ";
     }
   }
 }
