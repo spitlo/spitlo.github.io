@@ -27,7 +27,7 @@ There is a corresponding [bash completion script](https://github.com/spitlo/dotf
 
 ## [`xt`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L119-L156)
 
-This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.
+This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al. Cant’t remember where I got this from initially.
 
   ![XKCD: Tar](https://imgs.xkcd.com/comics/tar.png)
 
