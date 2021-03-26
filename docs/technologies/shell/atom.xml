@@ -4,8 +4,24 @@
 	<link href="https://spitlo.com/technologies/shell/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-12-05T00:00:00+00:00</updated>
+	<updated>2021-03-26T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/shell/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Snippetizer</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2021-03-26T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/snippetizer/" type="text/html"/>
+		<id>https://spitlo.com/code/snippetizer/</id>
+		<content type="html">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
+                        Defaults to &amp;#39;middle&amp;#39;.
+  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
+  [-n&#x2F;--nofade]         Don’t fade in and out.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If no arguments are supplied, it creates a 30 second snippet of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Rotnot</title>
 		<published>2020-12-05T00:00:00+00:00</published>
