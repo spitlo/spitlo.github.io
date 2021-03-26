@@ -108,7 +108,7 @@ header {
 
   .logo {
     flex: 1;
-    font-family: "Gangster Grotesk";
+    font-family: $headerFont;
     font-weight: bold;
     font-size: 1.4em;
     padding: 1.1em 0 .7em 0;
@@ -117,7 +117,7 @@ header {
   }
 
   nav {
-    font-family: "Gangster Grotesk";
+    font-family: $headerFont;
     text-align: right;;
 
     a {
@@ -186,7 +186,7 @@ main {
       background-color: $darkGray;
       color: $white;
       text-decoration: none;
-      font-family: "Victor Mono", monospace;
+      font-family: $paragraphFont;
       border-radius: 3px;
       text-transform: uppercase;
       font-size: .9em;
@@ -201,7 +201,7 @@ main {
     }
 
     .divider {
-      font-family: "Victor Mono", monospace;
+      font-family: $paragraphFont;
       font-size: .7em;
       margin: 0 4px 0 6px;
     }
@@ -209,7 +209,7 @@ main {
 }
 
 footer {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   color: $white;
   width: 100vw;
   margin-top: 2.2em;
@@ -318,7 +318,7 @@ footer {
 }
 
 h1 {
-  font-family: "Gangster Grotesk";
+  font-family: $headerFont;
   font-weight: bold;
   font-style: normal;
   font-size: 4.2em;
@@ -335,7 +335,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   font-size: 2.1em;
 }
 
@@ -344,12 +344,12 @@ h1 + h2 {
 }
 
 h3 {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   font-size: 1.4em;
 }
 
 p, ul {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   font-size: 1.2em;
   max-width: 48rem;
   letter-spacing: 1.3px;
@@ -365,7 +365,7 @@ ul {
 }
 
 code, pre {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   font-size: 1em;
   font-weight: 300;
   background-color: $mutedPink;
@@ -390,7 +390,7 @@ blockquote {
 }
 
 details.toc {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   font-size: 1em;
   font-weight: 300;
 
@@ -409,8 +409,47 @@ details.toc {
   }
 }
 
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $lightGray;
+}
+
+thead {
+  border: 1px solid $orange;
+  background-color: $lightGray;
+  font-family: $headerFont;
+  font-size: 1.3em;
+}
+
+tbody {
+  background-color: $lightWhite;
+  font-family: $paragraphFont;
+}
+
+th {
+  border-right: 1px solid $orange;
+}
+
+th, td {
+  padding: 20px;
+}
+
+td {
+  border-left: 1px solid $mutedPink;
+  border-bottom: 1px solid $mutedPink;
+}
+
+td:nth-child(1) {
+  font-weight: bold;
+}
+
+
+
+
 .alert {
-  font-family: "Victor Mono", monospace;
+  font-family: $paragraphFont;
   font-size: 1.2em;
   font-weight: bold;
   max-width: 45rem;
