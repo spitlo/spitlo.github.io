@@ -19,7 +19,7 @@ Below are a few of my most used functions/aliases:
 
 ## [`cdp`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L438-L484)
 
-This allows me to jump quickly into project folders. If the project contains an `.nvmrc` or `.python-version` file, the correct versions of `node` and `pyhton` are set.
+This allows me to jump quickly into project folders. If the project contains an `.nvmrc` or `.python-version` file, the correct versions of `node` and `python` are set.
 
 The function uses `$PROJECT_FOLDER` to know where to look. I set it in a file kept out of source control.
 
@@ -27,7 +27,7 @@ There is a corresponding [bash completion script](https://github.com/spitlo/dotf
 
 ## [`xt`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L119-L156)
 
-This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al.
+This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al. Cant’t remember where I got this from initially.
 
   ![XKCD: Tar](https://imgs.xkcd.com/comics/tar.png)
 
