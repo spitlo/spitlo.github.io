@@ -279,7 +279,7 @@ footer {
   }
 
   a {
-    color: $lightGray;
+    color: $lightBrown;
     text-decoration: none;
 
     &:hover {
@@ -420,17 +420,18 @@ details.toc {
 }
 
 table {
-  table-layout: fixed;
-  width: 100%;
   border-collapse: collapse;
-  border: 1px solid $lightGray;
+  border: 1px solid $lightBrown;
+  max-width: 55rem;
+  overflow-x: auto;
+  width: 100%;
 }
 
 thead {
-  border: 1px solid $orange;
-  background-color: $lightGray;
-  font-family: $headerFont;
-  font-size: 1.3em;
+  background-color: $blueGray;
+  color: $lightWhite;
+  font-family: $paragraphFont;
+  font-size: 1em;
 }
 
 tbody {
@@ -438,12 +439,8 @@ tbody {
   font-family: $paragraphFont;
 }
 
-th {
-  border-right: 1px solid $orange;
-}
-
 th, td {
-  padding: 20px;
+  padding: 0.4em;
 }
 
 td {
@@ -452,10 +449,8 @@ td {
 }
 td:nth-child(1) {
   font-weight: bold;
+  white-space: nowrap;
 }
-
-
-
 
 .alert {
   font-family: $paragraphFont;
@@ -477,6 +472,12 @@ td:nth-child(1) {
     &::after {
       content: "" !important;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  table {
+    display: inline-block;
   }
 }
 
