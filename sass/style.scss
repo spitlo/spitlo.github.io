@@ -437,6 +437,11 @@ thead {
 tbody {
   background-color: $lightWhite;
   font-family: $paragraphFont;
+  white-space: nowrap
+
+  tr:nth-child(odd) {
+    background-color: $mutedPinkTransparent;
+  }
 }
 
 th, td {
@@ -447,9 +452,11 @@ td {
   border-left: 1px solid $mutedPink;
   border-bottom: 1px solid $mutedPink;
 }
+
 td:nth-child(1) {
   font-weight: bold;
   white-space: nowrap;
+  background-color: $mutedPink;
 }
 
 .alert {
