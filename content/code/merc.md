@@ -37,7 +37,7 @@ You can also supply a URL directly.
 
 ### Options
 
-```text
+```txt
   -h, --help
           Prints help end exits
   -d, --dump

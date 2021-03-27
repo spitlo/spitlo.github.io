@@ -88,7 +88,7 @@ cat example.revcss | revercss
 
 ## Options
 
-```text
+```txt
   -c, --compact
           Output compact CSS
   -m, --minified
