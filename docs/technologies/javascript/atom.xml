@@ -72,7 +72,7 @@
 &lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;cat example.revcss &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;revercss
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h2&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -c, --compact
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -c, --compact
           Output compact CSS
   -m, --minified
           Output minified CSS

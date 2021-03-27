@@ -18,7 +18,7 @@
 &lt;p&gt;My Hammerspoon hyper key is &lt;code&gt;Shift&lt;&#x2F;code&gt; + &lt;code&gt;Ctrl&lt;&#x2F;code&gt; + &lt;code&gt;Alt&lt;&#x2F;code&gt; + &lt;code&gt;Cmd&lt;&#x2F;code&gt;. I use Karabiner to map &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; to that.&lt;&#x2F;p&gt;
 &lt;p&gt;The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 1-9&lt;&#x2F;code&gt; to the different screens locations. So if I press &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 7&lt;&#x2F;code&gt;, the active window resizes to the top left corner of the screen, let’s call it A1:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;           1                  2
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;           1                  2
   +------------------+------------------+
   |                  |                  |
 A |        A1        |                  |
@@ -45,7 +45,7 @@ B |                  |                  |
 &lt;li&gt;When a window is full width or full height, it will shrink&#x2F;expand in the ‘direction’ direction.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  +------------------+------------------+
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  +------------------+------------------+
   |   +-------------------+             |
   |   |              |    |             |
   |   |              |  &amp;lt; | &amp;gt;           |
