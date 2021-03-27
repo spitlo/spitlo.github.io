@@ -437,7 +437,7 @@ thead {
 tbody {
   background-color: $lightWhite;
   font-family: $paragraphFont;
-  white-space: nowrap
+  white-space: nowrap;
 
   tr:nth-child(odd) {
     background-color: $mutedPinkTransparent;
