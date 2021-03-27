@@ -17,6 +17,7 @@
 &lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
                         Defaults to &amp;#39;middle&amp;#39;.
   [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
+                        Defaults to &amp;#39;30&amp;#39;.
   [-n&#x2F;--nofade]         Don’t fade in and out.
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;If no arguments are supplied, it creates a 30 second snippet of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
