@@ -17,6 +17,7 @@ I made `snippetizer` to be able to quickly produce snippets of the material from
   [start|middle|end]    What part of the file you want to snippet.
                         Defaults to 'middle'.
   [<any integer>]       Snippet length in seconds.
+                        Defaults to '30'.
   [-n/--nofade]         Don’t fade in and out.
 ```
 
