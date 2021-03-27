@@ -13,8 +13,8 @@ Stromata is a collaboration born out of boredom. It’s a form of musical tennis
 
 Each iteration is a modified version of the previous version. The rules are pretty lax, basically:
 
-  1. You must use the file your receive in some way
-  2. You must return a consistently and predictably named file
+  1. You must use the file you receive in some way
+  2. You must return a consistently and predictably named, playable file
 
 Other than that, anything goes. Examples of possible modifications (on a scale from pedestrian to hard core):
 
@@ -23,8 +23,8 @@ Other than that, anything goes. Examples of possible modifications (on a scale f
 - [ ] Add harmonica
 - [ ] Add harmonica and lyrics
 - [ ] Play it on your computer, record it to your phone while playing harmonica. Save as ogg
-- [ ] Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (save as ogg)
-- [ ] Print the file. Keep only the pages whose numers are included in a fibonacci sequence (you will need an extra copy of page one). Scan these pages. Somehow make a song from that.
+- [ ] Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (opionally saving it as ogg).
+- [ ] Print the file. Keep only the pages whose numbers are included in a fibonacci sequence (you will need an extra copy of page one). Scan these pages. Somehow make a song from that.
 - [ ] Using a magnetoencephalography helmet, record your reactions to the song. Convert those readings to frequencies. Convert the frequencies to actual tones. Record the tones. Add reverb.
 
 There are a lot of other modifications that are also possible/desirable.
