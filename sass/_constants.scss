@@ -16,8 +16,8 @@ $red: #e30000;
 $white: #fffcfc;
 
 // Fonts
-$headerFont: "Gangster Grotesk";
-$paragraphFont: "Victor Mono", monospace;
+$headerFont: "Gangster Grotesk", Helvetica, sans-serif;
+$paragraphFont: "Victor Mono", Monaco, "Courier New", monospace;
 
 @keyframes linkArrowsA {
   25% {

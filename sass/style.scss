@@ -503,40 +503,42 @@ td:nth-child(1) {
         font-size: .7em;
       }
 
+      &::before {
+        margin-right: -.1em;
+      }
+
+      &::after {
+        margin-left: -.1em;
+      }
+
       &.home {
         &::before {
           content: "127.";
-          margin-right: -6px;
         }
 
         &::after {
           content: ".1";
-          margin-left: -6px;
         }
       }
 
       &.code {
         &::before {
           content: "<";
-          margin-right: -6px;
         }
 
         &::after {
           content: "/>";
-          margin-left: -6px;
         }
       }
 
       &.music {
         &::before {
           content: "♪";
-          margin-right: -6px;
           font-size: .7em;
         }
 
         &::after {
           content: "♫";
-          margin-left: -6px;
           font-size: .7em;
         }
       }
@@ -544,13 +546,11 @@ td:nth-child(1) {
       &.tags {
         &::before {
           content: "#";
-          margin-right: -6px;
           font-size: .7em;
         }
 
         &::after {
           content: "";
-          margin-left: -6px;
           font-size: .7em;
         }
       }
@@ -558,12 +558,10 @@ td:nth-child(1) {
       &.not-found {
         &::before {
           content: ">>-";
-          margin-right: -6px;
         }
 
         &::after {
           content: "->";
-          margin-left: -6px;
         }
       }
     }
