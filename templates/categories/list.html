@@ -10,10 +10,13 @@
   </nav>
 {% endblock breadcrumbs %}
 {% block content %}
-  <h1>Tags: Tech</h1>
+  <h1>Tags: Categories</h1>
   <ul class="taxonomy categories">
     {% for term in terms %}
       <li>
+        <a href="{{ term.permalink }}">
+          {{ macros::icon(name=term.slug, size="huge", type="remix") }}
+        </a>
         <div class="content">
           <p>
             {{ macros::cardinal(number=term.pages | length) | title }} project{{ term.pages | length | pluralize }} tagged with

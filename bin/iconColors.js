@@ -2,7 +2,7 @@ const https = require('https')
 const fs = require('fs')
 
 const url = 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json'
-const iconFolder = './static/icons/'
+const iconFolder = './static/icons/simple/'
 
 const slugify = (string) => string.replace('’', '').replace(/[^A-Za-z0-9]/, '-').toLowerCase()
 
