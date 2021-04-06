@@ -371,6 +371,11 @@ ul {
   li {
     margin: .5em 0;
   }
+  li:has(input) {
+    ::marker {
+      display: none;
+    }
+  }
 }
 
 code, pre {

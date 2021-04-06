@@ -25,9 +25,19 @@
         {% if page.taxonomies.technologies %}
           <li class="metaUnit">
             <span class="label">Tech:</span>
-            <span class="tech">
+            <span class="taxonomy">
               {% for tech in page.taxonomies.technologies %}
                 <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
+              {% endfor %}
+            </span>
+          </li>
+        {% endif %}
+        {% if page.taxonomies.categories %}
+          <li class="metaUnit">
+            <span class="label">Categories:</span>
+            <span class="taxonomy">
+              {% for cat in page.taxonomies.categories %}
+                <a href="/categories/{{cat | slugify }}">{{ cat }}</a>{% if not loop.last %}, {% endif %}
               {% endfor %}
             </span>
           </li>
