@@ -45,3 +45,4 @@ The first version, `a-000.wav` was sent on 2021-02-20 at 14:03 CET.
 | a-007.flac | 2021-03-04 08:06 | kryptho  |    04:23 | [mp3](https://files.mefirst.se/stromata/mp3/a-007.mp3) (721 KB) |
 | a-008.wav  | 2021-03-10 14:57 | spitlo   |    04:46 | [mp3](https://files.mefirst.se/stromata/mp3/a-008.mp3) (721 KB) |
 | a-009.flac | 2021-03-26 06:52 | kryptho  |    03:58 | [mp3](https://files.mefirst.se/stromata/mp3/a-009.mp3) (722 KB) |
+| a-010.wav  | 2021-04-06 20:50 | spitlo   |    05:47 | [mp3](https://files.mefirst.se/stromata/mp3/a-010.mp3) (721 KB) |
