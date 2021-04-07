@@ -93,7 +93,7 @@
 		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
 		<id>https://spitlo.com/code/rotnot/</id>
 		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filename were either:&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;&#x2F;code&gt;); or&lt;&#x2F;li&gt;
