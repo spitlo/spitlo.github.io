@@ -3,10 +3,17 @@
 <li>
   <a href="{{ project.permalink }}"><h2>{{ project.title }}</h2></a>
   {% if project.taxonomies.technologies %}
-    <div class="technologies">
+    <div class="taxonomy">
       <span class="label">Tech:</span>
       {% for tech in project.taxonomies.technologies %}
         {{ macros::icon(name=tech, size="small") }}
+      {% endfor %}
+    </div>
+  {% elif project.taxonomies.categories %}
+    <div class="taxonomy">
+      <span class="label">Categories:</span>
+      {% for cat in project.taxonomies.categories %}
+        {{ macros::icon(name=cat, size="small", type="remix") }}
       {% endfor %}
     </div>
   {% endif %}
