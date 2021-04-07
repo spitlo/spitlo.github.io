@@ -1,0 +1,10 @@
+// This is for content specific styles. To add a custom content class
+// to a page, add an [extra] section to the page’s front matter like this:
+// [extra]
+// content_class = "custom-class-name"
+.stromata {
+  ul {
+    list-style-type: none;
+    padding-left: 1em;
+  }
+}

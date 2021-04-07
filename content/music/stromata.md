@@ -5,6 +5,9 @@ date = 2021-03-26
 
 [taxonomies]
 categories = ["Collaboration", "Electronic"]
+
+[extra]
+content_class = "stromata"
 +++
 
 Stromata is a collaboration born out of boredom. It’s a form of musical tennis where me and _kryptho_ sends a piece of music back and forth.
