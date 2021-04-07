@@ -13,7 +13,7 @@ first_commit = 2020-04-05
 
 Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.
 
-At the moment it works on a bunch of multi sampled instruments I had available, where the filename were either:
+At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:
 
 - Note+octave (`a#4.wav`)
 - Collection_name-note+octave (`MutedTrumpet-Bb2.wav`); or

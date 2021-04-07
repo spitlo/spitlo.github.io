@@ -15,7 +15,7 @@ Karakter is a bash script that takes text input (either from a pipe, as plain te
 
 There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s two less eclectic styles, `¢џБ≡┎pμ∩κ` and `ƒάїгψłάľє`.
 
-All glyphs are chosen from [this list](https://github.com/ehmicky/cross-platform-terminal-characters) of "All the characters that work on most terminals" so it should work on most terminals.
+All glyphs are chosen from [this list](https://github.com/ehmicky/cross-platform-terminal-characters) of "All the characters that work on most terminals" so they should work on most terminals.
 
 There are some other flags, but the project readme has more information.
 

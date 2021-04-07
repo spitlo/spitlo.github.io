@@ -28,6 +28,7 @@
     <div class="excerpt">
       _<br>
       {{ project.content | safe | striptags | truncate(length=100) }}
+      <br>
       <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
     </div>
   {% endif %}

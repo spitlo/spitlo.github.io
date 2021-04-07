@@ -21,4 +21,4 @@ I made `snippetizer` to be able to quickly produce snippets of the material from
   [-n/--nofade]         Don’t fade in and out.
 ```
 
-If no arguments are supplied, it creates a 30 second snippet of a file, with 2 second fade-in and 3 second fade-out.
+If no arguments are supplied, it creates a 30 second snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.

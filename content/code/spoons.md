@@ -34,7 +34,7 @@ B |                  |                  |
   +------------------+------------------+
 ```
 
-The keys in between the corner keys resizes the window to fill the corresponding row. So `Caps Lock` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Caps Lock` + `Keypad 5` centers the window on the screen but does not maximize it.
+The keys in between the corner keys resizes the window to fill the corresponding row. So `Hyper` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Hyper` + `Keypad 5` centers the window on the screen but does not maximize it.
 
 On my laptop, I use Karabiner to map `Fn` + `Q/W/E`, `A/S/D` and `Z/X/C` to the keypad numbers to have the same functionality.
 
