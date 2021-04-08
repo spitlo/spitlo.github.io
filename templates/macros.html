@@ -1,7 +1,7 @@
-{% macro icon(name, size="medium", colored=false) %}
+{% macro icon(name, size="medium", colored=false, type="simple") %}
   {% set slug = name | slugify %}
   <span class="icon {{ slug }}{% if size %} {{ size }}{% endif %}{% if colored %} colored{% endif %}">
-    {% set icon_path = "static/icons/"  ~  slug ~  ".svg" %}
+    {% set icon_path = "static/icons/" ~ type ~ "/" ~  slug ~  ".svg" %}
     {% set icon_code = load_data(path=icon_path) %}
     {{ icon_code | safe }}
   </span>

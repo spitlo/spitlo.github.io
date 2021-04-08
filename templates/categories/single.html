@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block breadcrumbs %}
+  <nav class="breadcrumbs">
+    <a class="crumb" href="/">Home</a>
+    <span class="divider">&gt;</span>
+    <a class="crumb" href="/tags/">Tags</a>
+    <span class="divider">&gt;</span>
+    <a class="crumb" href="/categories/">Categories</a>
+    <span class="divider">&gt;</span>
+    <span class="crumb current">{{ term.name }}</span>
+  </nav>
+{% endblock breadcrumbs %}
+{% block content %}
+  <section class="term code">
+    <h1>Category: {{ term.name }}</h1>
+    <ul>
+      {% for project in term.pages %}
+        {% include "partials/list-project.html" %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock content %}

@@ -31,7 +31,7 @@ var myConst = { // @John Please use const and not var
 
 When John runs `git pull`, he sees the following message:
 
-```text
+```txt
 Mentions in ./src/index.js
 ==========================
 On line 5:
@@ -42,7 +42,7 @@ On line 9:
 
 When Bella runs `git pull`, she sees the following message:
 
-```text
+```txt
 Mentions in ./src/index.js
 ==========================
 On line 7:

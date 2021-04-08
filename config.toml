@@ -1,6 +1,7 @@
 title = "Spitlo.com"
 base_url = "https://spitlo.com"
 taxonomies = [
+  { name = "categories", feed = true },
   { name = "technologies", feed = true },
 ]
 

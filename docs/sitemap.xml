@@ -4,6 +4,15 @@
         <loc>https://spitlo.com/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/categories/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/categories/collaboration/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/categories/electronic/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/code/</loc>
     </url>
     <url>
@@ -21,6 +30,10 @@
     <url>
         <loc>https://spitlo.com/code/firetrak/</loc>
         <lastmod>2020-12-01</lastmod>
+    </url>
+    <url>
+        <loc>https://spitlo.com/code/karakter/</loc>
+        <lastmod>2021-04-06</lastmod>
     </url>
     <url>
         <loc>https://spitlo.com/code/merc/</loc>

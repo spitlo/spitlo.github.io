@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Electronic</title>
+	<link href="https://spitlo.com/categories/electronic/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-03-26T00:00:00+00:00</updated>
+	<id>https://spitlo.com/categories/electronic/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Stromata</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2021-03-26T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/music/stromata/" type="text/html"/>
+		<id>https://spitlo.com/music/stromata/</id>
+		<content type="html">&lt;p&gt;Stromata is a collaboration born out of boredom. It’s a form of musical tennis where me and &lt;em&gt;kryptho&lt;&#x2F;em&gt; sends a piece of music back and forth.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;Rules&lt;&#x2F;h2&gt;
+&lt;p&gt;Each iteration is a modified version of the previous version. The rules are pretty lax, basically:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;You must use the file you receive in some way&lt;&#x2F;li&gt;
+&lt;li&gt;You must return a consistently and predictably named, playable file&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Other than that, anything goes. Examples of possible modifications (on a scale from pedestrian to hard core):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Convert to ogg, then back to original format&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Play it on your computer, record it on your phone&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Add harmonica&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Add harmonica and lyrics&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Play it on your computer, record it to your phone while playing harmonica. Save as ogg&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (opionally saving it as ogg).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Print the file. Keep only the pages whose numbers are included in a fibonacci sequence (you will need an extra copy of page one). Scan these pages. Somehow make a song from that.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Using a magnetoencephalography helmet, record your reactions to the song. Convert those readings to frequencies. Convert the frequencies to actual tones. Record the tones. Add reverb.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;There are a lot of other modifications that are also possible&#x2F;desirable.&lt;&#x2F;p&gt;
+&lt;p&gt;The first version, &lt;code&gt;a-000.wav&lt;&#x2F;code&gt; was sent on 2021-02-20 at 14:03 CET.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;Files&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;File&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Sent&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;By&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Duration&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Snippet (size)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-000.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-02-20 14:03&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:40&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-000.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-001.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-02-20 17:38&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:25&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-001.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-002.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-02-21 15:51&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:37&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-002.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-003.flac&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-02-21 19:51&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:40&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-003.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-004.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-02-24 16:27&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:12&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-004.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-005.flac&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-02-24 20:41&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:21&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-005.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (7221KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-006.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-03-01 16:49&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:19&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-006.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-007.flac&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-03-02 17:38&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:23&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-007.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-008.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-03-10 15:59&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:46&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-008.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-009.flac&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-03-24 10:50&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:58&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-009.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-010.wav&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-04-06 20:53&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;05:47&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-010.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-011.flac&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2021-04-07 18:56&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:56&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;mp3&#x2F;a-011.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+	</entry>
+</feed>

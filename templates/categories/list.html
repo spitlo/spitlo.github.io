@@ -1,0 +1,30 @@
+{% import "macros.html" as macros %}
+{% extends "index.html" %}
+{% block breadcrumbs %}
+  <nav class="breadcrumbs">
+    <a class="crumb" href="/">Home</a>
+    <span class="divider">&gt;</span>
+    <a class="crumb" href="/tags/">Tags</a>
+    <span class="divider">&gt;</span>
+    <span class="crumb current">Categories</span>
+  </nav>
+{% endblock breadcrumbs %}
+{% block content %}
+  <h1>Tags: Categories</h1>
+  <ul class="taxonomy categories">
+    {% for term in terms %}
+      <li>
+        <a href="{{ term.permalink }}">
+          {{ macros::icon(name=term.slug, size="huge", type="remix") }}
+        </a>
+        <div class="content">
+          <p>
+            {{ macros::cardinal(number=term.pages | length) | title }} project{{ term.pages | length | pluralize }} tagged with
+            <span class="taxonomy">{{ term.name }}</span>. <br/>
+            <a class="continue" href="{{ term.permalink }}">View tag {{ term.name }}</a>
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

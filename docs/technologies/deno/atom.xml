@@ -16,7 +16,7 @@
 &lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;solderpunk&quot;&gt;100 LOC demos&lt;&#x2F;a&gt; by solderpunk.&lt;&#x2F;p&gt;
 &lt;p&gt;The name is a nod to and a gentle jab at the tendency in both Deno and Gemini communities to name projects after dinosaurs and zodiac stuff, respectively. The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Mercuriceratops&quot;&gt;mercuriceratops&lt;&#x2F;a&gt; is a dinosaur of the type species &lt;em&gt;Mercuriceratops gemini&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
 &lt;div class=&quot;alert&quot;&gt;
-  This project is now on hold, since I can’t really figure out how to make Deno accept most certificates.
+  This project is now on hold, since I can’t figure out how to make Deno accept most certificates.
 &lt;&#x2F;div&gt;
 &lt;h2 id=&quot;install-update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#install-update&quot; aria-label=&quot;Anchor link for: install-update&quot;&gt;#&lt;&#x2F;a&gt;Install&#x2F;update&lt;&#x2F;h2&gt;
 &lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;mercuriceratops&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
@@ -29,7 +29,7 @@ To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
 &lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h3&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
           Prints help end exits
   -d, --dump
           Prints document body and exits

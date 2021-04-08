@@ -21,7 +21,7 @@ My Hammerspoon hyper key is `Shift` + `Ctrl` + `Alt` + `Cmd`. I use Karabiner to
 
 The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped `Hyper` + `Keypad 1-9` to the different screens locations. So if I press `Caps Lock` + `Keypad 7`, the active window resizes to the top left corner of the screen, let’s call it A1:
 
-```text
+```txt
            1                  2
   +------------------+------------------+
   |                  |                  |
@@ -34,7 +34,7 @@ B |                  |                  |
   +------------------+------------------+
 ```
 
-The keys in between the corner keys resizes the window to fill the corresponding row. So `Caps Lock` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Caps Lock` + `Keypad 5` centers the window on the screen but does not maximize it.
+The keys in between the corner keys resizes the window to fill the corresponding row. So `Hyper` + `Keypad 4` resizes the window to cover squares A1 and B1. Lastly, `Hyper` + `Keypad 5` centers the window on the screen but does not maximize it.
 
 On my laptop, I use Karabiner to map `Fn` + `Q/W/E`, `A/S/D` and `Z/X/C` to the keypad numbers to have the same functionality.
 
@@ -57,7 +57,7 @@ Smartly in this context means:
 - The same principal applies to `up` and `down`.
 - When a window is full width or full height, it will shrink/expand in the 'direction' direction.
 
-```text
+```txt
   +------------------+------------------+
   |   +-------------------+             |
   |   |              |    |             |

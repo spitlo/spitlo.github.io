@@ -46,9 +46,8 @@
   {% endif %}
 
   <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
-    <a id="top" />
-    <div class="contentWrapper">
-       <header>
+    <div class="contentWrapper{% if page and page.extra and page.extra.content_class %} {{ page.extra.content_class }}{% endif %}">
+       <header id="top">
         <div class="logo {{ main_section }}">
           <a href="/">spitlo.com</a>
         </div>
@@ -128,7 +127,8 @@
           <span class="divider">|</span>
         </section>
         <section class="credits">
-          Icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
+          Technology icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
+          Category icons from <a href="https://remixicon.com/" target="_blank" rel="noopener noreferrer">Remix Icon</a><br>
           Fonts: <a href="https://www.freshfonts.io/" target="_blank" rel="noopener noreferrer">Gangster Grotesk</a> by <a href="http://www.adrienmidzic.fr/">Adrien Midzic</a> and <a href="https://rubjo.github.io/victor-mono/" target="_blank" rel="noopener noreferrer">Victor Mono</a> by <a href="https://github.com/rubjo">Rune B</a>
           <div class="hr" />
         </section>

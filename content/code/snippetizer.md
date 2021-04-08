@@ -13,11 +13,12 @@ first_commit = 2021-03-26
 
 I made `snippetizer` to be able to quickly produce snippets of the material from [Stromata](/music/stromata). It uses `ffmpeg` and `ffprobe` and takes a few arguments:
 
-```text
+```txt
   [start|middle|end]    What part of the file you want to snippet.
                         Defaults to 'middle'.
   [<any integer>]       Snippet length in seconds.
+                        Defaults to '30'.
   [-n/--nofade]         Don’t fade in and out.
 ```
 
-If no arguments are supplied, it creates a 30 second snippet of a file, with 2 second fade-in and 3 second fade-out.
+If no arguments are supplied, it creates a 30 second snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.

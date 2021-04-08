@@ -4,8 +4,33 @@
 	<link href="https://spitlo.com/technologies/shell/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-03-26T00:00:00+00:00</updated>
+	<updated>2021-04-06T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/shell/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Karakter</title>
+		<published>2021-04-06T00:00:00+00:00</published>
+		<updated>2021-04-06T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/karakter/" type="text/html"/>
+		<id>https://spitlo.com/code/karakter/</id>
+		<content type="html">&lt;p&gt;Karakter is a bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like Ada and Fortran. I encourage everyone to not hold their breath for that though.&lt;&#x2F;p&gt;
+&lt;p&gt;There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s two less eclectic styles, &lt;code&gt;¢џБ≡┎pμ∩κ&lt;&#x2F;code&gt; and &lt;code&gt;ƒάїгψłάľє&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;All glyphs are chosen from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ehmicky&#x2F;cross-platform-terminal-characters&quot;&gt;this list&lt;&#x2F;a&gt; of “All the characters that work on most terminals” so they should work on most terminals.&lt;&#x2F;p&gt;
+&lt;p&gt;There are some other flags, but the project readme has more information.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;output-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-examples&quot; aria-label=&quot;Anchor link for: output-examples&quot;&gt;#&lt;&#x2F;a&gt;Output examples&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;input-text&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#input-text&quot; aria-label=&quot;Anchor link for: input-text&quot;&gt;#&lt;&#x2F;a&gt;Input text&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-low-default-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-low-default-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-low-default-style&quot;&gt;#&lt;&#x2F;a&gt;Output text, obfuscation level low, default style&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;It ŵas thє beșt оf timєs, їt was thє worst of times, it waș the αge of wisdom, it was the ąge of foolїshness, it was the epoch of belief, iț ώas łhe epо¢ђ of incredulity, it шas the seąson of Light, it was the seasфη of Đarkness, it was the șpring of hope, it waș țhe winter of despair, we ђαd everything beforє us, we haď nothing before us, ŵe werє a11 going dire¢t to Heaven, we werє all going dїrёct tћe other way – in shoѓt, the pєriod was so fаr 1ike the present period, that some of its nфisiest authoгiłies iηsisted оn ițs bєing recёived, for gooď оr for evїl, in țhe șuperlative degгeё of comparison only.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-medium-cyberpunk-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-medium-cyberpunk-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-medium-cyberpunk-style&quot;&gt;#&lt;&#x2F;a&gt;Output text, obfuscation level medium, cyberpunk style&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;It ш@s the bєsŁ of tim≡$, it w@s tHe шоrst of Łim≡$, it шas ŁH≡ аg≡ o⌠ w¡$ďøm, ī┪ ш@s thє ag≡ оf fo●lishπes$, iŁ шas Łhe ≡pø¢H ●f belıef, iŁ ша$ tHє ep●ch о⌠ :nc┍єďulity, īŁ wα$ ┪h≡ $ea$o∩ оf Ľi9ht, īŁ w@$ ŁHe sє@$■Π of Daяκπє$$, :Ł wα$ tHє $p┎īn9 о⌠ høp≡, iŁ ш@s tHe wint≡r of ďєsp@ıя, шє Hαd e▼eгy┪h¡∩g bє⌠оre u$, we Hαď ∩o┪H¡Πg 6єfoгє u$, шe шe┎e αll go¡π9 ďi┎≡ct ┪o He@▼en, we шє┍e a1l 9■iΠg ďir≡ct ŁHe o┪her ш@џ – ¡n $Hort, thє p≡г¡●ď was $o fаr lıke the p┎≡$e∩t pe┍ioď, tHat s●mє ■f it$ πoisie$┪ aμ┪Hor:t:≡s ins:steď ●n its b≡ın9 гec≡ived, fø┎ 9ø●d оr ⌠●r ≡▼ı1, in Łh≡ sup≡гlα┪īvє ďegr≡є о⌠ ¢ompaгıson o∩1y.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-high-fairytale-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-fairytale-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-fairytale-style&quot;&gt;#&lt;&#x2F;a&gt;Output text, obfuscation level high, fairytale style&lt;&#x2F;h3&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Ϊṫ шάș ṫђё вєșṫ ºḟ łΐṁєș, ΐł шάș łћё ώºѓșṫ фƒ țΐṁēș, ΐț ώάș ṫђё ąġē σƒ шΐșδσṁ, ΐṫ шάș ṫђє ąġё σƒ ƒооļїșћηєșș, їł шąș łђё єpºςђ ºƒ Бēļїēƒ, їṫ шąș ṫћё єpоςђ фḟ їņςѓєδΰľїłψ, їł ŵąș łђē șєąșфņ фḟ Ļїġђț, ΐł ŵąș łђё șёąșфņ ºḟ Ďąѓkņēșș, їł ώάș țђē șpгїηġ фḟ ђºpē, їṫ ŵąș ṫђє ŵїņțєѓ σḟ ďєșpαΐг, ώё ћαḋ ēνёѓџłћΐñġ вēƒσгє ΰș, шё ђάđ ησṫђΐηġ ḃёƒºѓё υș, ώё ŵєгē αļľ ġºїņġ ďΐѓєςł țф нєάνєη, ώє шєѓē άľļ ġфїņġ ďΐѓєςț ṫћē фṫћёг шąψ – ΐņ șћσѓṫ, ṫђē pёѓΐºđ ŵάș șº ƒάѓ ľΐkē țђё pгёșєñṫ pёѓїоδ, ṫћάł șºṁє оḟ ΐțș ñºΐșїєșł ąΰțћфѓїṫΐєș ΐñșїșłēď ºņ ΐłș Бєїņġ ѓēςёΐνēđ, ḟог ġºфđ σѓ ƒºг ēνΐľ, їη ṫђє șΰpєѓľάṫΐνē δєġѓєё ºḟ ςºṁpαгΐșоñ оņľψ.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Snippetizer</title>
 		<published>2021-03-26T00:00:00+00:00</published>
@@ -14,12 +39,13 @@
 		<id>https://spitlo.com/code/snippetizer/</id>
 		<content type="html">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
                         Defaults to &amp;#39;middle&amp;#39;.
   [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
+                        Defaults to &amp;#39;30&amp;#39;.
   [-n&#x2F;--nofade]         Don’t fade in and out.
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;If no arguments are supplied, it creates a 30 second snippet of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
+&lt;p&gt;If no arguments are supplied, it creates a 30 second snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
@@ -29,7 +55,7 @@
 		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
 		<id>https://spitlo.com/code/rotnot/</id>
 		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filename were either:&lt;&#x2F;p&gt;
+&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
 &lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;&#x2F;code&gt;); or&lt;&#x2F;li&gt;
@@ -136,7 +162,7 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When John runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, he sees the following message:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
 ==========================
 On line 5:
   var myConst = { &#x2F;&#x2F; @John Please use const and not var
@@ -145,7 +171,7 @@ On line 9:
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When Bella runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, she sees the following message:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
 ==========================
 On line 7:
   b: 2 &#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
@@ -175,7 +201,7 @@ On line 9:
 &lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;solderpunk&quot;&gt;100 LOC demos&lt;&#x2F;a&gt; by solderpunk.&lt;&#x2F;p&gt;
 &lt;p&gt;The name is a nod to and a gentle jab at the tendency in both Deno and Gemini communities to name projects after dinosaurs and zodiac stuff, respectively. The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Mercuriceratops&quot;&gt;mercuriceratops&lt;&#x2F;a&gt; is a dinosaur of the type species &lt;em&gt;Mercuriceratops gemini&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
 &lt;div class=&quot;alert&quot;&gt;
-  This project is now on hold, since I can’t really figure out how to make Deno accept most certificates.
+  This project is now on hold, since I can’t figure out how to make Deno accept most certificates.
 &lt;&#x2F;div&gt;
 &lt;h2 id=&quot;install-update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#install-update&quot; aria-label=&quot;Anchor link for: install-update&quot;&gt;#&lt;&#x2F;a&gt;Install&#x2F;update&lt;&#x2F;h2&gt;
 &lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;mercuriceratops&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
@@ -188,7 +214,7 @@ To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
 &lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h3&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
           Prints help end exits
   -d, --dump
           Prints document body and exits

@@ -18,7 +18,7 @@
 &lt;p&gt;My Hammerspoon hyper key is &lt;code&gt;Shift&lt;&#x2F;code&gt; + &lt;code&gt;Ctrl&lt;&#x2F;code&gt; + &lt;code&gt;Alt&lt;&#x2F;code&gt; + &lt;code&gt;Cmd&lt;&#x2F;code&gt;. I use Karabiner to map &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; to that.&lt;&#x2F;p&gt;
 &lt;p&gt;The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 1-9&lt;&#x2F;code&gt; to the different screens locations. So if I press &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 7&lt;&#x2F;code&gt;, the active window resizes to the top left corner of the screen, let’s call it A1:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;           1                  2
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;           1                  2
   +------------------+------------------+
   |                  |                  |
 A |        A1        |                  |
@@ -29,7 +29,7 @@ B |                  |                  |
   |                  |                  |
   +------------------+------------------+
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;The keys in between the corner keys resizes the window to fill the corresponding row. So &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 4&lt;&#x2F;code&gt; resizes the window to cover squares A1 and B1. Lastly, &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 5&lt;&#x2F;code&gt; centers the window on the screen but does not maximize it.&lt;&#x2F;p&gt;
+&lt;p&gt;The keys in between the corner keys resizes the window to fill the corresponding row. So &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 4&lt;&#x2F;code&gt; resizes the window to cover squares A1 and B1. Lastly, &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 5&lt;&#x2F;code&gt; centers the window on the screen but does not maximize it.&lt;&#x2F;p&gt;
 &lt;p&gt;On my laptop, I use Karabiner to map &lt;code&gt;Fn&lt;&#x2F;code&gt; + &lt;code&gt;Q&#x2F;W&#x2F;E&lt;&#x2F;code&gt;, &lt;code&gt;A&#x2F;S&#x2F;D&lt;&#x2F;code&gt; and &lt;code&gt;Z&#x2F;X&#x2F;C&lt;&#x2F;code&gt; to the keypad numbers to have the same functionality.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;I&lt;&#x2F;code&gt;, &lt;code&gt;J&lt;&#x2F;code&gt;, &lt;code&gt;K&lt;&#x2F;code&gt; and &lt;code&gt;L&lt;&#x2F;code&gt; moves windows around (Sorry, vim lovers). &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Arrow Up&#x2F;Down&#x2F;Left&#x2F;Right&lt;&#x2F;code&gt; resizes window with the smart resizing described below. &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Home&#x2F;End&lt;&#x2F;code&gt; moves windows between monitors and &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;M&lt;&#x2F;code&gt; maximizes the current window.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;Alt&lt;&#x2F;code&gt; + &lt;code&gt;Tab&lt;&#x2F;code&gt; activates the next window of the current application, which is good for jumping between projects in VS Code for example.&lt;&#x2F;p&gt;
@@ -45,7 +45,7 @@ B |                  |                  |
 &lt;li&gt;When a window is full width or full height, it will shrink&#x2F;expand in the ‘direction’ direction.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  +------------------+------------------+
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  +------------------+------------------+
   |   +-------------------+             |
   |   |              |    |             |
   |   |              |  &amp;lt; | &amp;gt;           |

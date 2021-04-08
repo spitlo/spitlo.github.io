@@ -18,7 +18,7 @@ Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the [1
 The name is a nod to and a gentle jab at the tendency in both Deno and Gemini communities to name projects after dinosaurs and zodiac stuff, respectively. The [mercuriceratops](https://en.wikipedia.org/wiki/Mercuriceratops) is a dinosaur of the type species *Mercuriceratops gemini*.
 
 <div class="alert">
-  This project is now on hold, since I can’t really figure out how to make Deno accept most certificates.
+  This project is now on hold, since I can’t figure out how to make Deno accept most certificates.
 </div>
 
 ## Install/update
@@ -37,7 +37,7 @@ You can also supply a URL directly.
 
 ### Options
 
-```text
+```txt
   -h, --help
           Prints help end exits
   -d, --dump

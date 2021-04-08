@@ -7,7 +7,7 @@ date = 2020-11-23
 technologies = ["Lua", "Markdown"]
 
 [extra]
-repo = "https://github.com/spitlo/dotfiles/tree/master/.config/micro/plug/case"
+repo = "https://github.com/spitlo/dotfiles/tree/master/.config/micro/"
 first_commit = 2020-10-10
 +++
 
