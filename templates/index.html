@@ -45,8 +45,16 @@
     {% set main_section = "not-found" %}
   {% endif %}
 
+  {% if page and page.extra and page.extra.content_class %}
+    {% set content_class = page.extra.content_class %}
+  {% elif section and section.extra and section.extra.content_class %}
+    {% set content_class = section.extra.content_class %}
+  {% else %}
+    {% set content_class = "" %}
+  {% endif %}
+
   <body class="{% block body_class %}{{ body_class }}{% endblock body_class %}">
-    <div class="contentWrapper{% if page and page.extra and page.extra.content_class %} {{ page.extra.content_class }}{% endif %}">
+    <div class="contentWrapper {{ content_class }}">
        <header id="top">
         <div class="logo {{ main_section }}">
           <a href="/">spitlo.com</a>
@@ -84,12 +92,7 @@
         {% endblock breadcrumbs %}
 
         {% block content %}
-          <svg viewBox="0 0 1100 600" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" x="0" y="0" fill="black" />
-            <circle cx="200" cy="190" r="150" stroke="#fff" stroke-width="1" stroke-dasharray="6 3" />
-            <rect width="300" height="300" x="400" y="40" stroke="#fff" stroke-width="1" stroke-dasharray="6 3" />
-            <polygon points="900 40, 1050 340, 750 340" stroke="#fff" stroke-width="1" stroke-dasharray="6 3"/>
-          </svg>
+          {% include "homepages/2021-04-08.html" %}
         {% endblock content %}
       </main>
 

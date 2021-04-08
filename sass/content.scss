@@ -2,9 +2,16 @@
 // to a page, add an [extra] section to the page’s front matter like this:
 // [extra]
 // content_class = "custom-class-name"
-.stromata {
+
+.contentWrapper.stromata {
   ul {
     list-style-type: none;
     padding-left: 1em;
+  }
+}
+
+.contentWrapper.home-1 {
+  svg {
+    max-width: 80vw;
   }
 }
