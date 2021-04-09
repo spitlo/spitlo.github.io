@@ -4,13 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true,
   },
-  "emmet.includeLanguages": {
-    "tera": "html",
-  },
   "files.autoSave": "off",
-  "files.associations": {
-    "*.html": "tera",
-  },
   "files.exclude": {
     "docs": true,
   },
