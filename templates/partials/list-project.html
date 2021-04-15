@@ -1,7 +1,21 @@
 {% import "macros.html" as macros %}
 
 <li>
-  <a href="{{ project.permalink }}"><h2>{{ project.title }}</h2></a>
+  <a href="{{ project.permalink }}">
+    <h2>{{ project.title }}
+      {% if project.components and main_section == "tags" %}
+        <div class="postedIn">
+          {% if 'code' in project.components %}
+            <span>code</span>
+          {% endif %}
+          {% if 'music' in project.components %}
+            <span>music</span>
+          {% endif %}
+        </div>
+      {% endif %}
+    </h2>
+
+  </a>
   {% if project.taxonomies.technologies %}
     <div class="taxonomy">
       <span class="label">Tech:</span>

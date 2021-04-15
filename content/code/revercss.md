@@ -11,7 +11,7 @@ repo = "https://github.com/spitlo/revercss"
 first_commit = 2014-12-05
 +++
 
-Revercss was made as a joke many years ago, and "marketed" as
+Revercss, sometimes stylized as ƨƨↄ, was made as a joke many years ago, and "marketed" as
 
 > a declaration-first paradigm for lean, consistent CSS and increased project maintainibility
 
