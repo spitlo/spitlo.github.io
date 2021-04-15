@@ -27,21 +27,24 @@
 
   {% set body_class = "circles" %}
   {% set main_section = "home" %}
-  {% if current_path and current_path is starting_with("/code") %}
-    {% set body_class = "squares" %}
-    {% set main_section = "code" %}
-  {% elif current_path and current_path is starting_with("/technologies") %}
-    {% set body_class = "squares" %}
-    {% set main_section = "code" %}
-  {% elif current_path and current_path is starting_with("/music") %}
-    {% set body_class = "triangles" %}
-    {% set main_section = "music" %}
-  {% elif current_path and current_path is starting_with("/tags") %}
-    {% set main_section = "tags" %}
-  {% elif current_path and current_path == "/" %}
-    {% set main_section = "home" %}
+  {% if current_path %}
+    {% if current_path is starting_with("/code") %}
+      {% set body_class = "squares" %}
+      {% set main_section = "code" %}
+    {% elif current_path is starting_with("/music") %}
+      {% set body_class = "triangles" %}
+      {% set main_section = "music" %}
+    {% elif
+      current_path is starting_with("/tags") or
+      current_path is starting_with("/technologies") or
+      current_path is starting_with("/categories")
+    %}
+      {% set main_section = "tags" %}
+    {% elif current_path == "/" %}
+      {% set main_section = "home" %}
+    {% endif %}
   {% else %}
-    {# This is a crude work-around for now, revisit #}
+    {# This is sort of a crude work-around for now, revisit? #}
     {% set main_section = "not-found" %}
   {% endif %}
 

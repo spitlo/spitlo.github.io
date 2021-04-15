@@ -1,10 +1,9 @@
 {% import "macros.html" as macros %}
 
 <li>
-  <!--{{__tera_context}}-->
   <a href="{{ project.permalink }}">
     <h2>{{ project.title }}
-      {% if project.components and main_section not in ["code", "music"] %}
+      {% if project.components and main_section == "tags" %}
         <div class="postedIn">
           {% if 'code' in project.components %}
             <span>code</span>
