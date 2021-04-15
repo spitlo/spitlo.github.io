@@ -33,6 +33,20 @@
         margin: 0 0 .4em 0;
         font-size: 1.7em;
         border-bottom: 1px solid $orange;
+        position: relative;
+
+        .postedIn {
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          span {
+            background-color: $aquamarine;
+            font-size: 11px;
+            vertical-align: top;
+            padding: 2px 4px;
+          }
+        }
       }
     }
   }
