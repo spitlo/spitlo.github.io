@@ -4,7 +4,7 @@ description = "Make printable address labels for Shopify orders"
 date = 2020-11-25
 
 [taxonomies]
-technologies = ["TypeScript", "HTML5", "Sass", "Shell"]
+technologies = ["TypeScript", "HTML5", "Sass", "Shell", "Shopify"]
 
 [extra]
 repo = "https://github.com/spitlo/shopify-labels"
