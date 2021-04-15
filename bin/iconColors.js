@@ -6,6 +6,11 @@ const iconFolder = './static/icons/simple/'
 
 const slugify = (string) => string.replace('’', '').replace(/[^A-Za-z0-9]/, '-').toLowerCase()
 
+const slugMap = {
+  'let-s-encrypt': 'lets-encrypt',
+  'gog-dot-com': 'gog-com',
+}
+
 https.get(url,(res) => {
   let body = ''
 
@@ -21,11 +26,7 @@ https.get(url,(res) => {
         const localIcon = icon.replace('.svg', '')
         const iconObject = iconData.icons.find((iconObject) => {
           const iconSlug = slugify(iconObject.title)
-          // Exceptions
-          if (localIcon === 'let-s-encrypt') {
-            return iconSlug === 'lets-encrypt'
-          }
-          return localIcon === iconSlug
+          return localIcon === iconSlug || slugMap[localIcon] === iconSlug
         })
         if (iconObject) {
           icons.push({
