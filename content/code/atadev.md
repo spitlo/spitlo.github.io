@@ -4,7 +4,7 @@ description = "Short message service for devs"
 date = 2020-11-16
 
 [taxonomies]
-technologies = ["Shell"]
+technologies = ["Shell", "Git"]
 
 [extra]
 repo = "https://github.com/spitlo/atadev"
