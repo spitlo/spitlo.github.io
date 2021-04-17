@@ -1,6 +1,6 @@
 +++
 title = "Stromata"
-description = ""
+description = "A match of musical tennis between me and kryptho"
 date = 2021-03-26
 
 [taxonomies]
