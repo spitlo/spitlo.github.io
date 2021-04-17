@@ -5,6 +5,7 @@ date = 2020-11-26
 
 [taxonomies]
 technologies = ["Shell", "Python", "Perl", "JavaScript"]
+categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/dotfiles"

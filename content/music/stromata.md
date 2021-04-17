@@ -4,7 +4,7 @@ description = ""
 date = 2021-03-26
 
 [taxonomies]
-categories = ["Collaboration", "Electronic"]
+categories = ["Collaboration", "Electronic", "Work in Progress"]
 
 [extra]
 content_class = "stromata"

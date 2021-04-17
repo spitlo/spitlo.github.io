@@ -5,6 +5,7 @@ date = 2020-11-15
 
 [taxonomies]
 technologies = ["GitHub", "Markdown", "HTML5", "JavaScript", "Sass", "Shell", "Svg"]
+categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/spitlo.github.io"
