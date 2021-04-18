@@ -1,0 +1,25 @@
+@import "constants";
+
+#search-results {
+  display: none;
+  position: absolute;
+  background-color: $lightSeagreen;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      &.selected {
+        background-color: $dirtyYellow;
+      }
+    }
+  }
+}
+
+// $headerFont
+// $paragraphFont
