@@ -1,10 +1,8 @@
 @import "constants";
 
 #help {
-  display: none;
   position: fixed;
   left: 50%;
-  top: 40%;
   width: 75%;
   max-width: 48rem;
   transform: translate(-50%, -50%);
@@ -14,8 +12,14 @@
   padding: 1em 2em;
   font-family: $paragraphFont;
 
+  top: -5000px;
+  opacity: 0;
+  transition: opacity .1s ease-out 0s, top 0s linear .9s;
+
   &.visible {
-    display: block;
+    opacity: 1;
+    top: 40%;
+    transition: top 0s linear 0s, opacity .1s ease .01s;
   }
 
   h2 {
