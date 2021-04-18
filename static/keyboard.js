@@ -1,4 +1,5 @@
 var $searchInput = document.getElementById('search')
+var $help = document.getElementById('help')
 
 var navigation = {
   'H': '/',
@@ -23,6 +24,14 @@ document.onkeydown = function(event) {
     case 'T':
       event.preventDefault()
       location.href = navigation[event.key]
+      break
+
+    case '?':
+      $help.className = 'visible'
+      break
+
+    case 'Escape':
+      $help.className = ''
       break
 
     default:

@@ -1,0 +1,37 @@
+@import "constants";
+
+#help {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  width: 75%;
+  max-width: 48rem;
+  transform: translate(-50%, -50%);
+  background-color: $darkGray;
+  color: $white;
+  border-radius: 1em;
+  padding: 1em 2em;
+  font-family: $paragraphFont;
+
+  &.visible {
+    display: block;
+  }
+
+  h2 {
+    margin-top: .2em;
+  }
+
+  h3 {
+    // text-decoration: underline;
+    border-bottom: 1px solid $white;
+  }
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  code {
+    background-color: $orange;
+  }
+}
