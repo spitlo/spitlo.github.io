@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - Git</title>
+	<link href="https://spitlo.com/technologies/git/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-16T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/git/atom.xml</id>
+	<entry xml:lang="en">
+		<title>At-a-dev</title>
+		<published>2020-11-16T00:00:00+00:00</published>
+		<updated>2020-11-16T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/atadev/" type="text/html"/>
+		<id>https://spitlo.com/code/atadev/</id>
+		<content type="html">&lt;p&gt;At-a-dev is a simple bash script to enable &lt;code&gt;@&lt;&#x2F;code&gt;:ing other devs in code and getting notifications about mentions on &lt;code&gt;git pull&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Use it as a post-merge hook and it will check new files for any mentions and alert the user.&lt;&#x2F;p&gt;
+&lt;p&gt;Use it as a command line tool and it will show you all your messages.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage-example&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-example&quot; aria-label=&quot;Anchor link for: usage-example&quot;&gt;#&lt;&#x2F;a&gt;Usage example&lt;&#x2F;h2&gt;
+&lt;p&gt;The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in &lt;code&gt;src&#x2F;index.js&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;background-color:#303030;color:#fffb9d;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#dedede;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#ececec;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#dedede;&quot;&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; @John Please use const and not var
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  a: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#dedede;&quot;&gt;  b: &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;font-weight:bold;color:#87d6d5;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; @Bella Please add a trailing comma here, see our style guide
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;When John runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, he sees the following message:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+==========================
+On line 5:
+  var myConst = { &#x2F;&#x2F; @John Please use const and not var
+On line 9:
+  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;When Bella runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, she sees the following message:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+==========================
+On line 7:
+  b: 2 &#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
+On line 9:
+  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Bella and John makes their respective changes and remove the relevant message.&lt;&#x2F;p&gt;
+&lt;p&gt;Perhaps one of them adds a new message:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#393939;&quot;&gt;
+&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#fffb9d;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d6ae;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;{
+  a: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;,
+  b: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;,
+}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#303030;color:#87ae86;&quot;&gt; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;Installation&lt;&#x2F;h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;atadev&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
