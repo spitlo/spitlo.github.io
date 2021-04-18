@@ -11,6 +11,11 @@ default_language = "en"
 generate_feed = true
 minify_html = true
 
+[link_checker]
+skip_anchor_prefixes = [
+  "https://github.com",
+]
+
 [markdown]
 highlight_code = true
 highlight_theme = "zenburn"
@@ -20,7 +25,7 @@ external_links_no_follow = true
 external_links_no_referrer = true
 smart_punctuation = true
 
-[link_checker]
-skip_anchor_prefixes = [
-  "https://github.com",
-]
+[search]
+include_title = true
+include_description = true
+include_content = true

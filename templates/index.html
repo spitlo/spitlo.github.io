@@ -52,7 +52,10 @@
     <div class="contentWrapper{% if page and page.extra and page.extra.content_class %} {{ page.extra.content_class }}{% endif %}">
        <header id="top">
         <div class="logo {{ main_section }}">
-          <a href="/">spitlo.com</a><span>/</span><input type="text" id="search">
+          <a href="/">spitlo.com</a>
+          <span class="slash">/</span>
+          <input type="text" id="search" autocomplete="off">
+          <span class="questionMark">?</span>
           <div id="search-results">
             <ul id="search-results-items"></ul>
         </div>

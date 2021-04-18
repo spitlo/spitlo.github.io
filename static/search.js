@@ -121,10 +121,21 @@ function makeTeaser(body, terms) {
   return teaser.join('')
 }
 
+function getResultSection(result) {
+  var url = result ? result.ref : ''
+  if (url.match(/\/code\//)) {
+    return 'code'
+  } else if (url.match(/\/music\//)) {
+    return 'music'
+  }
+}
+
 function formatSearchResultItem(item, terms) {
-  return '<div id="search-results-item">'
-  + '<a href="' + item.ref + '">' + item.doc.title + '</a>'
-  + '<div>' + makeTeaser(item.doc.body, terms) + '</div></div>'
+  return '<div id="search-results-item" class="' + getResultSection(item) + '">'
+  + '<a href="' + item.ref + '">'
+  + '<div class="title">' + item.doc.title + '</div>'
+  + '<div class="teaser">' + makeTeaser(item.doc.body || item.doc.description, terms) + '</div>'
+  + '<div class="help">ENTER</div></a></div>'
 }
 
 function initSearch() {
@@ -132,6 +143,11 @@ function initSearch() {
   var $searchResults = document.getElementById('search-results')
   var $searchResultsItems = document.getElementById('search-results-items')
   var MAX_ITEMS = 10
+
+  // Exit early of search is not setup in markup
+  if (!$searchInput) {
+    return
+  }
 
   var options = {
     bool: 'AND',
@@ -146,6 +162,14 @@ function initSearch() {
 
   var selectedIndex = 0
   var results = []
+
+  function clearSearch() {
+    selectedIndex = 0
+    results = []
+    $searchResultsItems.innerHTML = ''
+    $searchInput.value = currentTerm = ''
+    $searchInput.blur()
+  }
 
   $searchInput.addEventListener('keyup', debounce(function(event) {
     var term = $searchInput.value.trim()
@@ -172,14 +196,16 @@ function initSearch() {
   }, 150))
 
   $searchInput.addEventListener('keyup', function(event) {
-    console.log('iuyfcghvbjnk', event.key); /* eslint-disable-line */
     var term = $searchInput.value.trim()
+    if (event.key === 'Escape') {
+      clearSearch()
+    }
+
     if (term === '') {
       return
     }
 
     if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
-      console.log($searchResultsItems); /* eslint-disable-line */
       if ($searchResultsItems.children && $searchResultsItems.children[selectedIndex - 1]) {
         $searchResultsItems.children[selectedIndex - 1].className = ''
       }
