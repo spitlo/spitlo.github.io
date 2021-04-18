@@ -89,10 +89,11 @@
   }
 }
 
+// Hide search on mobile for now
 @media (max-width: 680px) {
   header .logo {
     .slash,
-    .questionMark,
+    #questionMark,
     input {
       display: none;
     }

@@ -1,5 +1,6 @@
 var $searchInput = document.getElementById('search')
 var $help = document.getElementById('help')
+var $questionMark = document.getElementById('questionMark')
 
 var navigation = {
   'H': '/',
@@ -8,7 +9,6 @@ var navigation = {
   'T': '/tags/'
 }
 
-// Mark pressed key as pressed to enable multi-ket combos
 document.onkeydown = function(event) {
   // Simple shortcuts
   switch (event.key) {
@@ -18,6 +18,7 @@ document.onkeydown = function(event) {
         $searchInput.focus()
       }
       break
+
     case 'H':
     case 'C':
     case 'M':
@@ -36,5 +37,13 @@ document.onkeydown = function(event) {
 
     default:
       break
+  }
+}
+
+$questionMark.onclick = function() {
+  if ($help.className === 'visible') {
+    $help.className = ''
+  } else {
+    $help.className = 'visible'
   }
 }
