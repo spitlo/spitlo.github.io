@@ -12,7 +12,7 @@ repo = "https://github.com/spitlo/spitlo.github.io"
 first_commit = 2020-11-13
 +++
 
-I made this site mainly to improve my HTML and front-end skills, having done mostly React and back-end work the last few years.
+I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.
 
 I also wanted to try out [Zola](https://www.getzola.org/) and get away from JavaScript for a while.
 
