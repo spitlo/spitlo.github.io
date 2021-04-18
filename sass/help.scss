@@ -11,9 +11,10 @@
   border-radius: 1em;
   padding: 1em 2em;
   font-family: $paragraphFont;
-
-  top: -5000px;
+  box-shadow: 0 0 500px $darkGray;
+  // For animation
   opacity: 0;
+  top: -5000px;
   transition: opacity .1s ease-out 0s, top 0s linear .9s;
 
   &.visible {
