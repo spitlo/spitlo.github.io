@@ -13,7 +13,7 @@
 {% block content %}
   <section class="term code">
     <h1>Category: {{ term.name }}</h1>
-    <ul class="projectList taxonomy categories">
+    <ul class="projectList categories">
       {% for project in term.pages %}
         {% include "partials/list-project.html" %}
       {% endfor %}
