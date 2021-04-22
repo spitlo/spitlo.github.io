@@ -14,7 +14,8 @@
 		<id>https://spitlo.com/code/spoons/</id>
 		<content type="html">&lt;p&gt;I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hammerspoon.org&#x2F;&quot;&gt;Hammerspoon&lt;&#x2F;a&gt; together with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;karabiner-elements.pqrs.org&#x2F;&quot;&gt;Karabiner-Elements&lt;&#x2F;a&gt; on macOS to set up keyboard shortcuts and window management.&lt;&#x2F;p&gt;
 &lt;p&gt;This repo contains a mix of some of the official Spoons and some of my own or customized Spoons, along with my Hammerspoon config.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;config&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#config&quot; aria-label=&quot;Anchor link for: config&quot;&gt;#&lt;&#x2F;a&gt;Config&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;config&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#config&quot; aria-label=&quot;Anchor link for: config&quot;&gt;#&lt;&#x2F;a&gt;
+Config&lt;&#x2F;h2&gt;
 &lt;p&gt;My Hammerspoon hyper key is &lt;code&gt;Shift&lt;&#x2F;code&gt; + &lt;code&gt;Ctrl&lt;&#x2F;code&gt; + &lt;code&gt;Alt&lt;&#x2F;code&gt; + &lt;code&gt;Cmd&lt;&#x2F;code&gt;. I use Karabiner to map &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; to that.&lt;&#x2F;p&gt;
 &lt;p&gt;The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 1-9&lt;&#x2F;code&gt; to the different screens locations. So if I press &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 7&lt;&#x2F;code&gt;, the active window resizes to the top left corner of the screen, let’s call it A1:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#393939;&quot;&gt;
@@ -34,8 +35,10 @@ B |                  |                  |
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;I&lt;&#x2F;code&gt;, &lt;code&gt;J&lt;&#x2F;code&gt;, &lt;code&gt;K&lt;&#x2F;code&gt; and &lt;code&gt;L&lt;&#x2F;code&gt; moves windows around (Sorry, vim lovers). &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Arrow Up&#x2F;Down&#x2F;Left&#x2F;Right&lt;&#x2F;code&gt; resizes window with the smart resizing described below. &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Home&#x2F;End&lt;&#x2F;code&gt; moves windows between monitors and &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;M&lt;&#x2F;code&gt; maximizes the current window.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;Alt&lt;&#x2F;code&gt; + &lt;code&gt;Tab&lt;&#x2F;code&gt; activates the next window of the current application, which is good for jumping between projects in VS Code for example.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;N&lt;&#x2F;code&gt; opens &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;brettterpstra.com&#x2F;projects&#x2F;nvalt&#x2F;&quot;&gt;nvAlt&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;spoons&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#spoons&quot; aria-label=&quot;Anchor link for: spoons&quot;&gt;#&lt;&#x2F;a&gt;Spoons&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;winwin&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#winwin&quot; aria-label=&quot;Anchor link for: winwin&quot;&gt;#&lt;&#x2F;a&gt;WinWin&lt;&#x2F;h3&gt;
+&lt;h2 id=&quot;spoons&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#spoons&quot; aria-label=&quot;Anchor link for: spoons&quot;&gt;#&lt;&#x2F;a&gt;
+Spoons&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;winwin&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#winwin&quot; aria-label=&quot;Anchor link for: winwin&quot;&gt;#&lt;&#x2F;a&gt;
+WinWin&lt;&#x2F;h3&gt;
 &lt;p&gt;The WinWin Spoon included is customized to add a method, &lt;code&gt;smartStepResize&lt;&#x2F;code&gt;, that resizes the focused window “smartly” by one step.&lt;&#x2F;p&gt;
 &lt;p&gt;Smartly in this context means:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -54,11 +57,14 @@ B |                  |                  |
   |   +-------------------+             |
   |             \&#x2F;   |                  |
   +------------------+------------------+
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;symbats&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#symbats&quot; aria-label=&quot;Anchor link for: symbats&quot;&gt;#&lt;&#x2F;a&gt;Symbats&lt;&#x2F;h3&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;symbats&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#symbats&quot; aria-label=&quot;Anchor link for: symbats&quot;&gt;#&lt;&#x2F;a&gt;
+Symbats&lt;&#x2F;h3&gt;
 &lt;p&gt;There is also a Spoon for quickly finding glyphs from the “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Miscellaneous_Symbols&quot;&gt;Miscellaneous Symbols&lt;&#x2F;a&gt;” and “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dingbat#Dingbats_Unicode_block&quot;&gt;Dingbats&lt;&#x2F;a&gt;” unicode blocks. I have it mapped to &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;S&lt;&#x2F;code&gt;. When triggered, it shows a searchable list of symbols. When a symbol is selected, it gets copied to the clipboard.&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;httpstatus&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#httpstatus&quot; aria-label=&quot;Anchor link for: httpstatus&quot;&gt;#&lt;&#x2F;a&gt;HttpStatus&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;httpstatus&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#httpstatus&quot; aria-label=&quot;Anchor link for: httpstatus&quot;&gt;#&lt;&#x2F;a&gt;
+HttpStatus&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;H&lt;&#x2F;code&gt; triggers something similar to Symbats but for HTTP response codes.&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;clipboardtool&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#clipboardtool&quot; aria-label=&quot;Anchor link for: clipboardtool&quot;&gt;#&lt;&#x2F;a&gt;ClipboardTool&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;clipboardtool&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#clipboardtool&quot; aria-label=&quot;Anchor link for: clipboardtool&quot;&gt;#&lt;&#x2F;a&gt;
+ClipboardTool&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;C&lt;&#x2F;code&gt; triggers something similar to Symbats and HttpStatus but for the clipboard.&lt;&#x2F;p&gt;
 </content>
 	</entry>
