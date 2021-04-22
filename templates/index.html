@@ -172,9 +172,9 @@
 
       {% include "partials/help.html" %}
     </div>
-    <script src="{{ get_url(path="keyboard.js") }}"></script>
-    <script src="{{ get_url(path="elasticlunr.min.js") }}"></script>
-    <script src="{{ get_url(path="search_index.en.js") }}"></script>
-    <script src="{{ get_url(path="search.js") }}"></script>
+    <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="search.js", cachebust=true) }}"></script>
   </body>
 </html>
