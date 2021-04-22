@@ -3,7 +3,8 @@
 body {
   &.showLinkNumbers {
     ul.projectList,
-    ul.tagList {
+    ul.tagList,
+    ul.taxonomies {
       li {
         @for $i from 1 through 9 {
           &:nth-of-type(#{$i}) {
@@ -38,6 +39,13 @@ body {
       a.numberedLink::after {
         top: -3px;
         left: -7px;
+      }
+    }
+
+    ul.taxonomies {
+      a.numberedLink::after {
+        top: -18px;
+        left: -0;
       }
     }
   }

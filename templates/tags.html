@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <section>
+    <h1>{{ page.title }}</h1>
+
+    {{ page.content | safe }}
+
+    <ul class="taxonomies">
+      {% for taxonomy in config.taxonomies %}
+        {% set id = taxonomy.name %}
+        <li>
+          <h2 id="{{ id }}">{% include "anchor-link.html" %}{{ id | title }}</h2>
+          <p>
+            <a href="/{{ id }}/" class="numberedLink">View {{ id }} tags</a>
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock content %}
