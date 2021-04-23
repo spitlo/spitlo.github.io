@@ -1,0 +1,44 @@
+@import "constants";
+
+#commandLine,
+#commandLineHints {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 32px;
+  background-color: $black;
+  color: $aquamarine;
+  font-family: $paragraphFont;
+  line-height: 32px;
+  font-size: 16px;
+
+  &::before {
+    content: ":";
+    padding: 0 4px;
+  }
+
+  &.visible {
+    display: block;
+  }
+}
+
+#commandLine {
+  opacity: 0.6;
+
+  span {
+    border-right: 1px solid $lightSeagreen;
+    animation: blinkingCursor .9s linear infinite;
+    min-width: 2px;
+  }
+}
+
+@keyframes blinkingCursor {
+  0% {
+    border-right: 1px solid $lightSeagreen;
+  }
+  50% {
+    border-right: 0;
+  }
+}
