@@ -13,6 +13,9 @@
         <loc>https://spitlo.com/categories/electronic/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/categories/work-in-progress/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/code/</loc>
     </url>
     <url>
@@ -87,6 +90,12 @@
         <loc>https://spitlo.com/technologies/docker/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/technologies/git/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/technologies/github-actions/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/technologies/github/</loc>
     </url>
     <url>
@@ -115,6 +124,9 @@
     </url>
     <url>
         <loc>https://spitlo.com/technologies/shell/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/technologies/shopify/</loc>
     </url>
     <url>
         <loc>https://spitlo.com/technologies/svg/</loc>

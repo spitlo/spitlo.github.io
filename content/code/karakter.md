@@ -5,6 +5,7 @@ date = 2021-04-06
 
 [taxonomies]
 technologies = ["Shell"]
+categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/karakter"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Spitlo.com - GitHub Actions</title>
+	<link href="https://spitlo.com/technologies/github-actions/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://spitlo.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-26T00:00:00+00:00</updated>
+	<id>https://spitlo.com/technologies/github-actions/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Zola Deploy</title>
+		<published>2020-11-26T00:00:00+00:00</published>
+		<updated>2020-11-26T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/zola-deploy/" type="text/html"/>
+		<id>https://spitlo.com/code/zola-deploy/</id>
+		<content type="html">&lt;p&gt;I prefer to keep my GitHub Pages files in a &lt;code&gt;docs&lt;&#x2F;code&gt; folder, and not in a separate branch.&lt;&#x2F;p&gt;
+&lt;p&gt;But both available actions for Zola deploys in the marketplace uses the &lt;code&gt;gh-pages&lt;&#x2F;code&gt; (branch) method, so I forked the simplest of them and made it even simpler. Than I made it a bit less simple.&lt;&#x2F;p&gt;
+&lt;p&gt;This action could be used on &lt;code&gt;push&lt;&#x2F;code&gt; for automatic deploys, but I use it with the event &lt;code&gt;workflow_dispatch&lt;&#x2F;code&gt; to be able to trigger a deploy manually from inside GitHub.&lt;&#x2F;p&gt;
+&lt;p&gt;It runs &lt;code&gt;zola check&lt;&#x2F;code&gt; before building. If you supply a &lt;code&gt;SITE_URL&lt;&#x2F;code&gt; variable, it will try to shrink the search index file by replacing all instances of &lt;code&gt;$SITE_URL&lt;&#x2F;code&gt; with empty space.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

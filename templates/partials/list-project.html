@@ -1,7 +1,7 @@
 {% import "macros.html" as macros %}
 
 <li>
-  <a href="{{ project.permalink }}">
+  <a href="{{ project.permalink }}" class="numberedLink">
     <h2>{{ project.title }}
       {% if project.components and main_section == "tags" %}
         <div class="postedIn">

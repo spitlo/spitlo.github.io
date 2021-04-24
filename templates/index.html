@@ -22,6 +22,8 @@
 
     <link href="{{ get_url(path="/style.css", cachebust=true) | safe }}" rel="stylesheet">
 
+    <link rel="icon" type="image/svg+xml" href="{{ get_url(path="/images/favicon.svg", cachebust=true) | safe }}">
+
     {% block extra_head %}{% endblock extra_head %}
   </head>
 
@@ -61,14 +63,20 @@
        <header id="top">
         <div class="logo {{ main_section }}">
           <a href="/">spitlo.com</a>
+          <span class="slash">/</span>
+          <input type="text" id="search" autocomplete="off">
+          <span id="questionMark">?</span>
+          <div id="search-results">
+            <ul id="search-results-items"></ul>
+        </div>
         </div>
 
         <nav>
           <ul>
-            <li><a href="{{ get_url(path="/") }}" class="{% if main_section == "home" %}active{% endif %}">home</a></li>
-            <li><a href="{{ get_url(path="code") }}" class="{% if main_section == "code" %}active{% endif %}">code</a></li>
-            <li><a href="{{ get_url(path="music") }}" class="{% if main_section == "music" %}active{% endif %}">music</a></li>
-            <li><a href="{{ get_url(path="tags") }}" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
+            <li><a href="/" class="{% if main_section == "home" %}active{% endif %}">home</a></li>
+            <li><a href="/code" class="{% if main_section == "code" %}active{% endif %}">code</a></li>
+            <li><a href="/music" class="{% if main_section == "music" %}active{% endif %}">music</a></li>
+            <li><a href="/tags" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
           </ul>
         </nav>
 
@@ -163,6 +171,12 @@
       </footer>
       <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});">
       </div>
+
+      {% include "partials/help.html" %}
     </div>
+    <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="search.js", cachebust=true) }}"></script>
   </body>
 </html>

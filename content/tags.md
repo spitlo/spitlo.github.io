@@ -1,14 +1,10 @@
 +++
 title = "Tags"
+template = "tags.html"
 
 [extra]
 no_meta = true
+content_class = "tagPage"
 +++
 
-## Categories
-
-[View category tags](/categories/)
-
-## Technologies
-
-[View technology tags](/technologies/)
+Technology tags are mostly for code projects. Category tags span type of projects.

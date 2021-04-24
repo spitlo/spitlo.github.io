@@ -1,0 +1,113 @@
+@import "constants";
+
+#search {
+  border: 1px solid $mutedPink;
+  margin: 0 6px 0 4px;
+  width: 30px;
+  height: 30px;
+  transition: width 0.2s ease-out;
+  padding: 0 8px;
+  font-family: $headerFont;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  &:focus {
+    width: 140px;
+  }
+}
+
+#search-results {
+  display: none;
+  position: absolute;
+  background-color: $lightSeagreen;
+  font-size: .8rem;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0;
+      padding: .5em;
+      position: relative;
+      border-bottom: 1px dashed $white;
+
+      &:hover {
+        background-color: $aquamarine;
+
+        .title {
+          color: $blueGray;
+        }
+      }
+
+      &.selected {
+        background-color: $aquamarine;
+
+        .title {
+          color: $blueGray;
+        }
+
+        .help {
+          display: block;
+        }
+      }
+
+      .title {
+        color: $honeydew;
+      }
+
+      .teaser {
+        font-weight: 300;
+      }
+
+      .help {
+        display: none;
+        border: 1px solid $honeydew;
+        color: $honeydew;
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        font-size: 10px;
+        padding: 1px 3px;
+      }
+
+      .code {
+        .title::before {
+          content: "■"; // □
+          margin-right: 4px;
+          // color: $honeydew;
+        }
+      }
+      .music {
+        .title::before {
+          content: "▲"; // △
+          margin-right: 4px;
+          // color: $honeydew;
+        }
+      }
+      .tags {
+        .title::before {
+          content: "●"; // ○
+          margin-right: 4px;
+          // color: $honeydew;
+        }
+      }
+    }
+  }
+}
+
+// Hide search on mobile for now
+@media (max-width: 680px) {
+  header .logo {
+    .slash,
+    #questionMark,
+    input {
+      display: none;
+    }
+  }
+}

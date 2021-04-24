@@ -1,0 +1,48 @@
+@import "constants";
+
+#help {
+  position: fixed;
+  left: 50%;
+  width: 75%;
+  max-width: 48rem;
+  transform: translate(-50%, -50%);
+  background-color: $darkGray;
+  color: $white;
+  border-radius: 1em;
+  padding: 1em 2em;
+  font-family: $paragraphFont;
+  box-shadow: 0 0 500px $darkGray;
+  // For animation
+  opacity: 0;
+  top: -5000px;
+  transition: opacity .1s ease-out 0s, top 0s linear .9s;
+
+  &.visible {
+    opacity: 1;
+    top: 40%;
+    transition: top 0s linear 0s, opacity .1s ease .01s;
+  }
+
+  h2 {
+    margin-top: .2em;
+  }
+
+  h3 {
+    // text-decoration: underline;
+    border-bottom: 1px solid $white;
+  }
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  code {
+    background-color: $orange;
+  }
+}
+
+header .logo {
+  #questionMark {
+    cursor: pointer;
+  }
+}

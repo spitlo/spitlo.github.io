@@ -16,6 +16,19 @@
   }
 }
 
+.contentWrapper.tagPage {
+  ul.taxonomies {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 1em;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
 .contentWrapper.home-1 {
   svg {
     max-width: 80vw;

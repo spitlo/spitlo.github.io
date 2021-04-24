@@ -11,10 +11,10 @@
 {% endblock breadcrumbs %}
 {% block content %}
   <h1>Tags: Tech</h1>
-  <ul class="taxonomy technologies">
+  <ul class="tagList taxonomy technologies">
     {% for term in terms %}
       <li>
-        <a href="{{ term.permalink }}">
+        <a href="{{ term.permalink }}" class="numberedLink">
           {{ macros::icon(name=term.slug, size="huge", colored=true) }}
         </a>
         <div class="content">
