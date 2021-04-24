@@ -50,7 +50,9 @@ document.onkeydown = function(event) {
         var links = document.getElementsByClassName('numberedLink')
         var linkIndex = parseInt(event.key) - 1
         var link = links[linkIndex]
-        location.href = link.href
+        if (link && link.href) {
+          location.href = link.href
+        }
       }
       break
 
