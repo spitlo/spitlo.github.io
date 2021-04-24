@@ -13,6 +13,7 @@
   font-family: $paragraphFont;
   line-height: 32px;
   font-size: 16px;
+  opacity: 0.6;
 
   &::before {
     content: ":";
@@ -25,7 +26,7 @@
 }
 
 #commandLine {
-  opacity: 0.6;
+  text-shadow: 0 0 2px $lightSeagreen;
 
   span {
     border-right: 1px solid $lightSeagreen;
