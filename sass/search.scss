@@ -6,9 +6,14 @@
   width: 30px;
   height: 30px;
   transition: width 0.2s ease-out;
+  padding: 0 8px;
+  font-family: $headerFont;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
 
   &:focus {
-    width: 120px;
+    width: 140px;
   }
 }
 
@@ -44,7 +49,7 @@
         background-color: $aquamarine;
 
         .title {
-          color: $orange;
+          color: $blueGray;
         }
 
         .help {
@@ -85,6 +90,13 @@
           // color: $honeydew;
         }
       }
+      .tags {
+        .title::before {
+          content: "●"; // ○
+          margin-right: 4px;
+          // color: $honeydew;
+        }
+      }
     }
   }
 }
@@ -99,6 +111,3 @@
     }
   }
 }
-
-// $headerFont
-// $paragraphFont

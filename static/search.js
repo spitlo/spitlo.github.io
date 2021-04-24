@@ -127,6 +127,8 @@ function getResultSection(result) {
     return 'code'
   } else if (url.match(/\/music\//)) {
     return 'music'
+  } else if (url.match(/\/tags\//)) {
+    return 'tags'
   }
 }
 
