@@ -431,6 +431,12 @@ details.toc {
       color: $red;
     }
   }
+
+  ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 4rem;
+    margin-top: .4rem;
+  }
 }
 
 table {
