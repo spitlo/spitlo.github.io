@@ -73,4 +73,28 @@ body.print {
       }
     }
   }
+
+  .project,
+  .term {
+    ul {
+      li {
+        background-color: $white;
+        border: 1px dashed $black;
+        box-shadow: none;
+
+        h2 {
+          font-size: .8rem;
+          border-bottom: 1px solid $black;
+        }
+
+        span.label {
+          color: $black;
+        }
+
+        svg {
+          fill: $black;
+        }
+      }
+    }
+  }
 }
