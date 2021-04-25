@@ -428,8 +428,19 @@ details.toc {
     }
 
     &::marker {
-      // This doesn’t work in Chrome (Brave), but it shows up in Elements
       color: $red;
+    }
+  }
+
+  ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 4rem;
+    margin-top: .4rem;
+
+    ol {
+      list-style-type: lower-roman;
+      padding-left: 0;
+      font-size: 1.1rem;
     }
   }
 }
