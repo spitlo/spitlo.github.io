@@ -4,52 +4,38 @@ var $help = document.getElementById('help')
 var $questionMark = document.getElementById('questionMark')
 var $searchInput = document.getElementById('search')
 var $top = document.getElementById('top')
-var h = `
-_  _ ____ ____ ____ _  _ ___ ____ ____
-|_/  |__| |__/ |__| |_/   |  |___ |__/
-| \_ |  | |  \ |  | | \_  |  |___ |  \
 
-// ___  ____ _  _
-// |  \ |___ |  |
-// |__/ |___  \/
-
-// ____
-// |
-// |___
-
-
-`
 var alphabet = {
-  a: [['____'],['|__|'],['|  |']],
-  b: [['___ '],['|__]'],['|__]']],
-  c: [['____'],['|   '],['|___']],
-  d: [['___ '],['|  \\'],['|__/']],
-  e: [['____'],['|___'],['|___']],
-  f: [['____'],['|___'],['|   ']],
-  g: [['____'],['| __'],['|__]']],
-  h: [['_  _'],['|__|'],['|  |']],
-  i: [['_'],['|'],['|']],
-  j: [[' _'],[' |'],['_|']],
-  k: [['_  _'],['|_/ '],['| \\_']],
-  l: [['_   '],['|   '],['|___']],
-  m: [['_  _'],['|\\/|'],['|  |']],
-  n: [['_  _'],['|\\ |'],['| \\|']],
-  o: [['____'],['|  |'],['|__|']],
-  p: [['___ '],['|__]'],['|   ']],
-  q: [['____'],['|  |'],['|_\\|']],
-  r: [['____'],['|__/'],['|  \\']],
-  s: [['____'],['[__ '],['___]']],
-  t: [['___'],[' | '],[' | ']],
-  u: [['_  _'],['|  |'],['|__|']],
-  v: [['_  _'],['|  |'],[' \\/ ']],
-  w: [['_ _ _'],['| | |'],['|_|_|']],
-  x: [['_  _'],['\/'],['_/\_']],
-  y: [['_   _'],[' \\_/ '],['  |  ']],
-  z: [['___'],[' / '],['/__']],
-  ' ': [['    '], ['    '], ['    ']],
-  '-': [['    '], [' __ '], ['    ']],
-  '.': [['   '], ['   '], [' * ']],
-  ':': [['   '], [' , '], [' ’ ']]
+  a: ['____','|__|','|  |'],
+  b: ['___ ','|__]','|__]'],
+  c: ['____','|   ','|___'],
+  d: ['___ ','|  \\','|__/'],
+  e: ['____','|___','|___'],
+  f: ['____','|___','|   '],
+  g: ['____','| __','|__]'],
+  h: ['_  _','|__|','|  |'],
+  i: ['_','|','|'],
+  j: [' _',' |','_|'],
+  k: ['_  _','|_/ ','| \\_'],
+  l: ['_   ','|   ','|___'],
+  m: ['_  _','|\\/|','|  |'],
+  n: ['_  _','|\\ |','| \\|'],
+  o: ['____','|  |','|__|'],
+  p: ['___ ','|__]','|   '],
+  q: ['____','|  |','|_\\|'],
+  r: ['____','|__/','|  \\'],
+  s: ['____','[__ ','___]'],
+  t: ['___',' | ',' | '],
+  u: ['_  _','|  |','|__|'],
+  v: ['_  _','|  |',' \\/ '],
+  w: ['_ _ _','| | |','|_|_|'],
+  x: ['_  _','\/','_/\_'],
+  y: ['_   _',' \\_/ ','  |  '],
+  z: ['___',' / ','/__'],
+  ' ': ['    ','    ','    '],
+  '-': ['    ',' __ ','    '],
+  '.': ['   ','   ',' * '],
+  ':': ['   ',' , ',' ’ ']
 }
 var commandLineActive = false
 var command = ''
@@ -59,16 +45,20 @@ var commands = {
     // Poor man’s modal
     alert('Sorry, help is not available yet :(')
   },
+
   print: function print() {
-    document.body.className = 'print'
+    // Show a stripped down version of page, suitable
+    // for printing or just nerding out.
+    document.body.classList.add('print')
     var toc = document.getElementsByTagName('details')[0]
     if (toc) {
       toc.setAttribute('open', true)
     }
     var header = document.getElementsByTagName('h1')[0]
-    if (header) {
+    var printHeader = document.getElementById('printHeader')
+    if (header && !printHeader) {
       var headerText = header.innerText
-      var figlet = [[''],[''],['']]
+      var figlet = ['', '', '']
       for (x = 0; x <= headerText.length; x++) {
         var char = headerText.substr(x, 1).toLowerCase()
         if (alphabet[char]) {
@@ -80,12 +70,22 @@ var commands = {
       var figletHeader = document.createElement('pre')
       var underline = new Array(figlet[figlet.length - 1].length).join('-')
       figlet.push(' ' + underline)
+      figletHeader.id = 'printHeader'
       figletHeader.innerText = figlet.join('\n')
       header.insertAdjacentElement('afterend', figletHeader)
     }
   },
+
   top: function top() {
     $top.scrollIntoView()
+  },
+
+  unprint: function unprint() {
+    document.body.classList.remove('print')
+    var toc = document.getElementsByTagName('details')[0]
+    if (toc) {
+      toc.removeAttribute('open')
+    }
   }
 }
 

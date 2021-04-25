@@ -2,6 +2,7 @@
 
 body.print {
   font-size: .8rem!important;
+  background-image: none!important;
 
   header#top,
   nav.breadcrumbs,
@@ -18,6 +19,10 @@ body.print {
   code {
     background-color: transparent;
     padding-left: 0;
+
+    &#printHeader {
+      display: block;
+    }
   }
 
   details {
