@@ -427,7 +427,6 @@ details.toc {
     }
 
     &::marker {
-      // This doesn’t work in Chrome (Brave), but it shows up in Elements
       color: $red;
     }
   }
