@@ -1,0 +1,53 @@
+@import "constants";
+
+body.print {
+  font-size: .8rem!important;
+
+  header#top,
+  nav.breadcrumbs,
+  footer#bottom,
+  .heel {
+    display: none;
+  }
+
+  a {
+    color: $black;
+  }
+
+  pre,
+  code {
+    background-color: transparent;
+    padding-left: 0;
+  }
+
+  details {
+    &.toc {
+      summary {
+        text-decoration: underline;
+
+        &::marker {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    font-weight: 900;
+    border-bottom: 1px solid $black;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+
+      &.anchor {
+        display: none;
+      }
+    }
+  }
+}
