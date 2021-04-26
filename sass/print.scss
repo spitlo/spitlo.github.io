@@ -13,6 +13,10 @@ body.print {
 
   a {
     color: $black;
+
+    // &:after {
+    //   content: "["attr(href)"]"
+    // }
   }
 
   code, pre {
@@ -81,6 +85,9 @@ body.print {
         background-color: $white;
         border: 1px dashed $black;
         box-shadow: none;
+        // This does not work, but keep for now and investigate further:
+        break-before: always;
+        break-inside: avoid;
 
         h2 {
           font-size: .8rem;
@@ -96,5 +103,12 @@ body.print {
         }
       }
     }
+  }
+}
+
+@media print {
+  #commandLine,
+  #commandLineHints {
+    display: none;
   }
 }

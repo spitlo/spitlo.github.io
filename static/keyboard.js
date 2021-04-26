@@ -73,6 +73,10 @@ var commands = {
       figletHeader.id = 'printHeader'
       figletHeader.innerText = figlet.join('\n')
       header.insertAdjacentElement('afterend', figletHeader)
+      // The timeout let’s us return the function immediately, to close
+      // the command line overlay. Also it gives the user a view of the
+      // print version of the site.
+      setTimeout(window.print, 1000)
     }
   },
 
