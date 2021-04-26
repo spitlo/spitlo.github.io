@@ -95,11 +95,42 @@ body.print {
         }
 
         span.label {
-          color: $black;
+          color: $black!important;
         }
 
         svg {
-          fill: $black;
+          fill: $black!important;
+        }
+
+        .postedIn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.tagList, .projectList {
+      li {
+        background-color: $white;
+        box-shadow: none;
+        border: 1px dashed black;
+
+        p {
+          margin-top: 0;
+        }
+
+        span.icon {
+          border: 0;
+
+          svg {
+            fill: $black;
+          }
+        }
+
+        span.taxonomy {
+          background-color: transparent;
+          padding: 0;
         }
       }
     }
