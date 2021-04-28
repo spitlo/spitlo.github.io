@@ -47,7 +47,7 @@ var commands = {
     helpMessage += '<code>print</code> Render page in a dot matrix friendly way<br>'
     helpMessage += '<code>unprint</code> Undo the above command<br>'
     helpMessage += '<code>help</code> Show this message<br>'
-    helpMessage += '<br>Type <code>:</code> to try a command.'
+    helpMessage += 'Commands are tab completable. Type <code>:</code> to try a command.'
     showCommandLineAlert('Available commands', helpMessage)
   },
 
