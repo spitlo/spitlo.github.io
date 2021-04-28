@@ -29,7 +29,7 @@ var alphabet = {
   u: ['_  _','|  |','|__|'],
   v: ['_  _','|  |',' \\/ '],
   w: ['_ _ _','| | |','|_|_|'],
-  x: ['_  _',' \/ ','_/\_'],
+  x: ['_  _',' \\/ ','_/\\_'],
   y: ['_   _',' \\_/ ','  |  '],
   z: ['___',' / ','/__'],
   ' ': ['    ','    ','    '],
@@ -47,7 +47,7 @@ var commands = {
     helpMessage += '<code>print</code> Render page in a dot matrix friendly way<br>'
     helpMessage += '<code>unprint</code> Undo the above command<br>'
     helpMessage += '<code>help</code> Show this message<br>'
-    helpMessage += '<br>Type <code>:</code> to try a command.'
+    helpMessage += 'Commands are tab completable. Type <code>:</code> to try a command.'
     showCommandLineAlert('Available commands', helpMessage)
   },
 
