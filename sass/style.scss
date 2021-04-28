@@ -23,6 +23,7 @@ html, body {
 html {
   // This is ugly, but so are horizontal scrollbars :(
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
