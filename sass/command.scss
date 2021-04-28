@@ -42,7 +42,7 @@
     display: block;
     height: unset; // This removes the animation but enables dynamic height. Fair tradeoff.
     max-height: 80vh;
-    opacity: 0.9;
+    opacity: .95;
 
     &.help {
       &::before {
@@ -57,7 +57,7 @@
     }
 
     code {
-      color: $black;
+      background-color: $orange;
     }
 
     div {
