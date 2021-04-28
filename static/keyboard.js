@@ -29,7 +29,7 @@ var alphabet = {
   u: ['_  _','|  |','|__|'],
   v: ['_  _','|  |',' \\/ '],
   w: ['_ _ _','| | |','|_|_|'],
-  x: ['_  _','\/','_/\_'],
+  x: ['_  _',' \/ ','_/\_'],
   y: ['_   _',' \\_/ ','  |  '],
   z: ['___',' / ','/__'],
   ' ': ['    ','    ','    '],
@@ -42,8 +42,13 @@ var command = ''
 var commandHint = ''
 var commands = {
   help: function help() {
-    // Poor man’s modal
-    alert('Sorry, help is not available yet :(')
+    var helpMessage = ''
+    helpMessage += '<code>top</code> Go to top of page<br>'
+    helpMessage += '<code>print</code> Render page in a dot matrix friendly way<br>'
+    helpMessage += '<code>unprint</code> Undo the above command<br>'
+    helpMessage += '<code>help</code> Show this message<br>'
+    helpMessage += '<br>Type <code>:</code> to try a command.'
+    showCommandLineAlert('Available commands', helpMessage)
   },
 
   print: function print() {
@@ -116,6 +121,16 @@ function findPartialMatch(stack, needle) {
   }
 }
 
+function showCommandLineAlert(title, message, isError) {
+  $commandLineHint.className = 'alertMode'
+  if (isError) {
+    $commandLineHint.classList.add('error')
+  } else {
+    $commandLineHint.classList.add('help')
+  }
+  $commandLineHint.innerHTML = '<strong>' + title + '</strong><div>' + message + '</div>'
+}
+
 function updateCommandLineHint(content) {
   $commandLineHint.innerHTML = '<span>' + (content || commandHint) + '</span>'
 }
@@ -148,11 +163,11 @@ function deactivateCommandMode() {
   command = commandHint = ''
 }
 
-function evaluateCommand() {
+function evaluateCommand(command) {
   if (commands[command]) {
     commands[command]()
   } else {
-    alert('Sorry, that’s not something I understand.\nTry using the tab completion to enter commands correctly.')
+    showCommandLineAlert('Sorry, that’s not something I understand', 'Try using the tab completion to enter commands correctly or type <code>help</code> to view a list of valid commands.<br>Type <code>:</code> to try again.', true)
   }
 }
 
@@ -166,9 +181,13 @@ document.onkeydown = function(event) {
 
     if (event.key === 'Enter') {
       if (command) {
-        evaluateCommand()
+        var nextCommand = command
+        deactivateCommandMode()
+        evaluateCommand(nextCommand)
+      } else {
+        // deactivateCommandMode()
       }
-      deactivateCommandMode()
+
       return
     }
 

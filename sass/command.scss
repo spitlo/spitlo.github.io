@@ -35,6 +35,37 @@
   }
 }
 
+#commandLineHints {
+  transition: all 0.3s ease-in-out;
+
+  &.alertMode {
+    display: block;
+    height: unset; // This removes the animation but enables dynamic height. Fair tradeoff.
+    max-height: 80vh;
+    opacity: 0.9;
+
+    &.help {
+      &::before {
+        content: "?";
+      }
+    }
+
+    &.error {
+      &::before {
+        content: "!";
+      }
+    }
+
+    code {
+      color: $black;
+    }
+
+    div {
+      padding: 0 1em;
+    }
+  }
+}
+
 @keyframes blinkingCursor {
   0% {
     border-right: 1px solid $lightSeagreen;
