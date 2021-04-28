@@ -107,7 +107,7 @@
         {% endblock content %}
       </main>
 
-      <footer>
+      <footer id="bottom">
         <section class="details">
           {% set build_time = get_env(name="BUILD_TIME", default="unavailable") %}
           {% set site_version = get_env(name="SITE_VERSION", default="unavailable") %}
@@ -169,10 +169,12 @@
           </span>
         </section>
       </footer>
-      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});">
-      </div>
+      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});"></div>
 
       {% include "partials/help.html" %}
+
+      <div id="commandLineHints"></div>
+      <div id="commandLine"></div>
     </div>
     <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
