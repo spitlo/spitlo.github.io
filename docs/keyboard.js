@@ -336,7 +336,21 @@ document.onkeydown = function(event) {
       $help.className = ''
       break
 
-    default:
+    case '<':
+      var prevLink = document.querySelector('a[rel=prev]')
+      if (prevLink) {
+        location.href = prevLink.href
+      }
+      break
+
+    case '>':
+      var nextLink = document.querySelector('a[rel=next]')
+      if (nextLink) {
+        location.href = nextLink.href
+      }
+      break
+
+      default:
       break
   }
 }
