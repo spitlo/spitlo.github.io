@@ -87,10 +87,14 @@
 
   {{ page.content | safe }}
 
-  {% if page.earlier %}
-    {# Previous article: {{ page.earlier.permalink }} #}
-  {% endif %}
-  {% if page.later %}
-    {# Next article: {{ page.later.permalink }} #}
+  {% if page.earlier or page.later %}
+    <nav class="pager">
+      {% if page.earlier %}
+        <a href="{{ page.earlier.permalink }}" rel="prev">{{ page.earlier.title }}</a>
+      {% endif %}
+      {% if page.later %}
+        <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }}</a>
+      {% endif %}
+    </nav>
   {% endif %}
 {% endblock content %}

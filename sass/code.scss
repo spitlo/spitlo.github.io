@@ -26,13 +26,13 @@
       font-size: .6em;
       text-transform: uppercase;
 
-      &:after {
+      &::after {
         content: ">";
         display: inline-block;
         margin-left: 2px;
       }
       &:hover {
-        &:after {
+        &::after {
           animation: linkArrowsA .5s linear infinite;
         }
       }

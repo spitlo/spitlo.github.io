@@ -223,6 +223,44 @@ main {
       margin-left: .6em;
     }
   }
+
+  nav.pager {
+    // display: flex;
+    // justify-content: flex-end;
+    max-width: 48rem;
+    font-family: $paragraphFont;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-top: 24px;
+
+    a {
+      padding: 4px 12px;
+      background-color: $lightBrown;
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        color: $orange;
+      }
+
+      &[rel=prev] {
+        // margin-right: auto;
+
+        &::before {
+          content: "< ";
+        }
+      }
+
+      &[rel=next] {
+        margin-left: 12px;
+        &::after {
+          content: ">";
+          display: inline-block;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
 }
 
 footer {
