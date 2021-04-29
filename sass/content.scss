@@ -1,8 +1,11 @@
+@import "constants";
+
 // This is for content specific styles. To add a custom content class
 // to a page, add an [extra] section to the page’s front matter like this:
 // [extra]
 // content_class = "custom-class-name"
-.stromata {
+
+.contentWrapper.stromata {
   ul {
     list-style-type: none;
     padding-left: 1em;
@@ -13,7 +16,7 @@
   }
 }
 
-.tagPage {
+.contentWrapper.tagPage {
   ul.taxonomies {
     list-style-type: none;
     padding-left: 0;
@@ -22,6 +25,34 @@
 
     h2 {
       margin-top: 0;
+    }
+  }
+}
+
+.contentWrapper.home-1 {
+  svg {
+    max-width: 80vw;
+
+    .text {
+      font-family: $paragraphFont;
+      font-size: 2em;;
+      fill: 0;
+    }
+
+    a.circleButton:hover {
+      .text, circle {
+        fill: $honeydew;
+      }
+    }
+    a.rectButton:hover {
+      .text, rect {
+        fill: $blueGray;
+      }
+    }
+    a.polygonButton:hover {
+      .text, polygon {
+        fill: $lightSeagreen;
+      }
     }
   }
 }
