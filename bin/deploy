@@ -80,8 +80,8 @@ zola check
 SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" BUILD_TIME="$build_time" zola build --output-dir ./docs
 
 # TODO Remove this
-echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
-rm ./docs/atom.xml
+# echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
+# rm ./docs/atom.xml
 # /TODO Remove this
 
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
