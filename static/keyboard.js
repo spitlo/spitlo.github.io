@@ -200,6 +200,9 @@ function updateCommandLineText(content) {
   $commandLine.innerHTML = '<span>' + (content || command) + '</span>'
   if (command) {
     var commandNames = Object.keys(commands)
+    // Don’t sort for now, perhaps we want to be able to control the priority
+    // of hints (earlier in the commands object = more likely hint)
+    // commandNames.sort()
     var partialMatch = findPartialMatch(commandNames, command)
     if (partialMatch) {
       commandHint = partialMatch
