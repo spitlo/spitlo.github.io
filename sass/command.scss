@@ -1,0 +1,78 @@
+@import "constants";
+
+#commandLine,
+#commandLineHints {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 32px;
+  background-color: $black;
+  color: $aquamarine;
+  font-family: $paragraphFont;
+  line-height: 32px;
+  font-size: 16px;
+  opacity: 0.6;
+
+  &::before {
+    content: ":";
+    padding: 0 4px;
+  }
+
+  &.visible {
+    display: block;
+  }
+}
+
+#commandLine {
+  text-shadow: 0 0 2px $lightSeagreen;
+
+  span {
+    border-right: 1px solid $lightSeagreen;
+    animation: blinkingCursor .9s linear infinite;
+    min-width: 2px;
+  }
+}
+
+#commandLineHints {
+  transition: all 0.3s ease-in-out;
+
+  &.alertMode {
+    display: block;
+    height: unset; // This removes the animation but enables dynamic height. Fair tradeoff.
+    max-height: 80vh;
+    opacity: .95;
+
+    &.help {
+      &::before {
+        content: "?";
+      }
+    }
+
+    &.error {
+      &::before {
+        content: "!";
+      }
+    }
+
+    code {
+      background-color: $orange;
+    }
+
+    div {
+      padding: 0 1em;
+      color: $white;
+      font-weight: 200;
+    }
+  }
+}
+
+@keyframes blinkingCursor {
+  0% {
+    border-right: 1px solid $lightSeagreen;
+  }
+  50% {
+    border-right: 0;
+  }
+}

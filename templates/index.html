@@ -107,7 +107,7 @@
         {% endblock content %}
       </main>
 
-      <footer>
+      <footer id="bottom">
         <section class="details">
           {% set build_time = get_env(name="BUILD_TIME", default="unavailable") %}
           {% set site_version = get_env(name="SITE_VERSION", default="unavailable") %}
@@ -144,7 +144,7 @@
           Technology icons from <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simple Icons</a><br>
           Category icons from <a href="https://remixicon.com/" target="_blank" rel="noopener noreferrer">Remix Icon</a><br>
           Fonts: <a href="https://www.freshfonts.io/" target="_blank" rel="noopener noreferrer">Gangster Grotesk</a> by <a href="http://www.adrienmidzic.fr/">Adrien Midzic</a> and <a href="https://rubjo.github.io/victor-mono/" target="_blank" rel="noopener noreferrer">Victor Mono</a> by <a href="https://github.com/rubjo">Rune B</a>
-          <div class="hr" />
+          <div class="hr"></div>
         </section>
         <section class="links">
           <span class="link">
@@ -169,10 +169,13 @@
           </span>
         </section>
       </footer>
-      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});">
-      </div>
+      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});"></div>
 
       {% include "partials/help.html" %}
+
+      <div id="commandLineHints"></div>
+      <div id="commandLine"></div>
+      <audio id="player" controls autoplay></audio>
     </div>
     <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>

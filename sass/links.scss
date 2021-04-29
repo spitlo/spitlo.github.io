@@ -45,8 +45,15 @@ body {
     ul.taxonomies {
       a.numberedLink::after {
         top: -18px;
-        left: -0;
+        left: 0;
       }
     }
+
+    // details ul {
+    //   a.numberedLink::after {
+    //     top: 4px;
+    //     left: -20px;
+    //   }
+    // }
   }
 }

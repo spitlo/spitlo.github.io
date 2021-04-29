@@ -6,9 +6,9 @@
   width: 75%;
   max-width: 48rem;
   transform: translate(-50%, -50%);
-  background-color: $darkGray;
+  background-color: $black;
   color: $white;
-  border-radius: 1em;
+  border-radius: .1em;
   padding: 1em 2em;
   font-family: $paragraphFont;
   box-shadow: 0 0 500px $darkGray;
@@ -18,9 +18,13 @@
   transition: opacity .1s ease-out 0s, top 0s linear .9s;
 
   &.visible {
-    opacity: 1;
+    opacity: .95;
     top: 40%;
     transition: top 0s linear 0s, opacity .1s ease .01s;
+  }
+
+  dl {
+    font-weight: 200;
   }
 
   h2 {

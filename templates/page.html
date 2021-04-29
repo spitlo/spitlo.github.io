@@ -66,22 +66,22 @@
   {% if page.word_count > 500 %}
     <details class="toc">
       <summary>Table of contents</summary>
-      <ul>
+      <ol>
         {% for h1 in page.toc %}
           <li>
             <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
             {% if h1.children %}
-              <ul>
+              <ol>
                 {% for h2 in h1.children %}
                   <li>
                     <a href="{{h2.permalink | safe}}">{{ h2.title }}</a>
                   </li>
                 {% endfor %}
-              </ul>
+              </ol>
             {% endif %}
           </li>
         {% endfor %}
-      </ul>
+      </ol>
     </details>
   {% endif %}
 

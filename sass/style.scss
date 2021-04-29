@@ -3,9 +3,11 @@
 @import "icons";
 
 @import "code";
+@import "command";
 @import "content";
 @import "help";
 @import "links";
+@import "print";
 @import "project";
 @import "search";
 @import "technologies";
@@ -21,6 +23,7 @@ html, body {
 html {
   // This is ugly, but so are horizontal scrollbars :(
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -404,6 +407,10 @@ pre {
   padding: 1em;
   max-width: 45rem;
   overflow-x: auto;
+
+  &#printHeader {
+    display: none;
+  }
 }
 
 pre code {
@@ -431,8 +438,19 @@ details.toc {
     }
 
     &::marker {
-      // This doesn’t work in Chrome (Brave), but it shows up in Elements
       color: $red;
+    }
+  }
+
+  ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 4rem;
+    margin-top: .4rem;
+
+    ol {
+      list-style-type: lower-roman;
+      padding-left: 0;
+      font-size: 1.1rem;
     }
   }
 }
