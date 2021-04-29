@@ -21,6 +21,7 @@ To output all Tera variables in code, add this:
   - [ ] Fix bug with search not working after editing query
   - [ ] Add ellipsis in front of cropped text
 - [ ] Make font smaller in SVG titles (text overlaps in Tor Browser)
+- [ ] Randomize start page
 - [ ] Switch to using OGG instead of MP3 for audio?
 - [x] Add favicon
 - [x] Add `first_commit` date to code projects

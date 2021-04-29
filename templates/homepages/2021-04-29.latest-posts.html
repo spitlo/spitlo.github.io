@@ -1,0 +1,22 @@
+<h1>Hello!</h1>
+
+<section class="project code home">
+  <h2>Latest posts in <a href="/code">code</a></h2>
+  <ul class="projectList code">
+    {% set code = get_section(path="code/_index.md") %}
+    {% for project in code.pages | slice(end=3) %}
+      {% include "partials/list-project.html" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="project music home">
+  <h2>Latest posts in <a href="/music">music</a></h2>
+  <ul class="projectList">
+    {% set music = get_section(path="music/_index.md") %}
+    {% for project in music.pages | slice(end=3) %}
+      {% include "partials/list-project.html" %}
+    {% endfor %}
+  </ul>
+
+</section>
