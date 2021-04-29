@@ -13,7 +13,6 @@ To output all Tera variables in code, add this:
 ## To do
 
 - [ ] Add controls for audio player
-- [ ] Create a start page
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [ ] Improve search
@@ -25,6 +24,7 @@ To output all Tera variables in code, add this:
 - [ ] Switch to using OGG instead of MP3 for audio?
 - [x] Add favicon
 - [x] Add `first_commit` date to code projects
+- [x] Create a start page
 - [x] Finish tags landing page
 - [x] Finish tech tags page
 - [x] Implement keyboard navigation
