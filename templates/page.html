@@ -88,9 +88,9 @@
   {{ page.content | safe }}
 
   {% if page.earlier %}
-    Previous article: {{ page.earlier.permalink }}
+    {# Previous article: {{ page.earlier.permalink }} #}
   {% endif %}
   {% if page.later %}
-    Next article: {{ page.later.permalink }}
+    {# Next article: {{ page.later.permalink }} #}
   {% endif %}
 {% endblock content %}
