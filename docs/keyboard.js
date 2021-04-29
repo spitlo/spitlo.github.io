@@ -1,6 +1,7 @@
 var $commandLine = document.getElementById('commandLine')
 var $commandLineHint = document.getElementById('commandLineHints')
 var $help = document.getElementById('help')
+var $player = document.getElementById('player')
 var $questionMark = document.getElementById('questionMark')
 var $searchInput = document.getElementById('search')
 var $top = document.getElementById('top')
@@ -37,6 +38,7 @@ var alphabet = {
   '.': ['   ','   ',' * '],
   ':': ['   ',' , ',' ’ ']
 }
+var songIndex = 0
 var commandLineActive = false
 var command = ''
 var commandHint = ''
@@ -46,6 +48,12 @@ var commands = {
     helpMessage += '<code>top</code> Go to top of page<br>'
     helpMessage += '<code>print</code> Render page in a dot matrix friendly way<br>'
     helpMessage += '<code>unprint</code> Undo the above command<br>'
+    // Audio
+    helpMessage += '<code>play</code> Play any linked music<br>'
+    // helpMessage += '<code>pause</code>/<code>stop</code> Pause/stop player<br>'
+    helpMessage += '<code>pause</code> Pause player<br>'
+    helpMessage += '<code>prev</code>/<code>next</code> Previous/next song in playlist<br>'
+    // MEta
     helpMessage += '<code>help</code> Show this message<br>'
     helpMessage += 'Commands are tab completable. Type <code>:</code> to try a command.'
     showCommandLineAlert('Available commands', helpMessage)
@@ -95,6 +103,55 @@ var commands = {
     if (toc) {
       toc.removeAttribute('open')
     }
+  },
+
+  play: function play() {
+    if ($player) {
+      if ($player.src && $player.paused) {
+        $player.play()
+      } else {
+        var songs = document.querySelectorAll('a[href$="mp3"]')
+        if (songs && songs.length > 0) {
+          // $player.className = 'visible'
+          $player.src = songs[songIndex]
+          $player.addEventListener('ended', commands.next, false)
+        } else {
+          showCommandLineAlert('Sorry, no audio found', 'I couldn’t find any audio files to play on this page.', true)
+        }
+      }
+    } else {
+      showCommandLineAlert('No audio player', 'Sorry, your web browser doesn’t seem to support audio.', true)
+    }
+  },
+
+  pause: function pause() {
+    if ($player) {
+      $player.pause()
+    }
+  },
+
+  _stop: function stop() {
+    if ($player) {
+      // This does not work
+      $player.src = ''
+      songIndex = 0
+    }
+  },
+
+  prev: function prev() {
+    var songs = document.querySelectorAll('a[href$="mp3"]')
+    if (songs && songs.length > 0) {
+      songIndex = (songIndex === 0) ? songs.length - 1 : songIndex - 1
+      $player.src = songs[songIndex]
+    }
+  },
+
+  next: function next() {
+    var songs = document.querySelectorAll('a[href$="mp3"]')
+    if (songs && songs.length > 0) {
+      songIndex = (songIndex === songs.length - 1) ? 0 : songIndex + 1
+      $player.src = songs[songIndex]
+    }
   }
 }
 
@@ -110,6 +167,9 @@ var pressed = {
 }
 
 function findPartialMatch(stack, needle) {
+  if (needle.substring(0, 1) === '_') {
+    return
+  }
   // Find elements in array "stack" that starts with letter(s) "needle"
   var matches = stack.filter(function(value) {
     if (value) {
@@ -125,6 +185,7 @@ function showCommandLineAlert(title, message, isError) {
   $commandLineHint.className = 'alertMode'
   if (isError) {
     $commandLineHint.classList.add('error')
+    message = message + '<br>Type <code>:</code> to try another command.'
   } else {
     $commandLineHint.classList.add('help')
   }
@@ -167,7 +228,7 @@ function evaluateCommand(command) {
   if (commands[command]) {
     commands[command]()
   } else {
-    showCommandLineAlert('Sorry, that’s not something I understand', 'Try using the tab completion to enter commands correctly or type <code>help</code> to view a list of valid commands.<br>Type <code>:</code> to try again.', true)
+    showCommandLineAlert('Sorry, that’s not something I understand', 'Try using the tab completion to enter commands correctly or type <code>help</code> to view a list of valid commands.', true)
   }
 }
 
@@ -204,7 +265,7 @@ document.onkeydown = function(event) {
       }
     }
 
-    if (/^[A-Za-z0-9]$/.test(event.key)) {
+    if (/^[A-Za-z0-9_]$/.test(event.key)) {
       command = command + event.key
       updateCommandLineText()
     }
