@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
     {% if current_path %}
       {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ") %}
