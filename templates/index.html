@@ -113,6 +113,9 @@
                 <a class="crumb" href="{{ section.permalink }}">{{ section.title }}</a><span class="divider">&gt;</span>
               {% endfor %}
               <span class="crumb current">{% if page %}{{ page.title }}{% elif section %}{{ section.title }}{% endif %}</span>
+              {% if page and page.later %}
+                <span class="divider forward"><a href="{{ page.later.permalink }}" rel="next">&gt;</a></span>
+              {% endif %}
             {% endif %}
           </nav>
         {% endblock breadcrumbs %}

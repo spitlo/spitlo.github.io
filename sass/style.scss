@@ -216,6 +216,10 @@ main {
       font-family: $paragraphFont;
       font-size: .7em;
       margin: 0 4px 0 6px;
+
+      &.forward {
+        display: none;
+      }
     }
   }
 
@@ -590,6 +594,19 @@ dd {
 
       .divider {
         display: none;
+      }
+    }
+  }
+
+  main {
+    .breadcrumbs {
+      .divider.forward {
+        display: inline;
+
+        a {
+          color: $black;
+          text-decoration: none;
+        }
       }
     }
   }
