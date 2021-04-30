@@ -46,8 +46,8 @@ var commands = {
   help: function help() {
     var helpMessage = ''
     helpMessage += '<code>top</code> Go to top of page<br>'
-    helpMessage += '<code>print</code> Render page in a dot matrix friendly way<br>'
-    helpMessage += '<code>unprint</code> Undo the above command<br>'
+    helpMessage += '<code>dotmatrix</code> Render page in a dot matrix friendly way<br>'
+    helpMessage += '<code>notmatrix</code> Undo the above command<br>'
     // Audio
     helpMessage += '<code>play</code> Play any linked music<br>'
     // helpMessage += '<code>pause</code>/<code>stop</code> Pause/stop player<br>'
@@ -59,17 +59,17 @@ var commands = {
     showCommandLineAlert('Available commands', helpMessage)
   },
 
-  print: function print() {
+  dotmatrix: function dotmatrix() {
     // Show a stripped down version of page, suitable
     // for printing or just nerding out.
-    document.body.classList.add('print')
+    document.body.classList.add('dotmatrix')
     var toc = document.getElementsByTagName('details')[0]
     if (toc) {
       toc.setAttribute('open', true)
     }
     var header = document.getElementsByTagName('h1')[0]
-    var printHeader = document.getElementById('printHeader')
-    if (header && !printHeader) {
+    var dotmatrixHeader = document.getElementById('dotmatrixHeader')
+    if (header && !dotmatrixHeader) {
       var headerText = header.innerText
       var figlet = ['', '', '']
       for (x = 0; x <= headerText.length; x++) {
@@ -83,13 +83,9 @@ var commands = {
       var figletHeader = document.createElement('pre')
       var underline = new Array(figlet[figlet.length - 1].length).join('-')
       figlet.push(' ' + underline)
-      figletHeader.id = 'printHeader'
+      figletHeader.id = 'dotmatrixHeader'
       figletHeader.innerText = figlet.join('\n')
       header.insertAdjacentElement('afterend', figletHeader)
-      // The timeout let’s us return the function immediately, to close
-      // the command line overlay. Also it gives the user a view of the
-      // print version of the site.
-      setTimeout(window.print, 1000)
     }
   },
 
@@ -97,8 +93,8 @@ var commands = {
     $top.scrollIntoView()
   },
 
-  unprint: function unprint() {
-    document.body.classList.remove('print')
+  notmatrix: function notmatrix() {
+    document.body.classList.remove('dotmatrix')
     var toc = document.getElementsByTagName('details')[0]
     if (toc) {
       toc.removeAttribute('open')
