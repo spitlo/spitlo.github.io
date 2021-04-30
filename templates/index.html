@@ -4,12 +4,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
     {% if current_path %}
-      {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ")%}
+      {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ") %}
       {% set og_title = "Spitlo.com Corporate Overlord Protection Activated" %}
     {% else %}
       {% set og_page_url = "" %}
@@ -30,7 +30,7 @@
     <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
 
     {% if config.generate_feed %}
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) | safe }}">
+      <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ get_url(path="atom.xml", trailing_slash=false) | safe }}">
     {% endif %}
 
     <link href="{{ get_url(path="/style.css", cachebust=true) | safe }}" rel="stylesheet">
@@ -87,9 +87,9 @@
         <nav>
           <ul>
             <li><a href="/" class="{% if main_section == "home" %}active{% endif %}">home</a></li>
-            <li><a href="/code" class="{% if main_section == "code" %}active{% endif %}">code</a></li>
-            <li><a href="/music" class="{% if main_section == "music" %}active{% endif %}">music</a></li>
-            <li><a href="/tags" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
+            <li><a href="/code/" class="{% if main_section == "code" %}active{% endif %}">code</a></li>
+            <li><a href="/music/" class="{% if main_section == "music" %}active{% endif %}">music</a></li>
+            <li><a href="/tags/" class="{% if main_section == "tags" %}active{% endif %}">tags</a></li>
           </ul>
         </nav>
 
@@ -170,7 +170,7 @@
           </span>
           {% if config.generate_feed %}
             <span class="link">
-              {{ macros::icon(name="rss", size="small") }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">/atom.xml</a>
+              {{ macros::icon(name="rss", size="small") }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">atom.xml</a>
             </span>
           {% endif %}
           <span class="link">
@@ -189,9 +189,10 @@
       <div id="commandLine"></div>
       <audio id="player" controls autoplay></audio>
     </div>
-    <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
-    <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
+
     <script src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="search.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
   </body>
 </html>

@@ -88,6 +88,7 @@
   {{ page.content | safe }}
 
   {% if page.earlier or page.later %}
+    <br>
     <nav class="pager">
       {% if page.earlier %}
         <a href="{{ page.earlier.permalink }}" rel="prev">{{ page.earlier.title }}</a>
