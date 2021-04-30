@@ -6,6 +6,7 @@
     {{ icon_code | safe }}
   </span>
 {% endmacro icon %}
+
 {% macro shapes(amount=3, width=250, height=250, type="circles") %}
   {% set colors = [
     "#0e070c",
@@ -43,6 +44,7 @@
     </g>
   </svg>
 {% endmacro shapes %}
+
 {% macro cardinal(number=0) %}
   {% set cardinals = [
     'zero',
