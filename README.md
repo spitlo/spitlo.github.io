@@ -13,7 +13,7 @@ To output all Tera variables in code, add this:
 ## To do
 
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
-- [ ] Add controls for audio player
+- [ ] Add command for unlocking contact information in footer
 - [ ] Consider using `<script type="module">` to avoid loading JavaScript at all in older browsers [like here](https://www.matuzo.at/blog/html-boilerplate/)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
@@ -45,4 +45,5 @@ To output all Tera variables in code, add this:
 - [x] Styling for Previous/Next article links
 - [x] Update the ~~`balls`~~ `shapes` macro to take a ~~`shape`~~ `type` argument, to match the squares and triangles of the header and footer
 - [x] Use `word_count` to decide whether to show a TOC or not
+- [x] ~~Add controls for audio player~~
 - [x] ~~Create GitHub action that deploys site only when editing files directly in GitHub. Possible?~~ Use `workflow_dispatch` to enable deploys from GitHub
