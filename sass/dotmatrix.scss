@@ -61,22 +61,28 @@ body.dotmatrix {
     }
   }
 
-  nav.breadcrumbs {
-    margin-top: 1rem;
+  nav {
+    &.breadcrumbs {
+      margin-top: 1rem;
 
-    &::before {
-      font-family: $paragraphFont;
-      font-size: .9em;
-      content: "SPITLO.COM: ";
+      &::before {
+        font-family: $paragraphFont;
+        font-size: .9em;
+        content: "SPITLO.COM: ";
+      }
+
+      .crumb {
+        background: none;
+        color: $black;
+
+        &.current {
+          border: none;
+        }
+      }
     }
 
-    .crumb {
-      background: none;
-      color: $black;
-
-      &.current {
-        border: none;
-      }
+    &.pager {
+      display: none;
     }
   }
 

@@ -15,7 +15,6 @@ To output all Tera variables in code, add this:
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Add controls for audio player
 - [ ] Embed hidden audio links in pages that player can pick up on?
-- [ ] Hide pagination in dotmatrix mode
 - [ ] Improve favicon
 - [ ] Improve search
   - [ ] Implement search for mobile
@@ -31,6 +30,7 @@ To output all Tera variables in code, add this:
 - [x] Finish tags landing page
 - [x] Finish tech tags page
 - [x] Fix footer width issues on small screens
+- [x] Hide pagination in dotmatrix mode
 - [x] Implement keyboard navigation
   - [x] Command mode ("`:`")
   - [x] Help ("`?`")
