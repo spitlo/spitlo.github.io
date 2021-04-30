@@ -9,17 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     {% if current_url %}
-      {% set og_page_url = current_url %}
+      {% set og_page_url = current_path %}
       {% set og_title = "Spitlo.com Corporate Overlord Protection Activated" %}{# TODO Improve this :) #}
     {% else %}
-      {% set og_page_url = config.base_url %}
+      {% set og_page_url = "" %}
       {% set og_title = config.title %}
     {% endif %}
 
     <meta property="og:title" content="{{ og_title }}" />
     <meta property="og:url" content="https://deletefacebook.com/" />
     <meta property="og:image" content="{{ get_url(path="/images/og.png", cachebust=true) | safe }}" />
-    <meta property="og:description" content="This link is probably tracked. Please visit {{ og_page_url | safe }} instead." />
+    <meta property="og:description" content="This link is probably tracked. Please visit spitlo DOT com{{ og_page_url | replace(from="/", to=" SLASH ") }}instead." />
 
     {% if page and page.description %}
       <meta name="description" content="{{ page.description }}">
