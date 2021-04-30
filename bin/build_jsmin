@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eu
+
+gcc -o bin/jsmin bin/jsmin.c

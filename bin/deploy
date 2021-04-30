@@ -79,12 +79,22 @@ build_time=$(date +'%Y-%m-%dT%H:%M:%S%z')
 zola check
 SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" BUILD_TIME="$build_time" zola build --output-dir ./docs
 
-# TODO Remove this
-# echo "<html><body>spitlo.com</body></html>" > ./docs/index.html
-# rm ./docs/atom.xml
-# /TODO Remove this
-
+# Minify some assets
+## Don’t include full url in search index
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
+## Build JSMin (https://www.crockford.com/jsmin.html)
+if [ ! -x "bin/jsmin" ]; then
+  bin/build_jsmin
+fi
+## Ever so slightly minify scripts. Add scripts to this array as needed
+scripts=("keyboard" "search")
+for script in "${scripts[@]}"; do
+  mv "docs/$script.js" "docs/_$script.js"
+  bin/jsmin <"docs/_$script.js" >"docs/$script.js" "spitlo.com $script functions"
+  rm "docs/_$script.js"
+done
+
+# Minification done, add files and deploy
 git add ./docs
 git commit --message "Deploy version $new_version"
 git push origin "$MAIN_BRANCH"
