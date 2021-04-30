@@ -14,6 +14,7 @@ To output all Tera variables in code, add this:
 
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Add controls for audio player
+- [ ] Consider using `<script type="module">` to avoid loading JavaScript at all in older browsers [like here](https://www.matuzo.at/blog/html-boilerplate/)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [ ] Improve search
