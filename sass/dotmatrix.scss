@@ -1,0 +1,147 @@
+@import "constants";
+
+body.dotmatrix {
+  font-size: .8rem!important;
+  background-image: none!important;
+
+  header#top,
+  // nav.breadcrumbs,
+  footer#bottom,
+  .heel {
+    display: none;
+  }
+
+  a {
+    color: $black;
+
+    // &:after {
+    //   content: "["attr(href)"]"
+    // }
+  }
+
+  code, pre {
+    background-color: transparent;
+    padding-left: 0;
+
+    &#dotmatrixHeader {
+      display: block;
+      font-weight: 800;
+      margin-left: -.5rem;
+    }
+  }
+
+  details {
+    &.toc {
+      summary {
+        text-decoration: underline;
+
+        &::marker {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    font-weight: 900;
+    border-bottom: 1px solid $black;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+
+      &.anchor {
+        display: none;
+      }
+    }
+  }
+
+  nav.breadcrumbs {
+    margin-top: 1rem;
+
+    &::before {
+      font-family: $paragraphFont;
+      font-size: .9em;
+      content: "SPITLO.COM: ";
+    }
+
+    .crumb {
+      background: none;
+      color: $black;
+
+      &.current {
+        border: none;
+      }
+    }
+  }
+
+  .project,
+  .term {
+    ul {
+      li {
+        background-color: $white;
+        border: 1px dashed $black;
+        box-shadow: none;
+        // This does not work, but keep for now and investigate further:
+        break-before: always;
+        break-inside: avoid;
+
+        h2 {
+          font-size: .8rem;
+          border-bottom: 1px solid $black;
+        }
+
+        span.label {
+          color: $black!important;
+        }
+
+        svg {
+          fill: $black!important;
+        }
+
+        .postedIn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.tagList, .projectList {
+      li {
+        background-color: $white;
+        box-shadow: none;
+        border: 1px dashed black;
+
+        p {
+          margin-top: 0;
+        }
+
+        span.icon {
+          border: 0;
+
+          svg {
+            fill: $black;
+          }
+        }
+
+        span.taxonomy {
+          background-color: transparent;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media dotmatrix {
+  #commandLine,
+  #commandLineHints {
+    display: none;
+  }
+}
