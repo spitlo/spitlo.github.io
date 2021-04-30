@@ -8,16 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    {% if current_url %}
-      {% set components = current_path | split(pat="/") %}
-      {% if section %}
-        {% set components = section.components %}
-      {% endif %}
-      {% if page %}
-        {% set components = page.components %}
-      {% endif %}
-      {% set og_page_url = components | join(sep=" SLASH ") %}
-      {% set og_page_url = " SLASH " ~ og_page_url %}
+    {% if current_path %}
+      {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ")%}
       {% set og_title = "Spitlo.com Corporate Overlord Protection Activated" %}
     {% else %}
       {% set og_page_url = "" %}
