@@ -576,6 +576,19 @@ dd {
   table {
     display: inline-block;
   }
+
+  footer {
+    .details {
+      .detail {
+        display: inline-block;
+        margin: 0 8px 8px 0;
+      }
+
+      .divider {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 680px) {

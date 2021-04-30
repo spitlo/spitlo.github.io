@@ -12,7 +12,6 @@ To output all Tera variables in code, add this:
 
 ## To do
 
-- [ ] ! Fix footer width issues on small screens
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Add controls for audio player
 - [ ] Embed hidden audio links in pages that player can pick up on?
@@ -29,6 +28,7 @@ To output all Tera variables in code, add this:
 - [x] Create a start page
 - [x] Finish tags landing page
 - [x] Finish tech tags page
+- [x] Fix footer width issues on small screens
 - [x] Implement keyboard navigation
   - [x] Command mode ("`:`")
   - [x] Help ("`?`")
