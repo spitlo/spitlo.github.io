@@ -20,13 +20,25 @@ body.dotmatrix {
   }
 
   code, pre {
-    background-color: transparent;
+    background-color: transparent!important;
     padding-left: 0;
 
     &#dotmatrixHeader {
       display: block;
       font-weight: 800;
       margin-left: -.5rem;
+    }
+  }
+
+  // This is a bit fragile, but will do until Zola hopefully starts
+  // adding classes to highlighted code blocks.
+  pre[style*="background-color:#393939"] {
+    border-top: 1px dashed $black;
+    border-bottom: 1px dashed $black;
+    white-space: pre-wrap;
+
+    span {
+      color: $black!important;
     }
   }
 

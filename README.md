@@ -21,7 +21,6 @@ To output all Tera variables in code, add this:
   - [ ] Fix bug with search not working after editing query
   - [ ] Add ellipsis in front of cropped text
 - [ ] Make font smaller in SVG titles (text overlaps in Tor Browser)
-- [ ] Nicer code blocks in dotmatrix mode
 - [ ] Randomize start page
 - [ ] Switch to using OGG instead of MP3 for audio?
 - [x] Add favicon
@@ -41,6 +40,7 @@ To output all Tera variables in code, add this:
   - [x] ~~Expand TOCs~~
 - [x] Implement search?
 - [x] In the heel, always put a right-aligned `$white` shape to connect with the "cloud" in the footer
+- [x] Nicer code blocks in dotmatrix mode
 - [x] Styling for Previous/Next article links
 - [x] Update the ~~`balls`~~ `shapes` macro to take a ~~`shape`~~ `type` argument, to match the squares and triangles of the header and footer
 - [x] Use `word_count` to decide whether to show a TOC or not
