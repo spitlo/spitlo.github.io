@@ -16,6 +16,7 @@ To output all Tera variables in code, add this:
 - [ ] Add command for unlocking contact information in footer
 - [ ] Consider using `<script type="module">` to avoid loading JavaScript at all in older browsers [like here](https://www.matuzo.at/blog/html-boilerplate/)
 - [ ] Embed hidden audio links in pages that player can pick up on?
+- [ ] Fix taxonomy width issues on small screens
 - [ ] Improve favicon
 - [ ] Improve search
   - [ ] Implement search for mobile
