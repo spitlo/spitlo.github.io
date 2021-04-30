@@ -32,6 +32,9 @@
       <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ get_url(path="atom.xml", trailing_slash=false) | safe }}">
     {% endif %}
 
+    <link rel="preload" as="font" type="font/woff" href="{{ get_url(path="/fonts/GangsterGrotesk-Bold.woff") }}" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff" href="{{ get_url(path="/fonts/VictorMono-Thin.woff") }}" crossorigin="anonymous">
+
     <link href="{{ get_url(path="/style.css", cachebust=true) | safe }}" rel="stylesheet">
 
     <link rel="icon" type="image/svg+xml" href="{{ get_url(path="/images/favicon.svg", cachebust=true) | safe }}">
