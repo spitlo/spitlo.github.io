@@ -75,13 +75,9 @@
   {% endif %}
 {% endmacro cardinal %}
 
-{% macro scramble(text_length="0") %}
+{% macro scramble(text="") %}
   {% set code_page_437 = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜ¢£¥ƒáíóúñÑªº¿¬½¼¡«»░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀αßΓπΣσµτΦΘΩδ∞φε∩≡±≥≤÷≈°·√ⁿ²" %}
   {% set code_page_437 = code_page_437 | split(pat="") %}
-  {% set code_page_437_length = code_page_437 | length %}
-  {% for i in range(start=0, end=text_length) %}{% set char_index = get_random(start=0, end=code_page_437_length) %}{% set scrambled_char = code_page_437 | nth(n=char_index) %}{{ scrambled_char }}{% endfor %}
+  {% set text_length = text | length %}
+  {% set code_page_437_length = code_page_437 | length %}{% for i in range(start=0, end=text_length) %}{% set char_code = get_random(start=0, end=code_page_437_length) %}{% set scrambled_char = code_page_437 | nth(n=char_code) %}{{ scrambled_char }}{% endfor %}
 {% endmacro scramble %}
-
-
-╕)┤Ωô┤ΦR
-¿╓°júµ║^`¢8∞
