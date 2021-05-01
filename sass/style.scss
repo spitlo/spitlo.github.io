@@ -326,6 +326,11 @@ footer {
       &.shadow {
         text-shadow: 1px 1px $blue;
       }
+
+      .unscrambled {
+        color: $clearBlue;
+        text-shadow: 0 0 3px $clearBlue;
+      }
     }
 
     .icon {

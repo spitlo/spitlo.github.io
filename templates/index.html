@@ -168,10 +168,10 @@
             {{ macros::icon(name="github", size="small") }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
           </span>
           <span class="link">
-            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/" target="_blank" rel="noopener noreferrer" class="scrambled">{{ macros::scramble(text="XXX000") }}</a>
+            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/" target="_blank" rel="noopener noreferrer" class="scrambled threema">{{ macros::scramble(text_length="8") }}</a>
           </span>
           <span class="link">
-            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer" class="scrambled">{{ macros::scramble(text="__@spitlo.com") }}</a>
+            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer" class="scrambled email">{{ macros::scramble(text_length="13") }}</a>
           </span>
           {% if config.generate_feed %}
             <span class="link">
@@ -197,6 +197,7 @@
 
     <script src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
+    <script src="{{ get_url(path="util.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="search.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
   </body>

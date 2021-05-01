@@ -87,7 +87,7 @@ if [ ! -x "bin/jsmin" ]; then
   bin/build_jsmin
 fi
 ## Ever so slightly minify scripts. Add scripts to this array as needed
-scripts=("keyboard" "search")
+scripts=("keyboard" "search" "util")
 for script in "${scripts[@]}"; do
   mv "docs/$script.js" "docs/_$script.js"
   bin/jsmin <"docs/_$script.js" >"docs/$script.js" "spitlo.com $script functions"

@@ -1,8 +1,10 @@
+var $bottom = document.getElementById('bottom')
 var $commandLine = document.getElementById('commandLine')
 var $commandLineHint = document.getElementById('commandLineHints')
 var $help = document.getElementById('help')
 var $player = document.getElementById('player')
 var $questionMark = document.getElementById('questionMark')
+var $scrambled = document.getElementsByClassName('scrambled')
 var $searchInput = document.getElementById('search')
 var $top = document.getElementById('top')
 
@@ -53,10 +55,14 @@ var commands = {
     // helpMessage += '<code>pause</code>/<code>stop</code> Pause/stop player<br>'
     helpMessage += '<code>pause</code> Pause player<br>'
     helpMessage += '<code>prev</code>/<code>next</code> Previous/next song in playlist<br>'
-    // MEta
+    // Meta
     helpMessage += '<code>help</code> Show this message<br>'
     helpMessage += 'Commands are tab completable. Type <code>:</code> to try a command.'
     showCommandLineAlert('Available commands', helpMessage)
+  },
+
+  top: function top() {
+    $top.scrollIntoView()
   },
 
   dotmatrix: function dotmatrix() {
@@ -87,10 +93,6 @@ var commands = {
       figletHeader.innerText = figlet.join('\n')
       header.insertAdjacentElement('afterend', figletHeader)
     }
-  },
-
-  top: function top() {
-    $top.scrollIntoView()
   },
 
   notmatrix: function notmatrix() {
@@ -147,6 +149,17 @@ var commands = {
     if (songs && songs.length > 0) {
       songIndex = (songIndex === songs.length - 1) ? 0 : songIndex + 1
       $player.src = songs[songIndex]
+    }
+  },
+
+  nomoresecrets: function nomoresecrets() {
+    for (var x = 0; x < $scrambled.length; x++) {
+      var $element = $scrambled[x]
+      if (window.nms) {
+        $bottom.scrollIntoView()
+        var s = $element.classList.contains('email') ? 'aGlAc3BpdGxvLmNvbQ==' : 'OVlKQzlWREU='
+        window.nms($element, s)
+      }
     }
   }
 }
