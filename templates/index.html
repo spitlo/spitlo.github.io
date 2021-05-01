@@ -168,10 +168,10 @@
             {{ macros::icon(name="github", size="small") }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
           </span>
           <span class="link">
-            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/XXX000" target="_blank" rel="noopener noreferrer">XXX000</a>
+            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/" target="_blank" rel="noopener noreferrer" class="scrambled">{{ macros::scramble(text="XXX000") }}</a>
           </span>
           <span class="link">
-            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer">__@spitlo.com</a>
+            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer" class="scrambled">{{ macros::scramble(text="__@spitlo.com") }}</a>
           </span>
           {% if config.generate_feed %}
             <span class="link">
