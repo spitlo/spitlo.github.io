@@ -1,3 +1,5 @@
+// This is based on https://github.com/getzola/zola/blob/master/docs/static/search.js
+
 function debounce(func, wait) {
   var timeout
 
@@ -22,7 +24,7 @@ function debounce(func, wait) {
 // Then use a sliding window with a constant number of words and count the
 // sum of the values of the words within the window. Then use the window that got the
 // maximum sum. If there are multiple maximas, then get the last one.
-// Enclose the terms in <b>.
+// Enclose the terms in <strong>.
 function makeTeaser(body, terms) {
   var TERM_WEIGHT = 40
   var NORMAL_WORD_WEIGHT = 2
@@ -34,11 +36,10 @@ function makeTeaser(body, terms) {
   })
   var termFound = false
   var index = 0
-  var weighted = [] // contains elements of ['word', weight, index_in_document]
+  var weighted = [] // Contains elements of ['word', weight, index_in_document]
 
-  // split in sentences, then words
-  var sentences = body.toLowerCase().split('. ')
-
+  // Split in sentences, then words
+  var sentences = body.toLowerCase().trim().replace(/(?:\r\n|\r|\n)/g, ' ').split('. ')
   for (var i in sentences) {
     var words = sentences[i].split(' ')
     var value = FIRST_WORD_WEIGHT
@@ -61,7 +62,7 @@ function makeTeaser(body, terms) {
       index += 1  // ' ' or '.' if last word in sentence
     }
 
-    index += 1  // because we split at a two-char boundary '. '
+    index += 1  // Because we split at a two-char boundary '. '
   }
 
   if (weighted.length === 0) {
@@ -87,7 +88,7 @@ function makeTeaser(body, terms) {
   var maxSumIndex = 0
   if (termFound) {
     var maxFound = 0
-    // backwards
+    // Backwards
     for (var i = windowWeights.length - 1; i >= 0; i--) {
       if (windowWeights[i] > maxFound) {
         maxFound = windowWeights[i]
@@ -100,21 +101,26 @@ function makeTeaser(body, terms) {
   var startIndex = weighted[maxSumIndex][2]
   for (var i = maxSumIndex; i < maxSumIndex + windowSize; i++) {
     var word = weighted[i]
+    if (i === maxSumIndex && word[1] !== FIRST_WORD_WEIGHT) {
+      // We start in the middle of a sentence, add ellipsis
+      teaser.push('…')
+    }
+
     if (startIndex < word[2]) {
-      // missing text from index to start of `word`
+      // Missing text from index to start of `word`
       teaser.push(body.substring(startIndex, word[2]))
       startIndex = word[2]
     }
 
-    // add <em/> around search terms
+    // Add <strong/> around search terms
     if (word[1] === TERM_WEIGHT) {
-      teaser.push('<b>')
+      teaser.push('<strong>')
     }
     startIndex = word[2] + word[0].length
     teaser.push(body.substring(word[2], startIndex))
 
     if (word[1] === TERM_WEIGHT) {
-      teaser.push('</b>')
+      teaser.push('</strong>')
     }
   }
   teaser.push('…')
@@ -144,7 +150,7 @@ function initSearch() {
   var $searchInput = document.getElementById('search')
   var $searchResults = document.getElementById('search-results')
   var $searchResultsItems = document.getElementById('search-results-items')
-  var MAX_ITEMS = 10
+  var MAX_ITEMS = 8
 
   // Exit early of search is not setup in markup
   if (!$searchInput) {
@@ -152,12 +158,12 @@ function initSearch() {
   }
 
   var options = {
-    bool: 'AND',
+    bool: 'OR',
     fields: {
       title: { boost: 2 },
       body: { boost: 1 },
     },
-    expand: true,
+    expand: true
   }
   var currentTerm = ''
   var index = elasticlunr.Index.load(window.searchIndex)

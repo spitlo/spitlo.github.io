@@ -20,8 +20,8 @@ To output all Tera variables in code, add this:
 - [ ] Improve favicon
 - [ ] Improve search
   - [ ] Implement search for mobile
-  - [ ] Fix bug with search not working after editing query
-  - [ ] Add ellipsis in front of cropped text
+  - [x] ~~Fix bug with search not working after editing query~~ This seems to be a problem in elasticlunr
+  - [x] Add ellipsis in front of cropped text
 - [ ] Randomize start page
 - [ ] Switch to using OGG instead of MP3 for audio?
 - [x] Add favicon
