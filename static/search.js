@@ -243,9 +243,11 @@ function initSearch() {
     }
   })
 
-  $searchInput.addEventListener('search', function(event) {
+  $searchInput.addEventListener('input', function(event) {
+    // Make sure we clear search when user presses [×] in search field, but only then.
+    // In other cases we want to keep search focused (user deleted word).
     var term = $searchInput.value.trim()
-    if (!term) {
+    if (!term && typeof event.data === 'undefined') {
       clearSearch()
     }
   })
