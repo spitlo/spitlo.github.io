@@ -1,10 +1,12 @@
 // spitlo.com keyboard functions
 
+var $bottom=document.getElementById('bottom')
 var $commandLine=document.getElementById('commandLine')
 var $commandLineHint=document.getElementById('commandLineHints')
 var $help=document.getElementById('help')
 var $player=document.getElementById('player')
 var $questionMark=document.getElementById('questionMark')
+var $scrambled=document.getElementsByClassName('scrambled')
 var $searchInput=document.getElementById('search')
 var $top=document.getElementById('top')
 var alphabet={a:['____','|__|','|  |'],b:['___ ','|__]','|__]'],c:['____','|   ','|___'],d:['___ ','|  \\','|__/'],e:['____','|___','|___'],f:['____','|___','|   '],g:['____','| __','|__]'],h:['_  _','|__|','|  |'],i:['_','|','|'],j:[' _',' |','_|'],k:['_  _','|_/ ','| \\_'],l:['_   ','|   ','|___'],m:['_  _','|\\/|','|  |'],n:['_  _','|\\ |','| \\|'],o:['____','|  |','|__|'],p:['___ ','|__]','|   '],q:['____','|  |','|_\\|'],r:['____','|__/','|  \\'],s:['____','[__ ','___]'],t:['___',' | ',' | '],u:['_  _','|  |','|__|'],v:['_  _','|  |',' \\/ '],w:['_ _ _','| | |','|_|_|'],x:['_  _',' \\/ ','_/\\_'],y:['_   _',' \\_/ ','  |  '],z:['___',' / ','/__'],' ':['    ','    ','    '],'-':['    ',' __ ','    '],'.':['   ','   ',' * '],':':['   ',' , ',' ’ ']}
@@ -21,7 +23,7 @@ helpMessage+='<code>pause</code> Pause player<br>'
 helpMessage+='<code>prev</code>/<code>next</code> Previous/next song in playlist<br>'
 helpMessage+='<code>help</code> Show this message<br>'
 helpMessage+='Commands are tab completable. Type <code>:</code> to try a command.'
-showCommandLineAlert('Available commands',helpMessage)},dotmatrix:function dotmatrix(){document.body.classList.add('dotmatrix')
+showCommandLineAlert('Available commands',helpMessage)},top:function top(){$top.scrollIntoView()},dotmatrix:function dotmatrix(){document.body.classList.add('dotmatrix')
 var toc=document.getElementsByTagName('details')[0]
 if(toc){toc.setAttribute('open',true)}
 var header=document.getElementsByTagName('h1')[0]
@@ -35,7 +37,7 @@ var underline=new Array(figlet[figlet.length-1].length).join('-')
 figlet.push(' '+underline)
 figletHeader.id='dotmatrixHeader'
 figletHeader.innerText=figlet.join('\n')
-header.insertAdjacentElement('afterend',figletHeader)}},top:function top(){$top.scrollIntoView()},notmatrix:function notmatrix(){document.body.classList.remove('dotmatrix')
+header.insertAdjacentElement('afterend',figletHeader)}},notmatrix:function notmatrix(){document.body.classList.remove('dotmatrix')
 var toc=document.getElementsByTagName('details')[0]
 if(toc){toc.removeAttribute('open')}},play:function play(){if($player){if($player.src&&$player.paused){$player.play()}else{var songs=document.querySelectorAll('a[href$="mp3"]')
 if(songs&&songs.length>0){$player.src=songs[songIndex]
@@ -44,7 +46,10 @@ songIndex=0}},prev:function prev(){var songs=document.querySelectorAll('a[href$=
 if(songs&&songs.length>0){songIndex=(songIndex===0)?songs.length-1:songIndex-1
 $player.src=songs[songIndex]}},next:function next(){var songs=document.querySelectorAll('a[href$="mp3"]')
 if(songs&&songs.length>0){songIndex=(songIndex===songs.length-1)?0:songIndex+1
-$player.src=songs[songIndex]}}}
+$player.src=songs[songIndex]}},nomoresecrets:function nomoresecrets(){for(var x=0;x<$scrambled.length;x++){var $element=$scrambled[x]
+if(window.nms){$bottom.scrollIntoView()
+var s=$element.classList.contains('email')?'aGlAc3BpdGxvLmNvbQ==':'OVlKQzlWREU='
+window.nms($element,s)}}}}
 var navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/'}
 var pressed={'ctrlKey':false,}
 function findPartialMatch(stack,needle){if(needle.substring(0,1)==='_'){return}

@@ -73,25 +73,27 @@ $searchResultsItems.innerHTML=''
 $searchInput.value=currentTerm=''
 $searchInput.blur()
 $searchResults.style.display='none'}
-$searchInput.addEventListener('keyup',debounce(function(event){var term=$searchInput.value.trim()
+$searchInput.addEventListener('keyup',debounce(function(){var term=$searchInput.value.trim()
 if(term===currentTerm||!index){return}
 $searchResults.style.display=term===''?'none':'block'
 $searchResultsItems.innerHTML=''
-if(term===''){return}
+if(term===''){currentTerm=''
+return}
 results=index.search(term,options)
 if(results.length===0){$searchResults.style.display='none'
+currentTerm=''
 return}
 currentTerm=term
 for(var i=0;i<Math.min(results.length,MAX_ITEMS);i++){var item=document.createElement('li')
 item.innerHTML=formatSearchResultItem(results[i],term.split(' '))
 $searchResultsItems.appendChild(item)}},150))
-$searchInput.addEventListener('keyup',function(event){var term=$searchInput.value.trim()
+$searchInput.addEventListener('keydown',function(event){var term=$searchInput.value.trim()
 if(event.key==='Escape'){clearSearch()}
 if(term===''){return}
 if(event.key==='ArrowUp'||event.key==='ArrowDown'){if($searchResultsItems.children&&$searchResultsItems.children[selectedIndex-1]){$searchResultsItems.children[selectedIndex-1].className=''}
 if(event.key==='ArrowUp'){if(selectedIndex>1){selectedIndex--}else{selectedIndex=results.length}}else if(event.key==='ArrowDown'){if(selectedIndex<results.length){selectedIndex++}else{selectedIndex=1}}
 if($searchResultsItems.children&&$searchResultsItems.children[selectedIndex-1]){$searchResultsItems.children[selectedIndex-1].className='selected'}}else if(event.key==='Enter'){result=results[selectedIndex-1]
 if(result){document.location.href=result.ref}}})
-$searchInput.addEventListener('search',function(event){var term=$searchInput.value.trim()
-if(!term){clearSearch()}})}
+$searchInput.addEventListener('input',function(event){var term=$searchInput.value.trim()
+if(!term&&typeof event.data==='undefined'){clearSearch()}})}
 if(document.readyState==='complete'||(document.readyState!=='loading'&&!document.documentElement.doScroll)){initSearch()}else{document.addEventListener('DOMContentLoaded',initSearch)}
