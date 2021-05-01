@@ -13,13 +13,12 @@ To output all Tera variables in code, add this:
 ## To do
 
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
-- [ ] Add command for unlocking contact information in footer
+- [ ] Add command for unlocking contact information in footer (nms/nomoresecrets?)
 - [ ] Consider using `<script type="module">` to avoid loading JavaScript at all in older browsers [like here](https://www.matuzo.at/blog/html-boilerplate/)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Fix taxonomy width issues on small screens
 - [ ] Improve favicon
 - [ ] Randomize start page
-- [ ] Switch to using OGG instead of MP3 for audio?
 - [x] Add favicon
 - [x] Add `first_commit` date to code projects
 - [x] Create a start page
@@ -48,3 +47,4 @@ To output all Tera variables in code, add this:
 - [x] Use `word_count` to decide whether to show a TOC or not
 - [x] ~~Add controls for audio player~~
 - [x] ~~Create GitHub action that deploys site only when editing files directly in GitHub. Possible?~~ Use `workflow_dispatch` to enable deploys from GitHub
+- [x] ~~Switch to using OGG instead of MP3 for audio?~~ Support [is not there](https://caniuse.com/?search=ogg)
