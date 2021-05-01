@@ -3,6 +3,7 @@ var $commandLineHint = document.getElementById('commandLineHints')
 var $help = document.getElementById('help')
 var $player = document.getElementById('player')
 var $questionMark = document.getElementById('questionMark')
+var $scrambled = document.getElementsByClassName('scrambled')
 var $searchInput = document.getElementById('search')
 var $top = document.getElementById('top')
 
@@ -59,6 +60,10 @@ var commands = {
     showCommandLineAlert('Available commands', helpMessage)
   },
 
+  top: function top() {
+    $top.scrollIntoView()
+  },
+
   dotmatrix: function dotmatrix() {
     // Show a stripped down version of page, suitable
     // for printing or just nerding out.
@@ -87,10 +92,6 @@ var commands = {
       figletHeader.innerText = figlet.join('\n')
       header.insertAdjacentElement('afterend', figletHeader)
     }
-  },
-
-  top: function top() {
-    $top.scrollIntoView()
   },
 
   notmatrix: function notmatrix() {
@@ -147,6 +148,16 @@ var commands = {
     if (songs && songs.length > 0) {
       songIndex = (songIndex === songs.length - 1) ? 0 : songIndex + 1
       $player.src = songs[songIndex]
+    }
+  },
+
+  nomoresecrets: function nomoresecrets() {
+    for (x = 0; x < $scrambled.length; x++) {
+      var $element = $scrambled[x]
+      if (window.nms) {
+        var s = $element.classList.contains('email') ? 'aGlAc3BpdGxvLmNvbQ==' : 'OVlKQzlWREU='
+        window.nms($element, s)
+      }
     }
   }
 }
