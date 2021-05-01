@@ -180,7 +180,7 @@ function initSearch() {
     $searchResults.style.display = 'none'
   }
 
-  $searchInput.addEventListener('keyup', debounce(function(event) {
+  $searchInput.addEventListener('keyup', debounce(function() {
     var term = $searchInput.value.trim()
     if (term === currentTerm || !index) {
       return
@@ -188,12 +188,14 @@ function initSearch() {
     $searchResults.style.display = term === '' ? 'none' : 'block'
     $searchResultsItems.innerHTML = ''
     if (term === '') {
+      currentTerm = ''
       return
     }
     results = index.search(term, options)
 
     if (results.length === 0) {
       $searchResults.style.display = 'none'
+      currentTerm = ''
       return
     }
     currentTerm = term
@@ -204,7 +206,7 @@ function initSearch() {
     }
   }, 150))
 
-  $searchInput.addEventListener('keyup', function(event) {
+  $searchInput.addEventListener('keydown', function(event) {
     var term = $searchInput.value.trim()
     if (event.key === 'Escape') {
       clearSearch()

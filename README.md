@@ -38,7 +38,7 @@ To output all Tera variables in code, add this:
 - [x] Implement search?
 - [x] Improve search
   - [x] Implement search for mobile
-  - [x] ~~Fix bug with search not working after editing query~~ This seems to be a problem in elasticlunr
+  - [x] Fix bug with search not working after editing query
   - [x] Add ellipsis in front of cropped text
 - [x] In the heel, always put a right-aligned `$white` shape to connect with the "cloud" in the footer
 - [x] Make font smaller in SVG titles (text overlaps in Tor Browser)
