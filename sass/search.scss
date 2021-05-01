@@ -15,9 +15,13 @@
   &:focus {
     width: 140px;
   }
+
+  &::placeholder {
+    color: transparent;
+  }
 }
 
-#search-results {
+#searchResults {
   display: none;
   position: absolute;
   background-color: $lightSeagreen;
@@ -101,13 +105,38 @@
   }
 }
 
-// Hide search on mobile for now
 @media (max-width: 680px) {
   header .logo {
     .slash,
-    #questionMark,
-    input {
+    #questionMark {
       display: none;
+    }
+
+    #search {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-bottom: 1px dashed $dirtyYellow;
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      margin: 0;
+
+      &::placeholder {
+        color: $gray;
+      }
+    }
+
+    #searchResults {
+      position: fixed;
+      top: 34px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      bottom: 0;
+      overflow-y: auto;
     }
   }
 }

@@ -139,7 +139,7 @@ function getResultSection(result) {
 }
 
 function formatSearchResultItem(item, terms) {
-  return '<div id="search-results-item" class="' + getResultSection(item) + '">'
+  return '<div class="' + getResultSection(item) + '">'
   + '<a href="' + item.ref + '">'
   + '<div class="title">' + item.doc.title + '</div>'
   + '<div class="teaser">' + makeTeaser(item.doc.body || item.doc.description, terms) + '</div>'
@@ -148,8 +148,8 @@ function formatSearchResultItem(item, terms) {
 
 function initSearch() {
   var $searchInput = document.getElementById('search')
-  var $searchResults = document.getElementById('search-results')
-  var $searchResultsItems = document.getElementById('search-results-items')
+  var $searchResults = document.getElementById('searchResults')
+  var $searchResultsItems = document.getElementById('searchResultsItems')
   var MAX_ITEMS = 8
 
   // Exit early of search is not setup in markup
@@ -177,6 +177,7 @@ function initSearch() {
     $searchResultsItems.innerHTML = ''
     $searchInput.value = currentTerm = ''
     $searchInput.blur()
+    $searchResults.style.display = 'none'
   }
 
   $searchInput.addEventListener('keyup', debounce(function(event) {
@@ -239,6 +240,13 @@ function initSearch() {
       if (result) {
         document.location.href = result.ref
       }
+    }
+  })
+
+  $searchInput.addEventListener('search', function(event) {
+    var term = $searchInput.value.trim()
+    if (!term) {
+      clearSearch()
     }
   })
 }

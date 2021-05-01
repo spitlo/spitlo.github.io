@@ -18,10 +18,6 @@ To output all Tera variables in code, add this:
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Fix taxonomy width issues on small screens
 - [ ] Improve favicon
-- [ ] Improve search
-  - [ ] Implement search for mobile
-  - [x] ~~Fix bug with search not working after editing query~~ This seems to be a problem in elasticlunr
-  - [x] Add ellipsis in front of cropped text
 - [ ] Randomize start page
 - [ ] Switch to using OGG instead of MP3 for audio?
 - [x] Add favicon
@@ -40,6 +36,10 @@ To output all Tera variables in code, add this:
   - [x] ~~Command palette ("`Shift`+`Cmd/Ctrl`+`p`")~~
   - [x] ~~Expand TOCs~~
 - [x] Implement search?
+- [x] Improve search
+  - [x] Implement search for mobile
+  - [x] ~~Fix bug with search not working after editing query~~ This seems to be a problem in elasticlunr
+  - [x] Add ellipsis in front of cropped text
 - [x] In the heel, always put a right-aligned `$white` shape to connect with the "cloud" in the footer
 - [x] Make font smaller in SVG titles (text overlaps in Tor Browser)
 - [x] Nicer code blocks in dotmatrix mode
