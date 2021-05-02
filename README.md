@@ -15,7 +15,7 @@ To output all Tera variables in code, add this:
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
-- [x] Add command for unlocking contact information in footer (nms/nomoresecrets?)
+- [x] Add command for unlocking contact information in footer
 - [x] Add favicon
 - [x] Add `first_commit` date to code projects
 - [x] Create a start page
