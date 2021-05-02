@@ -1,7 +1,17 @@
-<h1>Spitlo.com</h1>
+<h1>Welcome home!</h1>
+
+{# Randmize this sentence #}
+{{ 'Spitlo.com is a growing collection of attempts at documenting ongoing endeavors in the disparate fields of computer programming and music, conducted, perhaps unfortunately, under the same moniker.' | markdown | safe }}
+
+<h2 id="endeavors-in-code">
+  <a class="anchor" href="#endeavors-in-code" aria-label="Anchor link for: endeavors-in-code">#</a>Endeavors in Code
+</h2>
+
+<p>
+  Below is a list of the most recent posts in the <a href="/code/">code</a> section. If you want to browse the code projects by category, there is a list of code related tags on the <a href="/technologies/">technologies</a> page.
+</p>
 
 <section class="project code home">
-  <h2>Latest posts in <a href="/code">code</a>:</h2>
   <ul class="projectList code">
     {% set code = get_section(path="code/_index.md") %}
     {% for project in code.pages | slice(end=3) %}
@@ -10,13 +20,36 @@
   </ul>
 </section>
 
-<section class="project music home">
-  <h2>Latest posts in <a href="/music">music</a>:</h2>
-  <ul class="projectList">
-    {% set music = get_section(path="music/_index.md") %}
-    {% for project in music.pages | slice(end=3) %}
-      {% include "partials/list-project.html" %}
-    {% endfor %}
-  </ul>
+{% set music = get_section(path="music/_index.md") %}
+{% set latest_music_post = music.pages | first %}
+{% if latest_music_post %}
+  <h2 id="endeavors-in-music">
+    <a class="anchor" href="#endeavors-in-music" aria-label="Anchor link for: endeavors-in-music">#</a>Endeavors in Music
+  </h2>
 
-</section>
+  <p>
+    The music section is a bit sparse at the moment, but rest assured there is a huge amount of procrastination done to preserve it in that state.
+  </p>
+
+  {% if latest_music_post.description %}
+    <p>
+      The latest post in the <a href="/music/">music</a> section is <strong>{{ latest_music_post.title }}</strong>, described as:
+    </p>
+
+    <blockquote>
+      <p>{{ latest_music_post.description }}</p>
+    </blockquote>
+  {% else %}
+    <p>
+      The latest post in the <a href="/music/">music</a> section is <strong>{{ latest_music_post.title }}</strong>.
+    </p>
+  {% endif %}
+
+  <p>
+    You are invited to <a href="{{ latest_music_post.permalink }}">read the full text</a> and perhaps even listen to the music.
+  </p>
+{% endif %}
+
+<p>
+  Enjoy!
+</p>
