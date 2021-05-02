@@ -105,22 +105,25 @@
   }
 }
 
+html.noJS {
+  header .logo {
+    .slash,
+    #questionMark,
+    #search,
+    #searchResults {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 680px) {
   html.noJS {
     header .logo {
-      #search,
-      #searchResults {
-        display: none;
-      }
+      padding: 1em 0 .4em 0;
     }
   }
 
   header .logo {
-    .slash,
-    #questionMark {
-      display: none;
-    }
-
     #search {
       display: block;
       position: fixed;
