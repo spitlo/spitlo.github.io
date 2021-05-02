@@ -29,6 +29,21 @@
   }
 }
 
+.contentWrapper.home-2021-04-29 {
+  .introduction {
+    padding: 1.6em;
+    background: $blueGray;
+    color: $lightWhite;
+    border: 1px solid $mutedPink;
+    max-width: 48rem;
+    font-weight: 300;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
 .contentWrapper.home-1 {
   svg {
     max-width: 80vw;

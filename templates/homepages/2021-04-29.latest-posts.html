@@ -1,7 +1,17 @@
+{% set introductions = [
+  "Spitlo.com is a growing collection of attempts at documenting ongoing endeavors in the ostensibly disparate fields of computer programming and music composition, conducted, perhaps unfortunately, under the same moniker.",
+  "Spitlo.com is a confounding farrago of efforts to record persistent endeavors in the seemingly discordant fields of computer programming and music composition, conducted, perhaps deliberately, under the same sobriquet.",
+  "Spitlo.com is a cacophonous contingent of intents to transcribe progressing endeavors in the undoubtedly divergent fields of computer programming and music composition, embarked upon, perhaps disconcertedly, under the same cognomen.",
+] %}
+{% set introductions_length = introductions | length %}
+{% set introductions_index = get_random(end=introductions_length) %}
+{% set introduction = introductions | nth(n=introductions_index) | markdown %}
+
 <h1>Welcome home!</h1>
 
-{# Randmize this sentence #}
-{{ 'Spitlo.com is a growing collection of attempts at documenting ongoing endeavors in the ostensibly disparate fields of computer programming and music composition, conducted, perhaps unfortunately, under the same moniker.' | markdown | safe }}
+<section class="introduction">
+  {{ introduction | safe }}
+</section>
 
 <h2 id="endeavors-in-code">
   <a class="anchor" href="#endeavors-in-code" aria-label="Anchor link for: endeavors-in-code">#</a>Endeavors in Code
@@ -52,4 +62,6 @@
 
 <p>
   Enjoy!
+  <br><br>
+  <code>// spitlo</code>
 </p>

@@ -15,7 +15,6 @@ To output all Tera variables in code, add this:
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
-- [ ] Randomize start page
 - [x] Add command for unlocking contact information in footer (nms/nomoresecrets?)
 - [x] Add favicon
 - [x] Add `first_commit` date to code projects
@@ -41,6 +40,7 @@ To output all Tera variables in code, add this:
 - [x] In the heel, always put a right-aligned `$white` shape to connect with the "cloud" in the footer
 - [x] Make font smaller in SVG titles (text overlaps in Tor Browser)
 - [x] Nicer code blocks in dotmatrix mode
+- [x] Randomize start page
 - [x] Styling for Previous/Next article links
 - [x] Update the ~~`balls`~~ `shapes` macro to take a ~~`shape`~~ `type` argument, to match the squares and triangles of the header and footer
 - [x] Use `word_count` to decide whether to show a TOC or not
