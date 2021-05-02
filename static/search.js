@@ -1,14 +1,14 @@
 // This is based on https://github.com/getzola/zola/blob/master/docs/static/search.js
 
 function debounce(func, wait) {
-  var timeout
+  let timeout
 
   return function () {
-    var context = this
-    var args = arguments
+    const context = this
+    const args = arguments
     clearTimeout(timeout)
 
-    timeout = setTimeout(function () {
+    timeout = setTimeout(() => {
       timeout = null
       func.apply(context, args)
     }, wait)
@@ -26,29 +26,27 @@ function debounce(func, wait) {
 // maximum sum. If there are multiple maximas, then get the last one.
 // Enclose the terms in <strong>.
 function makeTeaser(body, terms) {
-  var TERM_WEIGHT = 40
-  var NORMAL_WORD_WEIGHT = 2
-  var FIRST_WORD_WEIGHT = 8
-  var TEASER_MAX_WORDS = 30
+  const TERM_WEIGHT = 40
+  const NORMAL_WORD_WEIGHT = 2
+  const FIRST_WORD_WEIGHT = 8
+  const TEASER_MAX_WORDS = 30
 
-  var stemmedTerms = terms.map(function (w) {
-    return elasticlunr.stemmer(w.toLowerCase())
-  })
-  var termFound = false
-  var index = 0
-  var weighted = [] // Contains elements of ['word', weight, index_in_document]
+  const stemmedTerms = terms.map(w => elasticlunr.stemmer(w.toLowerCase()))
+  let termFound = false
+  let index = 0
+  const weighted = [] // Contains elements of ['word', weight, index_in_document]
 
   // Split in sentences, then words
-  var sentences = body.toLowerCase().trim().replace(/(?:\r\n|\r|\n)/g, ' ').split('. ')
+  const sentences = body.toLowerCase().trim().replace(/(?:\r\n|\r|\n)/g, ' ').split('. ')
   for (var i in sentences) {
-    var words = sentences[i].split(' ')
-    var value = FIRST_WORD_WEIGHT
+    const words = sentences[i].split(' ')
+    let value = FIRST_WORD_WEIGHT
 
-    for (var j in words) {
+    for (const j in words) {
       var word = words[j]
 
       if (word.length > 0) {
-        for (var k in stemmedTerms) {
+        for (const k in stemmedTerms) {
           if (elasticlunr.stemmer(word).startsWith(stemmedTerms[k])) {
             value = TERM_WEIGHT
             termFound = true
@@ -69,10 +67,10 @@ function makeTeaser(body, terms) {
     return body
   }
 
-  var windowWeights = []
-  var windowSize = Math.min(weighted.length, TEASER_MAX_WORDS)
+  const windowWeights = []
+  const windowSize = Math.min(weighted.length, TEASER_MAX_WORDS)
   // We add a window with all the weights first
-  var curSum = 0
+  let curSum = 0
   for (var i = 0; i < windowSize; i++) {
     curSum += weighted[i][1]
   }
@@ -85,9 +83,9 @@ function makeTeaser(body, terms) {
   }
 
   // If we didn't find the term, just pick the first window
-  var maxSumIndex = 0
+  let maxSumIndex = 0
   if (termFound) {
-    var maxFound = 0
+    let maxFound = 0
     // Backwards
     for (var i = windowWeights.length - 1; i >= 0; i--) {
       if (windowWeights[i] > maxFound) {
@@ -97,8 +95,8 @@ function makeTeaser(body, terms) {
     }
   }
 
-  var teaser = []
-  var startIndex = weighted[maxSumIndex][2]
+  const teaser = []
+  let startIndex = weighted[maxSumIndex][2]
   for (var i = maxSumIndex; i < maxSumIndex + windowSize; i++) {
     var word = weighted[i]
     if (i === maxSumIndex && word[1] !== FIRST_WORD_WEIGHT) {
@@ -128,7 +126,7 @@ function makeTeaser(body, terms) {
 }
 
 function getResultSection(result) {
-  var url = result ? result.ref : ''
+  const url = result ? result.ref : ''
   if (url.match(/\/code\//)) {
     return 'code'
   } else if (url.match(/\/music\//)) {
@@ -139,37 +137,33 @@ function getResultSection(result) {
 }
 
 function formatSearchResultItem(item, terms) {
-  return '<div class="' + getResultSection(item) + '">'
-  + '<a href="' + item.ref + '">'
-  + '<div class="title">' + item.doc.title + '</div>'
-  + '<div class="teaser">' + makeTeaser(item.doc.body || item.doc.description, terms) + '</div>'
-  + '<div class="help">ENTER</div></a></div>'
+  return `<div class="${getResultSection(item)}"><a href="${item.ref}"><div class="title">${item.doc.title}</div><div class="teaser">${makeTeaser(item.doc.body || item.doc.description, terms)}</div><div class="help">ENTER</div></a></div>`
 }
 
 function initSearch() {
-  var $searchInput = document.getElementById('search')
-  var $searchResults = document.getElementById('searchResults')
-  var $searchResultsItems = document.getElementById('searchResultsItems')
-  var MAX_ITEMS = 8
+  const $searchInput = document.getElementById('search')
+  const $searchResults = document.getElementById('searchResults')
+  const $searchResultsItems = document.getElementById('searchResultsItems')
+  const MAX_ITEMS = 8
 
   // Exit early of search is not setup in markup
   if (!$searchInput) {
     return
   }
 
-  var options = {
+  const options = {
     bool: 'OR',
     fields: {
       title: { boost: 2 },
       body: { boost: 1 },
     },
-    expand: true
+    expand: true,
   }
-  var currentTerm = ''
-  var index = elasticlunr.Index.load(window.searchIndex)
+  let currentTerm = ''
+  const index = elasticlunr.Index.load(window.searchIndex)
 
-  var selectedIndex = 0
-  var results = []
+  let selectedIndex = 0
+  let results = []
 
   function clearSearch() {
     selectedIndex = 0
@@ -180,8 +174,8 @@ function initSearch() {
     $searchResults.style.display = 'none'
   }
 
-  $searchInput.addEventListener('keyup', debounce(function() {
-    var term = $searchInput.value.trim()
+  $searchInput.addEventListener('keyup', debounce(() => {
+    const term = $searchInput.value.trim()
     if (term === currentTerm || !index) {
       return
     }
@@ -199,16 +193,16 @@ function initSearch() {
       return
     }
     currentTerm = term
-    for (var i = 0; i < Math.min(results.length, MAX_ITEMS); i++) {
-      var item = document.createElement('li')
+    for (let i = 0; i < Math.min(results.length, MAX_ITEMS); i++) {
+      const item = document.createElement('li')
       item.innerHTML = formatSearchResultItem(results[i], term.split(' '))
       $searchResultsItems.appendChild(item)
     }
   }, 150))
 
-  $searchInput.addEventListener('keydown', function(event) {
-    var term = $searchInput.value.trim()
-    if (event.key === 'Escape') {
+  $searchInput.addEventListener('keydown', ({key}) => {
+    const term = $searchInput.value.trim()
+    if (key === 'Escape') {
       clearSearch()
     }
 
@@ -216,18 +210,18 @@ function initSearch() {
       return
     }
 
-    if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+    if (key === 'ArrowUp' || key === 'ArrowDown') {
       if ($searchResultsItems.children && $searchResultsItems.children[selectedIndex - 1]) {
         $searchResultsItems.children[selectedIndex - 1].className = ''
       }
 
-      if (event.key === 'ArrowUp') {
+      if (key === 'ArrowUp') {
         if (selectedIndex > 1) {
           selectedIndex--
         } else {
           selectedIndex = results.length
         }
-      } else if (event.key === 'ArrowDown') {
+      } else if (key === 'ArrowDown') {
         if (selectedIndex < results.length) {
           selectedIndex++
         } else {
@@ -237,19 +231,19 @@ function initSearch() {
       if ($searchResultsItems.children && $searchResultsItems.children[selectedIndex - 1]) {
         $searchResultsItems.children[selectedIndex - 1].className = 'selected'
       }
-    } else if (event.key === 'Enter') {
-      result = results[selectedIndex - 1]
+    } else if (key === 'Enter') {
+      const result = results[selectedIndex - 1]
       if (result) {
         document.location.href = result.ref
       }
     }
   })
 
-  $searchInput.addEventListener('input', function(event) {
+  $searchInput.addEventListener('input', ({data}) => {
     // Make sure we clear search when user presses [×] in search field, but only then.
     // In other cases we want to keep search focused (user deleted word).
-    var term = $searchInput.value.trim()
-    if (!term && typeof event.data === 'undefined') {
+    const term = $searchInput.value.trim()
+    if (!term && typeof data === 'undefined') {
       clearSearch()
     }
   })
