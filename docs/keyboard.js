@@ -1,68 +1,67 @@
 // spitlo.com keyboard functions
 
-var $bottom=document.getElementById('bottom')
-var $commandLine=document.getElementById('commandLine')
-var $commandLineHint=document.getElementById('commandLineHints')
-var $help=document.getElementById('help')
-var $player=document.getElementById('player')
-var $questionMark=document.getElementById('questionMark')
-var $scrambled=document.getElementsByClassName('scrambled')
-var $searchInput=document.getElementById('search')
-var $top=document.getElementById('top')
-var alphabet={a:['____','|__|','|  |'],b:['___ ','|__]','|__]'],c:['____','|   ','|___'],d:['___ ','|  \\','|__/'],e:['____','|___','|___'],f:['____','|___','|   '],g:['____','| __','|__]'],h:['_  _','|__|','|  |'],i:['_','|','|'],j:[' _',' |','_|'],k:['_  _','|_/ ','| \\_'],l:['_   ','|   ','|___'],m:['_  _','|\\/|','|  |'],n:['_  _','|\\ |','| \\|'],o:['____','|  |','|__|'],p:['___ ','|__]','|   '],q:['____','|  |','|_\\|'],r:['____','|__/','|  \\'],s:['____','[__ ','___]'],t:['___',' | ',' | '],u:['_  _','|  |','|__|'],v:['_  _','|  |',' \\/ '],w:['_ _ _','| | |','|_|_|'],x:['_  _',' \\/ ','_/\\_'],y:['_   _',' \\_/ ','  |  '],z:['___',' / ','/__'],' ':['    ','    ','    '],'-':['    ',' __ ','    '],'.':['   ','   ',' * '],':':['   ',' , ',' ’ ']}
-var songIndex=0
-var commandLineActive=false
-var command=''
-var commandHint=''
-var commands={help:function help(){var helpMessage=''
-helpMessage+='<code>top</code> Go to top of page<br>'
-helpMessage+='<code>dotmatrix</code> Render page in a dot matrix friendly way<br>'
-helpMessage+='<code>notmatrix</code> Undo the above command<br>'
-helpMessage+='<code>play</code> Play any linked music<br>'
-helpMessage+='<code>pause</code> Pause player<br>'
-helpMessage+='<code>prev</code>/<code>next</code> Previous/next song in playlist<br>'
-helpMessage+='<code>help</code> Show this message<br>'
-helpMessage+='Commands are tab completable. Type <code>:</code> to try a command.'
-showCommandLineAlert('Available commands',helpMessage)},top:function top(){$top.scrollIntoView()},dotmatrix:function dotmatrix(){document.body.classList.add('dotmatrix')
-var toc=document.getElementsByTagName('details')[0]
+import{nms}from'./util.js';const $bottom=document.getElementById('bottom')
+const $commandLine=document.getElementById('commandLine')
+const $commandLineHint=document.getElementById('commandLineHints')
+const $help=document.getElementById('help')
+const $player=document.getElementById('player')
+const $questionMark=document.getElementById('questionMark')
+const $scrambled=document.getElementsByClassName('scrambled')
+const $searchInput=document.getElementById('search')
+const $top=document.getElementById('top')
+const alphabet={a:['____','|__|','|  |'],b:['___ ','|__]','|__]'],c:['____','|   ','|___'],d:['___ ','|  \\','|__/'],e:['____','|___','|___'],f:['____','|___','|   '],g:['____','| __','|__]'],h:['_  _','|__|','|  |'],i:['_','|','|'],j:[' _',' |','_|'],k:['_  _','|_/ ','| \\_'],l:['_   ','|   ','|___'],m:['_  _','|\\/|','|  |'],n:['_  _','|\\ |','| \\|'],o:['____','|  |','|__|'],p:['___ ','|__]','|   '],q:['____','|  |','|_\\|'],r:['____','|__/','|  \\'],s:['____','[__ ','___]'],t:['___',' | ',' | '],u:['_  _','|  |','|__|'],v:['_  _','|  |',' \\/ '],w:['_ _ _','| | |','|_|_|'],x:['_  _',' \\/ ','_/\\_'],y:['_   _',' \\_/ ','  |  '],z:['___',' / ','/__'],' ':['    ','    ','    '],'-':['    ',' __ ','    '],'.':['   ','   ',' * '],':':['   ',' , ',' ’ '],}
+let songIndex=0
+let commandLineActive=false
+let command=''
+let commandHint=''
+const commands={help:()=>{const helpMessage=`
+<code>top</code> Go to top of page<br>
+<code>dotmatrix</code> Render page in a dot matrix friendly way<br>
+<code>notmatrix</code> Undo the above command<br>
+<code>play</code> Play any linked music<br>
+<code>pause</code> Pause player<br>
+<code>prev</code>/<code>next</code> Previous/next song in playlist<br>
+<code>help</code> Show this message<br>
+Commands are tab completable. Type <code>:</code> to try a command.
+`
+showCommandLineAlert('Available commands',helpMessage)},top:()=>{$top.scrollIntoView()},dotmatrix:()=>{document.body.classList.add('dotmatrix')
+const toc=document.getElementsByTagName('details')[0]
 if(toc){toc.setAttribute('open',true)}
-var header=document.getElementsByTagName('h1')[0]
-var dotmatrixHeader=document.getElementById('dotmatrixHeader')
-if(header&&!dotmatrixHeader){var headerText=header.innerText
-var figlet=['','','']
-for(x=0;x<=headerText.length;x++){var char=headerText.substr(x,1).toLowerCase()
-if(alphabet[char]){for(y=0;y<figlet.length;y++){figlet[y]=figlet[y]+' '+alphabet[char][y]}}}
-var figletHeader=document.createElement('pre')
-var underline=new Array(figlet[figlet.length-1].length).join('-')
-figlet.push(' '+underline)
+const header=document.getElementsByTagName('h1')[0]
+const dotmatrixHeader=document.getElementById('dotmatrixHeader')
+if(header&&!dotmatrixHeader){const headerText=header.innerText
+const figlet=['','','']
+for(let char of headerText){char=char.toLowerCase();if(alphabet[char]){for(let y=0;y<figlet.length;y++){figlet[y]=`${figlet[y]} ${alphabet[char][y]}`}}}
+const figletHeader=document.createElement('pre')
+const underline=new Array(figlet[figlet.length-1].length).join('-')
+figlet.push(` ${underline}`)
 figletHeader.id='dotmatrixHeader'
 figletHeader.innerText=figlet.join('\n')
-header.insertAdjacentElement('afterend',figletHeader)}},notmatrix:function notmatrix(){document.body.classList.remove('dotmatrix')
-var toc=document.getElementsByTagName('details')[0]
-if(toc){toc.removeAttribute('open')}},play:function play(){if($player){if($player.src&&$player.paused){$player.play()}else{var songs=document.querySelectorAll('a[href$="mp3"]')
+header.insertAdjacentElement('afterend',figletHeader)}},notmatrix:()=>{document.body.classList.remove('dotmatrix')
+const toc=document.getElementsByTagName('details')[0]
+if(toc){toc.removeAttribute('open')}},play:()=>{if($player){if($player.src&&$player.paused){$player.play()}else{const songs=document.querySelectorAll('a[href$="mp3"]')
 if(songs&&songs.length>0){$player.src=songs[songIndex]
-$player.addEventListener('ended',commands.next,false)}else{showCommandLineAlert('Sorry, no audio found','I couldn’t find any audio files to play on this page.',true)}}}else{showCommandLineAlert('No audio player','Sorry, your web browser doesn’t seem to support audio.',true)}},pause:function pause(){if($player){$player.pause()}},_stop:function stop(){if($player){$player.src=''
-songIndex=0}},prev:function prev(){var songs=document.querySelectorAll('a[href$="mp3"]')
+$player.addEventListener('ended',commands.next,false)}else{showCommandLineAlert('Sorry, no audio found','I couldn’t find any audio files to play on this page.',true)}}}else{showCommandLineAlert('No audio player','Sorry, your web browser doesn’t seem to support audio.',true)}},pause:()=>{if($player){$player.pause()}},_stop:()=>{if($player){$player.src=''
+songIndex=0}},prev:()=>{const songs=document.querySelectorAll('a[href$="mp3"]')
 if(songs&&songs.length>0){songIndex=(songIndex===0)?songs.length-1:songIndex-1
-$player.src=songs[songIndex]}},next:function next(){var songs=document.querySelectorAll('a[href$="mp3"]')
+$player.src=songs[songIndex]}},next:()=>{const songs=document.querySelectorAll('a[href$="mp3"]')
 if(songs&&songs.length>0){songIndex=(songIndex===songs.length-1)?0:songIndex+1
-$player.src=songs[songIndex]}},nomoresecrets:function nomoresecrets(){for(var x=0;x<$scrambled.length;x++){var $element=$scrambled[x]
-if(window.nms){$bottom.scrollIntoView()
-var s=$element.classList.contains('email')?'aGlAc3BpdGxvLmNvbQ==':'OVlKQzlWREU='
-window.nms($element,s)}}}}
-var navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/'}
-var pressed={'ctrlKey':false,}
+$player.src=songs[songIndex]}},nomoresecrets:()=>{for(let x=0;x<$scrambled.length;x++){const $element=$scrambled[x]
+if(nms){$bottom.scrollIntoView()
+const s=$element.classList.contains('email')?'aGlAc3BpdGxvLmNvbQ==':'OVlKQzlWREU='
+nms($element,s)}}}};const navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/',}
+const pressed={'ctrlKey':false,}
 function findPartialMatch(stack,needle){if(needle.substring(0,1)==='_'){return}
-var matches=stack.filter(function(value){if(value){return value.substring(0,needle.length)===needle}})
+const matches=stack.filter(value=>{if(value){return value.substring(0,needle.length)===needle}})
 if(matches){return matches[0]}}
 function showCommandLineAlert(title,message,isError){$commandLineHint.className='alertMode'
 if(isError){$commandLineHint.classList.add('error')
-message=message+'<br>Type <code>:</code> to try another command.'}else{$commandLineHint.classList.add('help')}
-$commandLineHint.innerHTML='<strong>'+title+'</strong><div>'+message+'</div>'}
-function updateCommandLineHint(content){$commandLineHint.innerHTML='<span>'+(content||commandHint)+'</span>'}
-function updateCommandLineText(content){$commandLine.innerHTML='<span>'+(content||command)+'</span>'
-if(command){var commandNames=Object.keys(commands)
-var partialMatch=findPartialMatch(commandNames,command)
+message=`${message}<br>Type <code>:</code> to try another command.`}else{$commandLineHint.classList.add('help')}
+$commandLineHint.innerHTML=`<strong>${title}</strong><div>${message}</div>`}
+function updateCommandLineHint(content){$commandLineHint.innerHTML=`<span>${content || commandHint}</span>`}
+function updateCommandLineText(content){$commandLine.innerHTML=`<span>${content || command}</span>`
+if(command){const commandNames=Object.keys(commands)
+const partialMatch=findPartialMatch(commandNames,command)
 if(partialMatch){commandHint=partialMatch}else{commandHint=''}
 updateCommandLineHint()}}
 function activateCommandMode(){updateCommandLineText()
@@ -74,9 +73,9 @@ function deactivateCommandMode(){commandLineActive=false
 $commandLine.className=$commandLineHint.className=''
 command=commandHint=''}
 function evaluateCommand(command){if(commands[command]){commands[command]()}else{showCommandLineAlert('Sorry, that’s not something I understand','Try using the tab completion to enter commands correctly or type <code>help</code> to view a list of valid commands.',true)}}
-document.onkeydown=function(event){if(commandLineActive){if(event.key==='Escape'){deactivateCommandMode()
+document.onkeydown=event=>{if(commandLineActive){if(event.key==='Escape'){deactivateCommandMode()
 return}
-if(event.key==='Enter'){if(command){var nextCommand=command
+if(event.key==='Enter'){if(command){const nextCommand=command
 deactivateCommandMode()
 evaluateCommand(nextCommand)}else{}
 return}
@@ -98,9 +97,9 @@ break
 case'H':case'C':case'M':case'T':event.preventDefault()
 location.href=navigation[event.key]
 break
-case'1':case'2':case'3':case'4':case'5':case'6':case'7':case'8':case'9':if(event.ctrlKey){var links=document.getElementsByClassName('numberedLink')
-var linkIndex=parseInt(event.key)-1
-var link=links[linkIndex]
+case'1':case'2':case'3':case'4':case'5':case'6':case'7':case'8':case'9':if(event.ctrlKey){const links=document.getElementsByClassName('numberedLink')
+const linkIndex=parseInt(event.key)-1
+const link=links[linkIndex]
 if(link&&link.href){location.href=link.href}}
 break
 case'?':$help.className='visible'
@@ -110,13 +109,13 @@ activateCommandMode()
 break
 case'Escape':$help.className=''
 break
-case'<':var prevLink=document.querySelector('a[rel=prev]')
+case'<':const prevLink=document.querySelector('a[rel=prev]')
 if(prevLink){location.href=prevLink.href}
 break
-case'>':var nextLink=document.querySelector('a[rel=next]')
+case'>':const nextLink=document.querySelector('a[rel=next]')
 if(nextLink){location.href=nextLink.href}
 break
 default:break}}
-document.onkeyup=function(event){if(!event.ctrlKey){pressed.ctrlKey=false
+document.onkeyup=({ctrlKey})=>{if(!ctrlKey){pressed.ctrlKey=false
 document.body.classList.remove('showLinkNumbers')}}
-$questionMark.onclick=function(){if($help.className==='visible'){$help.className=''}else{$help.className='visible'}}
+$questionMark.onclick=()=>{if($help.className==='visible'){$help.className=''}else{$help.className='visible'}}
