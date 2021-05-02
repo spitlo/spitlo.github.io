@@ -124,6 +124,11 @@ html.noJS {
   }
 
   header .logo {
+    .slash,
+    #questionMark {
+      display: none;
+    }
+
     #search {
       display: block;
       position: fixed;
