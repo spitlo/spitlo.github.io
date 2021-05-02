@@ -12,7 +12,6 @@ To output all Tera variables in code, add this:
 
 ## To do
 
-- [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [x] Add command for unlocking contact information in footer
@@ -47,4 +46,5 @@ To output all Tera variables in code, add this:
 - [x] ~~Add controls for audio player~~
 - [x] ~~Consider using~~ Use `<script type="module">` to avoid loading JavaScript at all in older browsers
 - [x] ~~Create GitHub action that deploys site only when editing files directly in GitHub. Possible?~~ Use `workflow_dispatch` to enable deploys from GitHub
+- [x] ~~Fix numbered links on startpage (starts from 1 on each new `<ul>`)~~
 - [x] ~~Switch to using OGG instead of MP3 for audio?~~ Support [is not there](https://caniuse.com/?search=ogg)
