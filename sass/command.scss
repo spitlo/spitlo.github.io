@@ -76,3 +76,10 @@
     border-right: 0;
   }
 }
+
+html.noJS {
+  #commandLine,
+  #commandLineHints {
+    display: none!important;
+  }
+}
