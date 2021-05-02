@@ -577,10 +577,16 @@ dd {
 //  /_/  /_/\___/\__,_/_/\__,_/   \___\_\__,_/\___/_/  /_/\___/____/
 //  -------------------------------- ------------------ ---  ---------- --
 @media (max-width: 360px) {
-  header .logo {
-    &::before,
-    &::after {
-      content: "" !important;
+  header {
+    nav ul li {
+      margin-left: 0;
+    }
+
+    .logo {
+      &::before,
+      &::after {
+        content: "" !important;
+      }
     }
   }
 }

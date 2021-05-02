@@ -15,7 +15,6 @@ To output all Tera variables in code, add this:
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
 - [ ] Consider using `<script type="module">` to avoid loading JavaScript at all in older browsers [like here](https://www.matuzo.at/blog/html-boilerplate/)
 - [ ] Embed hidden audio links in pages that player can pick up on?
-- [ ] Fix taxonomy width issues on small screens
 - [ ] Improve favicon
 - [ ] Randomize start page
 - [x] Add command for unlocking contact information in footer (nms/nomoresecrets?)
@@ -25,6 +24,7 @@ To output all Tera variables in code, add this:
 - [x] Finish tags landing page
 - [x] Finish tech tags page
 - [x] Fix footer width issues on small screens
+- [x] Fix taxonomy width issues on small screens
 - [x] Hide pagination in dotmatrix mode
 - [x] Implement keyboard navigation
   - [x] Command mode ("`:`")
