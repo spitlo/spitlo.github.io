@@ -1,5 +1,5 @@
 +++
-title = "Welcome home!"
+title = "Home"
 date = 2021-04-29
 
 [extra]
