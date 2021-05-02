@@ -1,14 +1,16 @@
-var $bottom = document.getElementById('bottom')
-var $commandLine = document.getElementById('commandLine')
-var $commandLineHint = document.getElementById('commandLineHints')
-var $help = document.getElementById('help')
-var $player = document.getElementById('player')
-var $questionMark = document.getElementById('questionMark')
-var $scrambled = document.getElementsByClassName('scrambled')
-var $searchInput = document.getElementById('search')
-var $top = document.getElementById('top')
+import { nms } from './util.js';
 
-var alphabet = {
+const $bottom = document.getElementById('bottom')
+const $commandLine = document.getElementById('commandLine')
+const $commandLineHint = document.getElementById('commandLineHints')
+const $help = document.getElementById('help')
+const $player = document.getElementById('player')
+const $questionMark = document.getElementById('questionMark')
+const $scrambled = document.getElementsByClassName('scrambled')
+const $searchInput = document.getElementById('search')
+const $top = document.getElementById('top')
+
+const alphabet = {
   a: ['____','|__|','|  |'],
   b: ['___ ','|__]','|__]'],
   c: ['____','|   ','|___'],
@@ -38,77 +40,76 @@ var alphabet = {
   ' ': ['    ','    ','    '],
   '-': ['    ',' __ ','    '],
   '.': ['   ','   ',' * '],
-  ':': ['   ',' , ',' ’ ']
+  ':': ['   ',' , ',' ’ '],
 }
-var songIndex = 0
-var commandLineActive = false
-var command = ''
-var commandHint = ''
-var commands = {
-  help: function help() {
-    var helpMessage = ''
-    helpMessage += '<code>top</code> Go to top of page<br>'
-    helpMessage += '<code>dotmatrix</code> Render page in a dot matrix friendly way<br>'
-    helpMessage += '<code>notmatrix</code> Undo the above command<br>'
-    // Audio
-    helpMessage += '<code>play</code> Play any linked music<br>'
-    // helpMessage += '<code>pause</code>/<code>stop</code> Pause/stop player<br>'
-    helpMessage += '<code>pause</code> Pause player<br>'
-    helpMessage += '<code>prev</code>/<code>next</code> Previous/next song in playlist<br>'
-    // Meta
-    helpMessage += '<code>help</code> Show this message<br>'
-    helpMessage += 'Commands are tab completable. Type <code>:</code> to try a command.'
+let songIndex = 0
+let commandLineActive = false
+let command = ''
+let commandHint = ''
+const commands = {
+  help: () => {
+    const helpMessage =
+`
+<code>top</code> Go to top of page<br>
+<code>dotmatrix</code> Render page in a dot matrix friendly way<br>
+<code>notmatrix</code> Undo the above command<br>
+<code>play</code> Play any linked music<br>
+<code>pause</code> Pause player<br>
+<code>prev</code>/<code>next</code> Previous/next song in playlist<br>
+<code>help</code> Show this message<br>
+Commands are tab completable. Type <code>:</code> to try a command.
+`
     showCommandLineAlert('Available commands', helpMessage)
   },
 
-  top: function top() {
+  top: () => {
     $top.scrollIntoView()
   },
 
-  dotmatrix: function dotmatrix() {
+  dotmatrix: () => {
     // Show a stripped down version of page, suitable
     // for printing or just nerding out.
     document.body.classList.add('dotmatrix')
-    var toc = document.getElementsByTagName('details')[0]
+    const toc = document.getElementsByTagName('details')[0]
     if (toc) {
       toc.setAttribute('open', true)
     }
-    var header = document.getElementsByTagName('h1')[0]
-    var dotmatrixHeader = document.getElementById('dotmatrixHeader')
+    const header = document.getElementsByTagName('h1')[0]
+    const dotmatrixHeader = document.getElementById('dotmatrixHeader')
     if (header && !dotmatrixHeader) {
-      var headerText = header.innerText
-      var figlet = ['', '', '']
-      for (x = 0; x <= headerText.length; x++) {
-        var char = headerText.substr(x, 1).toLowerCase()
+      const headerText = header.innerText
+      const figlet = ['', '', '']
+      for (let char of headerText) {
+        char = char.toLowerCase();
         if (alphabet[char]) {
-          for (y = 0; y < figlet.length; y++) {
-            figlet[y] = figlet[y] + ' ' + alphabet[char][y]
+          for (let y = 0; y < figlet.length; y++) {
+            figlet[y] = `${figlet[y]} ${alphabet[char][y]}`
           }
         }
       }
-      var figletHeader = document.createElement('pre')
-      var underline = new Array(figlet[figlet.length - 1].length).join('-')
-      figlet.push(' ' + underline)
+      const figletHeader = document.createElement('pre')
+      const underline = new Array(figlet[figlet.length - 1].length).join('-')
+      figlet.push(` ${underline}`)
       figletHeader.id = 'dotmatrixHeader'
       figletHeader.innerText = figlet.join('\n')
       header.insertAdjacentElement('afterend', figletHeader)
     }
   },
 
-  notmatrix: function notmatrix() {
+  notmatrix: () => {
     document.body.classList.remove('dotmatrix')
-    var toc = document.getElementsByTagName('details')[0]
+    const toc = document.getElementsByTagName('details')[0]
     if (toc) {
       toc.removeAttribute('open')
     }
   },
 
-  play: function play() {
+  play: () => {
     if ($player) {
       if ($player.src && $player.paused) {
         $player.play()
       } else {
-        var songs = document.querySelectorAll('a[href$="mp3"]')
+        const songs = document.querySelectorAll('a[href$="mp3"]')
         if (songs && songs.length > 0) {
           // $player.className = 'visible'
           $player.src = songs[songIndex]
@@ -122,13 +123,13 @@ var commands = {
     }
   },
 
-  pause: function pause() {
+  pause: () => {
     if ($player) {
       $player.pause()
     }
   },
 
-  _stop: function stop() {
+  _stop: () => {
     if ($player) {
       // This does not work
       $player.src = ''
@@ -136,42 +137,42 @@ var commands = {
     }
   },
 
-  prev: function prev() {
-    var songs = document.querySelectorAll('a[href$="mp3"]')
+  prev: () => {
+    const songs = document.querySelectorAll('a[href$="mp3"]')
     if (songs && songs.length > 0) {
       songIndex = (songIndex === 0) ? songs.length - 1 : songIndex - 1
       $player.src = songs[songIndex]
     }
   },
 
-  next: function next() {
-    var songs = document.querySelectorAll('a[href$="mp3"]')
+  next: () => {
+    const songs = document.querySelectorAll('a[href$="mp3"]')
     if (songs && songs.length > 0) {
       songIndex = (songIndex === songs.length - 1) ? 0 : songIndex + 1
       $player.src = songs[songIndex]
     }
   },
 
-  nomoresecrets: function nomoresecrets() {
-    for (var x = 0; x < $scrambled.length; x++) {
-      var $element = $scrambled[x]
-      if (window.nms) {
+  nomoresecrets: () => {
+    for (let x = 0; x < $scrambled.length; x++) {
+      const $element = $scrambled[x]
+      if (nms) {
         $bottom.scrollIntoView()
-        var s = $element.classList.contains('email') ? 'aGlAc3BpdGxvLmNvbQ==' : 'OVlKQzlWREU='
-        window.nms($element, s)
+        const s = $element.classList.contains('email') ? 'aGlAc3BpdGxvLmNvbQ==' : 'OVlKQzlWREU='
+        nms($element, s)
       }
     }
   }
-}
+};
 
-var navigation = {
+const navigation = {
   'H': '/',
   'C': '/code/',
   'M': '/music/',
-  'T': '/tags/'
+  'T': '/tags/',
 }
 
-var pressed = {
+const pressed = {
   'ctrlKey': false,
 }
 
@@ -180,7 +181,7 @@ function findPartialMatch(stack, needle) {
     return
   }
   // Find elements in array "stack" that starts with letter(s) "needle"
-  var matches = stack.filter(function(value) {
+  const matches = stack.filter(value => {
     if (value) {
       return value.substring(0, needle.length) === needle
     }
@@ -194,25 +195,25 @@ function showCommandLineAlert(title, message, isError) {
   $commandLineHint.className = 'alertMode'
   if (isError) {
     $commandLineHint.classList.add('error')
-    message = message + '<br>Type <code>:</code> to try another command.'
+    message = `${message}<br>Type <code>:</code> to try another command.`
   } else {
     $commandLineHint.classList.add('help')
   }
-  $commandLineHint.innerHTML = '<strong>' + title + '</strong><div>' + message + '</div>'
+  $commandLineHint.innerHTML = `<strong>${title}</strong><div>${message}</div>`
 }
 
 function updateCommandLineHint(content) {
-  $commandLineHint.innerHTML = '<span>' + (content || commandHint) + '</span>'
+  $commandLineHint.innerHTML = `<span>${content || commandHint}</span>`
 }
 
 function updateCommandLineText(content) {
-  $commandLine.innerHTML = '<span>' + (content || command) + '</span>'
+  $commandLine.innerHTML = `<span>${content || command}</span>`
   if (command) {
-    var commandNames = Object.keys(commands)
+    const commandNames = Object.keys(commands)
     // Don’t sort for now, perhaps we want to be able to control the priority
     // of hints (earlier in the commands object = more likely hint)
     // commandNames.sort()
-    var partialMatch = findPartialMatch(commandNames, command)
+    const partialMatch = findPartialMatch(commandNames, command)
     if (partialMatch) {
       commandHint = partialMatch
     } else {
@@ -244,7 +245,7 @@ function evaluateCommand(command) {
   }
 }
 
-document.onkeydown = function(event) {
+document.onkeydown = event => {
   // Are we in command mode?
   if (commandLineActive) {
     if (event.key === 'Escape') {
@@ -254,7 +255,7 @@ document.onkeydown = function(event) {
 
     if (event.key === 'Enter') {
       if (command) {
-        var nextCommand = command
+        const nextCommand = command
         deactivateCommandMode()
         evaluateCommand(nextCommand)
       } else {
@@ -323,9 +324,9 @@ document.onkeydown = function(event) {
     case '8':
     case '9':
       if (event.ctrlKey) {
-        var links = document.getElementsByClassName('numberedLink')
-        var linkIndex = parseInt(event.key) - 1
-        var link = links[linkIndex]
+        const links = document.getElementsByClassName('numberedLink')
+        const linkIndex = parseInt(event.key) - 1
+        const link = links[linkIndex]
         if (link && link.href) {
           location.href = link.href
         }
@@ -346,32 +347,32 @@ document.onkeydown = function(event) {
       break
 
     case '<':
-      var prevLink = document.querySelector('a[rel=prev]')
+      const prevLink = document.querySelector('a[rel=prev]')
       if (prevLink) {
         location.href = prevLink.href
       }
       break
 
     case '>':
-      var nextLink = document.querySelector('a[rel=next]')
+      const nextLink = document.querySelector('a[rel=next]')
       if (nextLink) {
         location.href = nextLink.href
       }
       break
 
-      default:
+    default:
       break
   }
 }
 
-document.onkeyup = function(event) {
-  if (!event.ctrlKey) {
+document.onkeyup = ({ctrlKey}) => {
+  if (!ctrlKey) {
     pressed.ctrlKey = false
     document.body.classList.remove('showLinkNumbers')
   }
 }
 
-$questionMark.onclick = function() {
+$questionMark.onclick = () => {
   if ($help.className === 'visible') {
     $help.className = ''
   } else {

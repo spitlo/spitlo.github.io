@@ -1,11 +1,16 @@
 {% import "macros.html" as macros %}
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="noJS">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script type="module">
+      document.documentElement.classList.remove('noJS');
+      document.documentElement.classList.add('js');
+    </script>
 
     {% if current_path %}
       {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ") %}
@@ -197,8 +202,7 @@
 
     <script src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
     <script src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
-    <script src="{{ get_url(path="util.js", cachebust=true) }}"></script>
-    <script src="{{ get_url(path="search.js", cachebust=true) }}"></script>
-    <script src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
+    <script type="module" src="{{ get_url(path="search.js", cachebust=true) }}"></script>
+    <script type="module" src="{{ get_url(path="keyboard.js", cachebust=true) }}"></script>
   </body>
 </html>
