@@ -1,3 +1,5 @@
+import { nms } from './util.js';
+
 const $bottom = document.getElementById('bottom')
 const $commandLine = document.getElementById('commandLine')
 const $commandLineHint = document.getElementById('commandLineHints')
@@ -38,7 +40,7 @@ const alphabet = {
   ' ': ['    ','    ','    '],
   '-': ['    ',' __ ','    '],
   '.': ['   ','   ',' * '],
-  ':': ['   ',' , ',' ’ ']
+  ':': ['   ',' , ',' ’ '],
 }
 let songIndex = 0
 let commandLineActive = false
@@ -154,10 +156,10 @@ Commands are tab completable. Type <code>:</code> to try a command.
   nomoresecrets: () => {
     for (let x = 0; x < $scrambled.length; x++) {
       const $element = $scrambled[x]
-      if (window.nms) {
+      if (nms) {
         $bottom.scrollIntoView()
         const s = $element.classList.contains('email') ? 'aGlAc3BpdGxvLmNvbQ==' : 'OVlKQzlWREU='
-        window.nms($element, s)
+        nms($element, s)
       }
     }
   }

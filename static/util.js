@@ -1,4 +1,4 @@
-window.nms = (a, b) => {
+const nms = (a, b) => {
   // Most characters from Code Page 437 (removed glyphs missing from Victor Mono for consisten widths)
   const codePage437 = '!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜ¢£¥ƒáíóúñÑªº¿¬½¼¡«»░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀αßΓπΣσµτΦΘΩδ∞φε∩≡±≥≤÷≈°·√ⁿ²'
   const scrambleMillieconds = 7000
@@ -65,3 +65,5 @@ window.nms = (a, b) => {
     }
   }, intervalMilliseconds)
 }
+
+export { nms }
