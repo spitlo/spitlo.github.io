@@ -13,7 +13,6 @@ To output all Tera variables in code, add this:
 ## To do
 
 - [ ] ! Fix numbered links on startpage (starts from 1 on each new `<ul>`)
-- [ ] Consider using `<script type="module">` to avoid loading JavaScript at all in older browsers [like here](https://www.matuzo.at/blog/html-boilerplate/)
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [ ] Randomize start page
@@ -46,5 +45,6 @@ To output all Tera variables in code, add this:
 - [x] Update the ~~`balls`~~ `shapes` macro to take a ~~`shape`~~ `type` argument, to match the squares and triangles of the header and footer
 - [x] Use `word_count` to decide whether to show a TOC or not
 - [x] ~~Add controls for audio player~~
+- [x] ~~Consider using~~ Use `<script type="module">` to avoid loading JavaScript at all in older browsers
 - [x] ~~Create GitHub action that deploys site only when editing files directly in GitHub. Possible?~~ Use `workflow_dispatch` to enable deploys from GitHub
 - [x] ~~Switch to using OGG instead of MP3 for audio?~~ Support [is not there](https://caniuse.com/?search=ogg)
