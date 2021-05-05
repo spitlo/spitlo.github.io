@@ -158,7 +158,7 @@
             {% if build_time == "unavailable" %}
               {% set build_time = now() %}
             {% endif %}
-            <a href="https://www.britannica.com/on-this-day/{{ build_time | date(format="%B-%d") }}" target="_blank" rel="noopener noreferrer">{{ build_time | date(format="%Y-%m-%d %H:%M") }}</a> CET
+            <a href="https://en.wikipedia.org/wiki/{{ build_time | date(format="%B_%-d") }}" target="_blank" rel="noopener noreferrer">{{ build_time | date(format="%Y-%m-%d %H:%M") }}</a> CET
           </span>
           <span class="divider">|</span>
         </section>
