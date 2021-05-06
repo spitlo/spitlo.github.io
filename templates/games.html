@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <section class="project music">
+    <h1>Projects: Games</h1>
+
+    <p>
+      I’ve always wanted to make a game.
+    </p>
+
+    <ul class="projectList music">
+      {% for project in section.pages %}
+        {% include "partials/list-project.html" %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock content %}

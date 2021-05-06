@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <h1>{{ page.title }}</h1>
+
+  {{ page.content | safe }}
+
+  <div id="gameWrapper">
+    {% if page and page.extra and page.extra.css_file %}
+      {% set css_path = "/games/" ~ page.extra.css_file ~ ".css" %}
+      <link id="gameStyles" rel="stylesheet" type="text/css" href="{{ get_url(path=css_path, cachebust=true) | safe }}">
+    {% endif %}
+
+    {% if page and page.extra and page.extra.game_type %}
+      {% if page.extra.game_type == "text-engine" %}
+        {% if page and page.extra and page.extra.theme %}
+          {% set game_theme = page.extra.theme %}
+        {% else %}
+          {% set game_theme = "retro" %}
+        {% endif %}
+        {% set theme_path = "/text-engine/styles/" ~game_theme ~ ".css" %}
+        <link id="gameStyles" rel="stylesheet" type="text/css" href="{{ get_url(path=theme_path, cachebust=true) | safe }}">
+
+        <div id="output"></div>
+
+        <div class="input">
+          <span class="ml-2">> </span><input id="input" autofocus spellcheck="false">
+        </div>
+
+        <script src="{{ get_url(path="/text-engine/index.js", cachebust=true) | safe }}"></script>
+        <script type="module">
+          import gameDisk from '{{ get_url(path=current_path ~ "game.js", cachebust=true) | safe }}';
+          loadDisk(gameDisk);
+        </script>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  {% if page.earlier or page.later %}
+    <br>
+    <nav class="pager">
+      {% if page.earlier %}
+        <a href="{{ page.earlier.permalink }}" rel="prev">{{ page.earlier.title }}</a>
+      {% endif %}
+      {% if page.later %}
+        <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }}</a>
+      {% endif %}
+    </nav>
+  {% endif %}
+{% endblock content %}
