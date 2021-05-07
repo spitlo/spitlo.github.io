@@ -54,3 +54,10 @@ body {
 a {
   color: #ff902f;
 }
+
+#closer {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  cursor: pointer;
+}

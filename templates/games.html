@@ -12,6 +12,17 @@
   </head>
 
   <body>
+    <div id="closer">[✕]</div>
+    <script>
+      const frameElement = window.frameElement
+      if (frameElement) {
+        document.body.className = 'framed'
+        document.getElementById('closer').onclick = () => {
+          frameElement.parentElement.remove()
+        }
+      }
+    </script>
+
     {% block content %}
       <section class="games">
         <h1>Games</h1>
