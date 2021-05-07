@@ -11,25 +11,23 @@
     {% block extra_head %}{% endblock extra_head %}
   </head>
 
-  <body class="crt">
+  <body>
+    {% block content %}
+      <section class="games">
+        <h1>Games</h1>
 
+        <p>
+          I’ve always wanted to make a game.
+        </p>
+
+        <ul>
+          {% for game in section.pages %}
+            <li>
+              <a href="{{ game.permalink }}">{{ game.title }}</a> [{{ game.date }}] -- engine: {{ game.extra.engine }}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endblock content %}
   </body>
 </html>
-
-{% block content %}
-  <section class="games">
-    <h1>Games</h1>
-
-    <p>
-      I’ve always wanted to make a game.
-    </p>
-
-    <ul class="projectList music">
-      {% for game in section.pages %}
-        <li>
-          <a href="{{ game.permalink }}">{{ game.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-{% endblock content %}
