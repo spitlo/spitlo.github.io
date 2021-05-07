@@ -1,16 +1,34 @@
-{% extends "index.html" %}
+<!doctype html>
+<html lang="en" class="noJS">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path="/games/style.css", cachebust=true) | safe }}">
+    <link rel="preload" as="font" type="font/woff" href="{{ get_url(path="/fonts/VictorMono-Thin.woff") }}" crossorigin="anonymous">
+
+    {% block extra_head %}{% endblock extra_head %}
+  </head>
+
+  <body class="crt">
+
+  </body>
+</html>
 
 {% block content %}
-  <section class="project music">
-    <h1>Projects: Games</h1>
+  <section class="games">
+    <h1>Games</h1>
 
     <p>
       I’ve always wanted to make a game.
     </p>
 
     <ul class="projectList music">
-      {% for project in section.pages %}
-        {% include "partials/list-project.html" %}
+      {% for game in section.pages %}
+        <li>
+          <a href="{{ game.permalink }}">{{ game.title }}</a>
+        </li>
       {% endfor %}
     </ul>
   </section>

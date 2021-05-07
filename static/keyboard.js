@@ -162,8 +162,24 @@ Commands are tab completable. Type <code>:</code> to try a command.
         nms($element, s)
       }
     }
-  }
-};
+  },
+
+  games: () => {
+    const gameWrapper = document.createElement('div')
+    gameWrapper.id = 'gameWrapper'
+    const gameFrame = document.createElement('iframe')
+    gameFrame.setAttribute('src', '/games/')
+    document.body.appendChild(gameWrapper)
+    gameWrapper.appendChild(gameFrame)
+
+    gameWrapper.addEventListener('click', () => {
+      if (confirm('Are you sure? Have you saved?')) {
+        // document.body.removeChild()
+        gameWrapper.remove()
+      }
+    })
+  },
+}
 
 const navigation = {
   'H': '/',

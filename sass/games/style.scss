@@ -1,0 +1,54 @@
+@import "../constants";
+@import "../fonts";
+
+body {
+  background-image: radial-gradient(
+    #1f0b00, black 120%
+  );
+  color: #ff8012;
+  font-family: $paragraphFont;
+  font-size: 2.2vh;
+  line-height: 4vh;
+  padding: 0 1rem 1rem 1rem;
+  text-shadow: 0 0 5px rgba(255, 78, 0, 0.6);
+
+  &::after {
+    background: rgba(18, 16, 16, 0.1);
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &::before {
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.25) 50%
+    ), linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+    background-size: 100% 2px, 3px 100%;
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+a {
+  color: #ff902f;
+}

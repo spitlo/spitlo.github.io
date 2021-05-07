@@ -1,0 +1,53 @@
+.img {
+  white-space: pre;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#output {
+  padding: 2vw 2vw 0 2vw;
+}
+
+#output div {
+  margin-bottom: 1vw;
+}
+
+.input {
+  display: flex;
+}
+
+a {
+  color: orange;
+}
+
+#input {
+  height: 4vh;
+  width: 98.5vh;
+  color: orange;
+  background: transparent;
+  font-size: 2vh;
+  font-family: monospace;
+  border: none;
+  position: relative;
+  bottom: 0.175vh;
+  margin-left: .5vw;
+}
+
+span {
+  margin-left: 2vw;
+}
+
+#input:focus {
+  outline: none;
+}
+
+
+@keyframes blink {
+  0% {background: orange;}
+  49% {background: orange;}
+  60% {background: transparent;}
+  99% {background: transparent;}
+  100% {background: orange;}
+}
