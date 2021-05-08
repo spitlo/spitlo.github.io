@@ -84,6 +84,8 @@ footer {
     // Is there a more flexboxy way to do this?
     div {
       width: 33%;
+      box-shadow: 0 0 15px black;
+      background-color: #00000099;
 
       a {
         text-decoration: none;

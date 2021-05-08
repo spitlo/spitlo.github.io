@@ -11,16 +11,33 @@
 // oxygen, knowing her father only had two hours worth of oxygen left in his tank.
 
 const TRAVEL_TIMES = {
-  hostpital: 31,
-  doctor: 28,
-  redcross: 23,
+  hostpital: 21,
+  doctor: 18,
+  redcross: 13,
 }
 const BEDROOM_DESCS = {
-  original: 'You are sitting by your father’s bedside. Transparent tubing runs across the bedsheet from the mask strapped to his face to an **oxygen tank** standing in a wheeled cart. Your car is parked **outside**.',
+  original: 'You are sitting by your father’s bedside. Transparent tubing runs across the bedsheet from the mask strapped to his face to an **oxygen tank** standing in a cart with wheels. Your car is parked **outside**.',
   leak: 'You are standing in your father’s bedroom. Your car is parked **outside**.',
 }
 
-const chance = (seed = .5) => seed > Math.random()
+const printGPS = () => {
+  const timeToDad = TRAVEL_TIMES[disk.leavingRoom]
+  println('There are a few saved locations that seems interesting:')
+  if (disk.leavingRoom !== 'downtown') {
+    println(`**Downtown** to the Hospital. The drive there is ${TRAVEL_TIMES.hostpital + (timeToDad / 2)} minutes.`)
+  }
+  if (disk.leavingRoom !== 'midtown') {
+    println(`**Midtown** to a doctor’s office. The drive there is ${TRAVEL_TIMES.doctor + (timeToDad / 2)} minutes.`)
+  }
+  if (disk.leavingRoom !== 'uptown') {
+    println(`**Uptown** to the Red Cross. The drive there is ${TRAVEL_TIMES.redcross + (timeToDad / 2)} minutes.`)
+  }
+  if (disk.leavingRoom) {
+    println(`**Dad** The drive back there is ${timeToDad} minutes.`)
+  }
+}
+
+const chance = (seed = .5) => seed <= Math.random()
 const decreaseTimer = (subtrahend) => {
   disk.timer -= subtrahend
 }
@@ -80,8 +97,8 @@ const oxygenChase = {
           println(BEDROOM_DESCS.original)
         }
 
-        const phone = bedroom.items.filter((item) => item.name === 'phone')
-        const keys = bedroom.items.filter((item) => item.name === 'car keys')
+        const phone = bedroom.items.filter((item) => item.name === 'phone').length > 0
+        const keys = bedroom.items.filter((item) => item.name === 'car keys').length > 0
         if (phone && keys) {
           println('Your **car keys** and **phone** are on the bedside table. ')
         } else if (phone) {
@@ -92,12 +109,17 @@ const oxygenChase = {
 
         if (disk.leak) {
           println('There is a **loose tube** here, and the oxygen tank is leaking.')
+        } else {
+          if (chance(1/3)) {
+            println(`You only have ${disk.timer} minutes to save your father. Perhaps you should just stay with him?`)
+          }
         }
       },
       items: [
         {
           name: ['oxygen tank', 'gauge'],
-          onLook: () => println(`You${getEmotion(disk.timer)}check the gauge on the oxygen tank. There seems to be about ${disk.timer} minutes of oxygen left.`),
+          desc: 'It’s a big oxygen tank, strapped to a cart.',
+          onLook: () => println(`You${getEmotion(disk.timer)}check the gauge on the tank. There seems to be about ${disk.timer} minutes of oxygen left.`),
         },
         {
           name: 'phone',
@@ -122,15 +144,13 @@ const oxygenChase = {
                 name: ['loose tube', 'tubing'],
                 desc: 'You should really, really reconnect this tube to the tank.',
                 isTakeable: true,
-                onUse: (a,b,c,d) => {
-                  console.log(a,b,c,d); /* eslint-disable-line */
+                onUse: () => {
                   decreaseTimer(10)
                   println('You struggle with it, but after a few minutes you are able to reconnect the tube to the tank.')
                   println(`Examining the gauge, you can see there is about ${disk.timer} minutes of oxygen left in the tank.`)
                   disk.hasLeaked = true
                   disk.leak = false
                   bedroom.items = bedroom.items.filter((item) => !item.name.includes('loose tubing'))
-                  console.log(bedroom.items); /* eslint-disable-line */
                 },
               })
             } else {
@@ -164,42 +184,47 @@ const oxygenChase = {
       },
       onLook: () => {
         if (disk.gps) {
-          println('There are three saved locations that seems interesting:')
-          println(`The Hospital. The drive there is ${TRAVEL_TIMES.hostpital} minutes.`)
-          println(`A doctor’s office. The drive there is ${TRAVEL_TIMES.doctor} minutes.`)
-          println(`The Red Cross. The drive there is ${TRAVEL_TIMES.redcross} minutes.`)
+          printGPS()
         }
       },
       items: [
         {
           name: ['gps', 'satnav', 'map'],
           onUse: () => {
-            println('The GPS boots up. The animation seemingly repeats forver, but eventually you’re presented with the welcome screen. Where do you want to go?')
-            disk.gps = true
-            decreaseTimer(2)
-            const room = getRoom(disk.roomId)
-            const hospital = getExit('the hostpital', room.exits)
-            delete hospital.block
-            const doctor = getExit('the doctor’s office', room.exits)
-            delete doctor.block
-            const redcross = getExit('the Red Cross', room.exits)
-            delete redcross.block
+            if (disk.gps) {
+              printGPS()
+            } else {
+              println('The GPS boots up. The animation seemingly repeats forever, but eventually you’re presented with the welcome screen. Where do you want to go?')
+              disk.gps = true
+              decreaseTimer(2)
+              const car = getRoom('car')
+              const hospital = getExit('downtown', car.exits)
+              delete hospital.block
+              const doctor = getExit('midtown', car.exits)
+              delete doctor.block
+              const redcross = getExit('uptown', car.exits)
+              delete redcross.block
+              car.desc = 'Where do you want to go?'
+            }
           },
         },
       ],
       exits: [
         {
-          dir: 'the hospital',
+          dir: ['downtown', 'hospital'],
           id: 'hospital',
           block: 'There’s no way you’ll find the hospital without a GPS.',
+          exits: [
+            {}
+          ],
         },
         {
-          dir: 'the doctor’s office',
+          dir: ['midtown', 'doctor'],
           id: 'doctor',
           block: 'There’s no way you’ll get to the doctor’s office without a GPS.',
         },
         {
-          dir: 'the Red Cross',
+          dir: ['uptown', 'redcross'],
           id: 'redcross',
           block: 'You haven’t got a clue where the Red Cross is located. Perhaps you should use the GPS?',
         },
@@ -210,11 +235,15 @@ const oxygenChase = {
       name: 'At the hospital',
       desc: '',
       exits: [{
-        dir: 'the car',
+        dir: ['car', 'outside'],
         id: 'car',
       }],
       onEnter: () => {
-        decreaseTimer(TRAVEL_TIMES.hospital)
+        let extraTime = 0
+        if (disk.leavingRoom) {
+          extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
+        }
+        decreaseTimer(TRAVEL_TIMES.hospital + extraTime)
         disk.leavingRoom = 'hospital'
       },
     },
@@ -223,11 +252,15 @@ const oxygenChase = {
       name: 'At the doctor’s office',
       desc: '',
       exits: [{
-        dir: 'the car',
+        dir: ['car', 'outside'],
         id: 'car',
       }],
       onEnter: () => {
-        decreaseTimer(TRAVEL_TIMES.doctor)
+        let extraTime = 0
+        if (disk.leavingRoom) {
+          extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
+        }
+        decreaseTimer(TRAVEL_TIMES.doctor + extraTime)
         disk.leavingRoom = 'doctor'
       },
     },
@@ -236,11 +269,15 @@ const oxygenChase = {
       name: 'At the Red Cross',
       desc: '',
       exits: [{
-        dir: 'the car',
+        dir: ['car', 'outside'],
         id: 'car',
       }],
       onEnter: () => {
-        decreaseTimer(TRAVEL_TIMES.redcross)
+        let extraTime = 0
+        if (disk.leavingRoom) {
+          extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
+        }
+        decreaseTimer(TRAVEL_TIMES.redcross + extraTime)
         disk.leavingRoom = 'redcross'
       },
     },
@@ -268,7 +305,7 @@ const oxygenChase = {
           extra = ' His lips and fingers are faintly blue.'
         } else {
           breathing = 'rapid and shallow'
-          extra = ' His entire skin has a blue tint. His eyes are slightly panicked.'
+          extra = ' His entire skin has a blue tint. His looks slightly panicked.'
         }
         println(`His breathing seems ${breathing}.${extra || ''}`)
       },
