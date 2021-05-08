@@ -37,10 +37,22 @@ const printGPS = () => {
   }
 }
 
-const chance = (seed = .5) => seed <= Math.random()
+const chance = (seed) => seed >= Math.random()
+
 const decreaseTimer = (subtrahend) => {
   disk.timer -= subtrahend
 }
+
+const checkOnDad = (timer) => {
+  if (chance(1/4)) {
+    println(`You only have ${timer} minutes to save your father. Perhaps you should just stay with him and talk?`)
+  } else if (chance(1/5)) {
+    const whiteLie = Math.ceil(timer / 10) * 10
+    println('"How much oxygen do we have left?", your dad asks.')
+    println(`"About ${whiteLie} minutes worth, dad. Maybe a bit more," you answer. But you know it’s less.`)
+  }
+}
+
 const getEmotion = (timer) => {
   /**
    * Returns an emotion based on the timer.
@@ -111,9 +123,7 @@ const oxygenChase = {
         if (disk.leak) {
           println('There is a **loose tube** here, and the oxygen tank is leaking.')
         } else {
-          if (chance(1/4)) {
-            println(`You only have ${disk.timer} minutes to save your father. Perhaps you should just stay with him and talk?`)
-          }
+          checkOnDad(disk.timer)
         }
       },
       items: [
@@ -136,7 +146,7 @@ const oxygenChase = {
           isTakeable: true,
           onTake: () => {
             println('You reach over to grab your car keys. As you lean over the bed, you press down on the tubing.')
-            if (chance()) {
+            if (chance(1/2)) {
               decreaseTimer(10)
               disk.leak = true
               println('The tubing pulls hard on the tank, and suddenly snaps loose. At first, you think you broke it, but it is only disconnected from the tank. You scramble frantically to reconnect it as the precious oxygen leaks out into the room.')
@@ -214,15 +224,12 @@ const oxygenChase = {
         {
           dir: ['downtown', 'hospital'],
           id: 'hospital',
-          block: 'There’s no way you’ll find the hospital without a GPS.',
-          exits: [
-            {}
-          ],
+          block: 'You won’t be able to find your way to the hospital without the GPS.',
         },
         {
           dir: ['midtown', 'doctor'],
           id: 'doctor',
-          block: 'There’s no way you’ll get to the doctor’s office without a GPS.',
+          block: 'There’s no way you’ll get to the doctor’s office without the GPS.',
         },
         {
           dir: ['uptown', 'redcross'],
@@ -242,6 +249,7 @@ const oxygenChase = {
       onEnter: () => {
         let extraTime = 0
         if (disk.leavingRoom) {
+          // We came from somewhere other than father’s, add some extra time
           extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
         }
         decreaseTimer(TRAVEL_TIMES.hospital + extraTime)
@@ -309,10 +317,26 @@ const oxygenChase = {
           extra = ' His entire skin has a blue tint. His looks slightly panicked.'
         }
         println(`His breathing seems ${breathing}.${extra || ''}`)
+        checkOnDad(disk.timer)
       },
       topics: [
         {
-
+          option: '**Covid**',
+          line: '',
+          keyword: 'covid',
+          removeOnRead: true,
+          onSelected: () => {
+            decreaseTimer(5)
+          },
+        },
+        {
+          option: '**Mother**',
+          line: '',
+          keyword: 'mother',
+          removeOnRead: true,
+          onSelected: () => {
+            decreaseTimer(10)
+          },
         },
       ],
     },
