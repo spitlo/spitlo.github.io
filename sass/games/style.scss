@@ -53,6 +53,10 @@ body {
 
 a {
   color: #ff902f;
+
+  &:hover {
+    color: #faa82c;
+  }
 }
 
 #closer {
@@ -60,4 +64,35 @@ a {
   top: 2vh;
   right: 2vw;
   cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 2vh;
+  left: 2vw;
+  right: 2vw;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    // Is there a more flexboxy way to do this?
+    div {
+      width: 33%;
+
+      a {
+        text-decoration: none;
+      }
+
+      &.index {
+        text-align: center;
+      }
+      &.next {
+        text-align: right;
+      }
+    }
+  }
 }
