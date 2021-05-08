@@ -60,10 +60,12 @@ a, #closer {
 }
 
 #closer {
-  position: absolute;
+  position: fixed;
   top: 2vh;
   right: 2vw;
   cursor: pointer;
+  box-shadow: 0 0 15px black;
+  background-color: #00000099;
 }
 
 footer {
@@ -95,4 +97,10 @@ footer {
       }
     }
   }
+}
+
+.alert {
+  background-color: #ff8012;
+  color: #fff;
+  padding: 1vw 2vw;
 }

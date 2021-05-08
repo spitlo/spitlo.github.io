@@ -5,6 +5,12 @@
 
   {{ page.content | safe }}
 
+  <noscript>
+    <div class="alert">
+      You must turn on JavaScript to play this game. We don’t use any tracking software.
+    </div>
+  </noscript>
+
   {% if page and page.extra and page.extra.css_file %}
     {% set css_path = "/games/" ~ page.extra.css_file ~ ".css" %}
     <link rel="stylesheet" type="text/css" href="{{ get_url(path=css_path, cachebust=true) | safe }}">
