@@ -94,6 +94,7 @@ const oxygenChase = {
           decreaseTimer(10)
           println(BEDROOM_DESCS.leak)
         } else {
+          decreaseTimer(1)
           println(BEDROOM_DESCS.original)
         }
 
@@ -110,8 +111,8 @@ const oxygenChase = {
         if (disk.leak) {
           println('There is a **loose tube** here, and the oxygen tank is leaking.')
         } else {
-          if (chance(1/3)) {
-            println(`You only have ${disk.timer} minutes to save your father. Perhaps you should just stay with him?`)
+          if (chance(1/4)) {
+            println(`You only have ${disk.timer} minutes to save your father. Perhaps you should just stay with him and talk?`)
           }
         }
       },

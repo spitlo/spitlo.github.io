@@ -56,6 +56,7 @@ const commands = {
 <code>play</code> Play any linked music<br>
 <code>pause</code> Pause player<br>
 <code>prev</code>/<code>next</code> Previous/next song in playlist<br>
+<code>games</code> Show the games menu<br>
 <code>help</code> Show this message<br>
 Commands are tab completable. Type <code>:</code> to try a command.
 `

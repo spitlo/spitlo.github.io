@@ -65,7 +65,7 @@ a, #closer {
   right: 2vw;
   cursor: pointer;
   box-shadow: 0 0 15px black;
-  background-color: #00000099;
+  background-color: #00000040;
 }
 
 footer {
@@ -84,8 +84,8 @@ footer {
     // Is there a more flexboxy way to do this?
     div {
       width: 33%;
-      box-shadow: 0 0 15px black;
-      background-color: #00000099;
+      box-shadow: 0 0 15px #00000040;
+      background-color: #00000040;
 
       a {
         text-decoration: none;
