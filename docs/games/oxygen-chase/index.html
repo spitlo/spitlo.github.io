@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="noJS">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="https://spitlo.com/games/style.css?h=617cd416e87af8f0276b5b80ca506361d15c625ad8f216db1cf58c842a2077fa">
+    <link rel="preload" as="font" type="font/woff" href="https:&#x2F;&#x2F;spitlo.com&#x2F;fonts&#x2F;VictorMono-Thin.woff" crossorigin="anonymous">
+
+    
+  </head>
+
+  <body>
+    <div id="closer">[✕]</div>
+    <script>
+      const frameElement = window.frameElement
+      if (frameElement) {
+        document.body.className = 'framed'
+        document.getElementById('closer').onclick = () => {
+          frameElement.parentElement.remove()
+        }
+      }
+    </script>
+
+    
+  <h1>Oxygen Chase</h1>
+
+  <p>This is an experimental game using <code>text-engine</code> by <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/okaybenji/">Benji Kay</a>. It’s experimental only in the sense that I have never made a game before.</p>
+
+
+  <noscript>
+    <div class="alert">
+      You must turn on JavaScript to play this game. We don’t use any tracking software.
+    </div>
+  </noscript>
+
+  
+    
+    <link rel="stylesheet" type="text/css" href="https://spitlo.com/games/oxygenchase.css?h=907041933390d5627968d59b6d18ccbf11aac877a6c8f3ba844028dac2fa70f3">
+  
+
+  
+    
+      <div id="output"></div>
+
+      <div class="input">
+        <span class="ml-2">&gt; </span><input id="input" autofocus spellcheck="false" autocomplete="off" autocorrect="off" enterkeyhint="Go!">
+      </div>
+
+      <script src="https://spitlo.com/engines/text-engine/index.js?h=a4956d06bd7b4aee58a6a59b0e111df074333ad13465d554fea6a44653f551fc"></script>
+      <script type="module">
+        import gameDisk from 'https://spitlo.com/games/oxygen-chase/game.js?h=24d05be5cca00c440fb59fe08084a116ddbb23ed8b7728ee436adcb42989024e';
+        loadDisk(gameDisk);
+      </script>
+    
+  
+
+  <footer>
+    <nav>
+      <br>
+      <nav class="pager">
+        <div class="prev">
+          
+        </div>
+        <div class="index">
+          <a href="/games/">[⌃] Back to index</a>
+        </div>
+        <div class="next">
+          
+        </div>
+      </nav>
+    </nav>
+  </footer>
+
+  </body>
+</html>

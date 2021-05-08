@@ -21,6 +21,7 @@ const commands={help:()=>{const helpMessage=`
 <code>play</code> Play any linked music<br>
 <code>pause</code> Pause player<br>
 <code>prev</code>/<code>next</code> Previous/next song in playlist<br>
+<code>games</code> Show the games menu<br>
 <code>help</code> Show this message<br>
 Commands are tab completable. Type <code>:</code> to try a command.
 `
@@ -49,7 +50,14 @@ if(songs&&songs.length>0){songIndex=(songIndex===songs.length-1)?0:songIndex+1
 $player.src=songs[songIndex]}},nomoresecrets:()=>{for(let x=0;x<$scrambled.length;x++){const $element=$scrambled[x]
 if(nms){$bottom.scrollIntoView()
 const s=$element.classList.contains('email')?'aGlAc3BpdGxvLmNvbQ==':'OVlKQzlWREU='
-nms($element,s)}}}};const navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/',}
+nms($element,s)}}},games:()=>{const gameWrapper=document.createElement('div')
+gameWrapper.id='gameWrapper'
+const gameFrame=document.createElement('iframe')
+gameFrame.setAttribute('src','/games/')
+document.body.appendChild(gameWrapper)
+gameWrapper.appendChild(gameFrame)
+gameWrapper.addEventListener('click',()=>{if(confirm('Are you sure? Have you saved?')){gameWrapper.remove()}})},}
+const navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/',}
 const pressed={'ctrlKey':false,}
 function findPartialMatch(stack,needle){if(needle.substring(0,1)==='_'){return}
 const matches=stack.filter(value=>{if(value){return value.substring(0,needle.length)===needle}})

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /games/
 Sitemap: https://spitlo.com/sitemap.xml
