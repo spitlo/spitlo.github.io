@@ -286,6 +286,10 @@ let talkToOrAboutX = (preposition, x) => {
         availableTopics.forEach(topic => println(`${bullet} ${topic.option ? topic.option : topic.keyword.toUpperCase()}`));
         println(`${bullet} NOTHING`);
       } else {
+        // if character isn't handling onTalk, let the player know they are out of topics
+        if (!character.onTalk) {
+          println(`You have nothing to discuss with ${getName(character.name)} at this time.`);
+        }
         endConversation();
       }
     } else if (Object.keys(topics).length) {
@@ -625,28 +629,28 @@ let applyInput = (input) => {
     args = args.filter(arg => arg !== 'a' && arg !== 'an' && arg != 'the');
   }
 
-  const [command, ...argumentArray] = args;
+  const [command, ...arguments] = args;
   const room = getRoom(disk.roomId);
 
-  if (argumentArray.length === 1) {
-    exec(commands[1][command], argumentArray[0]);
-  } else if (command === 'take' && argumentArray.length) {
+  if (arguments.length === 1) {
+    exec(commands[1][command], arguments[0]);
+  } else if (command === 'take' && arguments.length) {
     // support for taking items with spaces in the names
     // (just tries to match on the first word)
-    takeItem(argumentArray[0]);
-  } else if (command === 'use' && argumentArray.length) {
+    takeItem(arguments[0]);
+  } else if (command === 'use' && arguments.length) {
     // support for using items with spaces in the names
     // (just tries to match on the first word)
-    useItem(argumentArray[0]);
-  } else if (argumentArray.length >= commands.length) {
-    exec(commands[commands.length - 1][command], argumentArray);
+    useItem(arguments[0]);
+  } else if (arguments.length >= commands.length) {
+    exec(commands[commands.length - 1][command], arguments);
   } else if (room.exits && getExit(command, room.exits)) {
     // handle shorthand direction command, e.g. "EAST" instead of "GO EAST"
     goDir(command);
   } else if (disk.conversation && (disk.conversation[command] || conversationIncludesTopic(disk.conversation, command))) {
     talkToOrAboutX('about', command);
   } else {
-    exec(commands[argumentArray.length][command], argumentArray);
+    exec(commands[arguments.length][command], arguments);
   }
 };
 
