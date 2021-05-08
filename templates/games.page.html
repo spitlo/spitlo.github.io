@@ -1,0 +1,64 @@
+{% extends "games.html" %}
+
+{% block content %}
+  <h1>{{ page.title }}</h1>
+
+  {{ page.content | safe }}
+
+  <noscript>
+    <div class="alert">
+      You must turn on JavaScript to play this game. We don’t use any tracking software.
+    </div>
+  </noscript>
+
+  {% if page and page.extra and page.extra.css_file %}
+    {% set css_path = "/games/" ~ page.extra.css_file ~ ".css" %}
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path=css_path, cachebust=true) | safe }}">
+  {% endif %}
+
+  {% if page and page.extra and page.extra.engine %}
+    {% if page.extra.engine == "text-engine" %}
+      <div id="output"></div>
+
+      <div class="input">
+        <span class="ml-2">&gt; </span><input id="input" autofocus spellcheck="false" autocomplete="off" autocorrect="off" enterkeyhint="Go!">
+      </div>
+
+      <script src="{{ get_url(path="/engines/text-engine/index.js", cachebust=true) | safe }}"></script>
+      <script type="module">
+        import gameDisk from '{{ get_url(path=current_path ~ "game.js", cachebust=true) | safe }}';
+        loadDisk(gameDisk);
+      </script>
+    {% elif page.extra.engine == "kontra" %}
+      <canvas id="game" width="600" height="360"></canvas>
+      <script src="{{ get_url(path="/engines/kontra/kontra.min.js", cachebust=true) | safe }}"></script>
+      <script type="module">
+        kontra.init()
+        kontra.initKeys()
+        kontra.initPointer()
+      </script>
+      <script src="{{ get_url(path=current_path ~ "game.js", cachebust=true) | safe }}" type="module"></script>
+    {% endif %}
+  {% endif %}
+
+  <footer>
+    <nav>
+      <br>
+      <nav class="pager">
+        <div class="prev">
+          {% if page.earlier %}
+          <a href="{{ page.earlier.permalink }}" rel="prev">[&lt;] {{ page.earlier.title }}</a>
+        {% endif %}
+        </div>
+        <div class="index">
+          <a href="/games/">[⌃] Back to index</a>
+        </div>
+        <div class="next">
+          {% if page.later %}
+            <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }} [&gt;]</a>
+          {% endif %}
+        </div>
+      </nav>
+    </nav>
+  </footer>
+{% endblock content %}

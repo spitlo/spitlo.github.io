@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="noJS">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path="/games/style.css", cachebust=true) | safe }}">
+    <link rel="preload" as="font" type="font/woff" href="{{ get_url(path="/fonts/VictorMono-Thin.woff") }}" crossorigin="anonymous">
+
+    {% block extra_head %}{% endblock extra_head %}
+  </head>
+
+  <body>
+    <div id="closer">[✕]</div>
+    <script>
+      const frameElement = window.frameElement
+      if (frameElement) {
+        document.body.className = 'framed'
+        document.getElementById('closer').onclick = () => {
+          frameElement.parentElement.remove()
+        }
+      }
+    </script>
+
+    {% block content %}
+      <section class="games">
+        <h1>Games</h1>
+
+        <p>
+          I’ve always wanted to make games, but it’s hard! Especially since I immediately try to make a new Monkey Island or Blackwell Pentalogy and get paralyzed by the sheer amount of work involved. This section is an attempt to remedy that by making many smaller games, and not necessarily waiting for them to be done before releasing them.
+        </p>
+
+        <p>
+          There’s only one game here at the moment, and it’s very much a work in progress.
+        </p>
+
+        <ul>
+          {% for game in section.pages %}
+            <li>
+              <a href="{{ game.permalink }}">{{ game.title }}</a> [{{ game.date }}] -- engine: {{ game.extra.engine }}
+              {% if game.description %}
+                <div class="description"><em>{{ game.description }}</em></div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endblock content %}
+  </body>
+</html>
