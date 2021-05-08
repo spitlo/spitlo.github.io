@@ -83,6 +83,9 @@
     width: 90vw;
     height: 90vh;
     background-color: rgba($color: #000000, $alpha: .5);
+    border-width: 4px;
+    border-style: inset;
+    border-color: #ae5b20;
   }
 }
 
