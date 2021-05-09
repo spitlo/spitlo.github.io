@@ -40,7 +40,6 @@ const printGPS = () => {
 const enterLocation = (location) => {
   // If we came to this location from a location other than father’s,
   // add some extra time (don’t ask me to draw a map of this town).
-  console.log(disk.timer); /* eslint-disable-line */
   let extraTime = 0
   if (disk.leavingRoom && disk.leavingRoom !== location) {
     extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
@@ -48,6 +47,15 @@ const enterLocation = (location) => {
   decreaseTimer(TRAVEL_TIMES.hospital + extraTime)
   disk.leavingRoom = location
   console.debug(`Entering ${location}. Timer is now ${disk.timer}`)
+  // Check if "car" room has exit "dad", otherwise add it
+  const car = getRoom('car')
+  const bedroom = car.exits.find((exit) => exit.id === 'bedroom')
+  if (!bedroom) {
+    car.exits.push(        {
+      dir: ['dad', 'dad’s', 'bedroom'],
+      id: 'bedroom',
+    })
+  }
 }
 
 const chance = (seed) => seed >= Math.random()
@@ -56,7 +64,7 @@ const decreaseTimer = (subtrahend) => {
   disk.timer -= subtrahend
 }
 
-const checkOnDad = (timer) => {
+const checkOnDad = () => {
 /**
  * Covid patients appearently do not struggle with breathing, but they might
  * breath faster (and faster?) due to lack of oxygen in the blood. This is
@@ -64,42 +72,54 @@ const checkOnDad = (timer) => {
  */
   let breathing
   let extra = ''
-  if (timer > 100) {
+  let breathingClass = 'breathing-normal'
+  if ((disk && disk.leak) || disk.timer < 10) {
+    breathing = 'hindered'
+    extra = ' His face is turning blue as he tries to remove the face mask.'
+    breathingClass = 'breathing-hindered'
+  } else if (disk.timer > 100) {
     breathing = 'normal'
-  } else if (timer < 101 && timer > 60) {
+  } else if (disk.timer < 101 && disk.timer > 60) {
     breathing = 'hurried'
-  } else if (timer > 30) {
+    breathingClass = 'breathing-hurried'
+  } else if (disk.timer > 30) {
     breathing = pickOne(['heavy', 'fast'])
     extra = ' His lips and fingers are faintly blue.'
+    breathingClass = 'breathing-fast'
   } else {
     breathing = 'rapid and shallow'
     extra = ' His entire skin has a blue tint. His looks slightly panicked.'
+    breathingClass = 'breathing-rapid'
   }
-  println(`His breathing seems ${breathing}.${extra || ''}`)
-  if (chance(1/4)) {
-    println(`You only have ${timer} minutes to save your father. Perhaps you should just stay with him and talk?`)
-  } else if (chance(1/5)) {
-    const whiteLie = Math.ceil(timer / 10) * 10
-    println('"How much oxygen do we have left?", your dad asks.')
-    println(`"About ${whiteLie} minutes worth, dad. Maybe a bit more," you answer. But you know it’s less.`)
+  println(`His breathing seems ${breathing}.${extra || ''}`, breathingClass)
+  if (disk.leak) {
+    println('You really, really should try to reconnect the tube to the tank.')
+  } else {
+    if (chance(1/4)) {
+      println(`You only have ${disk.timer} minutes to save your father. Perhaps you should just stay with him and talk?`)
+    } else if (chance(1/5)) {
+      const whiteLie = Math.ceil(disk.timer / 10) * 10
+      println('"How much oxygen do we have left?", your dad asks.')
+      println(`"About ${whiteLie} minutes worth, dad. Maybe a bit more," you answer. But you know it’s less.`)
+    }
   }
 }
 
-const getEmotion = (timer) => {
+const getEmotionAdverb = () => {
   /**
    * Returns an emotion based on the timer.
    * TODO: Are the different words in the correct position on the scale?
    */
   let emotion
-  if (timer > 100) {
+  if (disk.timer > 100) {
     emotion = ' '
-  } else if (timer < 101 && timer > 80) {
+  } else if (disk.timer < 101 && disk.timer > 80) {
     emotion = ` ${pickOne(['restlessly', 'nervously'])} `
-  } else if (timer > 60) {
+  } else if (disk.timer > 60) {
     emotion = ` ${pickOne(['worriedly', 'uneasily'])} `
-  } else if (timer > 40) {
+  } else if (disk.timer > 40) {
     emotion = ` ${pickOne(['timorously', 'apprehensively'])} `
-  } else if (timer > 20) {
+  } else if (disk.timer > 20) {
     emotion = ` ${pickOne(['disheartenedly', 'anxiously'])} `
   } else {
     emotion = ' despondently '
@@ -128,6 +148,7 @@ const oxygenChase = {
         if (TRAVEL_TIMES.hasOwnProperty(disk.leavingRoom)) {
           decreaseTimer(TRAVEL_TIMES[disk.leavingRoom])
           disk.leavingRoom = ''
+          checkOnDad()
         }
       },
       onLook: () => {
@@ -137,13 +158,15 @@ const oxygenChase = {
         if (disk.leak) {
           decreaseTimer(10)
           println(BEDROOM_DESCS.leak)
+          println(`You${getEmotionAdverb()}look at your dad.`)
+          checkOnDad()
         } else {
           decreaseTimer(1)
           println(BEDROOM_DESCS.original)
         }
 
-        const phone = bedroom.items.filter((item) => item.name === 'phone').length > 0
-        const keys = bedroom.items.filter((item) => item.name === 'car keys').length > 0
+        const phone = bedroom.items.find((item) => item.name === 'phone')
+        const keys = bedroom.items.find((item) => item.name === 'car keys')
         if (phone && keys) {
           println('Your **car keys** and **phone** are on the bedside table. ')
         } else if (phone) {
@@ -155,21 +178,22 @@ const oxygenChase = {
         if (disk.leak) {
           println('There is a **loose tube** here, and the oxygen tank is leaking.')
         } else {
-          checkOnDad(disk.timer)
+          checkOnDad()
         }
       },
       items: [
         {
           name: ['oxygen tank', 'gauge'],
           desc: 'It’s a big oxygen tank, strapped to a cart.',
-          onLook: () => println(`You${getEmotion(disk.timer)}check the gauge on the tank. There seems to be about ${disk.timer} minutes of oxygen left.`),
+          onLook: () => println(`You${getEmotionAdverb()}check the gauge on the tank. There seems to be about ${disk.timer} minutes of oxygen left.`),
         },
         {
           name: 'phone',
-          desc: 'Perhaps there is someone you can call?',
+          desc: 'Who could you call?',
           isTakeable: true,
           onUse: () => {
-            console.log('Using phone')
+            println('You scroll through all your contacts, but you can’t think of anyone who could help you.')
+            decreaseTimer(5)
           },
         },
         {
@@ -181,7 +205,7 @@ const oxygenChase = {
             if (chance(1/2)) {
               decreaseTimer(10)
               disk.leak = true
-              println('The tubing pulls hard on the tank, and suddenly snaps loose. At first, you think you broke it, but it is only disconnected from the tank. You scramble frantically to reconnect it as the precious oxygen leaks out into the room.')
+              println('It pulls hard on the tank, and suddenly snaps loose. At first, you think you broke it, but it is only disconnected from the tank. Precious oxygen leaks out into the room.')
               const bedroom = getRoom('bedroom')
               bedroom.items.push({
                 name: ['loose tube', 'tubing'],
@@ -189,7 +213,7 @@ const oxygenChase = {
                 isTakeable: true,
                 onUse: () => {
                   decreaseTimer(10)
-                  println('You struggle with it, but after a few minutes you are able to reconnect the tube to the tank.')
+                  println('You scramble frantically to reconnect the tube to the tank, and after a few minutes the leaking stops.')
                   println(`Examining the gauge, you can see there is about ${disk.timer} minutes of oxygen left in the tank.`)
                   disk.hasLeaked = true
                   disk.leak = false
@@ -316,11 +340,11 @@ const oxygenChase = {
       roomId: 'bedroom',
       desc: 'You look at your father with affection. He smiles back at you.',
       onLook: () => {
-        checkOnDad(disk.timer)
+        checkOnDad()
       },
       topics: [
         {
-          option: '**Covid**',
+          option: '**Covid**, huh?',
           line: '',
           keyword: 'covid',
           removeOnRead: true,
@@ -329,7 +353,7 @@ const oxygenChase = {
           },
         },
         {
-          option: '**Mother**',
+          option: 'Look, dad. I spoke to **Mother**.',
           line: '',
           keyword: 'mother',
           removeOnRead: true,
@@ -338,13 +362,13 @@ const oxygenChase = {
           },
         },
         {
-          option: '**How** do you feel?',
+          option: '**How** are you, dad?',
           line: '',
           keyword: 'how',
           removeOnRead: false,
           onSelected: () => {
             decreaseTimer(1)
-            checkOnDad(disk.timer)
+            checkOnDad()
           },
         },
       ],
