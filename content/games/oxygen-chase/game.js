@@ -11,7 +11,7 @@
 // oxygen, knowing her father only had two hours worth of oxygen left in his tank.
 
 const TRAVEL_TIMES = {
-  hostpital: 21,
+  hospital: 21,
   doctor: 18,
   redcross: 13,
 }
@@ -24,7 +24,7 @@ const printGPS = () => {
   const timeToDad = TRAVEL_TIMES[disk.leavingRoom]
   println('There are a few saved locations that seems interesting:')
   if (disk.leavingRoom !== 'downtown') {
-    println(`**Downtown** to the Hospital. The drive there is ${TRAVEL_TIMES.hostpital + (timeToDad / 2)} minutes.`)
+    println(`**Downtown** to the Hospital. The drive there is ${TRAVEL_TIMES.hospital + (timeToDad / 2)} minutes.`)
   }
   if (disk.leavingRoom !== 'midtown') {
     println(`**Midtown** to a doctor’s office. The drive there is ${TRAVEL_TIMES.doctor + (timeToDad / 2)} minutes.`)
@@ -37,6 +37,19 @@ const printGPS = () => {
   }
 }
 
+const enterLocation = (location) => {
+  // If we came to this location from a location other than father’s,
+  // add some extra time (don’t ask me to draw a map of this town).
+  console.log(disk.timer); /* eslint-disable-line */
+  let extraTime = 0
+  if (disk.leavingRoom && disk.leavingRoom !== location) {
+    extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
+  }
+  decreaseTimer(TRAVEL_TIMES.hospital + extraTime)
+  disk.leavingRoom = location
+  console.debug(`Entering ${location}. Timer is now ${disk.timer}`)
+}
+
 const chance = (seed) => seed >= Math.random()
 
 const decreaseTimer = (subtrahend) => {
@@ -44,6 +57,25 @@ const decreaseTimer = (subtrahend) => {
 }
 
 const checkOnDad = (timer) => {
+/**
+ * Covid patients appearently do not struggle with breathing, but they might
+ * breath faster (and faster?) due to lack of oxygen in the blood. This is
+ * called silent (or happy) hypoxia.
+ */
+  let breathing
+  let extra = ''
+  if (timer > 100) {
+    breathing = 'normal'
+  } else if (timer < 101 && timer > 60) {
+    breathing = 'hurried'
+  } else if (timer > 30) {
+    breathing = pickOne(['heavy', 'fast'])
+    extra = ' His lips and fingers are faintly blue.'
+  } else {
+    breathing = 'rapid and shallow'
+    extra = ' His entire skin has a blue tint. His looks slightly panicked.'
+  }
+  println(`His breathing seems ${breathing}.${extra || ''}`)
   if (chance(1/4)) {
     println(`You only have ${timer} minutes to save your father. Perhaps you should just stay with him and talk?`)
   } else if (chance(1/5)) {
@@ -195,6 +227,7 @@ const oxygenChase = {
       },
       onLook: () => {
         if (disk.gps) {
+          println('You check the GPS.')
           printGPS()
         }
       },
@@ -205,7 +238,9 @@ const oxygenChase = {
             if (disk.gps) {
               printGPS()
             } else {
-              println('The GPS boots up. The animation seemingly repeats forever, but eventually you’re presented with the welcome screen. Where do you want to go?')
+              println('The GPS boots up. The animation seemingly repeats forever, but eventually you’re presented with the welcome screen.')
+              printGPS()
+              println('Where do you want to go?')
               disk.gps = true
               decreaseTimer(2)
               const car = getRoom('car')
@@ -247,13 +282,7 @@ const oxygenChase = {
         id: 'car',
       }],
       onEnter: () => {
-        let extraTime = 0
-        if (disk.leavingRoom) {
-          // We came from somewhere other than father’s, add some extra time
-          extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
-        }
-        decreaseTimer(TRAVEL_TIMES.hospital + extraTime)
-        disk.leavingRoom = 'hospital'
+        enterLocation('hospital')
       },
     },
     {
@@ -265,12 +294,7 @@ const oxygenChase = {
         id: 'car',
       }],
       onEnter: () => {
-        let extraTime = 0
-        if (disk.leavingRoom) {
-          extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
-        }
-        decreaseTimer(TRAVEL_TIMES.doctor + extraTime)
-        disk.leavingRoom = 'doctor'
+        enterLocation('doctor')
       },
     },
     {
@@ -282,12 +306,7 @@ const oxygenChase = {
         id: 'car',
       }],
       onEnter: () => {
-        let extraTime = 0
-        if (disk.leavingRoom) {
-          extraTime = TRAVEL_TIMES[disk.leavingRoom] / 2
-        }
-        decreaseTimer(TRAVEL_TIMES.redcross + extraTime)
-        disk.leavingRoom = 'redcross'
+        enterLocation('redcross')
       },
     },
   ],
@@ -297,26 +316,6 @@ const oxygenChase = {
       roomId: 'bedroom',
       desc: 'You look at your father with affection. He smiles back at you.',
       onLook: () => {
-        /**
-         * Covid patients appearently do not struggle with breathing, but they might
-         * breath faster (and faster?) due to lack of oxygen in the blood. This is
-         * called silent (or happy) hypoxia.
-         */
-        let breathing
-        let extra = ''
-        console.log('Timer', disk.timer)
-        if (disk.timer > 100) {
-          breathing = 'normal'
-        } else if (disk.timer < 101 && disk.timer > 60) {
-          breathing = 'hurried'
-        } else if (disk.timer > 30) {
-          breathing = pickOne(['heavy', 'fast'])
-          extra = ' His lips and fingers are faintly blue.'
-        } else {
-          breathing = 'rapid and shallow'
-          extra = ' His entire skin has a blue tint. His looks slightly panicked.'
-        }
-        println(`His breathing seems ${breathing}.${extra || ''}`)
         checkOnDad(disk.timer)
       },
       topics: [
@@ -336,6 +335,16 @@ const oxygenChase = {
           removeOnRead: true,
           onSelected: () => {
             decreaseTimer(10)
+          },
+        },
+        {
+          option: '**How** do you feel?',
+          line: '',
+          keyword: 'how',
+          removeOnRead: false,
+          onSelected: () => {
+            decreaseTimer(1)
+            checkOnDad(disk.timer)
           },
         },
       ],
