@@ -1,31 +1,12 @@
 @import "../constants";
 
-.img {
-  white-space: pre;
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#output {
-  padding: 2vw 2vw 0 2vw;
-}
-
-#output div {
-  margin-bottom: 1vw;
-
-  b {
-    color: rgb(255, 174, 0);
-  }
-}
-
-.input {
-  display: flex;
-}
-
 a {
-  color: orange;
+  color: #ffa500;
+}
+
+span {
+  margin-left: 2vw;
+  margin-right: .6vw;
 }
 
 #input {
@@ -34,30 +15,59 @@ a {
   border: none;
   position: relative;
   bottom: 0.175vh;
-  margin-left: .5vw;
+  margin-top: .1vw;
+  margin-left: .2vw;
 }
 
 #input, .input, .user {
   height: 4vh;
   font-family: $paragraphFont;
-  color: orange;
+  color: #ffa500;
   font-size: 2vh;
-}
-
-span {
-  margin-left: 2vw;
-  margin-right: .6vw;
 }
 
 #input:focus {
   outline: none;
 }
 
+#output {
+  padding: 2vw 2vw 0 2vw;
+
+  div {
+    margin-bottom: 1vw;
+
+    b {
+      color: #ffae00;
+    }
+  }
+}
+
+.img {
+  white-space: pre;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input {
+  display: flex;
+}
 
 @keyframes blink {
-  0% {background: orange;}
-  49% {background: orange;}
-  60% {background: transparent;}
-  99% {background: transparent;}
-  100% {background: orange;}
+  0% {
+    background: #ffa500;
+  }
+  49% {
+    background: #ffa500;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #ffa500;
+  }
 }
