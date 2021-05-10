@@ -1,4 +1,4 @@
-// spitlo.com keyboard functions
+// minified with jsmin
 
 import{nms}from'./util.js';const $bottom=document.getElementById('bottom')
 const $commandLine=document.getElementById('commandLine')
