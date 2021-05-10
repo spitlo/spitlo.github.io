@@ -87,11 +87,16 @@ if [ ! -x "bin/jsmin" ]; then
   bin/build_jsmin
 fi
 ## Ever so slightly minify scripts. Add scripts to this array as needed
-scripts=("keyboard" "search" "util")
+scripts=(
+  "keyboard" \
+  "search" \
+  "util" \
+  "engines/text-engine/index" \
+)
 for script in "${scripts[@]}"; do
-  mv "docs/$script.js" "docs/_$script.js"
-  bin/jsmin <"docs/_$script.js" >"docs/$script.js" "spitlo.com $script functions"
-  rm "docs/_$script.js"
+  mv "docs/$script.js" "docs/$script.js_"
+  bin/jsmin <"docs/$script.js_" >"docs/$script.js" "minified with jsmin"
+  rm "docs/$script.js_"
 done
 
 # Minification done, add files and deploy

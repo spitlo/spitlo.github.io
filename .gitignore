@@ -2,3 +2,4 @@ public
 .DS_Store
 tmp
 bin/jsmin
+bin/try
