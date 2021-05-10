@@ -21,7 +21,7 @@ const BEDROOM_DESCS = {
 }
 
 const printGPS = () => {
-  const timeToDad = TRAVEL_TIMES[disk.leavingRoom]
+  const timeToDad = disk.leavingRoom ? TRAVEL_TIMES[disk.leavingRoom] : 0
   println('There are a few saved locations that seems interesting:')
   if (disk.leavingRoom !== 'downtown') {
     println(`**Downtown** to the Hospital. The drive there is ${TRAVEL_TIMES.hospital + (timeToDad / 2)} minutes.`)
@@ -62,6 +62,12 @@ const chance = (seed) => seed >= Math.random()
 
 const decreaseTimer = (subtrahend) => {
   disk.timer -= subtrahend
+}
+
+const getName = (character) => {
+  const char = getCharacter(character, disk.character)
+  const namesLength = char.name.length
+  return namesLength === 0 ? char[0] : char[namesLength - 1]
 }
 
 const checkOnDad = () => {
@@ -127,6 +133,10 @@ const getEmotionAdverb = () => {
   return emotion
 }
 
+// ___  _ ____ _  _
+// |  \ | [__  |_/
+// |__/ | ___] | \_
+// ------------ ---  --- >
 const oxygenChase = {
   roomId: 'bedroom',
   timer: 120,
@@ -300,7 +310,9 @@ const oxygenChase = {
     {
       id: 'hospital',
       name: 'At the hospital',
-      desc: '',
+      desc: `You’re standing in the lobby of the town’s hospital. Plastic plants adorn the corners of the room, and dashed yellow lines on the floor disappear off behind closed doors.
+
+A **receptionist** sits behind a huge desk.`,
       exits: [{
         dir: ['car', 'outside'],
         id: 'car',
@@ -369,6 +381,91 @@ const oxygenChase = {
           onSelected: () => {
             decreaseTimer(1)
             checkOnDad()
+          },
+        },
+      ],
+    },
+    {
+      name: ['receptionist'],
+      roomId: 'hospital',
+      desc: 'A **receptionist** sits behind a huge desk, reading something on his phone. A name tag on his chest reads "René".',
+      onLook: () => {
+        getCharacter('receptionist').name.push('René')
+      },
+      topics: [
+        {
+          option: 'Ask for **oxygen**',
+          line: `"I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
+
+The receptionist looks up at you. "Does this look like a dive shop?" he spits.`,
+          keyword: 'oxygen',
+          removeOnRead: true,
+          onSelected: () => decreaseTimer(1),
+        },
+        {
+          option: 'Ask to speak to an **administrator**',
+          line: `"I want to speak to an administrator," you say sternly.
+
+René shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
+
+"The administrator is busy," he mumbles.`,
+          keyword: 'administrator',
+          prereqs: ['oxygen'],
+          removeOnRead: true,
+          onSelected: () => decreaseTimer(2),
+        },
+        {
+          option: '**Insist** on speaking to an administrator',
+          line: `"Put down your phone and look at me," you half-scream at the receptionist.
+
+"I insist, I really need to speak to an administrator."`,
+          keyword: 'insist',
+          prereqs: ['administrator'],
+          removeOnRead: true,
+          onSelected: () => decreaseTimer(3),
+        },
+        {
+          option: '**Beg** to speak to an administrator',
+          line: `"Listen. I really need to see an administrator. I need oxygen, badly."
+"My father barely has any left in his tank."
+
+"He is dying."`,
+          keyword: 'beg',
+          prereqs: ['insist'],
+          removeOnRead: true,
+          onSelected: () => decreaseTimer(4),
+        },
+        {
+          option: '**Demand** to speak to a god damned administrator',
+          line: `You bang your fist in the desk. "Call up a god damned administrator," you scream. "I’m not asking!"
+
+The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously pressing each key and pausing. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
+          keyword: 'demand',
+          prereqs: ['beg'],
+          removeOnRead: true,
+          onSelected: () => {
+            decreaseTimer(8)
+            disk.characters.push(
+              {
+                name: ['administrator', 'hospital administrator'],
+                roomId: 'hospital',
+                desc: 'The hospital **administrator**, a woman in her late fifties or early sixties with ash-blond hair and an uninviting smile.',
+                onLook: () => {
+                  getCharacter('administrator').name.push('Catrine')
+                },
+                topics: [
+                  {
+                    option: 'Ask for **oxygen**',
+                    line: '"As I told, um, René here," you say, glancing at the receptionist’s name tag, "I’m in dire need of oxygen. My father has precious little left in his tank. Please, can you help me?"',
+                    keyword: 'oxygen',
+                    onSelected: () => decreaseTimer(4),
+                  },
+                ],
+              },
+            )
+            println(`After a few minutes, an elevator dings as the doors slide up.
+[...]
+"I’m the administrator," she says. "And you are?"`)
           },
         },
       ],
