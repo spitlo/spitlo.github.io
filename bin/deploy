@@ -92,6 +92,7 @@ scripts=(
   "search" \
   "util" \
   "engines/text-engine/index" \
+  "games/oxygen-chase/game" \
 )
 for script in "${scripts[@]}"; do
   mv "docs/$script.js" "docs/$script.js_"
