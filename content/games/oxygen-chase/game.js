@@ -138,7 +138,7 @@ const getEmotionAdverb = () => {
 // |__/ | ___] | \_
 // ------------ ---  --- >
 const oxygenChase = {
-  roomId: 'bedroom',
+  roomId: 'hospital',
   timer: 120,
   gps: false,
   leak: false,
@@ -404,19 +404,19 @@ A **receptionist** sits behind a huge, beige desk.`,
 
 The receptionist looks up at you. "Does this look like a dive shop?" he snarks.
 
-You’re not off to a good start. It’s apparent you’ll need `,
+You’re not off to a good start. It’s apparent you’ll need to try a different method.`,
           keyword: 'oxygen',
           removeOnRead: true,
           onSelected: () => decreaseTimer(1),
         },
         {
-          option: 'Ask to speak to an **administrator**',
+          option: '**Ask** to speak to an administrator',
           line: `"I want to speak to an administrator," you say sternly.
 
 René shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
 
 "The administrator is busy," he mumbles.`,
-          keyword: 'administrator',
+          keyword: 'ask',
           prereqs: ['oxygen'],
           removeOnRead: true,
           onSelected: () => decreaseTimer(2),
@@ -427,7 +427,7 @@ René shuffles a few papers, restarts a lucky cat whose arm is slowing down some
 
 "I insist, I really need to speak to an administrator."`,
           keyword: 'insist',
-          prereqs: ['administrator'],
+          prereqs: ['oxygen'],
           removeOnRead: true,
           onSelected: () => decreaseTimer(3),
         },
@@ -437,7 +437,7 @@ René shuffles a few papers, restarts a lucky cat whose arm is slowing down some
 "My father barely has any left in his tank."
 Then you add, "He is dying."`,
           keyword: 'beg',
-          prereqs: ['insist'],
+          prereqs: ['oxygen'],
           removeOnRead: true,
           onSelected: () => decreaseTimer(4),
         },
@@ -447,7 +447,7 @@ Then you add, "He is dying."`,
 
 The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           keyword: 'demand',
-          prereqs: ['insist', 'beg'],
+          prereqs: ['ask', 'insist', 'beg'],
           removeOnRead: true,
           onSelected: () => {
             decreaseTimer(8)
