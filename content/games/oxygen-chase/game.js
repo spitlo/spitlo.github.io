@@ -201,7 +201,7 @@ const oxygenChase = {
           desc: 'Who could you call?',
           isTakeable: true,
           onUse: () => {
-            println('You scroll through all your contacts, but you can’t think of anyone who could help you.')
+            println('You scroll through all your contacts, but you can’t think of a single one who could help you. You put the phone in your pocket.')
             decreaseTimer(5)
           },
         },
@@ -209,6 +209,9 @@ const oxygenChase = {
           name: 'car keys',
           desc: 'Perhaps there is somewhere you can go?',
           isTakeable: true,
+          onUse: () => {
+            println('There’s nothing here to use them on. Perhaps you should **take** them?')
+          },
           onTake: () => {
             println('You reach over to grab your car keys. As you lean over the bed, you press down on the tubing.')
             if (chance(1/2)) {
@@ -237,7 +240,7 @@ const oxygenChase = {
               })
               // Car keys block is gone now, so add a new block (We can’t leave dad with a leaky tank)
               const carExit = getExit('car', bedroom.exits)
-              carExit.block = 'The oxygen tank is leaking and your father is dying from asphyxiation. Is now really the time to leave?'
+              carExit.block = 'The oxygen tank is leaking and your father is dying from asphyxiation. Is now really a good time to leave?'
             } else {
               decreaseTimer(1)
               println('The tubing pulls hard on the tank. The cart creeks and moves a bit closer, but the tubing stays connected. You remember to be more careful in the future.')
@@ -275,18 +278,18 @@ const oxygenChase = {
               printGPS()
             } else {
               println('The GPS boots up. The animation seemingly repeats forever, but eventually you’re presented with the welcome screen.')
-              printGPS()
-              println('Where do you want to go?')
-              disk.gps = true
               decreaseTimer(2)
+              printGPS()
+              disk.gps = true
               const car = getRoom('car')
+              car.desc = 'Where do you want to go?'
+              println(car.desc)
               const hospital = getExit('downtown', car.exits)
               delete hospital.block
               const doctor = getExit('midtown', car.exits)
               delete doctor.block
               const redcross = getExit('uptown', car.exits)
               delete redcross.block
-              car.desc = 'Where do you want to go?'
             }
           },
         },
@@ -312,9 +315,9 @@ const oxygenChase = {
     {
       id: 'hospital',
       name: 'At the hospital',
-      desc: `You’re standing in the lobby of the town’s hospital. Plastic plants adorn the corners of the room, and dashed yellow lines on the floor disappear off behind closed doors.
+      desc: `You’re standing in the lobby of the town’s hospital. Plastic plants adorn the corners of an otherwise drab room. Dashed yellow lines on the floor taper off and disappear, mostly, behind closed doors.
 
-A **receptionist** sits behind a huge desk.`,
+A **receptionist** sits behind a huge, beige desk.`,
       exits: [{
         dir: ['car', 'outside'],
         id: 'car',
@@ -358,7 +361,7 @@ A **receptionist** sits behind a huge desk.`,
       },
       topics: [
         {
-          option: '**Covid**, huh?',
+          option: 'That **covid**, huh?',
           line: '',
           keyword: 'covid',
           removeOnRead: true,
@@ -444,7 +447,7 @@ Then you add, "He is dying."`,
 
 The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           keyword: 'demand',
-          prereqs: ['beg'],
+          prereqs: ['insist', 'beg'],
           removeOnRead: true,
           onSelected: () => {
             decreaseTimer(8)
