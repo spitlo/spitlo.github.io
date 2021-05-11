@@ -39,7 +39,7 @@ println(`"About ${whiteLie} minutes worth, dad. Maybe a bit more," you answer. B
 const getEmotionAdverb=()=>{let emotion
 if(disk.timer>100){emotion=' '}else if(disk.timer<101&&disk.timer>80){emotion=` ${pickOne(['restlessly', 'nervously'])} `}else if(disk.timer>60){emotion=` ${pickOne(['worriedly', 'uneasily'])} `}else if(disk.timer>40){emotion=` ${pickOne(['timorously', 'apprehensively'])} `}else if(disk.timer>20){emotion=` ${pickOne(['disheartenedly', 'anxiously'])} `}else{emotion=' despondently '}
 return emotion}
-const oxygenChase={roomId:'hospital',timer:120,gps:false,leak:false,hasLeaked:false,leavingRoom:'',inventory:[],rooms:[{id:'bedroom',name:'Your father’s bedroom',desc:`${BEDROOM_DESCS.original} Your **car keys** and **phone** are on the bedside table.`,onEnter:()=>{if(TRAVEL_TIMES.hasOwnProperty(disk.leavingRoom)){decreaseTimer(TRAVEL_TIMES[disk.leavingRoom])
+const oxygenChase={roomId:'bedroom',timer:120,gps:false,leak:false,hasLeaked:false,leavingRoom:'',inventory:[],rooms:[{id:'bedroom',name:'Your father’s bedroom',desc:`${BEDROOM_DESCS.original} Your **car keys** and **phone** are on the bedside table.`,onEnter:()=>{if(TRAVEL_TIMES.hasOwnProperty(disk.leavingRoom)){decreaseTimer(TRAVEL_TIMES[disk.leavingRoom])
 disk.leavingRoom=''
 checkOnDad()}},onLook:()=>{const bedroom=getRoom('bedroom')
 bedroom.desc=''
