@@ -443,7 +443,7 @@ Then you add, "He is dying."`,
         },
         {
           option: '**Demand** to speak to a god damned administrator',
-          line: `You bang your fist in the desk. "Call up a god damned administrator," you scream. "I’m not asking!"
+          line: `You bang your fist on the desk. "Call up a god damned administrator," you scream. "I’m not asking!"
 
 The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           keyword: 'demand',
