@@ -213,9 +213,12 @@ const oxygenChase = {
           onTake: () => {
             println('You reach over to grab your car keys. As you lean over the bed, you press down on the tubing.')
             if (chance(1/2)) {
+              // Oops, we’ve got leakage!
               decreaseTimer(10)
               disk.leak = true
               println('It pulls hard on the tank, and suddenly snaps loose. At first, you think you broke it, but it is only disconnected from the tank. Precious oxygen leaks out into the room.')
+              println('There is a **loose tube** here, and the oxygen tank is leaking.')
+              // Add loose tube to the rooms items
               const bedroom = getRoom('bedroom')
               bedroom.items.push({
                 name: ['loose tube', 'tubing'],
@@ -228,16 +231,22 @@ const oxygenChase = {
                   disk.hasLeaked = true
                   disk.leak = false
                   bedroom.items = bedroom.items.filter((item) => !item.name.includes('loose tubing'))
+                  const carExit = getExit('car', bedroom.exits)
+                  // Clear block
+                  delete carExit.block
                 },
               })
+              // Car keys block is gone now, so add a new block (We can’t leave dad with a leaky tank)
+              const carExit = getExit('outside', bedroom.exits)
+              carExit.block = 'The oxygen tank is leaking and your father is dying from asphyxiation. Is now really the time to leave?'
             } else {
               decreaseTimer(1)
               println('The tubing pulls hard on the tank. The cart creeks and moves a bit closer, but the tubing stays connected. You remember to be more careful in the future.')
+              // Unblock car
+              const bedroom = getRoom('bedroom')
+              const carExit = getExit('outside', bedroom.exits)
+              delete carExit.block
             }
-            // Unblock car
-            const room = getRoom(disk.roomId)
-            const car = getExit('outside', room.exits)
-            delete car.block
           },
         },
       ],
@@ -253,12 +262,6 @@ const oxygenChase = {
       id: 'car',
       name: 'In the car',
       desc: 'You’re in your car. There’s a GPS here.',
-      onEnter: () => {
-        if (disk.leak) {
-          // All of the oxygen left in the tank will leak out. Father dies.
-          println('You use the GPS to locate a hospital.')
-        }
-      },
       onLook: () => {
         if (disk.gps) {
           println('You check the GPS.')
