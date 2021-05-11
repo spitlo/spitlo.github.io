@@ -16,8 +16,8 @@ const TRAVEL_TIMES = {
   redcross: 13,
 }
 const BEDROOM_DESCS = {
-  original: 'You are sitting by your father’s bedside. Transparent tubing runs across the bedsheet from the mask strapped to his face to an **oxygen tank** standing in a cart with wheels. Your car is parked **outside**.',
-  leak: 'You are standing in your father’s bedroom. Your car is parked **outside**.',
+  original: 'You are sitting by your father’s bedside. Transparent tubing runs across the bedsheet from the mask strapped to his face to an **oxygen tank** standing in a cart on wheels. Your **car** is parked outside.',
+  leak: 'You are standing in your father’s bedroom. Your **car** is parked outside.',
 }
 
 const printGPS = () => {
@@ -168,8 +168,6 @@ const oxygenChase = {
         if (disk.leak) {
           decreaseTimer(10)
           println(BEDROOM_DESCS.leak)
-          println(`You${getEmotionAdverb()}look at your dad.`)
-          checkOnDad()
         } else {
           decreaseTimer(1)
           println(BEDROOM_DESCS.original)
@@ -187,9 +185,10 @@ const oxygenChase = {
 
         if (disk.leak) {
           println('There is a **loose tube** here, and the oxygen tank is leaking.')
-        } else {
-          checkOnDad()
         }
+
+        println(`You${getEmotionAdverb()}look at your dad.`)
+        checkOnDad()
       },
       items: [
         {
@@ -237,14 +236,14 @@ const oxygenChase = {
                 },
               })
               // Car keys block is gone now, so add a new block (We can’t leave dad with a leaky tank)
-              const carExit = getExit('outside', bedroom.exits)
+              const carExit = getExit('car', bedroom.exits)
               carExit.block = 'The oxygen tank is leaking and your father is dying from asphyxiation. Is now really the time to leave?'
             } else {
               decreaseTimer(1)
               println('The tubing pulls hard on the tank. The cart creeks and moves a bit closer, but the tubing stays connected. You remember to be more careful in the future.')
               // Unblock car
               const bedroom = getRoom('bedroom')
-              const carExit = getExit('outside', bedroom.exits)
+              const carExit = getExit('car', bedroom.exits)
               delete carExit.block
             }
           },
@@ -252,7 +251,7 @@ const oxygenChase = {
       ],
       exits: [
         {
-          dir: ['outside', 'car'],
+          dir: ['car', 'outside'],
           id: 'car',
           block: 'You need to bring your car keys.',
         },
@@ -377,7 +376,7 @@ A **receptionist** sits behind a huge desk.`,
           },
         },
         {
-          option: '**How** are you, dad?',
+          option: '**How** are you feeling, dad?',
           line: '',
           keyword: 'how',
           removeOnRead: false,
@@ -391,16 +390,18 @@ A **receptionist** sits behind a huge desk.`,
     {
       name: ['receptionist'],
       roomId: 'hospital',
-      desc: 'A **receptionist** sits behind a huge desk, reading something on his phone. A name tag on his chest reads "René".',
+      desc: 'The receptionist appears to be in his twenties, but looks boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "René".',
       onLook: () => {
         getCharacter('receptionist').name.push('René')
       },
       topics: [
         {
           option: 'Ask for **oxygen**',
-          line: `"I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
+          line: `"Hi. I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
 
-The receptionist looks up at you. "Does this look like a dive shop?" he spits.`,
+The receptionist looks up at you. "Does this look like a dive shop?" he snarks.
+
+You’re not off to a good start. It’s apparent you’ll need `,
           keyword: 'oxygen',
           removeOnRead: true,
           onSelected: () => decreaseTimer(1),
@@ -419,7 +420,7 @@ René shuffles a few papers, restarts a lucky cat whose arm is slowing down some
         },
         {
           option: '**Insist** on speaking to an administrator',
-          line: `"Put down your phone and look at me," you half-scream at the receptionist.
+          line: `"Put down your phone and look at me," you say in your most decisive tone.
 
 "I insist, I really need to speak to an administrator."`,
           keyword: 'insist',
@@ -431,8 +432,7 @@ René shuffles a few papers, restarts a lucky cat whose arm is slowing down some
           option: '**Beg** to speak to an administrator',
           line: `"Listen. I really need to see an administrator. I need oxygen, badly."
 "My father barely has any left in his tank."
-
-"He is dying."`,
+Then you add, "He is dying."`,
           keyword: 'beg',
           prereqs: ['insist'],
           removeOnRead: true,
@@ -442,7 +442,7 @@ René shuffles a few papers, restarts a lucky cat whose arm is slowing down some
           option: '**Demand** to speak to a god damned administrator',
           line: `You bang your fist in the desk. "Call up a god damned administrator," you scream. "I’m not asking!"
 
-The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously pressing each key and pausing. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
+The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           keyword: 'demand',
           prereqs: ['beg'],
           removeOnRead: true,
@@ -452,7 +452,7 @@ The receptionist looks up again, unamused. Slowly, he slides the desk phone clos
               {
                 name: ['administrator', 'hospital administrator'],
                 roomId: 'hospital',
-                desc: 'The hospital **administrator**, a woman in her late fifties or early sixties with ash-blond hair and an uninviting smile.',
+                desc: 'The hospital administrator is a woman ash-blond hair and an uninviting smile.',
                 onLook: () => {
                   getCharacter('administrator').name.push('Catrine')
                 },
@@ -467,7 +467,7 @@ The receptionist looks up again, unamused. Slowly, he slides the desk phone clos
               },
             )
             println(`After a few minutes, an elevator dings as the doors slide up.
-[...]
+A woman in her late fifties or early sixties glides out of the elevator.
 "I’m the administrator," she says. "And you are?"`)
           },
         },
