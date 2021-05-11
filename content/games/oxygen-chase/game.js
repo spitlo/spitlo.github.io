@@ -261,7 +261,7 @@ const oxygenChase = {
     {
       id: 'car',
       name: 'In the car',
-      desc: 'You’re in your car. There’s a GPS here.',
+      desc: 'You’re in your car. There’s a **GPS** here.',
       onLook: () => {
         if (disk.gps) {
           println('You check the GPS.')
@@ -296,17 +296,17 @@ const oxygenChase = {
         {
           dir: ['downtown', 'hospital'],
           id: 'hospital',
-          block: 'You won’t be able to find your way to the hospital without the GPS.',
+          block: 'You won’t be able to find your way to the hospital without the **GPS**.',
         },
         {
           dir: ['midtown', 'doctor'],
           id: 'doctor',
-          block: 'There’s no way you’ll get to the doctor’s office without the GPS.',
+          block: 'There’s no way you’ll get to the doctor’s office without the **GPS**.',
         },
         {
           dir: ['uptown', 'redcross'],
           id: 'redcross',
-          block: 'You haven’t got a clue where the Red Cross is located. Perhaps you should use the GPS?',
+          block: 'You haven’t got a clue where the Red Cross is located. Perhaps you should use the **GPS**?',
         },
       ],
     },
