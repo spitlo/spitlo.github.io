@@ -6,7 +6,7 @@ a {
 
 span {
   margin-left: 2vw;
-  margin-right: .6vw;
+  margin-right: 2px;
 }
 
 #input {
@@ -16,14 +16,14 @@ span {
   position: relative;
   bottom: 0.175vh;
   margin-top: .1vw;
-  margin-left: .2vw;
+  margin-left: 8px;
 }
 
 #input, .input, .user {
   height: 4vh;
-  font-family: $paragraphFont;
+  font-family: '3270', $paragraphFont;
   color: #ffa500;
-  font-size: 2vh;
+  font-size: 21px;
 }
 
 #input:focus {
@@ -32,6 +32,7 @@ span {
 
 #output {
   padding: 2vw 2vw 0 2vw;
+  font-family: '3270', $paragraphFont;
 
   div {
     margin-bottom: 1vw;
@@ -39,6 +40,10 @@ span {
     b {
       color: #ffae00;
     }
+  }
+
+  .room-name {
+    text-decoration: underline;
   }
 }
 
