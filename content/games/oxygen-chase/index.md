@@ -8,4 +8,4 @@ engine = "text-engine"
 css_file = "oxygenchase"
 +++
 
-This is an experimental game using `text-engine` by [Benji Kay](https://github.com/okaybenji/). It’s experimental only in the sense that I have never made a game before.
+This is an experimental game using `text-engine` by [Benji Kay](https://github.com/okaybenji/). It’s experimental mostly in the sense that I have never made a game before.
