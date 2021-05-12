@@ -181,9 +181,21 @@ const oxygenChase = {
   rooms: [
     {
       id: 'bedroom',
+      img: `
+   ░░ ░  ░ ░ ░  ░░  ░░░ ░  ░
+  ░  ░ ░░  ░░░ ░    ░   ░░ ░
+  ▒  ▒ ▒▒  ▒▒▒ ▒ ▒▒ ▒▒  ▒ ▒▒
+   ▓▓ ▓  ▓  ▓   ▓▓  ▓▓▓ ▓  ▓
+      ╓─┐ ╥ ╥ ╓─╥ ╓─┐ ╓─┐
+      ║   ╟─╢ ╟─╢ ╚═╗ ╠═
+      ╙─┘ ╙ ╙ ╙ ╙ └─╜ ╙─┘`,
       name: 'Your father’s bedroom',
       desc: `${BEDROOM_DESCS.original} Your **car keys** and **phone** are on the bedside table.`,
       onEnter: () => {
+        // Only show image once
+        const bedroom = getRoom('bedroom')
+        bedroom.img = ''
+
         // When we come back to the bedroom, we need to add the travel time from the
         // location we left to here to the timer.
         if (TRAVEL_TIMES.hasOwnProperty(disk.leavingRoom)) {
@@ -191,7 +203,6 @@ const oxygenChase = {
           disk.leavingRoom = ''
         }
 
-        const bedroom = getRoom('bedroom')
         if (bedroom.visits > 1) {
           if (!disk.hasLeaked) {
             // We haven’t caused a leak yet, here’s a new opportunity!
