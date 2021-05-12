@@ -1,7 +1,7 @@
 // minified with jsmin
 
 const TRAVEL_TIMES={hospital:21,doctor:18,redcross:13,}
-const BEDROOM_DESCS={original:'You are sitting by your father’s bedside. Transparent tubing runs across the bedsheet from the mask strapped to his face to an **oxygen tank** standing in a cart on wheels. Your **car** is parked outside.',leak:'You are standing in your father’s bedroom. Your **car** is parked outside.',}
+const BEDROOM_DESCS={original:'You are sitting by your **dad**’s bedside. Transparent tubes wind across the bedsheet from the mask strapped to his face to an **oxygen tank** standing in a cart on wheels. Your **car** is parked outside.',leak:'You are standing in your **dad**’s bedroom. Your **car** is parked outside.',}
 const printGPS=()=>{const timeToDad=disk.leavingRoom?TRAVEL_TIMES[disk.leavingRoom]:0
 println('There are a few saved locations that seems interesting:')
 if(disk.leavingRoom!=='downtown'){println(`**Downtown** to the Hospital. The drive there is ${TRAVEL_TIMES.hospital + (timeToDad / 2)} minutes.`)}
@@ -16,7 +16,21 @@ console.debug(`Entering ${location}. Timer is now ${disk.timer}`)
 const car=getRoom('car')
 const bedroom=car.exits.find((exit)=>exit.id==='bedroom')
 if(!bedroom){car.exits.push({dir:['dad','dad’s','bedroom'],id:'bedroom',})}}
-const chance=(seed)=>seed>=Math.random()
+const createLeak=()=>{decreaseTimer(10)
+disk.leak=true
+println('There is a **loose tube** here, and the oxygen tank is leaking.')
+const bedroom=getRoom('bedroom')
+bedroom.items.push({name:['loose tube','tubing'],desc:'You should really, really reconnect this tube to the tank.',isTakeable:true,onUse:()=>{decreaseTimer(10)
+println('You scramble frantically to reconnect the tube to the tank, and after a few minutes the leaking stops.')
+println(`Examining the gauge, you can see there is about ${disk.timer} minutes of oxygen left in the tank.`)
+disk.hasLeaked=true
+disk.leak=false
+bedroom.items=bedroom.items.filter((item)=>!item.name.includes('loose tubing'))
+const carExit=getExit('car',bedroom.exits)
+delete carExit.block},})
+const carExit=getExit('car',bedroom.exits)
+carExit.block='The oxygen tank is leaking and your father is dying from asphyxiation. Is now really a good time to leave?'}
+const chance=(value)=>value>=Math.random()
 const decreaseTimer=(subtrahend)=>{disk.timer-=subtrahend}
 const getName=(character)=>{const char=getCharacter(character,disk.character)
 const namesLength=char.name.length
@@ -33,15 +47,28 @@ breathingClass='breathing-fast'}else{breathing='rapid and shallow'
 extra=' His entire skin has a blue tint. His looks slightly panicked.'
 breathingClass='breathing-rapid'}
 println(`His breathing seems ${breathing}.${extra || ''}`,breathingClass)
-if(disk.leak){println('You really, really should try to reconnect the tube to the tank.')}else{if(chance(1/4)){println(`You only have ${disk.timer} minutes to save your father. Perhaps you should just stay with him and talk?`)}else if(chance(1/5)){const whiteLie=Math.ceil(disk.timer/10)*10
+if(disk.leak){println('You really, really should try to reconnect the tube to the tank.')}else{if(chance(1/4)){println(`There’s only ${disk.timer} minutes of oxygen left in your father’s tank. Perhaps you should just sit with him and talk?`)}else if(chance(1/5)){const whiteLie=Math.ceil(disk.timer/10)*10
 println('"How much oxygen do we have left?", your dad asks.')
 println(`"About ${whiteLie} minutes worth, dad. Maybe a bit more," you answer. But you know it’s less.`)}}}
 const getEmotionAdverb=()=>{let emotion
 if(disk.timer>100){emotion=' '}else if(disk.timer<101&&disk.timer>80){emotion=` ${pickOne(['restlessly', 'nervously'])} `}else if(disk.timer>60){emotion=` ${pickOne(['worriedly', 'uneasily'])} `}else if(disk.timer>40){emotion=` ${pickOne(['timorously', 'apprehensively'])} `}else if(disk.timer>20){emotion=` ${pickOne(['disheartenedly', 'anxiously'])} `}else{emotion=' despondently '}
 return emotion}
-const oxygenChase={roomId:'bedroom',timer:120,gps:false,leak:false,hasLeaked:false,leavingRoom:'',inventory:[],rooms:[{id:'bedroom',name:'Your father’s bedroom',desc:`${BEDROOM_DESCS.original} Your **car keys** and **phone** are on the bedside table.`,onEnter:()=>{if(TRAVEL_TIMES.hasOwnProperty(disk.leavingRoom)){decreaseTimer(TRAVEL_TIMES[disk.leavingRoom])
-disk.leavingRoom=''
-checkOnDad()}},onLook:()=>{const bedroom=getRoom('bedroom')
+const oxygenChase={roomId:'bedroom',timer:120,gps:false,leak:false,hasLeaked:false,leavingRoom:'',inventory:[],rooms:[{id:'bedroom',img:`
+   ░░ ░  ░ ░ ░  ░░  ░░░ ░  ░
+  ░  ░ ░░  ░░░ ░    ░   ░░ ░
+  ▒  ▒ ▒▒  ▒▒▒ ▒ ▒▒ ▒▒  ▒ ▒▒
+   ▓▓ ▓  ▓  ▓   ▓▓  ▓▓▓ ▓  ▓
+      ╓─┐ ╥ ╥ ╓─╥ ╓─┐ ╓─┐
+      ║   ╟─╢ ╟─╢ ╚═╗ ╠═
+      ╙─┘ ╙ ╙ ╙ ╙ └─╜ ╙─┘`,name:'Your father’s bedroom',desc:`${BEDROOM_DESCS.original} Your **car keys** and **phone** are on the bedside table.`,onEnter:()=>{const bedroom=getRoom('bedroom')
+bedroom.img=''
+if(TRAVEL_TIMES.hasOwnProperty(disk.leavingRoom)){decreaseTimer(TRAVEL_TIMES[disk.leavingRoom])
+disk.leavingRoom=''}
+if(bedroom.visits>1){if(!disk.hasLeaked){if(chance(2/3)){println(`You hurry back into your dad’s bedroom. Taking the last step toward the bed, you tangle your foot in the loops of the tube, and before you’re able to stop yourself, you tear the tube from the tank.
+Your heart sinks as precious oxygen starts leaking out into the room.`)
+createLeak()}else{println(`You hurry back into your dad’s bedroom and sit back down beside him.`)
+checkOnDad()}}else{println(`You’re glad to be back, even though you haven’t got any good news. You look${getEmotionAdverb()}at your dad.`)
+checkOnDad()}}},onLook:()=>{const bedroom=getRoom('bedroom')
 bedroom.desc=''
 if(disk.leak){decreaseTimer(10)
 println(BEDROOM_DESCS.leak)}else{decreaseTimer(1)
@@ -53,21 +80,8 @@ if(disk.leak){println('There is a **loose tube** here, and the oxygen tank is le
 println(`You${getEmotionAdverb()}look at your dad.`)
 checkOnDad()},items:[{name:['oxygen tank','gauge'],desc:'It’s a big oxygen tank, strapped to a cart.',onLook:()=>println(`You${getEmotionAdverb()}check the gauge on the tank. There seems to be about ${disk.timer} minutes of oxygen left.`),},{name:'phone',desc:'Who could you call?',isTakeable:true,onUse:()=>{println('You scroll through all your contacts, but you can’t think of a single one who could help you. You put the phone in your pocket.')
 decreaseTimer(5)},},{name:'car keys',desc:'Perhaps there is somewhere you can go?',isTakeable:true,onUse:()=>{println('There’s nothing here to use them on. Perhaps you should **take** them?')},onTake:()=>{println('You reach over to grab your car keys. As you lean over the bed, you press down on the tubing.')
-if(chance(1/2)){decreaseTimer(10)
-disk.leak=true
-println('It pulls hard on the tank, and suddenly snaps loose. At first, you think you broke it, but it is only disconnected from the tank. Precious oxygen leaks out into the room.')
-println('There is a **loose tube** here, and the oxygen tank is leaking.')
-const bedroom=getRoom('bedroom')
-bedroom.items.push({name:['loose tube','tubing'],desc:'You should really, really reconnect this tube to the tank.',isTakeable:true,onUse:()=>{decreaseTimer(10)
-println('You scramble frantically to reconnect the tube to the tank, and after a few minutes the leaking stops.')
-println(`Examining the gauge, you can see there is about ${disk.timer} minutes of oxygen left in the tank.`)
-disk.hasLeaked=true
-disk.leak=false
-bedroom.items=bedroom.items.filter((item)=>!item.name.includes('loose tubing'))
-const carExit=getExit('car',bedroom.exits)
-delete carExit.block},})
-const carExit=getExit('car',bedroom.exits)
-carExit.block='The oxygen tank is leaking and your father is dying from asphyxiation. Is now really a good time to leave?'}else{decreaseTimer(1)
+if(chance(1/2)){println('It pulls hard on the tank, and suddenly snaps loose. At first, you think you broke it, but it is only disconnected from the tank. Precious oxygen leaks out into the room.')
+createLeak()}else{decreaseTimer(1)
 println('The tubing pulls hard on the tank. The cart creeks and moves a bit closer, but the tubing stays connected. You remember to be more careful in the future.')
 const bedroom=getRoom('bedroom')
 const carExit=getExit('car',bedroom.exits)
@@ -84,14 +98,14 @@ delete hospital.block
 const doctor=getExit('midtown',car.exits)
 delete doctor.block
 const redcross=getExit('uptown',car.exits)
-delete redcross.block}},},],exits:[{dir:['downtown','hospital'],id:'hospital',block:'You won’t be able to find your way to the hospital without the **GPS**.',},{dir:['midtown','doctor'],id:'doctor',block:'There’s no way you’ll get to the doctor’s office without the **GPS**.',},{dir:['uptown','redcross'],id:'redcross',block:'You haven’t got a clue where the Red Cross is located. Perhaps you should use the **GPS**?',},],},{id:'hospital',name:'At the hospital',desc:`You’re standing in the lobby of the town’s hospital. Plastic plants adorn the corners of an otherwise drab room. Dashed yellow lines on the floor taper off and disappear, mostly, behind closed doors.
+delete redcross.block}},},],exits:[{dir:['dad','dad’s','bedroom'],id:'bedroom',},{dir:['downtown','hospital'],id:'hospital',block:'You won’t be able to find your way to the hospital without the **GPS**.',},{dir:['midtown','doctor'],id:'doctor',block:'There’s no way you’ll get to the doctor’s office without the **GPS**.',},{dir:['uptown','redcross'],id:'redcross',block:'You haven’t got a clue where the Red Cross is located. Perhaps you should use the **GPS**?',},],},{id:'hospital',name:'At the hospital',desc:`You’re standing in the lobby of the town’s hospital. Plastic plants adorn the corners of an otherwise drab room. Dashed yellow lines on the floor taper off and disappear, mostly, behind closed doors.
 
-A **receptionist** sits behind a huge, beige desk.`,exits:[{dir:['car','outside'],id:'car',}],onEnter:()=>{enterLocation('hospital')},},{id:'doctor',name:'At the doctor’s office',desc:'',exits:[{dir:['car','outside'],id:'car',}],onEnter:()=>{enterLocation('doctor')},},{id:'redcross',name:'At the Red Cross',desc:'',exits:[{dir:['car','outside'],id:'car',}],onEnter:()=>{enterLocation('redcross')},},],characters:[{name:['father','dad'],roomId:'bedroom',desc:'You look at your father with affection. He smiles back at you.',onLook:()=>{checkOnDad()},topics:[{option:'That **covid**, huh?',line:'',keyword:'covid',removeOnRead:true,onSelected:()=>{decreaseTimer(5)},},{option:'Look, dad. I spoke to **Mother**.',line:'',keyword:'mother',removeOnRead:true,onSelected:()=>{decreaseTimer(10)},},{option:'**How** are you feeling, dad?',line:'',keyword:'how',removeOnRead:false,onSelected:()=>{decreaseTimer(1)
-checkOnDad()},},],},{name:['receptionist'],roomId:'hospital',desc:'The receptionist appears to be in his twenties, but looks boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "René".',onLook:()=>{getCharacter('receptionist').name.push('René')},topics:[{option:'Ask for **oxygen**',line:`"Hi. I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
+A **receptionist** sits behind a huge, beige desk.`,exits:[{dir:['car','outside'],id:'car',}],onEnter:()=>{enterLocation('hospital')},},{id:'doctor',name:'At the doctor’s office',desc:'',exits:[{dir:['car','outside'],id:'car',}],onEnter:()=>{enterLocation('doctor')},},{id:'redcross',name:'At the Red Cross',desc:'',exits:[{dir:['car','outside'],id:'car',}],onEnter:()=>{enterLocation('redcross')},},],characters:[{name:['father','dad'],roomId:'bedroom',desc:'You look at your father with affection. He smiles back at you.',onLook:()=>{checkOnDad()},topics:[{option:'That **covid**, huh?',line:'',keyword:'covid',removeOnRead:true,onSelected:()=>{decreaseTimer(5)},},{option:'Look, dad. I spoke to **mother**.',line:'',keyword:'mother',removeOnRead:true,onSelected:()=>{decreaseTimer(10)},},{option:'**How** are you feeling, dad?',line:'',keyword:'how',removeOnRead:false,onSelected:()=>{decreaseTimer(1)
+checkOnDad()},},],},{name:['receptionist'],roomId:'hospital',desc:'The receptionist appears to be in his twenties, but looks almost boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "René".',onLook:()=>{getCharacter('receptionist').name.push('René')},topics:[{option:'Ask for **oxygen**',line:`"Hi. I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
 
 The receptionist looks up at you. "Does this look like a dive shop?" he snarks.
 
-You’re not off to a good start. It’s apparent you’ll need to try a different method.`,keyword:'oxygen',removeOnRead:true,onSelected:()=>decreaseTimer(1),},{option:'**Ask** to speak to an administrator',line:`"I want to speak to an administrator," you say sternly.
+You’re not off to a good start. It’s apparent you’ll need to try a different approach.`,keyword:'oxygen',removeOnRead:true,onSelected:()=>decreaseTimer(1),},{option:'**Ask** to speak to an administrator',line:`"I want to speak to an administrator," you say sternly.
 
 René shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
 
@@ -99,10 +113,14 @@ René shuffles a few papers, restarts a lucky cat whose arm is slowing down some
 
 "I insist, I really need to speak to an administrator."`,keyword:'insist',prereqs:['oxygen'],removeOnRead:true,onSelected:()=>decreaseTimer(3),},{option:'**Beg** to speak to an administrator',line:`"Listen. I really need to see an administrator. I need oxygen, badly."
 "My father barely has any left in his tank."
-Then you add, "He is dying."`,keyword:'beg',prereqs:['oxygen'],removeOnRead:true,onSelected:()=>decreaseTimer(4),},{option:'**Demand** to speak to a god damned administrator',line:`You bang your fist on the desk. "Call up a god damned administrator," you scream. "I’m not asking!"
+
+Then you add, "He is dying."`,keyword:'beg',prereqs:['oxygen'],removeOnRead:true,onSelected:()=>decreaseTimer(4),},{option:'**Demand** to speak to a god damned administrator',line:`You bang your fist on the desk. "Call up a god damned administrator," you cry out. "I’m not asking!"
 
 The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,keyword:'demand',prereqs:['ask','insist','beg'],removeOnRead:true,onSelected:()=>{decreaseTimer(8)
-disk.characters.push({name:['administrator','hospital administrator'],roomId:'hospital',desc:'The hospital administrator is a woman ash-blond hair and an uninviting smile.',onLook:()=>{getCharacter('administrator').name.push('Catrine')},topics:[{option:'Ask for **oxygen**',line:'"As I told, um, René here," you say, glancing at the receptionist’s name tag, "I’m in dire need of oxygen. My father has precious little left in his tank. Please, can you help me?"',keyword:'oxygen',onSelected:()=>decreaseTimer(4),},],},)
 println(`After a few minutes, an elevator dings as the doors slide up.
-A woman in her late fifties or early sixties glides out of the elevator.
-"I’m the administrator," she says. "And you are?"`)},},],},],};export default oxygenChase
+A woman in her late fifties or early sixties glides out of the elevator and walks up to you. She leans against the desk.
+"I’m the administrator," she says. "And you are?"`)
+disk.characters.push({name:['administrator','hospital administrator'],roomId:'hospital',desc:'The hospital administrator is a woman ash-blond hair and an uninviting smile. She, too, has a name tag. It reads "Catrine".',onLook:()=>{getCharacter('administrator').name.push('Catrine')},topics:[{option:'**Introduce** yourself',line:'',keyword:'introduce',onSelected:()=>decreaseTimer(2),},{option:'Ask for **oxygen**',line:`"As I told, um, René here," you say, glancing at the receptionist’s name tag, "I’m in dire need of oxygen. My father has precious little left in his tank.
+Please, can you help me?"
+
+The administrator looks at you sullenly.`,keyword:'oxygen',onSelected:()=>decreaseTimer(4),},],},)},},],},],};export default oxygenChase
