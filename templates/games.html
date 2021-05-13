@@ -25,27 +25,179 @@
 
     {% block content %}
       <section class="games">
-        <h1>Games</h1>
+        <div id="output"></div>
 
-        <p>
-          I’ve always wanted to make games, but it’s hard! Especially since I immediately try to make a new Monkey Island or Blackwell Pentalogy and get paralyzed by the sheer amount of work involved. This section is an attempt to remedy that by making many smaller games, and not necessarily waiting for them to be done before releasing them.
-        </p>
+        <div class="input">
+          <span>&gt;</span><input id="input" autofocus spellcheck="false" autocomplete="off" autocorrect="off" enterkeyhint="Go!">
+        </div>
 
-        <p>
-          There’s only one game here at the moment, and it’s very much a work in progress.
-        </p>
+        <script src="{{ get_url(path="/engines/text-engine/index.js", cachebust=true) | safe }}"></script>
+        <script type="module">
+          delete commands[0].save
+          delete commands[0].load
+          const help = () => {
+            const instructions = `The following commands are available:
+              LOOK:   'look at key'
+              TAKE:   'take book'
+              GO:     'go north'
+              PLAY:   'play oxygen-chase'
+              USE:    'use door'
+              TALK:   'talk to mary'
+              ITEMS:  list items in the room
+              INV:    list inventory items
+              HELP:   this help menu
+            `
+            println(instructions)
+          }
 
-        <ul>
-          {% for game in section.pages %}
-            <li>
-              <a href="{{ game.permalink }}">{{ game.title }}</a> [{{ game.date }}] -- engine: {{ game.extra.engine }}
-              {% if game.description %}
-                <div class="description"><em>{{ game.description }}</em></div>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
+          const playGame = (gameSlug) => {
+            const decrunch = document.getElementById('decrunch')
+            decrunch.className = 'visible'
+            setTimeout(() => {
+              document.location.href = `/games/${gameSlug}/`
+            }, 800)
+          }
+
+          const play = (gameId) => {
+            let game = getItemInRoom(gameId, disk.roomId) || getItemInInventory(gameId)
+            if (!game) {
+              println(`You don’t seem to have that game handy.`)
+            } else {
+              game.onPlay()
+              setTimeout(() => {
+                playGame(game.slug)
+              }, 4000)
+            }
+          }
+          commands[0] = Object.assign(commands[0], { help })
+          commands[1] = Object.assign(commands[1], { play })
+
+          const gameMenu = {
+            roomId: 'lennys',
+            rooms: [
+              {
+                name: 'Lenny’s E-game Emporium',
+                id: 'lennys',
+                img: `      ⌠ ⌠  ╤╕ ╤╕ ╕ ╒’⌠   ⌠   ╒═  ╒═╕ ╤╕╒╕ ⌠
+      │ ╞═ ││ ││ └┬┘ └┐  ╞╡═ │ ┐ ╞═╡ │└┘│ ╞═
+      ╘═╘  ┘╧ ┘╧  ╧  ═╛  ╘═  ╘═╛ ┘ └ ┘  └ ╘══
+ ███▄ ██  ▄██ ████   ███▄ ████▄ ██▀ █  ██ ██  ▄██
+██▀   ██  ███ ▄   █ █▀ ▀█ █▀  █  █  █  █▀ ██  ███
+███▄  ███ █ █ ████  █   █ ████   █  █  █  ███ ███▒
+ ▒    ▒▀ ▒  █ █▒    █▒  █ ▒ █    ▒  █  ▒  ▒▀ █  █▒
+████   █    █ █     ██  █ █  ██ ███ ▀███  █     █
+ ▀████ █▄ ▄██ ██▄    ███  █  ██ ███  ███ ██   ▄██
+ `,
+                desc: `At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes,  sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Auto.
+
+To the **west** is the Ascii Arena, where Lenny keeps all his text-based games.
+To the **east** is the Pixel Paradise where graphical games are displayed.
+
+**Lenny** is here, carefully dusting a collection of action figures housed in a display cabinet to the left of the counter.`,
+                exits: [
+                  { dir: ['west', 'Ascii Arena', 'Text Games'], id: 'text-games'},
+                  { dir: ['east', 'Pixel Paradise', 'Graphic Games'], id: 'graphic-games'},
+                ],
+              },
+              {
+                name: 'The Ascii Arena',
+                id: 'text-games',
+                desc: `There is a huge banner on the west wall of the room. It reads:
+"This is the Dungeon dungeon, the MUD swamp, the Infocom inferno, this is the domain of King Text, the seven bit wonder of the world, the web of the eight bit spider. This is Room 437. This is the Ascii Arena."
+
+Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An opening in the **east** wall leads back to the front room.`,
+                onLook: () => {
+                  println()
+                },
+                items: [
+                  {
+                    name: ['shelves', 'games'],
+                    desc: `The available games are:
+{% for game in section.pages %}{% if game.extra.room == 'text-games' %}{% set short_name = game.title | split(pat=" ") | first | lower %}
+- {{ game.title}} (**{{ short_name}}**)
+{% endif %}{% endfor %}
+                    `,
+                  },
+                  {
+                    name: ['note', 'disclaimer'],
+                    desc: `The note reads:
+DISCLAIMER!
+
+These games are actually encoded in UTF-8, not ASCII. Sue me.
+
+// LENNY`,
+                  },
+                  {% for game in section.pages %}
+                    {% if game.extra.room == 'text-games' %}
+                      {% set short_name = game.title | split(pat=" ") | first | lower %}
+                      {
+                        name: ['{{ short_name }}', '{{ game.title }}'],
+                        desc: `The back of the box reads:
+"{{ game.description | upper }}"`,
+                        slug: '{{ game.slug }}',
+                        isTakeable: true,
+                        onPlay: () => {
+                          println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load {{ short_name }}" and press "enter".`)
+                        },
+                        onTake: ({ item }) => {
+                          println(`You pick up ${item.name[item.name.length - 1]}. On the back of the box, you read:
+"{{ game.description | upper }}"
+
+You put the game in your backpack.`)
+                        },
+                        onUse: () => println('This is a game. Surely, you’d much rather **play** it then use it?'),
+                        onLook: () => {
+                          println('According to the fact box, this game was created {{ game.date }} and written for the __{{ game.extra.engine }}__ engine.')
+                        },
+                      },
+                    {% endif %}
+                  {% endfor %}
+                ],
+              },
+              {
+                name: 'The Pixel Paradise',
+                id: 'graphic-games',
+                desc: `This room is empty at the moment. Perhaps Lenny is pivoting toward text adventures?
+A door to the **west** leads back to the main room.`,
+                exits: [
+                  { dir: 'west', id: 'lennys' },
+                ],
+                items: [
+                  {% for game in section.pages %}
+                    {% if game.extra.room == 'graphic-games' %}
+                      { dir: ['{{ game.title }}'], id: '{{ game.slug }}'},
+                    {% endif %}
+                  {% endfor %}
+                ],
+              },
+            ],
+            characters: [
+              {
+                name: ['Lenny'],
+                roomId: 'lennys',
+                desc: 'Lenny doesn’t look anything at all like you’d picture a purveyor of retro games and action figures. In fact, judging by his jawline alone, you’d have him pegged as a personal trainer for the elderly or a retired police officer. But his tight, sleeveless t-shirt says "I got the Babel Fish", and on his left wrist is a Casio C-80 calculator watch.',
+                topics: [
+                  {% for game in section.pages %}
+                    {% set short_name = game.title | split(pat=" ") | first | lower %}
+                    {
+                      option: 'Ask Lenny about {{ game.title }} (**{{ short_name }}**)',
+                      keyword: '{{ short_name}}',
+                      line: `"Hey, Lenny,", you smile. "I’m looking for a title, '{{ game.title }}'. Do you know it?"
+Lenny sighs, than begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He puts his reading glasses on, and, keeping the box at arms length, reads from the back:
+"{{ game.description | upper }}"
+
+"This game belongs in the {% if game.extra.room == "text-games" %}Ascii Arena{% elif game.extra.room == "graphic-games" %}Pixel Paradise{% endif %}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,
+                      removeOnRead: false,
+                    },
+                  {% endfor %}
+                ],
+              },
+            ],
+          }
+          loadDisk(gameMenu)
+        </script>
       </section>
     {% endblock content %}
+    <div id="decrunch"></div>
   </body>
 </html>

@@ -728,6 +728,7 @@ let autocomplete = () => {
   const words = input.value.toLowerCase().trim().split(/\s+/);
   const wordsSansStub = words.slice(0, words.length - 1);
   const itemNames = (room.items || []).concat(disk.inventory).map(item => item.name);
+  console.log(itemNames, words); /* eslint-disable-line */
 
   const stub = words[words.length - 1];
   let options;
