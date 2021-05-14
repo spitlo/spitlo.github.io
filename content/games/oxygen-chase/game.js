@@ -83,7 +83,7 @@ const createLeak = () => {
   })
   // Car keys block is gone now, so add a new block (We can’t leave dad with a leaky tank)
   const carExit = getExit('car', bedroom.exits)
-  carExit.block = 'The oxygen tank is leaking and your father is dying from asphyxiation. Is now really a good time to leave?'
+  carExit.block = 'The oxygen tank is leaking and your father is dying from hypoxia. Is now really a good time to leave?'
 }
 
 const chance = (value) => value >= Math.random()
@@ -110,7 +110,7 @@ const checkOnDad = () => {
   let breathing
   let extra = ''
   let breathingClass = 'breathing-normal'
-  if ((disk && disk.leak) || disk.timer < 10) {
+  if (disk.leak || disk.timer < 10) {
     breathing = 'hindered'
     extra = ' His face is turning blue as he tries to remove the face mask.'
     breathingClass = 'breathing-hindered'
@@ -132,6 +132,7 @@ const checkOnDad = () => {
   if (disk.leak) {
     println('You really, really should try to reconnect the tube to the tank.')
   } else {
+    // Add some flavor every now and then.
     if (chance(1/4)) {
       println(`There’s only ${disk.timer} minutes of oxygen left in your father’s tank. Perhaps you should just sit with him and talk?`)
     } else if (chance(1/5)) {
