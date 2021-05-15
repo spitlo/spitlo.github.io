@@ -29,7 +29,7 @@ bedroom.items=bedroom.items.filter((item)=>!item.name.includes('loose tubing'))
 const carExit=getExit('car',bedroom.exits)
 delete carExit.block},})
 const carExit=getExit('car',bedroom.exits)
-carExit.block='The oxygen tank is leaking and your father is dying from asphyxiation. Is now really a good time to leave?'}
+carExit.block='The oxygen tank is leaking and your father is dying from hypoxia. Is now really a good time to leave?'}
 const chance=(value)=>value>=Math.random()
 const decreaseTimer=(subtrahend)=>{disk.timer-=subtrahend}
 const getName=(character)=>{const char=getCharacter(character,disk.character)
@@ -38,7 +38,7 @@ return namesLength===0?char[0]:char[namesLength-1]}
 const checkOnDad=()=>{let breathing
 let extra=''
 let breathingClass='breathing-normal'
-if((disk&&disk.leak)||disk.timer<10){breathing='hindered'
+if(disk.leak||disk.timer<10){breathing='hindered'
 extra=' His face is turning blue as he tries to remove the face mask.'
 breathingClass='breathing-hindered'}else if(disk.timer>100){breathing='normal'}else if(disk.timer<101&&disk.timer>60){breathing='hurried'
 breathingClass='breathing-hurried'}else if(disk.timer>30){breathing=pickOne(['heavy','fast'])
