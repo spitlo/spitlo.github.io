@@ -95,7 +95,7 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
 **Lenny** is here, carefully dusting a collection of action figures housed in a display cabinet to the left of the counter.`,
                 exits: [
                   { dir: ['west', 'Ascii Arena', 'Text Games'], id: 'text-games'},
-                  { dir: ['east', 'Pixel Paradise', 'Graphic Games'], id: 'graphic-games'},
+                  { dir: ['east', 'Pixel Paradise', 'Graphical Games'], id: 'graphical-games'},
                 ],
               },
               {
@@ -155,7 +155,7 @@ You put the game in your backpack.`)
               },
               {
                 name: 'The Pixel Paradise',
-                id: 'graphic-games',
+                id: 'graphical-games',
                 desc: `This room is empty at the moment. Perhaps Lenny is pivoting toward text adventures?
 A door to the **west** leads back to the main room.`,
                 exits: [
@@ -163,7 +163,7 @@ A door to the **west** leads back to the main room.`,
                 ],
                 items: [
                   {% for game in section.pages %}
-                    {% if game.extra.room == 'graphic-games' %}
+                    {% if game.extra.room == 'graphical-games' %}
                       { dir: ['{{ game.title }}'], id: '{{ game.slug }}'},
                     {% endif %}
                   {% endfor %}
@@ -185,7 +185,7 @@ A door to the **west** leads back to the main room.`,
 Lenny sighs, than begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He puts his reading glasses on, and, keeping the box at arms length, reads from the back:
 "{{ game.description | upper }}"
 
-"This game belongs in the {% if game.extra.room == "text-games" %}Ascii Arena{% elif game.extra.room == "graphic-games" %}Pixel Paradise{% endif %}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,
+"This game belongs in the {% if game.extra.room == "text-games" %}Ascii Arena{% elif game.extra.room == "graphical-games" %}Pixel Paradise{% endif %}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,
                       removeOnRead: false,
                     },
                   {% endfor %}
