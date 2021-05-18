@@ -10,6 +10,7 @@ content_class = "changelogPage"
 
 - Added a microgame, 'Lenny’s E-game Emporium', as [game menu](/games/)
 - Font loading improvements
+- Added this changelog
 
 ## v1.9.x (2021-05-09)
 
