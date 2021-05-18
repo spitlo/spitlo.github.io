@@ -6,6 +6,8 @@ no_meta = true
 content_class = "changelogPage"
 +++
 
+This is the human-readable, curated changelog. For a full changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
+
 ## v1.10.x (2021-05-13)
 
 - Added a microgame, 'Lenny’s E-game Emporium', as [game menu](/games/)
@@ -21,14 +23,14 @@ Benji Kay and [Kontra](https://github.com/straker/kontra), a gaming micro-librar
 
 ## v1.8.x - v1.7.x (2021-05-02)
 
-- Bug fixes
 - Changed this-day-in-time link to point to Wikipedia
 - Added a few more introductions on start page, these are randomized on each build
+- Bug fixes
 - Styling fixes
 
 ## v1.6.x (2021-05-02)
 
-- Move to using ES6 modules
+- Moved to using ES6 modules
 - JavaScript improvements
 
 ## v1.5.x - v1.3.x (2021-04-30)
@@ -36,7 +38,7 @@ Benji Kay and [Kontra](https://github.com/straker/kontra), a gaming micro-librar
 - Added scrambling for contact information, and a command to unscramble
 - Search improvements, enable search on mobile
 - Improved dotmatrix mode
-- Minify JavaScript using [`JSMin`](https://www.crockford.com/jsmin.html)
+- Minify JavaScript on deploy using [`JSMin`](https://www.crockford.com/jsmin.html)
 
 ## v1.2.x (2021-04-30)
 
