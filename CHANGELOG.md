@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.10.3
+
+- More changelog improvements [`e37458a`](../../commit/e37458a3efc9c47a1fc26d127e0305eee58d19d8)
+- Changelog improvements [`7cf060f`](../../commit/7cf060f821aeaf18445bced776c6c03a4cde401f)
+
 ## v1.10.2
 
 - Update changelog [`f886f3f`](../../commit/f886f3fc9378d8742ee1146f6e06388859e0950d)
