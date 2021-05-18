@@ -1,0 +1,586 @@
+# Changelog
+
+This changelog is automatically generated.
+
+## v1.10.1
+
+- Deploy version 1.10.1 [`4a93de5`](../../commit/4a93de5c152ceb1ebccd556a415b352668133944)
+- Add Oxygen Chase todo [`9dc3609`](../../commit/9dc3609b02ed8f599fc10eee559d55fb76cd0989)
+- Preload woff2 files [`7681689`](../../commit/7681689e3ad43e7dcf4262f116aa6593ebafb8b2)
+- Revert "Update Lea Verou url" [`17d5d2d`](../../commit/17d5d2d764c9100dd3dd2e6a8420e117a9be184b)
+- Update Lea Verou url [`a1f5ed7`](../../commit/a1f5ed729a79cf034d4d27ad1124cba5689ae9f0)
+- Small things [`405467a`](../../commit/405467a3b7212aa86d3c44a180e5e6d8b9b13193)
+
+## v1.10.0
+
+- Deploy version 1.10.0 [`b44c4fc`](../../commit/b44c4fc1e6f2e436f6bf8fb6de1880d8c00b9e51)
+- Add microgame 'Lenny’s E-game Emporium' as game menu [`f665b03`](../../commit/f665b03558ca0caad6c9cc4acf07cbb04c1c2489)
+
+## v1.9.9
+
+- Deploy version 1.9.9 [`357eaf7`](../../commit/357eaf7fdae5afc776702db552803146f5890e5b)
+- Minify html [`b051fb6`](../../commit/b051fb6347cd003f132fcc0858e2d82f24a36435)
+
+## v1.9.8
+
+- Deploy version 1.9.8 [`9bb614b`](../../commit/9bb614bf47bc1ffe492e0ffe852ed96c49508277)
+- Oxygen Chase: Add logo [`ca9866d`](../../commit/ca9866d0fd3103595a75876203acf1c47d859315)
+- Oxygen Chase: Introduce a new possibility to create a leak [`24adbe8`](../../commit/24adbe8e747f2ad4fc8e140d19b85663868b1955)
+- Wording [`e4a616b`](../../commit/e4a616ba1c1b8c9db6acadc8679bc69291135af5)
+
+## v1.9.7
+
+- Deploy version 1.9.7 [`3400519`](../../commit/3400519f60ab712c52551fe204551561d24cd93c)
+- Oxygen Chase: Start in bedroom [`f5c28a9`](../../commit/f5c28a9b31965690995151afed80ae366aa2f731)
+
+## v1.9.6
+
+- Deploy version 1.9.6 [`9645323`](../../commit/9645323c176129a1becc65281bcf0e588f4e74f9)
+- Oxygen Chase: New discussion type [`7974c7f`](../../commit/7974c7f073eab56127631c2c2ce750708e26927d)
+- Typo [`2df5d7a`](../../commit/2df5d7a8278c28d61ec2d1f557d680a8c6f5bb58)
+- Oxygen Chase: Consistency, wording, color [`227af86`](../../commit/227af86dc2a96a9bf8d12a8c2b3ef62ed3fa46bc)
+
+## v1.9.5
+
+- Deploy version 1.9.5 [`9b834b5`](../../commit/9b834b5115ce15a93956a8706d9878a9f13205b6)
+- Oxygen Chase: Consistency, wording [`bae6022`](../../commit/bae60228406b23bfc51a4c40d500dcb71ba7d94e)
+- Change font for text-engine [`e86b2c2`](../../commit/e86b2c230c04423913f1de11c5ecdbf8cb1077c6)
+- Oxygen Chase: Highlight GPS [`05c5e4b`](../../commit/05c5e4b27b3b3ce9cfdf40b2e2104bbb8b19b36f)
+- Oxygen Chase: Don’t allow leaving the room with oxygen leaking [`494f12d`](../../commit/494f12d4152efb57d8d4f5eabe8e145698529ddc)
+
+## v1.9.4
+
+- Deploy version 1.9.4 [`c65b1d6`](../../commit/c65b1d62687b1b67fdd5ff4c4592a48a2baac0f1)
+- Add oxygen-chase to minified scripts [`81639b2`](../../commit/81639b2351936a3b9dae1451869470e48dda9ca4)
+
+## v1.9.3
+
+- Deploy version 1.9.3 [`8737725`](../../commit/8737725ec34d58f1f9ad6a4bf1429a313c15b41c)
+- Add text-engine to minified scripts [`0fcdd16`](../../commit/0fcdd162c6a096edb26b512654a5dbe4fa31972a)
+
+## v1.9.2
+
+- Deploy version 1.9.2 [`f202b58`](../../commit/f202b58a8b3d56ce5512b1c411b0d039121bd811)
+- More descriptions, characters and topics [`bd09e54`](../../commit/bd09e5421cca2795aeaf9bbbf0a0cbf8a8ed827a)
+- Oxygen Chase: Add 'dad' as exit. Improve functions. Fix botched sentence [`1a485d4`](../../commit/1a485d4e539a4f128c8a97bff735fa3b0f1a718f)
+- Oxygen Chase: DRYer code, fix typo, add topic [`e4a497a`](../../commit/e4a497a9b188953aa24639661bbce2ac00c2f896)
+- Oxygen Chase: Clean up sass [`1c290df`](../../commit/1c290df02b16a0680a16b87ca3e51e8af41713aa)
+
+## v1.9.1
+
+- Deploy version 1.9.1 [`cd158a9`](../../commit/cd158a92b3ad44e0021c1fb1893f9b1cf1619706)
+- Oxygen Chase: Improve logic. Add content [`838fb1f`](../../commit/838fb1f5cd56d2b7d3d9f2a29a9c0daf36dfc49d)
+
+## v1.9.0
+
+- Deploy version 1.9.0 [`c98c0c3`](../../commit/c98c0c364b1ec4f914053c1495dd1fe8039ac9a2)
+- Update text-engine [`5368078`](../../commit/53680780596a4ff4ad44985638033ec8629710f8)
+- Oxygen Chase: Styling and stuff [`9891f65`](../../commit/9891f65c7b7963da586647d83670b296f09e16be)
+- Oxygen Chase: Logic [`fdab532`](../../commit/fdab532b30a4efdb6e997d3d1ec7dc82cf4fcb08)
+- WIP game: Oxygen Chase [`a6247e4`](../../commit/a6247e4f2330801f5b37976dc8c7418a19e4e023)
+- Minor styling and formatting fixes 2 [`96dc8e6`](../../commit/96dc8e60e5e6a21c093c203383a31c04e7be078a)
+- Minor styling and formatting fixes [`89fc708`](../../commit/89fc7081333f835aeb56757e73fe6849a3c910b6)
+- Games: Navigation footer [`57900c0`](../../commit/57900c051deec5b0170f9ad53512c68e693e482b)
+- Basic setup for Kontra, close button for iframe [`d1f5f77`](../../commit/d1f5f77be01b0a0e7856da72e57ddea86e9f722a)
+- Set up basic system for including js games made with kontra [`d858fc1`](../../commit/d858fc19451dcb603406841e480f75e566e0ca33)
+- Add 'games' command [`f48d6dc`](../../commit/f48d6dce7e235256506383e562e4568257c5631d)
+- Set up basic system for including js games [`1e9920a`](../../commit/1e9920a75fba3f7d9b7ca78e2375821a3264c68b)
+
+## v1.8.2
+
+- Deploy version 1.8.2 [`1137213`](../../commit/1137213a602e6fe0ac240c32a62cc039a3d8069d)
+- Don’t fall back on Monaco [`5d480dd`](../../commit/5d480dd1749f46d4f190cb77734498e750665de9)
+- Fix missing letters in decoded text [`854799d`](../../commit/854799df1419f5f401155b55618af38d9d587c77)
+- Use Wikipedia instead of Encyclopaedia Britannica for this-day-in-time link [`45e4009`](../../commit/45e4009a3a73520295b6b6d274dc11801b23127c)
+
+## v1.8.1
+
+- Deploy version 1.8.1 [`2e19568`](../../commit/2e1956871c81980d7ab41544f15c2bc0abf4ca0d)
+- Wording [`f0c2e61`](../../commit/f0c2e613823cbae32b49624f0a2b55d75de77c26)
+- Wording [`c2b26e2`](../../commit/c2b26e28bf5b699164ffe5995b97b3f6f95458f2)
+- Tick todo item [`3b172d4`](../../commit/3b172d447ef2ec4ae70ca3669b06f84322f4520c)
+
+## v1.8.0
+
+- Deploy version 1.8.0 [`fdc8c7b`](../../commit/fdc8c7b8ccf914855ec2a56ac368f896ea1f2c40)
+- Less clues [`d916a7a`](../../commit/d916a7a9c9fea1a25dd7877411e53f06046a64f7)
+- Randomize start page introduction on each build [`c341a50`](../../commit/c341a50b5d9846732ff8ff3f808033260be81141)
+- Up the pomp [`073f9b0`](../../commit/073f9b01c047eec0ab63ac75682d3bbbf096c6fb)
+
+## v1.7.3
+
+- Deploy version 1.7.3 [`ecde5d8`](../../commit/ecde5d8d88211a58037735a3763f6f1dc2d10c84)
+- Change Home title [`73e8613`](../../commit/73e8613f590f2b4de7a1953601c650d858a81a9f)
+
+## v1.7.2
+
+- Deploy version 1.7.2 [`e6a86b3`](../../commit/e6a86b3dff5861e49ed6bd0667816f5f43f9bc8d)
+- Padding fix 2 [`0f4e93c`](../../commit/0f4e93c55c3bef4d67d7d37fefb4db617383677e)
+
+## v1.7.1
+
+- Deploy version 1.7.1 [`32e2046`](../../commit/32e2046302460818558e37d2f4cac781d2930241)
+- Padding fix [`0338ebd`](../../commit/0338ebdcad940699bebe90c165720c5c957b876f)
+
+## v1.7.0
+
+- Deploy version 1.7.0 [`e57d1ec`](../../commit/e57d1ecb61109525731c8219bbca059c1691b781)
+- Update start page [`8523911`](../../commit/852391185b253cc7d9394902f6a0952ab39ea56d)
+- Fix freshly introduced header issue on mobile [`5ab6579`](../../commit/5ab65792e618eca506e6142c55989ca346ed0ea0)
+- Add up arrow to 'Back to top' link [`d90de8f`](../../commit/d90de8fbed834a28fb98c0ff6136fe20176a4f3d)
+
+## v1.6.2
+
+- Deploy version 1.6.2 [`7696b93`](../../commit/7696b93cc2ff0c73a97387746b07ca15ab3082c4)
+- Try fixing bug in Tor Browser where commandLine is visible [`ab6480d`](../../commit/ab6480de574a4552c296d70b6246f11bfc88a7f4)
+- Tick todo item [`a4fbb6d`](../../commit/a4fbb6d3e69dc4bc8615d72a62bf7ef406217f7e)
+
+## v1.6.1
+
+- Deploy version 1.6.1 [`bf153ef`](../../commit/bf153ef5e39ac82dbdd2156e19fa323ba1864adc)
+- Hide search if JavaScript is turned off [`26c1227`](../../commit/26c12271eb2ea95fe0aaac516d917cb264f28909)
+
+## v1.6.0
+
+- Deploy version 1.6.0 [`c756a78`](../../commit/c756a788a723f389507d2a182060235d68e5134d)
+- Import nms from util.js [`92ae378`](../../commit/92ae378f76b446d1d8224b4597124140f73e438c)
+- Hide search on mobile without JavaScript [`f99cdb7`](../../commit/f99cdb72514c216dd9e595e0227a7d8a71d9ebd2)
+- Move to using ES6-ish [`775bf00`](../../commit/775bf00e5df30cfc4040b7611149291aca8e49a8)
+- Basic setup for JavaScript modules [`956c4d3`](../../commit/956c4d3ddedca2776b603080f5dfcfdb2771341f)
+
+## v1.5.2
+
+- Deploy version 1.5.2 [`eb745c9`](../../commit/eb745c906963cbc4d8cc3f7ca0e3c6a9ee1b80f8)
+- Fix taxonomy width issues on small screens [`5d55360`](../../commit/5d55360364f98144f68642d7d836459517264723)
+- Remove test for JavaScript modules on GitHub pages [`aad1f26`](../../commit/aad1f26227a5b60699b06b23698f285fb91e554e)
+
+## v1.5.1
+
+- Deploy version 1.5.1 [`4193146`](../../commit/4193146904246cffc869ca1dd7c8c436e83c2d66)
+- Test if JavaScript modules work on GitHub pages [`6751727`](../../commit/67517272af6d56dfe5299eaee212635fc0cafdcd)
+- More underscore [`8ac1c97`](../../commit/8ac1c9741b9708aac4e6c008dae0747dd86c9c4d)
+
+## v1.5.0
+
+- Deploy version 1.5.0 [`8373ddf`](../../commit/8373ddf303cb4aede22c6bb8e352cade37fb5555)
+- Go back to old version of macros::scramble [`bc2e8be`](../../commit/bc2e8befe11ad86c00e6c35a40186302c890a319)
+- Add command for unlocking contact information in footer [`4db19be`](../../commit/4db19bedf4f15b419f209d69c8ef9c44e99cfd30)
+- Set up no-more-secrets [`6d016b1`](../../commit/6d016b124e6a45421a0bd92b653836860bb32c5f)
+- Scramble Threema and email addresses [`08a9bce`](../../commit/08a9bcedb2d30bae711261fe44c43b7a5199821d)
+- Update todo [`87053d6`](../../commit/87053d68a49aeb80b6b3cebd494a174538c71bb6)
+- Better spacing for logo on mobile [`384d7a7`](../../commit/384d7a7da03d42e7121b82f5051facea9ca42ef8)
+- Fix bug with search not working after editing query (sorry elasticlunr) [`741f50b`](../../commit/741f50bd6cd1488911b638b4b4144021fc02fe25)
+- Use 'input' instead of 'search' event to clear search when user presses x [`378a156`](../../commit/378a156b254ed2c50c97db8ab32ab0dbd46bc3c5)
+
+## v1.4.1
+
+- Deploy version 1.4.1 [`504bafe`](../../commit/504bafec5966dc921ead59129f796c72be567fd6)
+- Increase z-index for mobile search input [`e560dfc`](../../commit/e560dfc699f5b5b9d0cfef6ee0c232da48c04885)
+
+## v1.4.0
+
+- Deploy version 1.4.0 [`3f7f5d2`](../../commit/3f7f5d2c3b40a6d703f81d70d94b023399ab1bcf)
+- Improve search: Implement search for mobile [`92fdecf`](../../commit/92fdecf4a964b81836cea2ccc74e841b80b2eaad)
+- Improve search: Add ellipsis in front of cropped text [`e3989d5`](../../commit/e3989d587d07e8080e8c5a0d2ad6b11028713c5d)
+- Add todo item [`1824038`](../../commit/18240387fb2e5a656a9be07d13a36e1ee3603c04)
+
+## v1.3.4
+
+- Deploy version 1.3.4 [`fadaacb`](../../commit/fadaacb52e6bcb421215833b6e80e57bd30e0188)
+- Add forward navigation to breadcrumbs on mobile [`d1f3473`](../../commit/d1f34738870c64d0228e10118b21d07cceb0dad6)
+
+## v1.3.3
+
+- Deploy version 1.3.3 [`a0c800e`](../../commit/a0c800e41c030cd85e97c47c149924c43070eb73)
+- Go back to using font-display: swap. Preload fonts [`3de8f8f`](../../commit/3de8f8f36c498cac414b28127b70cc1dc3177e0a)
+
+## v1.3.2
+
+- Deploy version 1.3.2 [`d830971`](../../commit/d8309717ccc22899a7d422e1b19845f83c2df412)
+- Add label for search input [`d5d7116`](../../commit/d5d7116b9f704037effb8401adaaf68c626ae5ff)
+- Remove Content-Security-Policy [`4365c2f`](../../commit/4365c2fa25713d1440be89b14d756f082381d9fd)
+- Tick todo item [`2ac3136`](../../commit/2ac3136877ac02276952b130c6fc019e309c64f7)
+
+## v1.3.1
+
+- Deploy version 1.3.1 [`1a2a449`](../../commit/1a2a449b4cfc02a13d0d66fc444a59a02cbb7b4f)
+- Try decreasing svg title font size [`a30794a`](../../commit/a30794a782165287806f75247573ff67c759c063)
+- Add, tick todo items [`c679bc6`](../../commit/c679bc6c92a57322e968a07a3e65ac8846b3eeff)
+- Html cleanup [`baf3bff`](../../commit/baf3bff98e8c02bdcd186472be9bdd9c4038e457)
+- Add todo item [`70ed421`](../../commit/70ed4219e96ece83272c05fbb5e16c86bf21b941)
+- Smaller H3s in dotmatrix mode [`37eb167`](../../commit/37eb1675d7ee326f7ce2ea5ced1bf7eddae662e4)
+- Nicer code blocks in dotmatrix mode [`465549b`](../../commit/465549b69b195779fdb54a1342b90eb3a9509f77)
+- Hide pagination in dotmatrix mode [`2c59a04`](../../commit/2c59a04c80451515323223f2f20ef58c1240a0e5)
+- Add todo item [`2773e85`](../../commit/2773e85135323ed53fc1ad440cc51b21de870d8f)
+
+## v1.3.0
+
+- Deploy version 1.3.0 [`192bc59`](../../commit/192bc591d033629c04bd4b35a6386ec46a1fe8eb)
+- Ever so slightly minify scripts after build phase [`8a5559a`](../../commit/8a5559a549b44d9796ec71966490b0bb134f2bdf)
+- Add todo item [`9758e50`](../../commit/9758e50698479d3e0fcffae160d0c73af9a41860)
+- Cleaner logic for og_page_url [`a251037`](../../commit/a251037be02c5ddedce0abb7027f25cc988fa9c0)
+- Add missing sass file [`4d288e0`](../../commit/4d288e04961d877f6b4c541603b40863b99b30f7)
+
+## v1.2.5
+
+- Deploy version 1.2.5 [`696befb`](../../commit/696befb4d6a2a7e665aff577c6b582fcd1c2ce6e)
+- Rename print mode to dotmatrix [`df04497`](../../commit/df0449737291eea45a1019923dc0dd5651c1a1ca)
+
+## v1.2.4
+
+- Deploy version 1.2.4 [`54554ba`](../../commit/54554ba95d393fb535d7409c137ebd8f2c2ea0ac)
+- Change start page header [`3026e2b`](../../commit/3026e2b91481df38f86c167f108b4fb0872161a1)
+- Fix footer width issues on small screens [`eb2a779`](../../commit/eb2a779767de14635205c207d7a3b8df3bc72b57)
+- Add todo item [`470d812`](../../commit/470d81298b76e17aafe5b528633796b88e7ab0f3)
+
+## v1.2.3
+
+- Deploy version 1.2.3 [`9de148a`](../../commit/9de148afeae0adfc7c0656ffe5615ab394c24711)
+- Remove debug code [`9929e1e`](../../commit/9929e1eaa664cdebba02584b7d870c2da2d9df68)
+
+## v1.2.2
+
+- Deploy version 1.2.2 [`1606c2f`](../../commit/1606c2f719f40c607ff1a91208b3086cb23d1546)
+- Even better description for OpenGraph [`94dd93b`](../../commit/94dd93b164ece0efa9b1f1735da275f3e6d8de7d)
+- Better description for OpenGraph [`558bcf0`](../../commit/558bcf0f214b444069822ad2c745522ee4d856cc)
+
+## v1.2.1
+
+- Deploy version 1.2.1 [`1c1d5a6`](../../commit/1c1d5a6108276daf70a510eff177fd315df81efd)
+- Disable tera_context [`b0bb37e`](../../commit/b0bb37e9e0d6614dc62e7a02c7952443f8af7787)
+- Re-enable html minification [`0b4a00e`](../../commit/0b4a00e76dea73ff58b0d9dcfae6ed079b39b3db)
+
+## v1.2.0
+
+- Deploy version 1.2.0 [`9544fc9`](../../commit/9544fc9cd4439fad57411d2e8d3364bc178a5612)
+- Fun with OpenGraph [`27aba39`](../../commit/27aba39bcf8d4daf4e29429878e18ba5aedb6999)
+- Happier pager buttons [`1ebe620`](../../commit/1ebe6204ebff5d770309fc7aa7211ab0cd280beb)
+
+## v1.1.0
+
+- Deploy version 1.1.0 [`63594e6`](../../commit/63594e6831c8d2bd37ac465a8273c54638433f24)
+- Implement previous/next article links and keyboard shortcuts for them [`41a75a8`](../../commit/41a75a8b796aa23a736ee33470ee7458e6fa616b)
+- Move colons [`a5f09bf`](../../commit/a5f09bf41c14f7b517f4bdc55f83f4e7b5af8b31)
+
+## v1.0.1
+
+- Deploy version 1.0.1 [`8162e00`](../../commit/8162e001c3b2dc3523dfa1c66f844bc68d5635be)
+- Hide Previous/Next article links for now [`0b9c7af`](../../commit/0b9c7afe8e221b24a5635f2118c16555f820c7a4)
+- Add todo item [`eececa2`](../../commit/eececa2820755f34162496254c1c8463e73b4d4c)
+- Add todo item [`cfcbfd3`](../../commit/cfcbfd3bb83136437eec461255a97b68652a3f2a)
+
+## v1.0.0
+
+- Deploy version 1.0.0 [`0e0330f`](../../commit/0e0330f33391b47d27e86e657deb7c590ad74c37)
+- Pretend start page is good enough and don’t delete it on deploy [`b9ded31`](../../commit/b9ded31c5fa2fb908623191178d2db4de4966ceb)
+- Hide native player [`40a89bb`](../../commit/40a89bb4c4e292a8687334ec6b809c98a4794749)
+- Tick and sort todo item [`032cde6`](../../commit/032cde67c9c92f97600fdd9a540b8007ac370db6)
+- Set up a start page [`51f3ab8`](../../commit/51f3ab8a763d03951a092bf9135714ed42aba942)
+- Add todo item [`20d22ee`](../../commit/20d22ee20051bc4c0bd7c3f65ec831cd3057f71d)
+- Tick, add and sort todo items [`b2cca08`](../../commit/b2cca08338a98f7994f40efdf62efdf71fdd9dc2)
+- Start page WIP [`6974be2`](../../commit/6974be226363a9ef0b8ebefd6e2693d0c8adf7e4)
+- Start page WIP [`12ee4d4`](../../commit/12ee4d49c027ac89860d232df7de096eb258b4b2)
+- Improve footer details for smaller displays [`4d12ba0`](../../commit/4d12ba02dd576c7977f7ae0a5d5f82603b2d4707)
+- Fix duplicated double quotes [`b08e0e4`](../../commit/b08e0e4446b71ea2482cba0d7a1294220bd12f8f)
+- WIP: Start page SVG [`004632e`](../../commit/004632e078b6b3f220ac9bc10764e1de84b0348a)
+
+## v0.4.4
+
+- Deploy version 0.4.4 [`c1fecf9`](../../commit/c1fecf94a9310fb0f8937cd953ddd23e0e5c0e3e)
+- Implement play command (and related commands) [`b3f5276`](../../commit/b3f5276421306bf4d81f4ac497e221146ed5fd77)
+
+## v0.4.3
+
+- Deploy version 0.4.3 [`c21b9b8`](../../commit/c21b9b818d2a6256e3ef268be9c0f6cd3c500059)
+- Make help and command mode help even more visually similar [`543dc83`](../../commit/543dc832f5cbdefdcb6b46b534a0017a828f3cdc)
+
+## v0.4.2
+
+- Deploy version 0.4.2 [`02a4d2b`](../../commit/02a4d2b4a9cc5b074ce288f90d3cb9198df32108)
+- Make help and command mode help more visually similar [`08d730a`](../../commit/08d730a8b820054adad841112c3dae0cb2ad7357)
+
+## v0.4.1
+
+- Deploy version 0.4.1 [`96b524e`](../../commit/96b524e9c725f266e090138c5cf758ff5a6ab8dc)
+- Fix print header X [`286074d`](../../commit/286074db622a35e7a8d8f5813f9122042c5b6607)
+- Improve command mode help [`4b0498f`](../../commit/4b0498fdac042e3c4c56d186223bb6fdcdcb4a9d)
+
+## v0.4.0
+
+- Deploy version 0.4.0 [`84711db`](../../commit/84711dbc576edb418ae1440340b5c1e571d368aa)
+
+## v0.3.8
+
+- Deploy version 0.3.8 [`870be7b`](../../commit/870be7b4b8ad167ab5bab542699372a578e598b0)
+- Tick todo item [`58a5458`](../../commit/58a545899d4c1ff64f0cf179de6b2fd3c7460ea0)
+- Enable help in command mode [`490cc31`](../../commit/490cc318b3f29e3fa14ebb9584bd236188856363)
+- Negative margin for h1 in print mode [`4f1eb16`](../../commit/4f1eb16bf36fafbfd1f7538a67597493c358c7fb)
+- Fatter h1 in print mode [`56027fa`](../../commit/56027fa561185cfe204e8e3a34ca8f9e12b46a8f)
+- Try smooth scroll behavior [`0844179`](../../commit/0844179aece9ac340fd3c3371326bcce5cdca47c)
+- Improve print styles [`7ad8c83`](../../commit/7ad8c8337686722709367cb50e505072ead0061c)
+- Print improvements [`62aee99`](../../commit/62aee99587f4d34b90760d6b0cc57a46f9bb4468)
+- Improve print version of project lists [`37d01bf`](../../commit/37d01bf1d8420409e515971803cfa647c51cb586)
+- Bring back breadcrumbs in print mode [`e3467bf`](../../commit/e3467bfe707317867a509b5d00d2093626e2e665)
+- Add unprint command [`0f761cf`](../../commit/0f761cf3a7ff69ffe5df9cc0bcb3e641b2aad95b)
+- Add print command [`689e393`](../../commit/689e3931056906dd657a9dbd90c559552dbb212f)
+- Remove comment about a bug that has been fixed in Chrome [`da3a631`](../../commit/da3a631b4bd6f6172928b19fe59bbe57cfa854c0)
+- Even nicer TOCs [`b931b24`](../../commit/b931b240e42541f8066a118f722b01785daa0308)
+- Don’t try to navigate to non-existant numberedLinks [`6e7b2e1`](../../commit/6e7b2e1811b54cf328f8899a69380fd5509daf11)
+- Nicer TOCs [`128f7ea`](../../commit/128f7ea8b776d653e4103abcc89f27073bc373da)
+- Clean up search [`85dcd90`](../../commit/85dcd900838b32c23e5643ccc79019b29ee42816)
+- Glowy text in command mode [`743dbf8`](../../commit/743dbf841fa290695eea488e1e9e8b994485aab4)
+- Command mode functional [`814825c`](../../commit/814825c0ee551f3ecf4d2778eaed20a6cf035467)
+- Git ignore tmp folder [`2ed6ac9`](../../commit/2ed6ac9d1b1556b60ef9be515b107771482e7117)
+
+## v0.3.7
+
+- Deploy version 0.3.7 [`176fc4b`](../../commit/176fc4b36c7a03f7de955c450af743d11bc74ae4)
+- Remove newline after anchor-link [`27ed920`](../../commit/27ed920a59da114a0f1785e0fe8373f6c384757e)
+
+## v0.3.6
+
+- Deploy version 0.3.6 [`b2784df`](../../commit/b2784df08fee4111890a3a9158c20d099cd83423)
+- Add todo item [`7a964c6`](../../commit/7a964c62c452f15dfeb97762431ad00a47055ee9)
+- Finish tags landing page [`99e2283`](../../commit/99e2283cde0f9ab6084ba263f0f786732eb3d3a5)
+- Make top menu links shorter [`ab5b9ac`](../../commit/ab5b9ac74b59813057e38ab3590fafdfa9ae8293)
+- Tick, add and sort todo items [`5cfd66b`](../../commit/5cfd66b4dc963715237371ffb77bfa06bd709508)
+- Add very basic favicon [`8fc561c`](../../commit/8fc561c0d50bf81cdeb21b1e91a42ba39d9c6acd)
+- Cachebust JavaScript [`be35d84`](../../commit/be35d845d440470e0dc6c9721d893fcdbe1706ca)
+
+## v0.3.5
+
+- Deploy version 0.3.5 [`883c78d`](../../commit/883c78de08cf20d432da26c91f7db8f0aee30a26)
+- Add stromata a-012 [`2823701`](../../commit/2823701dd29f979162299f5d4abad64967005580)
+- Increase max-width media query for header with margin [`0808061`](../../commit/0808061e8755157f94bcc0d45feb1273fb21251c)
+- Use Scss loop for numbered links. Decrease font size of numbers [`a97c929`](../../commit/a97c9292cdf16d5a024bb6d6feafb1efdecd46bf)
+
+## v0.3.4
+
+- Deploy version 0.3.4 [`03458f1`](../../commit/03458f1f9a7448fe28be103cc3f1f5450f2d66b7)
+- Add number navigation to help [`dbacfee`](../../commit/dbacfee67d563c1d7cfca78a44b46a24d7681ee2)
+- Add todo item [`f04679d`](../../commit/f04679d4b051e0cc213b812277ee575145d9cfbe)
+- Numbered links working [`315d178`](../../commit/315d1784126c3974f4c4e89caca13d63fab4cbb0)
+- Numbered links second try [`cc26440`](../../commit/cc264403900645a3a5d1487d508611142b51925b)
+- Numbered links first try [`c86795e`](../../commit/c86795e6e9155f801effedf060e84807ad09b078)
+- Add todo item [`ae7f967`](../../commit/ae7f96780ff1fe1ddd3b7dbbb2b9c5781d5ad97c)
+- Change wording [`491e5ce`](../../commit/491e5ce45b2858bee5213ad8183e54a0f8d7d3b1)
+
+## v0.3.3
+
+- Deploy version 0.3.3 [`61a973b`](../../commit/61a973b7c1ebfc5766e4b4d2b948ed2df506a889)
+- Add todo items [`91e0874`](../../commit/91e08741a1b1c067fd591c75ddd01345d67720d2)
+- Use question mark as help toggle [`00db93b`](../../commit/00db93b3c6ec6872d5fc7de1fce7494db633792b)
+- Add box-shadow to Help modal [`c3ebbc1`](../../commit/c3ebbc14872636be3d91e940813387d91b11842d)
+
+## v0.3.2
+
+- Deploy version 0.3.2 [`6a5b5f4`](../../commit/6a5b5f44851c9d7fc613e8260d2fdc3ac66180ca)
+- Animate Help modal [`a79601f`](../../commit/a79601f6d515f9fe562c864ed81d679fd4ed273c)
+
+## v0.3.1
+
+- Deploy version 0.3.1 [`edac5a2`](../../commit/edac5a27e99edd86c831c6c3cd74c1d7cd93d222)
+- Implement Help shortcut [`e4b93ad`](../../commit/e4b93adc184015819d70aa418e36570f7452d8cf)
+- Set up keyboard shortcuts [`d31c81d`](../../commit/d31c81dbddf422d90a74e7eef41f2eb37ce139c5)
+- Add todo item [`3568880`](../../commit/35688808c32211c3b1bda1a9a8f6855f08a1d0f5)
+- Update TODO [`6833ff6`](../../commit/6833ff640c724609af02a65a9bd366a1903aa8d4)
+
+## v0.3.0
+
+- Deploy version 0.3.0 [`3018a42`](../../commit/3018a42a16c466ef06905e18c94a53b0d478680f)
+- Search done [`a7cc4c0`](../../commit/a7cc4c04d7e4b790328cba7720b3044c098c74b4)
+- Add todo item [`599d30d`](../../commit/599d30d991644588bc6fce955f43bba551bf61db)
+- Implement search [`34eb6a2`](../../commit/34eb6a211b90c582781283857a62b4f9e776c189)
+- Add todo and sort todo list [`c336549`](../../commit/c3365492b57ebe35cd91972380d8a9ddc677d00e)
+- Add description to Stromata [`f99de57`](../../commit/f99de57c2ce305003643bdbfb97e2f9fe65557de)
+- Add WIP tag to Karakter [`8f38fbf`](../../commit/8f38fbf71f4bfb4528191d752a87670581e5ef75)
+- Add 'Work in Progress' category [`331d077`](../../commit/331d077eef84dc95001d66e931ee68bf5e45249b)
+- Add git to atadev tech [`8356e20`](../../commit/8356e20854077c1a2921201148ecfa0a487c29c9)
+- Change points grouping in SVGs [`757fe11`](../../commit/757fe11cf5b15d8e5b65fa913b3731a121439eba)
+- Turn html minification back on [`38f41e3`](../../commit/38f41e3a5de2b50c51722c9a537047396019ab2b)
+- Improve main_section logic [`a1a474f`](../../commit/a1a474fa3c55e9302fbd7a8d1c1e79d80ffff561)
+- Add some tags [`94c79bc`](../../commit/94c79bcf10ced1f9a964428948fc237d3d9f458e)
+- Add some more tech icons, improve iconColors.js [`56436a4`](../../commit/56436a4f15649cb32ccdc0244cb6735ac8763538)
+- Show 'posted in' on tag pages [`a485d0a`](../../commit/a485d0a4eeed773f809ba0a4f40d7ae41e295edb)
+- Fix meta padding on Stromata page [`4b2548c`](../../commit/4b2548cc8006ff3ba91c9141c6dc7ed053279404)
+- Fix Tera settings [`0e2c500`](../../commit/0e2c500effa2f00a0e5f8f7d52044edc0490c7a9)
+
+## v0.2.16
+
+- Deploy version 0.2.16 [`210ff84`](../../commit/210ff84459d392b05db4684caad1692259c0b0db)
+- Fix some typos and style issues [`7004a6e`](../../commit/7004a6e12cc882c16e695ea5e506749311ae22df)
+
+## v0.2.15
+
+- Deploy version 0.2.15 [`128ae9c`](../../commit/128ae9ce1009089f74703cdc94ea094ce2f5d9e4)
+- Custom content classes [`9c56252`](../../commit/9c56252db6347527ed819480ba4c95d004061eb9)
+- Make sure nested ULs don’t get larger fonts [`021503a`](../../commit/021503a0d43cb771966858cf1e2c100ec64e7844)
+- Show category icons on category list page [`6741c34`](../../commit/6741c3404bb5825c74fd87415126ab6f88c51817)
+- Change Stromata table to show 'Sent' date [`5c43db1`](../../commit/5c43db1e80c2c9122f22a8e2dcd90cc6b2bed7e7)
+
+## v0.2.14
+
+- Deploy version 0.2.14 [`1b9a220`](../../commit/1b9a2201d2db12c1dce5f34620000ea2f3d2c41a)
+- Add stromata a-011 [`d879040`](../../commit/d879040544d3783218c4dd413425c839548499d8)
+
+## v0.2.13
+
+- Deploy version 0.2.13 [`e626abf`](../../commit/e626abf328ea90d1c99bcc878aad513bbf7d3b7e)
+- Use header as target for back-to-top link [`15d7fe2`](../../commit/15d7fe2dd96d0f14407443b6e4aa078c0b8a3d7a)
+
+## v0.2.12
+
+- Deploy version 0.2.12 [`2607114`](../../commit/2607114293b4a14d358c253dd61c2ee0b630ef1f)
+- Improve karakter description [`89e74e8`](../../commit/89e74e8deb67419f4e2c6c3cecfce35cc9c575b8)
+
+## v0.2.11
+
+- Deploy version 0.2.11 [`0e77109`](../../commit/0e77109f270a64af4ff013b90e2a83695ab1e1da)
+- Add karakter to /code [`c2013a6`](../../commit/c2013a6771e02977d7bb133c099b6fc35c55b255)
+
+## v0.2.10
+
+- Deploy version 0.2.10 [`9d455f8`](../../commit/9d455f8a8e436022604d41a87729f343ae1a5798)
+- Add stromata a-010 [`3a1a292`](../../commit/3a1a2921d86625c869a19c318cc13dc314d2a60d)
+
+## v0.2.9
+
+- Deploy version 0.2.9 [`b213078`](../../commit/b2130785b2d60962853296bd4456727a144eeec6)
+- Add Remix Icon icons [`24909d6`](../../commit/24909d6dc08458e05bb8e9a092ebca86dd378de7)
+
+## v0.2.8
+
+- Deploy version 0.2.8 [`76b31d8`](../../commit/76b31d83d9433e2911dec1b767ba685de3b59b08)
+- Change text highllighting language to txt [`fc88575`](../../commit/fc885757e28d313939fd8c906fabcc28ef6cbaf6)
+
+## v0.2.7
+
+- Deploy version 0.2.7 [`4d53553`](../../commit/4d53553caf429fc10594ab9ba828a7dc975dd618)
+- Add taxonomy: categories [`b97a91e`](../../commit/b97a91ef6c750e23c4ac1224727fcd32789e6fac)
+- Document snippet length default [`1512db8`](../../commit/1512db8cca8a5765855151dfebdc9e354976335c)
+- Shorten Case repo [`6b4cead`](../../commit/6b4cead379d5c0d2ed0500c35acc46cdae0e0dd9)
+
+## v0.2.6
+
+- Deploy version 0.2.6 [`e50b6a1`](../../commit/e50b6a1f3807b052dc5db139ff19ac66a23e38f0)
+- Font and logo improvements [`1f9834a`](../../commit/1f9834a265add74b447866357264e2fe3f34fb9a)
+- Styling fix [`63110e3`](../../commit/63110e381e3262f1f9cce2553a7a8df7a5ed74f9)
+- Fix typos [`d65ea4f`](../../commit/d65ea4f9bb210e453bc37e791a490d4a5cc9db17)
+
+## v0.2.5
+
+- Deploy version 0.2.5 [`6d45349`](../../commit/6d4534927a43222034dc3d7a054939d1e5e3fe89)
+- Table layout fix [`7b91110`](../../commit/7b9111097e50fa7be6e629202bca92771207e72d)
+
+## v0.2.4
+
+- Deploy version 0.2.4 [`7618572`](../../commit/7618572a35cf91c2e33f9d0640894a7921ffe81a)
+- Table layout improvements [`ddb314f`](../../commit/ddb314f3102a950443052e749d4ccfb41be2c5ae)
+
+## v0.2.3
+
+- Deploy version 0.2.3 [`9d26d41`](../../commit/9d26d414493ff50486b7f287138978bfed03326d)
+- Table layout improvements [`ccbee46`](../../commit/ccbee460d2b74a3ec700a8b9aa92955ad638a8ed)
+
+## v0.2.2
+
+- Deploy version 0.2.2 [`136b3b9`](../../commit/136b3b9f369b7278c27fcbbb9fea8942a3c36602)
+- Music section improvements [`3783a76`](../../commit/3783a7624fba26ee35b9f7efc0d010fdc4488860)
+- Add snippetizer to code section [`cb4b163`](../../commit/cb4b1632e8b349a507b50b5c10d3dd18f5ae97e3)
+- Music section initiated [`79afcd2`](../../commit/79afcd2fc6cbad9d3540fa676acc6ee253a0ca85)
+- Music section WIP [`6c67b60`](../../commit/6c67b604c054c75cfa2195b0198ad71291bfc99b)
+
+## v0.2.1
+
+- Deploy version 0.2.1 [`d436f9f`](../../commit/d436f9fcaad3830704cbbf21aa0c9f101c85fbc7)
+- Hide overflow-x to avoid horizontal scrollbars [`58546f2`](../../commit/58546f233ca2b5cf0b3121a912c3d3fb11960045)
+
+## v0.2.0
+
+- Deploy version 0.2.0 [`859a928`](../../commit/859a9281fdb65568d8d33c98acd3c608a3a1ab93)
+- Unclear attribution [`e369c04`](../../commit/e369c04bf624b143b43d8d1d824029bf103cdb9c)
+- Fix typo [`51d149a`](../../commit/51d149a1cc3b82c2b6aabf0e2eb87317f630e0be)
+
+## v0.1.3
+
+- Deploy version 0.1.3 [`f6e57a0`](../../commit/f6e57a0ec83ca800f6487edf65ae0ab350532d5a)
+- Use clear text labels for meta data. Improve styling of meta data and bread crumbs [`74eb5c3`](../../commit/74eb5c3b9d27f55c0f1ec62334013ff0d9c5892c)
+- Fix typo [`6542252`](../../commit/6542252d25158bfcb370ad8332add886e06e7190)
+- Fix compatibility issues with Zola 13 [`8cf88e4`](../../commit/8cf88e40271bf4cb8d74d0c0e03452ba6505d90a)
+- Fix double quote [`39d633e`](../../commit/39d633ea6935f33e07f5eda30ff03939fa92b17d)
+- Change linkArrow setup [`d7d1f0e`](../../commit/d7d1f0ead73eef21154e9870f8dad2ad7b1ce549)
+- Finish a todo item, add a new one [`6653130`](../../commit/6653130344ef9781f5174e1322654e4ee99c9a71)
+
+## v0.1.2
+
+- Deploy version 0.1.2 [`d465cbd`](../../commit/d465cbd394694dfffb0e360223ba45213be12338)
+- Make heel triangle larger [`5a39f44`](../../commit/5a39f44d0e4f6996fc528a5c2cfeee94230024ed)
+
+## v0.1.1
+
+- Deploy version 0.1.1 [`f82b0b7`](../../commit/f82b0b7bf060695f2b780d56462bd6f7f2a9c3a4)
+- For projects with repo, show 'First commit' date [`a40ccef`](../../commit/a40ccefeb1dd6f1523bb72abb52bb61d0a10cec7)
+- Add todo item [`de174b5`](../../commit/de174b54a0b0c79d353be1d8c5407fbcdbc917b6)
+
+## v0.1.0
+
+- Deploy version 0.1.0 [`75f99ba`](../../commit/75f99ba8c7cb8579e40b01e95c41b97996543a46)
+- Finish tags page [`a771394`](../../commit/a77139462a22b3a4754f088227cf934c86d8f148)
+
+## v0.0.10
+
+- Deploy version 0.0.10 [`7690ca4`](../../commit/7690ca45a7361a344a9777d0361c34d750410ca1)
+- White heel thingy [`ed8d9f7`](../../commit/ed8d9f753c3ccc9d0b17a7e4a7726dac3998acb0)
+- Make 'Back to top' link more visible [`79a8f0d`](../../commit/79a8f0ded005a7e97f47394f6445154cbc72ba7d)
+- Add todo items [`f3d10ee`](../../commit/f3d10ee096c822c9ed1e93abfc1cacfcda02c7bb)
+- Add animation to main nav hover [`75176f3`](../../commit/75176f3a1f099c66937d7ee698192dd4bfbd3063)
+
+## v0.0.9
+
+- Deploy version 0.0.9 [`b1d6bba`](../../commit/b1d6bba18205259cdebb68a314e98912356d788e)
+- Don’t break lines inside details [`aac5080`](../../commit/aac5080b1176dd10373bfd3b41203d5bf964afc0)
+
+## v0.0.8
+
+- Deploy version 0.0.8 [`bbfcf01`](../../commit/bbfcf01c3b5b4071dae13f68348065e9b669b349)
+- Link to Zola version in footer [`65c51c5`](../../commit/65c51c5c8f6216baa4745aa4e6a84685d400b492)
+
+## v0.0.7
+
+- Deploy version 0.0.7 [`0f69002`](../../commit/0f69002662bef870cb77084b9f9d7fb7c6d7fbae)
+- Link build date to Britannica [`a4067d5`](../../commit/a4067d5025f162e0d24fae74d73067222861342f)
+
+## v0.0.6
+
+- Deploy version 0.0.6 [`0685fbd`](../../commit/0685fbd4188c908f4e2e009d6576de85c3362d1c)
+- Use ISO 8601 format for build timestamp [`3a433f3`](../../commit/3a433f35283bfc041d81e06755683e738b456945)
+
+## v0.0.5
+
+- Deploy site 2020-12-11 00:24, version: 0.0.5 [`ea29786`](../../commit/ea29786b2a73e68dff2207a0b9dea1bdd19e454b)
+- Add separators between details [`61805c5`](../../commit/61805c59e5057daceec78ccd1fd94caf89f7d9a6)
+
+## v0.0.4
+
+- Deploy site 2020-12-11 00:12, version: 0.0.4 [`cd741e6`](../../commit/cd741e6caa8595d210e477322472f5ba950b04b9)
+- Fix tag link [`5743c25`](../../commit/5743c255ecbd39af016513e23a34629a0f8c7df6)
+
+## v0.0.3
+
+- Deploy site 2020-12-11 00:10, version: 0.0.3 [`4e84040`](../../commit/4e840406ea0e9463ef7058a1d40100284bd3e344)
+- Add build time to footer details. Style footer details [`7b78a58`](../../commit/7b78a58a32a4d554dbb4ba0ae622164201f25322)
+
+## v0.0.2
+
+- Deploy site 2020-12-10 23:44, version: 0.0.2 [`e56105d`](../../commit/e56105d8406b3c31076abaee8ed37feb8d74cf97)
+- Try to fix tagging [`6b0dbbd`](../../commit/6b0dbbdb0f695fdb378090134b1955999a36de30)
+- Deploy site 2020-12-10 23:34, version: 0.0.0 [`a1bd485`](../../commit/a1bd48589d5c9ca30686bb3de3557b61cfb8e498)
+- Add site and zola versions to footer [`8b1e12d`](../../commit/8b1e12dbd23a4e9b837fc1ad996e9a3cc4fb361e)
+
+## v0.0.1
+
+- Deploy site 2020-12-10 16:18, version: 0.0.1 [`94f133d`](../../commit/94f133d98d5b9fb1e77a925eaadb3a934e50e831)
+
+## v0.0.0
+
+- First release
