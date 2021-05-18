@@ -29,6 +29,16 @@
   }
 }
 
+.contentWrapper.changelogPage {
+  h2 {
+    em {
+      font-size: .6em;
+      font-style: normal;
+      color: $blue;
+    }
+  }
+}
+
 .contentWrapper.home-2021-04-29 {
   .introduction {
     padding: 1.6em;

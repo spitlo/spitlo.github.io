@@ -6,48 +6,48 @@ no_meta = true
 content_class = "changelogPage"
 +++
 
-This is the human-readable, curated changelog. For a full changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
+This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
 
-## v1.10.x (2021-05-13)
+## v1.10.x _(2021-05-13)_
 
 - Added a microgame, 'Lenny’s E-game Emporium', as [game menu](/games/)
 - Font loading improvements
 - Added this changelog
 
-## v1.9.x (2021-05-09)
+## v1.9.x _(2021-05-09)_
 
 - Added a JavaScript only [game section](/games/), primarily reachable through the command `:games`
 - Added support for [text-engine](https://github.com/okaybenji/text-engine), a text adventure game engine by
 Benji Kay and [Kontra](https://github.com/straker/kontra), a gaming micro-library by Steven Lambert
 - Started on a game, [Oxygen Chase](/games/oxygen-chase/), a tiny text-adventure
 
-## v1.8.x - v1.7.x (2021-05-02)
+## v1.8.x - v1.7.x _(2021-05-02)_
 
 - Changed this-day-in-time link to point to Wikipedia
 - Added a few more introductions on start page, these are randomized on each build
 - Bug fixes
 - Styling fixes
 
-## v1.6.x (2021-05-02)
+## v1.6.x _(2021-05-02)_
 
 - Moved to using ES6 modules
 - JavaScript improvements
 
-## v1.5.x - v1.3.x (2021-04-30)
+## v1.5.x - v1.3.x _(2021-04-30)_
 
 - Added scrambling for contact information, and a command to unscramble
 - Search improvements, enable search on mobile
 - Improved dotmatrix mode
 - Minify JavaScript on deploy using [`JSMin`](https://www.crockford.com/jsmin.html)
 
-## v1.2.x (2021-04-30)
+## v1.2.x _(2021-04-30)_
 
 - Implemented Spitlo.com Corporate Overlord Protection for less helpful sharing of articles on social media
 
-## v1.1.x (2021-04-29)
+## v1.1.x _(2021-04-29)_
 
 - Added an article pager (prev/next links in article footer)
 
-## v1.0.x (2021-04-29)
+## v1.0.x _(2021-04-29)_
 
 - Public release
