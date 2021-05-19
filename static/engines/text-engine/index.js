@@ -728,7 +728,7 @@ let autocomplete = () => {
   const words = input.value.toLowerCase().trim().split(/\s+/);
   const wordsSansStub = words.slice(0, words.length - 1);
   const itemNames = (room.items || []).concat(disk.inventory).map(item => item.name);
-  console.log(itemNames, words); /* eslint-disable-line */
+  console.log('itemNames:', itemNames); /* eslint-disable-line */
 
   const stub = words[words.length - 1];
   let options;
@@ -756,6 +756,7 @@ let autocomplete = () => {
       look: ['at'],
     };
     options = optionMap[words[0]];
+    console.log('options:', options); /* eslint-disable-line */
   } else if (words.length === 3) {
     const characterNames = (getCharactersInRoom(room.id) || []).map(character => character.name);
     const optionMap = {

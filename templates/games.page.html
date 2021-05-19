@@ -26,8 +26,8 @@
 
       <script src="{{ get_url(path="/engines/text-engine/index.js", cachebust=true) | safe }}"></script>
       <script type="module">
-        import gameDisk from '{{ get_url(path=current_path ~ "game.js", cachebust=true) | safe }}';
-        loadDisk(gameDisk);
+        import gameDisk from '{{ get_url(path=current_path ~ "game.js", cachebust=true) | safe }}'
+        loadDisk(gameDisk)
       </script>
     {% elif page.extra.engine == "kontra" %}
       <canvas id="game" width="600" height="360"></canvas>
