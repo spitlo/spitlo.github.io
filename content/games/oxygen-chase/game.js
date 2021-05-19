@@ -46,7 +46,6 @@ const enterLocation = (location) => {
   }
   decreaseTimer(TRAVEL_TIMES.hospital + extraTime)
   disk.leavingRoom = location
-  console.debug(`Entering ${location}. Timer is now ${disk.timer}`)
   // Check if "car" room has exit "dad", otherwise add it
   const car = getRoom('car')
   const bedroom = car.exits.find((exit) => exit.id === 'bedroom')
@@ -92,13 +91,13 @@ const decreaseTimer = (subtrahend) => {
   disk.timer -= subtrahend
 }
 
-const getName = (character) => {
+const getName = (character, capitalize = true) => {
   // This was meant to be used to refer to a person either by title
   // or, if known, by name. But since descriptions are strings and not
   // functions, `disk` will be undefined when this is called.
-  const char = getCharacter(character, disk.character)
+  const char = getCharacter(character)
   const namesLength = char.name.length
-  return namesLength === 0 ? char[0] : char[namesLength - 1]
+  return namesLength === 1 ? `${capitalize ? 'T' : 't'}he ${character}` : char.name[namesLength - 1]
 }
 
 const checkOnDad = () => {
@@ -170,7 +169,7 @@ const getEmotionAdverb = () => {
 // |__/ | ___] | \_
 // ------------ ---  --- >
 const oxygenChase = {
-  roomId: 'bedroom',
+  roomId: 'hospital',
   timer: 120,
   gps: false,
   leak: false,
@@ -433,16 +432,16 @@ A **receptionist** sits behind a huge, beige desk.`,
     {
       name: ['receptionist'],
       roomId: 'hospital',
-      desc: 'The receptionist appears to be in his twenties, but looks almost boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "René".',
+      desc: 'The receptionist appears to be in his twenties, but looks almost boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "**André**".',
       onLook: () => {
-        getCharacter('receptionist').name.push('René')
+        getCharacter('receptionist').name.push('André')
       },
       topics: [
         {
           option: 'Ask for **oxygen**',
-          line: `"Hi. I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
+          line: () => `"Hi. I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
 
-The receptionist looks up at you. "Does this look like a dive shop?" he snarks.
+${getName('receptionist')} looks up at you. "Does this look like a dive shop?" he snarks.
 
 You’re not off to a good start. It’s apparent you’ll need to try a different approach.`,
           keyword: 'oxygen',
@@ -451,9 +450,9 @@ You’re not off to a good start. It’s apparent you’ll need to try a differe
         },
         {
           option: '**Ask** to speak to an administrator',
-          line: `"I want to speak to an administrator," you say sternly.
+          line: () => `"I want to speak to an administrator," you say sternly.
 
-René shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
+${getName('receptionist')} shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
 
 "The administrator is busy," he mumbles.`,
           keyword: 'ask',
@@ -484,9 +483,9 @@ Then you add, "He is dying."`,
         },
         {
           option: '**Demand** to speak to a god damned administrator',
-          line: `You bang your fist on the desk. "Call up a god damned administrator," you cry out. "I’m not asking!"
+          line: () => `You bang your fist on the desk. "Call up a god damned administrator," you cry out. "I’m not asking!"
 
-The receptionist looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is René in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
+${getName('receptionist')} looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is André in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           keyword: 'demand',
           prereqs: ['ask', 'insist', 'beg'],
           removeOnRead: true,
@@ -499,7 +498,7 @@ A woman in her late fifties or early sixties glides out of the elevator and walk
               {
                 name: ['administrator', 'hospital administrator'],
                 roomId: 'hospital',
-                desc: 'The hospital administrator is a woman ash-blond hair and an uninviting smile. She, too, has a name tag. It reads "Catrine".',
+                desc: 'The hospital administrator is a woman ash-blond hair and an uninviting smile. She, too, has a name tag. It reads "**Catrine**".',
                 onLook: () => {
                   getCharacter('administrator').name.push('Catrine')
                 },
@@ -512,10 +511,10 @@ A woman in her late fifties or early sixties glides out of the elevator and walk
                   },
                   {
                     option: 'Ask for **oxygen**',
-                    line: `"As I told, um, René here," you say, glancing at the receptionist’s name tag, "I’m in dire need of oxygen. My father has precious little left in his tank.
+                    line: () => `"As I told, um, André here," you say, glancing at the receptionist’s name tag, "I’m in dire need of oxygen. My father has precious little left in his tank.
 Please, can you help me?"
 
-The administrator looks at you sullenly.`,
+${getName('administrator')} looks at you sullenly.`,
                     keyword: 'oxygen',
                     onSelected: () => decreaseTimer(4),
                   },
