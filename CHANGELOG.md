@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.10.4
+
+- Oxygen Chase: Dynamic naming [`4b888e6`](../../commit/4b888e6a849450b38a0991e1ecc2b7cc8d7938a6)
+- Break out Lenny’s into a separate file for easier editing [`4da52af`](../../commit/4da52af6e8d7771446cb64cb37a0c124f3e61d7d)
+
 ## v1.10.3
 
 - More changelog improvements [`e37458a`](../../commit/e37458a3efc9c47a1fc26d127e0305eee58d19d8)
