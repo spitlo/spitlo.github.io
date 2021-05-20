@@ -12,6 +12,7 @@ To output all Tera variables in code, add this:
 
 ## To do
 
+- [ ] Make site work in Firefox Reader View
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [x] Add command for unlocking contact information in footer
