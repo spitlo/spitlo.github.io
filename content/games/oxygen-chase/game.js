@@ -169,7 +169,7 @@ const getEmotionAdverb = () => {
 // |__/ | ___] | \_
 // ------------ ---  --- >
 const oxygenChase = {
-  roomId: 'hospital',
+  roomId: 'bedroom',
   timer: 120,
   gps: false,
   leak: false,
