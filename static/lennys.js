@@ -1,6 +1,3 @@
-delete commands[0].save
-delete commands[0].load
-
 const help = () => {
   const instructions = `The following commands are available:
     LOOK:   'look at key'
@@ -37,6 +34,12 @@ const play = (gameId) => {
     }, 4000)
   }
 }
+
+// Remove some unused commands
+delete commands[0].save
+delete commands[0].load
+
+// Add some new commands
 commands[0] = Object.assign(commands[0], { help })
 commands[1] = Object.assign(commands[1], { play })
 
@@ -87,6 +90,37 @@ Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An
           name: ['shelves', 'games'],
           desc: `There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
 ${window.games.map((game) => `- ${game.title} (**${getShortName(game.title)}**)`)}`,
+          onLook: () => {
+            // Only add games after user inspected shelves (is this too much of a hassel maybe?)
+            const room = getRoom('text-games')
+            let newItems = window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => {
+              const shortName = getShortName(game.title)
+              return {
+                name: [game.title, shortName],
+                desc: `The back of the box reads:
+                "${(game.description || '').toUpperCase()}"`,
+                slug: game.slug,
+                isTakeable: true,
+                onPlay: () => println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),
+                onTake: () => {
+                  println(`You pick up ${game.title}. On the back of the box, you read:
+"${(game.description || '').toUpperCase()}"
+
+You put the game in your backpack.`)
+                },
+                onUse: () => println('This is a game. Surely, you’d much rather **play** it then use it?'),
+                onLook: () => {
+                  println(`According to the fact box, this game was created ${game.date} and written for the __${game.extra.engine}__ engine.`)
+                },
+              }
+            })
+            // Add a few more titles for fun
+            newItems = newItems.concat(['Pancake Contingency, The', 'Palladium Snitch', 'Constipation, The'].map((game) => ({
+              name: game,
+              onTake: () => println('Apparently, this game is not for sale, nor for rent, nor for use.'),
+            })))
+            room.items = room.items.concat(newItems)
+          },
         },
         {
           name: ['note', 'disclaimer'],
@@ -97,31 +131,6 @@ These games are actually encoded in UTF-8, not ASCII. Sue me.
 
 // LENNY`,
         },
-        ...['Pancake Contingency, The', 'Palladium Snitch', 'Constipation, The'].map((game) => ({
-          name: game,
-          onTake: () => println('Apparently, this game is not for sale, nor for rent, nor for use.'),
-        })),
-        ...window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => {
-          const shortName = getShortName(game.title)
-          return {
-            name: [shortName, game.title],
-            desc: `The back of the box reads:
-            "${(game.description || '').toUpperCase()}"`,
-            slug: game.slug,
-            isTakeable: true,
-            onPlay: () => println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),
-            onTake: ({ item }) => {
-              println(`You pick up ${game.title}. On the back of the box, you read:
-"${(game.description || '').toUpperCase()}"
-
-You put the game in your backpack.`)
-            },
-            onUse: () => println('This is a game. Surely, you’d much rather **play** it then use it?'),
-            onLook: () => {
-              println(`According to the fact box, this game was created ${game.date} and written for the __${game.extra.engine}__ engine.`)
-            },
-          }
-        })
       ],
     },
     {
@@ -132,7 +141,7 @@ A door to the **west** leads back to the main room.`,
       exits: [
         { dir: 'west', id: 'lennys' },
       ],
-      items: window.games.filter((game) => game.extra && game.extra.room === 'graphical-games').map((game) => ({ dir: [game.title], id: game.slug }))
+      items: window.games.filter((game) => game.extra && game.extra.room === 'graphical-games').map((game) => ({ name: [game.title] }))
     },
   ],
   characters: [
