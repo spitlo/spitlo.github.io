@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.10.5
+
+- Oxygen Chase: Start in bedroom [`b91e0e3`](../../commit/b91e0e3460cd2e0f8336a36fea197f584f9be3e8)
+
 ## v1.10.4
 
 - Oxygen Chase: Dynamic naming [`4b888e6`](../../commit/4b888e6a849450b38a0991e1ecc2b7cc8d7938a6)
