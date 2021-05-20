@@ -1,4 +1,4 @@
-import { nms } from './util.js';
+import { nms } from './util.mjs';
 
 const $bottom = document.getElementById('bottom')
 const $commandLine = document.getElementById('commandLine')

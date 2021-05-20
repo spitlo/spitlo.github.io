@@ -91,12 +91,12 @@ Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An
           desc: `There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
 ${window.games.map((game) => `- ${game.title} (**${getShortName(game.title)}**)`)}`,
           onLook: () => {
-            // Only add games after user inspected shelves (is this too much of a hassel maybe?)
+            // Only add games after user examines shelves (is this too much of a hassel maybe?)
             const room = getRoom('text-games')
             let newItems = window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => {
               const shortName = getShortName(game.title)
               return {
-                name: [game.title, shortName],
+                name: [game.title],
                 desc: `The back of the box reads:
                 "${(game.description || '').toUpperCase()}"`,
                 slug: game.slug,

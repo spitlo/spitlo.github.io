@@ -46,7 +46,7 @@
         </script>
         <script src="{{ get_url(path="/engines/text-engine/index.js", cachebust=true) | safe }}"></script>
         <script type="module">
-          import lennys from '{{ get_url(path="/lennys.js", cachebust=true) | safe }}'
+          import lennys from '{{ get_url(path="/lennys.mjs", cachebust=true) | safe }}'
           loadDisk(lennys)
         </script>
       </section>
