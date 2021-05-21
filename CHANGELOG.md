@@ -2,6 +2,16 @@
 
 This changelog is automatically generated.
 
+## v1.10.6
+
+- Fix deploy script even more! [`82fbb65`](../../commit/82fbb6516f0b9e96e87834221dbfd6084a5a67e1)
+- Fix deploy script [`75e2455`](../../commit/75e2455e6d6ae7b8ac5fad8a65f16c67763336a1)
+- Lenny’s: More interaction [`1a00460`](../../commit/1a00460513325e61a6994ece526b490c855a760e)
+- Use mjs extension for JavaScript modules [`3b0c47f`](../../commit/3b0c47fb863ed01dc4ce52fde348d1159f07dc1e)
+- Only add games after user examines shelves [`70ad8ef`](../../commit/70ad8ef741001ad140b6c29251ec4d58dbd87bf0)
+- Add home made pixel font for unknown reasons [`e7d9fcb`](../../commit/e7d9fcb89d2f8643af2d8b210e467c1b7c09649c)
+- Add todo item [`63db654`](../../commit/63db654773f3232016d7c037ce281deefd75c2f2)
+
 ## v1.10.5
 
 - Oxygen Chase: Start in bedroom [`b91e0e3`](../../commit/b91e0e3460cd2e0f8336a36fea197f584f9be3e8)
