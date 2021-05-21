@@ -1,6 +1,6 @@
 // minified with jsmin
 
-import{nms}from'./util.js';const $bottom=document.getElementById('bottom')
+import{nms}from'./utils.mjs';const $bottom=document.getElementById('bottom')
 const $commandLine=document.getElementById('commandLine')
 const $commandLineHint=document.getElementById('commandLineHints')
 const $help=document.getElementById('help')
