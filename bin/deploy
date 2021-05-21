@@ -7,6 +7,7 @@ source bin/env.globals
 DEFAULT_METHOD="patch"
 MAIN_BRANCH="master"
 INITIAL_VERSION="0.0.0"
+FORCE="no"
 USAGE="
 ${BROWN}Usage${NC}: $0 [ARGUMENTS]
 Increases version of project naively (only major, minor and patch) based on git tag.
@@ -24,6 +25,8 @@ for arg in "$@"; do
   elif [ "$arg" = "help" ] || [ "$arg" = "--help" ] || [ "$arg" = "-h" ]; then
     echo -e "$USAGE"
     exit 0
+  elif [ "$arg" = "--force" ] || [ "$arg" = "-f" ]; then
+    FORCE="yes"
   else
     echo "Unknown argument '$arg'"
     exit 0
@@ -31,13 +34,17 @@ for arg in "$@"; do
 done
 
 if [ "$(git symbolic-ref -q HEAD)" != "refs/heads/master" ]; then
-  echo "Deploying is only allowed from the '$MAIN_BRANCH' branch. Exiting."
-  exit 1
+  if [ "$FORCE" = "no" ]; then
+    echo "Deploying is only allowed from the '$MAIN_BRANCH' branch. Exiting."
+    exit 1
+  fi
 fi
 
 if [ -n "$(git status --porcelain|grep -v '^??')" ]; then
-  echo "Please commit your changes before publishing."
-  exit 1
+  if [ "$FORCE" = "no" ]; then
+    echo "Please commit your changes before publishing."
+    exit 1
+  fi
 else
   echo -e "\n- Pushing local commits."
   git push origin "$MAIN_BRANCH"
@@ -96,9 +103,9 @@ scripts=(
   "games/oxygen-chase/game.mjs" \
 )
 for script in "${scripts[@]}"; do
-  mv "docs/$script" "docs/_$script"
-  bin/jsmin <"docs/_$script" >"docs/$script" "minified with jsmin"
-  rm "docs/_$script"
+  mv "docs/$script" "docs/$script._"
+  bin/jsmin <"docs/$script._" >"docs/$script" "minified with jsmin"
+  rm "docs/$script._"
 done
 
 # Minification done, add files and deploy
