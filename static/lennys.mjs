@@ -26,11 +26,13 @@ const getShortName = (name) => (name || '').split(' ')[0].toLowerCase()
 const getActionFigureSentence = () => {
   const sentences = [
     `"This 'Gorgobot' figure from 1972 is pretty neat, it has telescopic arms and an inflatable chest piece!"`,
-    `"I have this Kaboozle Toys 'Discombobulon' figure from the desert death match scenes that was never actually released."`,
+    `"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never actually released."`,
     `"Yeah, the 'Konglomatron 2000' is pretty priceless, but then again, I’d never sell it so who cares, right?"`,
     `"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,
-    `"Yeah," he starts, then looses the thread and trails off into an adjacent room.`,
+    `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
     `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
+    `I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!`,
+    `I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released on 1970.`,
   ]
   return pickOne(sentences)
 }
@@ -166,14 +168,32 @@ A door to the **west** leads back to the main room.`,
     {
       name: ['Lenny'],
       roomId: 'lennys',
-      desc: 'Lenny doesn’t look anything at all like you’d picture a purveyor of retro games and action figures. In fact, judging by his jawline alone, you’d have him pegged as a personal trainer for the elderly or a retired police officer. But his tight, sleeveless t-shirt says "I got the Babel Fish", and on his left wrist is a Casio C-80 calculator watch.',
+      desc: `Lenny doesn’t look anything at all like you’d picture a purveyor of retro games and action figures. In fact, judging by his jawline alone, you’d have him pegged as a personal trainer for the elderly or a retired police officer. But his tight, sleeveless t-shirt says "I got the Babel Fish", and on his left wrist is a Casio C-80 calculator watch.
+He’s busy dusting his collection of action figures.`,
+      onTalk: () => {
+        println(`You clear your throat loudly. Nothing happens. "Lenny," you say. Lenny starts whistling.
+"Oh, mighty keeper of... the realm?" you submit. Lenny stops dusting momentarily and glances at you.
+"I, your humble servant, eh, haveth... an inquisition?" You give up. "Hey, Lenny, stop dusting. I want to ask you something."
+Lenny puts his feather duster in his belt fancily -- like a modern-day, domiciliary Zorro -- and steps over to you.`)
+        const lenny = getCharacter('lenny')
+        delete lenny.onTalk
+      },
       topics: [
         {
           option: 'Compliment Lenny’s display **cabinet**',
           keyword: 'cabinet',
           removeOnRead: false,
-          line: () => `"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue. "Any priceless ones?"
-"Well..." Lenny scratches his stubble. ${getActionFigureSentence()}`,
+          line: () => `${
+            getCharacter('lenny').chatLog.includes('cabinet')
+              ? '"Awesome collection! Any other favorites?"'
+              : '"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue, "Any priceless ones?"'
+            }
+"Well..." Lenny scratches his stubble. ${
+  getActionFigureSentence()
+}`,
+          onSelect: () => {
+            const hasTalked = getCharacter('lenny').chatLog.includes('cabinet');
+          },
         },
         ...window.games.map((game) => {
           const shortName = getShortName(game.title)
