@@ -6,7 +6,7 @@ a {
 
 span {
   margin-left: 2vw;
-  margin-right: 2px;
+  margin-right: .6vh;
 }
 
 #input {
@@ -15,15 +15,16 @@ span {
   border: none;
   position: relative;
   bottom: 0.175vh;
-  margin-top: .1vw;
-  margin-left: 8px;
+  margin-top: .1vh;
+  margin-left: .8vh;
 }
 
 #input, .input, .user {
   height: 4vh;
   font-family: '3270', $paragraphFont;
   color: #ffa500;
-  font-size: 21px;
+  // font-size: 21px;
+  font-size: 3vh;
 }
 
 #input:focus {
