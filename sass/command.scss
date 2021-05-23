@@ -86,6 +86,14 @@
     border-width: 4px;
     border-style: inset;
     border-color: #ae5b20;
+    transition: all 1s ease-in;
+
+    &.closed {
+      top: 50vh;
+      left: 50vh;
+      width: 0;
+      height: 0;
+    }
   }
 }
 

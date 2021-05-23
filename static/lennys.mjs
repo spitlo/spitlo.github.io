@@ -81,6 +81,7 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
       exits: [
         { dir: ['west', 'Ascii Arena', 'Text Games'], id: 'text-games'},
         { dir: ['east', 'Pixel Paradise', 'Graphical Games'], id: 'graphical-games'},
+        { dir: ['south', 'out', 'exit'], id: 'exit' },
       ],
       items: [
         {
@@ -101,6 +102,9 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
 "This is the Dungeon dungeon, the MUD swamp, the Infocom inferno, this is the domain of King Text, the seven bit wonder of the world, the web of the eight bit spider. This is Room 437. This is the Ascii Arena."
 
 Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An opening in the **east** wall leads back to the front room.`,
+      exits: [
+        { dir: ['east'], id: 'lennys' }
+      ],
       onLook: () => {
         println('You’re standing in the Ascii Arena, as Lenny somewhat hyperbolically has christened this tiny room holding all his text-based adventure games.')
       },
@@ -162,6 +166,35 @@ A door to the **west** leads back to the main room.`,
         { dir: 'west', id: 'lennys' },
       ],
       items: window.games.filter((game) => game.extra && game.extra.room === 'graphical-games').map((game) => ({ name: [game.title] }))
+    },
+    {
+      name: 'Leaving Lenny’s',
+      id: 'exit',
+      onEnter: () => {
+        println(`"Bye, Lenny," you say. "I’ll see you another day."
+Lenny looks up at you, surprised that you are still there. He gives you a vacant thumbs-up, then continues dusting.`)
+        setTimeout(() => {
+          // Start fading out text
+          document.body.className = 'exiting'
+          const frameElement = window.frameElement
+          if (frameElement) {
+            // Add transitionend listener, then transition iframe to a dot in the middle of the screen
+            // Then remove parent:
+            // TODO: Add listener
+            setTimeout(() => {
+              frameElement.className = 'closed'
+              setTimeout(() => {
+                frameElement.parentElement.remove()
+              }, 1200)
+            }, 1500)
+          } else {
+            // We are not in an iframe. Go to start page.
+            setTimeout(() => {
+              window.location.href = '/'
+            }, 2000)
+          }
+        }, 4000)
+      }
     },
   ],
   characters: [

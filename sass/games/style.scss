@@ -8,12 +8,18 @@ body {
   background-image: radial-gradient(
     #1f0b00, black 120%
   );
-  color: #ff8012;
+  color: rgba(255, 128, 18, 1);
   font-family: $paragraphFont;
   font-size: 2.6vh;
   line-height: 4vh;
   padding: 0 1rem 2rem 1rem;
   text-shadow: 0 0 5px rgba(255, 78, 0, 0.6);
+
+  &.exiting {
+    .games {
+      opacity: 0;
+    }
+  }
 
   &.framed {
     #closer {
@@ -113,6 +119,11 @@ footer {
   background-color: #ff8012;
   color: #fff;
   padding: 1vw 2vw;
+}
+
+.games {
+  transition: opacity 3s ease-in;
+  opacity: 1;
 }
 
 #decrunch {
