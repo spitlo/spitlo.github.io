@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v1.10.7
+
+- Add 'material' folder [`8123b42`](../../commit/8123b422d0ce05c9a5cfb216b679a19c3edfff91)
+- Lenny’s: Add possibility to exit [`a752948`](../../commit/a752948ad8da1122109a4ec843e9859a94e36bfd)
+- Increase font size [`659aa46`](../../commit/659aa467add0b4b7704cf121a4025459664a52d2)
+- Lenny’s: More talk [`6964772`](../../commit/69647720d0b8ad94bc2898dda3da45d8fcbe89b8)
+
 ## v1.10.6
 
 - Fix deploy script even more! [`82fbb65`](../../commit/82fbb6516f0b9e96e87834221dbfd6084a5a67e1)
