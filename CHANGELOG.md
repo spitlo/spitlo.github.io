@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v1.10.8
+
+- Fade in new text. Minor fixes [`372bad8`](../../commit/372bad8ef56d9a293476f50731e0bf74073890dc)
+- Indentation [`5685ee2`](../../commit/5685ee207aae529f5d3e5e9b284b05a8b8721dae)
+- Lenny’s: Fix closing animation [`22ed6da`](../../commit/22ed6daabbf79493b1c723724714ea3b91541f45)
+- Lenny’s: Fix closing anmation [`ae16a60`](../../commit/ae16a60036d601f9371a6fcbb82cd0790e4fbfad)
+
 ## v1.10.7
 
 - Add 'material' folder [`8123b42`](../../commit/8123b422d0ce05c9a5cfb216b679a19c3edfff91)
