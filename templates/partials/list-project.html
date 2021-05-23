@@ -14,8 +14,8 @@
         </div>
       {% endif %}
     </h2>
-
   </a>
+  
   {% if project.taxonomies.technologies %}
     <div class="taxonomy">
       <span class="label">Tech:</span>
@@ -31,12 +31,13 @@
       {% endfor %}
     </div>
   {% endif %}
+  
   {% if project.description %}
-      <div class="excerpt">
-        _<br>
-        {{ project.description }}
-        <br>
-        <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
+    <div class="excerpt">
+      _<br>
+      {{ project.description }}
+      <br>
+      <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
     </div>
   {% elif project.content %}
     <div class="excerpt">
