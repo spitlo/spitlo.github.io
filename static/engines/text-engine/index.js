@@ -700,6 +700,9 @@ let println = (line, className) => {
     newLine.classList.add(className);
   }
 
+  // Animate in
+  newLine.classList.add('invisible');
+
   // add a class for styling prior user input
   if (line[0] === '>') {
     newLine.classList.add('user');
@@ -720,6 +723,10 @@ let println = (line, className) => {
 
   output.appendChild(newLine).innerHTML = str;
   window.scrollTo(0, document.body.scrollHeight);
+  requestAnimationFrame(() => {
+    // second state
+    newLine.classList.remove('invisible');
+})
 };
 
 // predict what the user is trying to type

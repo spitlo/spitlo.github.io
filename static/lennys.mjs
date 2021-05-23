@@ -32,7 +32,7 @@ const getActionFigureSentence = () => {
     `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
     `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
     `I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!`,
-    `I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released on 1970.`,
+    `I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970.`,
   ]
   return pickOne(sentences)
 }
@@ -81,7 +81,7 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
       exits: [
         { dir: ['west', 'Ascii Arena', 'Text Games'], id: 'text-games'},
         { dir: ['east', 'Pixel Paradise', 'Graphical Games'], id: 'graphical-games'},
-        { dir: ['south', 'out', 'exit'], id: 'exit' },
+        { dir: ['south', 'out', 'exit', 'home'], id: 'exit' },
       ],
       items: [
         {
@@ -91,7 +91,7 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
         {
           name: ['cabinet', 'display cabinet', 'action figures'],
           desc: `You lean over and inspect the display cabinet. There are some real gems in there.
-"No touchy-touchy," Lenny says. "Only looky-looky."`,
+"No touchy-touchy," Lenny says and wags his finger. "Only looky-looky."`,
         },
       ],
     },
@@ -178,9 +178,8 @@ Lenny looks up at you, surprised that you are still there. He gives you a vacant
           document.body.className = 'exiting'
           const frameElement = window.frameElement
           if (frameElement) {
-            // Add transitionend listener, then transition iframe to a dot in the middle of the screen
-            // Then remove parent:
-            // TODO: Add listener
+            // Transition iframe to a dot in the middle of the screen. Then remove parent.
+            // TODO: Use transitionend listener instead of timeouts
             setTimeout(() => {
               frameElement.className = 'closed'
               setTimeout(() => {

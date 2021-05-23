@@ -37,6 +37,12 @@ span {
 
   div {
     margin-bottom: 1vw;
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+
+    &.invisible {
+      opacity: 0;
+    }
 
     b {
       color: rgba(255, 174, 0, 1);
