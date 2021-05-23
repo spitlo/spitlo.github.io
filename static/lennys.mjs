@@ -73,7 +73,7 @@ const lennys = {
 ████   █    █ █     ██  █ █  ██ ███ ▀███  █     █
  ▀████ █▄ ▄██ ██▄    ███  █  ██ ███  ███ ██   ▄██
  `,
-      desc: `At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes,  sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Auto.
+      desc: `At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes, sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Auto.
 
 To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. To the **east** is the Pixel Paradise where graphical games are displayed. To the **south** is an exit.".
 
@@ -200,7 +200,7 @@ Lenny looks up at you, surprised that you are still there. He gives you a vacant
     {
       name: ['Lenny'],
       roomId: 'lennys',
-      desc: `Lenny doesn’t look anything at all like you’d picture a purveyor of retro games and action figures. In fact, judging by his jawline alone, you’d have him pegged as a personal trainer for the elderly or a retired police officer. But his tight, sleeveless t-shirt says "I got the Babel Fish", and on his left wrist is a Casio C-80 calculator watch.
+      desc: `Lenny doesn’t look anything at all like you’d picture a purveyor of retro games, action figures and role-playing paraphernalia. In fact, judging by his jawline alone, you’d have him pegged as a personal trainer for the elderly or a retired police officer. But his tight, sleeveless t-shirt says "I got the Babel Fish", and on his left wrist is a Casio C-80 calculator watch.
 He’s busy dusting his collection of action figures.`,
       onTalk: () => {
         println(`You clear your throat loudly. Nothing happens. "Lenny," you say. Lenny starts whistling.
@@ -223,9 +223,6 @@ Lenny puts his feather duster in his belt fancily -- like a modern-day, domicili
 "Well..." Lenny scratches his stubble. ${
   getActionFigureSentence()
 }`,
-          onSelect: () => {
-            const hasTalked = getCharacter('lenny').chatLog.includes('cabinet');
-          },
         },
         ...window.games.map((game) => {
           const shortName = getShortName(game.title)
