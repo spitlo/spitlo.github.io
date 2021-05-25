@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.10.10
+
+- Oxygen Chase: Add getApproximateTimeLeft. Reorder hospital topics. Hospital location almost done [`c9a49a1`](../../commit/c9a49a1346984a89df4f6a050b4d6864b0ca1901)
+
 ## v1.10.9
 
 - Lenny’s: Add som more action figure sentences [`684997b`](../../commit/684997ba2493207059b1bc069c6ac09aa70eee58)
