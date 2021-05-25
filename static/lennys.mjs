@@ -31,8 +31,10 @@ const getActionFigureSentence = () => {
     `"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,
     `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
     `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
-    `I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!`,
-    `I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970.`,
+    `"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,
+    `"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,
+    `"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,
+    `"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out.`,
   ]
   return pickOne(sentences)
 }
