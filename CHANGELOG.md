@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v1.10.9
+
+- Lenny’s: Add som more action figure sentences [`684997b`](../../commit/684997ba2493207059b1bc069c6ac09aa70eee58)
+- Minor fixes [`88e74b6`](../../commit/88e74b674965cec81eb4dbd8d388b9d6932bc472)
+- Lenny’s: Add exit to description [`966020b`](../../commit/966020bd43203cfa46171f9538ada4cd6920847c)
+- Lenny’s: Separate exits and things in description [`0407628`](../../commit/040762814bc81b6295f8c92f0cc03691dfa30f1f)
+
 ## v1.10.8
 
 - Fade in new text. Minor fixes [`372bad8`](../../commit/372bad8ef56d9a293476f50731e0bf74073890dc)
