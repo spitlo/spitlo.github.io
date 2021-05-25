@@ -57,6 +57,8 @@ const enterLocation = (location) => {
   }
 }
 
+const getApproximateTimeLeft = (roundUp = false) => roundUp ? Math.ceil(disk.timer / 10) * 10 : Math.floor(disk.timer / 10) * 10
+
 const createLeak = () => {
   // Oops, we’ve got leakage!
   decreaseTimer(10)
@@ -71,7 +73,7 @@ const createLeak = () => {
     onUse: () => {
       decreaseTimer(10)
       println('You scramble frantically to reconnect the tube to the tank, and after a few minutes the leaking stops.')
-      println(`Examining the gauge, you can see there is about ${disk.timer} minutes of oxygen left in the tank.`)
+      println(`Examining the gauge, you can see there is about ${getApproximateTimeLeft()} minutes of oxygen left in the tank.`)
       disk.hasLeaked = true
       disk.leak = false
       bedroom.items = bedroom.items.filter((item) => !item.name.includes('loose tubing'))
@@ -97,7 +99,7 @@ const getName = (character, capitalize = true) => {
   // functions, `disk` will be undefined when this is called.
   const char = getCharacter(character)
   const namesLength = char.name.length
-  return namesLength === 1 ? `${capitalize ? 'T' : 't'}he ${character}` : char.name[namesLength - 1]
+  return namesLength === 1 ? `${capitalize ? 'T' : 't'}he ${char.name[0]}` : char.name[namesLength - 1]
 }
 
 const checkOnDad = () => {
@@ -133,9 +135,9 @@ const checkOnDad = () => {
   } else {
     // Add some flavor every now and then.
     if (chance(1/4)) {
-      println(`There’s only ${disk.timer} minutes of oxygen left in your father’s tank. Perhaps you should just sit with him and talk?`)
+      println(`There’s only ${getApproximateTimeLeft()} minutes of oxygen left in your father’s tank. Perhaps you should just sit with him and talk?`)
     } else if (chance(1/5)) {
-      const whiteLie = Math.ceil(disk.timer / 10) * 10
+      const whiteLie = getApproximateTimeLeft(true)
       println('"How much oxygen do we have left?", your dad asks.')
       println(`"About ${whiteLie} minutes worth, dad. Maybe a bit more," you answer. But you know it’s less.`)
     }
@@ -253,7 +255,7 @@ Your heart sinks as precious oxygen starts leaking out into the room.`)
         {
           name: ['oxygen tank', 'gauge'],
           desc: 'It’s a big oxygen tank, strapped to a cart.',
-          onLook: () => println(`You${getEmotionAdverb()}check the gauge on the tank. There seems to be about ${disk.timer} minutes of oxygen left.`),
+          onLook: () => println(`You${getEmotionAdverb()}check the gauge on the tank. There seems to be about ${getApproximateTimeLeft()} minutes of oxygen left.`),
         },
         {
           name: 'phone',
@@ -439,84 +441,134 @@ A **receptionist** sits behind a huge, beige desk.`,
       topics: [
         {
           option: 'Ask for **oxygen**',
+          keyword: 'oxygen',
+          removeOnRead: true,
           line: () => `"Hi. I need an oxygen tank," you say. "I’ll pay for it, if that’s what you need. No questions asked."
 
 ${getName('receptionist')} looks up at you. "Does this look like a dive shop?" he snarks.
 
 You’re not off to a good start. It’s apparent you’ll need to try a different approach.`,
-          keyword: 'oxygen',
-          removeOnRead: true,
           onSelected: () => decreaseTimer(1),
         },
         {
           option: '**Ask** to speak to an administrator',
-          line: () => `"I want to speak to an administrator," you say sternly.
-
-${getName('receptionist')} shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
-
-"The administrator is busy," he mumbles.`,
           keyword: 'ask',
           prereqs: ['oxygen'],
           removeOnRead: true,
+          line: () => `"Can I please speak to an administrator?" you ask sternly.
+${getName('receptionist')} shuffles a few papers, restarts a lucky cat whose arm is slowing down somewhat, and picks up his phone again.
+"The administrator is busy," he mumbles.`,
           onSelected: () => decreaseTimer(2),
         },
         {
           option: '**Insist** on speaking to an administrator',
-          line: `"Put down your phone and look at me," you say in your most decisive tone.
-
-"I insist, I really need to speak to an administrator."`,
           keyword: 'insist',
           prereqs: ['oxygen'],
           removeOnRead: true,
-          onSelected: () => decreaseTimer(3),
+          line: () => `"Put down your phone and look at me," you say in your most decisive tone. "I insist, I __really__ need to speak to an administrator."
+${getName('receptionist')} ignores you completely at first, but after a few seconds he looks up. "Well, I __really__ need to get back to work," he says, smiling vacantly.`,
+          onSelected: () => decreaseTimer(2),
         },
         {
           option: '**Beg** to speak to an administrator',
-          line: `"Listen. I really need to see an administrator. I need oxygen, badly."
-"My father barely has any left in his tank."
-
-Then you add, "He is dying."`,
           keyword: 'beg',
           prereqs: ['oxygen'],
           removeOnRead: true,
-          onSelected: () => decreaseTimer(4),
+          line: () => `"Listen. I really need to see an administrator. I need oxygen, badly."
+"My father barely has any left in his tank."
+Then you add, "He is dying."
+
+${getName('receptionist')} shakes his head faux-emphatically. "Aren’t we all?" he sighs.`,
+          onSelected: () => decreaseTimer(1),
         },
         {
           option: '**Demand** to speak to a god damned administrator',
-          line: () => `You bang your fist on the desk. "Call up a god damned administrator," you cry out. "I’m not asking!"
-
-${getName('receptionist')} looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is André in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           keyword: 'demand',
           prereqs: ['ask', 'insist', 'beg'],
           removeOnRead: true,
+          line: () => `You bang your fist on the desk. "Call up a god damned administrator," you cry out. "I’m not asking!"
+
+${getName('receptionist')} looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is André in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           onSelected: () => {
-            decreaseTimer(8)
+            endConversation()
+            decreaseTimer(6)
             println(`After a few minutes, an elevator dings as the doors slide up.
 A woman in her late fifties or early sixties glides out of the elevator and walks up to you. She leans against the desk.
-"I’m the administrator," she says. "And you are?"`)
+"I’m the administrator," she says. "I am a __very__ busy woman."`)
             disk.characters.push(
               {
-                name: ['administrator', 'hospital administrator'],
+                name: ['administrator'],
                 roomId: 'hospital',
-                desc: 'The hospital administrator is a woman ash-blond hair and an uninviting smile. She, too, has a name tag. It reads "**Catrine**".',
+                desc: 'The hospital administrator is a (very busy) woman with ash-blond hair and an uninviting smile. She, too, has a name tag. It reads "**Catrine**".',
                 onLook: () => {
                   getCharacter('administrator').name.push('Catrine')
                 },
                 topics: [
                   {
                     option: '**Introduce** yourself',
-                    line: '',
                     keyword: 'introduce',
+                    removeOnRead: true,
+                    line: () => `"${
+                      getCharacter('administrator').chatLog.includes('oxygen')
+                        ? 'Sorry. '
+                        : ''
+                      }Hi. My name is..." you start. "Actually, my name is not important, I’m not a patient here, but... ${
+                      getCharacter('administrator').chatLog.includes('oxygen')
+                        ? ''
+                        : `Listen, my father has covid, his breathing is really bad and he only has about ${getApproximateTimeLeft()} minutes worth of oxygen left in his tank. `
+                      }I need a new tank, badly. Can you help me?"
+
+${getName('administrator')} eyes you up and down. "Look, I don’t know what Andrè told you, but we don’t just give away stuff to people."`,
                     onSelected: () => decreaseTimer(2),
                   },
                   {
                     option: 'Ask for **oxygen**',
-                    line: () => `"As I told, um, André here," you say, glancing at the receptionist’s name tag, "I’m in dire need of oxygen. My father has precious little left in his tank.
+                    keyword: 'oxygen',
+                    removeOnRead: true,
+                    line: () => `${
+                      getCharacter('administrator').chatLog.includes('introduce')
+                        ? ''
+                        : '"As I told, um, André here," you say, glancing at the receptionist’s name tag, '
+                      }"I’m in dire need of oxygen. My father has precious little left in his tank. Like ${getApproximateTimeLeft()} minutes.
 Please, can you help me?"
 
-${getName('administrator')} looks at you sullenly.`,
-                    keyword: 'oxygen',
-                    onSelected: () => decreaseTimer(4),
+${getName('administrator')} looks at you sullenly. "I’m not in the business of vendoring oxygen. I’m in the business of running a hospital."`,
+                    onSelected: () => decreaseTimer(2),
+                  },
+                  {
+                    option: '**Negotiate**',
+                    keyword: 'negotiate',
+                    removeOnRead: true,
+                    prereqs: ['introduce', 'oxygen'],
+                    line: () => `You take a deep breath. "Is there __anything__ I can do to persuade you? Anything?"
+"Frankly? No," ${getName('administrator', false)} sighs. "I want to help you, but we’re running out of oxygen ourselves. This whole situation is... Well, it’s fucked up if you pardon my french."`,
+                    onSelected: () => decreaseTimer(2),
+                  },
+                  {
+                    option: '**Fold**',
+                    keyword: 'fold',
+                    removeOnRead: true,
+                    prereqs: ['negotiate'],
+                    line: () => {
+                      const doctor = getRoom('doctor')
+                      const redcross = getRoom('redcross')
+                      let line = `You glance at your watch. It’s time to give up.`
+                      if (doctor.visits === 0) {
+                        line = `${line} You still haven’t tried the doctor’s office.`
+                      }
+                      if (doctor.visits === 0 && redcross.visits === 0) {
+                        line = `${line} Or the Red Cross.`
+                      } else if (redcross.visits === 0) {
+                        line = `${line} You still haven’t tried the Red Cross.`
+                      } else {
+                        line = `${line} You should probably get back to your father and spend the last few minutes with him.`  
+                      }
+                      println(line)
+                    },
+                    onSelected: () => {
+                      decreaseTimer(2)
+                      endConversation()
+                    },
                   },
                 ],
               },
