@@ -12,6 +12,7 @@ To output all Tera variables in code, add this:
 
 ## To do
 
+- [ ] Fix problem with missing spaces in text games
 - [ ] Make site work in Firefox Reader View
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
