@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v1.10.11
+
+- Don’t minify Oxygen Chase [`7eb2a3c`](../../commit/7eb2a3c08a43c90977ea5d88d189be2d584a9e56)
+- Add todo item [`0849c40`](../../commit/0849c40d3f3ac9979c7093d148e04e142f744dce)
+- Lenny’s: Add missing end quote [`cadd861`](../../commit/cadd861f6eca660179e0a96f7ef56532a648dfc7)
+
 ## v1.10.10
 
 - Oxygen Chase: Add getApproximateTimeLeft. Reorder hospital topics. Hospital location almost done [`c9a49a1`](../../commit/c9a49a1346984a89df4f6a050b4d6864b0ca1901)
