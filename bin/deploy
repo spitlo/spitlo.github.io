@@ -100,7 +100,6 @@ scripts=(
   "utils.mjs" \
   "lennys.mjs" \
   "engines/text-engine/index.js" \
-  "games/oxygen-chase/game.mjs" \
 )
 for script in "${scripts[@]}"; do
   mv "docs/$script" "docs/$script._"
