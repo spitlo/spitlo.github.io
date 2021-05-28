@@ -2,6 +2,18 @@
 
 This changelog is automatically generated.
 
+## v1.11.0
+
+- Add v1.11.x to changelog [`438b8af`](../../commit/438b8afee536e8e2157faa88e1ff003b860420ea)
+- Tick todo item [`f57f8ba`](../../commit/f57f8ba64398105ba4be859bf79e01ac3fb7ebda)
+- Dark mode: Override in dotmatrix mode [`8def1de`](../../commit/8def1decee1b8ee0c5b32eb1158fdbfbdd4d9fbf)
+- Dark mode: Most colors done [`32d354f`](../../commit/32d354fa71bc63d75a46c33842f3008938ee20f7)
+- Dark mode: Search input and crumb colors [`76ecd88`](../../commit/76ecd8845523ff96d81b1d8a14ce716bdd89cfc7)
+- Dark mode: Footer colors [`14ba57e`](../../commit/14ba57ee79a7a8de95256354c19355f5710d2a43)
+- Dark mode: Table colors [`7417ab8`](../../commit/7417ab8e53766547711f71e68d2454ece9deca7e)
+- Dark mode: Code and meta color [`e980cc4`](../../commit/e980cc4f46b1e796e175af4f1dc0dd2afb185f86)
+- Dark mode WIP [`f270be5`](../../commit/f270be5a1e6b72e9a11f884386d1e61b7dfb5e00)
+
 ## v1.10.12
 
 - Try to enable Ffx Reader View without forsaking C.O.P [`14f60b5`](../../commit/14f60b5d2ce02297c0c4f0eb7362e5605ae187c0)
