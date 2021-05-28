@@ -35,6 +35,9 @@ $linkPurple: rgb(0, 0, 238);
   --table-bgcolor-odd: #{$mutedPinkTransparent};
   --table-bgcolor-even: #{$lightWhite};
   --table-color: #{$black};
+  --input-bgcolor: #{$white};
+  --input-color: #{$black};
+  --crumb-bordercolor: #{$darkGray};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,6 +55,9 @@ $linkPurple: rgb(0, 0, 238);
     --table-bgcolor-odd: #{$blueGray};
     --table-bgcolor-even: #{$darkGray};
     --table-color: #{$white};
+    --input-bgcolor: #{$gray};
+    --input-color: #{$black};
+    --crumb-bordercolor: #{$mutedPinkTransparent};
   }
 }
 

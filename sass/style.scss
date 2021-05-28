@@ -213,7 +213,7 @@ main {
       padding: 1px 6px;
       display: inline-block;
       margin-bottom: 6px;
-      background-color: $darkGray;
+      background-color: var(--crumb-bordercolor);
       color: $white;
       text-decoration: none;
       font-family: $paragraphFont;
@@ -226,7 +226,7 @@ main {
         border-width: 1px;
         border-style: solid;
         background-color: unset;
-        color: $darkGray;
+        color: var(--crumb-bordercolor);
       }
     }
 
