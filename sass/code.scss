@@ -59,7 +59,7 @@ ul.meta {
   }
 
   .label {
-    color: $blue;
+    color: var(--meta-color);
     padding: 0 3px;
     text-transform: uppercase;
 

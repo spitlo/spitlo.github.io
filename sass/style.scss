@@ -469,7 +469,8 @@ code, pre {
   font-family: $paragraphFont;
   font-size: 1em;
   font-weight: 300;
-  background-color: $mutedPink;
+  color: var(--code-color);
+  background-color: var(--code-bgcolor);
   padding: 0 5px;
 }
 

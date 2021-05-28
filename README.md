@@ -12,7 +12,7 @@ To output all Tera variables in code, add this:
 
 ## To do
 
-- [ ] (Sigh) Dark mode
+- [ ] (Sigh) Dark mode (Override in dotmatrix mode?)
 - [ ] Make site work in Firefox Reader View
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon

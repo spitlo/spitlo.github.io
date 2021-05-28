@@ -28,6 +28,9 @@ $linkPurple: rgb(0, 0, 238);
   --link-visited: #{$linkPurple};
   --box-bg: #{$lightWhite};
   --box-shadow: #{$mutedPinkTransparent};
+  --code-bgcolor: #{$mutedPink};
+  --code-color: #{$black};
+  --meta-color: #{$blue};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +41,9 @@ $linkPurple: rgb(0, 0, 238);
     --link-visited: #{$dirtyYellow};
     --box-bg: #{$honeydew};
     --box-shadow: rgba(14, 7, 12, .5);
+    --code-bgcolor: #{$blue};
+    --code-color: #{$lightSeagreen};
+    --meta-color: #{$aquamarine};
   }
 }
 
