@@ -302,6 +302,14 @@ footer {
   background-position: right -2em bottom -2em;
   transition: background-position 0.3s;
 
+  a {
+    color: $lightBrown;
+
+    &:visited {
+      color: $lightBrown;
+    }
+  }
+
   .details,
   .credits {
     max-width: 70rem;
@@ -335,10 +343,6 @@ footer {
     margin: 0 auto;
     padding: 1rem;
     font-size: .9em;
-
-    a:visited {
-      color: $lightBrown;
-    }
 
     .link {
       display: inline-block;
