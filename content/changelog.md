@@ -8,6 +8,10 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
 
+## v1.11.x _(2021-05-28)_
+
+- Add dark mode, enabled if user’s system is in dark mode (no toggle)
+
 ## v1.10.x _(2021-05-13)_
 
 - Added a microgame, 'Lenny’s E-game Emporium', as [game menu](/games/)
