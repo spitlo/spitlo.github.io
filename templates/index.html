@@ -11,6 +11,13 @@
       document.documentElement.classList.remove('noJS');
       document.documentElement.classList.add('js');
     </script>
+    
+    <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
+
+    {% if page.title %}
+      {#  This is for Firefox Reader View #}
+      <meta property="dc:title" content="{{ page.title }}">
+    {% endif %}
 
     {% if current_path %}
       {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ") %}
@@ -30,8 +37,6 @@
     {% elif section and section.description %}
       <meta name="description" content="{{ section.description }}">
     {% endif %}
-
-    <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
 
     {% if config.generate_feed %}
       <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ get_url(path="atom.xml", trailing_slash=false) | safe }}">

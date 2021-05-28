@@ -1,101 +1,103 @@
 {% extends "index.html" %}
 
 {% block content %}
-  <h1>{{ page.title }}</h1>
+  <article>
+    <h1>{{ page.title }}</h1>
 
-  {% if not page.extra.no_meta %}
-    <ul class="meta">
-      {% if page.date %}
-        <li class="metaUnit">
-          <span class="label">Date:</span>
-          <time class="date" datetime="{{ page.date }}">
-            {{ page.date | date(format="%Y-%m-%d") }}
-          </time>
-        </li>
-      {% endif %}
-      {% if page.word_count %}
-        <li class="metaUnit">
-          <span class="label">Words:</span>
-          <span class="words">
-            {{ page.word_count }}
-          </span>
-        </li>
-      {% endif %}
-      {% if page.taxonomies %}
-        {% if page.taxonomies.technologies %}
+    {% if not page.extra.no_meta %}
+      <ul class="meta">
+        {% if page.date %}
           <li class="metaUnit">
-            <span class="label">Tech:</span>
-            <span class="taxonomy">
-              {% for tech in page.taxonomies.technologies %}
-                <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
-              {% endfor %}
-            </span>
-          </li>
-        {% endif %}
-        {% if page.taxonomies.categories %}
-          <li class="metaUnit">
-            <span class="label">Categories:</span>
-            <span class="taxonomy">
-              {% for cat in page.taxonomies.categories %}
-                <a href="/categories/{{cat | slugify }}">{{ cat }}</a>{% if not loop.last %}, {% endif %}
-              {% endfor %}
-            </span>
-          </li>
-        {% endif %}
-      {% endif %}
-      {% if page.extra and page.extra.repo %}
-        <br>
-        <li class="metaUnit">
-          <span class="label">Repo:</span>
-          <span class="repo">
-            <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
-          </span>
-        </li>
-        {% if page.extra.first_commit %}
-          <li class="metaUnit">
-            <span class="label">First commit:</span>
-            <time class="commit" datetime="{{ page.extra.first_commit }}">
-              {{ page.extra.first_commit | date(format="%Y-%m-%d") }}
+            <span class="label">Date:</span>
+            <time class="date" datetime="{{ page.date }}">
+              {{ page.date | date(format="%Y-%m-%d") }}
             </time>
           </li>
         {% endif %}
-      {% endif %}
-    </ul>
-  {% endif %}
-
-  {% if page.word_count > 500 %}
-    <details class="toc">
-      <summary>Table of contents</summary>
-      <ol>
-        {% for h1 in page.toc %}
-          <li>
-            <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
-            {% if h1.children %}
-              <ol>
-                {% for h2 in h1.children %}
-                  <li>
-                    <a href="{{h2.permalink | safe}}">{{ h2.title }}</a>
-                  </li>
-                {% endfor %}
-              </ol>
-            {% endif %}
+        {% if page.word_count %}
+          <li class="metaUnit">
+            <span class="label">Words:</span>
+            <span class="words">
+              {{ page.word_count }}
+            </span>
           </li>
-        {% endfor %}
-      </ol>
-    </details>
-  {% endif %}
+        {% endif %}
+        {% if page.taxonomies %}
+          {% if page.taxonomies.technologies %}
+            <li class="metaUnit">
+              <span class="label">Tech:</span>
+              <span class="taxonomy">
+                {% for tech in page.taxonomies.technologies %}
+                  <a href="/technologies/{{tech | slugify }}">{{ tech }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+              </span>
+            </li>
+          {% endif %}
+          {% if page.taxonomies.categories %}
+            <li class="metaUnit">
+              <span class="label">Categories:</span>
+              <span class="taxonomy">
+                {% for cat in page.taxonomies.categories %}
+                  <a href="/categories/{{cat | slugify }}">{{ cat }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+              </span>
+            </li>
+          {% endif %}
+        {% endif %}
+        {% if page.extra and page.extra.repo %}
+          <br>
+          <li class="metaUnit">
+            <span class="label">Repo:</span>
+            <span class="repo">
+              <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
+            </span>
+          </li>
+          {% if page.extra.first_commit %}
+            <li class="metaUnit">
+              <span class="label">First commit:</span>
+              <time class="commit" datetime="{{ page.extra.first_commit }}">
+                {{ page.extra.first_commit | date(format="%Y-%m-%d") }}
+              </time>
+            </li>
+          {% endif %}
+        {% endif %}
+      </ul>
+    {% endif %}
 
-  {{ page.content | safe }}
+    {% if page.word_count > 500 %}
+      <details class="toc">
+        <summary>Table of contents</summary>
+        <ol>
+          {% for h1 in page.toc %}
+            <li>
+              <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
+              {% if h1.children %}
+                <ol>
+                  {% for h2 in h1.children %}
+                    <li>
+                      <a href="{{h2.permalink | safe}}">{{ h2.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ol>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+      </details>
+    {% endif %}
 
-  {% if page.earlier or page.later %}
-    <br>
-    <nav class="pager">
-      {% if page.earlier %}
-        <a href="{{ page.earlier.permalink }}" rel="prev">{{ page.earlier.title }}</a>
-      {% endif %}
-      {% if page.later %}
-        <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }}</a>
-      {% endif %}
-    </nav>
-  {% endif %}
+    {{ page.content | safe }}
+
+    {% if page.earlier or page.later %}
+      <br>
+      <nav class="pager">
+        {% if page.earlier %}
+          <a href="{{ page.earlier.permalink }}" rel="prev">{{ page.earlier.title }}</a>
+        {% endif %}
+        {% if page.later %}
+          <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }}</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  </article>
 {% endblock content %}
