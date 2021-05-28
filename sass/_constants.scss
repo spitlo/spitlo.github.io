@@ -26,7 +26,7 @@ $linkPurple: rgb(0, 0, 238);
   --site-color: #{$black};
   --link: #{$linkBlue};
   --link-visited: #{$linkPurple};
-  --box-bg: #{$lightWhite};
+  --box-bgcolor: #{$lightWhite};
   --box-shadow: #{$mutedPinkTransparent};
   --code-bgcolor: #{$mutedPink};
   --code-color: #{$black};
@@ -38,6 +38,12 @@ $linkPurple: rgb(0, 0, 238);
   --input-bgcolor: #{$white};
   --input-color: #{$black};
   --crumb-bordercolor: #{$darkGray};
+  --search-bgcolor: #{$lightSeagreen};
+  --search-color: #{$black};
+  --search-hovercolor: #{$aquamarine};
+  --alert-bgcolor: #{$mutedPink};
+  --h1-underlinecolor: #{$black};
+  --taxonomy-hightlight: #{$honeydew};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,7 +52,7 @@ $linkPurple: rgb(0, 0, 238);
     --site-color: #{$white};
     --link: #{$lightSeagreen};
     --link-visited: #{$dirtyYellow};
-    --box-bg: #{$honeydew};
+    --box-bgcolor: #{$honeydew};
     --box-shadow: rgba(14, 7, 12, .5);
     --code-bgcolor: #{$blue};
     --code-color: #{$lightSeagreen};
@@ -58,6 +64,12 @@ $linkPurple: rgb(0, 0, 238);
     --input-bgcolor: #{$gray};
     --input-color: #{$black};
     --crumb-bordercolor: #{$mutedPinkTransparent};
+    --search-bgcolor: #{$blue};
+    --search-color: #{$white};
+    --search-hovercolor: #{$clearBlue};
+    --alert-bgcolor: #{$orange};
+    --h1-underlinecolor: #{$orange};
+    --taxonomy-hightlight: #{$lightSeagreen};
   }
 }
 

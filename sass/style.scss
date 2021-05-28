@@ -420,7 +420,7 @@ h1 {
   font-weight: bold;
   font-style: normal;
   font-size: 4.2em;
-  border-bottom: 7px solid $black;
+  border-bottom: 7px solid var(--h1-underlinecolor);
   display: inline-block;
   margin: .8em 0;
 
@@ -581,7 +581,7 @@ td:nth-child(1) {
   font-weight: bold;
   max-width: 45rem;
   padding: 1em;
-  background-color: $mutedPink;
+  background-color: var(--alert-bgcolor);
 
   &.critical {
     color: $white;

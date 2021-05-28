@@ -15,11 +15,12 @@ ul.taxonomy {
   li {
     padding: .8em;
     padding-top: .4em;
-    background-color: $lightWhite;
+    background-color: var(--box-bgcolor);
     border-top: 1px dashed $lightSeagreen;
     border-left: 1px dashed $lightSeagreen;
     border-radius: 7px;
-    box-shadow: 5px 5px $black, 2px 2px 17px 17px $mutedPinkTransparent;
+    box-shadow: 5px 5px $black, 2px 2px 17px 17px var(--box-shadow);
+    color: $black;
 
     a {
       text-decoration: none;
@@ -30,7 +31,7 @@ ul.taxonomy {
       width: 100%;
       border-bottom: 1px dashed $orange;
       padding: .8em;
-      background-color: $lightWhite;
+      // background-color: var(--box-bgcolor);
     }
 
     .content {
@@ -39,7 +40,7 @@ ul.taxonomy {
       border-color: $blueGray;
       border-top: 0;
       padding: .6em;
-      background-color: $lightWhite;
+      // background-color: var(--box-bgcolor);
       padding-bottom: 0;
 
       a.continue {
@@ -64,7 +65,7 @@ ul.taxonomy {
 
       .taxonomy {
         padding: 0 6px;
-        background-color: $honeydew;
+        background-color: var(--taxonomy-hightlight);
       }
     }
   }

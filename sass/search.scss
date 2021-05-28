@@ -26,7 +26,8 @@
 #searchResults {
   display: none;
   position: absolute;
-  background-color: $lightSeagreen;
+  background-color: var(--search-bgcolor);
+  color: var(--search-color);
   font-size: .8rem;
   padding: 0;
   margin: 0;
@@ -44,7 +45,7 @@
       border-bottom: 1px dashed $white;
 
       &:hover {
-        background-color: $aquamarine;
+        background-color: var(--search-hovercolor);
 
         .title {
           color: $blueGray;
@@ -52,7 +53,7 @@
       }
 
       &.selected {
-        background-color: $aquamarine;
+        background-color: var(--search-hovercolor);
 
         .title {
           color: $blueGray;
