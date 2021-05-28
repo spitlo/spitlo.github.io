@@ -31,6 +31,10 @@ $linkPurple: rgb(0, 0, 238);
   --code-bgcolor: #{$mutedPink};
   --code-color: #{$black};
   --meta-color: #{$blue};
+  --table-accentcolor: #{$mutedPink};
+  --table-bgcolor-odd: #{$mutedPinkTransparent};
+  --table-bgcolor-even: #{$lightWhite};
+  --table-color: #{$black};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +48,10 @@ $linkPurple: rgb(0, 0, 238);
     --code-bgcolor: #{$blue};
     --code-color: #{$lightSeagreen};
     --meta-color: #{$aquamarine};
+    --table-accentcolor: #{$blue};
+    --table-bgcolor-odd: #{$blueGray};
+    --table-bgcolor-even: #{$darkGray};
+    --table-color: #{$white};
   }
 }
 

@@ -336,6 +336,10 @@ footer {
     padding: 1rem;
     font-size: .9em;
 
+    a:visited {
+      color: $lightBrown;
+    }
+
     .link {
       display: inline-block;
       margin: 1em 2.4em 0 0;
@@ -542,12 +546,13 @@ thead {
 }
 
 tbody {
-  background-color: $lightWhite;
+  color: var(--table-color);
+  background-color: var(--table-bgcolor-odd);
   font-family: $paragraphFont;
   white-space: nowrap;
 
   tr:nth-child(odd) {
-    background-color: $mutedPinkTransparent;
+    background-color: var(--table-bgcolor-even);
   }
 }
 
@@ -563,7 +568,7 @@ td {
 td:nth-child(1) {
   font-weight: bold;
   white-space: nowrap;
-  background-color: $mutedPink;
+  background-color: var(--table-accentcolor);
 }
 
 .alert {
