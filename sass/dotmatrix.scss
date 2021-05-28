@@ -3,6 +3,7 @@
 body.dotmatrix {
   font-size: .8rem!important;
   background-image: none!important;
+  background-color: $white;
 
   header#top,
   // nav.breadcrumbs,
@@ -14,9 +15,26 @@ body.dotmatrix {
   a {
     color: $black;
 
+    &:visited {
+      color: $black;
+    }
+
     // &:after {
     //   content: "["attr(href)"]"
     // }
+  }
+
+  * {
+    color: $black;
+    background-color: $white;
+  }
+
+  #commandLine,
+  #commandLineHints {
+    span {
+      background-color: $black;
+      color: $aquamarine;
+    }
   }
 
   code, pre {
@@ -161,7 +179,7 @@ body.dotmatrix {
   }
 }
 
-@media dotmatrix {
+@media print {
   #commandLine,
   #commandLineHints {
     display: none;
