@@ -14,13 +14,14 @@
 
     li {
       padding: .8em;
-      background-color: $lightWhite;
+      background-color: var(--box-bg);
       border-top: 1px dashed $lightSeagreen;
       border-left: 1px dashed $lightSeagreen;
       border-radius: 7px;
-      box-shadow: 5px 5px $black, 2px 2px 17px 17px $mutedPinkTransparent;
+      box-shadow: 5px 5px $black, 2px 2px 17px 17px var(--box-shadow);
 
       .excerpt {
+        color: $black;
         padding: 0 5px;
       }
 

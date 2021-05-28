@@ -17,6 +17,30 @@ $orange: #b55603;
 $red: #e30000;
 $white: #fffcfc;
 
+$linkBlue: rgb(85, 26, 139);
+$linkPurple: rgb(0, 0, 238);
+
+// Theme
+:root {
+  --site-bgcolor: #{$white};
+  --site-color: #{$black};
+  --link: #{$linkBlue};
+  --link-visited: #{$linkPurple};
+  --box-bg: #{$lightWhite};
+  --box-shadow: #{$mutedPinkTransparent};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --site-bgcolor: #{$darkGray};
+    --site-color: #{$white};
+    --link: #{$lightSeagreen};
+    --link-visited: #{$dirtyYellow};
+    --box-bg: #{$honeydew};
+    --box-shadow: rgba(14, 7, 12, .5);
+  }
+}
+
 // Fonts
 $headerFont: "Gangster Grotesk", Helvetica, sans-serif;
 $paragraphFont: "Victor Mono", "Courier New", monospace;
