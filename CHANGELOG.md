@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.10.12
+
+- Try to enable Ffx Reader View without forsaking C.O.P [`14f60b5`](../../commit/14f60b5d2ce02297c0c4f0eb7362e5605ae187c0)
+- Add todo item [`8dc36d1`](../../commit/8dc36d1061fb86ec0fa693fb19c4c15b730276b5)
+
 ## v1.10.11
 
 - Don’t minify Oxygen Chase [`7eb2a3c`](../../commit/7eb2a3c08a43c90977ea5d88d189be2d584a9e56)
