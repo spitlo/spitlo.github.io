@@ -4,6 +4,7 @@ import{nms}from'./utils.mjs';const $bottom=document.getElementById('bottom')
 const $commandLine=document.getElementById('commandLine')
 const $commandLineHint=document.getElementById('commandLineHints')
 const $help=document.getElementById('help')
+const $main=document.getElementsByTagName('main')[0]
 const $player=document.getElementById('player')
 const $questionMark=document.getElementById('questionMark')
 const $scrambled=document.getElementsByClassName('scrambled')
@@ -22,6 +23,7 @@ const commands={help:()=>{const helpMessage=`
 <code>pause</code> Pause player<br>
 <code>prev</code>/<code>next</code> Previous/next song in playlist<br>
 <code>games</code> Show the games "menu"<br>
+<code>ajour (beta)</code> Open my feed reader in an iframe<br>
 <code>help</code> Show this message<br>
 Commands are tab completable. Type <code>:</code> to try a command.
 `
@@ -56,7 +58,10 @@ const gameFrame=document.createElement('iframe')
 gameFrame.setAttribute('src','/games/')
 document.body.appendChild(gameWrapper)
 gameWrapper.appendChild(gameFrame)
-gameWrapper.addEventListener('click',()=>{if(confirm('Are you sure? Have you saved?')){gameWrapper.remove()}})},}
+gameWrapper.addEventListener('click',()=>{if(confirm('Are you sure? Have you saved?')){gameWrapper.remove()}})},ajour:()=>{const ajourFrame=document.createElement('iframe')
+ajourFrame.setAttribute('src','https://spitlo.com/ajour/')
+ajourFrame.id='ajour'
+$main.appendChild(ajourFrame)},}
 const navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/',}
 const pressed={'ctrlKey':false,}
 function findPartialMatch(stack,needle){if(needle.substring(0,1)==='_'){return}
