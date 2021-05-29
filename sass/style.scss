@@ -537,7 +537,7 @@ details.toc {
 
 table {
   border-collapse: collapse;
-  border: 1px solid $lightBrown;
+  border-right: 1px solid var(--table-bgcolor-odd);
   max-width: 55rem;
   overflow-x: auto;
   width: 100%;
@@ -566,8 +566,8 @@ th, td {
 }
 
 td {
-  border-left: 1px solid $mutedPink;
-  border-bottom: 1px solid $mutedPink;
+  border-left: 1px solid var(--table-accentcolor);
+  border-bottom: 1px solid var(--table-accentcolor);
 }
 
 td:nth-child(1) {
