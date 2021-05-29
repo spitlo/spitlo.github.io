@@ -139,7 +139,8 @@ html.noJS {
       z-index: 1;
 
       &::placeholder {
-        color: $gray;
+        color: var(--search-placeholder);
+        opacity: 1;
       }
     }
 
