@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v1.11.1
+
+- Add command 'ajour', pretty beta but works ok [`3ef82df`](../../commit/3ef82df449a37d5f290e8e95124ad452974c7a62)
+- Change search placeholder color on mobile [`82c7a81`](../../commit/82c7a812aa4e4cf6ce4d7d0777db9f9b2e28d08a)
+- Update Snippetizer article [`3a3d2af`](../../commit/3a3d2afa938a9eaaa0cc1817157fee54c4d4d7c4)
+
 ## v1.11.0
 
 - Add v1.11.x to changelog [`438b8af`](../../commit/438b8afee536e8e2157faa88e1ff003b860420ea)
