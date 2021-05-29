@@ -52,11 +52,6 @@ ul.taxonomy {
           display: inline-block;
           margin-left: 2px;
         }
-        &:hover {
-          &::after {
-            animation: linkArrowsB .5s linear infinite;
-          }
-        }
       }
 
       p {
@@ -66,6 +61,26 @@ ul.taxonomy {
       .taxonomy {
         padding: 0 6px;
         background-color: var(--taxonomy-hightlight);
+      }
+    }
+  }
+
+  &.categories {
+    .content a.continue {
+      &:hover {
+        &::after {
+          animation: linkArrowsB .5s linear infinite;
+        }
+      }
+    }
+  }
+
+  &.technologies {
+    .content a.continue {
+      &:hover {
+        &::after {
+          animation: linkArrowsC .8s linear infinite;
+        }
       }
     }
   }

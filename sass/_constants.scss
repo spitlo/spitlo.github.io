@@ -22,55 +22,55 @@ $linkPurple: rgb(0, 0, 238);
 
 // Theme
 :root {
-  --site-bgcolor: #{$white};
-  --site-color: #{$black};
-  --link: #{$linkBlue};
-  --link-visited: #{$linkPurple};
+  --alert-bgcolor: #{$mutedPink};
   --box-bgcolor: #{$lightWhite};
   --box-shadow: #{$mutedPinkTransparent};
   --code-bgcolor: #{$mutedPink};
   --code-color: #{$black};
-  --meta-color: #{$blue};
-  --table-accentcolor: #{$mutedPink};
-  --table-bgcolor-odd: #{$mutedPinkTransparent};
-  --table-bgcolor-even: #{$lightWhite};
-  --table-color: #{$black};
+  --crumb-bordercolor: #{$darkGray};
+  --h1-underlinecolor: #{$black};
   --input-bgcolor: #{$white};
   --input-color: #{$black};
-  --crumb-bordercolor: #{$darkGray};
+  --link-visited: #{$linkPurple};
+  --link: #{$linkBlue};
+  --meta-color: #{$blue};
   --search-bgcolor: #{$lightSeagreen};
   --search-color: #{$black};
   --search-hovercolor: #{$aquamarine};
   --search-placeholder: #{$gray};
-  --alert-bgcolor: #{$mutedPink};
-  --h1-underlinecolor: #{$black};
+  --site-bgcolor: #{$white};
+  --site-color: #{$black};
+  --table-accentcolor: #{$mutedPink};
+  --table-bgcolor-even: #{$lightWhite};
+  --table-bgcolor-odd: #{$mutedPinkTransparent};
+  --table-color: #{$black};
   --taxonomy-hightlight: #{$honeydew};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --site-bgcolor: #{$darkGray};
-    --site-color: #{$white};
-    --link: #{$lightSeagreen};
-    --link-visited: #{$dirtyYellow};
+    --alert-bgcolor: #{$orange};
     --box-bgcolor: #{$honeydew};
     --box-shadow: rgba(14, 7, 12, .2);
     --code-bgcolor: #{$blue};
     --code-color: #{$lightSeagreen};
-    --meta-color: #{$aquamarine};
-    --table-accentcolor: #{$blue};
-    --table-bgcolor-odd: #{$blueGray};
-    --table-bgcolor-even: #{$darkGray};
-    --table-color: #{$white};
+    --crumb-bordercolor: #{$mutedPinkTransparent};
+    --h1-underlinecolor: #{$orange};
     --input-bgcolor: #{$gray};
     --input-color: #{$black};
-    --crumb-bordercolor: #{$mutedPinkTransparent};
+    --link-visited: #{$dirtyYellow};
+    --link: #{$lightSeagreen};
+    --meta-color: #{$aquamarine};
     --search-bgcolor: #{$blue};
     --search-color: #{$white};
     --search-hovercolor: #{$clearBlue};
     --search-placeholder: #{$lightWhite};
-    --alert-bgcolor: #{$orange};
-    --h1-underlinecolor: #{$orange};
+    --site-bgcolor: #{$darkGray};
+    --site-color: #{$white};
+    --table-accentcolor: #{$blue};
+    --table-bgcolor-even: #{$darkGray};
+    --table-bgcolor-odd: #{$blueGray};
+    --table-color: #{$white};
     --taxonomy-hightlight: #{$lightSeagreen};
   }
 }
@@ -106,18 +106,23 @@ $paragraphFont: "Victor Mono", "Courier New", monospace;
   }
 }
 
-// This is just weird
 @keyframes linkArrowsC {
   0% {
-    content: "> 〉〉";
+    content: ">";
   }
-  25% {
-    content: "| > 〉";
+  20% {
+    content: "\00a0〉";
   }
-  75% {
-    content: "〉〉>";
+  40% {
+    content: "\00a0\00a0|";
+  }
+  60% {
+    content: "\00a0\00a0\00a0〉";
+  }
+  80% {
+    content: "\00a0\00a0\00a0\00a0>";
   }
   100% {
-    content: "〉〉〉-";
+    content: "\00a0\00a0\00a0\00a0\00a0-";
   }
 }
