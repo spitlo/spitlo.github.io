@@ -644,7 +644,7 @@ dd {
         display: inline;
 
         a {
-          color: $black;
+          color: var(--site-color);
           text-decoration: none;
         }
       }
