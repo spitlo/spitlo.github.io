@@ -21,4 +21,15 @@ if(loop){if(diff<scrambleMillieconds/3){a.innerText=getScrambledString(source)}e
 a.innerHTML=charArray.join('')}}else{unscrambleString(true)
 a.innerHTML=charArray.join('')
 clearInterval(loopInterval)}},intervalMilliseconds)}
-export{nms}
+const getCookie=(name)=>{const localName=`${name}=`
+const cookieString=decodeURIComponent(document.cookie)
+const cookies=cookieString.split(';')
+for(let i=0;i<cookies.length;i++){const cookie=cookies[i].trim()
+if(cookie.startsWith(localName)){return cookie.substring(localName.length,cookie.length)}}
+return''}
+const setCookie=(name,value,days)=>{let expires
+if(days){const date=new Date()
+date.setTime(date.getTime()+(days*24*60*60*1000))
+expires=`; expires=${date.toGMTString()}`}else{expires=''}
+document.cookie=`${name}=${value}${expires}; path=/`}
+export{nms,getCookie,setCookie}
