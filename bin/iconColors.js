@@ -4,11 +4,19 @@ const fs = require('fs')
 const url = 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json'
 const iconFolder = './static/icons/simple/'
 
-const slugify = (string) => string.replace('’', '').replace(/[^A-Za-z0-9]/, '-').toLowerCase()
+const slugify = (string) => string.replace('’', '').replace(/[^A-Za-z0-9]/, '').toLowerCase()
 
 const slugMap = {
-  'let-s-encrypt': 'lets-encrypt',
-  'gog-dot-com': 'gog-com',
+  'bash': 'gnubash',
+  'creative-commons': 'creativecommons',
+  'github-actions': 'githubactions',
+  'godot-engine': 'godotengine',
+  'gog-dot-com': 'gogcom',
+  'let-s-encrypt': 'letsencrypt',
+  'raspberry-pi': 'raspberrypi',
+  'ren-py': 'renpy',
+  'rollup-dot-js': 'rollupjs',
+  'simple-icons': 'simpleicons',
 }
 
 https.get(url,(res) => {
@@ -23,6 +31,7 @@ https.get(url,(res) => {
     try {
       const iconData = JSON.parse(body)
       fs.readdirSync(iconFolder).forEach(icon => {
+        // console.log(icon)
         const localIcon = icon.replace('.svg', '')
         const iconObject = iconData.icons.find((iconObject) => {
           const iconSlug = slugify(iconObject.title)

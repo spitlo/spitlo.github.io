@@ -4,7 +4,7 @@ description = "Various configs, scripts and aliases"
 date = 2020-11-26
 
 [taxonomies]
-technologies = ["Shell", "Python", "Perl", "JavaScript"]
+technologies = ["Bash", "Python", "Perl", "JavaScript"]
 categories = ["Work in Progress"]
 
 [extra]

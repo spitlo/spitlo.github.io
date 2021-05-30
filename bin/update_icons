@@ -1,0 +1,73 @@
+# This needs some work
+
+ICON_FOLDER="./static/icons/simple/"
+URL_BASE="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/"
+
+icons=(
+	"android" \
+	"arduino" \
+	"aseprite" \
+	"babel" \
+	"gnubash" \
+	"creativecommons" \
+	"curl" \
+	"deno" \
+	"digitalocean" \
+	"docker" \
+	"eslint" \
+	"ffmpeg" \
+	"flutter" \
+	"fortran" \
+	"gatsby" \
+	"git" \
+	"github" \
+	"githubactions" \
+	"godotengine" \
+	"gog-dot-com" \
+	"graphql" \
+	"html5" \
+	"javascript" \
+	"letsencrypt" \
+	"lineageos" \
+	"linux" \
+	"lua" \
+	"manjaro" \
+	"markdown" \
+	"mongodb" \
+	"nextcloud" \
+	"nginx" \
+	"nim" \
+	"perl" \
+	"php" \
+	"postgresql" \
+	"prettier" \
+	"protonmail" \
+	"protonvpn" \
+	"python" \
+	"raspberrypi" \
+	"react" \
+	"redis" \
+	"renpy" \
+	"rollup-dot-js" \
+	"rss" \
+	"rust" \
+	"sass" \
+	"shopify" \
+	"simpleicons" \
+	"svelte" \
+	"svg" \
+	"svgo" \
+	"threema" \
+	"typescript" \
+	"ubuntu" \
+	"vercel" \
+	"wordpress" \
+	"xfce" \
+)
+
+for icon in "${icons[@]}"; do
+	icon_url="${URL_BASE}${icon}.svg"
+	icon_path="${ICON_FOLDER}${icon}.svg"
+	rm "$icon_path"
+	wget "$icon_url" --directory-prefix "$ICON_FOLDER"
+done

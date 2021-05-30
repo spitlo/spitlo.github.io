@@ -4,7 +4,7 @@ description = "A pretty basic client for Gemini, written for Deno"
 date = 2020-11-16
 
 [taxonomies]
-technologies = ["Deno", "TypeScript", "Shell"]
+technologies = ["Deno", "TypeScript", "Bash"]
 
 [extra]
 repo = "https://github.com/spitlo/mercuriceratops"

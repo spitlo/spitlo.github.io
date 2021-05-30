@@ -4,7 +4,7 @@ description = "Develop locally with real https certificates"
 date = 2020-12-01
 
 [taxonomies]
-technologies = ["Shell", "Let’s Encrypt"]
+technologies = ["Bash", "Let’s Encrypt"]
 
 [extra]
 repo = "https://github.com/spitlo/firetrak"

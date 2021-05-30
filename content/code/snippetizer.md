@@ -4,7 +4,7 @@ description = "Make audio snippets quickly"
 date = 2021-03-26
 
 [taxonomies]
-technologies = ["Shell"]
+technologies = ["Bash", "FFmpeg"]
 
 [extra]
 repo = "https://github.com/spitlo/snippetizer"

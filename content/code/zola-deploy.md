@@ -4,7 +4,7 @@ description = "Deploy Zola from GitHub (fork)"
 date = 2020-11-26
 
 [taxonomies]
-technologies = ["Docker", "Shell", "GitHub Actions"]
+technologies = ["Docker", "Bash", "GitHub Actions"]
 
 [extra]
 repo = "https://github.com/spitlo/zola-deploy-action"

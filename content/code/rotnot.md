@@ -4,7 +4,7 @@ description = "Set root note for multi-samples"
 date = 2020-12-06
 
 [taxonomies]
-technologies = ["JavaScript", "Shell"]
+technologies = ["JavaScript", "Bash"]
 
 [extra]
 repo = "https://github.com/spitlo/rotnot"
