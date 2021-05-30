@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.11.3
+
+- Add commands to set dark/light theme and save in cookie. Add confirm dialog [`b6962f1`](../../commit/b6962f17dbbfb1a7ca835a815cdbb0abe84d7cf5)
+
 ## v1.11.2
 
 - Update Simple Icons [`a7a6a01`](../../commit/a7a6a01d73bb6b7af5e5107c2a0f29ef28c637d1)
