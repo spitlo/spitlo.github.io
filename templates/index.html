@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
+    <link rel="modulepreload" href="/utils.mjs">
+
     <script type="module">
-      document.documentElement.classList.remove('noJS');
-      document.documentElement.classList.add('js');
+      import { getCookie } from '/utils.mjs'
+      // Set js class on <html>
+      document.documentElement.classList.remove('noJS')
+      document.documentElement.classList.add('js')
+      // Check if user has saved a theme preference
+      const theme = getCookie('theme')
+      if (theme === 'light') {
+        document.documentElement.classList.add('light')
+      } else if (theme === 'dark') {
+        document.documentElement.classList.add('dark')
+      }
     </script>
     
     <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>

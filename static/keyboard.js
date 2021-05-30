@@ -1,9 +1,10 @@
-import { nms } from './utils.mjs';
+import { getCookie, nms, setCookie } from './utils.mjs';
 
 const $bottom = document.getElementById('bottom')
 const $commandLine = document.getElementById('commandLine')
 const $commandLineHint = document.getElementById('commandLineHints')
 const $help = document.getElementById('help')
+const $html = document.getElementsByTagName('html')[0]
 const $main = document.getElementsByTagName('main')[0]
 const $player = document.getElementById('player')
 const $questionMark = document.getElementById('questionMark')
@@ -59,6 +60,7 @@ const commands = {
 <code>prev</code>/<code>next</code> Previous/next song in playlist<br>
 <code>games</code> Show the games "menu"<br>
 <code>ajour (beta)</code> Open my feed reader in an iframe<br>
+<code>dark</code>/<code>light</code> Change theme with option to save choice in a cookie<br>
 <code>help</code> Show this message<br>
 Commands are tab completable. Type <code>:</code> to try a command.
 `
@@ -189,6 +191,30 @@ Commands are tab completable. Type <code>:</code> to try a command.
     ajourFrame.id = 'ajour'
     $main.appendChild(ajourFrame)
   },
+
+  light: () => {
+    if ($html.classList.contains('dark')) {
+      $html.classList.remove('dark')
+    }
+    $html.classList.add('light')
+    showCommandLineConfirm(
+      'Set a cookie?',
+      'Do you want to set a cookie to remember this?',
+      () => setCookie('theme', 'light', 365)
+    )
+  },
+
+  dark: () => {
+    if ($html.classList.contains('light')) {
+      $html.classList.remove('light')
+    }
+    $html.classList.add('dark')
+    showCommandLineConfirm(
+      'Set a cookie?',
+      'Do you want to set a cookie to remember this?',
+      () => setCookie('theme', 'dark', 365)
+    )
+  },
 }
 
 const navigation = {
@@ -226,6 +252,31 @@ function showCommandLineAlert(title, message, isError) {
     $commandLineHint.classList.add('help')
   }
   $commandLineHint.innerHTML = `<strong>${title}</strong><div>${message}</div>`
+}
+
+function showCommandLineConfirm(
+  title, message, 
+  confirmCallback, declineCallback,
+  confirmText = 'OK', declineText = 'No thanks') {
+  $commandLineHint.className = 'alertMode'
+  $commandLineHint.classList.add('confirm')
+  $commandLineHint.innerHTML = `<strong>${title}</strong><div>${message}</div>`
+  const $confirmButton = document.createElement('button')
+  $confirmButton.innerText = confirmText
+  $confirmButton.onclick = () => {
+    deactivateCommandMode()
+    confirmCallback && confirmCallback()
+  }
+  const $declineButton = document.createElement('button')
+  $declineButton.innerText = declineText
+  $declineButton.onclick = () => {
+    deactivateCommandMode()
+    declineCallback && declineCallback()
+  }
+  const $buttonWrapper = document.createElement('div')
+  $buttonWrapper.appendChild($declineButton)
+  $buttonWrapper.appendChild($confirmButton)
+  $commandLineHint.appendChild($buttonWrapper)
 }
 
 function updateCommandLineHint(content) {

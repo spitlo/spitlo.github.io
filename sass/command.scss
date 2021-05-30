@@ -44,15 +44,21 @@
     max-height: 80vh;
     opacity: .95;
 
-    &.help {
+    &.confirm {
       &::before {
-        content: "?";
+        content: "☑";
       }
     }
 
     &.error {
       &::before {
         content: "!";
+      }
+    }
+
+    &.help {
+      &::before {
+        content: "?";
       }
     }
 

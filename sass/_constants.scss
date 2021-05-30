@@ -20,8 +20,7 @@ $white: #fffcfc;
 $linkBlue: rgb(85, 26, 139);
 $linkPurple: rgb(0, 0, 238);
 
-// Theme
-:root {
+@mixin lightTheme() {
   --alert-bgcolor: #{$mutedPink};
   --box-bgcolor: #{$lightWhite};
   --box-shadow: #{$mutedPinkTransparent};
@@ -47,31 +46,48 @@ $linkPurple: rgb(0, 0, 238);
   --taxonomy-hightlight: #{$honeydew};
 }
 
+@mixin darkTheme() {
+  --alert-bgcolor: #{$orange};
+  --box-bgcolor: #{$honeydew};
+  --box-shadow: rgba(14, 7, 12, .2);
+  --code-bgcolor: #{$blue};
+  --code-color: #{$lightSeagreen};
+  --crumb-bordercolor: #{$mutedPinkTransparent};
+  --h1-underlinecolor: #{$orange};
+  --input-bgcolor: #{$gray};
+  --input-color: #{$black};
+  --link-visited: #{$dirtyYellow};
+  --link: #{$lightSeagreen};
+  --meta-color: #{$aquamarine};
+  --search-bgcolor: #{$blue};
+  --search-color: #{$white};
+  --search-hovercolor: #{$clearBlue};
+  --search-placeholder: #{$lightWhite};
+  --site-bgcolor: #{$darkGray};
+  --site-color: #{$white};
+  --table-accentcolor: #{$blue};
+  --table-bgcolor-even: #{$darkGray};
+  --table-bgcolor-odd: #{$blueGray};
+  --table-color: #{$white};
+  --taxonomy-hightlight: #{$lightSeagreen};
+}
+
+// Theme
+:root {
+  @include lightTheme;
+
+  &.dark {
+    @include darkTheme;
+  }
+
+  &.light {
+    @include lightTheme;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --alert-bgcolor: #{$orange};
-    --box-bgcolor: #{$honeydew};
-    --box-shadow: rgba(14, 7, 12, .2);
-    --code-bgcolor: #{$blue};
-    --code-color: #{$lightSeagreen};
-    --crumb-bordercolor: #{$mutedPinkTransparent};
-    --h1-underlinecolor: #{$orange};
-    --input-bgcolor: #{$gray};
-    --input-color: #{$black};
-    --link-visited: #{$dirtyYellow};
-    --link: #{$lightSeagreen};
-    --meta-color: #{$aquamarine};
-    --search-bgcolor: #{$blue};
-    --search-color: #{$white};
-    --search-hovercolor: #{$clearBlue};
-    --search-placeholder: #{$lightWhite};
-    --site-bgcolor: #{$darkGray};
-    --site-color: #{$white};
-    --table-accentcolor: #{$blue};
-    --table-bgcolor-even: #{$darkGray};
-    --table-bgcolor-odd: #{$blueGray};
-    --table-color: #{$white};
-    --taxonomy-hightlight: #{$lightSeagreen};
+    @include darkTheme;
   }
 }
 
