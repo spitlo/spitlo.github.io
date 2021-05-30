@@ -94,10 +94,16 @@
         <loc>https://spitlo.com/technologies/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/technologies/bash/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/technologies/deno/</loc>
     </url>
     <url>
         <loc>https://spitlo.com/technologies/docker/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/technologies/ffmpeg/</loc>
     </url>
     <url>
         <loc>https://spitlo.com/technologies/git/</loc>
@@ -131,9 +137,6 @@
     </url>
     <url>
         <loc>https://spitlo.com/technologies/sass/</loc>
-    </url>
-    <url>
-        <loc>https://spitlo.com/technologies/shell/</loc>
     </url>
     <url>
         <loc>https://spitlo.com/technologies/shopify/</loc>
