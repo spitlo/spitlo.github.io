@@ -2,6 +2,16 @@
 
 This changelog is automatically generated.
 
+## v1.11.2
+
+- Update Simple Icons [`a7a6a01`](../../commit/a7a6a01d73bb6b7af5e5107c2a0f29ef28c637d1)
+- Update changelog [`8bea776`](../../commit/8bea7761cde6755dde9c30478658465db736f905)
+- Tiny dark mode fixes [`1330537`](../../commit/1330537e3e8194ae6621a3378c88b715e67c4a3b)
+- Dark mode fix for forward crumb divider [`5ac04ae`](../../commit/5ac04ae5a05f26046f09f5e8af7458b5860bf359)
+- Some more space in mobile logo [`ca64308`](../../commit/ca64308d6d71dd2017592a62b1b6a1d8f900cf92)
+- Different hover animations for different taxonomies [`1fd19cd`](../../commit/1fd19cd495d54f399156532ab8f12a608c1103cf)
+- Less crazy box-shadow [`ef51eb6`](../../commit/ef51eb67ae6be37bd4a45f48866377ac77343841)
+
 ## v1.11.1
 
 - Add command 'ajour', pretty beta but works ok [`3ef82df`](../../commit/3ef82df449a37d5f290e8e95124ad452974c7a62)
