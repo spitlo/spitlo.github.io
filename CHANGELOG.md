@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.11.5
+
+- Add a-013 to Stromata [`297b469`](../../commit/297b4694f08f380c287a93e03197d371d8a0da80)
+
 ## v1.11.4
 
 - Style confirm buttons. Update changelog [`a17c09a`](../../commit/a17c09a78a9adf79416380ee5507f9575f70a034)
