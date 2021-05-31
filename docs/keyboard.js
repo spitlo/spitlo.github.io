@@ -77,17 +77,19 @@ function showCommandLineAlert(title,message,isError){$commandLineHint.className=
 if(isError){$commandLineHint.classList.add('error')
 message=`${message}<br>Type <code>:</code> to try another command.`}else{$commandLineHint.classList.add('help')}
 $commandLineHint.innerHTML=`<strong>${title}</strong><div>${message}</div>`}
-function showCommandLineConfirm(title,message,confirmCallback,declineCallback,confirmText='OK',declineText='No thanks'){$commandLineHint.className='alertMode'
+function showCommandLineConfirm(title,message,confirmCallback,declineCallback,confirmText='Yes, please',declineText='No, thanks'){$commandLineHint.className='alertMode'
 $commandLineHint.classList.add('confirm')
 $commandLineHint.innerHTML=`<strong>${title}</strong><div>${message}</div>`
 const $confirmButton=document.createElement('button')
 $confirmButton.innerText=confirmText
 $confirmButton.onclick=()=>{deactivateCommandMode()
 confirmCallback&&confirmCallback()}
+$confirmButton.className='confirm'
 const $declineButton=document.createElement('button')
 $declineButton.innerText=declineText
 $declineButton.onclick=()=>{deactivateCommandMode()
 declineCallback&&declineCallback()}
+$declineButton.className='decline'
 const $buttonWrapper=document.createElement('div')
 $buttonWrapper.appendChild($declineButton)
 $buttonWrapper.appendChild($confirmButton)
