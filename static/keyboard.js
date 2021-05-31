@@ -257,7 +257,8 @@ function showCommandLineAlert(title, message, isError) {
 function showCommandLineConfirm(
   title, message, 
   confirmCallback, declineCallback,
-  confirmText = 'OK', declineText = 'No thanks') {
+  confirmText = 'Yes, please', declineText = 'No, thanks'
+) {
   $commandLineHint.className = 'alertMode'
   $commandLineHint.classList.add('confirm')
   $commandLineHint.innerHTML = `<strong>${title}</strong><div>${message}</div>`
@@ -267,12 +268,14 @@ function showCommandLineConfirm(
     deactivateCommandMode()
     confirmCallback && confirmCallback()
   }
+  $confirmButton.className = 'confirm'
   const $declineButton = document.createElement('button')
   $declineButton.innerText = declineText
   $declineButton.onclick = () => {
     deactivateCommandMode()
     declineCallback && declineCallback()
   }
+  $declineButton.className = 'decline'
   const $buttonWrapper = document.createElement('div')
   $buttonWrapper.appendChild($declineButton)
   $buttonWrapper.appendChild($confirmButton)
