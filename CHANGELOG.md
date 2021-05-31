@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.11.4
+
+- Style confirm buttons. Update changelog [`a17c09a`](../../commit/a17c09a78a9adf79416380ee5507f9575f70a034)
+
 ## v1.11.3
 
 - Add commands to set dark/light theme and save in cookie. Add confirm dialog [`b6962f1`](../../commit/b6962f17dbbfb1a7ca835a815cdbb0abe84d7cf5)
