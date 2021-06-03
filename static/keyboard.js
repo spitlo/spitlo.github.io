@@ -190,6 +190,7 @@ Commands are tab completable. Type <code>:</code> to try a command.
     ajourFrame.setAttribute('src', 'https://spitlo.com/ajour/')
     ajourFrame.id = 'ajour'
     $main.appendChild(ajourFrame)
+    $top.scrollIntoView()
   },
 
   light: () => {
