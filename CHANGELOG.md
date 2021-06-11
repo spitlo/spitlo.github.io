@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v1.11.6
+
+- Lenny’s: Add pickOneAndDiscard function for exhaustible conversations [`c3d0b42`](../../commit/c3d0b422bacd06d0db305f60b0dca31b8eb4f53c)
+- Lenny’s: Wording [`771e65d`](../../commit/771e65de4c2833b46fb5a35a89d009bceed6c6bb)
+- Fix typo [`89e8f84`](../../commit/89e8f8446aee9463b1bf1e7af8052600dfe497b7)
+- Scroll to top after opening Ajour [`e9145d6`](../../commit/e9145d61064ba61695e68bf7d67af5320fcd9f53)
+
 ## v1.11.5
 
 - Add a-013 to Stromata [`297b469`](../../commit/297b4694f08f380c287a93e03197d371d8a0da80)
