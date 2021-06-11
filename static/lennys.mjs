@@ -23,21 +23,27 @@ const playGame = (gameSlug) => {
 
 const getShortName = (name) => (name || '').split(' ')[0].toLowerCase()
 
-const getActionFigureSentence = () => {
-  const sentences = [
-    `"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,
-    `"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,
-    `"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,
-    `"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,
-    `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
-    `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
-    `"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,
-    `"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,
-    `"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,
-    `"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,
-  ]
-  return pickOne(sentences)
+const pickOneAndDiscard = (array, fallback) => {
+  if (array.length === 0) {
+    return fallback
+  }
+  const itemIndex = Math.floor(Math.random() * array.length)
+  
+  return array.splice(itemIndex, 1)[0] || fallback
 }
+
+const actionFigureSentences = [
+  `"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,
+  `"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,
+  `"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,
+  `"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,
+  `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
+  `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
+  `"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,
+  `"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,
+  `"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,
+  `"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,
+]
 
 const play = (gameId) => {
   let game = getItemInRoom(gameId, disk.roomId) || getItemInInventory(gameId)
@@ -223,7 +229,7 @@ Lenny puts his feather duster in his belt fancily -- like a modern-day, domicili
               : '"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue, "Any priceless ones?"'
             }
 "Well..." Lenny scratches his stubble. ${
-  getActionFigureSentence()
+  pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He leans over his should and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
 }`,
         },
         ...window.games.map((game) => {
