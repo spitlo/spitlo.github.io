@@ -1,3 +1,21 @@
+/*
+ * Lenny’s E-game Emporium - A playable game menu for https://spitlo.com/games/
+ */
+
+const actionFigureSentences = [
+  `"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,
+  `"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,
+  `"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,
+  `"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,
+  `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
+  `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
+  `"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,
+  `"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,
+  `"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,
+  `"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,
+]
+
+// Overrides
 const help = () => {
   const instructions = `The following commands are available:
     LOOK:   'look at key'
@@ -13,14 +31,7 @@ const help = () => {
   println(instructions)
 }
 
-const playGame = (gameSlug) => {
-  const decrunch = document.getElementById('decrunch')
-  decrunch.className = 'visible'
-  setTimeout(() => {
-    document.location.href = `/games/${gameSlug}/`
-  }, 800)
-}
-
+// Local functions
 const getShortName = (name) => (name || '').split(' ')[0].toLowerCase()
 
 const pickOneAndDiscard = (array, fallback) => {
@@ -32,18 +43,13 @@ const pickOneAndDiscard = (array, fallback) => {
   return array.splice(itemIndex, 1)[0] || fallback
 }
 
-const actionFigureSentences = [
-  `"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,
-  `"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,
-  `"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,
-  `"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,
-  `"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,
-  `"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,
-  `"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,
-  `"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,
-  `"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,
-  `"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,
-]
+const playGame = (gameSlug) => {
+  const decrunch = document.getElementById('decrunch')
+  decrunch.className = 'visible'
+  setTimeout(() => {
+    document.location.href = `/games/${gameSlug}/`
+  }, 800)
+}
 
 const play = (gameId) => {
   let game = getItemInRoom(gameId, disk.roomId) || getItemInInventory(gameId)
@@ -65,6 +71,7 @@ delete commands[0].load
 commands[0] = Object.assign(commands[0], { help })
 commands[1] = Object.assign(commands[1], { play })
 
+// Start disk
 const lennys = {
   roomId: 'lennys',
   rooms: [
@@ -85,7 +92,7 @@ const lennys = {
 
 To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. To the **east** is the Pixel Paradise where graphical games are displayed. To the **south** is an exit.
 
-**Lenny** is here, carefully dusting a collection of action figures housed in a display **cabinet** to the left of the counter. To the right of the counter, there’s a big **crate**. The sign on it says "Bargain Bin".`,
+**Lenny** is here, carefully dusting a collection of action figures housed in a **display cabinet** to the left of the counter. To the right of the counter, there’s a big **crate**. The sign on it says "Bargain Bin".`,
       exits: [
         { dir: ['west', 'Ascii Arena', 'Text Games'], id: 'text-games'},
         { dir: ['east', 'Pixel Paradise', 'Graphical Games'], id: 'graphical-games'},
@@ -97,7 +104,7 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
           desc: 'Ths bargain bin is empty at the moment.'
         },
         {
-          name: ['cabinet', 'display cabinet', 'action figures'],
+          name: ['display cabinet', 'cabinet', 'action figures'],
           desc: `You lean over and inspect the display cabinet. There are some real gems in there.
 "No touchy-touchy," Lenny says and wags his finger. "Only looky-looky." He taps his right ear. "And asky-asky," he adds.`,
         },
