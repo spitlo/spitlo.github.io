@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v1.11.7
+
+- Add a-014 to Stromata [`a986b7c`](../../commit/a986b7cdccf7182f4b637cbdb4ff23db246ab5cb)
+- Add todo item [`1406f48`](../../commit/1406f48fd51983b6777646562c118f537b548e50)
+- Code hygien [`9628e42`](../../commit/9628e420c80d317b79964cea93c3b78d469c695d)
+
 ## v1.11.6
 
 - Lenny’s: Add pickOneAndDiscard function for exhaustible conversations [`c3d0b42`](../../commit/c3d0b422bacd06d0db305f60b0dca31b8eb4f53c)
