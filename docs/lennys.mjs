@@ -1,5 +1,6 @@
 // minified with jsmin
 
+const actionFigureSentences=[`"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,`"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,`"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,`"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,`"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,`"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,`"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,`"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,`"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,`"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,]
 const help=()=>{const instructions=`The following commands are available:
     LOOK:   'look at key'
     TAKE:   'take book'
@@ -12,14 +13,13 @@ const help=()=>{const instructions=`The following commands are available:
     HELP:   this help menu
   `
 println(instructions)}
-const playGame=(gameSlug)=>{const decrunch=document.getElementById('decrunch')
-decrunch.className='visible'
-setTimeout(()=>{document.location.href=`/games/${gameSlug}/`},800)}
 const getShortName=(name)=>(name||'').split(' ')[0].toLowerCase()
 const pickOneAndDiscard=(array,fallback)=>{if(array.length===0){return fallback}
 const itemIndex=Math.floor(Math.random()*array.length)
 return array.splice(itemIndex,1)[0]||fallback}
-const actionFigureSentences=[`"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,`"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,`"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,`"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,`"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,`"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,`"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,`"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,`"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,`"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,]
+const playGame=(gameSlug)=>{const decrunch=document.getElementById('decrunch')
+decrunch.className='visible'
+setTimeout(()=>{document.location.href=`/games/${gameSlug}/`},800)}
 const play=(gameId)=>{let game=getItemInRoom(gameId,disk.roomId)||getItemInInventory(gameId)
 if(!game){println(`You don’t seem to have that game handy.`)}else{game.onPlay()
 setTimeout(()=>{playGame(game.slug)},4000)}}
@@ -40,7 +40,7 @@ const lennys={roomId:'lennys',rooms:[{name:'Lenny’s E-game Emporium',id:'lenny
 
 To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. To the **east** is the Pixel Paradise where graphical games are displayed. To the **south** is an exit.
 
-**Lenny** is here, carefully dusting a collection of action figures housed in a display **cabinet** to the left of the counter. To the right of the counter, there’s a big **crate**. The sign on it says "Bargain Bin".`,exits:[{dir:['west','Ascii Arena','Text Games'],id:'text-games'},{dir:['east','Pixel Paradise','Graphical Games'],id:'graphical-games'},{dir:['south','out','exit','home'],id:'exit'},],items:[{name:['crate','bargain bin','discounted games'],desc:'Ths bargain bin is empty at the moment.'},{name:['cabinet','display cabinet','action figures'],desc:`You lean over and inspect the display cabinet. There are some real gems in there.
+**Lenny** is here, carefully dusting a collection of action figures housed in a **display cabinet** to the left of the counter. To the right of the counter, there’s a big **crate**. The sign on it says "Bargain Bin".`,exits:[{dir:['west','Ascii Arena','Text Games'],id:'text-games'},{dir:['east','Pixel Paradise','Graphical Games'],id:'graphical-games'},{dir:['south','out','exit','home'],id:'exit'},],items:[{name:['crate','bargain bin','discounted games'],desc:'Ths bargain bin is empty at the moment.'},{name:['display cabinet','cabinet','action figures'],desc:`You lean over and inspect the display cabinet. There are some real gems in there.
 "No touchy-touchy," Lenny says and wags his finger. "Only looky-looky." He taps his right ear. "And asky-asky," he adds.`,},],},{name:'The Ascii Arena',id:'text-games',desc:`There is a huge banner covering the entire west wall of the room. It reads:
 "This is the Dungeon dungeon, the MUD swamp, the Infocom inferno, this is the domain of King Text, the seven bit wonder of the world, the web of the eight bit spider. This is Room 437. This is the Ascii Arena."
 
