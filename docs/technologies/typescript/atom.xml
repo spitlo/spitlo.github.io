@@ -40,16 +40,16 @@ To search using gus.guru, enter ‘s’ and then enter your query at the &lt;cod
 To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
 &lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;Options&lt;&#x2F;h3&gt;
-&lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  -h, --help
-          Prints help end exits
-  -d, --dump
-          Prints document body and exits
-  -w, --width &amp;lt;number&amp;gt;
-          Wraps text at &amp;lt;number&amp;gt; columns
-  -p, --paginate &amp;lt;number&amp;gt;
-          Show &amp;lt;number&amp;gt; of rows at a time.
-          Defaults to 50 if no &amp;lt;number&amp;gt; is supplied
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;  -h, --help
+&lt;&#x2F;span&gt;&lt;span&gt;          Prints help end exits
+&lt;&#x2F;span&gt;&lt;span&gt;  -d, --dump
+&lt;&#x2F;span&gt;&lt;span&gt;          Prints document body and exits
+&lt;&#x2F;span&gt;&lt;span&gt;  -w, --width &amp;lt;number&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;          Wraps text at &amp;lt;number&amp;gt; columns
+&lt;&#x2F;span&gt;&lt;span&gt;  -p, --paginate &amp;lt;number&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;          Show &amp;lt;number&amp;gt; of rows at a time.
+&lt;&#x2F;span&gt;&lt;span&gt;          Defaults to 50 if no &amp;lt;number&amp;gt; is supplied
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
 	</entry>
 </feed>

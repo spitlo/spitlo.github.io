@@ -17,17 +17,16 @@
 &lt;h2 id=&quot;config&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#config&quot; aria-label=&quot;Anchor link for: config&quot;&gt;#&lt;&#x2F;a&gt;Config&lt;&#x2F;h2&gt;
 &lt;p&gt;My Hammerspoon hyper key is &lt;code&gt;Shift&lt;&#x2F;code&gt; + &lt;code&gt;Ctrl&lt;&#x2F;code&gt; + &lt;code&gt;Alt&lt;&#x2F;code&gt; + &lt;code&gt;Cmd&lt;&#x2F;code&gt;. I use Karabiner to map &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; to that.&lt;&#x2F;p&gt;
 &lt;p&gt;The stuff I use most is probably the WinWin Spoon mentioned below. It’s a window manager that uses a 2x2 grid, and I have mapped &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 1-9&lt;&#x2F;code&gt; to the different screens locations. So if I press &lt;code&gt;Caps Lock&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 7&lt;&#x2F;code&gt;, the active window resizes to the top left corner of the screen, let’s call it A1:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;           1                  2
-  +------------------+------------------+
-  |                  |                  |
-A |        A1        |                  |
-  |                  |                  |
-  +-------------------------------------+
-  |                  |                  |
-B |                  |                  |
-  |                  |                  |
-  +------------------+------------------+
+&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;           1                  2
+&lt;&#x2F;span&gt;&lt;span&gt;  +------------------+------------------+
+&lt;&#x2F;span&gt;&lt;span&gt;  |                  |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;A |        A1        |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;  |                  |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;  +-------------------------------------+
+&lt;&#x2F;span&gt;&lt;span&gt;  |                  |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;B |                  |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;  |                  |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;  +------------------+------------------+
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;The keys in between the corner keys resizes the window to fill the corresponding row. So &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 4&lt;&#x2F;code&gt; resizes the window to cover squares A1 and B1. Lastly, &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Keypad 5&lt;&#x2F;code&gt; centers the window on the screen but does not maximize it.&lt;&#x2F;p&gt;
 &lt;p&gt;On my laptop, I use Karabiner to map &lt;code&gt;Fn&lt;&#x2F;code&gt; + &lt;code&gt;Q&#x2F;W&#x2F;E&lt;&#x2F;code&gt;, &lt;code&gt;A&#x2F;S&#x2F;D&lt;&#x2F;code&gt; and &lt;code&gt;Z&#x2F;X&#x2F;C&lt;&#x2F;code&gt; to the keypad numbers to have the same functionality.&lt;&#x2F;p&gt;
@@ -44,17 +43,17 @@ B |                  |                  |
 &lt;li&gt;The same principal applies to &lt;code&gt;up&lt;&#x2F;code&gt; and &lt;code&gt;down&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;When a window is full width or full height, it will shrink&#x2F;expand in the ‘direction’ direction.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;pre style=&quot;background-color:#393939;&quot;&gt;
-&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span style=&quot;color:#dedede;&quot;&gt;  +------------------+------------------+
-  |   +-------------------+             |
-  |   |              |    |             |
-  |   |              |  &amp;lt; | &amp;gt;           |
-  +-------------------------------------+
-  |   |         &#x2F;\   |    |             |
-  |   +-------------------+             |
-  |             \&#x2F;   |                  |
-  +------------------+------------------+
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;symbats&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#symbats&quot; aria-label=&quot;Anchor link for: symbats&quot;&gt;#&lt;&#x2F;a&gt;Symbats&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;  +------------------+------------------+
+&lt;&#x2F;span&gt;&lt;span&gt;  |   +-------------------+             |
+&lt;&#x2F;span&gt;&lt;span&gt;  |   |              |    |             |
+&lt;&#x2F;span&gt;&lt;span&gt;  |   |              |  &amp;lt; | &amp;gt;           |
+&lt;&#x2F;span&gt;&lt;span&gt;  +-------------------------------------+
+&lt;&#x2F;span&gt;&lt;span&gt;  |   |         &#x2F;\   |    |             |
+&lt;&#x2F;span&gt;&lt;span&gt;  |   +-------------------+             |
+&lt;&#x2F;span&gt;&lt;span&gt;  |             \&#x2F;   |                  |
+&lt;&#x2F;span&gt;&lt;span&gt;  +------------------+------------------+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;symbats&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#symbats&quot; aria-label=&quot;Anchor link for: symbats&quot;&gt;#&lt;&#x2F;a&gt;Symbats&lt;&#x2F;h3&gt;
 &lt;p&gt;There is also a Spoon for quickly finding glyphs from the “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Miscellaneous_Symbols&quot;&gt;Miscellaneous Symbols&lt;&#x2F;a&gt;” and “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dingbat#Dingbats_Unicode_block&quot;&gt;Dingbats&lt;&#x2F;a&gt;” unicode blocks. I have it mapped to &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;S&lt;&#x2F;code&gt;. When triggered, it shows a searchable list of symbols. When a symbol is selected, it gets copied to the clipboard.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;httpstatus&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#httpstatus&quot; aria-label=&quot;Anchor link for: httpstatus&quot;&gt;#&lt;&#x2F;a&gt;HttpStatus&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;H&lt;&#x2F;code&gt; triggers something similar to Symbats but for HTTP response codes.&lt;&#x2F;p&gt;
