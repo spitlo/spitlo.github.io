@@ -44,7 +44,7 @@ I can never remember where to `curl` the weather from and what query strings to 
 
 Basically the same as `weather` but for dictionary definitions.
 
-## [`squash`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/bin/squash)
+## [`squash`](https://github.com/spitlo/dotfiles/blob/master/bin/squash)
 
 I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my harddrive. But they don’t need to look pretty. So every once in a while I run:
 
@@ -54,6 +54,21 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
 
 `squash` uses ImageMagicks’s `mogrify` to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable `MINIMUM_SIZE` set, to only affect images of a significant size.
 
-## [`update-tp`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/bin/update-tp)
+## [`update-tp`](https://github.com/spitlo/dotfiles/blob/master/bin/update-tp)
 
 `update-tp` helps me to update a [Termux package](https://github.com/termux/termux-packages) in my fork, then create a consistently worded commit so I can do a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.
+
+## [`update`](https://github.com/spitlo/dotfiles/blob/master/bin/update)
+
+`update` helps me keep some commands fresh across platforms, often by downloading the latest release from Github or similar and moving it to `~/bin`. This was mostly created out of frustration with the way Homebrew works on macOS, but I use it on Android ([Termux](https://github.com/termux/termux-app)) and Linux as well. At the time of writing, `update` supports the following commands:
+
+- bat
+- bombadillo
+- delta
+- fzf
+- micro
+- nb
+- starship
+- svtplay-dl
+- youtube-dl
+- zola
