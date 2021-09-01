@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.11.8
+
+- Add 'update' command to dotfiles entry [`193cea1`](../../commit/193cea1985f9271ec82d98060aa925c7064b0378)
+
 ## v1.11.7
 
 - Add a-014 to Stromata [`a986b7c`](../../commit/a986b7cdccf7182f4b637cbdb4ff23db246ab5cb)
