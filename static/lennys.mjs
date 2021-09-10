@@ -32,7 +32,16 @@ const help = () => {
 }
 
 // Local functions
-const getShortName = (name) => (name || '').split(' ')[0].toLowerCase()
+const getShortName = (name) => {
+  // Pick the first part of a name that is longer than three letters
+  // Fall back on the first letter
+  const localName = (name || '').replace(/[^A-Za-z\s]/, '')
+  let nameParts = localName.split(' ').filter((part) => part.length > 3)
+  let shortName = nameParts.length > 0
+    ? nameParts[0]
+    : localName.split(' ')[0]
+  return shortName.toLowerCase()
+}
 
 const pickOneAndDiscard = (array, fallback) => {
   if (array.length === 0) {
@@ -66,12 +75,12 @@ const play = (gameId) => {
 const itemifyGame = (game) => {
   const shortName = getShortName(game.title)
   return {
-    name: [game.title],
+    name: game.title,
     desc: `The back of the box reads:
     "${(game.description || '').toUpperCase()}"${
       game.extra && game.extra['on_sale']
         ? `
-Some of the text is obscured by a huge "ON SALE" sticker.`
+Beneath the text is a huge "ON SALE" sticker.`
         : ''
     }`,
     slug: game.slug,
@@ -174,19 +183,38 @@ Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An
       },
       items: [
         {
-          name: ['shelves', 'games'],
-          desc: `There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
-${window.games.map((game) => `- ${game.title} (**${getShortName(game.title)}**)`)}`,
+          name: ['shelves', 'shelf', 'games'],
+          desc: () => {
+            const item = getItemInRoom('shelves', 'text-games')
+            item.onLook()
+          },
           onLook: () => {
             // Only add games after user examines shelves (is this too much of a hassel maybe?)
             const room = getRoom('text-games')
-            let newItems = window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => itemifyGame(game))
-            // Add a few more titles for fun
-            newItems = newItems.concat(['Pancake Contingency, The', 'Palladium Snitch', 'Constipation, The'].map((game) => ({
-              name: game,
-              onTake: () => println('Apparently, this game is not for sale, nor for rent, nor for use.'),
-            })))
-            room.items = room.items.concat(newItems)
+            const realItems = window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => itemifyGame(game))
+            // Add a few unavailable titles for fun, turn this into a sort of mini Musaeum Clausum
+            // TODO: Write descriptions
+            const fakeItems = [
+              ['The Pancake Contingency', 'In a cold, post-apocalyptic future... lay eggs and the milk comes from ....'],
+              ['Palladium Snitch', 'Prepare!'],
+              ['Constipation, The', 'Times are hard. Literally.']
+            ]
+              .map(([name, desc]) => ({
+                name,
+                desc: `You pick "${name}"" from the shelf and turn it over. Parts of the text are obscured by a giant sticker. The text you can make out reads: 
+"${desc.toUpperCase()}"`,
+                onTake: () => println('Apparently, this game is not for sale, nor for rent, nor for use.'),
+              }))
+            // But only add them once
+            if (!getItemInRoom('The Pancake Contingency', 'text-games')) {
+              room.items = room.items.concat([...realItems, ...fakeItems])
+            }
+            console.log(fakeItems)
+            println(`There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
+${realItems.map((game) => `- ${game.name} (**${getShortName(game.name)}**)`).join('\n')}
+Apart from that, the following titles are on display:
+${fakeItems.map((game) => `- ${game.name} (**${getShortName(game.name)}**)`).join('\n')}
+`)
           },
         },
         {
