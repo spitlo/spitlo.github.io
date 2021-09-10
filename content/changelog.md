@@ -13,6 +13,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 - Added dark mode, enabled if user’s system is in dark mode (~~no toggle~~)
 - Added `:ajour` command (beta) to open <https://spitlo.com/ajour/> in an iframe. The iframe takes up the same space as the `<main>` tag, so it works best on shorter pages (no double scrolling)
 - Added `:dark` and `:light` commands to force set a theme, with option to save choice in a cookie.
+- Added link to markdown source on all pages
 
 ## v1.10.x _(2021-05-13)_
 
