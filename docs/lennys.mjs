@@ -23,6 +23,22 @@ setTimeout(()=>{document.location.href=`/games/${gameSlug}/`},800)}
 const play=(gameId)=>{let game=getItemInRoom(gameId,disk.roomId)||getItemInInventory(gameId)
 if(!game){println(`You don’t seem to have that game handy.`)}else{game.onPlay()
 setTimeout(()=>{playGame(game.slug)},4000)}}
+const itemifyGame=(game)=>{const shortName=getShortName(game.title)
+return{name:[game.title],desc:`The back of the box reads:
+    "${(game.description || '').toUpperCase()}"${
+      game.extra && game.extra['on_sale']
+        ? `
+Some of the text is obscured by a huge"ON SALE"sticker.`
+        : ''
+    }`,slug:game.slug,isTakeable:true,onPlay:()=>println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),onTake:()=>{println(`You pick up ${game.title}. On the back of the box, you read:
+"${(game.description || '').toUpperCase()}"
+${
+  game.extra && game.extra['on_sale']
+    ? `
+You’re not sure this game will be worth your time,but you put it in your backpack anyhow.`
+    : `
+You put the game in your backpack.`
+}`)},onUse:()=>println('This is a game. Surely, you’d much rather **play** it then use it?'),onLook:()=>{println(`According to the fact box, this game was created ${game.date} and written for the __${game.extra.engine}__ engine.`)},}}
 delete commands[0].save
 delete commands[0].load
 commands[0]=Object.assign(commands[0],{help})
@@ -40,18 +56,23 @@ const lennys={roomId:'lennys',rooms:[{name:'Lenny’s E-game Emporium',id:'lenny
 
 To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. To the **east** is the Pixel Paradise where graphical games are displayed. To the **south** is an exit.
 
-**Lenny** is here, carefully dusting a collection of action figures housed in a **display cabinet** to the left of the counter. To the right of the counter, there’s a big **crate**. The sign on it says "Bargain Bin".`,exits:[{dir:['west','Ascii Arena','Text Games'],id:'text-games'},{dir:['east','Pixel Paradise','Graphical Games'],id:'graphical-games'},{dir:['south','out','exit','home'],id:'exit'},],items:[{name:['crate','bargain bin','discounted games'],desc:'Ths bargain bin is empty at the moment.'},{name:['display cabinet','cabinet','action figures'],desc:`You lean over and inspect the display cabinet. There are some real gems in there.
+**Lenny** is here, carefully dusting a collection of action figures housed in a **display cabinet** to the left of the counter. To the right of the counter, there’s a big **crate**. The sign on it says "Bargain Bin".`,exits:[{dir:['west','Ascii Arena','Text Games'],id:'text-games'},{dir:['east','Pixel Paradise','Graphical Games'],id:'graphical-games'},{dir:['south','out','exit','home'],id:'exit'},],items:[{name:['crate','bargain bin','discounted games'],desc:()=>{const items=window.games.filter((game)=>game.extra&&game.extra['on_sale'])
+if(items.length<1){return'Ths bargain bin is empty at the moment.'}else{const room=getRoom('lennys')
+const newItems=items.map((game)=>itemifyGame(game))
+room.items=room.items.concat(newItems)
+return`The titles in the bargain bin are probably unfinished, abandoned or just plain bad games. ${
+                items.length > 1
+                  ? `There are ${items.length}games in the bargain bin at the moment:`
+                  : 'There’s only a single game in the bargain bin at the moment: '
+              }${
+                items.map((game, index) => `**${game.title}**${index===items.length-1?'.':', '}`)
+              }`}},},{name:['display cabinet','cabinet','action figures'],desc:`You lean over and inspect the display cabinet. There are some real gems in there.
 "No touchy-touchy," Lenny says and wags his finger. "Only looky-looky." He taps his right ear. "And asky-asky," he adds.`,},],},{name:'The Ascii Arena',id:'text-games',desc:`There is a huge banner covering the entire west wall of the room. It reads:
 "This is the Dungeon dungeon, the MUD swamp, the Infocom inferno, this is the domain of King Text, the seven bit wonder of the world, the web of the eight bit spider. This is Room 437. This is the Ascii Arena."
 
 Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An opening in the **east** wall leads back to the front room.`,exits:[{dir:['east'],id:'lennys'}],onLook:()=>{println('You’re standing in the Ascii Arena, as Lenny somewhat hyperbolically has christened this tiny room holding all his text-based adventure games.')},items:[{name:['shelves','games'],desc:`There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
 ${window.games.map((game) => `-${game.title}(**${getShortName(game.title)}**)`)}`,onLook:()=>{const room=getRoom('text-games')
-let newItems=window.games.filter((game)=>game.extra&&game.extra.room==='text-games').map((game)=>{const shortName=getShortName(game.title)
-return{name:[game.title],desc:`The back of the box reads:
-                "${(game.description || '').toUpperCase()}"`,slug:game.slug,isTakeable:true,onPlay:()=>println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),onTake:()=>{println(`You pick up ${game.title}. On the back of the box, you read:
-"${(game.description || '').toUpperCase()}"
-
-You put the game in your backpack.`)},onUse:()=>println('This is a game. Surely, you’d much rather **play** it then use it?'),onLook:()=>{println(`According to the fact box, this game was created ${game.date} and written for the __${game.extra.engine}__ engine.`)},}})
+let newItems=window.games.filter((game)=>game.extra&&game.extra.room==='text-games').map((game)=>itemifyGame(game))
 newItems=newItems.concat(['Pancake Contingency, The','Palladium Snitch','Constipation, The'].map((game)=>({name:game,onTake:()=>println('Apparently, this game is not for sale, nor for rent, nor for use.'),})))
 room.items=room.items.concat(newItems)},},{name:['note','disclaimer'],desc:`The note reads:
 DISCLAIMER!
