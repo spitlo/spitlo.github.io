@@ -63,6 +63,38 @@ const play = (gameId) => {
   }
 }
 
+const itemifyGame = (game) => {
+  const shortName = getShortName(game.title)
+  return {
+    name: [game.title],
+    desc: `The back of the box reads:
+    "${(game.description || '').toUpperCase()}"${
+      game.extra && game.extra['on_sale']
+        ? `
+Some of the text is obscured by a huge "ON SALE" sticker.`
+        : ''
+    }`,
+    slug: game.slug,
+    isTakeable: true,
+    onPlay: () => println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),
+    onTake: () => {
+      println(`You pick up ${game.title}. On the back of the box, you read:
+"${(game.description || '').toUpperCase()}"
+${
+  game.extra && game.extra['on_sale']
+    ? `
+You’re not sure this game will be worth your time, but you put it in your backpack anyhow.`
+    : `
+You put the game in your backpack.`
+}`)
+    },
+    onUse: () => println('This is a game. Surely, you’d much rather **play** it then use it?'),
+    onLook: () => {
+      println(`According to the fact box, this game was created ${game.date} and written for the __${game.extra.engine}__ engine.`)
+    },
+  }
+}
+
 // Remove some unused commands
 delete commands[0].save
 delete commands[0].load
@@ -101,7 +133,24 @@ To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. 
       items: [
         {
           name: ['crate', 'bargain bin', 'discounted games'],
-          desc: 'Ths bargain bin is empty at the moment.'
+          desc: () => {
+            const items = window.games.filter((game) => game.extra && game.extra['on_sale'])
+            if (items.length < 1) {
+              return 'Ths bargain bin is empty at the moment.'
+            } else {
+              // Add games as items in this room
+              const room = getRoom('lennys')
+              const newItems = items.map((game) => itemifyGame(game))
+              room.items = room.items.concat(newItems)
+              return `The titles in the bargain bin are probably unfinished, abandoned or just plain bad games. ${
+                items.length > 1
+                  ? `There are ${items.length} games in the bargain bin at the moment: `
+                  : 'There’s only a single game in the bargain bin at the moment: '
+              }${
+                items.map((game, index) => `**${game.title}**${index === items.length - 1 ? '.' : ', '}`)
+              }`
+            }
+          },
         },
         {
           name: ['display cabinet', 'cabinet', 'action figures'],
@@ -131,27 +180,7 @@ ${window.games.map((game) => `- ${game.title} (**${getShortName(game.title)}**)`
           onLook: () => {
             // Only add games after user examines shelves (is this too much of a hassel maybe?)
             const room = getRoom('text-games')
-            let newItems = window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => {
-              const shortName = getShortName(game.title)
-              return {
-                name: [game.title],
-                desc: `The back of the box reads:
-                "${(game.description || '').toUpperCase()}"`,
-                slug: game.slug,
-                isTakeable: true,
-                onPlay: () => println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),
-                onTake: () => {
-                  println(`You pick up ${game.title}. On the back of the box, you read:
-"${(game.description || '').toUpperCase()}"
-
-You put the game in your backpack.`)
-                },
-                onUse: () => println('This is a game. Surely, you’d much rather **play** it then use it?'),
-                onLook: () => {
-                  println(`According to the fact box, this game was created ${game.date} and written for the __${game.extra.engine}__ engine.`)
-                },
-              }
-            })
+            let newItems = window.games.filter((game) => game.extra && game.extra.room === 'text-games').map((game) => itemifyGame(game))
             // Add a few more titles for fun
             newItems = newItems.concat(['Pancake Contingency, The', 'Palladium Snitch', 'Constipation, The'].map((game) => ({
               name: game,
