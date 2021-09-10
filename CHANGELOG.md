@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.11.9
+
+- Add link to source markdown file on every page [`ccc9fd9`](../../commit/ccc9fd956d8e04e69e754e604ed7a9cfe6da50ef)
+
 ## v1.11.8
 
 - Add 'update' command to dotfiles entry [`193cea1`](../../commit/193cea1985f9271ec82d98060aa925c7064b0378)
