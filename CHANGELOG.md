@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.11.10
+
+- Lenny’s: Enable front matter value (on_sale) to put games in the Bargain Bin as well as in its room [`f43b9a8`](../../commit/f43b9a8a657b0fccc4fed70bc5f1a2069f6abaf1)
+
 ## v1.11.9
 
 - Add link to source markdown file on every page [`ccc9fd9`](../../commit/ccc9fd956d8e04e69e754e604ed7a9cfe6da50ef)
