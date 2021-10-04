@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.12.1
+
+- Disallow Googlebot from /games/ as well [`2df1a04`](../../commit/2df1a04137911ceac2a0abfcd56c638656464712)
+
 ## v1.12.0
 
 - Disallow Googlebot [`fd0a526`](../../commit/fd0a526be92ea949eee3c55e4fb01515dac2ead8)
