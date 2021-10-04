@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.12.0
+
+- Disallow Googlebot [`fd0a526`](../../commit/fd0a526be92ea949eee3c55e4fb01515dac2ead8)
+- Lenny’s: Add more stupid stuff [`25086f1`](../../commit/25086f1f2afd8532662f4f2b031de67def6c1a34)
+
 ## v1.11.10
 
 - Lenny’s: Enable front matter value (on_sale) to put games in the Bargain Bin as well as in its room [`f43b9a8`](../../commit/f43b9a8a657b0fccc4fed70bc5f1a2069f6abaf1)
