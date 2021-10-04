@@ -13,7 +13,10 @@ const help=()=>{const instructions=`The following commands are available:
     HELP:   this help menu
   `
 println(instructions)}
-const getShortName=(name)=>(name||'').split(' ')[0].toLowerCase()
+const getShortName=(name)=>{const localName=(name||'').replace(/[^A-Za-z\s]/,'')
+let nameParts=localName.split(' ').filter((part)=>part.length>3)
+let shortName=nameParts.length>0?nameParts[0]:localName.split(' ')[0]
+return shortName.toLowerCase()}
 const pickOneAndDiscard=(array,fallback)=>{if(array.length===0){return fallback}
 const itemIndex=Math.floor(Math.random()*array.length)
 return array.splice(itemIndex,1)[0]||fallback}
@@ -24,11 +27,11 @@ const play=(gameId)=>{let game=getItemInRoom(gameId,disk.roomId)||getItemInInven
 if(!game){println(`You don’t seem to have that game handy.`)}else{game.onPlay()
 setTimeout(()=>{playGame(game.slug)},4000)}}
 const itemifyGame=(game)=>{const shortName=getShortName(game.title)
-return{name:[game.title],desc:`The back of the box reads:
+return{name:game.title,desc:`The back of the box reads:
     "${(game.description || '').toUpperCase()}"${
       game.extra && game.extra['on_sale']
         ? `
-Some of the text is obscured by a huge"ON SALE"sticker.`
+Beneath the text is a huge"ON SALE"sticker.`
         : ''
     }`,slug:game.slug,isTakeable:true,onPlay:()=>println(`You find an old computer in the corner and fire it up. After a few minutes, you’re welcomed by a familiar screen. You insert the game disk, type "load ${shortName}" and press "enter".`),onTake:()=>{println(`You pick up ${game.title}. On the back of the box, you read:
 "${(game.description || '').toUpperCase()}"
@@ -70,11 +73,18 @@ return`The titles in the bargain bin are probably unfinished, abandoned or just 
 "No touchy-touchy," Lenny says and wags his finger. "Only looky-looky." He taps his right ear. "And asky-asky," he adds.`,},],},{name:'The Ascii Arena',id:'text-games',desc:`There is a huge banner covering the entire west wall of the room. It reads:
 "This is the Dungeon dungeon, the MUD swamp, the Infocom inferno, this is the domain of King Text, the seven bit wonder of the world, the web of the eight bit spider. This is Room 437. This is the Ascii Arena."
 
-Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An opening in the **east** wall leads back to the front room.`,exits:[{dir:['east'],id:'lennys'}],onLook:()=>{println('You’re standing in the Ascii Arena, as Lenny somewhat hyperbolically has christened this tiny room holding all his text-based adventure games.')},items:[{name:['shelves','games'],desc:`There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
-${window.games.map((game) => `-${game.title}(**${getShortName(game.title)}**)`)}`,onLook:()=>{const room=getRoom('text-games')
-let newItems=window.games.filter((game)=>game.extra&&game.extra.room==='text-games').map((game)=>itemifyGame(game))
-newItems=newItems.concat(['Pancake Contingency, The','Palladium Snitch','Constipation, The'].map((game)=>({name:game,onTake:()=>println('Apparently, this game is not for sale, nor for rent, nor for use.'),})))
-room.items=room.items.concat(newItems)},},{name:['note','disclaimer'],desc:`The note reads:
+Theres a **note** pinned to the banner. The **shelves** are remarkably empty. An opening in the **east** wall leads back to the front room.`,exits:[{dir:['east'],id:'lennys'}],onLook:()=>{println('You’re standing in the Ascii Arena, as Lenny somewhat hyperbolically has christened this tiny room holding all his text-based adventure games.')},items:[{name:['shelves','shelf','games'],desc:()=>{const item=getItemInRoom('shelves','text-games')
+item.onLook()},onLook:()=>{const room=getRoom('text-games')
+const realItems=window.games.filter((game)=>game.extra&&game.extra.room==='text-games').map((game)=>itemifyGame(game))
+const fakeItems=[['The Pancake Contingency','In a cold, post-apocalyptic future... lay eggs and the milk comes from ....'],['Palladium Snitch','Prepare!'],['Constipation, The','Times are hard. Literally.']].map(([name,desc])=>({name,desc:`You pick "${name}"" from the shelf and turn it over. Parts of the text are obscured by a giant sticker. The text you can make out reads: 
+"${desc.toUpperCase()}"`,onTake:()=>println('Apparently, this game is not for sale, nor for rent, nor for use.'),}))
+if(!getItemInRoom('The Pancake Contingency','text-games')){room.items=room.items.concat([...realItems,...fakeItems])}
+console.log(fakeItems)
+println(`There are a few games lining the shelves, but most of them have giant stickers saying "PRIVATE COLLECTION! NOT FOR SALE, RENT OR USE." The only available games are:
+${realItems.map((game) => `-${game.name}(**${getShortName(game.name)}**)`).join('\n')}
+Apart from that, the following titles are on display:
+${fakeItems.map((game) => `-${game.name}(**${getShortName(game.name)}**)`).join('\n')}
+`)},},{name:['note','disclaimer'],desc:`The note reads:
 DISCLAIMER!
 
 These games are actually encoded in UTF-8, not ASCII. Sue me.
