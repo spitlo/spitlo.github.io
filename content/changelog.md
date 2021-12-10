@@ -8,6 +8,18 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
 
+## v1.13.x _(2021-12-10)_
+
+- Added some new tags and logos
+- Changed box shadow colors
+- Updated [Karakter](/code/karakter/) article
+- Cookie confirm/decline dialog now accepts key presses
+
+## v1.12.x _(2021-09-10)_
+
+- Some updates to "Lenny’s E-game Emporium"
+- Disallowed Googlebot from indexing site
+
 ## v1.11.x _(2021-05-28)_
 
 - Added dark mode, enabled if user’s system is in dark mode (~~no toggle~~)
@@ -17,15 +29,16 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 
 ## v1.10.x _(2021-05-13)_
 
-- Added a microgame, 'Lenny’s E-game Emporium', as [game menu](/games/)
+- Added a microgame, "Lenny’s E-game Emporium", as [game menu](/games/)
 - Font loading improvements
 - Added this changelog
 
 ## v1.9.x _(2021-05-09)_
 
 - Added a JavaScript only [game section](/games/), primarily reachable through the command `:games`
-- Added support for [text-engine](https://github.com/okaybenji/text-engine), a text adventure game engine by
-Benji Kay and [Kontra](https://github.com/straker/kontra), a gaming micro-library by Steven Lambert
+- Added support for:
+  - [text-engine](https://github.com/okaybenji/text-engine), a text adventure engine by Benji Kay; and
+  - [Kontra](https://github.com/straker/kontra), a gaming micro-library by Steven Lambert
 - Started on a game, [Oxygen Chase](/games/oxygen-chase/), a tiny text-adventure
 
 ## v1.8.x - v1.7.x _(2021-05-02)_
