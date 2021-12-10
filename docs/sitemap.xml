@@ -130,6 +130,9 @@
         <loc>https://spitlo.com/technologies/markdown/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/technologies/nim/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/technologies/perl/</loc>
     </url>
     <url>
@@ -146,5 +149,8 @@
     </url>
     <url>
         <loc>https://spitlo.com/technologies/typescript/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/technologies/v/</loc>
     </url>
 </urlset>

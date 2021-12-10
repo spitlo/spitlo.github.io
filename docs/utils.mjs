@@ -32,4 +32,6 @@ if(days){const date=new Date()
 date.setTime(date.getTime()+(days*24*60*60*1000))
 expires=`; expires=${date.toGMTString()}`}else{expires=''}
 document.cookie=`${name}=${value}${expires}; path=/`}
-export{nms,getCookie,setCookie}
+const deleteCookie=(name)=>{if(getCookie(name)){const date=new Date(0)
+document.cookie=`${name}=; expires=${date.toGMTString()}; path=/`}}
+export{nms,getCookie,setCookie,deleteCookie}

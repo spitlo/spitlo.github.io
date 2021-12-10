@@ -1,6 +1,6 @@
 // minified with jsmin
 
-import{getCookie,nms,setCookie}from'./utils.mjs';const $bottom=document.getElementById('bottom')
+import{nms,setCookie,deleteCookie}from'./utils.mjs';const $bottom=document.getElementById('bottom')
 const $commandLine=document.getElementById('commandLine')
 const $commandLineHint=document.getElementById('commandLineHints')
 const $help=document.getElementById('help')
@@ -14,6 +14,7 @@ const $top=document.getElementById('top')
 const alphabet={a:['____','|__|','|  |'],b:['___ ','|__]','|__]'],c:['____','|   ','|___'],d:['___ ','|  \\','|__/'],e:['____','|___','|___'],f:['____','|___','|   '],g:['____','| __','|__]'],h:['_  _','|__|','|  |'],i:['_','|','|'],j:[' _',' |','_|'],k:['_  _','|_/ ','| \\_'],l:['_   ','|   ','|___'],m:['_  _','|\\/|','|  |'],n:['_  _','|\\ |','| \\|'],o:['____','|  |','|__|'],p:['___ ','|__]','|   '],q:['____','|  |','|_\\|'],r:['____','|__/','|  \\'],s:['____','[__ ','___]'],t:['___',' | ',' | '],u:['_  _','|  |','|__|'],v:['_  _','|  |',' \\/ '],w:['_ _ _','| | |','|_|_|'],x:['_  _',' \\/ ','_/\\_'],y:['_   _',' \\_/ ','  |  '],z:['___',' / ','/__'],' ':['    ','    ','    '],'-':['    ',' __ ','    '],'.':['   ','   ',' * '],':':['   ',' , ',' ’ '],}
 let songIndex=0
 let commandLineActive=false
+let confirmKeys=null
 let command=''
 let commandHint=''
 const commands={help:()=>{const helpMessage=`
@@ -66,9 +67,9 @@ ajourFrame.id='ajour'
 $main.appendChild(ajourFrame)
 $top.scrollIntoView()},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
 $html.classList.add('light')
-showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365))},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
+showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365),()=>deleteCookie('theme'),'Yes, please!','I’d rather not')},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
 $html.classList.add('dark')
-showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','dark',365))},}
+showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','dark',365),()=>deleteCookie('theme'),'Sure, shoot!','Hell, no!')},}
 const navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/',}
 const pressed={'ctrlKey':false,}
 function findPartialMatch(stack,needle){if(needle.substring(0,1)==='_'){return}
@@ -78,16 +79,17 @@ function showCommandLineAlert(title,message,isError){$commandLineHint.className=
 if(isError){$commandLineHint.classList.add('error')
 message=`${message}<br>Type <code>:</code> to try another command.`}else{$commandLineHint.classList.add('help')}
 $commandLineHint.innerHTML=`<strong>${title}</strong><div>${message}</div>`}
-function showCommandLineConfirm(title,message,confirmCallback,declineCallback,confirmText='Yes, please',declineText='No, thanks'){$commandLineHint.className='alertMode'
+function showCommandLineConfirm(title,message,confirmCallback,declineCallback,confirmText='Yes, please',declineText='No, thanks'){confirmKeys={confirm:{key:confirmText[0],fn:confirmCallback},decline:{key:declineText[0],fn:declineCallback,},}
+$commandLineHint.className='alertMode'
 $commandLineHint.classList.add('confirm')
 $commandLineHint.innerHTML=`<strong>${title}</strong><div>${message}</div>`
 const $confirmButton=document.createElement('button')
-$confirmButton.innerText=confirmText
+$confirmButton.innerHTML=`<u>${confirmText[0]}</u>${confirmText.substring(1)}`
 $confirmButton.onclick=()=>{deactivateCommandMode()
 confirmCallback&&confirmCallback()}
 $confirmButton.className='confirm'
 const $declineButton=document.createElement('button')
-$declineButton.innerText=declineText
+$declineButton.innerHTML=`<u>${declineText[0]}</u>${declineText.substring(1)}`
 $declineButton.onclick=()=>{deactivateCommandMode()
 declineCallback&&declineCallback()}
 $declineButton.className='decline'
@@ -108,7 +110,8 @@ $commandLine.className='visible'
 $commandLineHint.className='visible'}
 function deactivateCommandMode(){commandLineActive=false
 $commandLine.className=$commandLineHint.className=''
-command=commandHint=''}
+command=commandHint=''
+confirmKeys=null}
 function evaluateCommand(command){if(commands[command]){commands[command]()}else{showCommandLineAlert('Sorry, that’s not something I understand','Try using the tab completion to enter commands correctly or type <code>help</code> to view a list of valid commands.',true)}}
 document.onkeydown=event=>{if(commandLineActive){if(event.key==='Escape'){deactivateCommandMode()
 return}
@@ -126,6 +129,10 @@ updateCommandLineText()}
 if(command===''){commandHint=''
 updateCommandLineHint()}
 return}
+if(confirmKeys&&event.key.toLowerCase()===confirmKeys.confirm.key.toLowerCase()){confirmKeys.confirm.fn&&confirmKeys.confirm.fn()
+deactivateCommandMode()}
+if(confirmKeys&&event.key.toLowerCase()===confirmKeys.decline.key.toLowerCase()){confirmKeys.decline.fn&&confirmKeys.decline.fn()
+deactivateCommandMode()}
 if(event.ctrlKey){pressed.ctrlKey=true
 document.body.classList.add('showLinkNumbers')}
 switch(event.key){case'/':event.preventDefault()
