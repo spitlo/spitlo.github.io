@@ -4,7 +4,7 @@ description = "Add a little character to your text"
 date = 2021-04-06
 
 [taxonomies]
-technologies = ["Bash"]
+technologies = ["Bash", "Nim", "V"]
 categories = ["Work in Progress"]
 
 [extra]
