@@ -10,6 +10,7 @@ icons=(
 	"babel" \
 	"creativecommons" \
 	"curl" \
+	"dart" \
 	"deno" \
 	"digitalocean" \
 	"docker" \
@@ -64,6 +65,7 @@ icons=(
 	"vercel" \
 	"wordpress" \
 	"xfce" \
+	"zig" \
 )
 
 for icon in "${icons[@]}"; do
