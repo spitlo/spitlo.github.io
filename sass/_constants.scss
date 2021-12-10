@@ -12,7 +12,7 @@ $lightBrown: #dfcece;
 $lightSeagreen: #8bd1cd;
 $lightWhite: #fffffb;
 $mutedPink: #fff1f1;
-$mutedPinkTransparent: #fff1f155;
+$mutedPinkTransparent: #fff1f115;
 $orange: #b55603;
 $red: #e30000;
 $white: #fffcfc;
@@ -23,7 +23,8 @@ $linkPurple: rgb(0, 0, 238);
 @mixin lightTheme() {
   --alert-bgcolor: #{$mutedPink};
   --box-bgcolor: #{$lightWhite};
-  --box-shadow: #{$mutedPinkTransparent};
+  --box-shadow-inner: #{$black};
+  --box-shadow-outer: #{$mutedPinkTransparent};
   --code-bgcolor: #{$mutedPink};
   --code-color: #{$black};
   --crumb-bordercolor: #{$darkGray};
@@ -49,6 +50,7 @@ $linkPurple: rgb(0, 0, 238);
 @mixin darkTheme() {
   --alert-bgcolor: #{$orange};
   --box-bgcolor: #{$honeydew};
+  --box-shadow-inner: rgba(229, 21, 155, .7);
   --box-shadow: rgba(14, 7, 12, .2);
   --code-bgcolor: #{$blue};
   --code-color: #{$lightSeagreen};
