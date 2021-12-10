@@ -23,6 +23,7 @@ To output all Tera variables in code, add this:
 - [ ] Make site work in Firefox Reader View
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
+- [ ] Let `showCommandLineConfirm` accept key presses for confirm/decline
 - [ ] Make an official 88x31 button
 - [x] (Sigh) Dark mode (Override in dotmatrix mode)
 - [x] Add `first_commit` date to code projects
