@@ -92,4 +92,11 @@ const setCookie = (name, value, days) => {
   document.cookie = `${name}=${value}${expires}; path=/`
 }
 
-export { nms, getCookie, setCookie }
+const deleteCookie = (name) => {
+  if (getCookie(name)) {
+    const date = new Date(0)
+    document.cookie = `${name}=; expires=${date.toGMTString()}; path=/`
+  }
+}
+
+export { nms, getCookie, setCookie, deleteCookie }

@@ -1,4 +1,4 @@
-import { getCookie, nms, setCookie } from './utils.mjs';
+import { nms, setCookie, deleteCookie } from './utils.mjs';
 
 const $bottom = document.getElementById('bottom')
 const $commandLine = document.getElementById('commandLine')
@@ -46,6 +46,7 @@ const alphabet = {
 }
 let songIndex = 0
 let commandLineActive = false
+let confirmKeys = null
 let command = ''
 let commandHint = ''
 const commands = {
@@ -201,7 +202,10 @@ Commands are tab completable. Type <code>:</code> to try a command.
     showCommandLineConfirm(
       'Set a cookie?',
       'Do you want to set a cookie to remember this?',
-      () => setCookie('theme', 'light', 365)
+      () => setCookie('theme', 'light', 365),
+      () => deleteCookie('theme'),
+      'Yes, please!',
+      'I’d rather not'
     )
   },
 
@@ -213,7 +217,10 @@ Commands are tab completable. Type <code>:</code> to try a command.
     showCommandLineConfirm(
       'Set a cookie?',
       'Do you want to set a cookie to remember this?',
-      () => setCookie('theme', 'dark', 365)
+      () => setCookie('theme', 'dark', 365),
+      () => deleteCookie('theme'),
+      'Sure, shoot!',
+      'Hell, no!'
     )
   },
 }
@@ -256,22 +263,32 @@ function showCommandLineAlert(title, message, isError) {
 }
 
 function showCommandLineConfirm(
-  title, message, 
+  title, message,
   confirmCallback, declineCallback,
   confirmText = 'Yes, please', declineText = 'No, thanks'
 ) {
+  confirmKeys = {
+    confirm: {
+      key: confirmText[0],
+      fn: confirmCallback
+    },
+    decline: {
+      key: declineText[0],
+      fn: declineCallback,
+    },
+  }
   $commandLineHint.className = 'alertMode'
   $commandLineHint.classList.add('confirm')
   $commandLineHint.innerHTML = `<strong>${title}</strong><div>${message}</div>`
   const $confirmButton = document.createElement('button')
-  $confirmButton.innerText = confirmText
+  $confirmButton.innerHTML = `<u>${confirmText[0]}</u>${confirmText.substring(1)}`
   $confirmButton.onclick = () => {
     deactivateCommandMode()
     confirmCallback && confirmCallback()
   }
   $confirmButton.className = 'confirm'
   const $declineButton = document.createElement('button')
-  $declineButton.innerText = declineText
+  $declineButton.innerHTML = `<u>${declineText[0]}</u>${declineText.substring(1)}`
   $declineButton.onclick = () => {
     deactivateCommandMode()
     declineCallback && declineCallback()
@@ -316,6 +333,7 @@ function deactivateCommandMode() {
   commandLineActive = false
   $commandLine.className = $commandLineHint.className = ''
   command = commandHint = ''
+  confirmKeys = null
 }
 
 function evaluateCommand(command) {
@@ -370,6 +388,16 @@ document.onkeydown = event => {
     }
 
     return
+  }
+
+  // Let user interact with confirm dialog by keyboard
+  if (confirmKeys && event.key.toLowerCase() === confirmKeys.confirm.key.toLowerCase()) {
+    confirmKeys.confirm.fn && confirmKeys.confirm.fn()
+    deactivateCommandMode()
+  }
+  if (confirmKeys && event.key.toLowerCase() === confirmKeys.decline.key.toLowerCase()) {
+    confirmKeys.decline.fn && confirmKeys.decline.fn()
+    deactivateCommandMode()
   }
 
   // Advanced shortcuts

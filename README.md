@@ -23,7 +23,6 @@ To output all Tera variables in code, add this:
 - [ ] Make site work in Firefox Reader View
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
-- [ ] Let `showCommandLineConfirm` accept key presses for confirm/decline
 - [ ] Make an official 88x31 button
 - [x] (Sigh) Dark mode (Override in dotmatrix mode)
 - [x] Add `first_commit` date to code projects
@@ -52,6 +51,7 @@ To output all Tera variables in code, add this:
   - [x] Fix bug with search not working after editing query
   - [x] Add ellipsis in front of cropped text
 - [x] In the heel, always put a right-aligned `$white` shape to connect with the "cloud" in the footer
+- [x] Let `showCommandLineConfirm` accept key presses for confirm/decline
 - [x] Make font smaller in SVG titles (text overlaps in Tor Browser)
 - [x] Nicer code blocks in dotmatrix mode
 - [x] Randomize start page
