@@ -10,7 +10,7 @@ INITIAL_VERSION="0.0.0"
 FORCE="no"
 USAGE="
 ${BROWN}Usage${NC}: $0 [ARGUMENTS]
-Increases version of project naively (only major, minor and patch) based on git tag.
+Increases version of project naively (only major, minor and patch) based on current git tag.
 Adds a tag with the new version. Then deploys site.
 ${BROWN}Arguments${NC}:
   [patch|minor|major]   Semver version change. Defaults to 'patch'.
@@ -40,9 +40,9 @@ if [ "$(git symbolic-ref -q HEAD)" != "refs/heads/master" ]; then
   fi
 fi
 
-if [ -n "$(git status --porcelain|grep -v '^??')" ]; then
+if git status --porcelain|grep -qv '^??'; then
   if [ "$FORCE" = "no" ]; then
-    echo "Please commit your changes before publishing."
+    echo "Please commit your changes before deploying."
     exit 1
   fi
 else
@@ -87,12 +87,15 @@ zola check
 SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" BUILD_TIME="$build_time" zola build --output-dir ./docs
 
 # Minify some assets
+
 ## Don’t include full url in search index
 sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
+
 ## Build JSMin (https://www.crockford.com/jsmin.html)
 if [ ! -x "bin/jsmin" ]; then
   bin/build_jsmin
 fi
+
 ## Ever so slightly minify scripts. Add scripts to this array as needed
 scripts=(
   "keyboard.js" \
