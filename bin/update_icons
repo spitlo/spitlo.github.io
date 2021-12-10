@@ -8,7 +8,6 @@ icons=(
 	"arduino" \
 	"aseprite" \
 	"babel" \
-	"gnubash" \
 	"creativecommons" \
 	"curl" \
 	"deno" \
@@ -22,8 +21,9 @@ icons=(
 	"git" \
 	"github" \
 	"githubactions" \
+	"gnubash" \
 	"godotengine" \
-	"gog-dot-com" \
+	"gogdotcom" \
 	"graphql" \
 	"html5" \
 	"javascript" \
@@ -48,7 +48,7 @@ icons=(
 	"react" \
 	"redis" \
 	"renpy" \
-	"rollup-dot-js" \
+	"rollupdotjs" \
 	"rss" \
 	"rust" \
 	"sass" \
@@ -69,6 +69,22 @@ icons=(
 for icon in "${icons[@]}"; do
 	icon_url="${URL_BASE}${icon}.svg"
 	icon_path="${ICON_FOLDER}${icon}.svg"
+	# Rename some icons to match automatically generated tag slugs
+	case "$icon" in
+		"creativecommons") icon_path="${ICON_FOLDER}creative-commons.svg";;
+		"githubactions") icon_path="${ICON_FOLDER}github-actions.svg";;
+		"gnubash") icon_path="${ICON_FOLDER}bash.svg";;
+		"godotengine") icon_path="${ICON_FOLDER}godot.svg";;
+		"gogdotcom") icon_path="${ICON_FOLDER}gog.svg";;
+		"letsencrypt") icon_path="${ICON_FOLDER}let-s-encrypt.svg";;
+		"raspberrypi") icon_path="${ICON_FOLDER}raspberry-pi.svg";;
+		"renpy") icon_path="${ICON_FOLDER}ren-py.svg";;
+		"rollupdotjs") icon_path="${ICON_FOLDER}rollup.svg";;
+		"simpleicons") icon_path="${ICON_FOLDER}simple-icons.svg";;
+	esac
 	rm "$icon_path"
-	wget "$icon_url" --directory-prefix "$ICON_FOLDER"
+	wget "$icon_url" --directory-prefix "$ICON_FOLDER" -O "$icon_path"
 done
+
+# Icons downloaded, now fetch all colors from GitHub and generate sass/_icons.scss
+node bin/iconColors.js

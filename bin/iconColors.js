@@ -6,16 +6,17 @@ const iconFolder = './static/icons/simple/'
 
 const slugify = (string) => string.replace('’', '').replace(/[^A-Za-z0-9]/, '').toLowerCase()
 
+// Fix some slug mismatches
 const slugMap = {
   'bash': 'gnubash',
   'creative-commons': 'creativecommons',
   'github-actions': 'githubactions',
-  'godot-engine': 'godotengine',
-  'gog-dot-com': 'gogcom',
+  'godot': 'godotengine',
+  'gog': 'gogcom',
   'let-s-encrypt': 'letsencrypt',
   'raspberry-pi': 'raspberrypi',
   'ren-py': 'renpy',
-  'rollup-dot-js': 'rollupjs',
+  'rollup': 'rollupjs',
   'simple-icons': 'simpleicons',
 }
 
@@ -31,7 +32,6 @@ https.get(url,(res) => {
     try {
       const iconData = JSON.parse(body)
       fs.readdirSync(iconFolder).forEach(icon => {
-        // console.log(icon)
         const localIcon = icon.replace('.svg', '')
         const iconObject = iconData.icons.find((iconObject) => {
           const iconSlug = slugify(iconObject.title)
