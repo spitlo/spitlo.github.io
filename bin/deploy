@@ -84,6 +84,7 @@ zola_version=$(zola --version) # Clean this up eventually, but use as is for now
 build_time=$(date +'%Y-%m-%dT%H:%M:%S%z')
 
 zola check
+rm -rf ./docs
 SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" BUILD_TIME="$build_time" zola build --output-dir ./docs
 
 # Minify some assets
