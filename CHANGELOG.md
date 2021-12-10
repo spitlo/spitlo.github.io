@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.13.1
+
+- Update changelog [`993d0a6`](../../commit/993d0a6754930cd3b4c20ff77dba4c9a64a49015)
+- Update Karakter article [`5bee11b`](../../commit/5bee11b01c5655378b2b83c7ba4284fbc420def9)
+
 ## v1.13.0
 
 - Remove output directory before building to avoid prompt from Zola [`e2bf167`](../../commit/e2bf1671b845ea0e8b205ecd4f40992298b71895)
