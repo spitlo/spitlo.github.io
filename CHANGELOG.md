@@ -2,6 +2,17 @@
 
 This changelog is automatically generated.
 
+## v1.13.0
+
+- Remove output directory before building to avoid prompt from Zola [`e2bf167`](../../commit/e2bf1671b845ea0e8b205ecd4f40992298b71895)
+- Let showCommandLineConfirm accept key presses for confirm/decline [`6502a4a`](../../commit/6502a4afded1f6b98768ba8710f50815a4755ab9)
+- Change box shadow colors [`1cf852b`](../../commit/1cf852bedb53137fe07b9703d78bf644e461f7f2)
+- Add todo item [`6ff4519`](../../commit/6ff4519a69f432aa94b3dda6a9a1c3df10689f50)
+- Clean up deploy script [`970a109`](../../commit/970a1091945994f7cee8db855bb45719e0b91e6d)
+- Improve icon handling [`3a0af6e`](../../commit/3a0af6eceff51c09ede711d3d60a462132537ee8)
+- Add V logo. Add V and Nim tags to Karakter [`981820f`](../../commit/981820f334530029f13ed8446e456f9d608bcffb)
+- Update Deno and GraphQL logos [`770400e`](../../commit/770400eceb9f95a033bca641601e580f33c71a87)
+
 ## v1.12.1
 
 - Disallow Googlebot from /games/ as well [`2df1a04`](../../commit/2df1a04137911ceac2a0abfcd56c638656464712)
