@@ -12,7 +12,7 @@ repo = "https://github.com/spitlo/karakter"
 first_commit = 2021-04-01
 +++
 
-Karakter is a bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like Ada and Fortran. I encourage everyone to not hold their breath for that though.
+Karakter is a bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like Ada and Fortran. I encourage everyone to not hold their breath for that though -- at the moment there is a working version in [V](https://vlang.io) and a work-in-progress version in [Nim](https://nim-lang.org/).
 
 There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s two less eclectic styles, `¢џБ≡┎pμ∩κ` and `ƒάїгψłάľє`.
 
