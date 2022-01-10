@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.13.3
+
+- Stromata: Add first file of B Strain, started 2022-01-01 [`0b5a3bc`](../../commit/0b5a3bcbc9e4a0e397a23b8a44e4e553755995a4)
+
 ## v1.13.2
 
 - Update articles on Dotfiles and Karakter [`eac4b6e`](../../commit/eac4b6ed2b1764d846fb7606d8cf19fa479e2f63)
