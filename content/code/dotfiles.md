@@ -60,15 +60,22 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
 
 ## [`update`](https://github.com/spitlo/dotfiles/blob/master/bin/update)
 
-`update` helps me keep some commands fresh across platforms, often by downloading the latest release from Github or similar and moving it to `~/bin`. This was mostly created out of frustration with the way Homebrew works on macOS, but I use it on Android ([Termux](https://github.com/termux/termux-app)) and Linux as well. At the time of writing, `update` supports the following commands:
+`update` helps me keep some commands fresh across platforms, often by downloading the latest release from Github or similar and moving it to `~/bin`. This was mostly created out of frustration with the way Homebrew works on macOS, but I use it on Android ([Termux](https://github.com/termux/termux-app)) and Linux as well. At the time of writing, `update` supports updating the following commands:
 
 - bat
 - bombadillo
 - delta
+- exa
 - fzf
+- grit
+- gron
+- h2c
+- jq
 - micro
+- navi
 - nb
 - starship
 - svtplay-dl
+- wp-cli
 - youtube-dl
 - zola

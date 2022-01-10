@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.13.2
+
+- Update articles on Dotfiles and Karakter [`eac4b6e`](../../commit/eac4b6ed2b1764d846fb7606d8cf19fa479e2f63)
+- Add icons for Dart and Zig [`a8fe6bf`](../../commit/a8fe6bf1bc97c751b3f1327935a2e33fb16ec237)
+
 ## v1.13.1
 
 - Update changelog [`993d0a6`](../../commit/993d0a6754930cd3b4c20ff77dba4c9a64a49015)
