@@ -27,7 +27,7 @@ Other than that, anything goes. Examples of possible modifications (on a scale f
 - [ ] Add harmonica and lyrics
 - [ ] Play it on your computer, record it to your phone while playing harmonica. Save as ogg
 - [ ] Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (opionally saving it as ogg).
-- [ ] Print the file. Keep only the pages whose numbers are included in a fibonacci sequence (you will need an extra copy of page one). Scan these pages. Somehow make a song from that.
+- [ ] Print the file. Keep only the pages whose numbers are included in a fibonacci sequence (you might use an extra copy of page one). Scan these pages. Somehow make a song from that.
 - [ ] Using a magnetoencephalography helmet, record your reactions to the song. Convert those readings to frequencies. Convert the frequencies to actual tones. Record the tones. Add reverb.
 
 There are a lot of other modifications that are also possible/desirable.
@@ -35,6 +35,15 @@ There are a lot of other modifications that are also possible/desirable.
 The first version, `a-000.wav` was sent on 2021-02-20 at 14:03 CET.
 
 ## Files
+
+### B Strain, 2022
+
+| File       | Sent             | By       | Duration | Snippet (size)                                                  |
+|:-----------|:-----------------|:---------|:---------|:----------------------------------------------------------------|
+| b-000.flac | 2022-01-01 11:25 | kryptho  |    03:41 | [mp3](https://files.mefirst.se/stromata/mp3/b-000.mp3) (721 KB) |
+
+
+### A Strain, 2021
 
 | File       | Sent             | By       | Duration | Snippet (size)                                                  |
 |:-----------|:-----------------|:---------|:---------|:----------------------------------------------------------------|
