@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.13.4
+
+- Stromata page updated [`e6bcc1d`](../../commit/e6bcc1db6f0ef4bc1ca290f37f197ae210d26b18)
+
 ## v1.13.3
 
 - Stromata: Add first file of B Strain, started 2022-01-01 [`0b5a3bc`](../../commit/0b5a3bcbc9e4a0e397a23b8a44e4e553755995a4)
