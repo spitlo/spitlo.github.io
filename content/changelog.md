@@ -14,6 +14,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 - Changed box shadow colors
 - Updated [Karakter](/code/karakter/) article
 - Cookie confirm/decline dialog now accepts key presses
+- Stromata page updated with first two files from Strain B
 
 ## v1.12.x _(2021-09-10)_
 

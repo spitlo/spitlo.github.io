@@ -34,6 +34,10 @@ There are a lot of other modifications that are also possible/desirable.
 
 The first version, `a-000.wav` was sent on 2021-02-20 at 14:03 CET.
 
+## B Strain
+
+On January 1st, 2022, the B Strain was inititated by Kryptho.
+
 ## Files
 
 ### B Strain, 2022
@@ -41,6 +45,7 @@ The first version, `a-000.wav` was sent on 2021-02-20 at 14:03 CET.
 | File       | Sent             | By       | Duration | Snippet (size)                                                  |
 |:-----------|:-----------------|:---------|:---------|:----------------------------------------------------------------|
 | b-000.flac | 2022-01-01 11:25 | kryptho  |    03:41 | [mp3](https://files.mefirst.se/stromata/mp3/b-000.mp3) (721 KB) |
+| b-001.wav  | 2022-01-14 16:46 | spitlo   |    04:09 | [mp3](https://files.mefirst.se/stromata/mp3/b-001.mp3) (721 KB) |
 
 
 ### A Strain, 2021
