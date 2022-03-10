@@ -4,8 +4,28 @@
 	<link href="https://spitlo.com/categories/electronic/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-03-26T00:00:00+00:00</updated>
+	<updated>2022-03-05T00:00:00+00:00</updated>
 	<id>https://spitlo.com/categories/electronic/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Derivata</title>
+		<published>2022-03-05T00:00:00+00:00</published>
+		<updated>2022-03-05T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/music/derivata/" type="text/html"/>
+		<id>https://spitlo.com/music/derivata/</id>
+		<content type="html">&lt;p&gt;Derivata is a collaboration in the same vein as &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, but between Lolita Fatjo and me.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;Rules&lt;&#x2F;h2&gt;
+&lt;p&gt;The rules for Derivata are the same as those for &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, basically no rules except that the next iteration must build upon the previous in some way.&lt;&#x2F;p&gt;
+&lt;p&gt;The first version, &lt;code&gt;a-000.mp3&lt;&#x2F;code&gt; was sent by Lolita Fatjo on 2022-01-24 at 06:49 CET.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;Files&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;a-strain-2022&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-strain-2022&quot; aria-label=&quot;Anchor link for: a-strain-2022&quot;&gt;#&lt;&#x2F;a&gt;A Strain, 2022&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th align=&quot;left&quot;&gt;File&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Sent&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;By&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Duration&lt;&#x2F;th&gt;&lt;th align=&quot;left&quot;&gt;Snippet (size)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-000.mp3&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2022-01-24 06:49&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;L.F.&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:08&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;derivata&#x2F;snippets&#x2F;a-000.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-001.mp3&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2022-01-28 23:58&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;03:21&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;derivata&#x2F;snippets&#x2F;a-001.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-002.mp3&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2022-02-20 15:19&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;L.F.&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:47&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;derivata&#x2F;snippets&#x2F;a-002.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;a-003.mp3&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;2022-03-05 00:45&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;04:27&lt;&#x2F;td&gt;&lt;td align=&quot;left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;derivata&#x2F;snippets&#x2F;a-003.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Stromata</title>
 		<published>2021-03-26T00:00:00+00:00</published>
