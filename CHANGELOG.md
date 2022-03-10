@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.14.0
+
+- Use initials [`aa84e3e`](../../commit/aa84e3e6fc434aa6c5875345c19cc6a2b72071e4)
+- Add Derivata page [`9c47d5e`](../../commit/9c47d5e8bf6713f1ab57ae6621468d300800a9f1)
+
 ## v1.13.4
 
 - Stromata page updated [`e6bcc1d`](../../commit/e6bcc1db6f0ef4bc1ca290f37f197ae210d26b18)
