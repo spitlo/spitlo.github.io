@@ -19,7 +19,7 @@ ul.taxonomy {
     border-top: 1px dashed $lightSeagreen;
     border-left: 1px dashed $lightSeagreen;
     border-radius: 7px;
-    box-shadow: 5px 5px var(--box-shadow-inner), 2px 2px 17px 17px var(--box-shadow);
+    box-shadow: 5px 5px var(--box-shadow-inner), 2px 2px 17px 17px var(--box-shadow-outer);
     color: $black;
 
     a {
