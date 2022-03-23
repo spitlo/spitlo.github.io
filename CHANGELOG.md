@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v1.14.1
+
+- Stromata: Update snippets path [`5cf6bec`](../../commit/5cf6bec8d2b6704e8f6eed9179f84715f4679de4)
+- Add Derivata A-004.mp3 [`d826a60`](../../commit/d826a60c4ffa343a7310fd2925d75d8ecc235b51)
+- Fix box-shadow [`30e6e08`](../../commit/30e6e0825ebb4d95f8c1c8c0a2627fc35304f5c1)
+
 ## v1.14.0
 
 - Use initials [`aa84e3e`](../../commit/aa84e3e6fc434aa6c5875345c19cc6a2b72071e4)
