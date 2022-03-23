@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.15.0
+
+- Show first commit message on commit date hover [`22c97d3`](../../commit/22c97d33005150d324d06c96f27d1e95432880d8)
+- Add morsh [`339d901`](../../commit/339d901f204f791b6fd3e0c03091c7715fdb0790)
+
 ## v1.14.1
 
 - Stromata: Update snippets path [`5cf6bec`](../../commit/5cf6bec8d2b6704e8f6eed9179f84715f4679de4)
