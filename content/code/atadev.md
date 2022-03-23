@@ -8,7 +8,8 @@ technologies = ["Bash", "Git"]
 
 [extra]
 repo = "https://github.com/spitlo/atadev"
-first_commit = 2020-10-09
+first_commit_time = 2020-10-09
+first_commit_message = "It was a dark and stormy night..."
 +++
 
 At-a-dev is a simple bash script to enable `@`:ing other devs in code and getting notifications about mentions on `git pull`.

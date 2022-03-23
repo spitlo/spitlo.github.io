@@ -8,7 +8,8 @@ technologies = ["TypeScript", "HTML5", "Sass", "Bash", "Shopify"]
 
 [extra]
 repo = "https://github.com/spitlo/shopify-labels"
-first_commit = 2020-06-25
+first_commit_time = 2020-06-25
+first_commit_message = "First commit"
 +++
 
 This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.

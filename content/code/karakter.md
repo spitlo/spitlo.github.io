@@ -9,7 +9,8 @@ categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/karakter"
-first_commit = 2021-04-01
+first_commit_time = 2021-04-01
+first_commit_message = "It was the best of times, it was the worst of times..."
 +++
 
 Karakter is a Bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like [Ada](https://www.adaic.org/) and [Fortran](https://fortran-lang.org/). I encourage everyone to not hold their breath for that though -- at the moment there is a working version in [V](https://vlang.io) and work-in-progress versions in [Nim](https://nim-lang.org/) and [Zig](https://ziglang.org/).

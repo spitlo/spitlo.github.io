@@ -12,6 +12,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v1.14.x _(2022-03-23)_
 
 - Added `morsh` in [code](/code/)
+- Show first commit message on commit date hover
 
 ## v1.13.x _(2021-12-10)_
 

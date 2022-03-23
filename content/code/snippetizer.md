@@ -8,7 +8,8 @@ technologies = ["Bash", "FFmpeg"]
 
 [extra]
 repo = "https://github.com/spitlo/snippetizer"
-first_commit = 2021-03-26
+first_commit_time = 2021-03-26
+first_commit_message = "Once upon a time..."
 +++
 
 I made `snippetizer` to be able to quickly produce snippets of the material from [Stromata](/music/stromata). It uses `ffmpeg` and `ffprobe` and takes a few arguments:

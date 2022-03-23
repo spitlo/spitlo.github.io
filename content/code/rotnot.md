@@ -8,7 +8,8 @@ technologies = ["JavaScript", "Bash"]
 
 [extra]
 repo = "https://github.com/spitlo/rotnot"
-first_commit = 2020-04-05
+first_commit_time = 2020-04-05
+first_commit_message = "First commit"
 +++
 
 Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.

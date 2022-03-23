@@ -8,7 +8,8 @@ technologies = ["JavaScript"]
 
 [extra]
 repo = "https://github.com/spitlo/revercss"
-first_commit = 2014-12-05
+first_commit_time = 2014-12-05
+first_commit_message = "Initial commit"
 +++
 
 Revercss, sometimes stylized as ƨƨↄ, was made as a joke many years ago, and "marketed" as

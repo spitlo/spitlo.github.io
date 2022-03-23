@@ -9,7 +9,8 @@ categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/dotfiles"
-first_commit = 2013-07-06
+first_commit_time = 2013-07-06
+first_commit_message = "For safekeeping"
 +++
 
 I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.

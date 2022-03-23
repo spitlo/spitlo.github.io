@@ -9,7 +9,8 @@ categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/spitlo.github.io"
-first_commit = 2020-11-13
+first_commit_time = 2020-11-13
+first_commit_message = "Unclear (Borked repo)"
 +++
 
 I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.

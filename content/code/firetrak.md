@@ -8,7 +8,8 @@ technologies = ["Bash", "Let’s Encrypt"]
 
 [extra]
 repo = "https://github.com/spitlo/firetrak"
-first_commit = 2020-11-01
+first_commit_time = 2020-11-01
+first_commit_message = "It was a dark and stormy night..."
 +++
 
 Firetrak is used to develop locally with real https certificates using [Traefik](https://traefik.io) and [Let’s Encrypt](https://letsencrypt.org/).

@@ -8,7 +8,8 @@ technologies = ["Deno", "TypeScript", "Bash"]
 
 [extra]
 repo = "https://github.com/spitlo/mercuriceratops"
-first_commit = 2020-05-16
+first_commit_time = 2020-05-16
+first_commit_message = "Initial commit"
 +++
 
 ## A Gemini client written for Deno

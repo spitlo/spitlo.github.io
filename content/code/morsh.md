@@ -9,7 +9,8 @@ categories = ["Work in Progress"]
 
 [extra]
 repo = "https://github.com/spitlo/morsh"
-first_commit = 2022-03-17
+first_commit_time = 2022-03-17
+first_commit_message = "A screaming comes across the sky"
 +++
 
 A Bash script to decode/encode morse code. Slightly buggy and very, very slow. Could also be used as an extremely unpleasant way to uppercase text.

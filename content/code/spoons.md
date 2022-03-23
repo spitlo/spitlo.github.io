@@ -8,7 +8,8 @@ technologies = ["Lua"]
 
 [extra]
 repo = "https://github.com/spitlo/hammerspoon"
-first_commit = 2020-02-12
+first_commit_time = 2020-02-12
+first_commit_message = "First commit"
 +++
 
 I use [Hammerspoon](https://www.hammerspoon.org/) together with [Karabiner-Elements](https://karabiner-elements.pqrs.org/) on macOS to set up keyboard shortcuts and window management.
