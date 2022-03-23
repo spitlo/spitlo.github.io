@@ -8,6 +8,11 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
 
+
+## v1.14.x _(2022-03-23)_
+
+- Added `morsh` in [code](/code/)
+
 ## v1.13.x _(2021-12-10)_
 
 - Added some new tags and logos
@@ -16,6 +21,8 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 - Cookie confirm/decline dialog now accepts key presses
 - Stromata page updated with first two files from Strain B
 - Derivata page added
+- Fixed box shadow fail (1.14)
+- Updated Stromata snippet paths for more consistency (1.14)
 
 ## v1.12.x _(2021-09-10)_
 
