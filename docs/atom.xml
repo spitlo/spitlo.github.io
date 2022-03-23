@@ -4,8 +4,31 @@
 	<link href="https://spitlo.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-05T00:00:00+00:00</updated>
+	<updated>2022-03-23T00:00:00+00:00</updated>
 	<id>https://spitlo.com/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Morsh</title>
+		<published>2022-03-23T00:00:00+00:00</published>
+		<updated>2022-03-23T00:00:00+00:00</updated>
+		<link href="https://spitlo.com/code/morsh/" type="text/html"/>
+		<id>https://spitlo.com/code/morsh/</id>
+		<content type="html">&lt;p&gt;A Bash script to decode&#x2F;encode morse code. Slightly buggy and very, very slow. Could also be used as an extremely unpleasant way to uppercase text.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;Installation&lt;&#x2F;h2&gt;
+&lt;p&gt;Just put the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;&#x2F;a&gt;Fancy installation&lt;&#x2F;h2&gt;
+&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;&#x2F;a&gt;Usage examples&lt;&#x2F;h2&gt;
+&lt;p&gt;Quickly decode a message from some ancient online puzzle game:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;.&#x2F;morsh ...- --- --- -.. --- --- &#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt; --&lt;&#x2F;span&gt;&lt;span&gt; .- --. .. -.-.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Awkwardly uppercase a sentence (removing punctuation, diacritics and fluff in the process):&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fffd87;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d6d680;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d68686;&quot;&gt;I Have No Mouth, and I Must Scream&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d6d680;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span&gt;.&#x2F;morsh -e &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span&gt;.&#x2F;morsh -d
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Turn Crime and Punishment into something you can reliably broadcast to your entire neighborhood with a simple signal horn and some patience:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;curl https:&#x2F;&#x2F;gutenberg.org&#x2F;files&#x2F;2554&#x2F;2554-0.txt &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span&gt;.&#x2F;morsh --encode &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span&gt;less
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Derivata</title>
 		<published>2022-03-05T00:00:00+00:00</published>
