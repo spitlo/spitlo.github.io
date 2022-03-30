@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.16.0
+
+- Add Derivata a-005.mp3 [`11078f0`](../../commit/11078f0d69a23b490e59d48a1ab5be724558de8c)
+
 ## v1.15.0
 
 - Show first commit message on commit date hover [`22c97d3`](../../commit/22c97d33005150d324d06c96f27d1e95432880d8)
