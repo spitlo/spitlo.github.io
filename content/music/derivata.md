@@ -29,3 +29,4 @@ The first version, `a-000.mp3` was sent by Lolita Fatjo on 2022-01-24 at 06:49 C
 | a-002.mp3  | 2022-02-20 15:19 | L.F.     |    04:47 | [mp3](https://files.mefirst.se/derivata/snippets/a-002.mp3) (721 KB) |
 | a-003.mp3  | 2022-03-05 00:45 | spitlo   |    04:27 | [mp3](https://files.mefirst.se/derivata/snippets/a-003.mp3) (722 KB) |
 | A-004.mp3  | 2022-03-13 16:48 | L.F.     |    04:33 | [mp3](https://files.mefirst.se/derivata/snippets/a-004.mp3) (721 KB) |
+| a-005.mp3  | 2022-03-30 07:02 | spitlo   |    02:28 | [mp3](https://files.mefirst.se/derivata/snippets/a-005.mp3) (722 KB) |
