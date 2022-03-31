@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.17.0
+
+- Add Derivata a-006.mp3 [`f6d1ac5`](../../commit/f6d1ac5e72142886f5ba1bf6dd52e1c594014610)
+
 ## v1.16.0
 
 - Add Derivata a-005.mp3 [`11078f0`](../../commit/11078f0d69a23b490e59d48a1ab5be724558de8c)
