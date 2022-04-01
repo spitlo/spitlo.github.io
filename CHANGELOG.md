@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.18.1
+
+- Don’t allow linebreaks in <code> elements [`de9d0e6`](../../commit/de9d0e67239d56eebc27f6569c6c89650f811ac4)
+
 ## v1.18.0
 
 - Add 'moneytalk' set to Karakter article [`79c6f76`](../../commit/79c6f760db359d6f93ae1caf8c349449c033e41d)
