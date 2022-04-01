@@ -15,9 +15,9 @@ first_commit_message = "It was the best of times, it was the worst of times..."
 
 Karakter is a Bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like [Ada](https://www.adaic.org/) and [Fortran](https://fortran-lang.org/). I encourage everyone to not hold their breath for that though -- at the moment there is a working version in [V](https://vlang.io) and work-in-progress versions in [Nim](https://nim-lang.org/) and [Zig](https://ziglang.org/).
 
-There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s three less eclectic styles, `¢џБ≡┎pμ∩κ`, `ƒάїгψłάľє` and `LŌŪĐMŌŪṪH`.
+There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s four less eclectic styles, `¢џБ≡┎pμ∩κ`, `ƒάїгψłάľє`, `LŌŪĐMŌŪṪH` and `₥0₦€¥₸₳£₭`.
 
-All glyphs are chosen from [this list](https://github.com/ehmicky/cross-platform-terminal-characters) of "All the characters that work on most terminals" so they should work on most terminals.
+Most glyphs are chosen from [this list](https://github.com/ehmicky/cross-platform-terminal-characters) of "All the characters that work on most terminals" so they should work on most terminals -- the exception being the set "Moneytalk" which is made up entirely of currency symbols (plus `1` and `0`, of course) and is not guaranteed to work everywhere.
 
 There are some other flags, but the project readme has more information.
 
@@ -65,4 +65,9 @@ It ш@s the bєsŁ of tim≡$, it w@s tHe шоrst of Łim≡$, it шas ŁH≡ а
 
 ```txt
 ĪṪ ШĀȘ ṪHĒ ḂĒȘṪ ŌF ṪIMĒȘ, IṪ ШĀȘ ṪHĒ ШŌŔȘṪ ŌF ṪIMĒȘ, IṪ ШĀȘ ṪHĒ ĀGĒ ŌF ШIȘĐŌM, IṪ ШĀȘ ṪHĒ ĀGĒ ŌF FŌŌLIȘHПĒȘȘ, IṪ ШĀȘ ṪHĒ ĒРŌČH ŌF ḂĒLIĒF, IṪ ШĀȘ ṪHĒ ĒРŌČH ŌF IПČŔĒĐŪLIṪЏ, IṪ ШĀȘ ṪHĒ ȘĒĀȘŌП ŌF LIGHṪ, IṪ ШĀȘ ṪHĒ ȘĒĀȘŌП ŌF ĐĀŔЌПĒȘȘ, IṪ ШĀȘ ṪHĒ ȘРŔIПG ŌF HŌРĒ, IṪ ШĀȘ ṪHĒ ШIПṪĒŔ ŌF ĐĒȘРĀIŔ, ШĒ HĀĐ ĒVĒŔЏṪHIПG ḂĒFŌŔĒ ŪȘ, ШĒ HĀĐ ПŌṪHIПG ḂĒFŌŔĒ ŪȘ, ШĒ ШĒŔĒ ĀLL GŌIПG ĐIŔĒČṪ ṪŌ ĦĒĀVĒП, ШĒ ШĒŔĒ ĀLL GŌIПG ĐIŔĒČṪ ṪHĒ ŌṪHĒŔ ШĀЏ – IП ȘHŌŔṪ, ṪHĒ РĒŔIŌĐ ШĀȘ ȘŌ FĀŔ LIЌĒ ṪHĒ РŔĒȘĒПṪ РĒŔIŌĐ, ṪHĀṪ ȘŌMĒ ŌF IṪȘ ПŌIȘIĒȘṪ ĀŪṪHŌŔIṪIĒȘ IПȘIȘṪĒĐ ŌП IṪȘ ḂĒIПG ŔĒČĒIVĒĐ, FŌŔ GŌŌĐ ŌŔ FŌŔ ĒVIL, IП ṪHĒ ȘŪРĒŔLĀṪIVĒ ĐĒGŔĒĒ ŌF ČŌMРĀŔIȘŌП ŌПLЏ. 
+```
+
+### Output text, obfuscation level high, moneytalk style
+```txt
+1₮ ₩₳$ ₺₶€ ฿€$₸ 0₣ ₮1₥€₷, 1₸ ₩₳$ ₺₶€ ₩0₹₷₺ 0₣ ₸1₥€$, 1₺ ₩₳$ ₸₶€ ₳₲€ 0₣ ₩1$₫0₥, 1₺ ₩₳$ ₺₶€ ₳₲€ 0₣ ₣00£1₷₶₪€₷$, 1₮ ₩₳$ ₸₶€ €₱0₵₶ 0₣ ৳€£1€₣, 1₸ ₩₳$ ₺₶€ €₱0₵₶ 0₣ 1₪₵₹€₫U£1₮¥, 1₺ ₩₳$ ₮₶€ ₷€₳₷0₪ 0₣ £1₲₶₸, 1₮ ₩₳₷ ₸₶€ ₷€₳₷0₪ 0₣ ₫₳₹₭₪€$$, 1₮ ₩₳$ ₮₶€ $₽₹1₦₲ 0₣ ₶0₱€, 1₮ ₩₳$ ₸₶€ ₩1₦₸€₹ 0₣ ₫€$₱₳1₹, ₩€ ₶₳₫ €V€₹¥₸₶1₦₲ ฿€₣0₹€ U$, ₩€ ₶₳₫ ₪0₺₶1₦₲ ৳€₣0₹€ U$, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₵₺ ₸0 ₶€₳V€₦, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₡₸ ₮₶€ 0₸₶€₹ ₩₳¥ – 1₪ $₶0₹₸, ₸₶€ ₽€₹10₫ ₩₳₷ ₷0 ₣₳₹ £1₭€ ₺₶€ ₽₹€₷€₪₮ ₱€₹10₫, ₸₳₮ $0₥€ 0₣ 1₸$ ₦01$1€$₮ ₳U₸₶0₹1₸1€$ 1₦₷1$₮€₫ 0₦ 1₸₷ ৳€1₦₲ ₹€₵€1V€₫, ₣0₹ ₲00₫ 0₹ ₣0₹ €V1£, 1₪ ₮₶€ ₷U₽€₹£₳₸1V€ ₫€₲₹€€ 0₣ ₡0₥₱₳₹1$0₦ 0₪£¥.
 ```
