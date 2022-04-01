@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.18.0
+
+- Add 'moneytalk' set to Karakter article [`79c6f76`](../../commit/79c6f760db359d6f93ae1caf8c349449c033e41d)
+- Add Derivata a-007.mp3 [`b8d9d8b`](../../commit/b8d9d8b4316def8a8280933b35040ba359ed1699)
+
 ## v1.17.0
 
 - Add Derivata a-006.mp3 [`f6d1ac5`](../../commit/f6d1ac5e72142886f5ba1bf6dd52e1c594014610)
