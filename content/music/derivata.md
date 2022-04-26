@@ -22,8 +22,8 @@ The first version, `a-000.mp3` was sent by Lolita Fatjo on 2022-01-24 at 06:49 C
 
 ### A Strain, 2022
 
-| File       | Sent             | By       | Duration | Snippet (size)                                                  |
-|:-----------|:-----------------|:---------|:---------|:----------------------------------------------------------------|
+| File       | Sent             | By       | Duration | Snippet (size)                                                       |
+|:-----------|:-----------------|:---------|:---------|:---------------------------------------------------------------------|
 | a-000.mp3  | 2022-01-24 06:49 | L.F.     |    03:08 | [mp3](https://files.mefirst.se/derivata/snippets/a-000.mp3) (721 KB) |
 | a-001.mp3  | 2022-01-28 23:58 | spitlo   |    03:21 | [mp3](https://files.mefirst.se/derivata/snippets/a-001.mp3) (722 KB) |
 | a-002.mp3  | 2022-02-20 15:19 | L.F.     |    04:47 | [mp3](https://files.mefirst.se/derivata/snippets/a-002.mp3) (721 KB) |
@@ -32,3 +32,5 @@ The first version, `a-000.mp3` was sent by Lolita Fatjo on 2022-01-24 at 06:49 C
 | a-005.mp3  | 2022-03-30 07:02 | spitlo   |    02:28 | [mp3](https://files.mefirst.se/derivata/snippets/a-005.mp3) (722 KB) |
 | a-006.mp3  | 2022-03-31 10:35 | L.F.     |    02:36 | [mp3](https://files.mefirst.se/derivata/snippets/a-006.mp3) (721 KB) |
 | a-007.mp3  | 2022-04-01 22:15 | spitlo   |    04:38 | [mp3](https://files.mefirst.se/derivata/snippets/a-007.mp3) (722 KB) |
+| a-008.mp3  | 2022-04-15 19:57 | L.F.     |    02:33 | [mp3](https://files.mefirst.se/derivata/snippets/a-008.mp3) (721 KB) |
+| a-009.mp3  | 2022-04-26 12:36 | spitlo   |    04:35 | [mp3](https://files.mefirst.se/derivata/snippets/a-009.mp3) (722 KB) |
