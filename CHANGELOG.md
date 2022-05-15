@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.18.2
+
+- Add Derivata a-010 and a-011 [`bff2313`](../../commit/bff23133af5eb41bf96f1823ab9c78dd6ef10214)
+- Add a-008 and a-009 to Derivata page [`57bbae5`](../../commit/57bbae544b15c5b861cea37533240a8574e9ee1b)
+
 ## v1.18.1
 
 - Don’t allow linebreaks in <code> elements [`de9d0e6`](../../commit/de9d0e67239d56eebc27f6569c6c89650f811ac4)
