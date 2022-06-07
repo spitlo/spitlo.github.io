@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.18.3
+
+- Add Derivata a-012 [`c077346`](../../commit/c0773463ab4c4ed76feeb9a4c673e1c948875aa0)
+
 ## v1.18.2
 
 - Add Derivata a-010 and a-011 [`bff2313`](../../commit/bff23133af5eb41bf96f1823ab9c78dd6ef10214)
