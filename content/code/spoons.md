@@ -81,3 +81,7 @@ There is also a Spoon for quickly finding glyphs from the "[Miscellaneous Symbol
 ### ClipboardTool
 
 `Hyper` + `C` triggers something similar to Symbats and HttpStatus but for the clipboard.
+
+### Restart long-running tasks
+
+One key combo I use *all* the time is `Ctrl+C - Arrow up - Enter` to restart something like `yarn start`. Pressing `Hyper` + `Q` will send that combo to the active application (usually iTerm2).
