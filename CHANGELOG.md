@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.18.5
+
+- Fix white space in <pre /> [`a508949`](../../commit/a5089499938b0008fc7a9e5c85909941c9b32fa1)
+
 ## v1.18.4
 
 - Add Derivata a-013.mp3 [`6d3641f`](../../commit/6d3641f198ad8d64b1c65ca6d3e2ec89a2a8ecde)
