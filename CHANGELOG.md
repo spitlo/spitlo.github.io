@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.18.4
+
+- Add Derivata a-013.mp3 [`6d3641f`](../../commit/6d3641f198ad8d64b1c65ca6d3e2ec89a2a8ecde)
+- Add Hyper+Q to Spoons article [`0e0e213`](../../commit/0e0e213f4d2d21d3a64f8609a646780926583c83)
+
 ## v1.18.3
 
 - Add Derivata a-012 [`c077346`](../../commit/c0773463ab4c4ed76feeb9a4c673e1c948875aa0)
