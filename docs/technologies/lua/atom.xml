@@ -59,6 +59,8 @@
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;H&lt;&#x2F;code&gt; triggers something similar to Symbats but for HTTP response codes.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;clipboardtool&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#clipboardtool&quot; aria-label=&quot;Anchor link for: clipboardtool&quot;&gt;#&lt;&#x2F;a&gt;ClipboardTool&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;C&lt;&#x2F;code&gt; triggers something similar to Symbats and HttpStatus but for the clipboard.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;restart-long-running-tasks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#restart-long-running-tasks&quot; aria-label=&quot;Anchor link for: restart-long-running-tasks&quot;&gt;#&lt;&#x2F;a&gt;Restart long-running tasks&lt;&#x2F;h3&gt;
+&lt;p&gt;One key combo I use &lt;em&gt;all&lt;&#x2F;em&gt; the time is &lt;code&gt;Ctrl+C - Arrow up - Enter&lt;&#x2F;code&gt; to restart something like &lt;code&gt;yarn start&lt;&#x2F;code&gt;. Pressing &lt;code&gt;Hyper&lt;&#x2F;code&gt; + &lt;code&gt;Q&lt;&#x2F;code&gt; will send that combo to the active application (usually iTerm2).&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
