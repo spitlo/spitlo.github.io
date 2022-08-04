@@ -4,7 +4,7 @@ const fs = require('fs')
 const url = 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json'
 const iconFolder = './static/icons/simple/'
 
-const slugify = (string) => string.replace('’', '').replace(/[^A-Za-z0-9]/, '').toLowerCase()
+const slugify = (string) => string.replace('’', '').replace(/[^a-z0-9]/ig, '').toLowerCase()
 
 // Fix some slug mismatches
 const slugMap = {
