@@ -10,7 +10,7 @@
 		<title>Zola Deploy</title>
 		<published>2020-11-26T00:00:00+00:00</published>
 		<updated>2020-11-26T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/zola-deploy/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/zola-deploy/" type="text/html"/>
 		<id>https://spitlo.com/code/zola-deploy/</id>
 		<content type="html">&lt;p&gt;I prefer to keep my GitHub Pages files in a &lt;code&gt;docs&lt;&#x2F;code&gt; folder, and not in a separate branch.&lt;&#x2F;p&gt;
 &lt;p&gt;But both available actions for Zola deploys in the marketplace uses the &lt;code&gt;gh-pages&lt;&#x2F;code&gt; (branch) method, so I forked the simplest of them and made it even simpler. Than I made it a bit less simple.&lt;&#x2F;p&gt;

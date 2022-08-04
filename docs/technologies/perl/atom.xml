@@ -10,7 +10,7 @@
 		<title>Dotfiles</title>
 		<published>2020-11-26T00:00:00+00:00</published>
 		<updated>2020-11-26T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/dotfiles/" type="text/html"/>
 		<id>https://spitlo.com/code/dotfiles/</id>
 		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;

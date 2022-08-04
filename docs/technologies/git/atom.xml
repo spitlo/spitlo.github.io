@@ -10,7 +10,7 @@
 		<title>At-a-dev</title>
 		<published>2020-11-16T00:00:00+00:00</published>
 		<updated>2020-11-16T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/atadev/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/atadev/" type="text/html"/>
 		<id>https://spitlo.com/code/atadev/</id>
 		<content type="html">&lt;p&gt;At-a-dev is a simple bash script to enable &lt;code&gt;@&lt;&#x2F;code&gt;:ing other devs in code and getting notifications about mentions on &lt;code&gt;git pull&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Use it as a post-merge hook and it will check new files for any mentions and alert the user.&lt;&#x2F;p&gt;

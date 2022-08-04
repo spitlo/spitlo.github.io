@@ -10,7 +10,7 @@
 		<title>Spoons</title>
 		<published>2020-12-05T00:00:00+00:00</published>
 		<updated>2020-12-05T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/spoons/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/spoons/" type="text/html"/>
 		<id>https://spitlo.com/code/spoons/</id>
 		<content type="html">&lt;p&gt;I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hammerspoon.org&#x2F;&quot;&gt;Hammerspoon&lt;&#x2F;a&gt; together with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;karabiner-elements.pqrs.org&#x2F;&quot;&gt;Karabiner-Elements&lt;&#x2F;a&gt; on macOS to set up keyboard shortcuts and window management.&lt;&#x2F;p&gt;
 &lt;p&gt;This repo contains a mix of some of the official Spoons and some of my own or customized Spoons, along with my Hammerspoon config.&lt;&#x2F;p&gt;
@@ -67,7 +67,7 @@
 		<title>Case</title>
 		<published>2020-11-23T00:00:00+00:00</published>
 		<updated>2020-11-23T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/case/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/case/" type="text/html"/>
 		<id>https://spitlo.com/code/case/</id>
 		<content type="html">&lt;p&gt;Case is a plugin for the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;micro-editor.github.io&#x2F;&quot;&gt;&lt;code&gt;micro&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; editor which I’m trying to switch to from &lt;code&gt;nano&lt;&#x2F;code&gt; for quick edits. It converts text between different case styles, like kebab case or pascal case.&lt;&#x2F;p&gt;
 &lt;p&gt;It’s pretty basic at the moment, and only supports single cursors.&lt;&#x2F;p&gt;

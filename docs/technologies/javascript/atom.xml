@@ -10,7 +10,7 @@
 		<title>Rotnot</title>
 		<published>2020-12-06T00:00:00+00:00</published>
 		<updated>2020-12-06T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/rotnot/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/rotnot/" type="text/html"/>
 		<id>https://spitlo.com/code/rotnot/</id>
 		<content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
 &lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:&lt;&#x2F;p&gt;
@@ -33,7 +33,7 @@
 		<title>Revercss</title>
 		<published>2020-12-05T00:00:00+00:00</published>
 		<updated>2020-12-05T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/revercss/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/revercss/" type="text/html"/>
 		<id>https://spitlo.com/code/revercss/</id>
 		<content type="html">&lt;p&gt;Revercss, sometimes stylized as ƨƨↄ, was made as a joke many years ago, and “marketed” as&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -113,7 +113,7 @@
 		<title>Dotfiles</title>
 		<published>2020-11-26T00:00:00+00:00</published>
 		<updated>2020-11-26T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/dotfiles/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/dotfiles/" type="text/html"/>
 		<id>https://spitlo.com/code/dotfiles/</id>
 		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;
@@ -165,7 +165,7 @@
 		<title>Spitlo.com</title>
 		<published>2020-11-15T00:00:00+00:00</published>
 		<updated>2020-11-15T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
 		<id>https://spitlo.com/code/spitlo-com/</id>
 		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;

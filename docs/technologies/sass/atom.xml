@@ -10,7 +10,7 @@
 		<title>Shopify Labels</title>
 		<published>2020-11-25T00:00:00+00:00</published>
 		<updated>2020-11-25T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
 		<id>https://spitlo.com/code/shopify-labels/</id>
 		<content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
 &lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
@@ -22,7 +22,7 @@
 		<title>Spitlo.com</title>
 		<published>2020-11-15T00:00:00+00:00</published>
 		<updated>2020-11-15T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
 		<id>https://spitlo.com/code/spitlo-com/</id>
 		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;

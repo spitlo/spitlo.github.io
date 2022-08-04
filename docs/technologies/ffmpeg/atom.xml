@@ -10,7 +10,7 @@
 		<title>Snippetizer</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2021-03-26T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/snippetizer/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/snippetizer/" type="text/html"/>
 		<id>https://spitlo.com/code/snippetizer/</id>
 		<content type="html">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;  [start|middle|end]    What part of the file you want to snippet.

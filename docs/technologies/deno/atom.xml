@@ -10,7 +10,7 @@
 		<title>Merc</title>
 		<published>2020-11-16T00:00:00+00:00</published>
 		<updated>2020-11-16T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/merc/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/merc/" type="text/html"/>
 		<id>https://spitlo.com/code/merc/</id>
 		<content type="html">&lt;h2 id=&quot;a-gemini-client-written-for-deno&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-gemini-client-written-for-deno&quot; aria-label=&quot;Anchor link for: a-gemini-client-written-for-deno&quot;&gt;#&lt;&#x2F;a&gt;A Gemini client written for Deno&lt;&#x2F;h2&gt;
 &lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;solderpunk&quot;&gt;100 LOC demos&lt;&#x2F;a&gt; by solderpunk.&lt;&#x2F;p&gt;

@@ -10,7 +10,7 @@
 		<title>Shopify Labels</title>
 		<published>2020-11-25T00:00:00+00:00</published>
 		<updated>2020-11-25T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
 		<id>https://spitlo.com/code/shopify-labels/</id>
 		<content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
 &lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
@@ -22,7 +22,7 @@
 		<title>Merc</title>
 		<published>2020-11-16T00:00:00+00:00</published>
 		<updated>2020-11-16T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/merc/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/merc/" type="text/html"/>
 		<id>https://spitlo.com/code/merc/</id>
 		<content type="html">&lt;h2 id=&quot;a-gemini-client-written-for-deno&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-gemini-client-written-for-deno&quot; aria-label=&quot;Anchor link for: a-gemini-client-written-for-deno&quot;&gt;#&lt;&#x2F;a&gt;A Gemini client written for Deno&lt;&#x2F;h2&gt;
 &lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;solderpunk&quot;&gt;100 LOC demos&lt;&#x2F;a&gt; by solderpunk.&lt;&#x2F;p&gt;

@@ -10,7 +10,7 @@
 		<title>Case</title>
 		<published>2020-11-23T00:00:00+00:00</published>
 		<updated>2020-11-23T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/case/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/case/" type="text/html"/>
 		<id>https://spitlo.com/code/case/</id>
 		<content type="html">&lt;p&gt;Case is a plugin for the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;micro-editor.github.io&#x2F;&quot;&gt;&lt;code&gt;micro&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; editor which I’m trying to switch to from &lt;code&gt;nano&lt;&#x2F;code&gt; for quick edits. It converts text between different case styles, like kebab case or pascal case.&lt;&#x2F;p&gt;
 &lt;p&gt;It’s pretty basic at the moment, and only supports single cursors.&lt;&#x2F;p&gt;
@@ -20,7 +20,7 @@
 		<title>Spitlo.com</title>
 		<published>2020-11-15T00:00:00+00:00</published>
 		<updated>2020-11-15T00:00:00+00:00</updated>
-		<link href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+		<link rel="alternate" href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
 		<id>https://spitlo.com/code/spitlo-com/</id>
 		<content type="html">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
