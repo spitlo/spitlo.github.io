@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v1.19.0
+
+- Update changelog article [`c166f6b`](../../commit/c166f6bfae9ed8bad0448039eebc257b91d6a39f)
+- Add Derivata a_014 and a-015 [`f4a6fdd`](../../commit/f4a6fddc63e4498d4093ce441a34dfd45c4750e0)
+- Update pagination to work with Zola 16 [`212cd99`](../../commit/212cd99e11fcf986038f0107e2babfd1bdd34f32)
+
 ## v1.18.5
 
 - Fix white space in <pre /> [`a508949`](../../commit/a5089499938b0008fc7a9e5c85909941c9b32fa1)
