@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v1.19.1
+
+- Update some icons [`238f21c`](../../commit/238f21c59fc1925d631f5446f70f61815bedb26a)
+- Fix icon update script [`3a07bae`](../../commit/3a07baef63fc634e43be40088a7fae10c5b7c507)
+
 ## v1.19.0
 
 - Update changelog article [`c166f6b`](../../commit/c166f6bfae9ed8bad0448039eebc257b91d6a39f)
