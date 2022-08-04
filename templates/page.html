@@ -95,14 +95,14 @@
 
     {{ page.content | safe }}
 
-    {% if page.earlier or page.later %}
+    {% if page.higher or page.lower %}
       <br>
       <nav class="pager">
-        {% if page.earlier %}
-          <a href="{{ page.earlier.permalink }}" rel="prev">{{ page.earlier.title }}</a>
+        {% if page.higher %}
+          <a href="{{ page.higher.permalink }}" rel="prev">{{ page.higher.title }}</a>
         {% endif %}
-        {% if page.later %}
-          <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }}</a>
+        {% if page.lower %}
+          <a href="{{ page.lower.permalink }}" rel="next">{{ page.lower.title }}</a>
         {% endif %}
       </nav>
     {% endif %}

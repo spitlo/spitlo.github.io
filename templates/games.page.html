@@ -46,16 +46,16 @@
       <br>
       <nav class="pager">
         <div class="prev">
-          {% if page.earlier %}
-          <a href="{{ page.earlier.permalink }}" rel="prev">[&lt;] {{ page.earlier.title }}</a>
+          {% if page.higher %}
+          <a href="{{ page.higher.permalink }}" rel="prev">[&lt;] {{ page.higher.title }}</a>
         {% endif %}
         </div>
         <div class="index">
           <a href="/games/">[⌃] Back to Lemmy’s</a>
         </div>
         <div class="next">
-          {% if page.later %}
-            <a href="{{ page.later.permalink }}" rel="next">{{ page.later.title }} [&gt;]</a>
+          {% if page.lower %}
+            <a href="{{ page.lower.permalink }}" rel="next">{{ page.lower.title }} [&gt;]</a>
           {% endif %}
         </div>
       </nav>
