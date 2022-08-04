@@ -8,11 +8,17 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
 
+## v1.19.x _(2022-08-04)_
 
-## v1.14.x _(2022-03-23)_
+- Move to Zola 16
+
+## v1.18.x - v1.14.x _(2022-03-23)_
 
 - Added `morsh` in [code](/code/)
 - Show first commit message on commit date hover
+- Added Hyper+Q to [Spoons](/code/spoons/) article
+- Added 'moneytalk' set to [Karakter](/code/karakter/) article 
+- Added more snippets to [Derivata](/music/derivata/) article
 
 ## v1.13.x _(2021-12-10)_
 
