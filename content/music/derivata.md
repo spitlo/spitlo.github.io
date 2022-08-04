@@ -38,3 +38,5 @@ The first version, `a-000.mp3` was sent by Lolita Fatjo on 2022-01-24 at 06:49 C
 | a-011.mp3  | 2022-05-15 12:42 | spitlo   |    02:56 | [mp3](https://files.mefirst.se/derivata/snippets/a-011.mp3) (722 KB) |
 | a-012.mp3  | 2022-05-24 06:02 | L.F.     |    04:27 | [mp3](https://files.mefirst.se/derivata/snippets/a-012.mp3) (721 KB) |
 | a-013.mp3  | 2022-06-19 00:26 | spitlo   |    04:41 | [mp3](https://files.mefirst.se/derivata/snippets/a-013.mp3) (722 KB) |
+| a_014.mp3  | 2022-07-03 19:30 | L.F.     |    03:50 | [mp3](https://files.mefirst.se/derivata/snippets/a_014.mp3) (721 KB) |
+| a-015.mp3  | 2022-07-26 16:50 | spitlo   |    03:27 | [mp3](https://files.mefirst.se/derivata/snippets/a-015.mp3) (722 KB) |
