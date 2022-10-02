@@ -13,8 +13,8 @@ NB: Since these are made to be played in a loop, they are not playable with the 
 
 ## 01 - Duckboy (86 BPM)
 
-{{ looper(filepath="/audio/looptober/2022/01-duckboy") }}
+{{ looper(filepath="/audio/looptober/2022/01-duckboy.mp3") }}
 
 ## 02 - Grvyrdshft (72 BPM)
 
-{{ looper(filepath="/audio/looptober/2022/02-grvyrdshft") }}
+{{ looper(filepath="/audio/looptober/2022/02-grvyrdshft.mp3") }}

@@ -2,7 +2,7 @@
 
 <div id="looper-{{nth}}" class="looper {% if class %}{{class}}{% endif %}">
   <noscript>
-    <audio loop controls src="{{filepath}}.mp3"></audio>
+    <audio loop controls src="{{filepath}}"></audio>
   </noscript>
 </div>
 
@@ -55,7 +55,7 @@
       isPlaying = true
 
       // Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch('{{ get_url(path=filepath ~ ".mp3") | safe }}')
+      const arrayBuffer = await fetch('{{ get_url(path=filepath) | safe }}')
         .then(response => response.arrayBuffer())
       // Assume file is loaded. Remove loading class.
       playButton.classList.remove('loading')
