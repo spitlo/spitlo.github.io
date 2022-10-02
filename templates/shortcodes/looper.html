@@ -12,7 +12,8 @@
     
     let source
     let loopLength
-    let playStart
+    const avWidth = 200
+    const avHeight = 100
 
     const playButton = document.createElement('button')
     playButton.id = 'play-{{nth}}'
@@ -23,6 +24,10 @@
     stopButton.innerHTML = `{{ macros::icon(name='stop', size="small", type="remix") }}`
     stopButton.classList.add('stop')
     stopButton.setAttribute('aria-label', 'Stop loop')
+    const avCanvas = document.createElement('canvas')
+    avCanvas.id = 'av-{{nth}}'
+    avCanvas.setAttribute('width', avWidth)
+    avCanvas.setAttribute('height', avHeight)
 
     const loopWrapper = document.getElementById('looper-{{nth}}')
 
@@ -45,6 +50,8 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       source = context.createBufferSource()
       source.connect(context.destination)
+      const analyserNode   = audioContext.createAnalyser()
+      const javascriptNode = audioContext.createScriptProcessor(1024, 1, 1)
 
       // This might be used later to create a "progress" animation?
       loopLength = buffer.duration
