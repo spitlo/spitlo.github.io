@@ -26,8 +26,9 @@
     const context = new AudioContext()
     
     let source
-    let loopLength
-    let playStart
+    let isPlaying = false
+    const avWidth = 200
+    const avHeight = 40
 
     const playButton = document.createElement(&#x27;button&#x27;)
     playButton.id = &#x27;play-1&#x27;
@@ -52,17 +53,35 @@
 `
     stopButton.classList.add(&#x27;stop&#x27;)
     stopButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Stop loop&#x27;)
+    const avCanvas = document.createElement(&#x27;canvas&#x27;)
+    avCanvas.id = &#x27;av-1&#x27;
+    avCanvas.setAttribute(&#x27;width&#x27;, avWidth)
+    avCanvas.setAttribute(&#x27;height&#x27;, avHeight)
 
     const loopWrapper = document.getElementById(&#x27;looper-1&#x27;)
 
     loopWrapper.appendChild(playButton)
     loopWrapper.appendChild(stopButton)
+    loopWrapper.appendChild(avCanvas)
+
+    &#x2F;&#x2F; Get the canvas context for the audio visualizer
+    const canvasContext = avCanvas.getContext(&#x27;2d&#x27;)
+    &#x2F;&#x2F; And paint the baseline
+    canvasContext.fillStyle = &#x27;#ffffff&#x27;
+    const clearAvCanvas = (baseline = true) =&gt; {
+      canvasContext.clearRect(0, 0, avWidth, avHeight)
+      if (baseline) {
+        canvasContext.fillRect(0, avHeight &#x2F; 2, avWidth, 1)
+      }
+    }
+    clearAvCanvas()
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
       playButton.setAttribute(&#x27;disabled&#x27;, &#x27;disabled&#x27;)
+      isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
       const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;01-duckboy.mp3&#x27;)
@@ -75,8 +94,31 @@
       source = context.createBufferSource()
       source.connect(context.destination)
 
-      &#x2F;&#x2F; This might be used later to create a &quot;progress&quot; animation?
-      loopLength = buffer.duration
+      if (typeof context.createScriptProcessor !== &#x27;undefined&#x27;) {
+        const analyser = context.createAnalyser()
+        const scriptProcessor = context.createScriptProcessor(1024, 1, 1)
+
+        const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+        source.connect(analyser)
+        analyser.connect(scriptProcessor)
+        scriptProcessor.connect(context.destination)
+
+        scriptProcessor.onaudioprocess = () =&gt; {
+          analyser.getByteTimeDomainData(amplitude)
+
+          if (isPlaying) {
+            requestAnimationFrame(() =&gt; {
+              clearAvCanvas() &#x2F;&#x2F; or clearAvCanvas(true) to clear completely (no basesline)
+              for (let i = 0; i &lt; amplitude.length; i++) {
+                const ampValue = amplitude[i] &#x2F; 256
+                const y = avHeight - (avHeight * ampValue) - 1
+                canvasContext.fillRect(i, y, 1, 1)
+              }
+            })
+          }
+        }
+      }
 
       source.buffer = buffer
       source.loop = true
@@ -86,10 +128,14 @@
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
-      playButton.classList.remove(&#x27;loading&#x27;, &#x27;playing&#x27;)
-      playButton.removeAttribute(&#x27;disabled&#x27;)
+      if (source) {
+        playButton.classList.remove(&#x27;loading&#x27;, &#x27;playing&#x27;)
+        playButton.removeAttribute(&#x27;disabled&#x27;)
+        isPlaying = false
+        requestAnimationFrame(clearAvCanvas)
 
-      source.stop(0)
+        source.stop(0)
+      }
     })
   })()
 
@@ -106,8 +152,9 @@
     const context = new AudioContext()
     
     let source
-    let loopLength
-    let playStart
+    let isPlaying = false
+    const avWidth = 200
+    const avHeight = 40
 
     const playButton = document.createElement(&#x27;button&#x27;)
     playButton.id = &#x27;play-2&#x27;
@@ -132,17 +179,35 @@
 `
     stopButton.classList.add(&#x27;stop&#x27;)
     stopButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Stop loop&#x27;)
+    const avCanvas = document.createElement(&#x27;canvas&#x27;)
+    avCanvas.id = &#x27;av-2&#x27;
+    avCanvas.setAttribute(&#x27;width&#x27;, avWidth)
+    avCanvas.setAttribute(&#x27;height&#x27;, avHeight)
 
     const loopWrapper = document.getElementById(&#x27;looper-2&#x27;)
 
     loopWrapper.appendChild(playButton)
     loopWrapper.appendChild(stopButton)
+    loopWrapper.appendChild(avCanvas)
+
+    &#x2F;&#x2F; Get the canvas context for the audio visualizer
+    const canvasContext = avCanvas.getContext(&#x27;2d&#x27;)
+    &#x2F;&#x2F; And paint the baseline
+    canvasContext.fillStyle = &#x27;#ffffff&#x27;
+    const clearAvCanvas = (baseline = true) =&gt; {
+      canvasContext.clearRect(0, 0, avWidth, avHeight)
+      if (baseline) {
+        canvasContext.fillRect(0, avHeight &#x2F; 2, avWidth, 1)
+      }
+    }
+    clearAvCanvas()
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
       playButton.setAttribute(&#x27;disabled&#x27;, &#x27;disabled&#x27;)
+      isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
       const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;02-grvyrdshft.mp3&#x27;)
@@ -155,8 +220,31 @@
       source = context.createBufferSource()
       source.connect(context.destination)
 
-      &#x2F;&#x2F; This might be used later to create a &quot;progress&quot; animation?
-      loopLength = buffer.duration
+      if (typeof context.createScriptProcessor !== &#x27;undefined&#x27;) {
+        const analyser = context.createAnalyser()
+        const scriptProcessor = context.createScriptProcessor(1024, 1, 1)
+
+        const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+        source.connect(analyser)
+        analyser.connect(scriptProcessor)
+        scriptProcessor.connect(context.destination)
+
+        scriptProcessor.onaudioprocess = () =&gt; {
+          analyser.getByteTimeDomainData(amplitude)
+
+          if (isPlaying) {
+            requestAnimationFrame(() =&gt; {
+              clearAvCanvas() &#x2F;&#x2F; or clearAvCanvas(true) to clear completely (no basesline)
+              for (let i = 0; i &lt; amplitude.length; i++) {
+                const ampValue = amplitude[i] &#x2F; 256
+                const y = avHeight - (avHeight * ampValue) - 1
+                canvasContext.fillRect(i, y, 1, 1)
+              }
+            })
+          }
+        }
+      }
 
       source.buffer = buffer
       source.loop = true
@@ -166,10 +254,14 @@
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
-      playButton.classList.remove(&#x27;loading&#x27;, &#x27;playing&#x27;)
-      playButton.removeAttribute(&#x27;disabled&#x27;)
+      if (source) {
+        playButton.classList.remove(&#x27;loading&#x27;, &#x27;playing&#x27;)
+        playButton.removeAttribute(&#x27;disabled&#x27;)
+        isPlaying = false
+        requestAnimationFrame(clearAvCanvas)
 
-      source.stop(0)
+        source.stop(0)
+      }
     })
   })()
 
