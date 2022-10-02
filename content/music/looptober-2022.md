@@ -4,7 +4,7 @@ description = "One tiny beat a day for all of October"
 date = 2022-10-01
 
 [taxonomies]
-categories = ["Electronic", "Work in Progress"]
+categories = ["Electronic", "Loops", "Work in Progress"]
 +++
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to just try to create one loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor.
