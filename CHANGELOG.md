@@ -2,6 +2,16 @@
 
 This changelog is automatically generated.
 
+## v1.20.0
+
+- Update changelog [`32a391b`](../../commit/32a391ba74a0dfd020cd08546612e105e1287610)
+- Looptober: Skip OGG [`a3b7b6e`](../../commit/a3b7b6eedc3c28569199e63ee84b012e69465f66)
+- Looptober: Add ARIA labels. Add note about :play not working. Style stop button active state [`6ec30bf`](../../commit/6ec30bf473634a02d7a3f242d6d7af4429d1aa42)
+- Looptober: Style play controls. Add description [`4b07a89`](../../commit/4b07a8949db81f221eddfcc9775bb26f8b289576)
+- Use gray for darkmode crumbs [`afd5d56`](../../commit/afd5d560c08879559e4852c6b8d42cc229a545c1)
+- Looptober: Better structure [`9e1e8d9`](../../commit/9e1e8d96aedc2bb55c57c90e81eaf9d8127bf80e)
+- Looptober: First attempt at gapless loops [`2a6e3e8`](../../commit/2a6e3e84e67ebc6417796a5d41afd637449598d7)
+
 ## v1.19.1
 
 - Update some icons [`238f21c`](../../commit/238f21c59fc1925d631f5446f70f61815bedb26a)
