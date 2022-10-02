@@ -8,6 +8,10 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
+## v2.1.x _(2022-10-02)_
+
+- Visualize audio loops in `looper` shortcode
+
 ## v2.0.x _(2022-10-02)_
 
 - Switch to `main` as default branch
