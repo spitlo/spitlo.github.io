@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.1.1
+
+- Looptober: Add a download button [`8d95a6e`](../../commit/8d95a6e9be62fc41f7e2f7a92832bff2b9347bb0)
+- Looptober: Add a little color to audio viz [`821ea6b`](../../commit/821ea6b40d5f358fa5253a1487ee01a1dabf1fdb)
+- Shortcode 'looper' now takes full filepath (including extension) [`7c23b09`](../../commit/7c23b09c8433b7929a2e07678d8ed86c573afd88)
+
 ## v2.1.0
 
 - Update changelog [`92979d7`](../../commit/92979d7a5f849b1c9d5980b8aa11409090cf8f24)
