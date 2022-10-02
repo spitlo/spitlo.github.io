@@ -11,9 +11,9 @@
     const context = new AudioContext()
     
     let source
-    let loopLength
+    let isPlaying = false
     const avWidth = 200
-    const avHeight = 100
+    const avHeight = 40
 
     const playButton = document.createElement('button')
     playButton.id = 'play-{{nth}}'
@@ -33,12 +33,24 @@
 
     loopWrapper.appendChild(playButton)
     loopWrapper.appendChild(stopButton)
+    loopWrapper.appendChild(avCanvas)
+
+    // Get the canvas context for the audio visualizer
+    const canvasContext = avCanvas.getContext('2d')
+    // And paint the baseline
+    canvasContext.fillStyle = '#ffffff'
+    const clearAvCanvas = () => {
+      canvasContext.clearRect(0, 0, avWidth, avHeight)
+      canvasContext.fillRect(0, avHeight / 2, avWidth, 1)
+    }
+    clearAvCanvas()
 
     playButton.addEventListener('click', async () => {
       // Disable play and set loading class. We don’t want people to start
       // multiple downloads/plays accidentally.
       playButton.classList.add('loading')
       playButton.setAttribute('disabled', 'disabled')
+      isPlaying = true
 
       // Fetch audio file. Error handling? Perhaps later.
       const arrayBuffer = await fetch('{{ get_url(path=filepath ~ ".mp3") | safe }}')
@@ -50,11 +62,29 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       source = context.createBufferSource()
       source.connect(context.destination)
-      const analyserNode   = audioContext.createAnalyser()
-      const javascriptNode = audioContext.createScriptProcessor(1024, 1, 1)
+      const analyser = context.createAnalyser()
+      const scriptProcessor = context.createScriptProcessor(1024, 1, 1)
 
-      // This might be used later to create a "progress" animation?
-      loopLength = buffer.duration
+      const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      source.connect(analyser)
+      analyser.connect(scriptProcessor)
+      scriptProcessor.connect(context.destination)
+
+      scriptProcessor.onaudioprocess = () => {
+        analyser.getByteTimeDomainData(amplitude)
+
+        if (isPlaying) {
+          window.requestAnimationFrame(() => {
+            clearAvCanvas()
+            for (let i = 0; i < amplitude.length; i++) {
+              const ampValue = amplitude[i] / 256
+              const y = avHeight - (avHeight * ampValue) - 1
+              canvasContext.fillRect(i, y, 1, 1)
+            }
+          })
+        }
+      }
 
       source.buffer = buffer
       source.loop = true
@@ -64,10 +94,14 @@
     })
     
     stopButton.addEventListener('click', () => {
-      playButton.classList.remove('loading', 'playing')
-      playButton.removeAttribute('disabled')
+      if (source) {
+        playButton.classList.remove('loading', 'playing')
+        playButton.removeAttribute('disabled')
+        isPlaying = false
+        window.requestAnimationFrame(clearAvCanvas)
 
-      source.stop(0)
+        source.stop(0)
+      }
     })
   })()
 

@@ -1,6 +1,12 @@
 @import "constants";
 
 .looper {
+  position: relative;
+
+  canvas {
+    position: absolute;
+  }
+
   button {
     padding: 10px;
     margin-right: 6px;
