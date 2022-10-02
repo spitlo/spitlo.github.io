@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v1.20.1
+
+- Looptober: Add beat for October 2 [`e643314`](../../commit/e6433149eaa4e5b87342e32468caa8a0b0121aff)
+
 ## v1.20.0
 
 - Update changelog [`32a391b`](../../commit/32a391ba74a0dfd020cd08546612e105e1287610)
