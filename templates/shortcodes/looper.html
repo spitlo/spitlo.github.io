@@ -1,37 +1,62 @@
+{% import "macros.html" as macros %}
+
 <div id="looper-{{nth}}" {% if class %}class="{{class}}"{% endif %}>
   <noscript>
     <audio loop controls>
-      <source src="{{filename}}.ogg">
-      <source src="{{filename}}.mp3">
+      <source src="{{filepath}}.ogg">
+      <source src="{{filepath}}.mp3">
     </audio>
   </noscript>
 </div>
 
 <script type="module">
-  import looper from '{{ get_url(path="/looper.mjs", cachebust=true) | safe }}'
+  (async () => {
+    const context = new AudioContext()
+    
+    let source
+    let loopLength
+    let playStart
 
-  looper('{{ get_url(path=filename ~ ".wav") | safe }}', (error, { play, stop }) => {
+    const playButton = document.createElement('button')
+    playButton.id = 'play-{{nth}}'
+    playButton.innerHTML = `{{ macros::icon(name='play', size="small", type="remix") }}`
+    const stopButton = document.createElement('button')
+    stopButton.id = 'stop-{{nth}}'
+    stopButton.innerHTML = `{{ macros::icon(name='stop', size="small", type="remix") }}`
 
-    if (!error) {
-      const playButton = document.createElement('button')
-      playButton.id = 'play-{{nth}}'
-      playButton.innerHTML = '⏵'
-      const stopButton = document.createElement('button')
-      stopButton.id = 'stop-{{nth}}'
-      stopButton.innerHTML = '■'
+    const loopWrapper = document.getElementById('looper-{{nth}}')
 
-      const loopWrapper = document.getElementById('looper-{{nth}}')
+    loopWrapper.appendChild(playButton)
+    loopWrapper.appendChild(stopButton)
 
-      loopWrapper.appendChild(playButton)
-      loopWrapper.appendChild(stopButton)
+    playButton.addEventListener('click', async () => {
+      const arrayBuffer = await fetch('{{ get_url(path=filepath ~ ".mp3") | safe }}')
+        .then(response => response.arrayBuffer())
+      
+      const buffer = await context.decodeAudioData(arrayBuffer)
+      source = context.createBufferSource()
+      source.connect(context.destination)
 
-      playButton.addEventListener('click', () => {
-        const context = new AudioContext()
-        play(context)
-      })
-      stopButton.addEventListener('click', stop)
-    } else {
-      console.error(error)
-    }
-  })
+      loopLength = buffer.duration
+
+      console.log(loopLength)
+
+      source.buffer = buffer
+      source.loop = true
+      source.onended = () => {
+        console.log('Buffer ended')
+      }
+
+      playButton.setAttribute('disabled', 'disabled')
+
+      source.start(0)
+    })
+    
+    stopButton.addEventListener('click', () => {
+      playButton.removeAttribute('disabled')
+
+      source.stop(0)
+    })
+  })()
+
 </script>
