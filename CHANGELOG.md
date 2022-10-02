@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.0.0
+
+- Switch to 'main' as default branch [`f59d950`](../../commit/f59d950d349c620a47f95bdb8dbbacccce00de39)
+- Add 'Loops' category and icon [`e4ae735`](../../commit/e4ae7359249c70fbbb4a1a9cf473ac0246e797bc)
+- Looptober: Wording [`65b0ac9`](../../commit/65b0ac93f87bfbd8e20ac6ddc2add1f725dfcfda)
+
 ## v1.20.1
 
 - Looptober: Add beat for October 2 [`e643314`](../../commit/e6433149eaa4e5b87342e32468caa8a0b0121aff)
