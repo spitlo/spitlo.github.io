@@ -16,6 +16,12 @@
     &.playing {
       background-color: $lightSeagreen;
     }
+
+    &.stop {
+      &:active {
+        background-color: $mutedPink;
+      }
+    }
   }
 }
 

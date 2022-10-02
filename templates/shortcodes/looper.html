@@ -20,9 +20,12 @@
     const playButton = document.createElement('button')
     playButton.id = 'play-{{nth}}'
     playButton.innerHTML = `{{ macros::icon(name='play', size="small", type="remix") }}`
+    playButton.setAttribute('aria-label', 'Play loop')
     const stopButton = document.createElement('button')
     stopButton.id = 'stop-{{nth}}'
     stopButton.innerHTML = `{{ macros::icon(name='stop', size="small", type="remix") }}`
+    stopButton.classList.add('stop')
+    stopButton.setAttribute('aria-label', 'Stop loop')
 
     const loopWrapper = document.getElementById('looper-{{nth}}')
 
