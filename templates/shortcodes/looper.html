@@ -41,12 +41,20 @@
     avCanvas.id = 'av-{{nth}}'
     avCanvas.setAttribute('width', avWidth)
     avCanvas.setAttribute('height', avHeight)
+    const downloadButton = document.createElement('a')
+    downloadButton.id = 'download-{{nth}}'
+    downloadButton.innerHTML = `{{ macros::icon(name='download', size="small", type="remix") }}`
+    downloadButton.classList.add('download')
+    downloadButton.setAttribute('aria-label', 'Download loop')
+    downloadButton.setAttribute('download', '')
+    downloadButton.setAttribute('href', '{{ get_url(path=filepath) | safe }}')
 
     const loopWrapper = document.getElementById('looper-{{nth}}')
 
     loopWrapper.appendChild(playButton)
     loopWrapper.appendChild(stopButton)
     loopWrapper.appendChild(avCanvas)
+    loopWrapper.appendChild(downloadButton)
 
     // Get the canvas context for the audio visualizer
     const canvasContext = avCanvas.getContext('2d')

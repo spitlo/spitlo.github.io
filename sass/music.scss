@@ -2,6 +2,8 @@
 
 .looper {
   position: relative;
+  max-width: 338px;
+  padding-bottom: 12px;;
 
   canvas {
     position: absolute;
@@ -27,6 +29,18 @@
       &:active {
         background-color: $mutedPink;
       }
+    }
+  }
+
+  a.download {
+    position: absolute;
+    right: 0;
+    background: #fffffb;
+    padding: 10px;
+    border-radius: 2px;
+
+    &:active {
+      background-color: $mutedPink;
     }
   }
 }
