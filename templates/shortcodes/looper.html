@@ -1,6 +1,6 @@
 {% import "macros.html" as macros %}
 
-<div id="looper-{{nth}}" {% if class %}class="{{class}}"{% endif %}>
+<div id="looper-{{nth}}" class="looper {% if class %}{{class}}{% endif %}">
   <noscript>
     <audio loop controls>
       <source src="{{filepath}}.ogg">
@@ -30,29 +30,34 @@
     loopWrapper.appendChild(stopButton)
 
     playButton.addEventListener('click', async () => {
+      // Disable play and set loading class. We don’t want people to start
+      // multiple downloads/plays accidentally.
+      playButton.classList.add('loading')
+      playButton.setAttribute('disabled', 'disabled')
+
+      // Fetch audio file. Error handling? Perhaps later.
       const arrayBuffer = await fetch('{{ get_url(path=filepath ~ ".mp3") | safe }}')
         .then(response => response.arrayBuffer())
+      // Assume file is loaded. Remove loading class.
+      playButton.classList.remove('loading')
       
+      // Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
       source = context.createBufferSource()
       source.connect(context.destination)
 
+      // This might be used later to create a "progress" animation?
       loopLength = buffer.duration
-
-      console.log(loopLength)
 
       source.buffer = buffer
       source.loop = true
-      source.onended = () => {
-        console.log('Buffer ended')
-      }
 
-      playButton.setAttribute('disabled', 'disabled')
-
+      playButton.classList.add('playing')
       source.start(0)
     })
     
     stopButton.addEventListener('click', () => {
+      playButton.classList.remove('loading', 'playing')
       playButton.removeAttribute('disabled')
 
       source.stop(0)

@@ -1,0 +1,26 @@
+@import "constants";
+
+.looper {
+  button {
+    padding: 10px;
+    margin-right: 6px;
+    border: 0;
+    border-radius: 2px;
+
+    &.loading {
+      background: linear-gradient(100deg, #ccc 10%, #fff 20%, #ccc 30%);
+      background-size: 200% 100%;
+      animation: 1s sweepie linear infinite;
+    }
+    
+    &.playing {
+      background-color: $lightSeagreen;
+    }
+  }
+}
+
+@keyframes sweepie {
+  to {
+    background-position-x: -200%;
+  }
+}
