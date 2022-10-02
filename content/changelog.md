@@ -8,6 +8,11 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/master/CHANGELOG.md).
 
+## v1.20.x _(2022-10-02)_
+
+- Add [Looptober 2022](/music/looptober-2022/) article to [Music](/music/) section
+- Add `looper` shortcode to be able to play gapless loops in articles
+
 ## v1.19.x _(2022-08-04)_
 
 - Move to Zola 16
