@@ -5,7 +5,7 @@ set -eu
 source bin/env.globals
 
 DEFAULT_METHOD="patch"
-MAIN_BRANCH="master"
+MAIN_BRANCH="main"
 INITIAL_VERSION="0.0.0"
 FORCE="no"
 USAGE="
@@ -33,7 +33,7 @@ for arg in "$@"; do
   fi
 done
 
-if [ "$(git symbolic-ref -q HEAD)" != "refs/heads/master" ]; then
+if [ "$(git symbolic-ref -q HEAD)" != "refs/heads/$MAIN_BRANCH" ]; then
   if [ "$FORCE" = "no" ]; then
     echo "Deploying is only allowed from the '$MAIN_BRANCH' branch. Exiting."
     exit 1
