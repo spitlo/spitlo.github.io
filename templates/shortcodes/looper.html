@@ -39,9 +39,11 @@
     const canvasContext = avCanvas.getContext('2d')
     // And paint the baseline
     canvasContext.fillStyle = '#ffffff'
-    const clearAvCanvas = () => {
+    const clearAvCanvas = (baseline = true) => {
       canvasContext.clearRect(0, 0, avWidth, avHeight)
-      canvasContext.fillRect(0, avHeight / 2, avWidth, 1)
+      if (baseline) {
+        canvasContext.fillRect(0, avHeight / 2, avWidth, 1)
+      }
     }
     clearAvCanvas()
 
@@ -62,27 +64,30 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       source = context.createBufferSource()
       source.connect(context.destination)
-      const analyser = context.createAnalyser()
-      const scriptProcessor = context.createScriptProcessor(1024, 1, 1)
 
-      const amplitude = new Uint8Array(analyser.frequencyBinCount)
+      if (typeof context.createScriptProcessor !== 'undefined') {
+        const analyser = context.createAnalyser()
+        const scriptProcessor = context.createScriptProcessor(1024, 1, 1)
 
-      source.connect(analyser)
-      analyser.connect(scriptProcessor)
-      scriptProcessor.connect(context.destination)
+        const amplitude = new Uint8Array(analyser.frequencyBinCount)
 
-      scriptProcessor.onaudioprocess = () => {
-        analyser.getByteTimeDomainData(amplitude)
+        source.connect(analyser)
+        analyser.connect(scriptProcessor)
+        scriptProcessor.connect(context.destination)
 
-        if (isPlaying) {
-          window.requestAnimationFrame(() => {
-            clearAvCanvas()
-            for (let i = 0; i < amplitude.length; i++) {
-              const ampValue = amplitude[i] / 256
-              const y = avHeight - (avHeight * ampValue) - 1
-              canvasContext.fillRect(i, y, 1, 1)
-            }
-          })
+        scriptProcessor.onaudioprocess = () => {
+          analyser.getByteTimeDomainData(amplitude)
+
+          if (isPlaying) {
+            requestAnimationFrame(() => {
+              clearAvCanvas() // or clearAvCanvas(true) to clear completely (no basesline)
+              for (let i = 0; i < amplitude.length; i++) {
+                const ampValue = amplitude[i] / 256
+                const y = avHeight - (avHeight * ampValue) - 1
+                canvasContext.fillRect(i, y, 1, 1)
+              }
+            })
+          }
         }
       }
 
@@ -98,7 +103,7 @@
         playButton.classList.remove('loading', 'playing')
         playButton.removeAttribute('disabled')
         isPlaying = false
-        window.requestAnimationFrame(clearAvCanvas)
+        requestAnimationFrame(clearAvCanvas)
 
         source.stop(0)
       }
