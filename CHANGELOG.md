@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.2
+
+- Looptober: Avoid absolute positioning [`8564107`](../../commit/8564107a075c155521b294908cd616cb49091ee6)
+
 ## v2.1.1
 
 - Looptober: Add a download button [`8d95a6e`](../../commit/8d95a6e9be62fc41f7e2f7a92832bff2b9347bb0)
