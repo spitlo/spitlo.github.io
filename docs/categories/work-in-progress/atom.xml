@@ -29,6 +29,19 @@
     let isPlaying = false
     const avWidth = 200
     const avHeight = 40
+    const avColors = [
+      &#x27;#74edc4&#x27;, &#x2F;&#x2F; aquamarine
+      &#x27;#8bd1cd&#x27;, &#x2F;&#x2F; lightSeagreen
+      &#x27;#aa9f9f&#x27;, &#x2F;&#x2F; gray
+      &#x27;#b1b098&#x27;, &#x2F;&#x2F; dirtyYellow
+      &#x27;#b55603&#x27;, &#x2F;&#x2F; orange
+      &#x27;#dfcece&#x27;, &#x2F;&#x2F; lightBrown
+      &#x27;#e30000&#x27;, &#x2F;&#x2F; red
+      &#x27;#ecffea&#x27;, &#x2F;&#x2F; honeydew
+      &#x27;#fff1f1&#x27;, &#x2F;&#x2F; mutedPink
+      &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
+      &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
+    ]
 
     const playButton = document.createElement(&#x27;button&#x27;)
     playButton.id = &#x27;play-1&#x27;
@@ -57,18 +70,33 @@
     avCanvas.id = &#x27;av-1&#x27;
     avCanvas.setAttribute(&#x27;width&#x27;, avWidth)
     avCanvas.setAttribute(&#x27;height&#x27;, avHeight)
+    const downloadButton = document.createElement(&#x27;a&#x27;)
+    downloadButton.id = &#x27;download-1&#x27;
+    downloadButton.innerHTML = `
+  
+  &lt;span class=&quot;icon download small&quot;&gt;
+    
+    
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+  &lt;&#x2F;span&gt;
+`
+    downloadButton.classList.add(&#x27;download&#x27;)
+    downloadButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Download loop&#x27;)
+    downloadButton.setAttribute(&#x27;download&#x27;, &#x27;&#x27;)
+    downloadButton.setAttribute(&#x27;href&#x27;, &#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;01-duckboy.mp3&#x27;)
 
     const loopWrapper = document.getElementById(&#x27;looper-1&#x27;)
 
     loopWrapper.appendChild(playButton)
     loopWrapper.appendChild(stopButton)
     loopWrapper.appendChild(avCanvas)
+    loopWrapper.appendChild(downloadButton)
 
     &#x2F;&#x2F; Get the canvas context for the audio visualizer
     const canvasContext = avCanvas.getContext(&#x27;2d&#x27;)
     &#x2F;&#x2F; And paint the baseline
-    canvasContext.fillStyle = &#x27;#ffffff&#x27;
     const clearAvCanvas = (baseline = true) =&gt; {
+      canvasContext.fillStyle = &#x27;#fffffb&#x27;
       canvasContext.clearRect(0, 0, avWidth, avHeight)
       if (baseline) {
         canvasContext.fillRect(0, avHeight &#x2F; 2, avWidth, 1)
@@ -110,9 +138,16 @@
           if (isPlaying) {
             requestAnimationFrame(() =&gt; {
               clearAvCanvas() &#x2F;&#x2F; or clearAvCanvas(true) to clear completely (no basesline)
+              &#x2F;&#x2F; &quot;Shuffle&quot; colors array. This will do for now, but we could also use
+              &#x2F;&#x2F; `ampValue` to set the color, higher -&gt; red, lower -&gt; white&#x2F;green.
+              avColors.push(avColors.shift())
               for (let i = 0; i &lt; amplitude.length; i++) {
                 const ampValue = amplitude[i] &#x2F; 256
                 const y = avHeight - (avHeight * ampValue) - 1
+                &#x2F;&#x2F; This is probably not very performant :&#x2F;
+                canvasContext.fillStyle = `${avColors[0]}40`
+                canvasContext.fillRect(i - 1, y - 1, 3, 3)
+                canvasContext.fillStyle = avColors[0]
                 canvasContext.fillRect(i, y, 1, 1)
               }
             })
@@ -155,6 +190,19 @@
     let isPlaying = false
     const avWidth = 200
     const avHeight = 40
+    const avColors = [
+      &#x27;#74edc4&#x27;, &#x2F;&#x2F; aquamarine
+      &#x27;#8bd1cd&#x27;, &#x2F;&#x2F; lightSeagreen
+      &#x27;#aa9f9f&#x27;, &#x2F;&#x2F; gray
+      &#x27;#b1b098&#x27;, &#x2F;&#x2F; dirtyYellow
+      &#x27;#b55603&#x27;, &#x2F;&#x2F; orange
+      &#x27;#dfcece&#x27;, &#x2F;&#x2F; lightBrown
+      &#x27;#e30000&#x27;, &#x2F;&#x2F; red
+      &#x27;#ecffea&#x27;, &#x2F;&#x2F; honeydew
+      &#x27;#fff1f1&#x27;, &#x2F;&#x2F; mutedPink
+      &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
+      &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
+    ]
 
     const playButton = document.createElement(&#x27;button&#x27;)
     playButton.id = &#x27;play-2&#x27;
@@ -183,18 +231,33 @@
     avCanvas.id = &#x27;av-2&#x27;
     avCanvas.setAttribute(&#x27;width&#x27;, avWidth)
     avCanvas.setAttribute(&#x27;height&#x27;, avHeight)
+    const downloadButton = document.createElement(&#x27;a&#x27;)
+    downloadButton.id = &#x27;download-2&#x27;
+    downloadButton.innerHTML = `
+  
+  &lt;span class=&quot;icon download small&quot;&gt;
+    
+    
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+  &lt;&#x2F;span&gt;
+`
+    downloadButton.classList.add(&#x27;download&#x27;)
+    downloadButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Download loop&#x27;)
+    downloadButton.setAttribute(&#x27;download&#x27;, &#x27;&#x27;)
+    downloadButton.setAttribute(&#x27;href&#x27;, &#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;02-grvyrdshft.mp3&#x27;)
 
     const loopWrapper = document.getElementById(&#x27;looper-2&#x27;)
 
     loopWrapper.appendChild(playButton)
     loopWrapper.appendChild(stopButton)
     loopWrapper.appendChild(avCanvas)
+    loopWrapper.appendChild(downloadButton)
 
     &#x2F;&#x2F; Get the canvas context for the audio visualizer
     const canvasContext = avCanvas.getContext(&#x27;2d&#x27;)
     &#x2F;&#x2F; And paint the baseline
-    canvasContext.fillStyle = &#x27;#ffffff&#x27;
     const clearAvCanvas = (baseline = true) =&gt; {
+      canvasContext.fillStyle = &#x27;#fffffb&#x27;
       canvasContext.clearRect(0, 0, avWidth, avHeight)
       if (baseline) {
         canvasContext.fillRect(0, avHeight &#x2F; 2, avWidth, 1)
@@ -236,9 +299,16 @@
           if (isPlaying) {
             requestAnimationFrame(() =&gt; {
               clearAvCanvas() &#x2F;&#x2F; or clearAvCanvas(true) to clear completely (no basesline)
+              &#x2F;&#x2F; &quot;Shuffle&quot; colors array. This will do for now, but we could also use
+              &#x2F;&#x2F; `ampValue` to set the color, higher -&gt; red, lower -&gt; white&#x2F;green.
+              avColors.push(avColors.shift())
               for (let i = 0; i &lt; amplitude.length; i++) {
                 const ampValue = amplitude[i] &#x2F; 256
                 const y = avHeight - (avHeight * ampValue) - 1
+                &#x2F;&#x2F; This is probably not very performant :&#x2F;
+                canvasContext.fillStyle = `${avColors[0]}40`
+                canvasContext.fillRect(i - 1, y - 1, 3, 3)
+                canvasContext.fillStyle = avColors[0]
                 canvasContext.fillRect(i, y, 1, 1)
               }
             })
