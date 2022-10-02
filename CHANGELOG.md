@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v2.1.0
+
+- Update changelog [`92979d7`](../../commit/92979d7a5f849b1c9d5980b8aa11409090cf8f24)
+- Check for (deprecated) context.createScriptProcessor before using it [`44c4c43`](../../commit/44c4c4389daa4fcb796ed4fe95cbabd8d528bb27)
+- Looptober: Add basic audio viz [`a9eb3aa`](../../commit/a9eb3aab549f00803ea36e9c1e2d63a95f8a23f1)
+- Looptober: Start work on audio viz [`11bb938`](../../commit/11bb9384531703729d7be5aa8f9d52255b184b69)
+
 ## v2.0.0
 
 - Switch to 'main' as default branch [`f59d950`](../../commit/f59d950d349c620a47f95bdb8dbbacccce00de39)
