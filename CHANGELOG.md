@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.3
+
+- Looptober: Add beat for October 3 [`02eebb2`](../../commit/02eebb2041f69cb6cbbe72b4aaae2f3567538dec)
+
 ## v2.1.2
 
 - Looptober: Avoid absolute positioning [`8564107`](../../commit/8564107a075c155521b294908cd616cb49091ee6)
