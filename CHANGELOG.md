@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.1.5
+
+- Add note about Looptober mute button. Update changelog [`d32add3`](../../commit/d32add3c53b7e8627198f63bb3da85539d94db4c)
+- Looptober: Mute button working. Code cleanup [`8d3a208`](../../commit/8d3a2089c98d70c5f0c809ff62a8a45aed9a3e79)
+- Looptober: Experiment with mute button [`5b623e8`](../../commit/5b623e80062ab7713c3f4f0390c46172d4ea257c)
+
 ## v2.1.4
 
 - Looptober: Add beat for October 4 [`59d5317`](../../commit/59d53176b7db7deed7bfb00d6860900d592ccf34)
