@@ -11,6 +11,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.1.x _(2022-10-02)_
 
 - Visualize audio loops in `looper` shortcode
+- Add mute button to `looper` audio player
 
 ## v2.0.x _(2022-10-02)_
 
