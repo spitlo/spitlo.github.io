@@ -31,34 +31,40 @@
       '#fffffb', // lightWhite
     ]
 
+    // Set up player interface
     const playButton = document.createElement('button')
     playButton.id = 'play-{{nth}}'
     playButton.innerHTML = `{{ macros::icon(name='play', size="small", type="remix") }}`
     playButton.setAttribute('aria-label', 'Play loop')
+    
     const stopButton = document.createElement('button')
     stopButton.id = 'stop-{{nth}}'
     stopButton.innerHTML = `{{ macros::icon(name='stop', size="small", type="remix") }}`
     stopButton.classList.add('stop')
     stopButton.setAttribute('aria-label', 'Stop loop')
+    
     const avCanvas = document.createElement('canvas')
     avCanvas.id = 'av-{{nth}}'
     avCanvas.setAttribute('width', avWidth)
     avCanvas.setAttribute('height', avHeight)
+    avCanvas.setAttribute('aria-label', 'Audio visualizer')
+    
     const muteButton = document.createElement('button')
+    muteButton.id = 'mute-{{nth}}'
     muteButton.innerHTML = `{{ macros::icon(name='mute', size="small", type="remix") }}`
+    muteButton.classList.add('mute')
     muteButton.setAttribute('aria-label', 'Mute loop')
     muteButton.addEventListener('mousedown', () => {
-      console.log(gainNode)
       if (source && gainNode) {
-        console.log('Have source and gainNode')
-        gainNode.gain.value = 0
+        gainNode.gain.setValueAtTime(0, context.currentTime)
       }
     })
     muteButton.addEventListener('mouseup', () => {
       if (source && gainNode) {
-        gainNode.gain.value = 1
+        gainNode.gain.setValueAtTime(1, context.currentTime)
       }
     })
+    
     const downloadButton = document.createElement('a')
     downloadButton.id = 'download-{{nth}}'
     downloadButton.innerHTML = `{{ macros::icon(name='download', size="small", type="remix") }}`
@@ -104,7 +110,7 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       source = context.createBufferSource()
       gainNode.connect(context.destination)
-      source.connect(context.destination)
+      source.connect(gainNode)
 
       if (typeof context.createScriptProcessor !== 'undefined') {
         const analyser = context.createAnalyser()

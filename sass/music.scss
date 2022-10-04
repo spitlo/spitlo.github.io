@@ -22,7 +22,8 @@
       background-color: $lightSeagreen;
     }
 
-    &.stop {
+    &.stop,
+    &.mute {
       &:active {
         background-color: $mutedPink;
       }
