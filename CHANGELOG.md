@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.6
+
+- Looptober: Add beat for October 5 [`e520676`](../../commit/e5206762eda363f0b6f706f649abb6784dd44829)
+
 ## v2.1.5
 
 - Add note about Looptober mute button. Update changelog [`d32add3`](../../commit/d32add3c53b7e8627198f63bb3da85539d94db4c)
