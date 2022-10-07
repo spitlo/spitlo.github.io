@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.10
+
+- Looptober: Minimal error handling [`a513340`](../../commit/a51334056635a682f544648b98d97b8878898156)
+
 ## v2.1.9
 
 - Looptober: Improve lopp players on light theme [`df50381`](../../commit/df50381528bfd1db6e91467f4cc52794a30a738b)
