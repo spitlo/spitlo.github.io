@@ -31,6 +31,12 @@
       '#fffffb', // lightWhite
     ]
 
+    const getFilStyle = () => {
+      if (document.querySelector('html').classList.contains('light')) {
+        return ''
+      }
+    }
+
     // Set up player interface
     const playButton = document.createElement('button')
     playButton.id = 'play-{{nth}}'
@@ -85,7 +91,10 @@
     const canvasContext = avCanvas.getContext('2d')
     // And paint the baseline
     const clearAvCanvas = (baseline = true) => {
-      canvasContext.fillStyle = '#fffffb'
+      canvasContext.fillStyle =
+        document.querySelector('html').classList.contains('light')
+          ? '#2d3238'
+          : '#fffffb'
       canvasContext.clearRect(0, 0, avWidth, avHeight)
       if (baseline) {
         canvasContext.fillRect(0, avHeight / 2, avWidth, 1)

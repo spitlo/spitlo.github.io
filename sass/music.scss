@@ -11,6 +11,8 @@
     padding: 10px;
     border: 0;
     border-radius: 2px;
+    background-color: var(--button-bgcolor);
+    color: var(--site-color);
 
     &.loading {
       background: linear-gradient(100deg, #ccc 10%, #fff 20%, #ccc 30%);
@@ -31,7 +33,7 @@
   }
 
   a.download {
-    background: #fffffb;
+    background: var(--button-bgcolor);
     padding: 10px;
     border-radius: 2px;
 
