@@ -13,8 +13,6 @@ Success-o-meter: ~`23`% done and names are getting weirder
 
 NB: These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
-NB2: Safari users: If the play buttons don’t work, click "Safari" in the top menu, choose "Settings for spitlo.com", and in the window that appears, choose "Auto-Play: Allow All Auto-Play".
-
 PROTIP: The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.
 
 ## 01 - Duckboy (86 BPM)
