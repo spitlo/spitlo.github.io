@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.9
+
+- Looptober: Improve lopp players on light theme [`df50381`](../../commit/df50381528bfd1db6e91467f4cc52794a30a738b)
+
 ## v2.1.8
 
 - Looptober: Add beat for October 7 [`54f9df3`](../../commit/54f9df3b36b732cf29d070122a6dab11ab781b63)
