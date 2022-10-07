@@ -49,12 +49,6 @@
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
 
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
-
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
     playButton.id = &#x27;play-1&#x27;
@@ -156,10 +150,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;01-duckboy.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;01-duckboy.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -204,7 +205,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
@@ -251,12 +257,6 @@
       &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
-
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
 
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
@@ -359,10 +359,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;02-grvyrdshft.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;02-grvyrdshft.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -407,7 +414,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
@@ -454,12 +466,6 @@
       &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
-
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
 
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
@@ -562,10 +568,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;03-spacejoust.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;03-spacejoust.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -610,7 +623,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
@@ -657,12 +675,6 @@
       &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
-
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
 
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
@@ -765,10 +777,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;04-cibercryme.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;04-cibercryme.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -813,7 +832,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
@@ -860,12 +884,6 @@
       &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
-
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
 
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
@@ -968,10 +986,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;05-freakshow.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;05-freakshow.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -1016,7 +1041,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
@@ -1063,12 +1093,6 @@
       &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
-
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
 
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
@@ -1171,10 +1195,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;06-ghoulsgrowl.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;06-ghoulsgrowl.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -1219,7 +1250,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
@@ -1266,12 +1302,6 @@
       &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
       &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
     ]
-
-    const getFilStyle = () =&gt; {
-      if (document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)) {
-        return &#x27;&#x27;
-      }
-    }
 
     &#x2F;&#x2F; Set up player interface
     const playButton = document.createElement(&#x27;button&#x27;)
@@ -1374,10 +1404,17 @@
       isPlaying = true
 
       &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;07-loungehounds.mp3&#x27;)
-        .then(response =&gt; response.arrayBuffer())
-      &#x2F;&#x2F; Assume file is loaded. Remove loading class.
-      playButton.classList.remove(&#x27;loading&#x27;)
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2022&#x2F;07-loungehounds.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
       
       &#x2F;&#x2F; Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -1422,7 +1459,12 @@
       source.loop = true
 
       playButton.classList.add(&#x27;playing&#x27;)
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
     })
     
     stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
