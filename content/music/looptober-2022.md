@@ -9,7 +9,7 @@ categories = ["Electronic", "Loops", "Work in Progress"]
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
 
-Success-o-meter: ~`19`% done and first BPM duplicate spotted. Sloppy!
+Success-o-meter: ~`23`% done and names are getting weirder
 
 NB: These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
@@ -40,3 +40,7 @@ S/NS: The loop players below doesn’t work in Safari and I have no clue why. Th
 ## 06 - Ghoulsgrowl (75 BPM)
 
 {{ looper(filepath="/audio/looptober/2022/06-ghoulsgrowl.mp3") }}
+
+## 07 - Loungehounds (83 BPM)
+
+{{ looper(filepath="/audio/looptober/2022/07-loungehounds.mp3") }}
