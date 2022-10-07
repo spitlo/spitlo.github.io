@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.12
+
+- Looptober: Initialize audio in click handler [`6782176`](../../commit/678217630ccbbdaebd0a73bd2a6a83b61c9a455d)
+
 ## v2.1.11
 
 - Looptober: Add note for Safari users [`b8a9d95`](../../commit/b8a9d9598410519d2a4eecb86a4e2927f620a693)
