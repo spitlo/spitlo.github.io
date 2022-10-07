@@ -31,12 +31,6 @@
       '#fffffb', // lightWhite
     ]
 
-    const getFilStyle = () => {
-      if (document.querySelector('html').classList.contains('light')) {
-        return ''
-      }
-    }
-
     // Set up player interface
     const playButton = document.createElement('button')
     playButton.id = 'play-{{nth}}'
@@ -110,10 +104,17 @@
       isPlaying = true
 
       // Fetch audio file. Error handling? Perhaps later.
-      const arrayBuffer = await fetch('{{ get_url(path=filepath) | safe }}')
-        .then(response => response.arrayBuffer())
-      // Assume file is loaded. Remove loading class.
-      playButton.classList.remove('loading')
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch('{{ get_url(path=filepath) | safe }}')
+          .then(response => response.arrayBuffer())
+        // Assume file is loaded. Remove loading class.
+        playButton.classList.remove('loading')
+      } catch(error) {
+        console.error('Could not load audio', error)
+        playButton.classList.remove('loading')
+        return
+      }
       
       // Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
@@ -158,7 +159,12 @@
       source.loop = true
 
       playButton.classList.add('playing')
-      source.start(0)
+      try {
+        source.start(0)
+      } catch(error) {
+        console.error('Could not load audio', error)
+        playButton.classList.remove('playing')
+      } 
     })
     
     stopButton.addEventListener('click', () => {
