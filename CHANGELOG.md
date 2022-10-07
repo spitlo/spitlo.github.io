@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.11
+
+- Looptober: Add note for Safari users [`b8a9d95`](../../commit/b8a9d9598410519d2a4eecb86a4e2927f620a693)
+
 ## v2.1.10
 
 - Looptober: Minimal error handling [`a513340`](../../commit/a51334056635a682f544648b98d97b8878898156)
