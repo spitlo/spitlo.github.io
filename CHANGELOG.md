@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.13
+
+- Looptober: Fix stupid mute bug [`f043e49`](../../commit/f043e494ae42c4fabead11d8995d31362cb93e78)
+
 ## v2.1.12
 
 - Looptober: Initialize audio in click handler [`6782176`](../../commit/678217630ccbbdaebd0a73bd2a6a83b61c9a455d)
