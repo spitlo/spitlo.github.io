@@ -25,6 +25,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -138,8 +140,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
@@ -232,6 +234,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -345,8 +349,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
@@ -439,6 +443,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -552,8 +558,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
@@ -646,6 +652,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -759,8 +767,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
@@ -853,6 +861,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -966,8 +976,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
@@ -1060,6 +1070,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -1173,8 +1185,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
@@ -1267,6 +1279,8 @@
 
 &lt;script type=&quot;module&quot;&gt;
   (async () =&gt; {    
+    let context
+    let gainNode
     let source
     let isPlaying = false
     const avWidth = 200
@@ -1380,8 +1394,8 @@
 
     playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
       &#x2F;&#x2F; Initialize audio
-      const context = new AudioContext()
-      const gainNode = context.createGain()
+      context = new AudioContext()
+      gainNode = context.createGain()
       &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
       &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
       playButton.classList.add(&#x27;loading&#x27;)
