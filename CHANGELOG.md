@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.14
+
+- Looptober: Add beat for October 8 [`1966dd9`](../../commit/1966dd94c164e5a0ba0478a6342ca3aa53354952)
+
 ## v2.1.13
 
 - Looptober: Fix stupid mute bug [`f043e49`](../../commit/f043e494ae42c4fabead11d8995d31362cb93e78)
