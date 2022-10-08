@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.15
+
+- Looptober: Correct BPM for Hira beat [`b59ac3a`](../../commit/b59ac3acd496389246657e9e4d5afae0755c807b)
+
 ## v2.1.14
 
 - Looptober: Add beat for October 8 [`1966dd9`](../../commit/1966dd94c164e5a0ba0478a6342ca3aa53354952)
