@@ -43,6 +43,6 @@ PROTIP: The mute button only mutes when pressed, use it to add flair to your lat
 
 {{ looper(filepath="/audio/looptober/2022/07-loungehounds.mp3") }}
 
-## 08 - Hira! Hira! (83 BPM)
+## 08 - Hira! Hira! (84 BPM)
 
 {{ looper(filepath="/audio/looptober/2022/08-hirahira.mp3") }}
