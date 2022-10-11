@@ -9,6 +9,7 @@ $dirtyYellow: #b1b098;
 $gray: #aa9f9f;
 $honeydew: #ecffea;
 $lightBrown: #dfcece;
+$lightDirtyYellow: #f0eabc;
 $lightGray: #efefef;
 $lightSeagreen: #8bd1cd;
 $lightWhite: #fffffb;
@@ -23,6 +24,8 @@ $linkPurple: rgb(0, 0, 238);
 
 @mixin lightTheme() {
   --alert-bgcolor: #{$mutedPink};
+  --annotation-bgcolor: #{$lightDirtyYellow};
+  --annotation-color: #{$darkGray};
   --box-bgcolor: #{$lightWhite};
   --box-shadow-inner: #{$black};
   --box-shadow-outer: #{$mutedPinkTransparent};
@@ -51,6 +54,8 @@ $linkPurple: rgb(0, 0, 238);
 
 @mixin darkTheme() {
   --alert-bgcolor: #{$orange};
+  --annotation-bgcolor: #{$orange};
+  --annotation-color: #{$lightWhite};
   --box-bgcolor: #{$honeydew};
   --box-shadow-inner: rgba(229, 21, 155, .7);
   --box-shadow-outer: rgba(14, 7, 12, .2);
