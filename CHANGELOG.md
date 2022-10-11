@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.1.18
+
+- Looptober: Add beat for October 11 [`f00700d`](../../commit/f00700d622f3d6cb520615815eeb58a40faeabfa)
+- Looptober: Add missing timesig template [`e065413`](../../commit/e0654137442084ebcc9e38f677f6fb75898dd324)
+- Looptober: Add time signatures to song titles [`5eba76d`](../../commit/5eba76db64821fe0108323f06238daddcb10fca4)
+
 ## v2.1.17
 
 - Looptober: Add beat for October 10 [`20577d4`](../../commit/20577d40ea7ba2b64755507fb890e6e75d3aae14)
