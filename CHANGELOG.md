@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.20
+
+- Looptober: Add beat for October 12 [`f98b556`](../../commit/f98b5560f9a8746035cac455d1a774b128b40345)
+
 ## v2.1.19
 
 - Fix typo [`b603be7`](../../commit/b603be764146e0232b60aac4658990f5ae05eecc)
