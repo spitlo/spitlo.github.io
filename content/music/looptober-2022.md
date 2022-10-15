@@ -12,7 +12,7 @@ content_class = "looptober"
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
 
-Success-o-meter: ~`45`% done. So close to the halfway point I can almost feel it!
+Success-o-meter: ~`48`% done. This bass line is the most difficult thing I ever programmed.
 
 NB: These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
@@ -73,3 +73,7 @@ PROTIP: The mute button only mutes when pressed, use it to add flair to your lat
 ## 14 - Birthright (73 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 {{ looper(filepath="/audio/looptober/2022/14-birthright.mp3") }}
+
+## 15 - Dropkick (90 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+{{ looper(filepath="/audio/looptober/2022/15-dropkick.mp3") }}
