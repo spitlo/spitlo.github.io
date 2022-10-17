@@ -81,3 +81,7 @@ PROTIP: The mute button only mutes when pressed, use it to add flair to your lat
 ## 16 - KENTVCKY (71 BPM) {{ timesig(numerator="5", denominator="4") }}
 
 {{ looper(filepath="/audio/looptober/2022/16-kentvcky.mp3") }}
+
+## 17 - Flatwheeler (64 BPM) {{ timesig(numerator="3", denominator="4") }}
+
+{{ looper(filepath="/audio/looptober/2022/17-flatwheeler.mp3") }}
