@@ -12,7 +12,7 @@ content_class = "looptober"
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
 
-Success-o-meter: ~`52`% done. New time signature achievement obtained!
+Success-o-meter: ~`55`% done. Record breaking low BPM!
 
 NB: These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
