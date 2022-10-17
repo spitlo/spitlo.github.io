@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.26
+
+- Looptober: Update Success-o-meter for October 17 [`53877e5`](../../commit/53877e5357ffe4e28feb2acc3bb4ed790c8350ec)
+
 ## v2.1.25
 
 - Looptober: Add beat for October 17 [`90cf6fc`](../../commit/90cf6fc60562a71db352e95d0f93791e4c68cd92)
