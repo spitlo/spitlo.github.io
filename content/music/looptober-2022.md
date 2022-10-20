@@ -14,9 +14,11 @@ Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find a
 
 Success-o-meter: ~`65`% done. Stock sound challenge accepted!
 
-NB: These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
+<mark>NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
-PROTIP: The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.
+<mark>NB2</mark> If you grow tired of the audio visualization, click it to switch to another type.
+
+<mark>PROTIP</mark> The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.
 
 ## 01 - Duckboy (86 BPM) {{ timesig(numerator="4", denominator="4") }}
 
