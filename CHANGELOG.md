@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.1.30
+
+- Looptober: Add a second audio visualization type. Clicking toggles between the two [`daa8d0f`](../../commit/daa8d0f338b45eac60b36bee5c64d4741cceb5a7)
+- Add styling for <mark> tag [`25dbd95`](../../commit/25dbd951b24a9bb80eb436de7017d600d7744e1e)
+- Stop using deprecated createScriptProcessor for audio visualization [`9401ae2`](../../commit/9401ae2810f52b66b3b95c110655df71e3f6868a)
+
 ## v2.1.29
 
 - Looptober: Add beat for October 20 [`3419ad6`](../../commit/3419ad6e159f4381114a003586ef1b9a5a7dba45)
