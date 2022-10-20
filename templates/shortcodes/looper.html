@@ -118,40 +118,33 @@
       
       // Ok, do the buffer magic.
       const buffer = await context.decodeAudioData(arrayBuffer)
+      const analyser = context.createAnalyser()
       source = context.createBufferSource()
       gainNode.connect(context.destination)
       source.connect(gainNode)
+      source.connect(analyser)
 
-      if (typeof context.createScriptProcessor !== 'undefined') {
-        const analyser = context.createAnalyser()
-        const scriptProcessor = context.createScriptProcessor(1024, 1, 1)
+      const amplitude = new Uint8Array(analyser.frequencyBinCount)
 
-        const amplitude = new Uint8Array(analyser.frequencyBinCount)
+      const renderVisualization = () => {
+        if (isPlaying) {
+          requestAnimationFrame(renderVisualization)
+        }
 
-        source.connect(analyser)
-        analyser.connect(scriptProcessor)
-        scriptProcessor.connect(context.destination)
+        analyser.getByteTimeDomainData(amplitude)
 
-        scriptProcessor.onaudioprocess = () => {
-          analyser.getByteTimeDomainData(amplitude)
-
-          if (isPlaying) {
-            requestAnimationFrame(() => {
-              clearAvCanvas() // or clearAvCanvas(true) to clear completely (no basesline)
-              // "Shuffle" colors array. This will do for now, but we could also use
-              // `ampValue` to set the color, higher -> red, lower -> white/green.
-              avColors.push(avColors.shift())
-              for (let i = 0; i < amplitude.length; i++) {
-                const ampValue = amplitude[i] / 256
-                const y = avHeight - (avHeight * ampValue) - 1
-                // This is probably not very performant :/
-                canvasContext.fillStyle = `${avColors[0]}40`
-                canvasContext.fillRect(i - 1, y - 1, 3, 3)
-                canvasContext.fillStyle = avColors[0]
-                canvasContext.fillRect(i, y, 1, 1)
-              }
-            })
-          }
+        clearAvCanvas()
+        // "Shuffle" colors array. This will do for now, but we could also use
+        // `ampValue` to set the color, higher -> red, lower -> white/green.
+        avColors.push(avColors.shift())
+        for (let i = 0; i < amplitude.length; i++) {
+          const ampValue = amplitude[i] / 256
+          const y = avHeight - (avHeight * ampValue) - 1
+          // This is probably not very performant :/
+          canvasContext.fillStyle = `${avColors[0]}40`
+          canvasContext.fillRect(i - 1, y - 1, 3, 3)
+          canvasContext.fillStyle = avColors[0]
+          canvasContext.fillRect(i, y, 1, 1)
         }
       }
 
@@ -161,6 +154,7 @@
       playButton.classList.add('playing')
       try {
         source.start(0)
+        renderVisualization()
       } catch(error) {
         console.error('Could not load audio', error)
         playButton.classList.remove('playing')
