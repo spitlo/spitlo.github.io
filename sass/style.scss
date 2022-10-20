@@ -520,6 +520,14 @@ blockquote {
   padding-left: 1em;
 }
 
+mark {
+  background-color: var(--mark-bgcolor);
+  border-bottom: 1px solid;
+  border-bottom-color: var(--mark-bottom);
+  color: var(--mark-color);
+  padding: 0 2px;
+}
+
 details.toc {
   font-family: $paragraphFont;
   font-size: 1em;
