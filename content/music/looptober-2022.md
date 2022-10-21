@@ -12,13 +12,13 @@ content_class = "looptober"
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
 
-Success-o-meter: ~`65`% done. Stock sound challenge accepted!
+Success-o-meter: ~`68`% done. Two thirds officially ~~crushed~~ finished.
 
-<mark>NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
+<mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
-<mark>NB2</mark> If you grow tired of the audio visualization, click it to switch to another type.
+<mark class="arrow">NB2</mark> If you grow tired of the audio visualization, click it to switch to another type.
 
-<mark>PROTIP</mark> The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.
+<mark class="arrow">PROTIP</mark> The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.
 
 ## 01 - Duckboy (86 BPM) {{ timesig(numerator="4", denominator="4") }}
 
@@ -99,3 +99,7 @@ Success-o-meter: ~`65`% done. Stock sound challenge accepted!
 ## 20 - Stockjock (85 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 {{ looper(filepath="/audio/looptober/2022/20-stockjock.mp3") }}
+
+## 21 - Ladybugs (98 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+{{ looper(filepath="/audio/looptober/2022/21-ladybugs.mp3") }}
