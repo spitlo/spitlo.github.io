@@ -526,6 +526,27 @@ mark {
   border-bottom-color: var(--mark-bottom);
   color: var(--mark-color);
   padding: 0 2px;
+
+
+  &.arrow {
+    position: relative;
+    margin-right: 14px;
+
+    &:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: transparent;
+      border-left-color: var(--mark-bgcolor);
+      border-width: 17px;
+      margin-top: -17px;
+    }
+  }
 }
 
 details.toc {
