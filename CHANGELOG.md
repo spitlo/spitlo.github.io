@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.1.31
+
+- Looptober: Add beat for October 21 [`54c537d`](../../commit/54c537d06c9eba9ea8a6784c94f3d8b4dcbe0568)
+- Allow <mark> to have an arrow with class="arrow" [`32cdc5b`](../../commit/32cdc5b5cbe91206167a30cc0311ddddbef49fb4)
+
 ## v2.1.30
 
 - Looptober: Add a second audio visualization type. Clicking toggles between the two [`daa8d0f`](../../commit/daa8d0f338b45eac60b36bee5c64d4741cceb5a7)
