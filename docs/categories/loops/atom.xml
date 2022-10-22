@@ -188,9 +188,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -409,9 +413,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -630,9 +638,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -851,9 +863,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -1072,9 +1088,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -1293,9 +1313,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -1514,9 +1538,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -1735,9 +1763,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -1956,9 +1988,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -2177,9 +2213,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -2398,9 +2438,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -2619,9 +2663,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -2840,9 +2888,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -3061,9 +3113,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -3282,9 +3338,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -3503,9 +3563,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -3724,9 +3788,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -3945,9 +4013,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -4166,9 +4238,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -4387,9 +4463,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
@@ -4608,9 +4688,13 @@
         }
 
         if (vizType === &#x27;fr&#x27;) {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
