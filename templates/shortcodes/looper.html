@@ -142,9 +142,13 @@
         }
 
         if (vizType === 'fr') {
-          analyser.getByteFrequencyData(amplitude)
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
         } else {
-          analyser.getByteTimeDomainData(amplitude)
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
         }        
 
         clearAvCanvas(vizType === 'fr' ? false : true)
