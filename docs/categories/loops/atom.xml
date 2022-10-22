@@ -176,11 +176,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -401,11 +407,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -626,11 +638,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -851,11 +869,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -1076,11 +1100,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -1301,11 +1331,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -1526,11 +1562,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -1751,11 +1793,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -1976,11 +2024,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -2201,11 +2255,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -2426,11 +2486,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -2651,11 +2717,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -2876,11 +2948,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -3101,11 +3179,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -3326,11 +3410,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -3551,11 +3641,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -3776,11 +3872,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -4001,11 +4103,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -4226,11 +4334,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -4451,11 +4565,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
@@ -4676,11 +4796,17 @@
       const buffer = await context.decodeAudioData(arrayBuffer)
       const analyser = context.createAnalyser()
       source = context.createBufferSource()
-      gainNode.connect(context.destination)
       source.connect(gainNode)
       source.connect(analyser)
+      gainNode.connect(context.destination)
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      console.log(&#x27;========\nDEBUG\n========\n&#x27;)
+      console.log(&#x27;Context&#x27;, context)
+      console.log(&#x27;Analyser:&#x27;, analyser)
+      window._context = context
+      window._analyser = analyser
 
       const renderVisualization = () =&gt; {
         if (isPlaying) {
