@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.34
+
+- Looptober: Give up on Bromite for now [`765c714`](../../commit/765c714c5c177cd2098f9f6bdf78f9eade18103e)
+
 ## v2.1.33
 
 - Debugging/logging [`1154910`](../../commit/115491084622c8c51f8ad6e4813ff10dcdef3657)
