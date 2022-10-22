@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.32
+
+- Try to avoid bug in Bromite where getByteTimeDomainData is missing [`ae61454`](../../commit/ae614547620c5c3184648490adaeb9a9bc6b9185)
+
 ## v2.1.31
 
 - Looptober: Add beat for October 21 [`54c537d`](../../commit/54c537d06c9eba9ea8a6784c94f3d8b4dcbe0568)
