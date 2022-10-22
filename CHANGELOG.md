@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.35
+
+- Looptober: Add beat for October 22 [`a1419ce`](../../commit/a1419ce26e965c88f6312485f1d9192d66ba0f7d)
+
 ## v2.1.34
 
 - Looptober: Give up on Bromite for now [`765c714`](../../commit/765c714c5c177cd2098f9f6bdf78f9eade18103e)
