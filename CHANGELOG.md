@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.33
+
+- Debugging/logging [`1154910`](../../commit/115491084622c8c51f8ad6e4813ff10dcdef3657)
+
 ## v2.1.32
 
 - Try to avoid bug in Bromite where getByteTimeDomainData is missing [`ae61454`](../../commit/ae614547620c5c3184648490adaeb9a9bc6b9185)
