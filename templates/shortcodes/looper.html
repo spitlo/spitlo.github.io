@@ -7,7 +7,7 @@
 </div>
 
 <script type="module">
-  (async () => {    
+  (async () => {
     let context
     let gainNode
     let source
@@ -136,12 +136,6 @@
 
       const amplitude = new Uint8Array(analyser.frequencyBinCount)
 
-      console.log('========\nDEBUG\n========\n')
-      console.log('Context', context)
-      console.log('Analyser:', analyser)
-      window._context = context
-      window._analyser = analyser
-
       const renderVisualization = () => {
         if (isPlaying) {
           requestAnimationFrame(renderVisualization)
@@ -155,18 +149,17 @@
           if (analyser.getByteTimeDomainData) {
             analyser.getByteTimeDomainData(amplitude)
           }
-        }        
+        }
 
         clearAvCanvas(vizType === 'fr' ? false : true)
-        // "Shuffle" colors array. This will do for now, but we could also use
-        // `ampValue` to set the color, higher -> red, lower -> white/green.
         if (vizType === 'td') {
+          // "Shuffle" colors array. This will do for now, but we could also use
+          // `ampValue` to set the color, higher -> red, lower -> white/green.
           avColors.push(avColors.shift())
         }
         for (let i = 0; i < amplitude.length; i++) {
           const ampValue = amplitude[i] / (vizType === 'fr' ? 320 : 256)
           const y = avHeight - (avHeight * ampValue) - 1
-          // This is probably not very performant :/
           if (vizType === 'td') {
             canvasContext.fillStyle = `${avColors[0]}40`
             canvasContext.fillRect(i - 1, y - 1, 3, 3)
