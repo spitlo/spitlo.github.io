@@ -12,7 +12,7 @@ content_class = "looptober"
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
 
-Success-o-meter: ~`77`% done. Three fourths done, and tomorrow four fifths. The day after that, five sixths. 
+Success-o-meter: ~`80`% done. Entering triple digit BPM land.
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
@@ -115,3 +115,7 @@ Success-o-meter: ~`77`% done. Three fourths done, and tomorrow four fifths. The 
 ## 24 - Snickertick (90 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 {{ looper(filepath="/audio/looptober/2022/24-snickertick.mp3") }}
+
+## 25 - Payday (111 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+{{ looper(filepath="/audio/looptober/2022/25-payday.mp3") }}
