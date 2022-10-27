@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v2.1.42
+
+- Nitpicking [`6187441f`](../../commit/6187441f1815a56735f2bf8a0c3d03c4c4d61d60)
+- Enable header and footer in dotmatrix mode [`d02a59ad`](../../commit/d02a59ade88ab931283b98257f2dc09402852721)
+- Make 'dotmatrix' a settable theme with cookie support. Fix styling [`407d3596`](../../commit/407d3596ce2ccdd75078f63a913e1e2e236a26f2)
+- Fix styles for dotmatrix [`c151ae73`](../../commit/c151ae7395aaed799f752457395922c3e0a7c84a)
+
 ## v2.1.41
 
 - Looptober: Add jump link to success-o-meter [`71f5517f`](../../commit/71f5517f02920baf31a16a26b45f02e20baef7ac)
