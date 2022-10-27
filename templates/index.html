@@ -10,7 +10,7 @@
     <link rel="modulepreload" href="/utils.mjs">
 
     <script type="module">
-      import { getCookie } from '/utils.mjs'
+      import { dotmatrix, getCookie } from '/utils.mjs'
       // Set js class on <html>
       document.documentElement.classList.remove('noJS')
       document.documentElement.classList.add('js')
@@ -20,6 +20,8 @@
         document.documentElement.classList.add('light')
       } else if (theme === 'dark') {
         document.documentElement.classList.add('dark')
+      } else if (theme === 'dotmatrix') {
+        dotmatrix()
       }
     </script>
     

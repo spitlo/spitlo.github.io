@@ -1,3 +1,36 @@
+const alphabet = {
+  a: ['____','|__|','|  |'],
+  b: ['___ ','|__]','|__]'],
+  c: ['____','|   ','|___'],
+  d: ['___ ','|  \\','|__/'],
+  e: ['____','|___','|___'],
+  f: ['____','|___','|   '],
+  g: ['____','| __','|__]'],
+  h: ['_  _','|__|','|  |'],
+  i: ['_','|','|'],
+  j: [' _',' |','_|'],
+  k: ['_  _','|_/ ','| \\_'],
+  l: ['_   ','|   ','|___'],
+  m: ['_  _','|\\/|','|  |'],
+  n: ['_  _','|\\ |','| \\|'],
+  o: ['____','|  |','|__|'],
+  p: ['___ ','|__]','|   '],
+  q: ['____','|  |','|_\\|'],
+  r: ['____','|__/','|  \\'],
+  s: ['____','[__ ','___]'],
+  t: ['___',' | ',' | '],
+  u: ['_  _','|  |','|__|'],
+  v: ['_  _','|  |',' \\/ '],
+  w: ['_ _ _','| | |','|_|_|'],
+  x: ['_  _',' \\/ ','_/\\_'],
+  y: ['_   _',' \\_/ ','  |  '],
+  z: ['___',' / ','/__'],
+  ' ': ['    ','    ','    '],
+  '-': ['    ',' __ ','    '],
+  '.': ['   ','   ',' * '],
+  ':': ['   ',' , ',' ’ '],
+}
+
 const nms = (a, b) => {
   // Most characters from Code Page 437 (removed glyphs missing from Victor Mono for consisten widths)
   const codePage437 = '!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜ¢£¥ƒáíóúñÑªº¿¬½¼¡«»░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀αßΓπΣσµτΦΘΩδ∞φε∩≡±≥≤÷≈°·√ⁿ²'
@@ -99,4 +132,32 @@ const deleteCookie = (name) => {
   }
 }
 
-export { nms, getCookie, setCookie, deleteCookie }
+const dotmatrix = () => {
+  document.body.classList.add('dotmatrix')
+  const toc = document.getElementsByTagName('details')[0]
+  if (toc) {
+    toc.setAttribute('open', true)
+  }
+  const header = document.getElementsByTagName('h1')[0]
+  const dotmatrixHeader = document.getElementById('dotmatrixHeader')
+  if (header && !dotmatrixHeader) {
+    const headerText = header.innerText
+    const figlet = ['', '', '']
+    for (let char of headerText) {
+      char = char.toLowerCase();
+      if (alphabet[char]) {
+        for (let y = 0; y < figlet.length; y++) {
+          figlet[y] = `${figlet[y]} ${alphabet[char][y]}`
+        }
+      }
+    }
+    const figletHeader = document.createElement('pre')
+    const underline = new Array(figlet[figlet.length - 1].length).join('-')
+    figlet.push(` ${underline}`)
+    figletHeader.id = 'dotmatrixHeader'
+    figletHeader.innerText = figlet.join('\n')
+    header.insertAdjacentElement('afterend', figletHeader)
+  }
+}
+
+export { nms, getCookie, setCookie, deleteCookie, dotmatrix }

@@ -6,8 +6,7 @@ body.dotmatrix {
   background-color: $white;
 
   header#top,
-  // nav.breadcrumbs,
-  footer#bottom,
+  // footer#bottom,
   .heel {
     display: none;
   }
@@ -20,15 +19,11 @@ body.dotmatrix {
     &:visited {
       color: $black;
     }
-
-    // &:after {
-    //   content: "["attr(href)"]"
-    // }
   }
 
   * {
-    color: $black;
-    background-color: $white;
+    color: $black!important;
+    background-color: $white!important;
   }
 
   #commandLine,
@@ -36,6 +31,46 @@ body.dotmatrix {
     span {
       background-color: $black;
       color: $aquamarine;
+    }
+    
+    &.alertMode {
+      opacity: 1;
+      background: transparent;
+      color: $black;
+      border-top: 1px solid $black;
+
+      div {
+        color: $black;
+      }
+
+      button {
+        u {
+          text-decoration: none;
+        }
+
+        &.decline {
+          background-color: $black!important;
+          color: $white!important;
+
+          u {
+            border-bottom: 1px solid $white!important;
+            background-color: $black!important;
+            color: $white!important;
+          }
+        }
+
+        &.confirm {
+          background-color: $white;
+          color: $black;
+          border: 1px solid $black;
+
+          u {
+            border-bottom: 1px solid $black;
+            background-color: $white;
+            color: $black;
+          }
+        }
+      }
     }
   }
 
@@ -97,6 +132,10 @@ body.dotmatrix {
     font-size: 1.1em;
   }
 
+  blockquote {
+    border-left: 2px solid $black;
+  }
+
   nav {
     &.breadcrumbs {
       margin-top: 1rem;
@@ -120,6 +159,40 @@ body.dotmatrix {
     &.pager {
       display: none;
     }
+  }
+
+  footer#bottom {
+    border-top: 1px dashed $black;
+
+    .details {
+      font-size: .9em;
+
+      .detail {
+        padding-left: 0;
+      }
+    }
+    
+    .hr {
+      display: none;
+    }
+
+    .link.shadow {
+      text-shadow: none;
+    }
+  }
+
+  .icon {
+    svg {
+      fill: $black!important;
+    }
+  }
+
+  #help.visible {
+    opacity: 1;
+  }
+
+  #searchResults {
+    border: 1px solid $black;
   }
 
   .project,
@@ -211,6 +284,19 @@ body.dotmatrix {
       border: 1px solid $black;
       padding: 6px;
     }
+  }
+
+  td:nth-child(1) {
+    background-color: $white;
+  }
+
+  .taxonomy span.label {
+    font-family: $paragraphFont!important;
+  }
+
+  .contentWrapper.home-2021-04-29 .introduction {
+    background: $white;
+    border: 1px dashed $black;
   }
 }
 
