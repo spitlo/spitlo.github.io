@@ -37,7 +37,7 @@ Awkwardly uppercase a sentence (removing punctuation, diacritics and fluff in th
 echo "I Have No Mouth, and I Must Scream" | ./morsh -e | ./morsh -d
 ```
 
-Turn Crime and Punishment into something you can reliably broadcast to your entire neighborhood with a simple signal horn and some patience:
+Turn "Crime and Punishment" into something you can reliably broadcast to your entire neighborhood with a simple signal horn and some patience:
 
 ```bash
 curl https://gutenberg.org/files/2554/2554-0.txt | ./morsh --encode | less
