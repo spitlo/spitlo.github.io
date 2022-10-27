@@ -12,7 +12,7 @@ content_class = "looptober"
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
 
-Success-o-meter: ~`84`% done. Letting the LFOs do the work today.
+Success-o-meter: ~`87`% done. This is by far the dumbest yet. [Jump](#27-clowncar-108-bpm)
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
@@ -123,3 +123,7 @@ Success-o-meter: ~`84`% done. Letting the LFOs do the work today.
 ## 26 - Algosmosis (59 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 {{ looper(filepath="/audio/looptober/2022/26-algosmosis.mp3") }}
+
+## 27 - Clowncar (108 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+{{ looper(filepath="/audio/looptober/2022/27-clowncar.mp3") }}
