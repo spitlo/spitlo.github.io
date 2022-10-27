@@ -5,10 +5,18 @@ body.dotmatrix {
   background-image: none!important;
   background-color: $white;
 
-  header#top,
-  // footer#bottom,
   .heel {
     display: none;
+  }
+
+  header#top {
+    .logo {
+      opacity: 0;
+    }
+
+    .colors {
+      display: none;
+    }
   }
 
   a {
@@ -82,6 +90,7 @@ body.dotmatrix {
       display: block;
       font-weight: 800;
       margin-left: -.5rem;
+      margin-top: 2rem;
     }
   }
 
@@ -138,8 +147,9 @@ body.dotmatrix {
 
   nav {
     &.breadcrumbs {
-      margin-top: 1rem;
-
+      margin-top: -4.5rem;
+      background: transparent!important;
+      
       &::before {
         font-family: $paragraphFont;
         font-size: .9em;
@@ -301,8 +311,35 @@ body.dotmatrix {
 }
 
 @media print {
+  header#top,
+  footer#bottom,
   #commandLine,
   #commandLineHints {
     display: none;
+  }
+
+  ul.projectList {
+    // This does no work, investigate!
+    li {
+      break-inside: avoid-page;
+      break-after: auto;
+      break-before: auto;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  body.dotmatrix {
+    header#top .logo {
+      display: none!important;
+    }
+
+    nav.breadcrumbs {
+      display: none;
+    }
+
+    pre#dotmatrixHeader {
+      margin-top: 0;
+    }
   }
 }
