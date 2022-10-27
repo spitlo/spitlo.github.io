@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.41
+
+- Looptober: Add jump link to success-o-meter [`71f5517f`](../../commit/71f5517f02920baf31a16a26b45f02e20baef7ac)
+
 ## v2.1.40
 
 - Looptober: Add beat for October 27 [`76dd7df5`](../../commit/76dd7df5d9fa69d3630144a94be1587e2af9fc31)
