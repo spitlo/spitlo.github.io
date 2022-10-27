@@ -101,6 +101,18 @@
     position: relative;
     display: inline-block;
   }
+
+  p {
+    a[href^="./#"]{
+      color: var(--site-color);
+      text-decoration: none;
+      text-transform: lowercase;
+      font-variant: small-caps;
+      border: 1px solid var(--site-color);
+      border-radius: 4px;
+      padding: 0 6px 4px;
+    }
+  }
   
   span.timesig {
     font-size: 0.6em;
