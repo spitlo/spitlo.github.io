@@ -289,6 +289,21 @@ main {
       }
     }
   }
+
+  .footnote-definition {
+    max-width: 48rem;
+
+    &:first-of-type {
+      border-top: 1px solid black;
+      padding-top: 20px;
+    }
+
+    p {
+      margin-top: -18px;
+      margin-left: 18px;
+      font-size: 1em;
+    }
+  }
 }
 
 span.timesig {

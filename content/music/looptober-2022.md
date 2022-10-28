@@ -10,15 +10,27 @@ categories = ["Electronic", "Loops", "Work in Progress"]
 content_class = "looptober"
 +++
 
-Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. 
+Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. Thus, from the first of October to the last of October, I created one short loop every day as a way of getting to know the Elektron Syntakt. Below are the fruits of that sometimes frustrating labor, along with the original comment where available. But first a summary.
 
-Success-o-meter: ~`90`% done. We’re on the home stretch! [Jump](./#28-indigo-days-89-bpm)
+## Conlusions
+
+The stats show I’m depressingly consistant. The average BPM, XX, is very close to the mean BPM, XX. The difference between the the lowest BPM and the average is XX, the difference between the highest BPM and the average is XX. Like a perfectly adequately calibrated but slightly underwhelming pendulum.
+
+A crushing majority of the loops are in 4/4 time, with only X in 3/4 time and X in 5/4 time. Probably what you’d expect, especially from someone so defiantly average.
+
+I didn’t keep track of what keys the loops are in, but if I’d have to guess I’d say C is probably the most common.
+
+If we look at the commit times, the average commit time is 11:3X:XX and the mean commit time is 11:XX:XX, and most commits are clustered around midday. There are som outliers, however. The loop for October 2, aptly named Grvyrdshft[^grvyrdshft], is committed at a record-smashing 00:26:48.
+
+All in all, it was a fun experiment, and a really good way to get to learn a new synth, however somewhat akin to how force-feeding is a good way of making foie gras.
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
 <mark class="arrow">NB2</mark> If you grow tired of the audio visualization, click it to switch to another type.
 
 <mark class="arrow">PROTIP</mark> The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.
+
+[^grvyrdshft]: There has been some debate, though, as to whether Grvyrdshft really is short for *Graveyard Shift*. Some claim it stands for *Groovy Redshift* or even *Gravy Rodshaft*.
 
 ## 01 - Duckboy (86 BPM) {{ timesig(numerator="4", denominator="4") }}
 
