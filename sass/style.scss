@@ -670,19 +670,6 @@ dd {
     display: inline-block;
   }
 
-  footer {
-    .details {
-      .detail {
-        display: inline-block;
-        margin: 0 8px 8px 0;
-      }
-
-      .divider {
-        display: none;
-      }
-    }
-  }
-
   main {
     .breadcrumbs {
       .divider.forward {
@@ -816,6 +803,17 @@ dd {
 
     .links {
       text-align: center;
+    }
+
+    .details {
+      .detail {
+        display: inline-block;
+        margin: 0 8px 8px 0;
+      }
+
+      .divider {
+        display: none;
+      }
     }
   }
 }
