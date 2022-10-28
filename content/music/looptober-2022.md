@@ -22,7 +22,7 @@ I didn’t keep track of what keys the loops are in, but if I’d have to guess 
 
 If we look at the commit times, the average commit time is 11:3X:XX and the mean commit time is 11:XX:XX, and most commits are clustered around midday. There are som outliers, however. The loop for October 2, aptly named Grvyrdshft[^grvyrdshft], is committed at a record-smashing 00:26:48.
 
-All in all, it was a fun experiment, and a really good way to get to learn a new synth, however somewhat akin to how force-feeding is a good way of making foie gras.
+All in all, it was a fun experiment, and a really good way to get to learn a new synth, however somewhat akin to how *gavage* is a good way of making foie gras.
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 

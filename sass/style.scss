@@ -294,7 +294,7 @@ main {
     max-width: 48rem;
 
     &:first-of-type {
-      border-top: 1px solid black;
+      border-top: 1px solid var(--site-color);
       padding-top: 20px;
     }
 
@@ -309,7 +309,7 @@ main {
 span.timesig {
   font-size: 0.6em;
   font-weight: bold;
-  background: #f0eabc;
+  background: $lightDirtyYellow;
   margin-bottom: -3px;
   display: inline-block;
   padding: 2px 6px;
