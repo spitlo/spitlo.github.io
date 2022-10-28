@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.46
+
+- Update changelog [`3aa100bd`](../../commit/3aa100bd0198b6fc69a26f92331aa3c3f2f67000)
+
 ## v2.1.45
 
 - Code: Link first commit date to GitHub [`5fade6c6`](../../commit/5fade6c64cba21d41623ff40916e60e61db61d6f)
