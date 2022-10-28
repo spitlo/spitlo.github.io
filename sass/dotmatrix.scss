@@ -90,7 +90,7 @@ body.dotmatrix {
       display: block;
       font-weight: 800;
       margin-left: -.5rem;
-      margin-top: 2rem;
+      margin-top: .5rem;
     }
   }
 
@@ -147,7 +147,8 @@ body.dotmatrix {
 
   nav {
     &.breadcrumbs {
-      margin-top: -4.5rem;
+      display: inline-block;
+      // margin-top: -4.5rem;
       background: transparent!important;
       
       &::before {
