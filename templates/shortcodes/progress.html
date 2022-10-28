@@ -17,6 +17,11 @@
     <svg viewBox="0 0 144 36">
       <rect class="bg" width="144" height="24" y="6" />
       <rect class="bar" width="{{ (percentage / 100) * 144 }}" height="24" y="6" />
+      <defs>
+        <pattern id="raster" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse" >
+          <line x1="0" x2="1" y1="0" y2="1" />
+        </pattern>
+      </defs>
     </svg>
   {% endif %}
 </span>

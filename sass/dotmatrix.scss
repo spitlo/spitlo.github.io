@@ -313,6 +313,16 @@ body.dotmatrix {
         fill: url(#raster);
         stroke: $black;
       }
+      
+      &.bar {
+        rect.bg {
+          fill: url(#raster);
+          stroke: transparent;
+        }
+        rect.bar {
+          fill: $black;
+        }
+      }
     }
   }
 }
