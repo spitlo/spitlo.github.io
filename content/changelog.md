@@ -11,21 +11,24 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.1.x _(2022-10-02)_
 
 - Visualize audio loops in `looper` shortcode
-- Add mute button to `looper` audio player
-- Add a second audio visualization type to `looper`
+- Added mute button to `looper` audio player
+- Added a second audio visualization type to `looper`
+- The `:dotmatrix` command is now similar to `:light` and `:dark` in that is offers to set a cookie
+- Added creamy smooth fade-ins on page load in a way that’s hopefully safe for all browsers :crossed_fingers:
+- On code articles, the commit date now links to a GitHub commit list filtered on that date
 
 ## v2.0.x _(2022-10-02)_
 
-- Switch to `main` as default branch
+- Switched to `main` as default branch
 
 ## v1.20.x _(2022-10-02)_
 
-- Add [Looptober 2022](/music/looptober-2022/) article to [Music](/music/) section
-- Add `looper` shortcode to be able to play gapless loops in articles
+- Added [Looptober 2022](/music/looptober-2022/) article to [Music](/music/) section
+- Added `looper` shortcode to be able to play gapless loops in articles
 
 ## v1.19.x _(2022-08-04)_
 
-- Move to Zola 16
+- Moved to Zola 16
 
 ## v1.18.x - v1.14.x _(2022-03-23)_
 
