@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.47
+
+- Include link to raw source in footer [`6a59ef11`](../../commit/6a59ef115dd859d1a435aba77b82fb0565cadb83)
+
 ## v2.1.46
 
 - Update changelog [`3aa100bd`](../../commit/3aa100bd0198b6fc69a26f92331aa3c3f2f67000)
