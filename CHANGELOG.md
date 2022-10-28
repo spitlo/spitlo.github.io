@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.43
+
+- Looptober: Add beat for October 28 [`cae238b4`](../../commit/cae238b48e26f2f36a8cfb1466c310b166ec5638)
+
 ## v2.1.42
 
 - Nitpicking [`6187441f`](../../commit/6187441f1815a56735f2bf8a0c3d03c4c4d61d60)
