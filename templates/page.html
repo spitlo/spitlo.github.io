@@ -52,19 +52,23 @@
               <a href="{{ page.extra.repo }}" rel="noopener noreferrer">{{ page.extra.repo | replace(from="https://github.com/", to="") }}</a>
             </span>
           </li>
-          {% if page.extra.first_commit_time and page.extra.first_commit_time %}
+          {% if page.extra.first_commit_time and page.extra.first_commit_message %}
             <li class="metaUnit">
               <span class="label">First commit:</span>
-              <time class="commit" datetime="{{ page.extra.first_commit_time }}" title="{{ page.extra.first_commit_message }}">
-                {{ page.extra.first_commit_time | date(format="%Y-%m-%d") }}
-              </time>
+              <a href="{{ page.extra.repo }}/commits?since={{ page.extra.first_commit_time }}&until={{ page.extra.first_commit_time }}" rel="noopener noreferrer">
+                <time class="commit" datetime="{{ page.extra.first_commit_time }}" title="{{ page.extra.first_commit_message }}">
+                  {{ page.extra.first_commit_time | date(format="%Y-%m-%d") }}
+                </time>
+              </a>
             </li>
           {% elif page.extra.first_commit_time %}
             <li class="metaUnit">
               <span class="label">First commit:</span>
-              <time class="commit" datetime="{{ page.extra.first_commit_time }}">
-                {{ page.extra.first_commit_time | date(format="%Y-%m-%d") }}
-              </time>
+              <a href="{{ page.extra.repo }}/commits?since={{ page.extra.first_commit_time }}&until={{ page.extra.first_commit_time }}" rel="noopener noreferrer">
+                <time class="commit" datetime="{{ page.extra.first_commit_time }}">
+                  {{ page.extra.first_commit_time | date(format="%Y-%m-%d") }}
+                </time>
+              </a>
             </li>
           {% endif %}
         {% endif %}
