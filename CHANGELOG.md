@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.1.44
+
+- Add creamy smooth fade-ins on page load in a way that’s hopefully safe for all browsers :crossed_fingers: [`a87c3826`](../../commit/a87c3826ad9bf3a0dcfcd5eb6f7b1b6d0c9ed8f4)
+- Move breadcrumbs to below main nav [`7f394ec6`](../../commit/7f394ec618c1eb69a7414cffbe3a9cd6f28229ab)
+
 ## v2.1.43
 
 - Looptober: Add beat for October 28 [`cae238b4`](../../commit/cae238b48e26f2f36a8cfb1466c310b166ec5638)
