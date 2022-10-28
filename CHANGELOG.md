@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.1.45
+
+- Code: Link first commit date to GitHub [`5fade6c6`](../../commit/5fade6c64cba21d41623ff40916e60e61db61d6f)
+- Update Dotfiles article [`32166276`](../../commit/321662760a3e74acb8a6c51a04d7cad309c927d2)
+
 ## v2.1.44
 
 - Add creamy smooth fade-ins on page load in a way that’s hopefully safe for all browsers :crossed_fingers: [`a87c3826`](../../commit/a87c3826ad9bf3a0dcfcd5eb6f7b1b6d0c9ed8f4)
