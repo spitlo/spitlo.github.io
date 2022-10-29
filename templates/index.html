@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
+    <style>
+      html { opacity: 0; transition: opacity .5s }
+      html.js { opacity: 1 }
+      html.js-nomodule { opacity: 1 }
+    </style>
+    <noscript>
+      <style>html { opacity: 1!important }</style>
+    </noscript>
+
     <link rel="modulepreload" href="/utils.mjs">
 
     <script type="module">
       import { dotmatrix, getCookie } from '/utils.mjs'
-      // Set js class on <html>
-      document.documentElement.classList.remove('noJS')
-      document.documentElement.classList.add('js')
       // Check if user has saved a theme preference
       const theme = getCookie('theme')
       if (theme === 'light') {
@@ -23,6 +29,12 @@
       } else if (theme === 'dotmatrix') {
         dotmatrix()
       }
+      // Set js class on <html>
+      document.documentElement.classList.remove('noJS')
+      document.documentElement.classList.add('js')
+    </script>
+    <script nomodule>
+      document.documentElement.classList.add('js-nomodule')
     </script>
     
     <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
@@ -184,7 +196,7 @@
           {% if page.relative_path %}
             <span class="detail">
               Source:
-              <a href="https://github.com/spitlo/spitlo.github.io/blob/main/content/{{ page.relative_path }}" target="_blank" rel="noopener noreferrer">{{ page.relative_path }}</a>
+              <a href="https://github.com/spitlo/spitlo.github.io/blob/main/content/{{ page.relative_path }}" target="_blank" rel="noopener noreferrer">{{ page.relative_path }}</a> / <a href="https://raw.githubusercontent.com/spitlo/spitlo.github.io/main/content/{{ page.relative_path }}" target="_blank" rel="noopener noreferrer">Raw</a>
             </span>
             <span class="divider">|</span>
           {% endif %}

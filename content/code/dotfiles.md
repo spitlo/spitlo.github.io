@@ -29,7 +29,7 @@ There is a corresponding [bash completion script](https://github.com/spitlo/dotf
 
 ## [`xt`](https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L119-L156)
 
-This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al. Cant’t remember where I got this from initially.
+This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al. Cant’t remember where I got this function from initially, but here’s the obligatory [XKCD](https://xkcd.com/) strip:
 
   ![XKCD: Tar](https://imgs.xkcd.com/comics/tar.png)
 
@@ -63,20 +63,22 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
 
 `update` helps me keep some commands fresh across platforms, often by downloading the latest release from Github or similar and moving it to `~/bin`. This was mostly created out of frustration with the way Homebrew works on macOS, but I use it on Android ([Termux](https://github.com/termux/termux-app)) and Linux as well. At the time of writing, `update` supports updating the following commands:
 
-- bat
-- bombadillo
-- delta
-- exa
-- fzf
-- grit
-- gron
-- h2c
-- jq
-- micro
-- navi
-- nb
-- starship
-- svtplay-dl
-- wp-cli
-- youtube-dl
-- zola
+ - [ascii-image-converter](https://github.com/TheZoraiz/ascii-image-converter)
+ - [bat](https://github.com/sharkdp/bat)
+ - [bombadillo](https://tildegit.org/sloum/bombadillo) (Broken at the time)
+ - [croc](https://github.com/schollz/croc)
+ - [delta](https://github.com/dandavison/delta)
+ - [exa](https://github.com/ogham/exa)
+ - [fzf](https://github.com/junegunn/fzf)
+ - [grit](https://github.com/climech/grit)
+ - [gron](https://github.com/tomnomnom/gron)
+ - [h2c](https://github.com/curl/h2c)
+ - [jq](https://github.com/stedolan/jq)
+ - [micro](https://github.com/zyedidia/micro)
+ - [navi](https://github.com/denisidoro/navi)
+ - [nb](https://github.com/xwmx/nb)
+ - [starship](https://github.com/starship/starship)
+ - [svtplay-dl](https://github.com/spaam/svtplay-dl)
+ - [wp-cli](https://github.com/wp-cli/wp-cli)
+ - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+ - [zola](https://github.com/getzola/zola)

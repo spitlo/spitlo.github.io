@@ -2,6 +2,28 @@
 
 This changelog is automatically generated.
 
+## v2.1.48
+
+- Looptober: Add beat for October 29 [`940d2706`](../../commit/940d27068c97551ed569e0327eead76feaf1a904)
+
+## v2.1.47
+
+- Include link to raw source in footer [`6a59ef11`](../../commit/6a59ef115dd859d1a435aba77b82fb0565cadb83)
+
+## v2.1.46
+
+- Update changelog [`3aa100bd`](../../commit/3aa100bd0198b6fc69a26f92331aa3c3f2f67000)
+
+## v2.1.45
+
+- Code: Link first commit date to GitHub [`5fade6c6`](../../commit/5fade6c64cba21d41623ff40916e60e61db61d6f)
+- Update Dotfiles article [`32166276`](../../commit/321662760a3e74acb8a6c51a04d7cad309c927d2)
+
+## v2.1.44
+
+- Add creamy smooth fade-ins on page load in a way that’s hopefully safe for all browsers :crossed_fingers: [`a87c3826`](../../commit/a87c3826ad9bf3a0dcfcd5eb6f7b1b6d0c9ed8f4)
+- Move breadcrumbs to below main nav [`7f394ec6`](../../commit/7f394ec618c1eb69a7414cffbe3a9cd6f28229ab)
+
 ## v2.1.43
 
 - Looptober: Add beat for October 28 [`cae238b4`](../../commit/cae238b48e26f2f36a8cfb1466c310b166ec5638)
