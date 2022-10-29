@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.48
+
+- Looptober: Add beat for October 29 [`940d2706`](../../commit/940d27068c97551ed569e0327eead76feaf1a904)
+
 ## v2.1.47
 
 - Include link to raw source in footer [`6a59ef11`](../../commit/6a59ef115dd859d1a435aba77b82fb0565cadb83)
