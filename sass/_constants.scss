@@ -33,14 +33,15 @@ $linkPurple: rgb(0, 0, 238);
   --code-bgcolor: #{$mutedPink};
   --code-color: #{$black};
   --crumb-bordercolor: #{$darkGray};
+  --footnote-color: #{$gray};
   --h1-underlinecolor: #{$black};
   --input-bgcolor: #{$white};
   --input-color: #{$black};
   --link-visited: #{$linkPurple};
   --link: #{$linkBlue};
-  --mark-color: #{$white};
   --mark-bgcolor: #{$orange};
   --mark-bottom: #{$black};
+  --mark-color: #{$white};
   --meta-color: #{$blue};
   --search-bgcolor: #{$lightSeagreen};
   --search-color: #{$black};
@@ -53,6 +54,8 @@ $linkPurple: rgb(0, 0, 238);
   --table-bgcolor-odd: #{$mutedPinkTransparent};
   --table-color: #{$black};
   --taxonomy-hightlight: #{$honeydew};
+  --progress-color: #{$red};
+  --progress-bgcolor: #{$lightSeagreen};
 }
 
 @mixin darkTheme() {
@@ -66,14 +69,15 @@ $linkPurple: rgb(0, 0, 238);
   --code-bgcolor: #{$blue};
   --code-color: #{$lightSeagreen};
   --crumb-bordercolor: #{$gray};
+  --footnote-color: #{$dirtyYellow};
   --h1-underlinecolor: #{$orange};
   --input-bgcolor: #{$gray};
   --input-color: #{$black};
   --link-visited: #{$dirtyYellow};
   --link: #{$lightSeagreen};
-  --mark-color: #{$black};
   --mark-bgcolor: #{$dirtyYellow};
   --mark-bottom: #{$white};
+  --mark-color: #{$black};
   --meta-color: #{$aquamarine};
   --search-bgcolor: #{$blue};
   --search-color: #{$white};
@@ -86,6 +90,8 @@ $linkPurple: rgb(0, 0, 238);
   --table-bgcolor-odd: #{$blueGray};
   --table-color: #{$white};
   --taxonomy-hightlight: #{$lightSeagreen};
+  --progress-color: #{$blue};
+  --progress-bgcolor: #{$orange};
 }
 
 // Theme

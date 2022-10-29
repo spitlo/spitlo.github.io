@@ -302,6 +302,7 @@ main {
       margin-top: -18px;
       margin-left: 18px;
       font-size: 1em;
+      color: var(--footnote-color);
     }
   }
 }
@@ -694,8 +695,8 @@ span.progress {
     width: 28px;
     
     svg {
-      fill: $blue;
-      stroke: $orange;
+      fill: var(--progress-bgcolor);
+      stroke: var(--progress-color);
       stroke-width: 4px;
     }
   }
@@ -705,10 +706,10 @@ span.progress {
     
     svg {
       rect.bg {
-        fill: $blue;
+        fill: var(--progress-bgcolor);
       }
       rect.bar {
-        fill: $orange;
+        fill: var(--progress-color);
       }
     }
   }
