@@ -12,7 +12,13 @@ content_class = "looptober"
 
 Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any "rules" so I decided to interpret it literally. Thus, from the first of October to the last of October, I created one short loop every day as a way of getting to know the Elektron Syntakt. Below are the fruits of that sometimes frustrating labor, along with the original comments where available. But first a summary.
 
-## Conclusions
+## Evaluation
+
+The fun thing about doing short loops is that you have to think about what sounds goes in the beginning and the end of the loop. Some things sound good when they wrap around, but that doesn’t mean they sound good the first time around.
+
+I had fun coding the loop player, it was my first time using the Web Audio API. Perhaps next year I’ll export separate channels and do a loop player that can mute each channel individually?
+
+## Conclusion
 
 The stats show I’m depressingly consistant. The average BPM, XX, is very close to the mean BPM, XX. The difference between the the lowest BPM and the average is XX, the difference between the highest BPM and the average is XX. Like a perfectly adequately calibrated but slightly underwhelming pendulum.
 
@@ -24,7 +30,9 @@ If we look at the commit times, the average commit time is 11:3X:XX and the mean
 
 All in all, it was a fun experiment, and a really good way to get to learn a new synth -- especially in the same horrible way *gavage* is a good way of making foie gras.
 
-[^grvyrdshft]: There has been some debate, though, as to whether Grvyrdshft really is short for *Graveyard Shift*. Some claim it stands for *Groovy Redshift* or even *Gravy Rodshaft*.
+That’s it, hope I didn’t steal anyone’s melody!
+
+[^grvyrdshft]: There has been some debate, though, as to whether Grvyrdshft really is short for *Graveyard Shift*. Some claim it stands for *Groovy Redshift* or even *Gravy Rodshaft* which I can only assume means something inappropriate.
 
 ## The loops
 
@@ -102,7 +110,7 @@ Here are the thirty one loops in order from first to last. I tried to keep the v
 ### 10 - Scatterbrain (94 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=32) }}
-> That’s almost a third!
+> 32% done. That’s almost a third!
 
 {{ looper(filepath="/audio/looptober/2022/10-scatterbrain.mp3") }}
 

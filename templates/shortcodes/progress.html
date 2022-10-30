@@ -1,6 +1,7 @@
 <span class="progress {{ type }} {% if class %}{{class}}{% endif %}">
   {% if type == "circular" %}
     <svg viewBox="0 0 36 36">
+      <title>{{ percentage }}%</title>
       <path
         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
         stroke-dasharray="{{ percentage }}, 100"
@@ -13,6 +14,7 @@
     </svg>
   {% else %}
     <svg viewBox="0 0 144 36">
+      <title>{{ percentage }}%</title>
       <rect class="bg" width="144" height="24" y="6" />
       <rect class="bar" width="{{ (percentage / 100) * 144 }}" height="24" y="6" />
       <defs>
