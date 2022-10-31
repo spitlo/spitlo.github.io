@@ -12,12 +12,47 @@
 		<updated>2022-10-01T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://spitlo.com/music/looptober-2022/" type="text/html"/>
 		<id>https://spitlo.com/music/looptober-2022/</id>
-		<content type="html">&lt;p&gt;Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any “rules” so I decided to interpret it literally. I’m creating one short loop a day for the month of October as a way of getting to know the Elektron Syntakt. Below are the fruits of that labor. &lt;&#x2F;p&gt;
-&lt;p&gt;Success-o-meter: ~&lt;code&gt;100&lt;&#x2F;code&gt;% done. Time for a long vacation from beatmaking! &lt;a href=&quot;.&#x2F;#31-rasubosu-90-bpm&quot;&gt;Jump&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any “rules” so I decided to interpret it literally. Thus, from the first of October to the last of October, I created one short loop every day as a way of getting to know the Elektron Syntakt. Below are the fruits of that sometimes frustrating labor, along with the original comments where available. But first a summary.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;#&lt;&#x2F;a&gt;
+Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;The stats show I’m depressingly consistant. The average BPM, 84.1, is pretty close to the mean BPM, 85. The difference between the the lowest BPM and the average is 25, the difference between the highest BPM and the average is 26. Like a perfectly adequately calibrated but slightly underwhelming pendulum.&lt;&#x2F;p&gt;
+&lt;p&gt;A crushing majority of the loops are in 4&#x2F;4 time, with only four in 3&#x2F;4 time and one in 5&#x2F;4 time. Probably what you’d expect, especially from someone so defiantly average.&lt;&#x2F;p&gt;
+&lt;p&gt;I didn’t keep track of what keys the loops are in, but if I’d have to guess I’d say C is probably the most common.&lt;&#x2F;p&gt;
+&lt;p&gt;If we look at the commit times, the average commit time is 11:46:04 and the mean commit time is 11:40:00 – most commits are clustered around noon. There are some outliers, however. The loop for October 2, aptly named Grvyrdshft&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#grvyrdshft&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;, is committed at a record-smashing 00:26:48.&lt;&#x2F;p&gt;
+&lt;p&gt;All in all, it was a fun experiment, and a really good way to get to learn a new synth – similar to how &lt;em&gt;gavage&lt;&#x2F;em&gt; is a really good way of making foie gras.&lt;&#x2F;p&gt;
+&lt;p&gt;That’s it, hope I didn’t steal anyone’s melody!&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;grvyrdshft&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;There has been some debate, though, as to whether Grvyrdshft really is short for &lt;em&gt;Graveyard Shift&lt;&#x2F;em&gt;. Some claim it stands for &lt;em&gt;Groovy Redshift&lt;&#x2F;em&gt; or even &lt;em&gt;Gravy Rodshaft&lt;&#x2F;em&gt; which I can only assume means something inappropriate.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-loops&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-loops&quot; aria-label=&quot;Anchor link for: the-loops&quot;&gt;#&lt;&#x2F;a&gt;
+The loops&lt;&#x2F;h2&gt;
+&lt;p&gt;Here are the thirty one loops in order from first to last. I tried to keep the volume consistent, but some sounds are a bit loud and piercing so take caution.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;mark class=&quot;arrow&quot;&gt;NB&lt;&#x2F;mark&gt; These are made to be played in a loop, but if you only want a quick peek they are still playable using the &lt;code&gt;:play&lt;&#x2F;code&gt; command.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;mark class=&quot;arrow&quot;&gt;NB2&lt;&#x2F;mark&gt; If you grow tired of the audio visualization, click it to switch to another type.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;mark class=&quot;arrow&quot;&gt;PROTIP&lt;&#x2F;mark&gt; The mute button only mutes when pressed, use it to add flair to your late night freestyle sessions.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;01-duckboy-86-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#01-duckboy-86-bpm&quot; aria-label=&quot;Anchor link for: 01-duckboy-86-bpm&quot;&gt;#&lt;&#x2F;a&gt;01 - Duckboy (86 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;01-duckboy-86-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#01-duckboy-86-bpm&quot; aria-label=&quot;Anchor link for: 01-duckboy-86-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+01 - Duckboy (86 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;3%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;3, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+&lt;em&gt;No comment available&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-1&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;01-duckboy.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -241,7 +276,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;02-grvyrdshft-72-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#02-grvyrdshft-72-bpm&quot; aria-label=&quot;Anchor link for: 02-grvyrdshft-72-bpm&quot;&gt;#&lt;&#x2F;a&gt;02 - Grvyrdshft (72 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;02-grvyrdshft-72-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#02-grvyrdshft-72-bpm&quot; aria-label=&quot;Anchor link for: 02-grvyrdshft-72-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+02 - Grvyrdshft (72 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;6%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;6, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+&lt;em&gt;No comment available&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-2&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;02-grvyrdshft.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -465,7 +522,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;03-spacejoust-80-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#03-spacejoust-80-bpm&quot; aria-label=&quot;Anchor link for: 03-spacejoust-80-bpm&quot;&gt;#&lt;&#x2F;a&gt;03 - Spacejoust (80 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;03-spacejoust-80-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#03-spacejoust-80-bpm&quot; aria-label=&quot;Anchor link for: 03-spacejoust-80-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+03 - Spacejoust (80 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;10%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;10, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+&lt;em&gt;No comment available&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-3&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;03-spacejoust.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -689,7 +768,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;04-cibercryme-89-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#04-cibercryme-89-bpm&quot; aria-label=&quot;Anchor link for: 04-cibercryme-89-bpm&quot;&gt;#&lt;&#x2F;a&gt;04 - Cibercryme (89 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;04-cibercryme-89-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#04-cibercryme-89-bpm&quot; aria-label=&quot;Anchor link for: 04-cibercryme-89-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+04 - Cibercryme (89 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;13%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;13, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+&lt;em&gt;No comment available&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-4&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;04-cibercryme.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -913,7 +1014,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;05-freakshow-75-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#05-freakshow-75-bpm&quot; aria-label=&quot;Anchor link for: 05-freakshow-75-bpm&quot;&gt;#&lt;&#x2F;a&gt;05 - Freakshow (75 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;05-freakshow-75-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#05-freakshow-75-bpm&quot; aria-label=&quot;Anchor link for: 05-freakshow-75-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+05 - Freakshow (75 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;16%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;16, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+16% done and not one beat over 90 BPM!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-5&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;05-freakshow.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -1137,7 +1260,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;06-ghoulsgrowl-75-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#06-ghoulsgrowl-75-bpm&quot; aria-label=&quot;Anchor link for: 06-ghoulsgrowl-75-bpm&quot;&gt;#&lt;&#x2F;a&gt;06 - Ghoulsgrowl (75 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;06-ghoulsgrowl-75-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#06-ghoulsgrowl-75-bpm&quot; aria-label=&quot;Anchor link for: 06-ghoulsgrowl-75-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+06 - Ghoulsgrowl (75 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;19%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;19, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+19% done and first BPM duplicate spotted. Sloppy!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-6&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;06-ghoulsgrowl.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -1361,7 +1506,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;07-loungehounds-83-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#07-loungehounds-83-bpm&quot; aria-label=&quot;Anchor link for: 07-loungehounds-83-bpm&quot;&gt;#&lt;&#x2F;a&gt;07 - Loungehounds (83 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;07-loungehounds-83-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#07-loungehounds-83-bpm&quot; aria-label=&quot;Anchor link for: 07-loungehounds-83-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+07 - Loungehounds (83 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;23%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;23, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+23% done and names are getting weirder&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-7&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;07-loungehounds.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -1585,7 +1752,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;08-hira-hira-84-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#08-hira-hira-84-bpm&quot; aria-label=&quot;Anchor link for: 08-hira-hira-84-bpm&quot;&gt;#&lt;&#x2F;a&gt;08 - Hira! Hira! (84 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;08-hira-hira-84-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#08-hira-hira-84-bpm&quot; aria-label=&quot;Anchor link for: 08-hira-hira-84-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+08 - Hira! Hira! (84 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;26%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;26, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Weekends are hard.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-8&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;08-hirahira.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -1809,7 +1998,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;09-scaredycat-77-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#09-scaredycat-77-bpm&quot; aria-label=&quot;Anchor link for: 09-scaredycat-77-bpm&quot;&gt;#&lt;&#x2F;a&gt;09 - Scaredycat (77 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;09-scaredycat-77-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#09-scaredycat-77-bpm&quot; aria-label=&quot;Anchor link for: 09-scaredycat-77-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+09 - Scaredycat (77 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;29%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;29, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Now pizza.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-9&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;09-scaredycat.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -2033,7 +2244,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;10-scatterbrain-94-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#10-scatterbrain-94-bpm&quot; aria-label=&quot;Anchor link for: 10-scatterbrain-94-bpm&quot;&gt;#&lt;&#x2F;a&gt;10 - Scatterbrain (94 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;10-scatterbrain-94-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#10-scatterbrain-94-bpm&quot; aria-label=&quot;Anchor link for: 10-scatterbrain-94-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+10 - Scatterbrain (94 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;32%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;32, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+32% done. That’s almost a third!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-10&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;10-scatterbrain.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -2257,7 +2490,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;11-strongman-81-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#11-strongman-81-bpm&quot; aria-label=&quot;Anchor link for: 11-strongman-81-bpm&quot;&gt;#&lt;&#x2F;a&gt;11 - Strongman (81 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;11-strongman-81-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#11-strongman-81-bpm&quot; aria-label=&quot;Anchor link for: 11-strongman-81-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+11 - Strongman (81 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;35%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;35, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Definitely struggling to come up with stuff.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-11&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;11-strongman.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -2481,7 +2736,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;12-incoming-85-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#12-incoming-85-bpm&quot; aria-label=&quot;Anchor link for: 12-incoming-85-bpm&quot;&gt;#&lt;&#x2F;a&gt;12 - Incoming (85 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;12-incoming-85-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#12-incoming-85-bpm&quot; aria-label=&quot;Anchor link for: 12-incoming-85-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+12 - Incoming (85 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;39%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;39, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Time to read the manual for inspiration.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-12&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;12-incoming.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -2705,7 +2982,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;13-brainhurt-98-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#13-brainhurt-98-bpm&quot; aria-label=&quot;Anchor link for: 13-brainhurt-98-bpm&quot;&gt;#&lt;&#x2F;a&gt;13 - Brainhurt (98 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;13-brainhurt-98-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#13-brainhurt-98-bpm&quot; aria-label=&quot;Anchor link for: 13-brainhurt-98-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+13 - Brainhurt (98 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;42%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;42, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+First barely listenable beat, and the fastest so far as well. Coincidence?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-13&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;13-brainhurt.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -2929,7 +3228,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;14-birthright-73-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#14-birthright-73-bpm&quot; aria-label=&quot;Anchor link for: 14-birthright-73-bpm&quot;&gt;#&lt;&#x2F;a&gt;14 - Birthright (73 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;14-birthright-73-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#14-birthright-73-bpm&quot; aria-label=&quot;Anchor link for: 14-birthright-73-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+14 - Birthright (73 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;45%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;45, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+So close to the halfway point I can almost feel it!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-14&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;14-birthright.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -3153,7 +3474,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;15-dropkick-90-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#15-dropkick-90-bpm&quot; aria-label=&quot;Anchor link for: 15-dropkick-90-bpm&quot;&gt;#&lt;&#x2F;a&gt;15 - Dropkick (90 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;15-dropkick-90-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#15-dropkick-90-bpm&quot; aria-label=&quot;Anchor link for: 15-dropkick-90-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+15 - Dropkick (90 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;48%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;48, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+This bass line is the most difficult thing I ever programmed.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-15&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;15-dropkick.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -3377,7 +3720,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;16-kentvcky-71-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#16-kentvcky-71-bpm&quot; aria-label=&quot;Anchor link for: 16-kentvcky-71-bpm&quot;&gt;#&lt;&#x2F;a&gt;16 - KENTVCKY (71 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;5&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;16-kentvcky-71-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#16-kentvcky-71-bpm&quot; aria-label=&quot;Anchor link for: 16-kentvcky-71-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+16 - KENTVCKY (71 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;5&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;52%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;52, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+New time signature achievement obtained!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-16&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;16-kentvcky.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -3601,7 +3966,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;17-flatwheeler-64-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#17-flatwheeler-64-bpm&quot; aria-label=&quot;Anchor link for: 17-flatwheeler-64-bpm&quot;&gt;#&lt;&#x2F;a&gt;17 - Flatwheeler (64 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;17-flatwheeler-64-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#17-flatwheeler-64-bpm&quot; aria-label=&quot;Anchor link for: 17-flatwheeler-64-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+17 - Flatwheeler (64 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;55%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;55, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Record breaking low BPM!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-17&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;17-flatwheeler.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -3825,7 +4212,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;18-fringehead-93-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#18-fringehead-93-bpm&quot; aria-label=&quot;Anchor link for: 18-fringehead-93-bpm&quot;&gt;#&lt;&#x2F;a&gt;18 - Fringehead (93 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;18-fringehead-93-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#18-fringehead-93-bpm&quot; aria-label=&quot;Anchor link for: 18-fringehead-93-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+18 - Fringehead (93 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;58%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;58, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+93 is my favorite BPM.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-18&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;18-fringehead.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -4049,7 +4458,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;19-haketlove-79-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#19-haketlove-79-bpm&quot; aria-label=&quot;Anchor link for: 19-haketlove-79-bpm&quot;&gt;#&lt;&#x2F;a&gt;19 - #haketlove (79 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;19-haketlove-79-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#19-haketlove-79-bpm&quot; aria-label=&quot;Anchor link for: 19-haketlove-79-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+19 - #haketlove (79 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;62%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;62, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Getting some #haketlove in there.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-19&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;19-haketlove.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -4273,7 +4704,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;20-stockjock-85-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#20-stockjock-85-bpm&quot; aria-label=&quot;Anchor link for: 20-stockjock-85-bpm&quot;&gt;#&lt;&#x2F;a&gt;20 - Stockjock (85 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;20-stockjock-85-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#20-stockjock-85-bpm&quot; aria-label=&quot;Anchor link for: 20-stockjock-85-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+20 - Stockjock (85 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;65%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;65, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Stock sound challenge accepted!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-20&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;20-stockjock.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -4497,7 +4950,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;21-ladybugs-98-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#21-ladybugs-98-bpm&quot; aria-label=&quot;Anchor link for: 21-ladybugs-98-bpm&quot;&gt;#&lt;&#x2F;a&gt;21 - Ladybugs (98 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;21-ladybugs-98-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#21-ladybugs-98-bpm&quot; aria-label=&quot;Anchor link for: 21-ladybugs-98-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+21 - Ladybugs (98 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;68%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;68, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Two thirds officially &lt;del&gt;crushed&lt;&#x2F;del&gt; finished.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-21&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;21-ladybugs.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -4721,7 +5196,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;22-dirtroad-74-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#22-dirtroad-74-bpm&quot; aria-label=&quot;Anchor link for: 22-dirtroad-74-bpm&quot;&gt;#&lt;&#x2F;a&gt;22 - Dirtroad (74 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;22-dirtroad-74-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#22-dirtroad-74-bpm&quot; aria-label=&quot;Anchor link for: 22-dirtroad-74-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+22 - Dirtroad (74 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;70%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;70, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Rock organ time.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-22&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;22-dirtroad.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -4945,7 +5442,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;23-panoptikon-88-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#23-panoptikon-88-bpm&quot; aria-label=&quot;Anchor link for: 23-panoptikon-88-bpm&quot;&gt;#&lt;&#x2F;a&gt;23 - Panoptikon (88 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;23-panoptikon-88-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#23-panoptikon-88-bpm&quot; aria-label=&quot;Anchor link for: 23-panoptikon-88-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+23 - Panoptikon (88 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;74%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;74, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Watching Laura Kampf restore an old house helps with perspective.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-23&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;23-panoptikon.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -5169,7 +5688,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;24-snickertick-90-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#24-snickertick-90-bpm&quot; aria-label=&quot;Anchor link for: 24-snickertick-90-bpm&quot;&gt;#&lt;&#x2F;a&gt;24 - Snickertick (90 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;24-snickertick-90-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#24-snickertick-90-bpm&quot; aria-label=&quot;Anchor link for: 24-snickertick-90-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+24 - Snickertick (90 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;77%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;77, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Three fourths done, and tomorrow four fifths. The day after that, five sixths.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-24&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;24-snickertick.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -5393,7 +5934,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;25-payday-111-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#25-payday-111-bpm&quot; aria-label=&quot;Anchor link for: 25-payday-111-bpm&quot;&gt;#&lt;&#x2F;a&gt;25 - Payday (111 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;25-payday-111-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#25-payday-111-bpm&quot; aria-label=&quot;Anchor link for: 25-payday-111-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+25 - Payday (111 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;80%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;80, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Entering triple digit BPM land.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-25&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;25-payday.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -5617,7 +6180,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;26-algosmosis-59-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#26-algosmosis-59-bpm&quot; aria-label=&quot;Anchor link for: 26-algosmosis-59-bpm&quot;&gt;#&lt;&#x2F;a&gt;26 - Algosmosis (59 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;26-algosmosis-59-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#26-algosmosis-59-bpm&quot; aria-label=&quot;Anchor link for: 26-algosmosis-59-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+26 - Algosmosis (59 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;84%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;84, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Letting the LFOs do the work today.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-26&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;26-algosmosis.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -5841,7 +6426,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;27-clowncar-108-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#27-clowncar-108-bpm&quot; aria-label=&quot;Anchor link for: 27-clowncar-108-bpm&quot;&gt;#&lt;&#x2F;a&gt;27 - Clowncar (108 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;27-clowncar-108-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#27-clowncar-108-bpm&quot; aria-label=&quot;Anchor link for: 27-clowncar-108-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+27 - Clowncar (108 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;87%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;87, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+This is by far the dumbest yet.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-27&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;27-clowncar.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -6065,7 +6672,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;28-indigo-days-89-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#28-indigo-days-89-bpm&quot; aria-label=&quot;Anchor link for: 28-indigo-days-89-bpm&quot;&gt;#&lt;&#x2F;a&gt;28 - Indigo Days (89 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;28-indigo-days-89-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#28-indigo-days-89-bpm&quot; aria-label=&quot;Anchor link for: 28-indigo-days-89-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+28 - Indigo Days (89 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;90%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;90, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+We’re on the home stretch!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-28&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;28-indigo-days.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -6289,7 +6918,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;29-sleuthypants-92-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#29-sleuthypants-92-bpm&quot; aria-label=&quot;Anchor link for: 29-sleuthypants-92-bpm&quot;&gt;#&lt;&#x2F;a&gt;29 - Sleuthypants (92 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;29-sleuthypants-92-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#29-sleuthypants-92-bpm&quot; aria-label=&quot;Anchor link for: 29-sleuthypants-92-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+29 - Sleuthypants (92 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;93%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;93, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Something from the Grim Fandango cutting room floor?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-29&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;29-sleuthypants.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -6513,7 +7164,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;30-poltava-75-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#30-poltava-75-bpm&quot; aria-label=&quot;Anchor link for: 30-poltava-75-bpm&quot;&gt;#&lt;&#x2F;a&gt;30 - Poltava (75 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;30-poltava-75-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#30-poltava-75-bpm&quot; aria-label=&quot;Anchor link for: 30-poltava-75-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+30 - Poltava (75 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;97%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;97, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+ONE DAY LEFT!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-30&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;30-poltava.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -6737,7 +7410,29 @@
   })()
 
 &lt;&#x2F;script&gt;
-&lt;h2 id=&quot;31-rasubosu-90-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#31-rasubosu-90-bpm&quot; aria-label=&quot;Anchor link for: 31-rasubosu-90-bpm&quot;&gt;#&lt;&#x2F;a&gt;31 - Rasubosu (90 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;31-rasubosu-90-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#31-rasubosu-90-bpm&quot; aria-label=&quot;Anchor link for: 31-rasubosu-90-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+31 - Rasubosu (90 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      &lt;title&gt;100%&lt;&#x2F;title&gt;
+      &lt;path
+        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+        stroke-dasharray=&quot;100, 100&quot;
+      &#x2F;&gt;
+      &lt;defs&gt;
+        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+        &lt;&#x2F;pattern&gt;
+      &lt;&#x2F;defs&gt;
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;div id=&quot;looper-31&quot; class=&quot;looper &quot;&gt;
   &lt;noscript&gt;
     &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2022&amp;#x2F;31-rasubosu.mp3&quot;&gt;&lt;&#x2F;audio&gt;
@@ -6970,11 +7665,14 @@
 		<link rel="alternate" href="https://spitlo.com/music/derivata/" type="text/html"/>
 		<id>https://spitlo.com/music/derivata/</id>
 		<content type="html">&lt;p&gt;Derivata is a collaboration in the same vein as &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, but between Lolita Fatjo and me.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;Rules&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;
+Rules&lt;&#x2F;h2&gt;
 &lt;p&gt;The rules for Derivata are the same as those for &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, basically no rules except that the next iteration must build upon the previous in some way.&lt;&#x2F;p&gt;
 &lt;p&gt;The first version, &lt;code&gt;a-000.mp3&lt;&#x2F;code&gt; was sent by Lolita Fatjo on 2022-01-24 at 06:49 CET.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;Files&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;a-strain-2022&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-strain-2022&quot; aria-label=&quot;Anchor link for: a-strain-2022&quot;&gt;#&lt;&#x2F;a&gt;A Strain, 2022&lt;&#x2F;h3&gt;
+&lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;
+Files&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;a-strain-2022&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-strain-2022&quot; aria-label=&quot;Anchor link for: a-strain-2022&quot;&gt;#&lt;&#x2F;a&gt;
+A Strain, 2022&lt;&#x2F;h3&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;File&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Sent&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;By&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Duration&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Snippet (size)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;a-000.mp3&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;2022-01-24 06:49&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;L.F.&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;03:08&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;derivata&#x2F;snippets&#x2F;a-000.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;a-001.mp3&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;2022-01-28 23:58&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;03:21&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;derivata&#x2F;snippets&#x2F;a-001.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -7002,7 +7700,8 @@
 		<link rel="alternate" href="https://spitlo.com/music/stromata/" type="text/html"/>
 		<id>https://spitlo.com/music/stromata/</id>
 		<content type="html">&lt;p&gt;Stromata is a collaboration born out of boredom. It’s a form of musical tennis where me and &lt;em&gt;kryptho&lt;&#x2F;em&gt; sends a piece of music back and forth.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;Rules&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;
+Rules&lt;&#x2F;h2&gt;
 &lt;p&gt;Each iteration is a modified version of the previous version. The rules are pretty lax, basically:&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;You must use the file you receive in some way&lt;&#x2F;li&gt;
@@ -7029,15 +7728,19 @@ Using a magnetoencephalography helmet, record your reactions to the song. Conver
 &lt;&#x2F;ul&gt;
 &lt;p&gt;There are a lot of other modifications that are also possible&#x2F;desirable.&lt;&#x2F;p&gt;
 &lt;p&gt;The first version, &lt;code&gt;a-000.wav&lt;&#x2F;code&gt; was sent on 2021-02-20 at 14:03 CET.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;b-strain&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#b-strain&quot; aria-label=&quot;Anchor link for: b-strain&quot;&gt;#&lt;&#x2F;a&gt;B Strain&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;b-strain&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#b-strain&quot; aria-label=&quot;Anchor link for: b-strain&quot;&gt;#&lt;&#x2F;a&gt;
+B Strain&lt;&#x2F;h2&gt;
 &lt;p&gt;On January 1st, 2022, the B Strain was inititated by Kryptho.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;Files&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;b-strain-2022&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#b-strain-2022&quot; aria-label=&quot;Anchor link for: b-strain-2022&quot;&gt;#&lt;&#x2F;a&gt;B Strain, 2022&lt;&#x2F;h3&gt;
+&lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;
+Files&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;b-strain-2022&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#b-strain-2022&quot; aria-label=&quot;Anchor link for: b-strain-2022&quot;&gt;#&lt;&#x2F;a&gt;
+B Strain, 2022&lt;&#x2F;h3&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;File&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Sent&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;By&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Duration&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Snippet (size)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;b-000.flac&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;2022-01-01 11:25&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;03:41&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;snippets&#x2F;b-000.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;b-001.wav&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;2022-01-14 16:46&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;04:09&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;snippets&#x2F;b-001.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
-&lt;h3 id=&quot;a-strain-2021&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-strain-2021&quot; aria-label=&quot;Anchor link for: a-strain-2021&quot;&gt;#&lt;&#x2F;a&gt;A Strain, 2021&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;a-strain-2021&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-strain-2021&quot; aria-label=&quot;Anchor link for: a-strain-2021&quot;&gt;#&lt;&#x2F;a&gt;
+A Strain, 2021&lt;&#x2F;h3&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;File&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Sent&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;By&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Duration&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Snippet (size)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;a-000.wav&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;2021-02-20 14:03&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;spitlo&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;03:40&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;snippets&#x2F;a-000.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (722 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;a-001.wav&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;2021-02-20 17:38&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;kryptho&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;03:25&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;stromata&#x2F;snippets&#x2F;a-001.mp3&quot;&gt;mp3&lt;&#x2F;a&gt; (721 KB)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
