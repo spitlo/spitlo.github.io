@@ -281,6 +281,19 @@ body.dotmatrix {
     }
   }
 
+  td:nth-child(1) {
+    background-color: $white;
+  }
+
+  .taxonomy span.label {
+    font-family: $paragraphFont!important;
+  }
+
+  .contentWrapper.home-2021-04-29 .introduction {
+    background: $white;
+    border: 1px dashed $black;
+  }
+
   .contentWrapper.looptober {
     a.download {
       border-bottom: 0;
@@ -295,19 +308,23 @@ body.dotmatrix {
       border: 1px solid $black;
       padding: 6px;
     }
-  }
 
-  td:nth-child(1) {
-    background-color: $white;
-  }
-
-  .taxonomy span.label {
-    font-family: $paragraphFont!important;
-  }
-
-  .contentWrapper.home-2021-04-29 .introduction {
-    background: $white;
-    border: 1px dashed $black;
+    .progress {
+      svg {
+        fill: url(#raster);
+        stroke: $black;
+      }
+      
+      &.bar {
+        rect.bg {
+          fill: url(#raster);
+          stroke: transparent;
+        }
+        rect.bar {
+          fill: $black;
+        }
+      }
+    }
   }
 }
 

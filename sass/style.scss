@@ -289,12 +289,28 @@ main {
       }
     }
   }
+
+  .footnote-definition {
+    max-width: 48rem;
+
+    &:first-of-type {
+      border-top: 1px solid var(--site-color);
+      padding-top: 20px;
+    }
+
+    p {
+      margin-top: -18px;
+      margin-left: 18px;
+      font-size: 1em;
+      color: var(--footnote-color);
+    }
+  }
 }
 
 span.timesig {
   font-size: 0.6em;
   font-weight: bold;
-  background: #f0eabc;
+  background: $lightDirtyYellow;
   margin-bottom: -3px;
   display: inline-block;
   padding: 2px 6px;
@@ -641,6 +657,62 @@ dt {
 
 dd {
   margin-bottom: .8em;
+}
+
+// COLORS:
+// $aquamarine: #74edc4;
+// $black: #0e070c;
+// $blue: #3f5469;
+// $blueGray: #5a6c7e;
+// $clearBlue: #0dbeff;
+// $darkGray: #2d3238;
+// $dirtyYellow: #b1b098;
+// $gray: #aa9f9f;
+// $honeydew: #ecffea;
+// $lightBrown: #dfcece;
+// $lightDirtyYellow: #f0eabc;
+// $lightGray: #efefef;
+// $lightSeagreen: #8bd1cd;
+// $lightWhite: #fffffb;
+// $mutedPink: #fff1f1;
+// $mutedPinkTransparent: #fff1f115;
+// $orange: #b55603;
+// $red: #e30000;
+// $white: #fffcfc;
+
+//  ------//
+//    _____ __               __                 __
+//   / ___// /_  ____  _____/ /__________  ____/ /__  _____
+//   \__ \/ __ \/ __ \/ ___/ __/ ___/ __ \/ __  / _ \/ ___/
+//  ___/ / / / / /_/ / /  / /_/ /__/ /_/ / /_/ /  __(__  )
+// /____/_/ /_/\____/_/   \__/\___/\____/\__,_/\___/____/
+//  -------------------------------- ------------------ ---  ---------- --
+span.progress {
+  display: inline-block;
+  height: 28px;
+
+  &.circular {
+    width: 28px;
+    
+    svg {
+      fill: var(--progress-bgcolor);
+      stroke: var(--progress-color);
+      stroke-width: 4px;
+    }
+  }
+
+  &.bar {
+    width: 112px;
+    
+    svg {
+      rect.bg {
+        fill: var(--progress-bgcolor);
+      }
+      rect.bar {
+        fill: var(--progress-color);
+      }
+    }
+  }
 }
 
 //  ------//
