@@ -2,6 +2,18 @@
 
 This changelog is automatically generated.
 
+## v2.1.51
+
+- Looptober: Remove 'Work in progress' tag. Yay! [`c6fe38b4`](../../commit/c6fe38b4f556fea0520e48ccc675b69bda98d16a)
+- Looptober: Prepare even more-erer for October 31 [`f71a24b0`](../../commit/f71a24b062abfc042e3a1e93887b16c72cae83c2)
+- Looptober: Prepare even more-er for October 31 [`f0793d10`](../../commit/f0793d10cc796245b049f34094959fd5be0d0e42)
+- Looptober: Prepare even more for October 31 [`068fec6d`](../../commit/068fec6dba168438ccc3c173e87ea1adca2cac4a)
+- Looptober: Prepare more for October 31 [`3706a9fe`](../../commit/3706a9fecacf251b807104f1900dcb07bb165ab4)
+- Whitespace hygien [`e6e4368e`](../../commit/e6e4368e450bc9c16e60e031ea75690c8f84774e)
+- Style progress bar for dotmatrix [`7ea28fda`](../../commit/7ea28fdadbbf1d0b0d0e7943059c9649f77d3acc)
+- Looptober: Style progress indicator for dotmatrix [`ae80bca2`](../../commit/ae80bca230d36e4893ef8f82536403871774ae3f)
+- Looptober: Prepare for October 31 [`3c0f1d6b`](../../commit/3c0f1d6b2a9f532f4720cb732a82c4fddebaf075)
+
 ## v2.1.50
 
 - Looptober: Add beat for October 31 [`32cedcad`](../../commit/32cedcadff596ad0233e9aa898e91abe41f2a50b)
