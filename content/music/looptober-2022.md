@@ -4,7 +4,7 @@ description = "One tiny beat a day for all of October"
 date = 2022-10-01
 
 [taxonomies]
-categories = ["Electronic", "Loops", "Work in Progress"]
+categories = ["Electronic", "Loops"]
 
 [extra]
 content_class = "looptober"
