@@ -246,3 +246,10 @@ Here are the thirty one loops in order from first to last. I tried to keep the v
 > Something from the Grim Fandango cutting room floor?
 
 {{ looper(filepath="/audio/looptober/2022/29-sleuthypants.mp3") }}
+
+## 30 - Poltava (75 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=97) }}
+> ONE DAY LEFT!
+
+{{ looper(filepath="/audio/looptober/2022/30-poltava.mp3") }}
