@@ -90,7 +90,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -102,7 +103,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -130,7 +132,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -153,7 +156,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -336,7 +340,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -348,7 +353,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -376,7 +382,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -399,7 +406,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -582,7 +590,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -594,7 +603,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -622,7 +632,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -645,7 +656,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -828,7 +840,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -840,7 +853,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -868,7 +882,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -891,7 +906,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -1074,7 +1090,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -1086,7 +1103,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -1114,7 +1132,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -1137,7 +1156,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -1320,7 +1340,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -1332,7 +1353,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -1360,7 +1382,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -1383,7 +1406,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -1566,7 +1590,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -1578,7 +1603,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -1606,7 +1632,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -1629,7 +1656,8 @@ The loops&lt;&#x2F;h2&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -1812,7 +1840,8 @@ Weekends are hard.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -1824,7 +1853,8 @@ Weekends are hard.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -1852,7 +1882,8 @@ Weekends are hard.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -1875,7 +1906,8 @@ Weekends are hard.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -2058,7 +2090,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -2070,7 +2103,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -2098,7 +2132,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -2121,7 +2156,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -2304,7 +2340,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -2316,7 +2353,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -2344,7 +2382,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -2367,7 +2406,8 @@ Now pizza.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -2550,7 +2590,8 @@ Definitely struggling to come up with stuff.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -2562,7 +2603,8 @@ Definitely struggling to come up with stuff.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -2590,7 +2632,8 @@ Definitely struggling to come up with stuff.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -2613,7 +2656,8 @@ Definitely struggling to come up with stuff.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -2796,7 +2840,8 @@ Time to read the manual for inspiration.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -2808,7 +2853,8 @@ Time to read the manual for inspiration.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -2836,7 +2882,8 @@ Time to read the manual for inspiration.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -2859,7 +2906,8 @@ Time to read the manual for inspiration.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -3042,7 +3090,8 @@ First barely listenable beat, and the fastest so far as well. Coincidence?&lt;&#
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -3054,7 +3103,8 @@ First barely listenable beat, and the fastest so far as well. Coincidence?&lt;&#
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -3082,7 +3132,8 @@ First barely listenable beat, and the fastest so far as well. Coincidence?&lt;&#
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -3105,7 +3156,8 @@ First barely listenable beat, and the fastest so far as well. Coincidence?&lt;&#
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -3288,7 +3340,8 @@ So close to the halfway point I can almost feel it!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -3300,7 +3353,8 @@ So close to the halfway point I can almost feel it!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -3328,7 +3382,8 @@ So close to the halfway point I can almost feel it!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -3351,7 +3406,8 @@ So close to the halfway point I can almost feel it!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -3534,7 +3590,8 @@ This bass line is the most difficult thing I ever programmed.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -3546,7 +3603,8 @@ This bass line is the most difficult thing I ever programmed.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -3574,7 +3632,8 @@ This bass line is the most difficult thing I ever programmed.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -3597,7 +3656,8 @@ This bass line is the most difficult thing I ever programmed.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -3780,7 +3840,8 @@ New time signature achievement obtained!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -3792,7 +3853,8 @@ New time signature achievement obtained!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -3820,7 +3882,8 @@ New time signature achievement obtained!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -3843,7 +3906,8 @@ New time signature achievement obtained!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -4026,7 +4090,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -4038,7 +4103,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -4066,7 +4132,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -4089,7 +4156,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -4272,7 +4340,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -4284,7 +4353,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -4312,7 +4382,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -4335,7 +4406,8 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -4518,7 +4590,8 @@ Getting some #haketlove in there.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -4530,7 +4603,8 @@ Getting some #haketlove in there.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -4558,7 +4632,8 @@ Getting some #haketlove in there.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -4581,7 +4656,8 @@ Getting some #haketlove in there.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -4764,7 +4840,8 @@ Stock sound challenge accepted!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -4776,7 +4853,8 @@ Stock sound challenge accepted!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -4804,7 +4882,8 @@ Stock sound challenge accepted!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -4827,7 +4906,8 @@ Stock sound challenge accepted!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -5010,7 +5090,8 @@ Two thirds officially &lt;del&gt;crushed&lt;&#x2F;del&gt; finished.&lt;&#x2F;p&g
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -5022,7 +5103,8 @@ Two thirds officially &lt;del&gt;crushed&lt;&#x2F;del&gt; finished.&lt;&#x2F;p&g
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -5050,7 +5132,8 @@ Two thirds officially &lt;del&gt;crushed&lt;&#x2F;del&gt; finished.&lt;&#x2F;p&g
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -5073,7 +5156,8 @@ Two thirds officially &lt;del&gt;crushed&lt;&#x2F;del&gt; finished.&lt;&#x2F;p&g
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -5256,7 +5340,8 @@ Rock organ time.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -5268,7 +5353,8 @@ Rock organ time.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -5296,7 +5382,8 @@ Rock organ time.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -5319,7 +5406,8 @@ Rock organ time.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -5502,7 +5590,8 @@ Watching Laura Kampf restore an old house helps with perspective.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -5514,7 +5603,8 @@ Watching Laura Kampf restore an old house helps with perspective.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -5542,7 +5632,8 @@ Watching Laura Kampf restore an old house helps with perspective.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -5565,7 +5656,8 @@ Watching Laura Kampf restore an old house helps with perspective.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -5748,7 +5840,8 @@ Three fourths done, and tomorrow four fifths. The day after that, five sixths.&l
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -5760,7 +5853,8 @@ Three fourths done, and tomorrow four fifths. The day after that, five sixths.&l
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -5788,7 +5882,8 @@ Three fourths done, and tomorrow four fifths. The day after that, five sixths.&l
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -5811,7 +5906,8 @@ Three fourths done, and tomorrow four fifths. The day after that, five sixths.&l
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -5994,7 +6090,8 @@ Entering triple digit BPM land.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -6006,7 +6103,8 @@ Entering triple digit BPM land.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -6034,7 +6132,8 @@ Entering triple digit BPM land.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -6057,7 +6156,8 @@ Entering triple digit BPM land.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -6240,7 +6340,8 @@ Letting the LFOs do the work today.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -6252,7 +6353,8 @@ Letting the LFOs do the work today.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -6280,7 +6382,8 @@ Letting the LFOs do the work today.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -6303,7 +6406,8 @@ Letting the LFOs do the work today.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -6486,7 +6590,8 @@ This is by far the dumbest yet.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -6498,7 +6603,8 @@ This is by far the dumbest yet.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -6526,7 +6632,8 @@ This is by far the dumbest yet.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -6549,7 +6656,8 @@ This is by far the dumbest yet.&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -6732,7 +6840,8 @@ We’re on the home stretch!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -6744,7 +6853,8 @@ We’re on the home stretch!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -6772,7 +6882,8 @@ We’re on the home stretch!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -6795,7 +6906,8 @@ We’re on the home stretch!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -6978,7 +7090,8 @@ Something from the Grim Fandango cutting room floor?&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -6990,7 +7103,8 @@ Something from the Grim Fandango cutting room floor?&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -7018,7 +7132,8 @@ Something from the Grim Fandango cutting room floor?&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -7041,7 +7156,8 @@ Something from the Grim Fandango cutting room floor?&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -7224,7 +7340,8 @@ ONE DAY LEFT!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -7236,7 +7353,8 @@ ONE DAY LEFT!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -7264,7 +7382,8 @@ ONE DAY LEFT!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -7287,7 +7406,8 @@ ONE DAY LEFT!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)
@@ -7470,7 +7590,8 @@ Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon play small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
@@ -7482,7 +7603,8 @@ Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon stop small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     stopButton.classList.add(&#x27;stop&#x27;)
@@ -7510,7 +7632,8 @@ Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon mute small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     muteButton.classList.add(&#x27;mute&#x27;)
@@ -7533,7 +7656,8 @@ Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
   &lt;span class=&quot;icon download small&quot;&gt;
     
     
-    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
   &lt;&#x2F;span&gt;
 `
     downloadButton.classList.add(&#x27;download&#x27;)

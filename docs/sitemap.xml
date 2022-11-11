@@ -13,6 +13,9 @@
         <loc>https://spitlo.com/categories/electronic/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/categories/hip-hop/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/categories/loops/</loc>
     </url>
     <url>
@@ -97,6 +100,10 @@
     <url>
         <loc>https://spitlo.com/music/looptober-2022/</loc>
         <lastmod>2022-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://spitlo.com/music/old-rap/</loc>
+        <lastmod>2022-11-11</lastmod>
     </url>
     <url>
         <loc>https://spitlo.com/music/stromata/</loc>
