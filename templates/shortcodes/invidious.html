@@ -1,5 +1,8 @@
+{% import "macros.html" as macros %}
+
 <div class="invidious {% if class %}{{class}}{% endif %}">
   <div class="container">
+    {{ macros::icon(name='loader', size="large", type="remix") }}
     <iframe src="https://yewtu.be/embed/{{ video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 </div>
