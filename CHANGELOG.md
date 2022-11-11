@@ -2,6 +2,16 @@
 
 This changelog is automatically generated.
 
+## v2.1.52
+
+- Update changelog [`922fb595`](../../commit/922fb595d30eae4ca4915b9c076b548b8c6c0ccf)
+- Fix broken YewTube link, improve copy [`b4474b01`](../../commit/b4474b011c5acd1810b953fb6977bab137f198df)
+- Code nitpicking [`9b22742e`](../../commit/9b22742e7b1cb767b7fdc3c0aad70c42f02e4ec4)
+- Add a page with old rap songs [`19dd1b1e`](../../commit/19dd1b1ef97dc65e99d984e170212e805e080ca7)
+- Rename Rap category to Hip Hop [`bfa5004a`](../../commit/bfa5004a691359c52519796b77f8d2ce3073c06e)
+- Add title to category icons. Add icons for Rap and Album [`a535304a`](../../commit/a535304afe890a710a2c325309f6d8d4c4907caf)
+- Add Invidious shortcode [`3c27700a`](../../commit/3c27700ac6daf18d50b7a0f2aa0e608187ef9eda)
+
 ## v2.1.51
 
 - Looptober: Remove 'Work in progress' tag. Yay! [`c6fe38b4`](../../commit/c6fe38b4f556fea0520e48ccc675b69bda98d16a)
