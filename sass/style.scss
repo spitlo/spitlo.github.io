@@ -715,6 +715,27 @@ span.progress {
   }
 }
 
+div.invidious {
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 600px;
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+
+    & > iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 //  ------//
 //      __  ___         ___          ____                  _
 //     /  |/  /__  ____/ (_)___ _   / __ \__  _____  _____(_)__  _____
