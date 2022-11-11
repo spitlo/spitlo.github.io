@@ -16,6 +16,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 - The `:dotmatrix` command is now similar to `:light` and `:dark` in that is offers to set a cookie
 - Added creamy smooth fade-ins on page load in a way that’s hopefully safe for all browsers :crossed_fingers:
 - On code articles, the commit date now links to a GitHub commit list filtered on that date
+- Added a shortcode for embedding Invidious videos
 
 ## v2.0.x _(2022-10-02)_
 
