@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.1.53
+
+- Add hyperfine to update command list in Dotfiles article [`c5fc6e0d`](../../commit/c5fc6e0d57936755ba762abfda7886057b53f739)
+
 ## v2.1.52
 
 - Update changelog [`922fb595`](../../commit/922fb595d30eae4ca4915b9c076b548b8c6c0ccf)
