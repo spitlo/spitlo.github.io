@@ -73,6 +73,7 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
  - [grit](https://github.com/climech/grit)
  - [gron](https://github.com/tomnomnom/gron)
  - [h2c](https://github.com/curl/h2c)
+ - [hyperfine](https://github.com/sharkdp/hyperfine)
  - [jq](https://github.com/stedolan/jq)
  - [micro](https://github.com/zyedidia/micro)
  - [navi](https://github.com/denisidoro/navi)
