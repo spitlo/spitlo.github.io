@@ -28,7 +28,7 @@ Clone the repo and put a symlink to the `morsh` script in your `~/bin`.
 Quickly decode a message from some ancient online puzzle game:
 
 ```bash
-./morsh ...- --- --- -.. --- --- / -- .- --. .. -.-.
+./morsh "...- --- --- -.. --- --- / -- .- --. .. -.-."
 ```
 
 Awkwardly uppercase a sentence (removing punctuation, diacritics and fluff in the process):
