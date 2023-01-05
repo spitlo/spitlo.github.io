@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.2.0
+
+- Initiate Strain B of Derivata [`a8910092`](../../commit/a89100929ea9255e9a01536fc77738f4c46c8c99)
+- Morsh article: Improve code highlighting [`1c784adc`](../../commit/1c784adc3b34f90f4217b4f5493ee9476913c6ad)
+
 ## v2.1.53
 
 - Add hyperfine to update command list in Dotfiles article [`c5fc6e0d`](../../commit/c5fc6e0d57936755ba762abfda7886057b53f739)
