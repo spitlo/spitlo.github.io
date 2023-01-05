@@ -14,11 +14,22 @@ Derivata is a collaboration in the same vein as [Stromata](/music/stromata/), bu
 
 ## Rules
 
-The rules for Derivata are the same as those for [Stromata](/music/stromata/), basically no rules except that the next iteration must build upon the previous in some way.
+The rules for Derivata are the same as those for [Stromata](/music/stromata/), basically no rules except that the next iteration within a strain must build upon the previous in some way.
 
 The first version, `a-000.mp3` was sent by Lolita Fatjo on 2022-01-24 at 06:49 CET.
 
+## B Strain
+
+On January 4th, 2023, the B Strain was inititated by Spitlo.
+
 ## Files
+
+### B Strain, 2023
+
+| File       | Sent             | By       | Duration | Snippet (size)                                                       |
+|:-----------|:-----------------|:---------|:---------|:---------------------------------------------------------------------|
+| b-000.mp3  | 2023-01-04 06:38 | spitlo   |    03:16 | [mp3](https://files.mefirst.se/derivata/snippets/b-000.mp3) (722 KB) |
+
 
 ### A Strain, 2022
 
