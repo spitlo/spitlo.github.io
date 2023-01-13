@@ -115,6 +115,26 @@ footer {
   }
 }
 
+.page-content {
+  background: #fff;
+  color: #000;
+  border: 10px solid #f00;
+  padding: 20px;
+
+  &.hide {
+    display: none;
+  }
+
+  h1 {
+    line-height: 1em;
+  }
+
+  button {
+    padding: 6px;
+    font-size: 0.8em;
+  }
+}
+
 .alert {
   background-color: #ff8012;
   color: #fff;

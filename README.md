@@ -24,6 +24,8 @@ To output all Tera variables in code, add this:
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [ ] Make an official 88x31 button
+- [ ] Games:
+  - [x] Don’t show game title and description as part of game console
 - [x] (Sigh) Dark mode (Override in dotmatrix mode)
 - [x] Add `first_commit` date to code projects
 - [x] Add command for unlocking contact information in footer

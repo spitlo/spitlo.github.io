@@ -56,7 +56,7 @@ const playGame = (gameSlug) => {
   const decrunch = document.getElementById('decrunch')
   decrunch.className = 'visible'
   setTimeout(() => {
-    document.location.href = `/games/${gameSlug}/`
+    document.location.href = `/games/${gameSlug}/#console`
   }, 800)
 }
 
@@ -293,7 +293,7 @@ Lenny puts his feather duster in his belt fancily -- like a modern-day, domicili
               : '"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue, "Any priceless ones?"'
             }
 "Well..." Lenny scratches his stubble. ${
-  pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He leans over his should and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
+  pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He looks over his shoulder and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
 }`,
         },
         ...window.games.map((game) => {
