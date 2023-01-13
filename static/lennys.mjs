@@ -113,7 +113,7 @@ commands[0] = Object.assign(commands[0], { help })
 commands[1] = Object.assign(commands[1], { play })
 
 // Start disk
-const lennys = {
+const lennys  = () => ({
   roomId: 'lennys',
   rooms: [
     {
@@ -312,6 +312,6 @@ Lenny sighs, than begrudingly limps away to the next room. When he returns, ha h
       ]
     },
   ],
-}
+})
 
 export default lennys

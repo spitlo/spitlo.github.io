@@ -170,7 +170,7 @@ const getEmotionAdverb = () => {
 // |  \ | [__  |_/
 // |__/ | ___] | \_
 // ------------ ---  --- >
-const oxygenChase = {
+const oxygenChase  = () => ({
   roomId: 'bedroom',
   timer: 120,
   gps: false,
@@ -578,6 +578,6 @@ ${getName('administrator')} looks at you sullenly. "I’m not in the business of
       ],
     },
   ],
-};
+})
 
 export default oxygenChase
