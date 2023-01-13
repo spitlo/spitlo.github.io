@@ -434,9 +434,9 @@ A **receptionist** sits behind a huge, beige desk.`,
     {
       name: ['receptionist'],
       roomId: 'hospital',
-      desc: 'The receptionist appears to be in his twenties, but looks almost boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "**André**".',
+      desc: 'The receptionist appears to be in his twenties, but looks almost boyish behind the oversized desk. He’s staring at his phone. A name tag on his chest reads "**Andree**".',
       onLook: () => {
-        getCharacter('receptionist').name.push('André')
+        getCharacter('receptionist').name.push('Andree')
       },
       topics: [
         {
@@ -488,7 +488,7 @@ ${getName('receptionist')} shakes his head faux-emphatically. "Aren’t we all?"
           removeOnRead: true,
           line: () => `You bang your fist on the desk. "Call up a god damned administrator," you cry out. "I’m not asking!"
 
-${getName('receptionist')} looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is André in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
+${getName('receptionist')} looks up again, unamused. Slowly, he slides the desk phone closer and begins to dial a number, laboriously moving his finger from key to key and pausing between digits. "There," he says after an eternity. Then, into the mouthpiece, "This is Andree in the reception. Can you come down? Uh-mmm, yeah." He looks back at you and continues, "Your wish is my command."`,
           onSelected: () => {
             endConversation()
             decreaseTimer(6)
@@ -518,7 +518,7 @@ A woman in her late fifties or early sixties glides out of the elevator and walk
                         : `Listen, my father has covid, his breathing is really bad and he only has about ${getApproximateTimeLeft()} minutes worth of oxygen left in his tank. `
                       }I need a new tank, badly. Can you help me?"
 
-${getName('administrator')} eyes you up and down. "Look, I don’t know what Andrè told you, but we don’t just give away stuff to people."`,
+${getName('administrator')} eyes you up and down. "Look, I don’t know what Andree told you, but we don’t just give away stuff to people."`,
                     onSelected: () => decreaseTimer(2),
                   },
                   {
@@ -528,7 +528,7 @@ ${getName('administrator')} eyes you up and down. "Look, I don’t know what And
                     line: () => `${
                       getCharacter('administrator').chatLog.includes('introduce')
                         ? ''
-                        : '"As I told, um, André here," you say, glancing at the receptionist’s name tag, '
+                        : '"As I told, um, Andree here," you say, glancing at the receptionist’s name tag, '
                       }"I’m in dire need of oxygen. My father has precious little left in his tank. Like ${getApproximateTimeLeft()} minutes.
 Please, can you help me?"
 
