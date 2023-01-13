@@ -129,7 +129,7 @@ const lennys = {
 ████   █    █ █     ██  █ █  ██ ███ ▀███  █     █
  ▀████ █▄ ▄██ ██▄    ███  █  ██ ███  ███ ██   ▄██
  `,
-      desc: `At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes, sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Auto.
+      desc: `At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes, sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Otto.
 
 To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. To the **east** is the Pixel Paradise where graphical games are displayed. To the **south** is an exit.
 
