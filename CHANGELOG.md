@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.3.1
+
+- Fix shellcheck warning [`d5e86186`](../../commit/d5e8618607723a2a14f4cb9c443335507d3a9349)
+- Don’t push before deploying. Pull instead to avoid problems on actual deploy push [`479ca52c`](../../commit/479ca52c7eba4bf88768d8c699d671768bd486ca)
+
 ## v2.3.0
 
 - Update changelog [`072f39c9`](../../commit/072f39c94782ef09706ba820b19260635e93a8d7)
