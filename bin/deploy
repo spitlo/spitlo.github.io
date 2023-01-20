@@ -2,6 +2,7 @@
 set -eu
 
 # shellcheck source=./env.globals
+# shellcheck disable=SC1091
 source bin/env.globals
 
 DEFAULT_METHOD="patch"
