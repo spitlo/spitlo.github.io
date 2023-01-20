@@ -46,8 +46,8 @@ if git status --porcelain|grep -qv '^??'; then
     exit 1
   fi
 else
-  echo -e "\n- Pushing local commits."
-  git push origin "$MAIN_BRANCH"
+  echo -e "\n- Pulling from remote origin."
+  git pull origin "$MAIN_BRANCH"
 fi
 
 # Get current tag, or create one if missing
