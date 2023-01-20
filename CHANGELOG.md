@@ -2,6 +2,14 @@
 
 This changelog is automatically generated.
 
+## v2.3.0
+
+- Update changelog [`072f39c9`](../../commit/072f39c94782ef09706ba820b19260635e93a8d7)
+- Games: Don’t show game title and description as part of game console [`87e9ec8c`](../../commit/87e9ec8c97e826011f5083294a0ca62a673ba7a6)
+- Oxygen Chase: Change spelling [`26def550`](../../commit/26def550844aa93bf5ab687761842be959bef473)
+- Update text-engine to 3.0 and make games compatible [`922c9350`](../../commit/922c9350f91476555ace134a162731c25139f94e)
+- Change game name [`8dc2cc27`](../../commit/8dc2cc2737e58f62fec758db77fa82f05c288bc4)
+
 ## v2.2.0
 
 - Initiate Strain B of Derivata [`a8910092`](../../commit/a89100929ea9255e9a01536fc77738f4c46c8c99)
