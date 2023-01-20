@@ -12,6 +12,9 @@ generate_feed = true
 minify_html = true
 
 [link_checker]
+skip_prefixes = [
+  "https://yewtu.be",
+]
 skip_anchor_prefixes = [
   "https://github.com",
 ]
