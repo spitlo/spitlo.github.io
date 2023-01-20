@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: spitlo/zola-deploy-action
-        uses: spitlo/zola-deploy-action@master
+        uses: spitlo/zola-deploy-action@main
         env:
           TOKEN: ${{ secrets.TOKEN }}
