@@ -22,7 +22,7 @@ const itemIndex=Math.floor(Math.random()*array.length)
 return array.splice(itemIndex,1)[0]||fallback}
 const playGame=(gameSlug)=>{const decrunch=document.getElementById('decrunch')
 decrunch.className='visible'
-setTimeout(()=>{document.location.href=`/games/${gameSlug}/`},800)}
+setTimeout(()=>{document.location.href=`/games/${gameSlug}/#console`},800)}
 const play=(gameId)=>{let game=getItemInRoom(gameId,disk.roomId)||getItemInInventory(gameId)
 if(!game){println(`You don’t seem to have that game handy.`)}else{game.onPlay()
 setTimeout(()=>{playGame(game.slug)},4000)}}
@@ -46,7 +46,7 @@ delete commands[0].save
 delete commands[0].load
 commands[0]=Object.assign(commands[0],{help})
 commands[1]=Object.assign(commands[1],{play})
-const lennys={roomId:'lennys',rooms:[{name:'Lenny’s E-game Emporium',id:'lennys',img:`      ⌠ ⌠  ╤╕ ╤╕ ╕ ╒’⌠   ⌠   ╒═  ╒═╕ ╤╕╒╕ ⌠
+const lennys=()=>({roomId:'lennys',rooms:[{name:'Lenny’s E-game Emporium',id:'lennys',img:`      ⌠ ⌠  ╤╕ ╤╕ ╕ ╒’⌠   ⌠   ╒═  ╒═╕ ╤╕╒╕ ⌠
       │ ╞═ ││ ││ └┬┘ └┐  ╞╡═ │ ┐ ╞═╡ │└┘│ ╞═
       ╘═╘  ┘╧ ┘╧  ╧  ═╛  ╘═  ╘═╛ ┘ └ ┘  └ ╘══
  ███▄ ██  ▄██ ████   ███▄ ████▄ ██▀ █  ██ ██  ▄██
@@ -55,7 +55,7 @@ const lennys={roomId:'lennys',rooms:[{name:'Lenny’s E-game Emporium',id:'lenny
  ▒    ▒▀ ▒  █ █▒    █▒  █ ▒ █    ▒  █  ▒  ▒▀ █  █▒
 ████   █    █ █     ██  █ █  ██ ███ ▀███  █     █
  ▀████ █▄ ▄██ ██▄    ███  █  ██ ███  ███ ██   ▄██
- `,desc:`At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes, sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Auto.
+ `,desc:`At Lenny’s, it’s like the Internet never happened. Here, games are physical commodities, sold in boxes, sorted by genre and placed on shelves in rooms with posters on the walls, guarded by life-sized promotional models of the heroes from ancient games like The Legend of Zumba or Brand Theft Otto.
 
 To the **west** is the Ascii Arena, where Lenny keeps all his text-based games. To the **east** is the Pixel Paradise where graphical games are displayed. To the **south** is an exit.
 
@@ -107,11 +107,11 @@ delete lenny.onTalk},topics:[{option:'Compliment Lenny’s display **cabinet**',
               : '"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue, "Any priceless ones?"'
             }
 "Well..." Lenny scratches his stubble. ${
-  pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He leans over his should and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
+  pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He looks over his shoulder and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
 }`,},...window.games.map((game)=>{const shortName=getShortName(game.title)
 return{option:`Ask Lenny about ${game.title} (**${shortName}**)`,keyword:shortName,removeOnRead:false,line:`"Hey, Lenny," you smile. "I’m looking for a title, '${game.title}'. Do you know it?"
 Lenny sighs, than begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He lets his reading glasses slide from his forehead down the length of his nose. Then, keeping the box at arms length, he reads from the back:
 "${(game.description || '').toUpperCase()}"
 
-"This game belongs in the ${game.extra.room === 'text-games' ? 'Ascii Arena' : 'Pixel Paradise'}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,}}),]},],}
+"This game belongs in the ${game.extra.room === 'text-games' ? 'Ascii Arena' : 'Pixel Paradise'}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,}}),]},],})
 export default lennys
