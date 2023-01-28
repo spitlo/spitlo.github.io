@@ -11,6 +11,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.3.x _(2023-01-20)_
 
   - Updated `text-engine` to v3.0.0
+  - Added article about [Space](https://spitlo.com/space/)
 
 ## v2.2.x _(2023-01-04)_
 
