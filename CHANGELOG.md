@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.3.5
+
+- Improve Space article [`8522ba55`](../../commit/8522ba55a3cd1d8e8d4b250473aa536b3173d5ad)
+
 ## v2.3.4
 
 - Add Vite tag and icon. Update icons. Add Vite tag to Space article [`e9cac874`](../../commit/e9cac874f785b0e3ea3d189a63745132a7818249)
