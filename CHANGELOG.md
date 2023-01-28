@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.3.6
+
+- Speling [`9edc2f2c`](../../commit/9edc2f2c61af128a161e40113f13ad286a0ece7b)
+
 ## v2.3.5
 
 - Improve Space article [`8522ba55`](../../commit/8522ba55a3cd1d8e8d4b250473aa536b3173d5ad)
