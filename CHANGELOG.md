@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v2.3.2
+
+- One less push in deploy command [`de52717a`](../../commit/de52717a59b4b63540f8bbf79b3325da18cdef1d)
+- Add article about Space [`031c0c5d`](../../commit/031c0c5d23f36752b033c7fbba87a8e8fd42598a)
+- Skip link checking for yewtu.be [`eb487149`](../../commit/eb487149174b2cd7253debf778e340a65888fd51)
+- Switch to main branch of zola-deploy-action [`4945a514`](../../commit/4945a51456e120c19029e22d44cfd1ab9d7f31c2)
+
 ## v2.3.1
 
 - Fix shellcheck warning [`d5e86186`](../../commit/d5e8618607723a2a14f4cb9c443335507d3a9349)
