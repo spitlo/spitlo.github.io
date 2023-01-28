@@ -15,7 +15,7 @@ first_commit_message = "It was a pleasure to burn"
 
 Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using [ImaginAIry](https://github.com/brycedrennan/imaginAIry/). It’s available online at [spitlo.com/space/](https://spitlo.com/space/).
 
-It loads a new background image on each reload, and randomizes the sequence to be played. By default, "auto-evolve" is enabled, which means that as the sequence plays, it alters itself randomly so it plays a continuosly changing "song". If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots. The order of channels are as follows:
+It loads a new background image on each reload, and randomizes the sequence to be played. By default, "auto-evolve" is enabled, which means that as the sequence plays, it alters itself randomly so it plays a continuously changing "song". If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots. The order of channels are as follows:
 
 ```txt
 0: kick
