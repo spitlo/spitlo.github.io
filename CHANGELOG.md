@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.3.3
+
+- Fix date on Space article [`03d7d5aa`](../../commit/03d7d5aa8837eeb4159f76f6e29e708e053ab2b1)
+
 ## v2.3.2
 
 - One less push in deploy command [`de52717a`](../../commit/de52717a59b4b63540f8bbf79b3325da18cdef1d)
