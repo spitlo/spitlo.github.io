@@ -4,8 +4,18 @@
 	<link href="https://spitlo.com/technologies/javascript/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://spitlo.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-12-06T00:00:00+00:00</updated>
+	<updated>2023-01-28T00:00:00+00:00</updated>
 	<id>https://spitlo.com/technologies/javascript/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Space</title>
+		<published>2023-01-28T00:00:00+00:00</published>
+		<updated>2023-01-28T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://spitlo.com/code/space/" type="text/html"/>
+		<id>https://spitlo.com/code/space/</id>
+		<content type="html">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The spinning logo thing is done with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;metafizzy&#x2F;zdog&quot;&gt;Zdog&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jaames&#x2F;zfont&quot;&gt;Zfont&lt;&#x2F;a&gt;. The “music” is generated with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tonejs&#x2F;Tone.js&quot;&gt;Tone.js&lt;&#x2F;a&gt;. Colors are extracted from the current background image using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Vibrant-Colors&#x2F;node-vibrant&quot;&gt;node-vibrant&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Rotnot</title>
 		<published>2020-12-06T00:00:00+00:00</published>
@@ -178,16 +188,6 @@ Options&lt;&#x2F;h2&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ytdl-org&#x2F;youtube-dl&quot;&gt;youtube-dl&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;zola&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Space</title>
-		<published>2020-11-16T00:00:00+00:00</published>
-		<updated>2020-11-16T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://spitlo.com/code/space/" type="text/html"/>
-		<id>https://spitlo.com/code/space/</id>
-		<content type="html">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;The spinning logo thing is done with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;metafizzy&#x2F;zdog&quot;&gt;Zdog&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jaames&#x2F;zfont&quot;&gt;Zfont&lt;&#x2F;a&gt;. The “music” is generated with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tonejs&#x2F;Tone.js&quot;&gt;Tone.js&lt;&#x2F;a&gt;. Colors are extracted from the current background image using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Vibrant-Colors&#x2F;node-vibrant&quot;&gt;node-vibrant&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
