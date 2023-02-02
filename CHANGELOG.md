@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.4.0
+
+- Add Derivata b-001 [`85bee5ce`](../../commit/85bee5ce7a5278fb06fdc0580b7aa9637e5019c0)
+- Improve Space article [`c3249742`](../../commit/c3249742f35ede0ec82c16b1dc1370a9273b7bc2)
+
 ## v2.3.6
 
 - Speling [`9edc2f2c`](../../commit/9edc2f2c61af128a161e40113f13ad286a0ece7b)
