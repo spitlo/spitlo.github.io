@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.4.1
+
+- Font updates [`04fba87a`](../../commit/04fba87acf60de3fe94384051b1947baab772d9b)
+- Add Derivata b-002 [`78d73bf9`](../../commit/78d73bf9d2112384d3066a69f3d6f587850f68ac)
+
 ## v2.4.0
 
 - Add Derivata b-001 [`85bee5ce`](../../commit/85bee5ce7a5278fb06fdc0580b7aa9637e5019c0)
