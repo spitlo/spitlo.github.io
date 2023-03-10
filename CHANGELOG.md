@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.4.2
+
+- Add Derivata b-003 and b-004 [`a99a7d3d`](../../commit/a99a7d3d397ca619f1a1d0df5843c95aa73efb37)
+
 ## v2.4.1
 
 - Font updates [`04fba87a`](../../commit/04fba87acf60de3fe94384051b1947baab772d9b)
