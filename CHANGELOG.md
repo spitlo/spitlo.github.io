@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.5.2
+
+- Code consistency, logging [`b00d6949`](../../commit/b00d69492e8334086dc0c34ba737d21358f35f9e)
+
 ## v2.5.1
 
 - Fix try/catch bug [`f868f1bc`](../../commit/f868f1bcca66d2166c3f1aafa8c55da1dec2d5f6)
