@@ -55,8 +55,14 @@ gameWrapper.appendChild(gameFrame)
 gameWrapper.addEventListener('click',()=>{if(confirm('Are you sure? Have you saved?')){gameWrapper.remove()}})},ajour:()=>{const ajourFrame=document.createElement('iframe')
 ajourFrame.setAttribute('src','https://spitlo.com/ajour/')
 ajourFrame.id='ajour'
-$main.appendChild(ajourFrame)
-$top.scrollIntoView()},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
+document.body.appendChild(ajourFrame)
+try{const $ajourLinks=ajourFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+Array.from($ajourLinks).forEach(($link)=>{$link.setAttribute('target','_blank')})}catch(){}},tivo:()=>{const tivoFrame=document.createElement('iframe')
+tivoFrame.setAttribute('src','https://spitlo.com/tivo/')
+tivoFrame.id='tivo'
+document.body.appendChild(tivoFrame)
+try{const $tivoLinks=tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+Array.from($tivoLinks).forEach(($link)=>{$link.setAttribute('target','_blank')})}catch(){}},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
 $html.classList.add('light')
 showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365),()=>deleteCookie('theme'),'Yes, please!','I’d rather not')},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
 $html.classList.add('dark')
