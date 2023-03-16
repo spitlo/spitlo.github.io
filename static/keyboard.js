@@ -154,7 +154,7 @@ Commands are tab completable. Type <code>:</code> to try a command.
       Array.from($ajourLinks).forEach(($link) => {
         $link.setAttribute('target', '_blank')
       })
-    } catch() {}
+    } catch(error) {}
   },
 
   tivo: () => {
@@ -167,7 +167,7 @@ Commands are tab completable. Type <code>:</code> to try a command.
       Array.from($tivoLinks).forEach(($link) => {
         $link.setAttribute('target', '_blank')
       })
-    } catch() {}
+    } catch(error) {}
   },
 
   light: () => {
