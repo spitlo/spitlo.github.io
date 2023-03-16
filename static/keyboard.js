@@ -166,6 +166,9 @@ Commands are tab completable. Type <code>:</code> to try a command.
     } catch(error) {
       console.log('Could not change link targets. Error:'); /* eslint-disable-line */
       console.error(error); /* eslint-disable-line */
+      console.log('$tivoFrame.contentWindow', $tivoFrame.contentWindow); /* eslint-disable-line */
+      console.log('$tivoFrame.contentWindow.document', $tivoFrame.contentWindow.document); /* eslint-disable-line */
+      console.log('$tivoFrame.contentWindow.document.getElementById(\'videoContainer\')', $tivoFrame.contentWindow.document.getElementById('videoContainer')); /* eslint-disable-line */
     }
   },
 
