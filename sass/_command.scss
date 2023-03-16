@@ -115,15 +115,19 @@
   }
 }
 
-#ajour {
-  background-color: var(--site-bgcolor);
-  position: absolute;
+#ajour,
+#tivo {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
   top: 0;
-  height: 100%;
+  bottom: 0;
+  right: 0;
   left: 0;
-  width: 100%;
-  border: 0;
-  border-bottom: 1px dashed var(--site-color);
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  z-index: 100000;
+  padding: 32px;
 }
 
 @keyframes blinkingCursor {

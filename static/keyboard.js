@@ -148,8 +148,26 @@ Commands are tab completable. Type <code>:</code> to try a command.
     const ajourFrame = document.createElement('iframe')
     ajourFrame.setAttribute('src', 'https://spitlo.com/ajour/')
     ajourFrame.id = 'ajour'
-    $main.appendChild(ajourFrame)
-    $top.scrollIntoView()
+    document.body.appendChild(ajourFrame)
+    try {
+      const $ajourLinks = ajourFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+      Array.from($ajourLinks).forEach(($link) => {
+        $link.setAttribute('target', '_blank')
+      })
+    } catch() {}
+  },
+
+  tivo: () => {
+    const tivoFrame = document.createElement('iframe')
+    tivoFrame.setAttribute('src', 'https://spitlo.com/tivo/')
+    tivoFrame.id = 'tivo'
+    document.body.appendChild(tivoFrame)
+    try {
+      const $tivoLinks = tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+      Array.from($tivoLinks).forEach(($link) => {
+        $link.setAttribute('target', '_blank')
+      })
+    } catch() {}
   },
 
   light: () => {
