@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.5.3
+
+- More logging [`2c4d8548`](../../commit/2c4d85486922cec7f20be00171d0053253d4eb6a)
+
 ## v2.5.2
 
 - Code consistency, logging [`b00d6949`](../../commit/b00d69492e8334086dc0c34ba737d21358f35f9e)
