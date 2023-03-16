@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.5.0
+
+- Add :tivo command. Change how ajour and tivo iframes look and work [`8c934b47`](../../commit/8c934b47d7fae66738a0e8f6b2ab092ad93df334)
+- Update sass imports to decrease css size [`b4b25233`](../../commit/b4b2523357d45d5022eae9475d752870321e3440)
+
 ## v2.4.2
 
 - Add Derivata b-003 and b-004 [`a99a7d3d`](../../commit/a99a7d3d397ca619f1a1d0df5843c95aa73efb37)
