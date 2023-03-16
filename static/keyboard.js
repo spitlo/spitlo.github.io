@@ -129,14 +129,14 @@ Commands are tab completable. Type <code>:</code> to try a command.
   },
 
   games: () => {
-    const gameWrapper = document.createElement('div')
-    gameWrapper.id = 'gameWrapper'
-    const gameFrame = document.createElement('iframe')
-    gameFrame.setAttribute('src', '/games/')
-    document.body.appendChild(gameWrapper)
-    gameWrapper.appendChild(gameFrame)
+    const $gameWrapper = document.createElement('div')
+    $gameWrapper.id = 'gameWrapper'
+    const $gameFrame = document.createElement('iframe')
+    $gameFrame.setAttribute('src', '/games/')
+    document.body.appendChild($gameWrapper)
+    $gameWrapper.appendChild($gameFrame)
 
-    gameWrapper.addEventListener('click', () => {
+    $gameWrapper.addEventListener('click', () => {
       if (confirm('Are you sure? Have you saved?')) {
         // document.body.removeChild()
         gameWrapper.remove()
@@ -145,26 +145,21 @@ Commands are tab completable. Type <code>:</code> to try a command.
   },
 
   ajour: () => {
-    const ajourFrame = document.createElement('iframe')
-    ajourFrame.setAttribute('src', 'https://spitlo.com/ajour/')
-    ajourFrame.id = 'ajour'
-    document.body.appendChild(ajourFrame)
-    try {
-      const $ajourLinks = ajourFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
-      Array.from($ajourLinks).forEach(($link) => {
-        $link.setAttribute('target', '_blank')
-      })
-    } catch(error) {}
+    const $ajourFrame = document.createElement('iframe')
+    $ajourFrame.setAttribute('src', 'https://spitlo.com/ajour/')
+    $ajourFrame.id = 'ajour'
+    document.body.appendChild($ajourFrame)
   },
 
   tivo: () => {
-    const tivoFrame = document.createElement('iframe')
-    tivoFrame.setAttribute('src', 'https://spitlo.com/tivo/')
-    tivoFrame.id = 'tivo'
-    document.body.appendChild(tivoFrame)
+    const $tivoFrame = document.createElement('iframe')
+    $tivoFrame.setAttribute('src', 'https://spitlo.com/tivo/')
+    $tivoFrame.id = 'tivo'
+    document.body.appendChild($tivoFrame)
     try {
-      const $tivoLinks = tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+      const $tivoLinks = $tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
       Array.from($tivoLinks).forEach(($link) => {
+        console.log('Setting target on', $link); /* eslint-disable-line */
         $link.setAttribute('target', '_blank')
       })
     } catch(error) {}
