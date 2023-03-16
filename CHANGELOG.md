@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.5.1
+
+- Fix try/catch bug [`f868f1bc`](../../commit/f868f1bcca66d2166c3f1aafa8c55da1dec2d5f6)
+
 ## v2.5.0
 
 - Add :tivo command. Change how ajour and tivo iframes look and work [`8c934b47`](../../commit/8c934b47d7fae66738a0e8f6b2ab092ad93df334)
