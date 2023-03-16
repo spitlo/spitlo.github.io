@@ -60,7 +60,7 @@ $tivoFrame.setAttribute('src','https://spitlo.com/tivo/')
 $tivoFrame.id='tivo'
 document.body.appendChild($tivoFrame)
 try{const $tivoLinks=$tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
-Array.from($tivoLinks).forEach(($link)=>{console.log('Setting target on',$link);$link.setAttribute('target','_blank')})}catch(error){}},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
+console.log($tivoLinks);Array.from($tivoLinks).forEach(($link)=>{console.log('Setting target on',$link);$link.setAttribute('target','_blank')})}catch(error){console.log('Could not change link targets. Error:');console.error(error);}},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
 $html.classList.add('light')
 showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365),()=>deleteCookie('theme'),'Yes, please!','I’d rather not')},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
 $html.classList.add('dark')
