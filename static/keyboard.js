@@ -158,11 +158,15 @@ Commands are tab completable. Type <code>:</code> to try a command.
     document.body.appendChild($tivoFrame)
     try {
       const $tivoLinks = $tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+      console.log($tivoLinks); /* eslint-disable-line */
       Array.from($tivoLinks).forEach(($link) => {
         console.log('Setting target on', $link); /* eslint-disable-line */
         $link.setAttribute('target', '_blank')
       })
-    } catch(error) {}
+    } catch(error) {
+      console.log('Could not change link targets. Error:'); /* eslint-disable-line */
+      console.error(error); /* eslint-disable-line */
+    }
   },
 
   light: () => {
