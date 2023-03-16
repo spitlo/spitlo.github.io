@@ -46,23 +46,21 @@ if(songs&&songs.length>0){songIndex=(songIndex===songs.length-1)?0:songIndex+1
 $player.src=songs[songIndex]}},nomoresecrets:()=>{for(let x=0;x<$scrambled.length;x++){const $element=$scrambled[x]
 if(nms){$bottom.scrollIntoView()
 const s=$element.classList.contains('email')?'aGlAc3BpdGxvLmNvbQ==':'OVlKQzlWREU='
-nms($element,s)}}},games:()=>{const gameWrapper=document.createElement('div')
-gameWrapper.id='gameWrapper'
-const gameFrame=document.createElement('iframe')
-gameFrame.setAttribute('src','/games/')
-document.body.appendChild(gameWrapper)
-gameWrapper.appendChild(gameFrame)
-gameWrapper.addEventListener('click',()=>{if(confirm('Are you sure? Have you saved?')){gameWrapper.remove()}})},ajour:()=>{const ajourFrame=document.createElement('iframe')
-ajourFrame.setAttribute('src','https://spitlo.com/ajour/')
-ajourFrame.id='ajour'
-document.body.appendChild(ajourFrame)
-try{const $ajourLinks=ajourFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
-Array.from($ajourLinks).forEach(($link)=>{$link.setAttribute('target','_blank')})}catch(error){}},tivo:()=>{const tivoFrame=document.createElement('iframe')
-tivoFrame.setAttribute('src','https://spitlo.com/tivo/')
-tivoFrame.id='tivo'
-document.body.appendChild(tivoFrame)
-try{const $tivoLinks=tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
-Array.from($tivoLinks).forEach(($link)=>{$link.setAttribute('target','_blank')})}catch(error){}},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
+nms($element,s)}}},games:()=>{const $gameWrapper=document.createElement('div')
+$gameWrapper.id='gameWrapper'
+const $gameFrame=document.createElement('iframe')
+$gameFrame.setAttribute('src','/games/')
+document.body.appendChild($gameWrapper)
+$gameWrapper.appendChild($gameFrame)
+$gameWrapper.addEventListener('click',()=>{if(confirm('Are you sure? Have you saved?')){gameWrapper.remove()}})},ajour:()=>{const $ajourFrame=document.createElement('iframe')
+$ajourFrame.setAttribute('src','https://spitlo.com/ajour/')
+$ajourFrame.id='ajour'
+document.body.appendChild($ajourFrame)},tivo:()=>{const $tivoFrame=document.createElement('iframe')
+$tivoFrame.setAttribute('src','https://spitlo.com/tivo/')
+$tivoFrame.id='tivo'
+document.body.appendChild($tivoFrame)
+try{const $tivoLinks=$tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
+Array.from($tivoLinks).forEach(($link)=>{console.log('Setting target on',$link);$link.setAttribute('target','_blank')})}catch(error){}},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
 $html.classList.add('light')
 showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365),()=>deleteCookie('theme'),'Yes, please!','I’d rather not')},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
 $html.classList.add('dark')
