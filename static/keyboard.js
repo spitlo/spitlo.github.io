@@ -156,20 +156,6 @@ Commands are tab completable. Type <code>:</code> to try a command.
     $tivoFrame.setAttribute('src', 'https://spitlo.com/tivo/')
     $tivoFrame.id = 'tivo'
     document.body.appendChild($tivoFrame)
-    try {
-      const $tivoLinks = $tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
-      console.log($tivoLinks); /* eslint-disable-line */
-      Array.from($tivoLinks).forEach(($link) => {
-        console.log('Setting target on', $link); /* eslint-disable-line */
-        $link.setAttribute('target', '_blank')
-      })
-    } catch(error) {
-      console.log('Could not change link targets. Error:'); /* eslint-disable-line */
-      console.error(error); /* eslint-disable-line */
-      console.log('$tivoFrame.contentWindow', $tivoFrame.contentWindow); /* eslint-disable-line */
-      console.log('$tivoFrame.contentWindow.document', $tivoFrame.contentWindow.document); /* eslint-disable-line */
-      console.log('$tivoFrame.contentWindow.document.getElementById(\'videoContainer\')', $tivoFrame.contentWindow.document.getElementById('videoContainer')); /* eslint-disable-line */
-    }
   },
 
   light: () => {
