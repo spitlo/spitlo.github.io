@@ -24,7 +24,8 @@ const commands={help:()=>{const helpMessage=`
 <code>pause</code> Pause player<br>
 <code>prev</code>/<code>next</code> Previous/next song in playlist<br>
 <code>games</code> Show the games "menu"<br>
-<code>ajour (beta)</code> Open my feed reader in an iframe<br>
+<code>ajour</code> Open my textfeed reader in an iframe<br>
+<code>tivo</code> Open my videofeed reader in an iframe<br>
 <code>dark</code>/<code>light</code> Change theme with option to save choice in a cookie<br>
 <code>help</code> Show this message<br>
 Commands are tab completable. Type <code>:</code> to try a command.
@@ -58,9 +59,7 @@ $ajourFrame.id='ajour'
 document.body.appendChild($ajourFrame)},tivo:()=>{const $tivoFrame=document.createElement('iframe')
 $tivoFrame.setAttribute('src','https://spitlo.com/tivo/')
 $tivoFrame.id='tivo'
-document.body.appendChild($tivoFrame)
-try{const $tivoLinks=$tivoFrame.contentWindow.document.getElementById('videoContainer').getElementsByTagName('a')
-console.log($tivoLinks);Array.from($tivoLinks).forEach(($link)=>{console.log('Setting target on',$link);$link.setAttribute('target','_blank')})}catch(error){console.log('Could not change link targets. Error:');console.error(error);console.log('$tivoFrame.contentWindow',$tivoFrame.contentWindow);console.log('$tivoFrame.contentWindow.document',$tivoFrame.contentWindow.document);console.log('$tivoFrame.contentWindow.document.getElementById(\'videoContainer\')',$tivoFrame.contentWindow.document.getElementById('videoContainer'));}},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
+document.body.appendChild($tivoFrame)},light:()=>{if($html.classList.contains('dark')){$html.classList.remove('dark')}
 $html.classList.add('light')
 showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365),()=>deleteCookie('theme'),'Yes, please!','I’d rather not')},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
 $html.classList.add('dark')
