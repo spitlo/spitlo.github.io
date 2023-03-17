@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.5.5
+
+- Add :tivo to command help [`5826ea77`](../../commit/5826ea770acd8c67c083b2a8ce9063c1fd38389d)
+- Remove target=_blank logic [`51714c0c`](../../commit/51714c0c81818a6a9dd56a51c4fdd25fe2e77388)
+
 ## v2.5.4
 
 - More logging [`39f3224d`](../../commit/39f3224d8c6d68816ac3687b775120700741fc31)
