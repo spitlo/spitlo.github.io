@@ -28,7 +28,8 @@ const commands = {
 <code>pause</code> Pause player<br>
 <code>prev</code>/<code>next</code> Previous/next song in playlist<br>
 <code>games</code> Show the games "menu"<br>
-<code>ajour (beta)</code> Open my feed reader in an iframe<br>
+<code>ajour</code> Open my textfeed reader in an iframe<br>
+<code>tivo</code> Open my videofeed reader in an iframe<br>
 <code>dark</code>/<code>light</code> Change theme with option to save choice in a cookie<br>
 <code>help</code> Show this message<br>
 Commands are tab completable. Type <code>:</code> to try a command.
