@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.6.0
+
+- Add Derivata b-005 and b-006 [`9a6cc2b2`](../../commit/9a6cc2b21afa1c8258466edbbaf7e472cef6f656)
+
 ## v2.5.5
 
 - Add :tivo to command help [`5826ea77`](../../commit/5826ea770acd8c67c083b2a8ce9063c1fd38389d)
