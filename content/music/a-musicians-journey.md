@@ -1,10 +1,10 @@
 +++
 title = "A Musician’s Journey"
-description = ""
+description = "An experiment in generated music in the form of a sound collage"
 date = 2023-05-27
 
 [taxonomies]
-categories = ["Electronic", "AI"]
+categories = ["Electronic", "AI", "Sound Collage"]
 
 [extra]
 content_class = "musicians-journey"
@@ -12,11 +12,11 @@ content_class = "musicians-journey"
 
 I wanted to try out [Bark](https://github.com/suno-ai/bark), a transformer-based text-to-audio model by Suno.
 
-I had some unused lyrics lying around, so I created a python script that fed it, line for line, to Bark. The script takes a [language](https://github.com/suno-ai/bark#supported-languages) and a [voice number](https://suno-ai.notion.site/8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c) as arguments, and an optional folder name. The generated file gets saved to a folder named for verse and line (e.g. `verse1_line4`), and the filename indicates language and voice.
+I had some unused lyrics lying around, so I created a python script that fed it, line for line, to Bark. The script takes a [language](https://github.com/suno-ai/bark#supported-languages) and a [voice number](https://suno-ai.notion.site/8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c) as arguments, and an optional folder name. The generated file gets saved to a folder named for the verse and line (e.g. `verse1_line4`), and the filename indicates the language and voice used.
 
 When generating the audio, I surrounded each line with `♪`, which has a special meaning to Bark. It tells it to generate the prompt as music. This sometimes leads to the line being "sung", often poorly, and sometimes generates a full piece of realistic music. Sometimes it’s something in between.
 
-After generating **a bunch** of files for English, Korean, Turkish, Spanish etc (Bark usually generates the audio in broken english if the prompt is in english and the language is not), I went through all the folders, picked the "samples" I liked the best, and imported them into Reaper. I set an arbitrary limit of using five samples per line of text, and then I started layering. Most samples are used basically as is (apart from volume and start/end point) but a few were slightly time stretched or pitched.
+After generating **a bunch** of files for English, Korean, Turkish, Spanish etc (Bark usually generates the audio in broken english if the prompt is in english and the language is not), I went through all the folders, picked the "samples" I liked the best, and imported them into Reaper. I set an arbitrary limit of using five samples per line of text, and then I started layering. Most samples are used basically as is (apart from volume, splits and start/end point) but a tinyn amount were slightly time stretched or pitched.
 
 I added a little reverb to each of the ten resulting tracks, picking presets pseudo-randomly. The panning for each track is also pseudo-random (a little to the left, a little to the right, a little to the left etc.)
 
@@ -91,7 +91,7 @@ for verse in text_prompts:
           # Generate the audio
           audio_array = generate_audio("{} ♪ {} ♪".format(expression, line))
 
-          # Set folder name and create it if not existing
+          # Set folder name and create it if it doesn’t exist
           folder_name = "verse{}_line{}".format(verse_number, line_number)
           full_path = "{}/{}".format(base_folder, folder_name)
           if not os.path.exists(full_path):
@@ -142,8 +142,8 @@ Finally he started a small woodwind combo
 Just him and his sax was a would-win combo
 ```
 
-## The music
+## The result
 
-The song can be downloaded from the link below, or you can use the `:play` command to play it directly in your browser.
+The resulting audio can be downloaded from the link below, or you can use the `:play` command to play it directly in your browser.
 
-[A Musician’s Journey](https://files.mefirst.se/mp3/spitlo_-_a-musicians-journey-1.0.mp3) (05:19, 10,2 MB)
+[A Musician’s Journey 1.0](https://files.mefirst.se/mp3/spitlo_-_a-musicians-journey-1.0.mp3) (05:19, 10,2 MB)
