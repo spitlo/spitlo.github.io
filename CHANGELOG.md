@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.2
+
+- Fix changelog versions [`7aedb2c8`](../../commit/7aedb2c8a9baca40f52b9b58c99659bda18c5b43)
+
 ## v2.7.1
 
 - Add Derivata b-007. Update Changelog [`15807c00`](../../commit/15807c009607897b57a26bb6f03461a5266bbbb9)
