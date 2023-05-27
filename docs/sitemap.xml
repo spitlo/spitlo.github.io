@@ -7,6 +7,9 @@
         <loc>https://spitlo.com/categories/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/categories/ai/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/categories/collaboration/</loc>
     </url>
     <url>
@@ -96,6 +99,10 @@
     </url>
     <url>
         <loc>https://spitlo.com/music/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/music/a-musicians-journey/</loc>
+        <lastmod>2023-05-27</lastmod>
     </url>
     <url>
         <loc>https://spitlo.com/music/derivata/</loc>
