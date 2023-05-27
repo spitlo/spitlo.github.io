@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.7.1
+
+- Add Derivata b-007. Update Changelog [`15807c00`](../../commit/15807c009607897b57a26bb6f03461a5266bbbb9)
+- A Musician’s Journey: Add description, minor fixes. Add Sound Collage tag. [`aff9f3dd`](../../commit/aff9f3dd52d968da8b8d2d9cdb8a3abc223868af)
+
 ## v2.7.0
 
 - Add 'A Musician’s Journey' [`e176ed2a`](../../commit/e176ed2a8f3d209416f350926094cb2d8a251cc1)
