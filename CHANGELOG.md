@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.0
+
+- Add 'A Musician’s Journey' [`e176ed2a`](../../commit/e176ed2a8f3d209416f350926094cb2d8a251cc1)
+
 ## v2.6.0
 
 - Add Derivata b-005 and b-006 [`9a6cc2b2`](../../commit/9a6cc2b21afa1c8258466edbbaf7e472cef6f656)
