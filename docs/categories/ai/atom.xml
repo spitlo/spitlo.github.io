@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>Spitlo.com - AI</title>
-	<link href="https://spitlo.com/categories/ai/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://spitlo.com"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2023-05-27T00:00:00+00:00</updated>
-	<id>https://spitlo.com/categories/ai/atom.xml</id>
-	<entry xml:lang="en">
-		<title>A Musician’s Journey</title>
-		<published>2023-05-27T00:00:00+00:00</published>
-		<updated>2023-05-27T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://spitlo.com/music/a-musicians-journey/" type="text/html"/>
-		<id>https://spitlo.com/music/a-musicians-journey/</id>
-		<content type="html">&lt;p&gt;I wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;suno-ai&#x2F;bark&quot;&gt;Bark&lt;&#x2F;a&gt;, a transformer-based text-to-audio model by Suno.&lt;&#x2F;p&gt;
+    <title>Spitlo.com - AI</title>
+    <link href="https://spitlo.com/categories/ai/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://spitlo.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-05-27T00:00:00+00:00</updated>
+    <id>https://spitlo.com/categories/ai/atom.xml</id>
+    <entry xml:lang="en">
+        <title>A Musician’s Journey</title>
+        <published>2023-05-27T00:00:00+00:00</published>
+        <updated>2023-05-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://spitlo.com/music/a-musicians-journey/" type="text/html"/>
+        <id>https://spitlo.com/music/a-musicians-journey/</id>
+        
+        <content type="html">&lt;p&gt;I wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;suno-ai&#x2F;bark&quot;&gt;Bark&lt;&#x2F;a&gt;, a transformer-based text-to-audio model by Suno.&lt;&#x2F;p&gt;
 &lt;p&gt;I had some unused lyrics lying around, so I created a python script that fed it, line for line, to Bark. The script takes a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;suno-ai&#x2F;bark#supported-languages&quot;&gt;language&lt;&#x2F;a&gt; and a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;suno-ai.notion.site&#x2F;8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c&quot;&gt;voice number&lt;&#x2F;a&gt; as arguments, and an optional folder name. The generated file gets saved to a folder named for the verse and line (e.g. &lt;code&gt;verse1_line4&lt;&#x2F;code&gt;), and the filename indicates the language and voice used.&lt;&#x2F;p&gt;
 &lt;p&gt;When generating the audio, I surrounded each line with &lt;code&gt;♪&lt;&#x2F;code&gt;, which has a special meaning to Bark. It tells it to generate the prompt as music. This sometimes leads to the line being “sung”, often poorly, and sometimes generates a full piece of realistic music. Sometimes it’s something in between.&lt;&#x2F;p&gt;
 &lt;p&gt;After generating &lt;strong&gt;a bunch&lt;&#x2F;strong&gt; of files for English, Korean, Turkish, Spanish etc (Bark usually generates the audio in broken english if the prompt is in english and the language is not), I went through all the folders, picked the “samples” I liked the best, and imported them into Reaper. I set an arbitrary limit of using five samples per line of text, and then I started layering. Most samples are used basically as is (apart from volume, splits and start&#x2F;end point) but a tinyn amount were slightly time stretched or pitched.&lt;&#x2F;p&gt;
@@ -136,7 +140,14 @@ The lyrics&lt;&#x2F;h2&gt;
 &lt;h2 id=&quot;the-result&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-result&quot; aria-label=&quot;Anchor link for: the-result&quot;&gt;#&lt;&#x2F;a&gt;
 The result&lt;&#x2F;h2&gt;
 &lt;p&gt;The resulting audio can be downloaded from the link below, or you can use the &lt;code&gt;:play&lt;&#x2F;code&gt; command to play it directly in your browser.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;mp3&#x2F;spitlo_-_a-musicians-journey-1.0.mp3&quot;&gt;A Musician’s Journey 1.0&lt;&#x2F;a&gt; (05:19, 10,2 MB)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;files.mefirst.se&#x2F;mp3&#x2F;spitlo_-_a-musicians-journey-1.1.mp3&quot;&gt;A Musician’s Journey 1.1&lt;&#x2F;a&gt; (05:19, 10,2 MB)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#changelog&quot; aria-label=&quot;Anchor link for: changelog&quot;&gt;#&lt;&#x2F;a&gt;
+Changelog&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;v1.1 Decrease volume on intro&lt;&#x2F;li&gt;
+&lt;li&gt;v1.0 Initial release&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

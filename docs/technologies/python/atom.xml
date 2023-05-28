@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>Spitlo.com - Python</title>
-	<link href="https://spitlo.com/technologies/python/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://spitlo.com"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-11-26T00:00:00+00:00</updated>
-	<id>https://spitlo.com/technologies/python/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Dotfiles</title>
-		<published>2020-11-26T00:00:00+00:00</published>
-		<updated>2020-11-26T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://spitlo.com/code/dotfiles/" type="text/html"/>
-		<id>https://spitlo.com/code/dotfiles/</id>
-		<content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
+    <title>Spitlo.com - Python</title>
+    <link href="https://spitlo.com/technologies/python/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://spitlo.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-11-26T00:00:00+00:00</updated>
+    <id>https://spitlo.com/technologies/python/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dotfiles</title>
+        <published>2020-11-26T00:00:00+00:00</published>
+        <updated>2020-11-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://spitlo.com/code/dotfiles/" type="text/html"/>
+        <id>https://spitlo.com/code/dotfiles/</id>
+        
+        <content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;
 &lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;&#x2F;a&gt;
@@ -68,5 +72,6 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;zola&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>
