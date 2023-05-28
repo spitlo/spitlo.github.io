@@ -4,7 +4,7 @@ description = "An experiment in generated music in the form of a sound collage"
 date = 2023-05-27
 
 [taxonomies]
-categories = ["Electronic", "AI", "Sound Collage"]
+categories = ["Electronic", "AI", "Sound Collage", "Work in Progress"]
 
 [extra]
 content_class = "musicians-journey"
@@ -146,4 +146,9 @@ Just him and his sax was a would-win combo
 
 The resulting audio can be downloaded from the link below, or you can use the `:play` command to play it directly in your browser.
 
-[A Musician’s Journey 1.0](https://files.mefirst.se/mp3/spitlo_-_a-musicians-journey-1.0.mp3) (05:19, 10,2 MB)
+[A Musician’s Journey 1.1](https://files.mefirst.se/mp3/spitlo_-_a-musicians-journey-1.1.mp3) (05:19, 10,2 MB)
+
+## Changelog
+
+  - v1.1 Decrease volume on intro
+  - v1.0 Initial release
