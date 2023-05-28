@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.3
+
+- Release AMJ 1.1. Add 'Work in Progress' tag [`142e6a42`](../../commit/142e6a4214a62096df8488b72f7d0798c8775e9c)
+
 ## v2.7.2
 
 - Fix changelog versions [`7aedb2c8`](../../commit/7aedb2c8a9baca40f52b9b58c99659bda18c5b43)
