@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.4
+
+- Add Derivata b-008 [`c02a5a2a`](../../commit/c02a5a2accf7013b867948ca916b2088da5b2fb6)
+
 ## v2.7.3
 
 - Release AMJ 1.1. Add 'Work in Progress' tag [`142e6a42`](../../commit/142e6a4214a62096df8488b72f7d0798c8775e9c)
