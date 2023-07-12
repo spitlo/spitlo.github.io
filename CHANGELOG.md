@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.5
+
+- Try adding ai.txt just in case [`a57aebfe`](../../commit/a57aebfea9cdc89aa39ccbb447bda1b71ebb42f5)
+
 ## v2.7.4
 
 - Add Derivata b-008 [`c02a5a2a`](../../commit/c02a5a2accf7013b867948ca916b2088da5b2fb6)
