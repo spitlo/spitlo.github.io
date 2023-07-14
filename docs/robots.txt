@@ -2,3 +2,11 @@ User-agent: *
 Allow: /
 Disallow: /games/
 Sitemap: https://spitlo.com/sitemap.xml
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# OpenAI
+User-agent: ChatGPT-User
+Disallow: /
