@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.6
+
+- Try a little more AI blocking [`a4c21fe3`](../../commit/a4c21fe353f0719382b318169de3ef83c1d0b5b3)
+
 ## v2.7.5
 
 - Try adding ai.txt just in case [`a57aebfe`](../../commit/a57aebfea9cdc89aa39ccbb447bda1b71ebb42f5)
