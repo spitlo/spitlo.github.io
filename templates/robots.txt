@@ -10,3 +10,6 @@ Disallow: /
 # OpenAI
 User-agent: ChatGPT-User
 Disallow: /
+
+User-agent: GPTBot
+Disallow: /
