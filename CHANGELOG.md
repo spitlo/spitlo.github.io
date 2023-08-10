@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.7.7
+
+- Block(?) GPTBot [`5183d072`](../../commit/5183d072e644b891b6ca06315e34e6b11b81e5e8)
+
 ## v2.7.6
 
 - Try a little more AI blocking [`a4c21fe3`](../../commit/a4c21fe353f0719382b318169de3ef83c1d0b5b3)
