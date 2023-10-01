@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.0
+
+- Add Looptober 2023 [`b46491d1`](../../commit/b46491d10133f97448220c3ab49934edeb35a236)
+
 ## v2.7.7
 
 - Block(?) GPTBot [`5183d072`](../../commit/5183d072e644b891b6ca06315e34e6b11b81e5e8)
