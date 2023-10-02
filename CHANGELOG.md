@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.1
+
+- Looptober: Add beat for October 2 [`a18e3917`](../../commit/a18e3917aac3d6dca2a006dafc1affcaa4bc04df)
+
 ## v2.8.0
 
 - Add Looptober 2023 [`b46491d1`](../../commit/b46491d10133f97448220c3ab49934edeb35a236)
