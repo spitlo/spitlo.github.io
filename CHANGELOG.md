@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.3
+
+- Looptober: Fix loop for October 1. Change progress colors [`3527c275`](../../commit/3527c2759416d32f783b15b8a13448fddabeaa76)
+
 ## v2.8.2
 
 - Looptober: Fix loop for October 2 [`67aa6c5e`](../../commit/67aa6c5ea0057d20f9472d4218466d503ff53a81)
