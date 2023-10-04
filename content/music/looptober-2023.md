@@ -37,9 +37,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/03-nostalgic-club.mp3") }}
 
-### 04 - Erratic Toes
+### 04 - Erratic Toes (103 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=13) }}
+> Only four days in and already a triple digit BPM!
+
+{{ looper(filepath="/audio/looptober/2023/04-erratic-toes.mp3") }}
 
 ### 05 - Longing Pump
 
