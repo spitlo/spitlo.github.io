@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.8.4
+
+- Looptober: Add beat for October 4 [`ace5982c`](../../commit/ace5982c980fc68a5ae46143742356b52b5cb796)
+- Looptober: Fix loop for October 3 [`c865dd78`](../../commit/c865dd789b7ea723bfe54fa30823a187f545707f)
+
 ## v2.8.3
 
 - Looptober: Fix loop for October 1. Change progress colors [`3527c275`](../../commit/3527c2759416d32f783b15b8a13448fddabeaa76)
