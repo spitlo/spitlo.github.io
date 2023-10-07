@@ -58,9 +58,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/06-wonderful-order.mp3") }}
 
-### 07 - Hypnotic Magic
+### 07 - Hypnotic Magic (69 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=23) }}
+> Spooky!
+
+{{ looper(filepath="/audio/looptober/2023/07-hypnotic-magic.mp3") }}
 
 ### 08 - Necessary Ship
 
