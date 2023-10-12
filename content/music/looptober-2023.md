@@ -67,19 +67,23 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 ### 08 - Necessary Ship
 
-Coming up!
+> {{ progress(type="circular", fail=true) }}
+> After a week of covid, I hade to give up.
 
 ### 09 - Callous Engine
 
-Coming up!
+> {{ progress(type="circular", fail=true) }}
+> I would feel a bit like a cheat to do these after the fact...
 
 ### 10 - Enchanted Thought
 
-Coming up!
+> {{ progress(type="circular", fail=true) }}
+> ...but perhaps I will if time allows...
 
 ### 11 - Statuesque Railway
 
-Coming up!
+> {{ progress(type="circular", fail=true) }}
+> ...because I like the names.
 
 ### 12 - Dispensable Ladybug
 
