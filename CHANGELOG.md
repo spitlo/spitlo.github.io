@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.9
+
+- Looptober: Add beat for October 12 [`b0dd6de4`](../../commit/b0dd6de460816158bf59137fa42a15b0e6e2b61f)
+
 ## v2.8.8
 
 - Add fail mode to circular progress indicator, add to oct 8-11 [`21b255e9`](../../commit/21b255e98c57ac22c26b948500ab28d7ec1f34fd)
