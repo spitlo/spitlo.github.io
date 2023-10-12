@@ -26,16 +26,18 @@
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;3%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;3, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;3%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;3, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -276,16 +278,18 @@ The game is afoot!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;6%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;6, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;6%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;6, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -526,16 +530,18 @@ Happy whistle tune, R.I.P Roger&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;10%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;10, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;10%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;10, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -776,16 +782,18 @@ Random radio samples, sorry for the crackling&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;13%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;13, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;13%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;13, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -1026,16 +1034,18 @@ Only four days in and already a triple digit BPM!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;16%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;16, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;16%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;16, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -1276,16 +1286,18 @@ Another whistle tune? Well, yessirree!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;19%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;19, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;19%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;19, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -1526,16 +1538,18 @@ Hey lame 90’s sax, nice to hear you again&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;23%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;23, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;23%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;23, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -1771,16 +1785,84 @@ Spooky!&lt;&#x2F;p&gt;
 &lt;&#x2F;script&gt;
 &lt;h3 id=&quot;08-necessary-ship&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#08-necessary-ship&quot; aria-label=&quot;Anchor link for: 08-necessary-ship&quot;&gt;#&lt;&#x2F;a&gt;
 08 - Necessary Ship&lt;&#x2F;h3&gt;
-&lt;p&gt;Coming up!&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular  fail&quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;0, 100&quot;
+        &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;12&quot; x2=&quot;24&quot; y2=&quot;24&quot; &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;24&quot; x2=&quot;24&quot; y2=&quot;12&quot; &#x2F;&gt;
+      
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+After a week of covid, I hade to give up.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;h3 id=&quot;09-callous-engine&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#09-callous-engine&quot; aria-label=&quot;Anchor link for: 09-callous-engine&quot;&gt;#&lt;&#x2F;a&gt;
 09 - Callous Engine&lt;&#x2F;h3&gt;
-&lt;p&gt;Coming up!&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular  fail&quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;0, 100&quot;
+        &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;12&quot; x2=&quot;24&quot; y2=&quot;24&quot; &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;24&quot; x2=&quot;24&quot; y2=&quot;12&quot; &#x2F;&gt;
+      
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+I would feel a bit like a cheat to do these after the fact…&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;h3 id=&quot;10-enchanted-thought&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#10-enchanted-thought&quot; aria-label=&quot;Anchor link for: 10-enchanted-thought&quot;&gt;#&lt;&#x2F;a&gt;
 10 - Enchanted Thought&lt;&#x2F;h3&gt;
-&lt;p&gt;Coming up!&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular  fail&quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;0, 100&quot;
+        &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;12&quot; x2=&quot;24&quot; y2=&quot;24&quot; &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;24&quot; x2=&quot;24&quot; y2=&quot;12&quot; &#x2F;&gt;
+      
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+…but perhaps I will if time allows…&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;h3 id=&quot;11-statuesque-railway&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#11-statuesque-railway&quot; aria-label=&quot;Anchor link for: 11-statuesque-railway&quot;&gt;#&lt;&#x2F;a&gt;
 11 - Statuesque Railway&lt;&#x2F;h3&gt;
-&lt;p&gt;Coming up!&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular  fail&quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;0, 100&quot;
+        &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;12&quot; x2=&quot;24&quot; y2=&quot;24&quot; &#x2F;&gt;
+        &lt;line x1=&quot;12&quot; y1=&quot;24&quot; x2=&quot;24&quot; y2=&quot;12&quot; &#x2F;&gt;
+      
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+…because I like the names.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;h3 id=&quot;12-dispensable-ladybug&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#12-dispensable-ladybug&quot; aria-label=&quot;Anchor link for: 12-dispensable-ladybug&quot;&gt;#&lt;&#x2F;a&gt;
 12 - Dispensable Ladybug&lt;&#x2F;h3&gt;
 &lt;p&gt;Coming up!&lt;&#x2F;p&gt;
@@ -2092,16 +2174,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;3%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;3, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;3%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;3, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -2342,16 +2426,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;6%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;6, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;6%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;6, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -2592,16 +2678,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;10%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;10, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;10%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;10, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -2842,16 +2930,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;13%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;13, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;13%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;13, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -3092,16 +3182,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;16%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;16, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;16%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;16, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -3342,16 +3434,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;19%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;19, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;19%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;19, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -3592,16 +3686,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;23%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;23, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;23%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;23, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -3842,16 +3938,18 @@ The loops&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;26%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;26, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;26%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;26, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -4092,16 +4190,18 @@ Weekends are hard.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;29%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;29, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;29%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;29, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -4342,16 +4442,18 @@ Now pizza.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;32%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;32, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;32%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;32, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -4592,16 +4694,18 @@ Now pizza.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;35%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;35, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;35%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;35, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -4842,16 +4946,18 @@ Definitely struggling to come up with stuff.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;39%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;39, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;39%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;39, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -5092,16 +5198,18 @@ Time to read the manual for inspiration.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;42%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;42, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;42%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;42, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -5342,16 +5450,18 @@ First barely listenable beat, and the fastest so far as well. Coincidence?&lt;&#
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;45%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;45, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;45%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;45, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -5592,16 +5702,18 @@ So close to the halfway point I can almost feel it!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;48%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;48, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;48%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;48, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -5842,16 +5954,18 @@ This bass line is the most difficult thing I ever programmed.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;52%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;52, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;52%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;52, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -6092,16 +6206,18 @@ New time signature achievement obtained!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;55%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;55, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;55%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;55, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -6342,16 +6458,18 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;58%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;58, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;58%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;58, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -6592,16 +6710,18 @@ Record breaking low BPM!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;62%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;62, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;62%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;62, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -6842,16 +6962,18 @@ Getting some #haketlove in there.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;65%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;65, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;65%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;65, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -7092,16 +7214,18 @@ Stock sound challenge accepted!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;68%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;68, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;68%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;68, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -7342,16 +7466,18 @@ Two thirds officially &lt;del&gt;crushed&lt;&#x2F;del&gt; finished.&lt;&#x2F;p&g
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;70%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;70, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;70%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;70, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -7592,16 +7718,18 @@ Rock organ time.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;74%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;74, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;74%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;74, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -7842,16 +7970,18 @@ Watching Laura Kampf restore an old house helps with perspective.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;77%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;77, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;77%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;77, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -8092,16 +8222,18 @@ Three fourths done, and tomorrow four fifths. The day after that, five sixths.&l
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;80%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;80, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;80%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;80, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -8342,16 +8474,18 @@ Entering triple digit BPM land.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;84%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;84, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;84%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;84, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -8592,16 +8726,18 @@ Letting the LFOs do the work today.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;87%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;87, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;87%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;87, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -8842,16 +8978,18 @@ This is by far the dumbest yet.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;90%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;90, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;90%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;90, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -9092,16 +9230,18 @@ We’re on the home stretch!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;93%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;93, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;93%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;93, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -9342,16 +9482,18 @@ Something from the Grim Fandango cutting room floor?&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;97%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;97, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;97%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;97, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
@@ -9592,16 +9734,18 @@ ONE DAY LEFT!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
   
     &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
-      &lt;title&gt;100%&lt;&#x2F;title&gt;
-      &lt;path
-        d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
-        stroke-dasharray=&quot;100, 100&quot;
-      &#x2F;&gt;
-      &lt;defs&gt;
-        &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
-          &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
-        &lt;&#x2F;pattern&gt;
-      &lt;&#x2F;defs&gt;
+      
+        &lt;title&gt;100%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;100, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
     &lt;&#x2F;svg&gt;
   
 &lt;&#x2F;span&gt;
