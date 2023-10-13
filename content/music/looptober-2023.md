@@ -88,13 +88,16 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 12 - Dispensable Ladybug
 
 > {{ progress(type="circular", percentage=39) }}
-> There is a very real possibility that this could get tiresome quickly
+> There is a very real possibility that this one could get tiresome quickly
 
 {{ looper(filepath="/audio/looptober/2023/12-dispensable-ladybug.mp3") }}
 
 ### 13 - Sick Current
 
-Coming up!
+> {{ progress(type="circular", percentage=42) }}
+> More spooky!
+
+{{ looper(filepath="/audio/looptober/2023/13-sick-current.mp3") }}
 
 ### 14 - Irate Skate
 
