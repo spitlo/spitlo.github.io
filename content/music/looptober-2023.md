@@ -16,6 +16,8 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
+<mark class="arrow">NB2</mark> Loops marked with X was not finished on time, but created and added later.
+
 ### 01 - Political Replacement (96 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=3) }}
@@ -65,10 +67,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/07-hypnotic-magic.mp3") }}
 
-### 08 - Necessary Ship
+### 08 - Necessary Ship (96 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", fail=true) }}
-> After a week of covid, I hade to give up.
+> I fixed the greasy encoder on my Tracker today, let’s celebrate with an extra loop!
+
+{{ looper(filepath="/audio/looptober/2023/08-necessary-ship.mp3") }}
 
 ### 09 - Callous Engine
 
