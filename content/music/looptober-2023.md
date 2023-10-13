@@ -105,9 +105,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/13-sick-current.mp3") }}
 
-### 14 - Irate Skate
+### 14 - Irate Skate (82 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=45) }}
+> Well, there’s an I in Irate, right?
+
+{{ looper(filepath="/audio/looptober/2023/14-irate-skate.mp3") }}
 
 ### 15 - Fallacious Argument
 
