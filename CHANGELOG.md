@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.13
+
+- Indicate add dates on failed then added loops [`1408c2dc`](../../commit/1408c2dc42815a34a0776e9cbeb26bdd184887e7)
+
 ## v2.8.12
 
 - Looptober: Add beat for October 9 [`277c0576`](../../commit/277c05763ad7b70d845d812919ba1b35634bc619)
