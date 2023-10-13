@@ -91,14 +91,14 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 > {{ progress(type="circular", fail=true) }}
 > ...because I like the names.
 
-### 12 - Dispensable Ladybug
+### 12 - Dispensable Ladybug (110 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=39) }}
 > There is a very real possibility that this one could get tiresome quickly
 
 {{ looper(filepath="/audio/looptober/2023/12-dispensable-ladybug.mp3") }}
 
-### 13 - Sick Current
+### 13 - Sick Current (75 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=42) }}
 > More spooky!
