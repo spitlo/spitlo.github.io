@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.14
+
+- Add metadata to loops 12 and 13 [`554cabfb`](../../commit/554cabfb9ff14ea3beb36a14de7899e6560ca6f5)
+
 ## v2.8.13
 
 - Indicate add dates on failed then added loops [`1408c2dc`](../../commit/1408c2dc42815a34a0776e9cbeb26bdd184887e7)
