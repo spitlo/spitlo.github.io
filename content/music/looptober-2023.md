@@ -70,14 +70,14 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 08 - Necessary Ship (96 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", fail=true) }}
-> I fixed the greasy encoder on my Tracker today, let’s celebrate with an extra loop!
+> I fixed the greasy encoder on my Tracker today, let’s celebrate with an extra loop! (2023-10-13)
 
 {{ looper(filepath="/audio/looptober/2023/08-necessary-ship.mp3") }}
 
 ### 09 - Callous Engine (87 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", fail=true) }}
-> I will probably need to remix this when my ears aren’t bleeding
+> I will probably need to remix this when my ears aren’t bleeding (2023-10-13)
 
 {{ looper(filepath="/audio/looptober/2023/09-callous-engine.mp3") }}
 
