@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.17
+
+- Looptober: Add beat for October 15 [`4bd8f4c2`](../../commit/4bd8f4c29bd69e101c5856864ff151142d903937)
+
 ## v2.8.16
 
 - Add Derivata b-009 [`21f19c20`](../../commit/21f19c208030ac0ad4bf442005fcdf231ff85802)
