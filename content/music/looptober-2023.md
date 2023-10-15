@@ -112,9 +112,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/14-irate-skate.mp3") }}
 
-### 15 - Fallacious Argument
+### 15 - Fallacious Argument (108 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=48) }}
+> Something for the sunday run
+
+{{ looper(filepath="/audio/looptober/2023/15-fallacious-argument.mp3") }}
 
 ### 16 - Unique Border
 
