@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.20
+
+- Looptober: Make beat for October 17 less annoying [`ae52908f`](../../commit/ae52908f65328097b4a1910761002b205816b657)
+
 ## v2.8.19
 
 - Looptober: Add beat for October 17 [`a94168fa`](../../commit/a94168fa369fb95563c1f8adfa54b93d9c13ddd8)
