@@ -126,9 +126,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/16-unique-border.mp3") }}
 
-### 17 - Needy Bat
+### 17 - Needy Bat (101 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=55) }}
+> I don’t know how needy the bat is, but at least the violin is transylvanian
+
+{{ looper(filepath="/audio/looptober/2023/17-needy-bat.mp3") }}
 
 ### 18 - Keen Quill
 
