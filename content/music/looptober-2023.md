@@ -133,9 +133,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/17-needy-bat.mp3") }}
 
-### 18 - Keen Quill
+### 18 - Keen Quill (77 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=58) }}
+> What a beautiful wednesday morning!
+
+{{ looper(filepath="/audio/looptober/2023/18-keen-quill.mp3") }}
 
 ### 19 - Wild Snails
 
