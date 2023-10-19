@@ -81,10 +81,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/09-callous-engine.mp3") }}
 
-### 10 - Enchanted Thought
+### 10 - Enchanted Thought (90 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", fail=true) }}
-> ...but perhaps I will if time allows...
+> Listening to old cambodian soul, I had to make a little loop (2023-10-19)
+
+{{ looper(filepath="/audio/looptober/2023/10-enchanted-thought.mp3") }}
 
 ### 11 - Statuesque Railway
 
