@@ -140,9 +140,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/18-keen-quill.mp3") }}
 
-### 19 - Wild Snails
+### 19 - Wild Snails (80 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=61) }}
+> Lolita Fatjo gave me a Casio DM-100, had to sample it!
+
+{{ looper(filepath="/audio/looptober/2023/19-wild-snails.mp3") }}
 
 ### 20 - Nochalant Name
 
