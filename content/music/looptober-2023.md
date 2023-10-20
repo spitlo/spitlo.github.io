@@ -149,9 +149,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/19-wild-snails.mp3") }}
 
-### 20 - Nochalant Name
+### 20 - Nochalant Name (93 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=65) }}
+> If it’s atonal, you’re too anal
+
+{{ looper(filepath="/audio/looptober/2023/20-nonchalant-name.mp3") }}
 
 ### 21 - Flaky Invention
 
