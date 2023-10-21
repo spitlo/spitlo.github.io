@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.8.26
+
+- Looptober: Add beat for October 21 [`0cf18f20`](../../commit/0cf18f2093a9bd67a76aed8dc3d2f3fae9f90870)
+- Looptober: Correct time signature for Longing Pump [`0b113322`](../../commit/0b1133228ecada2e0cb3a18434d3a6db8332ce74)
+
 ## v2.8.25
 
 - Looptober: Add beat for October 20 [`8f480092`](../../commit/8f480092fd943b2b5784c44e170a8d042696c692)
