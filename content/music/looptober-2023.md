@@ -163,9 +163,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/21-flaky-invention.mp3") }}
 
-### 22 - Voracious Rat
+### 22 - Voracious Rat (73 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=71) }}
+> I believe these are the chords from Nightshift, but in alphabetical order
+
+{{ looper(filepath="/audio/looptober/2023/22-voracious-rat.mp3") }}
 
 ### 23 - New Linen
 
