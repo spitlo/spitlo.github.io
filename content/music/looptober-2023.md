@@ -170,9 +170,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/22-voracious-rat.mp3") }}
 
-### 23 - New Linen
+### 23 - New Linen (75 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=74) }}
+> Ahh, new linen! That’s the best smell
+
+{{ looper(filepath="/audio/looptober/2023/23-new-linen.mp3") }}
 
 ### 24 - Quickest Week
 
