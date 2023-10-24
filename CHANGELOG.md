@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.31
+
+- Looptober: Correct bpm for October 24 [`cbc4b9dc`](../../commit/cbc4b9dcec6592e0b8b40d7a3cb191e82190a403)
+
 ## v2.8.30
 
 - Looptober: Add beat for October 24 [`06095766`](../../commit/0609576697307c81237833a1a91c333ab4c0ab93)
