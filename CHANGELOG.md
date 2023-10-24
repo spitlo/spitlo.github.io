@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.32
+
+- Cleanup [`96397469`](../../commit/9639746985db2bf136cadf7aeadf9a9040635fb8)
+
 ## v2.8.31
 
 - Looptober: Correct bpm for October 24 [`cbc4b9dc`](../../commit/cbc4b9dcec6592e0b8b40d7a3cb191e82190a403)
