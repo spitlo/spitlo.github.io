@@ -179,7 +179,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/23-new-linen.mp3") }}
 
-### 24 - Quickest Week
+### 24 - Quickest Week (77 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=77) }}
+> But it’s only tuesday!
+
+{{ looper(filepath="/audio/looptober/2023/24-quickest-week.mp3") }}
 
 Coming up!
 
