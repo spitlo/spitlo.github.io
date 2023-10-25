@@ -186,9 +186,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/24-quickest-week.mp3") }}
 
-### 25 - Thin Nation
+### 25 - Thin Nation (87 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=80) }}
+> Stand for Palestine!
+
+{{ looper(filepath="/audio/looptober/2023/25-thin-nation.mp3") }}
 
 ### 26 - Rural Dog
 
