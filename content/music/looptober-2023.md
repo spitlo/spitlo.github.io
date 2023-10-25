@@ -193,9 +193,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/25-thin-nation.mp3") }}
 
-### 26 - Rural Dog
+### 26 - Rural Dog (66 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=84) }}
+> Sebuah sanjungan untuk semua anjing di Sulawesi Utara
+
+{{ looper(filepath="/audio/looptober/2023/26-rural-dog.mp3") }}
 
 ### 27 - Lackadaisical Stretch
 
