@@ -189,7 +189,7 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 25 - Thin Nation (87 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=80) }}
-> Stand for Palestine!
+> Stand with Palestine!
 
 {{ looper(filepath="/audio/looptober/2023/25-thin-nation.mp3") }}
 
