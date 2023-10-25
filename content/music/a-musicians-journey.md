@@ -16,7 +16,7 @@ I had some unused lyrics lying around, so I created a python script that fed it,
 
 When generating the audio, I surrounded each line with `♪`, which has a special meaning to Bark. It tells it to generate the prompt as music. This sometimes leads to the line being "sung", often poorly, and sometimes generates a full piece of realistic music. Sometimes it’s something in between.
 
-After generating **a bunch** of files for English, Korean, Turkish, Spanish etc (Bark usually generates the audio in broken english if the prompt is in english and the language is not), I went through all the folders, picked the "samples" I liked the best, and imported them into Reaper. I set an arbitrary limit of using five samples per line of text, and then I started layering. Most samples are used basically as is (apart from volume, splits and start/end point) but a tinyn amount were slightly time stretched or pitched.
+After generating **a bunch** of files for English, Korean, Turkish, Spanish etc (Bark usually generates the audio in broken english if the prompt is in english and the language is not), I went through all the folders, picked the "samples" I liked the best, and imported them into Reaper. I set an arbitrary limit of using five samples per line of text, and then I started layering. Most samples are used basically as is (apart from volume, splits and start/end point) but a tiny amount were slightly time stretched or pitched.
 
 I added a little reverb to each of the ten resulting tracks, picking presets pseudo-randomly. The panning for each track is also pseudo-random (a little to the left, a little to the right, a little to the left etc.)
 
