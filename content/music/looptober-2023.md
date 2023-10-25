@@ -197,7 +197,7 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 Coming up!
 
-### 27 - Lackadaisical Stetch
+### 27 - Lackadaisical Stretch
 
 Coming up!
 
