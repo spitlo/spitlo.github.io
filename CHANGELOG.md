@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.34
+
+- Wording [`093da639`](../../commit/093da639a71aed5cc592903acc97ccc05ef64748)
+
 ## v2.8.33
 
 - Looptober: Add beat for October 25 [`e6c7f046`](../../commit/e6c7f046fc64d42605f963874834a0d641605332)
