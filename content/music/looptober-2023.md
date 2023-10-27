@@ -200,9 +200,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/26-rural-dog.mp3") }}
 
-### 27 - Lackadaisical Stretch
+### 27 - Lackadaisical Stretch (110 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=87) }}
+> This stretch doesn’t feel lackadaisical at all, I’m looking forward to doing the last four.
+
+{{ looper(filepath="/audio/looptober/2023/27-lackadaisical-stretch.mp3") }}
 
 ### 28 - Waiting Cemetery
 
