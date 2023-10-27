@@ -4,7 +4,7 @@ description = "Add a little character to your text"
 date = 2021-04-06
 
 [taxonomies]
-technologies = ["Bash", "Nim", "V"]
+technologies = ["Bash", "Fortran", "Nim", "V", "Zig"]
 categories = ["Work in Progress"]
 
 [extra]
@@ -13,9 +13,9 @@ first_commit_time = 2021-04-01
 first_commit_message = "It was the best of times, it was the worst of times..."
 +++
 
-Karakter is a Bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like [Ada](https://www.adaic.org/) and [Fortran](https://fortran-lang.org/). I encourage everyone to not hold their breath for that though -- at the moment there is a working version in [V](https://vlang.io) and work-in-progress versions in [Nim](https://nim-lang.org/) and [Zig](https://ziglang.org/).
+Karakter is a Bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like [Ada](https://www.adaic.org/) and [Fortran](https://fortran-lang.org/). I encourage everyone to not hold their breath for that though -- at the moment there is a working (I think) version in [V](https://vlang.io) and work-in-progress versions in [Nim](https://nim-lang.org/) and [Zig](https://ziglang.org/).
 
-There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s four less eclectic styles, `¢џБ≡┎pμ∩κ`, `ƒάїгψłάľє`, `LŌŪĐMŌŪṪH` and `₥0₦€¥₸₳£₭`.
+There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s five less eclectic styles, `¢џБ≡┎pμ∩κ`, `ƒάїгψłάľє`, `LŌŪĐMŌŪṪH`, `₥0₦€¥₸₳£₭` and `num83r5`.
 
 Most glyphs are chosen from [this list](https://github.com/ehmicky/cross-platform-terminal-characters) of "All the characters that work on most terminals" so they should work on most terminals -- the exception being the set "Moneytalk" which is made up entirely of currency symbols (plus `1` and `0`, of course) and is not guaranteed to work everywhere.
 
@@ -68,6 +68,13 @@ It ш@s the bєsŁ of tim≡$, it w@s tHe шоrst of Łim≡$, it шas ŁH≡ а
 ```
 
 ### Output text, obfuscation level high, moneytalk style
+
 ```txt
 1₮ ₩₳$ ₺₶€ ฿€$₸ 0₣ ₮1₥€₷, 1₸ ₩₳$ ₺₶€ ₩0₹₷₺ 0₣ ₸1₥€$, 1₺ ₩₳$ ₸₶€ ₳₲€ 0₣ ₩1$₫0₥, 1₺ ₩₳$ ₺₶€ ₳₲€ 0₣ ₣00£1₷₶₪€₷$, 1₮ ₩₳$ ₸₶€ €₱0₵₶ 0₣ ৳€£1€₣, 1₸ ₩₳$ ₺₶€ €₱0₵₶ 0₣ 1₪₵₹€₫U£1₮¥, 1₺ ₩₳$ ₮₶€ ₷€₳₷0₪ 0₣ £1₲₶₸, 1₮ ₩₳₷ ₸₶€ ₷€₳₷0₪ 0₣ ₫₳₹₭₪€$$, 1₮ ₩₳$ ₮₶€ $₽₹1₦₲ 0₣ ₶0₱€, 1₮ ₩₳$ ₸₶€ ₩1₦₸€₹ 0₣ ₫€$₱₳1₹, ₩€ ₶₳₫ €V€₹¥₸₶1₦₲ ฿€₣0₹€ U$, ₩€ ₶₳₫ ₪0₺₶1₦₲ ৳€₣0₹€ U$, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₵₺ ₸0 ₶€₳V€₦, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₡₸ ₮₶€ 0₸₶€₹ ₩₳¥ – 1₪ $₶0₹₸, ₸₶€ ₽€₹10₫ ₩₳₷ ₷0 ₣₳₹ £1₭€ ₺₶€ ₽₹€₷€₪₮ ₱€₹10₫, ₸₳₮ $0₥€ 0₣ 1₸$ ₦01$1€$₮ ₳U₸₶0₹1₸1€$ 1₦₷1$₮€₫ 0₦ 1₸₷ ৳€1₦₲ ₹€₵€1V€₫, ₣0₹ ₲00₫ 0₹ ₣0₹ €V1£, 1₪ ₮₶€ ₷U₽€₹£₳₸1V€ ₫€₲₹€€ 0₣ ₡0₥₱₳₹1$0₦ 0₪£¥.
+```
+
+### Output text, obfuscation level medium, numbers style
+
+```txt
+It w4s th3 b35t 0f 71m35, 17 wa5 7he w0rst 0f time5, 1t w45 the 4ge of w1sdom, 17 wa5 7he 463 of f0olishness, 1t wa5 the 3poch 0f 83li3f, it w4s 7h3 3poch of incredulity, i7 w45 th3 s3450n of L1gh7, 1t w4s 7he s3450n 0f D4rkne55, i7 was 7he 5pring of hop3, i7 wa5 7h3 wint3r of desp4ir, w3 had 3very7h1n6 bef0re u5, we h4d noth1n6 8ef0r3 us, w3 w3r3 all g01ng direct t0 H34v3n, we w3re all 6o1n6 d1r3c7 7h3 0ther w4y – 1n 5h0rt, 7h3 per10d wa5 5o f4r l1ke the pre53nt per10d, 7h47 5om3 0f 1t5 n0i5ie5t 4uth0ri7ies 1nsis7ed 0n 175 8e1n6 r3ce1ved, for g00d 0r for 3v1l, 1n the sup3rl4tiv3 degre3 of comp4r15on only.
 ```
