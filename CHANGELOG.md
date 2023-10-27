@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.8.36
+
+- Looptober: Add beat for October 27 [`c7808e0e`](../../commit/c7808e0e3790c66f7772677aa20db2b30106d0ab)
+- Update Karakter article [`70dad818`](../../commit/70dad818bdd0f3b5a2d11c6b9de606ccea8eb7cc)
+
 ## v2.8.35
 
 - Looptober: Add beat for October 26 [`34adc70e`](../../commit/34adc70e87159126af5d0795ece178de1df4ce9c)
