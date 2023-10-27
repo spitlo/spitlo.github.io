@@ -146,6 +146,9 @@
         <loc>https://spitlo.com/technologies/ffmpeg/</loc>
     </url>
     <url>
+        <loc>https://spitlo.com/technologies/fortran/</loc>
+    </url>
+    <url>
         <loc>https://spitlo.com/technologies/git/</loc>
     </url>
     <url>
@@ -195,5 +198,8 @@
     </url>
     <url>
         <loc>https://spitlo.com/technologies/vite/</loc>
+    </url>
+    <url>
+        <loc>https://spitlo.com/technologies/zig/</loc>
     </url>
 </urlset>

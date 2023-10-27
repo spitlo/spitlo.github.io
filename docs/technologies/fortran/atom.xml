@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>Spitlo.com - Nim</title>
-    <link href="https://spitlo.com/technologies/nim/atom.xml" rel="self" type="application/atom+xml"/>
+    <title>Spitlo.com - Fortran</title>
+    <link href="https://spitlo.com/technologies/fortran/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2021-04-06T00:00:00+00:00</updated>
-    <id>https://spitlo.com/technologies/nim/atom.xml</id>
+    <id>https://spitlo.com/technologies/fortran/atom.xml</id>
     <entry xml:lang="en">
         <title>Karakter</title>
         <published>2021-04-06T00:00:00+00:00</published>
