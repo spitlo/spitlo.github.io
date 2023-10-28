@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.8.37
+
+- Skip link checking for now try 2 [`0cd94d3e`](../../commit/0cd94d3ec423afb56b93d6011fd50b5fa92d2022)
+- Skip link checking for now [`657cd4ba`](../../commit/657cd4baf3fbe54f0fa833aeed2de44827482d05)
+- Looptober: Add beat for October 28 [`aaf6e8ba`](../../commit/aaf6e8baf976b8b182cab47ca0a125feda456040)
+
 ## v2.8.36
 
 - Looptober: Add beat for October 27 [`c7808e0e`](../../commit/c7808e0e3790c66f7772677aa20db2b30106d0ab)
