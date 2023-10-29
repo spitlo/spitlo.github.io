@@ -214,9 +214,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/28-waiting-cemetary.mp3") }}
 
-### 29 - Marked Expansion
+### 29 - Marked Expansion (80 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=94) }}
+> Or is it an invasion?
+
+{{ looper(filepath="/audio/looptober/2023/29-marked-expansion.mp3") }}
 
 ### 30 - Dusty Amount
 
