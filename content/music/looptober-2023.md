@@ -221,9 +221,12 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/29-marked-expansion.mp3") }}
 
-### 30 - Dusty Amount
+### 30 - Dusty Amount (90 BPM) {{ timesig(numerator="4", denominator="4") }}
 
-Coming up!
+> {{ progress(type="circular", percentage=97) }}
+> Can you feel it? One day left!
+
+{{ looper(filepath="/audio/looptober/2023/30-dusty-amount.mp3") }}
 
 ### 31 - Periodic Society
 
