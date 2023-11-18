@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.8.42
+
+- Use correct snippet for Derivata b-010 [`33f696e5`](../../commit/33f696e5c746cb939791518faa00513882e6439a)
+
 ## v2.8.41
 
 - Add Derivata b-010 [`1e1d7ba7`](../../commit/1e1d7ba72b2d86bc1aaaa0ad8a58464b6ce101e7)
