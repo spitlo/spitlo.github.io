@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.9.0
+
+- Syntax highlighting improvements [`2e4d8ac5`](../../commit/2e4d8ac526dd5c3b93ff97b6c48153cfc8d32d99)
+
 ## v2.8.43
 
 - Update some Code articles [`ed67867b`](../../commit/ed67867b0a9099edff0772e5ba4d9b9f5efcf145)
