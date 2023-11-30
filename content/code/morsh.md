@@ -28,17 +28,17 @@ Clone the repo and put a symlink to the `morsh` script in your `~/bin`.
 Quickly decode a message from some ancient online puzzle game:
 
 ```bash
-./morsh "...- --- --- -.. --- --- / -- .- --. .. -.-."
+morsh "...- --- --- -.. --- --- / -- .- --. .. -.-."
 ```
 
 Awkwardly uppercase a sentence (removing punctuation, diacritics and fluff in the process):
 
 ```bash
-echo "I Have No Mouth, and I Must Scream" | ./morsh -e | ./morsh -d
+echo "I Have No Mouth, and I Must Scream" | morsh -e | morsh -d
 ```
 
 Turn "Crime and Punishment" into something you can reliably broadcast to your entire neighborhood with a simple signal horn and some patience:
 
 ```bash
-curl https://gutenberg.org/files/2554/2554-0.txt | ./morsh --encode | less
+curl https://gutenberg.org/files/2554/2554-0.txt | morsh --encode | less
 ```
