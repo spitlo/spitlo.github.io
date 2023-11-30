@@ -22,7 +22,7 @@ Use it as a command line tool and it will show you all your messages.
 
 The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in `src/index.js`:
 
-```javascript, hl_lines=1 3 5
+```javascript
 var myConst = { // @John Please use const and not var
   a: 1,
   b: 2 // @Bella Please add a trailing comma here, see our style guide
