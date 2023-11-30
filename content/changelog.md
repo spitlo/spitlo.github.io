@@ -11,6 +11,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.9.x _(2023-11-30)_
 
   - Syntax highlighting improvements
+  - Added changelog link in footer
 
 ## v2.8.x - v2.4.x _(2023-02-02)_
 
@@ -19,7 +20,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
   - Added `:tivo` command
   - Added article about [A Musician’s Journey](/music/a-musicians-journey/)
   - Added "Sound Collage" tag
-  - Added Derivata b-007-b-010
+  - Added Derivata b-007 - b-010
 
 ## v2.3.x _(2023-01-20)_
 
