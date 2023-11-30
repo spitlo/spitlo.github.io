@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v2.8.43
+
+- Update some Code articles [`ed67867b`](../../commit/ed67867b0a9099edff0772e5ba4d9b9f5efcf145)
+- Minor styling fixes [`b4a56d0b`](../../commit/b4a56d0b6954321a8af94b6fbd172d3bc741325e)
+- Remove bad code hilite [`e108036f`](../../commit/e108036f797fa02319c9a6b7ba56d10e936674ab)
+- Looptober: Remove WIP tag [`42dbfc25`](../../commit/42dbfc25c0f598762ed28fc513a7b944fe46129c)
+
 ## v2.8.42
 
 - Use correct snippet for Derivata b-010 [`33f696e5`](../../commit/33f696e5c746cb939791518faa00513882e6439a)
