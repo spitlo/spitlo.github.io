@@ -17,12 +17,12 @@
         <id>https://spitlo.com/code/snippetizer/</id>
         
         <content type="html">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt; and &lt;a href=&quot;&#x2F;music&#x2F;derivata&quot;&gt;Derivata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;  [start|middle|end]    What part of the file you want to snippet.
-&lt;&#x2F;span&gt;&lt;span&gt;                        Defaults to &amp;#39;middle&amp;#39;.
-&lt;&#x2F;span&gt;&lt;span&gt;  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
-&lt;&#x2F;span&gt;&lt;span&gt;                        Defaults to &amp;#39;30&amp;#39;.
-&lt;&#x2F;span&gt;&lt;span&gt;  [-o&#x2F;--ogg]            Use ogg as output format instead of mp3.
-&lt;&#x2F;span&gt;&lt;span&gt;  [-n&#x2F;--nofade]         Don’t fade in and out.
+&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
+                        Defaults to &amp;#39;middle&amp;#39;.
+  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
+                        Defaults to &amp;#39;30&amp;#39;.
+  [-o&#x2F;--ogg]            Use ogg as output format instead of mp3.
+  [-n&#x2F;--nofade]         Don’t fade in and out.
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;If no arguments are supplied, it creates a 30 second mp3 snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;

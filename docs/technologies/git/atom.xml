@@ -22,37 +22,37 @@
 &lt;h2 id=&quot;usage-example&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-example&quot; aria-label=&quot;Anchor link for: usage-example&quot;&gt;#&lt;&#x2F;a&gt;
 Usage example&lt;&#x2F;h2&gt;
 &lt;p&gt;The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in &lt;code&gt;src&#x2F;index.js&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#fffb9d;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; @John Please use const and not var
-&lt;&#x2F;span&gt;&lt;span&gt;  a: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;  b: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; @Bella Please add a trailing comma here, see our style guide
-&lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;var&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;myConst&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt; &lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @John Please use const and not var&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;a&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;2&lt;&#x2F;span&gt; &lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @Bella Please add a trailing comma here, see our style guide&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;&#x2F;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When John runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, he sees the following message:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;Mentions in .&#x2F;src&#x2F;index.js
-&lt;&#x2F;span&gt;&lt;span&gt;==========================
-&lt;&#x2F;span&gt;&lt;span&gt;On line 5:
-&lt;&#x2F;span&gt;&lt;span&gt;  var myConst = { &#x2F;&#x2F; @John Please use const and not var
-&lt;&#x2F;span&gt;&lt;span&gt;On line 9:
-&lt;&#x2F;span&gt;&lt;span&gt;  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+==========================
+On line 5:
+  var myConst = { &#x2F;&#x2F; @John Please use const and not var
+On line 9:
+  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When Bella runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, she sees the following message:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;Mentions in .&#x2F;src&#x2F;index.js
-&lt;&#x2F;span&gt;&lt;span&gt;==========================
-&lt;&#x2F;span&gt;&lt;span&gt;On line 7:
-&lt;&#x2F;span&gt;&lt;span&gt;  b: 2 &#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
-&lt;&#x2F;span&gt;&lt;span&gt;On line 9:
-&lt;&#x2F;span&gt;&lt;span&gt;  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
+&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
+==========================
+On line 7:
+  b: 2 &#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
+On line 9:
+  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Bella and John makes their respective changes and remove the relevant message.&lt;&#x2F;p&gt;
 &lt;p&gt;Perhaps one of them adds a new message:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#393939;color:#dedede;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#fffb9d;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d6d6ae;&quot;&gt;myConst &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ececec;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;  a: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;  b: &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#87d6d5;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
-&lt;&#x2F;span&gt;&lt;mark style=&quot;background-color:#303030;&quot;&gt;&lt;span style=&quot;color:#a0cfa1;&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#87ae86;&quot;&gt; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide
-&lt;&#x2F;span&gt;&lt;&#x2F;mark&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;const&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-constant z-ts&quot;&gt;myConst&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;a&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;&#x2F;span&gt;
+&lt;mark&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide&lt;&#x2F;span&gt;
+&lt;&#x2F;mark&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
 Installation&lt;&#x2F;h2&gt;
 &lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;atadev&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
