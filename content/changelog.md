@@ -8,14 +8,18 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
-## v2.7.x - v2.4.x _(2023-02-02)_
+## v2.9.x _(2023-11-30)_
+
+  - Syntax highlighting improvements
+
+## v2.8.x - v2.4.x _(2023-02-02)_
 
   - Font updates
   - Updated sass imports to decrease css size
   - Added `:tivo` command
   - Added article about [A Musician’s Journey](/music/a-musicians-journey/)
   - Added "Sound Collage" tag
-  - Added Derivata b-007
+  - Added Derivata b-007-b-010
 
 ## v2.3.x _(2023-01-20)_
 

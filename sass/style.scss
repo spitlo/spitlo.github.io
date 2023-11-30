@@ -516,8 +516,6 @@ code, pre {
   font-family: $paragraphFont;
   font-size: 1em;
   font-weight: 300;
-  color: var(--code-color);
-  background-color: var(--code-bgcolor);
   padding: 0 5px;
 }
 
@@ -538,9 +536,41 @@ pre {
 pre code {
   background-color: unset;
   padding: 0;
-  // white-space: pre;
-  // text-wrap: pretty;
   white-space: inherit;
+}
+
+// Fixes for better syntax highlighting
+code:not([class^='language-']), pre:not(.z-code) {
+  color: var(--code-color);
+  background-color: var(--code-bgcolor);
+}
+pre.z-code {
+  padding: 1rem;
+  overflow: auto;
+
+  &[data-linenos] {
+    padding: 1rem 0;
+  }
+  table td {
+    padding: 0;
+  }
+  table td:nth-of-type(1) {
+    text-align: center;
+    user-select: none;
+  }
+  mark {
+    display: block;
+    background-color: rgb(60 60 57 / 90%);
+    border-bottom: 0;
+    padding: 0;
+    @media (prefers-color-scheme: light) {
+      background-color: rgb(216 216 167 / 90%);
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 }
 
 blockquote {

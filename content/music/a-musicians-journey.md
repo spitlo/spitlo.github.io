@@ -45,67 +45,68 @@ history_prompt="v2/{}_speaker_{}".format(lang, voice)
 
 # Each verse is a string in this list. Each line is separated with a newline character.
 text_prompts = [
-     "Baa, baa black sheep \nHave you any wool \nYes sir, yes sir \nThree bags full",
-     "One for my master \nAnd one for my dame \nAnd one for the little boy \nWho lives down the lane",
+  "Baa, baa black sheep \nHave you any wool \nYes sir, yes sir \nThree bags full",
+  "One for my master \nAnd one for my dame \nAnd one for the little boy \nWho lives down the lane",
 ]
 expressions = [
-     "[laughter]",
-     "[laughs]",
-     "[sighs]",
-     "[music]",
-     "[gasps]",
-     "[clears throat]",
+  "[laughter]",
+  "[laughs]",
+  "[sighs]",
+  "[music]",
+  "[gasps]",
+  "[clears throat]",
 ]
 
 verse_number = 0
 
 # Perhaps this should be optional?
 if len(sys.argv) < 3:
-     print("Please supply language and voice arguments. Folder name is optional.")
-     quit()
+  print("Please supply language and voice arguments. Folder name is optional.")
+  quit()
 else:
-     lang = sys.argv[1]
-     voice = sys.argv[2]
+  lang = sys.argv[1]
+  voice = sys.argv[2]
+
 # Base folder is optional
 if len(sys.argv) == 4:
-     base_folder = sys.argv[3]
+  base_folder = sys.argv[3]
 
 if not os.path.exists(base_folder):
-     os.makedirs(base_folder)
+  os.makedirs(base_folder)
 
 print("Hang on, preloading models...")
 preload_models()
 
 for verse in text_prompts:
-     verse_number += 1
-     line_number = 0
+  verse_number += 1
+  line_number = 0
 
-     for line in verse.splitlines():
-          line_number += 1
+for line in verse.splitlines():
+  line_number += 1
 
-          # Add a little extra expression sometimes
-          expression = ""
-          if random.random() > 0.8:
-               expression = random.choice(expressions)
+  # Add a little extra expression sometimes
+  expression = ""
+  if random.random() > 0.8:
+    expression = random.choice(expressions)
 
-          # Generate the audio
-          audio_array = generate_audio("{} ♪ {} ♪".format(expression, line))
+  # Generate the audio
+  audio_array = generate_audio("{} ♪ {} ♪".format(expression, line))
 
-          # Set folder name and create it if it doesn’t exist
-          folder_name = "verse{}_line{}".format(verse_number, line_number)
-          full_path = "{}/{}".format(base_folder, folder_name)
-          if not os.path.exists(full_path):
-               os.makedirs(full_path)
+  # Set folder name and create it if it doesn’t exist
+  folder_name = "verse{}_line{}".format(verse_number, line_number)
+  full_path = "{}/{}".format(base_folder, folder_name)
+  if not os.path.exists(full_path):
+    os.makedirs(full_path)
 
-          # Save to disk
-          filename = "{}/voice-{}{}_verse-{}_line-{}.wav".format(
-               full_path,
-               lang,
-               voice,
-               verse_number,
-               line_number
-          )
-          write_wav(filename, SAMPLE_RATE, audio_array)
+  # Save to disk
+  filename = "{}/voice-{}{}_verse-{}_line-{}.wav".format(
+    full_path,
+    lang,
+    voice,
+    verse_number,
+    line_number
+  )
+  write_wav(filename, SAMPLE_RATE, audio_array)
 
 ```
 
