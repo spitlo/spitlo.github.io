@@ -51,12 +51,11 @@ if(word[1]===TERM_WEIGHT){teaser.push('</strong>')}}
 teaser.push('…')
 return teaser.join('')}
 function getResultSection(result){const url=result?result.ref:''
-if(url.match(/\/code\//)){return'code'}else if(url.match(/\/music\//)){return'music'}else if(url.match(/\/tags\//)){return'tags'}}
+if(url.match(/\/code\//)){return'code'}else if(url.match(/\/music\//)){return'music'}else if(url.match(/\/tags\//)){return'tags'}else{return'root'}}
 function formatSearchResultItem(item,terms){return`<div class="${getResultSection(item)}"><a href="${item.ref}"><div class="title">${item.doc.title}</div><div class="teaser">${makeTeaser(item.doc.body || item.doc.description, terms)}</div><div class="help">ENTER</div></a></div>`}
 function initSearch(){const $searchInput=document.getElementById('search')
 const $searchResults=document.getElementById('searchResults')
 const $searchResultsItems=document.getElementById('searchResultsItems')
-const MAX_ITEMS=8
 if(!$searchInput){return}
 const options={bool:'OR',fields:{title:{boost:2},body:{boost:1},},expand:true,}
 let currentTerm=''
@@ -80,6 +79,7 @@ if(results.length===0){$searchResults.style.display='none'
 currentTerm=''
 return}
 currentTerm=term
+const MAX_ITEMS=window.innerHeight>600?8:4
 for(let i=0;i<Math.min(results.length,MAX_ITEMS);i++){const item=document.createElement('li')
 item.innerHTML=formatSearchResultItem(results[i],term.split(' '))
 $searchResultsItems.appendChild(item)}},150))
