@@ -18,9 +18,9 @@ function debounce(func, wait) {
 // Taken from mdbook
 // The strategy is as follows:
 // First, assign a value to each word in the document:
-//  Words that correspond to search terms (stemmer aware): 40
-//  Normal words: 2
-//  First word in a sentence: 8
+//   Words that correspond to search terms (stemmer aware): 40
+//   Normal words: 2
+//   First word in a sentence: 8
 // Then use a sliding window with a constant number of words and count the
 // sum of the values of the words within the window. Then use the window that got the
 // maximum sum. If there are multiple maximas, then get the last one.
@@ -133,6 +133,8 @@ function getResultSection(result) {
     return 'music'
   } else if (url.match(/\/tags\//)) {
     return 'tags'
+  } else {
+    return 'root'
   }
 }
 
@@ -144,7 +146,6 @@ function initSearch() {
   const $searchInput = document.getElementById('search')
   const $searchResults = document.getElementById('searchResults')
   const $searchResultsItems = document.getElementById('searchResultsItems')
-  const MAX_ITEMS = 8
 
   // Exit early of search is not setup in markup
   if (!$searchInput) {
@@ -193,6 +194,7 @@ function initSearch() {
       return
     }
     currentTerm = term
+    const MAX_ITEMS = window.innerHeight > 600 ? 8 : 4
     for (let i = 0; i < Math.min(results.length, MAX_ITEMS); i++) {
       const item = document.createElement('li')
       item.innerHTML = formatSearchResultItem(results[i], term.split(' '))

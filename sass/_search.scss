@@ -44,18 +44,10 @@
 
       &:hover {
         background-color: var(--search-hovercolor);
-
-        .title {
-          color: $blueGray;
-        }
       }
 
       &.selected {
         background-color: var(--search-hovercolor);
-
-        .title {
-          color: $blueGray;
-        }
 
         .help {
           display: block;
@@ -73,33 +65,50 @@
       .help {
         display: none;
         border: 1px solid $honeydew;
+        border-radius: 3px;
         color: $honeydew;
         position: absolute;
-        bottom: 6px;
-        right: 6px;
+        bottom: 8px;
+        right: 7px;
         font-size: 10px;
-        padding: 1px 3px;
+        padding: 2px 4px 2px 5px;
+      }
+
+      .title::before {
+        margin-right: 8px;
       }
 
       .code {
         .title::before {
-          content: "■"; // □
-          margin-right: 4px;
-          // color: $honeydew;
+          content: "□";
         }
       }
       .music {
         .title::before {
-          content: "▲"; // △
-          margin-right: 4px;
-          // color: $honeydew;
+          content: "△";
         }
       }
-      .tags {
+      .tags, .root {
         .title::before {
-          content: "●"; // ○
-          margin-right: 4px;
-          // color: $honeydew;
+          content: "○";
+        }
+      }
+
+      &.selected, &:hover {
+        .code {
+          .title::before {
+            content: "■";
+          }
+        }
+        .music {
+          .title::before {
+            content: "▲";
+          }
+        }
+        .tags, .root{
+          .title::before {
+            content: "●";
+          }
         }
       }
     }
