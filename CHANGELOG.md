@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.9.1
+
+- Add changelog link in footer [`8742ac6f`](../../commit/8742ac6f5d5648430189e857f11cfc5f5f64809a)
+
 ## v2.9.0
 
 - Syntax highlighting improvements [`2e4d8ac5`](../../commit/2e4d8ac526dd5c3b93ff97b6c48153cfc8d32d99)
