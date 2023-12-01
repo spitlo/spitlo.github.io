@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.9.2
+
+- Nicer looking search results [`740d23e5`](../../commit/740d23e5d83491eaabd248bf82936cbdfaf37ef0)
+
 ## v2.9.1
 
 - Add changelog link in footer [`8742ac6f`](../../commit/8742ac6f5d5648430189e857f11cfc5f5f64809a)
