@@ -461,7 +461,8 @@ h1 {
   font-size: 4.2em;
   border-bottom: 7px solid var(--h1-underlinecolor);
   display: inline-block;
-  margin: .8em 0;
+  margin: .5em 0 1em;
+  padding-right: 8px;
 
   &::before {
     content: "#";
@@ -949,6 +950,7 @@ div.invidious {
 
   h1 {
     font-size: 2.4em;
+    padding-right: 4px;
   }
 
   pre {
