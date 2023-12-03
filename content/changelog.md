@@ -12,6 +12,9 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 
   - Syntax highlighting improvements
   - Added changelog link in footer
+  - Search window improvements
+  - Added changelog link in footer
+  - Increased menu contrast
 
 ## v2.8.x - v2.4.x _(2023-02-02)_
 
