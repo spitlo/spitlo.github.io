@@ -2,6 +2,13 @@
 
 This changelog is automatically generated.
 
+## v2.9.3
+
+- Update changelog [`e1dd60a3`](../../commit/e1dd60a3442572f7c886dea4d069f3d4b48da1a2)
+- Update some icons [`7b53a5ef`](../../commit/7b53a5efdcaf969f5b4535fdcf12be88844055b1)
+- More styling [`91f5548d`](../../commit/91f5548d9b4ec30adf92cdef05886c64747fcea5)
+- Search: Add background color to Enter button [`d5f9e939`](../../commit/d5f9e939647eff675699bf4daedf04a77199703b)
+
 ## v2.9.2
 
 - Nicer looking search results [`740d23e5`](../../commit/740d23e5d83491eaabd248bf82936cbdfaf37ef0)
