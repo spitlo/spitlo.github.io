@@ -1,0 +1,34 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      g {
+        display: none;
+      }
+      g:target {
+        display: inline;
+      }
+      /* This doesn’t work when used as a background image */
+      @media (prefers-contrast: more) {
+        .shape_y { fill: #e8a352; }
+        .shape_t { fill: #3c747a; }
+        .shape_b { fill: #000; }
+      }
+    </style>
+  </defs>
+
+  <g id="circles">
+    <ellipse class="shape_y" ry="124" rx="124" cy="126" cx="180" fill="#dba464" />
+    <ellipse class="shape_t" ry="60" rx="60" cy="168" cx="60" fill="#5b9ba2" />
+    <ellipse class="shape_b" ry="72" rx="72" cy="220" cx="280" fill="#0e070c" />
+  </g>
+  <g id="squares">
+    <rect class="shape_y" width="248" height="248" x="56" y="2" fill="#dba464" />
+    <rect class="shape_t" width="120" height="120" x="0" y="108" fill="#5b9ba2" />
+    <rect class="shape_b" width="144" height="144" x="208" y="148" fill="#0e070c" />
+  </g>
+  <g id="triangles">
+    <polygon class="shape_y" points="180,2 304,250 56,250" fill="#dba464" />
+    <polygon class="shape_t" points="60,108 120,228 0,228" fill="#5b9ba2" />
+    <polygon class="shape_b" points="290,148 352,292 218,292" fill="#0e070c" />
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      g {
+        display: none;
+      }
+      g:target {
+        display: inline;
+      }
+    </style>
+  </defs>
+
+  <g id="circles">
+    <ellipse ry="12" rx="12" cy="42" cx="60" fill="#fffcfc" />
+    <ellipse ry="32" rx="32" cy="46" cx="174" fill="#fffcfc" />
+    <ellipse ry="58" rx="58" cy="178" cx="58" fill="#fffcfc" />
+    <ellipse ry="90" rx="90" cy="158" cx="156" fill="#fffcfc" />
+  </g>
+  <g id="squares">
+    <rect width="64" height="64" x="142" y="16" fill="#fffcfc" />
+    <rect width="24" height="24" x="48" y="30" fill="#fffcfc" />
+    <rect width="116" height="116" x="0" y="112" fill="#fffcfc" />
+    <rect width="180" height="180" x="64" y="68" fill="#fffcfc" />
+  </g>
+  <g id="triangles">
+    <polygon points="174,16 206,80 142,80" fill="#fffcfc" />
+    <polygon points="60,30 72,54 48,54" fill="#fffcfc" />
+    <polygon points="58,112 116,228 0,228" fill="#fffcfc" />
+    <polygon points="154,68 244,248 64,248" fill="#fffcfc" />
+  </g>
+</svg>

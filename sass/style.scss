@@ -45,26 +45,26 @@ body {
   }
 
   &.circles {
-    background-image: url(images/background-circles.svg);
+    background-image: url(images/background.svg#circles);
 
     footer {
-      background-image: url(images/footer-background-circles.svg);
+      background-image: url(images/footer-background.svg#circles);
     }
   }
 
   &.squares {
-    background-image: url(images/background-squares.svg);
+    background-image: url(images/background.svg#squares);
 
     footer {
-      background-image: url(images/footer-background-squares.svg);
+      background-image: url(images/footer-background.svg#squares);
     }
   }
 
   &.triangles {
-    background-image: url(images/background-triangles.svg);
+    background-image: url(images/background.svg#triangles);
 
     footer {
-      background-image: url(images/footer-background-triangles.svg);
+      background-image: url(images/footer-background.svg#triangles);
     }
   }
 }
@@ -585,7 +585,7 @@ mark {
   border-bottom: 1px solid;
   border-bottom-color: var(--mark-bottom);
   color: var(--mark-color);
-  padding: 0 2px;
+  padding: 0 4px 0 6px;
 
 
   &.arrow {
