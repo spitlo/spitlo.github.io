@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.10.0
+
+- Move to using fragment identifiers for background images [`03191c00`](../../commit/03191c006e54283e2dd1e2c2bae4e389f529959c)
+
 ## v2.9.3
 
 - Update changelog [`e1dd60a3`](../../commit/e1dd60a3442572f7c886dea4d069f3d4b48da1a2)
