@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.10.1
+
+- Update changelog [`a5f1794d`](../../commit/a5f1794d5d0464c4d6b25e74f074f9e0f9aa4b17)
+- Add Derivata b-011 [`cf5ac9b7`](../../commit/cf5ac9b7dd7943c80f1a1c7b2ccb99a2d5895be8)
+
 ## v2.10.0
 
 - Move to using fragment identifiers for background images [`03191c00`](../../commit/03191c006e54283e2dd1e2c2bae4e389f529959c)
