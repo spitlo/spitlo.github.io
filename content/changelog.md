@@ -8,6 +8,11 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
+## v2.10.x _(2023-12-21)_
+
+  - Moved to using fragment identifiers for background images
+  - Added Derivata b-011
+
 ## v2.9.x _(2023-11-30)_
 
   - Syntax highlighting improvements
