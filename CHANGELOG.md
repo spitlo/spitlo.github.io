@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.1
+
+- Add note about not preloading [`b4d42908`](../../commit/b4d4290836d881966eb4465aa07150e84611c1a7)
+
 ## v2.11.0
 
 - Add Tiny Code Xmas article [`e8e85566`](../../commit/e8e85566a1547c7678ef97f82f83502f167b804e)
