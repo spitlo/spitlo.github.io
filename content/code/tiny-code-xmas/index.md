@@ -13,7 +13,9 @@ I did all of the challenges in [Lua](https://lua.org/) on the [TIC-80](https://t
 
 I haven’t figured out how to embed the carts yet, so until then, these are the code snippets and accompanying short GIFs of the action.
 
-Click the images to see an animated version. I’ve tried my best to decrease the weight of the GIFs but a few of them are some hundred kilobytes. Click them again to avoid epilepsy.
+Click the images to see an animated version. I’ve tried my best to decrease the weight of the GIFs but a few of them are some hundred kilobytes. I don’t do any preloading of the images so you’ll probably have to wait a bit before it starts playing. Just hang in there!
+
+Click the images again to avoid epilepsy.
 
 I’m a total noob so I only did the normal challenges and not the extra ones. But perhaps I’ll give them a go once I’m done with the normal ones, this was pretty fun!
 
