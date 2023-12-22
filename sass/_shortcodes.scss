@@ -1,0 +1,49 @@
+.gifplayer {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    margin-top: -14px;
+    margin-left: -14px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #0000;
+    animation: spinner .8s linear infinite;
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    &.idle {
+      .playbutton {
+        position: absolute;
+        font-family: "Victor Mono",monospace;
+        font-size: 10px;
+        letter-spacing: 1px;
+        bottom: 0;
+        right: 0;
+        text-transform: uppercase;
+        background: #000;
+        color: #fff;
+        padding: 1px 4px;
+        opacity: .8;
+      }
+    }
+    &.playing {
+      .playbutton {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

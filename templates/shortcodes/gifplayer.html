@@ -1,0 +1,7 @@
+{% import "macros.html" as macros %}
+
+<div class="gifplayer {% if class %}{{class}}{% endif %}">
+  <div class="container">
+    <a href="{{basename}}.gif" class="idle"><img src="{{basename}}.png" {% if width %}width="{{width}}" {% endif %}{% if height %}height="{{height}}"{% endif %} onclick="if(this.src.endsWith('.gif')){this.src='{{basename}}.png';this.parentElement.className='idle'}else{this.src='{{basename}}.gif';this.parentElement.className='playing'};return false"><div class="playbutton">Click to play</div></a>
+  </div>
+</div>
