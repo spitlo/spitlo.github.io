@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.3
+
+- Spelling [`82dce4da`](../../commit/82dce4dae1cab4340e886bf05c8f30de9e7439a3)
+
 ## v2.11.2
 
 - Add last challenge to Tiny Code Xmas article [`b6870947`](../../commit/b687094797866191aa385698eb32c04be2114d08)
