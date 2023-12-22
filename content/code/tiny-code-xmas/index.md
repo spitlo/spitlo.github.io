@@ -13,7 +13,7 @@ I did all of the challenges in [Lua](https://lua.org/) on the [TIC-80](https://t
 
 I haven’t figured out how to embed the carts yet, so until then, these are the code snippets and accompanying short GIFs of the action.
 
-Click the images to see an animated version. I’ve tried my best to decrease the weight of the GIFs but a few of them are some hundred kilobytes. I don’t do any preloading of the images so you’ll probably have to wait a bit before it starts playing. Just hang in there!
+Click the images to see an animated version. I’ve tried my best to decrease the weight of the GIFs but some of them are a few hundred kilobytes. I don’t do any preloading of the images so you’ll probably have to wait a bit before it starts playing. Just hang in there!
 
 Click the images again to avoid epilepsy.
 
@@ -255,7 +255,39 @@ print(string.sub(o,a,a),H/2-240+a*44-U,H+5+90+S(U/20+a/2)*15,H+5,1,6+H)end end e
 
 > Create a spinning 3D christmas tree!
 
-This challenge was just announced as of writing this. I hope to get to it during the christmas holidays.
+Mine is not really spinning, more like waddling. But I think it came out nice! At this point I have given up on the packer stuff, I hand crunched this and I’m happy. Thank yous go to everyone at L♥vebyte!!
+
+*832 characters*
+
+{{ gifplayer(basename="img/day-12" width="256" height="144") }}
+
+```lua
+S=math.sin
+K=math.cos
+A=4.5
+O='This has been a fun challenge. Thanks to everyone at Lovebyte for arranging this!'
+function rx(p,a)y=p.y*K(a)-p.z*S(a)z=p.y*S(a)+p.z*K(a)x=p.x
+return{x=x,y=y,z=z}end
+function rz(p,a)x=p.x*K(a)-p.y*S(a)y=p.x*S(a)+p.y*K(a)z=p.z
+return{x=x,y=y,z=z}end
+function TIC()cls()t=time()/400pts={}A=S(t)/9-1.5
+for z=1,100,10 do for x=1,360,10 do
+X=K(x)*z*.6Y=S(x)*z
+P=rx({x=X,y=Y,z=z},A)P=rz(P,A-4.8)table.insert(pts,P)end end
+for i=1,#pts do
+X=pts[i].x
+Y=pts[i].y
+if i>50 and i%21==0 then
+for j=0,1 do
+circ(120-j+X,28-j+Y,3-j,i+j+9)end
+else pix(120+X,28+Y,X/Y+22+S(t))end
+for k=3,5 do circ(120-k,28,7-k,k)end end
+for l=140,1,-1 do
+pix(l*70%320,l*12%t*80%l,math.random(11,14))end
+T=t*30%950
+for m=1,60,30 do for n=0,#O do
+print(string.sub(O,n,n),3+S(m)+240+n*8-T,m*3.4+10+S(T/24+m+n/2)*9,T/3+m,1,1)end end end
+```
 
 ## Misc
 
