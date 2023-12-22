@@ -126,7 +126,7 @@ print(string.sub(o,a,a),A*3+(s(A))+240+a*39-T,A*3+20+s(T/20+A+a/2)*15,A,1,3+A)en
 
 > Show us what you got by combining effects!
 
-Ok, so there’s some kind of plasma beam energy gun going on in the background, and a slightly modified version of the scroller from Day 6 in the forreground. I really like it!
+Ok, so there’s some kind of plasma beam energy gun going on in the background, and a slightly modified version of the scroller from Day 6 in the foreground. I really like it!
 
 *251 characters*
 
@@ -218,7 +218,7 @@ t=t+1 end end
 
 > Create a spinning 3D voxel cube!
 
-I went a little crazy on this one, half of the challenge here too was to get the size don using a packer, but I was already in hand crunchimng mode which led to the mess below. 1083 characters, so well over any limit, but I mean the scrolling text alone takes 127.
+I went a little crazy on this one, half of the challenge here too was to get the size down using a packer, but I was already in hand crunching mode which led to the mess below. 1083 characters, so well over any limit, but I mean the scrolling text alone takes 127.
 
 I think it looks really cool but I should probably stop reusing the sine scroller from Day 6 now.
 
@@ -255,7 +255,9 @@ print(string.sub(o,a,a),H/2-240+a*44-U,H+5+90+S(U/20+a/2)*15,H+5,1,6+H)end end e
 
 > Create a spinning 3D christmas tree!
 
-Mine is not really spinning, more like waddling. But I think it came out nice! At this point I have given up on the packer stuff, I hand crunched this and I’m happy. Thank yous go to everyone at L♥vebyte!!
+Mine is not really spinning, more like waddling. But I think it came out nice! It’s certainly an improvement over the christmas tree from Day 1! And the scroller gets to do one last cameo before we close this thing down.
+
+At this point I have given up on the packer stuff, I hand crunched this and I’m happy. Thank yous go to everyone at L♥vebyte!!
 
 *832 characters*
 
@@ -297,7 +299,7 @@ To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran th
 for i in {02..12}; do convert "day-""$i"".gif[0]" "day-$i.png"; done
 ```
 
-The I shrunk and optimized the GIFs using [`gifsicle`](https://www.lcdf.org/gifsicle/):
+Then I shrunk and optimized the GIFs using [`gifsicle`](https://www.lcdf.org/gifsicle/):
 
 ```bash
 gifsicle -b --resize 256x_ -O3 *.gif
