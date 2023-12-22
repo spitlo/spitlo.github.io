@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.2
+
+- Add last challenge to Tiny Code Xmas article [`b6870947`](../../commit/b687094797866191aa385698eb32c04be2114d08)
+
 ## v2.11.1
 
 - Add note about not preloading [`b4d42908`](../../commit/b4d4290836d881966eb4465aa07150e84611c1a7)
