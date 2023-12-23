@@ -333,6 +333,60 @@ J=i%240K=i/240L=J/D(x,y,J,K)+K/D(X,y*.9,J,K)pix(J,K,L<16 and L)end
 end
 ```
 
+## Day 3 Extra: Connect the Dots
+
+> Create a proximitor/connected dots effect!
+
+The first challenge was to make the coolest looking connected dots effect regardless of size, so I went for something cinematic.
+
+The idea is that a space fleet is hovering over an enemy planet, circling a target and awaiting instructions from Command. The "connect the dots" part is the intra-fleet communications about the target, symbolized by the target and the comms visualization having the same color. Maybe I overthunk this. But it turned out nice visually!
+
+The second challenge was to make the smallest possible implementation of it, and I’m pretty happy with <1000 chars. I could get rid of the palette preview box which I only put there while I worked on the palette, but I like that it looks a bit status screeny (dashboardesque?) and my original plan was to put more stuff like that on the screen. But it was time to move on.
+
+*956 characters*
+
+{{ gifplayer(basename="img/day-03-extra" width="512" height="288") }}
+
+```lua
+F={}W=320H=136
+O='TARGETS SELECTED... CROSS FLEET COMMUNICATIONS ESTABLISHED... AWAITING INSTRUCTIONS... DO WE HAVE GO? .... I REPEAT: DO WE HAVE GO?'P=pix
+R=math.random
+S=math.sin
+function D(x,y,X,Y)return((X-x)^2+(Y-y)^2)^.5 end
+for i=0,47 do
+table.insert(F,{x=R(W),y=R(H),z=R(3)})poke(51*W+i,H/(1+2^(3-i%3-i/9)))if i<4 then poke(51*W+i,35*i)end end
+table.sort(F,function(a,b)return a.z>b.z end)function TIC()cls()t=time()/W/9
+i=S(t)j=S(t/3)for x=0,W do for y=0,H do
+k=i*x-j*y
+l=j*x+i*y
+if (x+y)%2==0 then
+P(x,y,(k/3%l/5)//3-6)end
+k=0
+for j=-1,1 do
+k=k+P(x+j,y-j)+P(x-j,y+j)+j end
+P(x,y-1,k/8)end end
+for i=1,#F do
+X=F[i].x
+Y=F[i].y
+Z=F[i].z
+for j=1,#F do
+U=F[j].x
+V=F[j].y
+if D(X,Y,U,V)<16 then
+line(U,V,X,Y,1)end
+end
+tri(X,Y,X-32/Z,Y-32/Z,X+1/Z,Y-47/Z,9-Z*2)
+tri(X,Y,X-16/Z,Y-37/Z,X+2/Z,Y-47/Z,9-Z*2-1)
+F[i].x=(X+(i/H))%W
+F[i].y=(Y+(i/H))%W
+for c=0,15 do rect(c*5,0,5,5,c)end
+K=t%8
+for a=0,#O do
+print(string.sub(O,a,a),W+a*6-K*H,130,15,1,1)end
+end
+end
+```
+
 ## Misc
 
 To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran this command to extract a single PNG frame from every GIF:
