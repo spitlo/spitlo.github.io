@@ -291,6 +291,48 @@ for m=1,60,30 do for n=0,#O do
 print(string.sub(O,n,n),3+S(m)+240+n*8-T,m*3.4+10+S(T/24+m+n/2)*9,T/3+m,1,1)end end end
 ```
 
+## Day 1 Extra: Playing with Fire!
+
+> Explore the classic demoscene fire effect!
+
+I was on fire so I kept right on with the extras. What better way to illustrate that than with some flaring flames?
+
+*149 characters*
+
+{{ gifplayer(basename="img/day-01-extra" width="256" height="144") }}
+
+```lua
+P=pix
+cls()function TIC()for x=0,240 do
+P(x,135,time()%x)for y=0,135 do
+k=0
+for i=-1,1 do
+k=k+P(x+i,y-i)+P(x-i,y+i)+i end
+P(x,y-1,k/5.6)end
+end
+end
+```
+
+## Day 2 Extra: Enter the Metaverse
+
+> Actually, lets code some metaballs instead!
+
+I saved one character by using "to the power of" (`time()^.3`) instead of "divided by" (`time()/600`) when slowing down the loop, which has the pleasant side effect of running the loop slower and slower. Which oddly enough turns the playful, bouncy interaction between the metaballs into some kind of sexy, gooey will-they-won't-they dance after a while. Weird.
+
+*203 characters*
+
+{{ gifplayer(basename="img/day-02-extra" width="256" height="144") }}
+
+```lua
+y=60
+function D(x,y,X,Y)return((X-x)^2+(Y-y)^2)^.5
+end
+function TIC()t=time()^.3x=99+math.sin(t)*9X=99+math.cos(t)*69
+for i=0,4e4 do
+J=i%240K=i/240L=J/D(x,y,J,K)+K/D(X,y*.9,J,K)pix(J,K,L<16 and L)end
+end
+```
+
 ## Misc
 
 To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran this command to extract a single PNG frame from every GIF:
