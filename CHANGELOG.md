@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.5
+
+- TCC: Optimize extras images. Show images at double size [`afe4959b`](../../commit/afe4959b5e9ba5fb5dceef09e4099fae99885eb7)
+
 ## v2.11.4
 
 - TCC: Add two extras [`223970db`](../../commit/223970dba1abfe5a5513387651ba9742928c61d1)
