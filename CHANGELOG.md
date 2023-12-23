@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.4
+
+- TCC: Add two extras [`223970db`](../../commit/223970dba1abfe5a5513387651ba9742928c61d1)
+
 ## v2.11.3
 
 - Spelling [`82dce4da`](../../commit/82dce4dae1cab4340e886bf05c8f30de9e7439a3)
