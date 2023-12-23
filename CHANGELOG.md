@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.6
+
+- TCC: Add Day 3 Extra [`de4fb804`](../../commit/de4fb804cd35c237597dceacdcb5498e3feab322)
+
 ## v2.11.5
 
 - TCC: Optimize extras images. Show images at double size [`afe4959b`](../../commit/afe4959b5e9ba5fb5dceef09e4099fae99885eb7)
