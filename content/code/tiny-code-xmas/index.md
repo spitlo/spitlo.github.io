@@ -31,7 +31,7 @@ This is my christmas tree, complete with "snow" and "decorations". It’s not th
 
 *254 characters*
 
-{{ gifplayer(basename="img/day-02" width="256" height="144") }}
+{{ gifplayer(basename="img/day-02" width="512" height="288") }}
 
 ```lua
 H=136W=240
@@ -58,7 +58,7 @@ I don’t know. It swings.
 
 *107 characters*
 
-{{ gifplayer(basename="img/day-03" width="256" height="144") }}
+{{ gifplayer(basename="img/day-03" width="512" height="288") }}
 
 ```lua
 function TIC()t=time()/3600
@@ -74,8 +74,8 @@ I probably got this "wrong", it sort of zooms out indefinately and becomes very 
 
 *118 characters*
 
-{{ gifplayer(basename="img/day-04" width="256" height="144") }}
-{{ gifplayer(basename="img/day-04b" width="256" height="144") }}
+{{ gifplayer(basename="img/day-04" width="512" height="288") }}
+{{ gifplayer(basename="img/day-04b" width="512" height="288") }}
 
 ```lua
 S=math.sin
@@ -92,7 +92,7 @@ Ok, I must admit I really sucked at this tunnel business. It doesn’t look tunn
 
 *171 characters*
 
-{{ gifplayer(basename="img/day-05" width="256" height="144") }}
+{{ gifplayer(basename="img/day-05" width="512" height="288") }}
 
 ```lua
 function TIC()t=time()/90
@@ -109,7 +109,7 @@ A little reggae flavored background action and a sweet sine scroller.
 
 *255 characters*
 
-{{ gifplayer(basename="img/day-06" width="256" height="144") }}
+{{ gifplayer(basename="img/day-06" width="512" height="288") }}
 
 ```lua
 t=1
@@ -130,7 +130,7 @@ Ok, so there’s some kind of plasma beam energy gun going on in the background,
 
 *251 characters*
 
-{{ gifplayer(basename="img/day-07" width="256" height="144") }}
+{{ gifplayer(basename="img/day-07" width="512" height="288") }}
 
 ```lua
 m=math
@@ -150,7 +150,7 @@ The Surveillance Snakes are watching! The instructions had the background bars c
 
 *215 characters*
 
-{{ gifplayer(basename="img/day-08" width="256" height="144") }}
+{{ gifplayer(basename="img/day-08" width="512" height="288") }}
 
 ```lua
 t=0
@@ -172,7 +172,7 @@ A little shadebob christmas postcard. You can almost see Tinker Bell flying arou
 
 *255 characters*
 
-{{ gifplayer(basename="img/day-09" width="256" height="144") }}
+{{ gifplayer(basename="img/day-09" width="512" height="288") }}
 
 ```lua
 cls()t=0S=math.sin
@@ -193,7 +193,7 @@ Half the challenge was getting it down to 256 BYTES using a packer like [Paketti
 
 *455 characters*
 
-{{ gifplayer(basename="img/day-10" width="256" height="144") }}
+{{ gifplayer(basename="img/day-10" width="512" height="288") }}
 
 ```lua
 t=0M=math
@@ -224,7 +224,7 @@ I think it looks really cool but I should probably stop reusing the sine scrolle
 
 *1083 characters*
 
-{{ gifplayer(basename="img/day-11" width="256" height="144") }}
+{{ gifplayer(basename="img/day-11" width="512" height="288") }}
 
 ```lua
 S=math.sin
@@ -261,7 +261,7 @@ At this point I have given up on the packer stuff, I hand crunched this and I’
 
 *832 characters*
 
-{{ gifplayer(basename="img/day-12" width="256" height="144") }}
+{{ gifplayer(basename="img/day-12" width="512" height="288") }}
 
 ```lua
 S=math.sin
@@ -299,7 +299,7 @@ I was on fire so I kept right on with the extras. What better way to illustrate 
 
 *149 characters*
 
-{{ gifplayer(basename="img/day-01-extra" width="256" height="144") }}
+{{ gifplayer(basename="img/day-01-extra" width="512" height="288") }}
 
 ```lua
 P=pix
@@ -321,7 +321,7 @@ I saved one character by using "to the power of" (`time()^.3`) instead of "divid
 
 *203 characters*
 
-{{ gifplayer(basename="img/day-02-extra" width="256" height="144") }}
+{{ gifplayer(basename="img/day-02-extra" width="512" height="288") }}
 
 ```lua
 y=60
