@@ -387,6 +387,25 @@ end
 end
 ```
 
+## Day 4: Roto
+
+> Create a full screen rotation effect!
+
+I wanted to try using `poke` instead of `pix`. It’s one more character, but on the other hand it doesn’t use separate `x` and `y` coordinates so should be a win! Extra bonus is you get low rent raster if you use `poke` instead of `poke4`, so I went for this beautiful plaid roto pattern.
+
+*152 characters*
+
+{{ gifplayer(basename="img/day-04-extra" width="512" height="288") }}
+
+```lua
+W=240S=math.sin
+function TIC()t=time()/W/7K=S(t-11)L=S(t)for i=0,16319 do
+X=i%W-W/2+W*S(t)Y=i/W-9+L*9u=K*X-L*Y
+v=S(t)*X+K*Y
+poke(i,(u//4&v//4)|3)end
+end
+```
+
 ## Misc
 
 To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran this command to extract a single PNG frame from every GIF:
