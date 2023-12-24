@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.7
+
+- TCC: Add Day 4 Extra [`b6854881`](../../commit/b68548813740e32f9b8eda85977c59bec6b7c488)
+
 ## v2.11.6
 
 - TCC: Add Day 3 Extra [`de4fb804`](../../commit/de4fb804cd35c237597dceacdcb5498e3feab322)
