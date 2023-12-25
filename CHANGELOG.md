@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.11.8
+
+- TCC: Add Day 5 Extra [`70f00ba3`](../../commit/70f00ba3e18abb327056c83fd14912855691a9ed)
+- TCC: Move to colon-call syntax [`4db73b3f`](../../commit/4db73b3f656476d4cc8c11660e2a9116467116d6)
+
 ## v2.11.7
 
 - TCC: Add Day 4 Extra [`b6854881`](../../commit/b68548813740e32f9b8eda85977c59bec6b7c488)
