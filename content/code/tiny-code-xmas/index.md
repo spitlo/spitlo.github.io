@@ -434,6 +434,58 @@ elli(120-e*2+S(t)*2,70-e*2+S(t)*19,32-e*3,12-e*3,15-e)end
 end
 ```
 
+## Day 6 Extra: Raster bars
+
+> Combine rotation with a perspective effect!
+
+The challenge was to make the smallest possible implementation of raster bars, but I wasn’t really feeling them so I brought back the Surveillance Snakes. Well, one of them. I would have liked to do the eyes but I couldn’t figure out a good way without repeating a lot of code. You’ll have to imagine them.
+
+*146 characters*
+
+{{ gifplayer(basename="img/day-06-extra" width="512" height="288") }}
+
+```lua
+t=0S=math.sin
+function TIC()cls()for i=1,32 do
+P=50*S(t/2+i/4)for j=0,8 do
+circ(S(i/9+t/8)*S(i/7+t/2)*60+j+99+P,0+i*2+P,i-9,j+8)end
+end
+t=t+.1
+end
+```
+
+## Day 7 Extra: Snowflake
+
+> Get creative with a snowflake!
+
+This didn’t go so well, I will need to revisit it. The groundwork is done, but the reult is meh.
+
+*381 characters*
+
+{{ gifplayer(basename="img/day-07-extra" width="512" height="288") }}
+
+```lua
+cls()W=120H=68M=math
+S=M.sin
+P=M.pi
+R=M.random
+for j=0,47 do poke(16320+j,255/(1+2^(5-j%3-j/5)))end
+function TIC()for i=1,10 do
+Q=i*P/5x=S(Q-11)*H
+y=S(Q)*H
+for j=1,2 do
+X=W+x/j
+Y=H+y/j
+line(W,H,X,Y,R(9))DX=W/X
+DY=H/Y
+pix(X+S(i),Y-S(i-11),R(9))LL=R()X2=X+((W-x-X)*LL)Y2=Y + ((H-y - Y) * LL)
+for G=-4,4 do
+line(X2,Y2,X2-DX+G+LL-S(j+i),Y2-DY+S(G*i/LL)+LL+S(i/j), R(16))end
+end
+end
+end
+```
+
 ## Misc
 
 To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran this command to extract a single PNG frame from every GIF:
