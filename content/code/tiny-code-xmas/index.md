@@ -410,6 +410,30 @@ poke(i,(u//4&v//4)|3)end
 end
 ```
 
+## Day 5 Extra: Flyover
+
+> Combine rotation with a perspective effect!
+
+ A roto similar to Day 4 Extra (and my version of Day 3 Extra) but this time with perspective. The story (I guess) is that we’re driving around some kind of future underground parking garage loooking for a space and we’re trying to drive past this drone, but it anticipates all our moves and swerves to keep us from passing. What an asshole!
+
+*254 characters*
+
+{{ gifplayer(basename="img/day-05-extra" width="512" height="288") }}
+
+```lua
+W=240S=math.sin
+function TIC()t=time()/W/3
+for i=0,4e4 do
+x=i%W y=i/W
+Z=math.abs(y-68)+0.1
+u=(x-120)/Z
+v=99/Z
+pix(x,y,(u+S(S(t/5)*t/9-S(t)))//1&((v+t*3)//1)&3)end
+rect(0,62,W,14,0)for e=0,3 do
+elli(120-e*2+S(t)*2,70-e*2+S(t)*19,32-e*3,12-e*3,15-e)end
+end
+```
+
 ## Misc
 
 To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran this command to extract a single PNG frame from every GIF:
