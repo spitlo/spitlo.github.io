@@ -17,7 +17,11 @@ Click the images to see an animated version. I’ve tried my best to decrease th
 
 Click the images again to avoid epilepsy.
 
-I’m a total noob so I only did the normal challenges and not the extra ones. But perhaps I’ll give them a go once I’m done with the normal ones, this was pretty fun!
+~~I’m a total noob so I only did the normal challenges and not the extra ones. But perhaps I’ll give them a go once I’m done with the normal ones, this was pretty fun!~~
+
+EDIT: I had fun with this so I’ll keep going with the extras for a while.
+
+EDIT 2: TIL about the colon-call syntax, so I’ve updated the code for all snippets using `string.sub` to use it, knocking off a few characters more. I’ve left the old size in for posterity.
 
 ## Day 1: Making Shapes
 
@@ -107,7 +111,7 @@ c=(X//1)~(Y//1)|(t//1)pix(x+120,y+68,c&11)end end circ(120,68,24,0) end
 
 A little reggae flavored background action and a sweet sine scroller.
 
-*255 characters*
+*~~255 characters~~ 248 characters*
 
 {{ gifplayer(basename="img/day-06" width="512" height="288") }}
 
@@ -119,7 +123,7 @@ function TIC()T=t%999
 for x=0,239 do for y=0,135 do
 pix(x,y,(x/2+t-y*s(6*t/999))//2&6)end end
 for A=2,4 do for a=0,#o do
-print(string.sub(o,a,a),A*3+(s(A))+240+a*39-T,A*3+20+s(T/20+A+a/2)*15,A,1,3+A)end end t=t+1 end
+print(o:sub(a,a),A*3+(s(A))+240+a*39-T,A*3+20+s(T/20+A+a/2)*15,A,1,3+A)end end t=t+1 end
 ```
 
 ## Day 7: Mix and Match
@@ -128,7 +132,7 @@ print(string.sub(o,a,a),A*3+(s(A))+240+a*39-T,A*3+20+s(T/20+A+a/2)*15,A,1,3+A)en
 
 Ok, so there’s some kind of plasma beam energy gun going on in the background, and a slightly modified version of the scroller from Day 6 in the foreground. I really like it!
 
-*251 characters*
+*~~251 characters~~ 246 characters*
 
 {{ gifplayer(basename="img/day-07" width="512" height="288") }}
 
@@ -139,7 +143,7 @@ function TIC()T=t%580
 for x=-B,B do for y=-K,K do
 X=m.atan2(y,x)Y=B/x+y^x
 c=X+Y+t/2pix(x+B,y+K,c/3)end end for A=2,4 do for a=0,6 do
-print(string.sub('SPITLO',a,a),A+s(A)+240+a*48-T,A+K+s(T/9+A+a)*9,A,1,4+A)end end t=t+1 end
+print(('SPITLO'):sub(a,a),A+s(A)+240+a*48-T,A+K+s(T/9+A+a)*9,A,1,4+A)end end t=t+1 end
 ```
 
 ## Day 8: Round and Round
@@ -191,7 +195,7 @@ Of course I had to combine the two most glitchy-looking parts. The GIF doesn’t
 
 Half the challenge was getting it down to 256 BYTES using a packer like [Pakettic](https://github.com/vsariola/pakettic) and I haven’t tried that yet. Perhaps my hand crunching has made it harder for the packer to work effectively.
 
-*455 characters*
+*~~455 characters~~ 450 characters*
 
 {{ gifplayer(basename="img/day-10" width="512" height="288") }}
 
@@ -210,7 +214,7 @@ t=t+0.06
 else for x=-B,B do for y=-L,L do
 X=M.atan2(y,x)Y=B/x+y^x
 c=X+Y+T/2pix(x+B,y+L,c/3)end end for A=2,4 do for a=0,6 do
-print(string.sub('SPITLO',a,a),A+S(A)+240+a*48-T,A+L+S(T/9+A+a)*9,A,1,4+A)end end
+print(('SPITLO'):sub(a,a),A+S(A)+240+a*48-T,A+L+S(T/9+A+a)*9,A,1,4+A)end end
 t=t+1 end end
 ```
 
@@ -222,7 +226,7 @@ I went a little crazy on this one, half of the challenge here too was to get the
 
 I think it looks really cool but I should probably stop reusing the sine scroller from Day 6 now.
 
-*1083 characters*
+*~~1083 characters~~ 1078 characters*
 
 {{ gifplayer(basename="img/day-11" width="512" height="288") }}
 
@@ -248,7 +252,7 @@ for k=1,5 do
 line(0,100+S(L)*k*30,240,100+K(t)*k*30,K(t+k)*12)end
 U=t*60%5900
 for H=-1,1 do for a=0,#o do
-print(string.sub(o,a,a),H/2-240+a*44-U,H+5+90+S(U/20+a/2)*15,H+5,1,6+H)end end end
+print(o:sub(a,a),240-(H/2)+a*44-U,H+5+90+S(U/20+a/2)*15,H+5,1,6+H)end end end
 ```
 
 ## Day 12: Rockin’ around the Christmas Tree!
@@ -259,7 +263,7 @@ Mine is not really spinning, more like waddling. But I think it came out nice! I
 
 At this point I have given up on the packer stuff, I hand crunched this and I’m happy. Thank yous go to everyone at L♥vebyte!!
 
-*832 characters*
+*~~832 characters~~ 825 characters*
 
 {{ gifplayer(basename="img/day-12" width="512" height="288") }}
 
@@ -288,7 +292,7 @@ for l=140,1,-1 do
 pix(l*70%320,l*12%t*80%l,math.random(11,14))end
 T=t*30%950
 for m=1,60,30 do for n=0,#O do
-print(string.sub(O,n,n),3+S(m)+240+n*8-T,m*3.4+10+S(T/24+m+n/2)*9,T/3+m,1,1)end end end
+print(O:sub(n,n),3+S(m)+240+n*8-T,m*3.4+10+S(T/24+m+n/2)*9,T/3+m,1,1)end end end
 ```
 
 ## Day 1 Extra: Playing with Fire!
@@ -343,7 +347,7 @@ The idea is that a space fleet is hovering over an enemy planet, circling a targ
 
 The second challenge was to make the smallest possible implementation of it, and I’m pretty happy with <1000 chars. I could get rid of the palette preview box which I only put there while I worked on the palette, but I like that it looks a bit status screeny (dashboardesque?) and my original plan was to put more stuff like that on the screen. But it was time to move on.
 
-*956 characters*
+*~~956 characters~~ 949 characters*
 
 {{ gifplayer(basename="img/day-03-extra" width="512" height="288") }}
 
@@ -382,12 +386,12 @@ F[i].y=(Y+(i/H))%W
 for c=0,15 do rect(c*5,0,5,5,c)end
 K=t%8
 for a=0,#O do
-print(string.sub(O,a,a),W+a*6-K*H,130,15,1,1)end
+print(O:sub(a,a),W+a*6-K*H,130,15,1,1)end
 end
 end
 ```
 
-## Day 4: Roto
+## Day 4 Extra: Roto
 
 > Create a full screen rotation effect!
 
