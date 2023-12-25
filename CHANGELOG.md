@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.9
+
+- TCC: Add Day 6 snd 7 Extra [`d42cacc1`](../../commit/d42cacc193cb300db2e0e4d8dc2df0b93d7f09b0)
+
 ## v2.11.8
 
 - TCC: Add Day 5 Extra [`70f00ba3`](../../commit/70f00ba3e18abb327056c83fd14912855691a9ed)
