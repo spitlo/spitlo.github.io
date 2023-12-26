@@ -347,28 +347,27 @@ The idea is that a space fleet is hovering over an enemy planet, circling a targ
 
 The second challenge was to make the smallest possible implementation of it, and I’m pretty happy with <1000 chars. I could get rid of the palette preview box which I only put there while I worked on the palette, but I like that it looks a bit status screeny (dashboardesque?) and my original plan was to put more stuff like that on the screen. But it was time to move on.
 
-*~~956 characters~~ 949 characters*
+EDIT: Switched to using a ternary expression, save 15 characters.
+
+*~~956 characters~~ ~~949 characters~~ 930 characters*
 
 {{ gifplayer(basename="img/day-03-extra" width="512" height="288") }}
 
 ```lua
-F={}W=320H=136
-O='TARGETS SELECTED... CROSS FLEET COMMUNICATIONS ESTABLISHED... AWAITING INSTRUCTIONS... DO WE HAVE GO? .... I REPEAT: DO WE HAVE GO?'P=pix
+F={}W=320H=136O='TARGETS SELECTED... CROSS FLEET COMMUNICATIONS ESTABLISHED... AWAITING INSTRUCTIONS... DO WE HAVE GO? .... I REPEAT: DO WE HAVE GO?'P=pix
 R=math.random
 S=math.sin
 function D(x,y,X,Y)return((X-x)^2+(Y-y)^2)^.5 end
 for i=0,47 do
-table.insert(F,{x=R(W),y=R(H),z=R(3)})poke(51*W+i,H/(1+2^(3-i%3-i/9)))if i<4 then poke(51*W+i,35*i)end end
-table.sort(F,function(a,b)return a.z>b.z end)function TIC()cls()t=time()/W/9
-i=S(t)j=S(t/3)for x=0,W do for y=0,H do
-k=i*x-j*y
+table.insert(F,{x=R(W),y=R(H),z=R(3)})poke(51*W+i,i<4 and 35*i or 255/(1+2^(5-i%3-i/5)))end
+table.sort(F,function(a,b)return a.z>b.z end)function TIC()cls()t=time()/W/9i=S(t)j=S(t/3)for x=0,W do for y=0,H do
+K=0k=i*x-j*y
 l=j*x+i*y
 if (x+y)%2==0 then
 P(x,y,(k/3%l/5)//3-6)end
-k=0
 for j=-1,1 do
-k=k+P(x+j,y-j)+P(x-j,y+j)+j end
-P(x,y-1,k/8)end end
+K=K+P(x+j,y-j)+P(x-j,y+j)+j end
+P(x,y-1,K/8)end end
 for i=1,#F do
 X=F[i].x
 Y=F[i].y
@@ -379,12 +378,11 @@ V=F[j].y
 if D(X,Y,U,V)<16 then
 line(U,V,X,Y,1)end
 end
-tri(X,Y,X-32/Z,Y-32/Z,X+1/Z,Y-47/Z,9-Z*2)
+K=t%8tri(X,Y,X-32/Z,Y-32/Z,X+1/Z,Y-47/Z,9-Z*2)
 tri(X,Y,X-16/Z,Y-37/Z,X+2/Z,Y-47/Z,9-Z*2-1)
 F[i].x=(X+(i/H))%W
 F[i].y=(Y+(i/H))%W
 for c=0,15 do rect(c*5,0,5,5,c)end
-K=t%8
 for a=0,#O do
 print(O:sub(a,a),W+a*6-K*H,130,15,1,1)end
 end
