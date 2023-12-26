@@ -528,6 +528,25 @@ end
 circ(4,0,15,3)end
 ```
 
+
+## Day 10: Let it Grow!
+
+> Create your own custom grass!
+
+Ok, let’s add grass to the growing list of stuff I suck at visualizing. I guess I’m more of an "abstract" "artist". The moon is blue to save a character. Or perhaps because once in a blue moon grass actually sways like that.
+
+*136 characters*
+
+{{ gifplayer(basename="img/day-10-extra" width="512" height="288") }}
+
+```lua
+t=0S=math.sin
+function TIC()cls(8)t=t+.001
+circ(40,24,40,9)for g=1,240,2 do
+x=g*2X=x+6*S(S(t*g)/2)tri(X,99,x-3,136,x+3,136,5+g%3)end
+end
+```
+
 ## Misc
 
 To generate the GIFs, I used the F9 screen grab function in TIC-80. The I ran this command to extract a single PNG frame from every GIF:
