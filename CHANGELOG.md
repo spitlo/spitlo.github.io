@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.11.11
+
+- TCC: Optimize Day 12 [`4f75bae9`](../../commit/4f75bae999725d6b186c64152bfe2c24b007b505)
+- TCC: Add Day 10 Extra [`af61b0c3`](../../commit/af61b0c3619a1b673c53d0537e3239d056f71c4e)
+
 ## v2.11.10
 
 - TCC: Add Day 8 and 9 Extra [`1e98aacc`](../../commit/1e98aaccc909aab3e01e0fd3d1b6339eaa1b9448)
