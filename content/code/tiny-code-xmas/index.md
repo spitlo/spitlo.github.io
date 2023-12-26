@@ -263,7 +263,7 @@ Mine is not really spinning, more like waddling. But I think it came out nice! I
 
 At this point I have given up on the packer stuff, I hand crunched this and I’m happy. Thank yous go to everyone at L♥vebyte!!
 
-*~~832 characters~~ 825 characters*
+*~~832 characters~~ ~~825 characters~~ 812 characters*
 
 {{ gifplayer(basename="img/day-12" width="512" height="288") }}
 
@@ -276,13 +276,13 @@ function rx(p,a)y=p.y*K(a)-p.z*S(a)z=p.y*S(a)+p.z*K(a)x=p.x
 return{x=x,y=y,z=z}end
 function rz(p,a)x=p.x*K(a)-p.y*S(a)y=p.x*S(a)+p.y*K(a)z=p.z
 return{x=x,y=y,z=z}end
-function TIC()cls()t=time()/400pts={}A=S(t)/9-1.5
+function TIC()cls()t=time()/400Q={}A=S(t)/9-1.5
 for z=1,100,10 do for x=1,360,10 do
 X=K(x)*z*.6Y=S(x)*z
-P=rx({x=X,y=Y,z=z},A)P=rz(P,A-4.8)table.insert(pts,P)end end
-for i=1,#pts do
-X=pts[i].x
-Y=pts[i].y
+P=rx({x=X,y=Y,z=z},A)P=rz(P,A-4.8)table.insert(Q,P)end end
+for i=1,#Q do
+X=Q[i].x
+Y=Q[i].y
 if i>50 and i%21==0 then
 for j=0,1 do
 circ(120-j+X,28-j+Y,3-j,i+j+9)end
