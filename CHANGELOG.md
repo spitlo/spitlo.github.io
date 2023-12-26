@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.11.10
+
+- TCC: Add Day 8 and 9 Extra [`1e98aacc`](../../commit/1e98aaccc909aab3e01e0fd3d1b6339eaa1b9448)
+- TCC: Update Day 3 Extra [`195f136b`](../../commit/195f136bac7afad71b68d201f223015922a1c872)
+
 ## v2.11.9
 
 - TCC: Add Day 6 snd 7 Extra [`d42cacc1`](../../commit/d42cacc193cb300db2e0e4d8dc2df0b93d7f09b0)
