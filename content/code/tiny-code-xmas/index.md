@@ -347,7 +347,7 @@ The idea is that a space fleet is hovering over an enemy planet, circling a targ
 
 The second challenge was to make the smallest possible implementation of it, and I’m pretty happy with <1000 chars. I could get rid of the palette preview box which I only put there while I worked on the palette, but I like that it looks a bit status screeny (dashboardesque?) and my original plan was to put more stuff like that on the screen. But it was time to move on.
 
-EDIT: Switched to using a ternary expression, save 15 characters.
+EDIT: Switched to using a ternary expression, saved 15 characters.
 
 *~~956 characters~~ ~~949 characters~~ 930 characters*
 
@@ -482,6 +482,50 @@ line(X2,Y2,X2-DX+G+LL-S(j+i),Y2-DY+S(G*i/LL)+LL+S(i/j), R(16))end
 end
 end
 end
+```
+
+## Day 8: Bubble Universe
+
+> To code a demo from scratch, you must first invent the universe…
+
+I won’t even pretend to understand the mathematics involved here. This is just magic. Black magic. I wanted to make it blue and red to look more like a plasma globe. I don’t think I really succeeded, but I had fun trying.
+
+*211 characters*
+
+{{ gifplayer(basename="img/day-08-extra" width="512" height="288") }}
+
+```lua
+M=math
+x=0v=0t=0S=M.sin
+function TIC()cls()for i=0,47 do
+for j=0,99 do
+a,b=i+v,x+i*.1u=S(a)+S(b-11)v=S(a-11)+S(b)x=u+t
+z=M.atan(x+x)pix(9+99+u*36-z+9,99/z+v*36,1+i%57+j/3)end
+poke(16320+i,i%3*i+v)end
+t=t+.02
+end
+```
+
+## Day 9: 3D Dot Landscape
+
+> Create a 3D plasma landscape!
+
+I wanted to make this a little less colorful and more natural looking than the example in the challenge. I think it turned out pretty nice!
+
+*232 characters*
+
+{{ gifplayer(basename="img/day-09-extra" width="512" height="288") }}
+
+```lua
+t=0N=999S=math.sin
+function TIC()cls()t=t+.03
+for i=0,N*6 do
+poke4(i,4-i/240/7-i*.52%1)end
+for x=-120,120,3 do
+for z=0,N,8 do y=(S(S(t/2)+x/50)*3+S(z/50-t))*5
+pix(120+x/(z*2-N)*N,(y-42)/(z*2-N)*N,(y//4|4)/3)end
+end
+circ(4,0,15,3)end
 ```
 
 ## Misc
