@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.12
+
+- TCC: Bigger moon! [`0b3f44c7`](../../commit/0b3f44c7bc8f08e37e1f9dc25179de965e4a9878)
+
 ## v2.11.11
 
 - TCC: Optimize Day 12 [`4f75bae9`](../../commit/4f75bae999725d6b186c64152bfe2c24b007b505)
