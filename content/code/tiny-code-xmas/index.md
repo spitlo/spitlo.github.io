@@ -542,7 +542,7 @@ Ok, let’s add grass to the growing list of stuff I suck at visualizing. I gues
 ```lua
 t=0S=math.sin
 function TIC()cls(8)t=t+.001
-circ(40,24,40,9)for g=1,240,2 do
+circ(40,24,99,9)for g=1,240,2 do
 x=g*2X=x+6*S(S(t*g)/2)tri(X,99,x-3,136,x+3,136,5+g%3)end
 end
 ```
