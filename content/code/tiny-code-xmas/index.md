@@ -436,7 +436,7 @@ end
 
 > Combine rotation with a perspective effect!
 
-The challenge was to make the smallest possible implementation of raster bars, but I wasn’t really feeling them so I brought back the Surveillance Snakes. Well, one of them. I would have liked to do the eyes but I couldn’t figure out a good way without repeating a lot of code. You’ll have to imagine them.
+The challenge was to make the smallest possible implementation of raster bars, but I wasn’t really feeling them so I brought back the Surveillance Snakes. Well, one of them. I would have liked to do the eye but I couldn’t figure out a good way without repeating a lot of code. You’ll have to imagine them.
 
 *146 characters*
 
