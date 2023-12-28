@@ -528,7 +528,6 @@ end
 circ(4,0,15,3)end
 ```
 
-
 ## Day 10: Let it Grow!
 
 > Create your own custom grass!
@@ -544,6 +543,32 @@ t=0S=math.sin
 function TIC()cls(8)t=t+.001
 circ(40,24,99,9)for g=1,240,2 do
 x=g*2X=x+6*S(S(t*g)/2)tri(X,99,x-3,136,x+3,136,5+g%3)end
+end
+```
+
+## Day 11: Do or Donut
+
+> Create a spinning 3D voxel Torus!
+
+Wow, this one was hard! I had to learn and then quickly forget a bunch of math to do this donut. I could probably squeeze it down a few characters more, but since I’ve already forgotten the math involved I dont’t dare to muck around with it any more.
+
+*462 characters*
+
+{{ gifplayer(basename="img/day-11-extra" width="512" height="288") }}
+
+```lua
+P=math.pi*2S=math.sin
+K=math.cos
+function TIC()cls()t=time()/999Q={}U=S(t/3)/.1V=K(t/3+.4)/U
+for t=0,P,.2 do for p=0,P,.5 do
+cx=90+(30*K(p))cy=30*S(p)X=cx*K(t)*K(V)+cx*S(t)*S(U)*S(V)+cy*S(V)*K(U)Y=-cx*S(V)*K(t)+cx*S(t)*S(U)*K(V)+cy*K(U)*K(V)Z=cx*S(t)*K(U)-cy*S(U)table.insert(Q,{x=X,y=Y,z=Z})end end
+table.sort(Q,function(a,b)return a.z>b.z end)
+for i=1,#Q do
+X=Q[i].x
+Y=Q[i].y
+for j=0,1 do
+circ(120-j+X,68-j+Y,(-Q[i].z/67)+5-j,S(X/9)+S(Y/9)+S(t)+3+j)end
+end
 end
 ```
 
