@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.14
+
+- TCC: Add Day 11 Extra [`4f36e8e1`](../../commit/4f36e8e13a94aab2b675cb54d4c1aab5eec1a75f)
+
 ## v2.11.13
 
 - TCC: Bigger moon 2 [`ebcef7bb`](../../commit/ebcef7bb09ad8f78ecec95ef1c19c9e067c93da5)
