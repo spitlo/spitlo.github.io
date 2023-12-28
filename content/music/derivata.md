@@ -40,6 +40,7 @@ On January 4th, 2023, the B Strain was inititated by Spitlo.
 | b-009.mp3  | 2023-10-13 09:24 | L.F.     |    02:59 | [mp3](https://files.mefirst.se/derivata/snippets/b-009.mp3) (721 KB) |
 | b-010.mp3  | 2023-11-18 18:44 | spitlo   |    03:03 | [mp3](https://files.mefirst.se/derivata/snippets/b-010.mp3) (722 KB) |
 | b-011.mp3  | 2023-12-18 21:52 | L.F.     |    03:33 | [mp3](https://files.mefirst.se/derivata/snippets/b-011.mp3) (721 KB) |
+| b-012.mp3  | 2023-12-28 21:32 | spitlo   |    03:16 | [mp3](https://files.mefirst.se/derivata/snippets/b-012.mp3) (722 KB) |
 
 ### A Strain, 2022
 
