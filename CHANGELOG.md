@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.15
+
+- Add Derivata b-012 [`21c63350`](../../commit/21c63350dc9cdb785602915553b2093e91d83698)
+
 ## v2.11.14
 
 - TCC: Add Day 11 Extra [`4f36e8e1`](../../commit/4f36e8e13a94aab2b675cb54d4c1aab5eec1a75f)
