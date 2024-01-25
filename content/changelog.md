@@ -11,9 +11,10 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.10.x - v2.11.x _(2023-12-21)_
 
   - Moved to using fragment identifiers for background images
-  - Added Derivata b-011
+  - Added Derivata b-011 and b-012
   - Added `gifplayer` shortcode to show a lightweight PNG until user clicks a GIF
   - Added [Tiny Code Xmas](/code/tiny-code-xmas/) article
+  - Added Derivata c-000
 
 ## v2.9.x _(2023-11-30)_
 
