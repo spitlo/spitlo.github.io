@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.17
+
+- Add Derivata c-001 [`2ba66d52`](../../commit/2ba66d521c002dd41a23f9340eaf6619f486646c)
+
 ## v2.11.16
 
 - Add Derivata c-000 [`00278f85`](../../commit/00278f859714bce84d391d99709d98ee97173755)
