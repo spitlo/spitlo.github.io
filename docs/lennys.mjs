@@ -1,6 +1,7 @@
 // minified with jsmin
 
 const actionFigureSentences=[`"This 'Gorgobot' figure from 1972 is pretty neat. It came with telescopic arms and an inflatable chest!"`,`"I have this Kaboozle Toys’ 'Discombobulon' figure from the desert death match scenes that was never released."`,`"Yeah, the 'Konglomatron 2000' is pretty priceless. But then again, I’d never sell it so who cares, right?"`,`"All of these babies are pretty much priceless, but my personal favorite is this 'Rash Man' figure, it’s a beaut!"`,`"Yeah," he starts, then looses the thread and trails off into an adjacent room. Moments later he’s back.`,`"If I had to pick one, I’d say this 'The French Tickler' figure is, ahem, 'le pièce de résistance' of my collection, as it were."`,`"I’d say this 'Hoo-Boy' figure is pretty priceless. The box is mint, the detachable cape is intact and it has the original blue trunks. Plus, he’s a talker!"`,`"I have this full set of 'She-Horse' figures, the four original mane colors from 1969 and the chestnut one released in 1970."`,`"I’ve got all the 'Octopi Eight' figures from back when they were still called that. Used to have the 'Octopuses Eight' figures as well but I got tired of hypercorrectors and just sold them."`,`"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,]
+const scratchables=['posterior','stubble','nose','eczema','bald spot',]
 const help=()=>{const instructions=`The following commands are available:
     LOOK:   'look at key'
     TAKE:   'take book'
@@ -106,11 +107,13 @@ delete lenny.onTalk},topics:[{option:'Compliment Lenny’s display **cabinet**',
               ? '"Awesome collection! Any other favorites?"'
               : '"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue, "Any priceless ones?"'
             }
-"Well..." Lenny scratches his stubble. ${
+"Well..." Lenny scratches his ${
+  pickOne(scratchables)
+}. ${
   pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He looks over his shoulder and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
 }`,},...window.games.map((game)=>{const shortName=getShortName(game.title)
 return{option:`Ask Lenny about ${game.title} (**${shortName}**)`,keyword:shortName,removeOnRead:false,line:`"Hey, Lenny," you smile. "I’m looking for a title, '${game.title}'. Do you know it?"
-Lenny sighs, than begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He lets his reading glasses slide from his forehead down the length of his nose. Then, keeping the box at arms length, he reads from the back:
+Lenny sighs, then begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He lets his reading glasses slide from his forehead down the length of his nose. Then, keeping the box at arms length, he reads from the back:
 "${(game.description || '').toUpperCase()}"
 
 "This game belongs in the ${game.extra.room === 'text-games' ? 'Ascii Arena' : 'Pixel Paradise'}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,}}),]},],})

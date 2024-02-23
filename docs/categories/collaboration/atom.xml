@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - Collaboration</title>
-    <link href="https://spitlo.com/categories/collaboration/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/categories/collaboration/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-11-11T00:00:00+00:00</updated>
     <id>https://spitlo.com/categories/collaboration/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Old rap</title>
         <published>2022-11-11T00:00:00+00:00</published>
         <updated>2022-11-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/music/old-rap/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/music/old-rap/"/>
         <id>https://spitlo.com/music/old-rap/</id>
         
-        <content type="html">&lt;p&gt;I found some old songs of mine that somebody had uploaded to the tube. They’re probably downloaded from the old spitlo.com, which had a spoof MySPace page with a few songs on it. There are some weird skips in the first song, but until I work up the energy to find better versions and upload them here (and perhaps recreate the old MySpace spoof?) I thought it’d be fun to repost them.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/music/old-rap/">&lt;p&gt;I found some old songs of mine that somebody had uploaded to the tube. They’re probably downloaded from the old spitlo.com, which had a spoof MySPace page with a few songs on it. There are some weird skips in the first song, but until I work up the energy to find better versions and upload them here (and perhaps recreate the old MySpace spoof?) I thought it’d be fun to repost them.&lt;&#x2F;p&gt;
 &lt;p&gt;The embeds are hosted on the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yewtu.be&#x2F;&quot;&gt;YewTube&lt;&#x2F;a&gt; Invidious instance so they should be safe from a cookie&#x2F;tracking perspective.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-longest-time&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-longest-time&quot; aria-label=&quot;Anchor link for: the-longest-time&quot;&gt;#&lt;&#x2F;a&gt;
 The Longest Time&lt;&#x2F;h2&gt;
@@ -57,13 +63,19 @@ Bottles Revisited feat. Jaquee&lt;&#x2F;h2&gt;
         <title>Derivata</title>
         <published>2022-03-05T00:00:00+00:00</published>
         <updated>2022-03-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/music/derivata/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/music/derivata/"/>
         <id>https://spitlo.com/music/derivata/</id>
         
-        <content type="html">&lt;p&gt;Derivata is a collaboration in the same vein as &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, but between Lolita Fatjo and me.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/music/derivata/">&lt;p&gt;Derivata is a collaboration in the same vein as &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, but between Lolita Fatjo and me.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;
 Rules&lt;&#x2F;h2&gt;
 &lt;p&gt;The rules for Derivata are the same as those for &lt;a href=&quot;&#x2F;music&#x2F;stromata&#x2F;&quot;&gt;Stromata&lt;&#x2F;a&gt;, basically no rules except that the next iteration within a strain must build upon the previous in some way.&lt;&#x2F;p&gt;
@@ -126,13 +138,19 @@ A Strain, 2022&lt;&#x2F;h3&gt;
         <title>Stromata</title>
         <published>2021-03-26T00:00:00+00:00</published>
         <updated>2021-03-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/music/stromata/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/music/stromata/"/>
         <id>https://spitlo.com/music/stromata/</id>
         
-        <content type="html">&lt;p&gt;Stromata is a collaboration born out of boredom. It’s a form of musical tennis where me and &lt;em&gt;kryptho&lt;&#x2F;em&gt; sends a piece of music back and forth.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/music/stromata/">&lt;p&gt;Stromata is a collaboration born out of boredom. It’s a form of musical tennis where me and &lt;em&gt;kryptho&lt;&#x2F;em&gt; sends a piece of music back and forth.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;rules&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rules&quot; aria-label=&quot;Anchor link for: rules&quot;&gt;#&lt;&#x2F;a&gt;
 Rules&lt;&#x2F;h2&gt;
 &lt;p&gt;Each iteration is a modified version of the previous version. The rules are pretty lax, basically:&lt;&#x2F;p&gt;

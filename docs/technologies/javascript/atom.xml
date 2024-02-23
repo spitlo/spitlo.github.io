@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - JavaScript</title>
-    <link href="https://spitlo.com/technologies/javascript/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/technologies/javascript/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-01-28T00:00:00+00:00</updated>
     <id>https://spitlo.com/technologies/javascript/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Space</title>
         <published>2023-01-28T00:00:00+00:00</published>
         <updated>2023-01-28T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/space/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/space/"/>
         <id>https://spitlo.com/code/space/</id>
         
-        <content type="html">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/space/">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;The “music” is generated with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tonejs&#x2F;Tone.js&quot;&gt;Tone.js&lt;&#x2F;a&gt; from samples created with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;harmonai&#x2F;dance-diffusion&quot;&gt;Dance Diffusion&lt;&#x2F;a&gt; using the &lt;code&gt;glitch-440k&lt;&#x2F;code&gt; model and then split on transients. Channel 10 has a special role (no, it’s not a drum track, sorry MIDI heads) – everytime a note is struck on it, it either plays the sample for that track, or a short sine note. The sine note is picked randomly on each play, from an array of notes (usually a scale) picked randomly on each load. The octave is also set randomly for each note, ranging from 2 to 7. Finally, the duration is set randomly from an eighth note to a sixty-fourth note, with shorter notes being a bit more likely.&lt;&#x2F;p&gt;
 &lt;p&gt;It loads a new background image on each reload, and randomizes the sequence to be played. By default, “auto-evolve” is enabled, which means that as the sequence plays, it alters itself randomly so it plays a continuously changing “song”. If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots.&lt;&#x2F;p&gt;
 &lt;p&gt;The spinning logo thing is done with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;metafizzy&#x2F;zdog&quot;&gt;Zdog&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jaames&#x2F;zfont&quot;&gt;Zfont&lt;&#x2F;a&gt;. Colors are extracted from the current background image using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Vibrant-Colors&#x2F;node-vibrant&quot;&gt;node-vibrant&lt;&#x2F;a&gt;. Random song and band names are based on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tirdadc&#x2F;synthwave&quot;&gt;Synthgen 2000&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -32,13 +38,19 @@
         <title>Rotnot</title>
         <published>2020-12-06T00:00:00+00:00</published>
         <updated>2020-12-06T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/rotnot/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/rotnot/"/>
         <id>https://spitlo.com/code/rotnot/</id>
         
-        <content type="html">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/rotnot/">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
 &lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
@@ -62,13 +74,19 @@ Rationale&lt;&#x2F;h2&gt;
         <title>Revercss</title>
         <published>2020-12-05T00:00:00+00:00</published>
         <updated>2020-12-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/revercss/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/revercss/"/>
         <id>https://spitlo.com/code/revercss/</id>
         
-        <content type="html">&lt;p&gt;Revercss, sometimes stylized as ƨƨↄ, was made as a joke many years ago, and “marketed” as&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/revercss/">&lt;p&gt;Revercss, sometimes stylized as ƨƨↄ, was made as a joke many years ago, and “marketed” as&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;a declaration-first paradigm for lean, consistent CSS and increased project maintainibility&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -79,43 +97,43 @@ Rationale&lt;&#x2F;h2&gt;
 Syntax&lt;&#x2F;h2&gt;
 &lt;p&gt;In Revercss, style declarations are first-class citizens. Selectors belong to one or many declarations:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;css&quot; class=&quot;language-css z-code&quot;&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;color: red &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;h&lt;&#x2F;span&gt;1
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;color: rgba(100&lt;span class=&quot;z-punctuation z-separator z-sequence z-css&quot;&gt;,&lt;&#x2F;span&gt; 0&lt;span class=&quot;z-punctuation z-separator z-sequence z-css&quot;&gt;,&lt;&#x2F;span&gt; 0&lt;span class=&quot;z-punctuation z-separator z-sequence z-css&quot;&gt;,&lt;&#x2F;span&gt; .5&lt;&#x2F;span&gt;) &lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  #&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;logo&lt;&#x2F;span&gt;,
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;border: 2px solid &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;button&lt;&#x2F;span&gt;,
-  #&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;logo&lt;&#x2F;span&gt;,
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;text-decoration&lt;&#x2F;span&gt;: none &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;min-width&lt;&#x2F;span&gt;: 200px &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;button&lt;&#x2F;span&gt;,
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;input&lt;&#x2F;span&gt;[&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;type&lt;&#x2F;span&gt;=&amp;quot;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;text&lt;&#x2F;span&gt;&amp;quot;]
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;padding: 8px &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;button&lt;&#x2F;span&gt;,
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;input&lt;&#x2F;span&gt;,
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;box-sizing&lt;&#x2F;span&gt;: &lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;border-box&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;html&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
-&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;box-sizing&lt;&#x2F;span&gt;: inherit &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
-  *, *&lt;span class=&quot;z-punctuation z-separator z-key-value z-css&quot;&gt;:&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-value z-css&quot;&gt;before, *:after
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
-
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;h&lt;&#x2F;span&gt;1
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;color: rgba(100&lt;span class=&quot;z-punctuation z-separator z-sequence z-css&quot;&gt;,&lt;&#x2F;span&gt; 0&lt;span class=&quot;z-punctuation z-separator z-sequence z-css&quot;&gt;,&lt;&#x2F;span&gt; 0&lt;span class=&quot;z-punctuation z-separator z-sequence z-css&quot;&gt;,&lt;&#x2F;span&gt; .5&lt;&#x2F;span&gt;) &lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  #&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;logo&lt;&#x2F;span&gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;border: 2px solid &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;button&lt;&#x2F;span&gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  #&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;logo&lt;&#x2F;span&gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;text-decoration&lt;&#x2F;span&gt;: none &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;min-width&lt;&#x2F;span&gt;: 200px &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;button&lt;&#x2F;span&gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;input&lt;&#x2F;span&gt;[&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;type&lt;&#x2F;span&gt;=&amp;quot;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;text&lt;&#x2F;span&gt;&amp;quot;]
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;padding: 8px &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;button&lt;&#x2F;span&gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;input&lt;&#x2F;span&gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;ul&lt;&#x2F;span&gt;.&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;menu&lt;&#x2F;span&gt;&amp;gt;&lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;li&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;a&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;box-sizing&lt;&#x2F;span&gt;: &lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;border-box&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  &lt;span class=&quot;z-meta z-property-name z-css&quot;&gt;html&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-selector z-css&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-css&quot;&gt;box-sizing&lt;&#x2F;span&gt;: inherit &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;  *, *&lt;span class=&quot;z-punctuation z-separator z-key-value z-css&quot;&gt;:&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-property-value z-css&quot;&gt;before, *:after
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-list z-css&quot;&gt;&lt;span class=&quot;z-meta z-property-value z-css&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-property-list z-css&quot;&gt;}&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-css&quot;&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;
 Usage&lt;&#x2F;h2&gt;
@@ -134,17 +152,17 @@ From stdin&lt;&#x2F;h3&gt;
 &lt;h2 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;
 Options&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -c, --compact
-          Output compact CSS
-  -m, --minified
-          Output minified CSS
-  -t, --tabs
-          Use tabs instead of spaces in output
-  -s, --spaces
-          Number of spaces&#x2F;tabs to indent (default: 2)
-  -o, --outfile &amp;lt;file&amp;gt;
-          Write to FILE rather than the console
-  -h, --help
-          Display help and usage details
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Output compact CSS
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -m, --minified
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Output minified CSS
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -t, --tabs
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Use tabs instead of spaces in output
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -s, --spaces
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Number of spaces&#x2F;tabs to indent (default: 2)
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -o, --outfile &amp;lt;file&amp;gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Write to FILE rather than the console
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -h, --help
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Display help and usage details
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
         
@@ -153,13 +171,19 @@ Options&lt;&#x2F;h2&gt;
         <title>Dotfiles</title>
         <published>2020-11-26T00:00:00+00:00</published>
         <updated>2020-11-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/dotfiles/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/dotfiles/"/>
         <id>https://spitlo.com/code/dotfiles/</id>
         
-        <content type="html">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/dotfiles/">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;
 &lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;&#x2F;a&gt;
@@ -221,13 +245,19 @@ Options&lt;&#x2F;h2&gt;
         <title>Spitlo.com</title>
         <published>2020-11-15T00:00:00+00:00</published>
         <updated>2020-11-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/spitlo-com/"/>
         <id>https://spitlo.com/code/spitlo-com/</id>
         
-        <content type="html">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/spitlo-com/">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
 &lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
 &lt;ul&gt;

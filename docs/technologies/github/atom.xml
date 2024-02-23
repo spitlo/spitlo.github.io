@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - GitHub</title>
-    <link href="https://spitlo.com/technologies/github/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/technologies/github/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2020-11-15T00:00:00+00:00</updated>
     <id>https://spitlo.com/technologies/github/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Spitlo.com</title>
         <published>2020-11-15T00:00:00+00:00</published>
         <updated>2020-11-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/spitlo-com/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/spitlo-com/"/>
         <id>https://spitlo.com/code/spitlo-com/</id>
         
-        <content type="html">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/spitlo-com/">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
 &lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
 &lt;ul&gt;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - Vite</title>
-    <link href="https://spitlo.com/technologies/vite/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/technologies/vite/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-01-28T00:00:00+00:00</updated>
     <id>https://spitlo.com/technologies/vite/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Space</title>
         <published>2023-01-28T00:00:00+00:00</published>
         <updated>2023-01-28T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/space/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/space/"/>
         <id>https://spitlo.com/code/space/</id>
         
-        <content type="html">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/space/">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;The “music” is generated with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tonejs&#x2F;Tone.js&quot;&gt;Tone.js&lt;&#x2F;a&gt; from samples created with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;harmonai&#x2F;dance-diffusion&quot;&gt;Dance Diffusion&lt;&#x2F;a&gt; using the &lt;code&gt;glitch-440k&lt;&#x2F;code&gt; model and then split on transients. Channel 10 has a special role (no, it’s not a drum track, sorry MIDI heads) – everytime a note is struck on it, it either plays the sample for that track, or a short sine note. The sine note is picked randomly on each play, from an array of notes (usually a scale) picked randomly on each load. The octave is also set randomly for each note, ranging from 2 to 7. Finally, the duration is set randomly from an eighth note to a sixty-fourth note, with shorter notes being a bit more likely.&lt;&#x2F;p&gt;
 &lt;p&gt;It loads a new background image on each reload, and randomizes the sequence to be played. By default, “auto-evolve” is enabled, which means that as the sequence plays, it alters itself randomly so it plays a continuously changing “song”. If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots.&lt;&#x2F;p&gt;
 &lt;p&gt;The spinning logo thing is done with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;metafizzy&#x2F;zdog&quot;&gt;Zdog&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jaames&#x2F;zfont&quot;&gt;Zfont&lt;&#x2F;a&gt;. Colors are extracted from the current background image using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Vibrant-Colors&#x2F;node-vibrant&quot;&gt;node-vibrant&lt;&#x2F;a&gt;. Random song and band names are based on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tirdadc&#x2F;synthwave&quot;&gt;Synthgen 2000&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - Loops</title>
-    <link href="https://spitlo.com/categories/loops/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/categories/loops/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-10-01T00:00:00+00:00</updated>
     <id>https://spitlo.com/categories/loops/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Looptober 2023</title>
         <published>2023-10-01T00:00:00+00:00</published>
         <updated>2023-10-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/music/looptober-2023/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/music/looptober-2023/"/>
         <id>https://spitlo.com/music/looptober-2023/</id>
         
-        <content type="html">&lt;p&gt;I decided to do looptober this year, too. And this year I’m using the Polyend Tracker. I wanted to try out all the new features of the 1.7 firmware, and experiment a bit with making instruments on it.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/music/looptober-2023/">&lt;p&gt;I decided to do looptober this year, too. And this year I’m using the Polyend Tracker. I wanted to try out all the new features of the 1.7 firmware, and experiment a bit with making instruments on it.&lt;&#x2F;p&gt;
 &lt;p&gt;I prepared by using the auto name feature to create 31 named but empty projects, thinking the name will set the direction for the loop.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;mark class=&quot;arrow&quot;&gt;NB&lt;&#x2F;mark&gt; These are made to be played in a loop, but if you only want a quick peek they are still playable using the &lt;code&gt;:play&lt;&#x2F;code&gt; command.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;mark class=&quot;arrow&quot;&gt;NB2&lt;&#x2F;mark&gt; Loops marked with X was not finished on time, but created and added later.&lt;&#x2F;p&gt;
@@ -7823,13 +7829,19 @@ Going out with a meh!&lt;&#x2F;p&gt;
         <title>Looptober 2022</title>
         <published>2022-10-01T00:00:00+00:00</published>
         <updated>2022-10-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/music/looptober-2022/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/music/looptober-2022/"/>
         <id>https://spitlo.com/music/looptober-2022/</id>
         
-        <content type="html">&lt;p&gt;Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any “rules” so I decided to interpret it literally. Thus, from the first of October to the last of October, I created one short loop every day as a way of getting to know the Elektron Syntakt. Below are the fruits of that sometimes frustrating labor, along with the original comments where available. But first a summary.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/music/looptober-2022/">&lt;p&gt;Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find any “rules” so I decided to interpret it literally. Thus, from the first of October to the last of October, I created one short loop every day as a way of getting to know the Elektron Syntakt. Below are the fruits of that sometimes frustrating labor, along with the original comments where available. But first a summary.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#conclusion&quot; aria-label=&quot;Anchor link for: conclusion&quot;&gt;#&lt;&#x2F;a&gt;
 Conclusion&lt;&#x2F;h2&gt;
 &lt;p&gt;The stats show I’m depressingly consistant. The average BPM, 84.1, is pretty close to the mean BPM, 85. The difference between the the lowest BPM and the average is 25, the difference between the highest BPM and the average is 26. Like a perfectly adequately calibrated but slightly underwhelming pendulum.&lt;&#x2F;p&gt;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - Shopify</title>
-    <link href="https://spitlo.com/technologies/shopify/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/technologies/shopify/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2020-11-25T00:00:00+00:00</updated>
     <id>https://spitlo.com/technologies/shopify/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Shopify Labels</title>
         <published>2020-11-25T00:00:00+00:00</published>
         <updated>2020-11-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/shopify-labels/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/shopify-labels/"/>
         <id>https://spitlo.com/code/shopify-labels/</id>
         
-        <content type="html">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/shopify-labels/">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
 &lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
 &lt;p&gt;No files are sent to the server, this is just a one page HTML&#x2F;JavaScript app.&lt;&#x2F;p&gt;
 &lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&quot;&gt;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;

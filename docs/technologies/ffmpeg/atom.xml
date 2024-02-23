@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Spitlo.com - FFmpeg</title>
-    <link href="https://spitlo.com/technologies/ffmpeg/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://spitlo.com"/>
+    <link rel="self" type="application/atom+xml" href="https://spitlo.com/technologies/ffmpeg/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://spitlo.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2021-03-26T00:00:00+00:00</updated>
     <id>https://spitlo.com/technologies/ffmpeg/atom.xml</id>
@@ -10,19 +10,25 @@
         <title>Snippetizer</title>
         <published>2021-03-26T00:00:00+00:00</published>
         <updated>2021-03-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://spitlo.com/code/snippetizer/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://spitlo.com/code/snippetizer/"/>
         <id>https://spitlo.com/code/snippetizer/</id>
         
-        <content type="html">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt; and &lt;a href=&quot;&#x2F;music&#x2F;derivata&quot;&gt;Derivata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/snippetizer/">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt; and &lt;a href=&quot;&#x2F;music&#x2F;derivata&quot;&gt;Derivata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
-                        Defaults to &amp;#39;middle&amp;#39;.
-  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
-                        Defaults to &amp;#39;30&amp;#39;.
-  [-o&#x2F;--ogg]            Use ogg as output format instead of mp3.
-  [-n&#x2F;--nofade]         Don’t fade in and out.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                        Defaults to &amp;#39;middle&amp;#39;.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                        Defaults to &amp;#39;30&amp;#39;.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [-o&#x2F;--ogg]            Use ogg as output format instead of mp3.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [-n&#x2F;--nofade]         Don’t fade in and out.
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;If no arguments are supplied, it creates a 30 second mp3 snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
