@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.18
+
+- Add an array of scratchables to Lenny’s [`7e0a71b8`](../../commit/7e0a71b82af0ebebb8644e7622ffa09f1b1ce768)
+
 ## v2.11.17
 
 - Add Derivata c-001 [`2ba66d52`](../../commit/2ba66d521c002dd41a23f9340eaf6619f486646c)
