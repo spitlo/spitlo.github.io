@@ -24,6 +24,7 @@ To output all Tera variables in code, add this:
 - [ ] Embed hidden audio links in pages that player can pick up on?
 - [ ] Improve favicon
 - [ ] Make an official 88x31 button
+- [ ] Add command for deciyear dates?
 - [ ] Games:
   - [x] Don’t show game title and description as part of game console
 - [x] (Sigh) Dark mode (Override in dotmatrix mode)

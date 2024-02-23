@@ -15,6 +15,14 @@ const actionFigureSentences = [
   `"This 'Kapten Jakarta' figure is pretty epic," he says and pulls the string dangling from under its sarong. "Geef Mij Maar Nasi Goreng!" the figure belts out proudly.`,
 ]
 
+const scratchables = [
+  'posterior',
+  'stubble',
+  'nose',
+  'eczema',
+  'bald spot',
+]
+
 // Overrides
 const help = () => {
   const instructions = `The following commands are available:
@@ -292,7 +300,9 @@ Lenny puts his feather duster in his belt fancily -- like a modern-day, domicili
               ? '"Awesome collection! Any other favorites?"'
               : '"Wow, Lenny. That’s some hero collection you’ve got there," you say. Lenny looks up, self-assured. You continue, "Any priceless ones?"'
             }
-"Well..." Lenny scratches his stubble. ${
+"Well..." Lenny scratches his ${
+  pickOne(scratchables)
+}. ${
   pickOneAndDiscard(actionFigureSentences, '"I mean, I could stand here all day talking about this," Lenny says. "But you know the rule." He looks over his shoulder and points at a big sign on the wall behind him. "NO FANBOYISM," it reads.')
 }`,
         },
@@ -303,7 +313,7 @@ Lenny puts his feather duster in his belt fancily -- like a modern-day, domicili
             keyword: shortName,
             removeOnRead: false,
             line: `"Hey, Lenny," you smile. "I’m looking for a title, '${game.title}'. Do you know it?"
-Lenny sighs, than begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He lets his reading glasses slide from his forehead down the length of his nose. Then, keeping the box at arms length, he reads from the back:
+Lenny sighs, then begrudingly limps away to the next room. When he returns, ha has a game box in his hand. He lets his reading glasses slide from his forehead down the length of his nose. Then, keeping the box at arms length, he reads from the back:
 "${(game.description || '').toUpperCase()}"
 
 "This game belongs in the ${game.extra.room === 'text-games' ? 'Ascii Arena' : 'Pixel Paradise'}, you can pick it up there," he says. He disappears again, and comes back empty-handed.`,
