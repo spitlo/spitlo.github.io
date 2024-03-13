@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.20
+
+- Fix whoopsies [`9a840057`](../../commit/9a840057944a2579ce58cda40eb904f61aa2472d)
+
 ## v2.11.19
 
 - Add Sikwent article. Update changelog [`1c25d002`](../../commit/1c25d002fde64db43cb7aa685eda300986c154f7)
