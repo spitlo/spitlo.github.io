@@ -15,7 +15,7 @@ first_commit_message = "It was a pleasure to burn"
 
 Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using [ImaginAIry](https://github.com/brycedrennan/imaginAIry/). It’s available online at [spitlo.com/space/](https://spitlo.com/space/).
 
-Space also has a sibiling of sorts, /'siːkwənt/, available online at [spitlo.com/sikwent/](https://spitlo.com/sikwent/).
+Space also has a sibiling of sorts, Sikwent, available online at [spitlo.com/sikwent/](https://spitlo.com/sikwent/).
 
 ## The look
 
