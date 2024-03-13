@@ -27,6 +27,8 @@ To output all Tera variables in code, add this:
 - [ ] Add command for deciyear dates?
 - [ ] Games:
   - [x] Don’t show game title and description as part of game console
+  - [ ] Try [Bitsy](https://make.bitsy.org/docs/category/introduction)
+  - [ ] Try [Yarnspin](https://github.com/mattiasgustavsson/yarnspin/blob/main/docs/yarnspin.md)
 - [x] (Sigh) Dark mode (Override in dotmatrix mode)
 - [x] Add `first_commit` date to code projects
 - [x] Add command for unlocking contact information in footer
