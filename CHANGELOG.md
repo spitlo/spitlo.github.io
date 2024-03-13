@@ -2,6 +2,16 @@
 
 This changelog is automatically generated.
 
+## v2.11.19
+
+- Add Sikwent article. Update changelog [`1c25d002`](../../commit/1c25d002fde64db43cb7aa685eda300986c154f7)
+- Update VictorMono [`66d57019`](../../commit/66d570199c9760e68199601f0f12409da1517509)
+- Change spelling of Sikwent [`c3e7d1b9`](../../commit/c3e7d1b95db379f02a43c65ab0f9e7842e613eb1)
+- Add icon for Solid. Update android icon [`c334320d`](../../commit/c334320d15bfeb8cdbfe8f218fff305fe96930f5)
+- Update Space article [`9efd24d2`](../../commit/9efd24d2b98386189ab630376a507e24da4d82bc)
+- Add Derivata c-002 [`358eba6d`](../../commit/358eba6dfcd7b2968cc4c44540d29dbaf73c32ac)
+- Don’t link-check vlang (uses sucky bot protection) [`5d4d92f1`](../../commit/5d4d92f176668cb05825fa13f07b435d3301dfef)
+
 ## v2.11.18
 
 - Add an array of scratchables to Lenny’s [`7e0a71b8`](../../commit/7e0a71b82af0ebebb8644e7622ffa09f1b1ce768)
