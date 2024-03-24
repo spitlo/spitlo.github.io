@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.21
+
+- Add article about PIKSEQ [`d034f7c3`](../../commit/d034f7c3a30f2f33c0c97a15c6dabc46b5b1ee3f)
+
 ## v2.11.20
 
 - Fix whoopsies [`9a840057`](../../commit/9a840057944a2579ce58cda40eb904f61aa2472d)
