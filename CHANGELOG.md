@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.22
+
+- Add Derivata c-003 [`e655cb3f`](../../commit/e655cb3fec5bf0da4e784dd8559b0f1d229cc491)
+
 ## v2.11.21
 
 - Add article about PIKSEQ [`d034f7c3`](../../commit/d034f7c3a30f2f33c0c97a15c6dabc46b5b1ee3f)
