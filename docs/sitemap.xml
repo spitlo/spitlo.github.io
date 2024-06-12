@@ -42,6 +42,10 @@
         <lastmod>2020-11-23</lastmod>
     </url>
     <url>
+        <loc>https://spitlo.com/code/ctgol/</loc>
+        <lastmod>2024-03-24</lastmod>
+    </url>
+    <url>
         <loc>https://spitlo.com/code/dotfiles/</loc>
         <lastmod>2020-11-26</lastmod>
     </url>
@@ -138,6 +142,9 @@
     <url>
         <loc>https://spitlo.com/music/stromata/</loc>
         <lastmod>2021-03-26</lastmod>
+    </url>
+    <url>
+        <loc>https://spitlo.com/snowflake/</loc>
     </url>
     <url>
         <loc>https://spitlo.com/tags/</loc>
