@@ -19,6 +19,8 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
   - Updated VictorMono font
   - Added icon for [Solid](https://www.solidjs.com/)
   - Added article about PIKSEQ
+  - Added article about Conway Twitty’s Game of Life
+  - Added [Snowflake page](/snowflake/)
 
 ## v2.9.x _(2023-11-30)_
 
