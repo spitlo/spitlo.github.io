@@ -25,4 +25,4 @@ To help you paint more efficiently, there are some keyboard modifiers. If you pr
 
 You can mute individual tracks by using keys `a` to `z` on your keyboard. Or by clicking/tapping the track note.
 
-There are also a few palettes for you to choose between.
+There are also a few different palettes to choose from.
