@@ -2,6 +2,12 @@
 
 This changelog is automatically generated.
 
+## v2.11.23
+
+- Update changelog [`9340557d`](../../commit/9340557d16b1df0151ab74c290eb26ad6d486eef)
+- Add Snowflake page [`05204aa2`](../../commit/05204aa29a1b4bd5f9f34c7c2fdb958b13f6e6fd)
+- Add Ctgol article [`284d054f`](../../commit/284d054f47a9728b1b256395d26fafddc5309c7f)
+
 ## v2.11.22
 
 - Add Derivata c-003 [`e655cb3f`](../../commit/e655cb3fec5bf0da4e784dd8559b0f1d229cc491)
