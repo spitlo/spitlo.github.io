@@ -1,5 +1,5 @@
 +++
-title = "Conway Twitty’s Game of Life"
+title = "CTGOL"
 description = "Game of Life + Conway Twitty = Sequencer"
 date = 2024-03-24
 
@@ -13,7 +13,7 @@ first_commit_time = 2024-06-09
 first_commit_message = "Hello, Darlin'"
 +++
 
-Conway Twitty’s Game of Live is an experiment in sequencing. It’s an evolving step sequencer that follows the rules of Conway’s Game of Life.
+Conway Twitty’s Game of Life is an experiment in sequencing. It’s an evolving step sequencer that follows the rules of Conway’s Game of Life, triggering short fragments of Conway Twitty songs.
 
 It’s available online at [spitlo.com/ctgol/](https://spitlo.com/ctgol/).
 
