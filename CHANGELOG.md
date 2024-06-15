@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.24
+
+- Update CTGOL article [`4ccbe606`](../../commit/4ccbe606c0f665c0e197befd2cc88ca176a1f94d)
+
 ## v2.11.23
 
 - Update changelog [`9340557d`](../../commit/9340557d16b1df0151ab74c290eb26ad6d486eef)
