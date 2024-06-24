@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.25
+
+- More futile AI resistance [`e239ba95`](../../commit/e239ba9567abe35847323b5a930dcfa932a294e9)
+
 ## v2.11.24
 
 - Update CTGOL article [`4ccbe606`](../../commit/4ccbe606c0f665c0e197befd2cc88ca176a1f94d)
