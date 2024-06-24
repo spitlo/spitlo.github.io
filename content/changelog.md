@@ -21,6 +21,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
   - Added article about PIKSEQ
   - Added article about Conway Twitty’s Game of Life
   - Added [Snowflake page](/snowflake/)
+  - Added noai, noimageai meta tag
 
 ## v2.9.x _(2023-11-30)_
 
