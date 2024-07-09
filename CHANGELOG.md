@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.11.26
+
+- Add Derivata c-004 [`28b8d7a0`](../../commit/28b8d7a0d0f5a5cd46e7e75ffb362dcacf2b6d22)
+
 ## v2.11.25
 
 - More futile AI resistance [`e239ba95`](../../commit/e239ba9567abe35847323b5a930dcfa932a294e9)
