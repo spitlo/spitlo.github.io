@@ -8,13 +8,17 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
+## v2.12.x _(2024-07-11)_
+
+  - Added a new background shape, pentagons, for tag pages
+
 ## v2.10.x - v2.11.x _(2023-12-21)_
 
   - Moved to using fragment identifiers for background images
   - Added Derivata b-011 and b-012
   - Added `gifplayer` shortcode to show a lightweight PNG until user clicks a GIF
   - Added [Tiny Code Xmas](/code/tiny-code-xmas/) article
-  - Added Derivata c-000 - c-003
+  - Added Derivata c-000 - c-004
   - Added article about Sikwent
   - Updated VictorMono font
   - Added icon for [Solid](https://www.solidjs.com/)

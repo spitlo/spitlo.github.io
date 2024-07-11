@@ -97,6 +97,7 @@
       current_path is starting_with("/technologies") or
       current_path is starting_with("/categories")
     %}
+      {% set body_class = "pentagons" %}
       {% set main_section = "tags" %}
     {% elif current_path == "/" %}
       {% set main_section = "home" %}

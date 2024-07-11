@@ -68,6 +68,14 @@ body {
       background-image: url(images/footer-background.svg#triangles);
     }
   }
+
+  &.pentagons {
+    background-image: url(images/background.svg#pentagons);
+
+    footer {
+      background-image: url(images/footer-background.svg#pentagons);
+    }
+  }
 }
 
 * {
