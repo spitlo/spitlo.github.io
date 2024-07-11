@@ -651,7 +651,6 @@ details.toc {
 
 table {
   border-collapse: collapse;
-  border-right: 1px solid var(--table-bgcolor-odd);
   max-width: 55rem;
   overflow-x: auto;
   width: 100%;
@@ -666,11 +665,10 @@ thead {
 
 tbody {
   color: var(--table-color);
-  background-color: var(--table-bgcolor-odd);
   font-family: $paragraphFont;
   white-space: nowrap;
 
-  tr:nth-child(odd) {
+  tr:nth-child(even) {
     background-color: var(--table-bgcolor-even);
   }
 }
@@ -679,16 +677,25 @@ th, td {
   padding: 0.4em;
 }
 
-td {
-  border-left: 1px solid var(--table-accentcolor);
-  border-bottom: 1px solid var(--table-accentcolor);
+th:nth-child(1) {
+  padding-left: 8px;
 }
 
 td:nth-child(1) {
   font-weight: bold;
   white-space: nowrap;
   background-color: var(--table-accentcolor);
+  box-shadow: 6px 0 8px #00002030;
+  padding-left: 8px;
 }
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+
 
 .alert {
   font-family: $paragraphFont;

@@ -11,6 +11,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.12.x _(2024-07-11)_
 
   - Added a new background shape, pentagons, for tag pages
+  - Changed table layout
 
 ## v2.10.x - v2.11.x _(2023-12-21)_
 
