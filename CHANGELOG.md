@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.12.0
+
+- Add a new background shape, pentagons, for tag pages [`0200c1cd`](../../commit/0200c1cd3c54e7bd9b2815834b2f447c56e1d813)
+
 ## v2.11.26
 
 - Add Derivata c-004 [`28b8d7a0`](../../commit/28b8d7a0d0f5a5cd46e7e75ffb362dcacf2b6d22)
