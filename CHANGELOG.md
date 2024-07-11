@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.12.1
+
+- Less corporate tables [`baa0de06`](../../commit/baa0de06aa5ddd99918ed7c08214390ccd73c451)
+
 ## v2.12.0
 
 - Add a new background shape, pentagons, for tag pages [`0200c1cd`](../../commit/0200c1cd3c54e7bd9b2815834b2f447c56e1d813)
