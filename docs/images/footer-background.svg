@@ -28,4 +28,11 @@
     <polygon points="58,112 116,228 0,228" fill="#fffcfc" />
     <polygon points="154,68 244,248 64,248" fill="#fffcfc" />
   </g>
+  <g id="pentagons">
+    <polygon points="48,42 56,31 70,35 70,49 56,53" fill="#fffcfc" />
+    <polygon points="142,46 164,16 200,27 200,65 164,76" fill="#fffcfc" />
+    <polygon points="0,178 40,123 105,144 105,212 40,233" fill="#fffcfc" />
+    <polygon points="66,158 128,72 229,105 229,211 128,244" fill="#fffcfc" />
+    <rect width="180" height="20" x="64" y="200" fill="#fffcfc" />
+  </g>
 </svg>

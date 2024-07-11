@@ -31,4 +31,9 @@
     <polygon class="shape_t" points="60,108 120,228 0,228" fill="#5b9ba2" />
     <polygon class="shape_b" points="290,148 352,292 218,292" fill="#0e070c" />
   </g>
+  <g id="pentagons">
+    <polygon class="shape_y" points="56,126 142,8 280,53 280,199 142,244" fill="#dba464" />
+    <polygon class="shape_t" points="0,168 41,111 109,133 109,203 41,225" fill="#5b9ba2" />
+    <polygon class="shape_b" points="208,220 258,152 338,178 338,262 258,288" fill="#0e070c" />
+  </g>
 </svg>
