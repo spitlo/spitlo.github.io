@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.12.2
+
+- Add Derivata c-005 [`d7cddf1c`](../../commit/d7cddf1c12da37c98fcec0f6f18c9f60587a0012)
+- Spelling and stuff [`3757ca7d`](../../commit/3757ca7db32cd898ae75c4d063f42c01352223ab)
+
 ## v2.12.1
 
 - Less corporate tables [`baa0de06`](../../commit/baa0de06aa5ddd99918ed7c08214390ccd73c451)
