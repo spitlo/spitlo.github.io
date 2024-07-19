@@ -12,6 +12,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 
   - Added a new background shape, pentagons, for tag pages
   - Changed table layout
+  - Added Derivata c-005
 
 ## v2.10.x - v2.11.x _(2023-12-21)_
 
