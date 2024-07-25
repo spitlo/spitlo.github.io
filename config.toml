@@ -8,7 +8,7 @@ taxonomies = [
 build_search_index = true
 compile_sass = true
 default_language = "en"
-generate_feed = true
+generate_feeds = true
 minify_html = true
 
 [link_checker]
@@ -36,3 +36,4 @@ smart_punctuation = true
 include_title = true
 include_description = true
 include_content = true
+include_date = true

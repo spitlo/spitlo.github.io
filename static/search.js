@@ -139,7 +139,7 @@ function getResultSection(result) {
 }
 
 function formatSearchResultItem(item, terms) {
-  return `<div class="${getResultSection(item)}"><a href="${item.ref}"><div class="title">${item.doc.title}</div><div class="teaser">${makeTeaser(item.doc.body || item.doc.description, terms)}</div><div class="help">ENTER</div></a></div>`
+  return `<div class="${getResultSection(item)}"><a href="${item.ref}"><div class="title">${item.doc.title} (<date>${item.doc.date.substring(0, 10)}</date>)</div><div class="teaser">${makeTeaser(item.doc.body || item.doc.description, terms)}</div><div class="help">ENTER</div></a></div>`
 }
 
 function initSearch() {

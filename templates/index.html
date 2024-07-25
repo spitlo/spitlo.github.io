@@ -64,7 +64,7 @@
       <meta name="description" content="{{ section.description }}">
     {% endif %}
 
-    {% if config.generate_feed %}
+    {% if config.generate_feeds %}
       <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ get_url(path="atom.xml", trailing_slash=false) | safe }}">
     {% endif %}
 
@@ -222,7 +222,7 @@
           <span class="link">
             {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer" class="scrambled email">{{ macros::scramble(text="__@spitlo.com") }}</a>
           </span>
-          {% if config.generate_feed %}
+          {% if config.generate_feeds %}
             <span class="link">
               {{ macros::icon(name="rss", size="small") }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">atom.xml</a>
             </span>
