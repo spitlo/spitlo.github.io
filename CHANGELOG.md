@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.12.3
+
+- Add user-agents from ai.robots.txt to robots.txt [`6b0e0abf`](../../commit/6b0e0abfa702709d46c18488391521f82795ea4e)
+
 ## v2.12.2
 
 - Add Derivata c-005 [`d7cddf1c`](../../commit/d7cddf1c12da37c98fcec0f6f18c9f60587a0012)
