@@ -14,7 +14,7 @@
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -50,7 +50,7 @@ Instructions&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -76,7 +76,7 @@ Instructions&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -100,7 +100,7 @@ Instructions&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -684,7 +684,7 @@ Misc&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -8503,7 +8503,7 @@ Going out with a meh!&lt;&#x2F;p&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -8654,7 +8654,7 @@ Changelog&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -8692,7 +8692,7 @@ The sound&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -8700,7 +8700,7 @@ The sound&lt;&#x2F;h2&gt;
         <link rel="alternate" type="text/html" href="https://spitlo.com/music/old-rap/"/>
         <id>https://spitlo.com/music/old-rap/</id>
         
-        <content type="html" xml:base="https://spitlo.com/music/old-rap/">&lt;p&gt;I found some old songs of mine that somebody had uploaded to the tube. They’re probably downloaded from the old spitlo.com, which had a spoof MySPace page with a few songs on it. There are some weird skips in the first song, but until I work up the energy to find better versions and upload them here (and perhaps recreate the old MySpace spoof?) I thought it’d be fun to repost them.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/music/old-rap/">&lt;p&gt;I found some old songs of mine that somebody had uploaded to the tube. They’re probably downloaded from the old spitlo.com, which had a spoof MySpace page with a few songs on it. There are some weird skips in the first song, but until I work up the energy to find better versions and upload them here (and perhaps recreate the old MySpace spoof?) I thought it’d be fun to repost them.&lt;&#x2F;p&gt;
 &lt;p&gt;The embeds are hosted on the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yewtu.be&#x2F;&quot;&gt;YewTube&lt;&#x2F;a&gt; Invidious instance so they should be safe from a cookie&#x2F;tracking perspective.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;the-longest-time&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-longest-time&quot; aria-label=&quot;Anchor link for: the-longest-time&quot;&gt;#&lt;&#x2F;a&gt;
 The Longest Time&lt;&#x2F;h2&gt;
@@ -8745,7 +8745,7 @@ Bottles Revisited feat. Jaquee&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16594,7 +16594,7 @@ Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16605,10 +16605,10 @@ Time for a long vacation from beatmaking!&lt;&#x2F;p&gt;
         <content type="html" xml:base="https://spitlo.com/code/morsh/">&lt;p&gt;A Bash script to decode&#x2F;encode morse code. Slightly buggy and very, very slow. Could also be used as an extremely unpleasant way to uppercase text.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
 Installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Just put the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Just put the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;&#x2F;a&gt;
 Fancy installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;&#x2F;a&gt;
 Usage examples&lt;&#x2F;h2&gt;
 &lt;p&gt;Quickly decode a message from some ancient online puzzle game:&lt;&#x2F;p&gt;
@@ -16631,7 +16631,7 @@ Usage examples&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16710,7 +16710,7 @@ A Strain, 2022&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16730,7 +16730,7 @@ A Strain, 2022&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16791,7 +16791,7 @@ Output text, obfuscation level medium, numbers style&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16825,7 +16825,7 @@ Fancy installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16903,7 +16903,7 @@ A Strain, 2021&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -16939,7 +16939,7 @@ Rationale&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17036,7 +17036,7 @@ Options&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17111,7 +17111,7 @@ Restart long-running tasks&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17139,7 +17139,7 @@ Installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17213,7 +17213,7 @@ Installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17236,7 +17236,7 @@ Installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17259,7 +17259,7 @@ Installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17280,7 +17280,7 @@ Installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17339,7 +17339,7 @@ Installation&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -17388,7 +17388,7 @@ Options&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
