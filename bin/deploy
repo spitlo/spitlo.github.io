@@ -91,7 +91,11 @@ SITE_VERSION="$new_version" ZOLA_VERSION="$zola_version" BUILD_TIME="$build_time
 # Minify some assets
 
 ## Don’t include full url in search index
-sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  sed -i '' 's_https://spitlo.com__g' docs/search_index.en.js
+else
+  sed -i 's_https://spitlo.com__g' docs/search_index.en.js
+fi
 
 ## Build JSMin (https://www.crockford.com/jsmin.html)
 if [ ! -x "bin/jsmin" ]; then

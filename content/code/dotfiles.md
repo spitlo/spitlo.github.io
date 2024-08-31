@@ -13,7 +13,7 @@ first_commit_time = 2013-07-06
 first_commit_message = "For safekeeping"
 +++
 
-I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.
+I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on one Mac running Monterey, one Mac running Pop!_OS Cosmic, one Raspberry Pi 400, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.
 
 Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.
 
@@ -82,5 +82,5 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
  - [svtplay-dl](https://github.com/spaam/svtplay-dl)
  - [vale](https://github.com/errata-ai/vale)
  - [wp-cli](https://github.com/wp-cli/wp-cli)
- - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+ - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
  - [zola](https://github.com/getzola/zola)
