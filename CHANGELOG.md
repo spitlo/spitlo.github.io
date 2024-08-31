@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.12.6
+
+- Add Derivata c-006 and c-007 [`a2f9b40d`](../../commit/a2f9b40dc0f11a6e8e3f56f4aa2599868afaee13)
+- Change to yt-dlp in dotfiles document [`496ebea5`](../../commit/496ebea5040e7eeb7e859f9fae462b9b87ecd29f)
+
 ## v2.12.5
 
 - Fix syntax for linux sed in deploy script [`a0fed1ef`](../../commit/a0fed1efcb6996886e7c43445173650bef626350)
