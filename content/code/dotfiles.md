@@ -80,6 +80,7 @@ find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;
  - [nb](https://github.com/xwmx/nb)
  - [starship](https://github.com/starship/starship)
  - [svtplay-dl](https://github.com/spaam/svtplay-dl)
+ - [vale](https://github.com/errata-ai/vale)
  - [wp-cli](https://github.com/wp-cli/wp-cli)
  - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
  - [zola](https://github.com/getzola/zola)
