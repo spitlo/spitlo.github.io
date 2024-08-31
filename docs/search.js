@@ -52,7 +52,7 @@ teaser.push('…')
 return teaser.join('')}
 function getResultSection(result){const url=result?result.ref:''
 if(url.match(/\/code\//)){return'code'}else if(url.match(/\/music\//)){return'music'}else if(url.match(/\/tags\//)){return'tags'}else{return'root'}}
-function formatSearchResultItem(item,terms){return`<div class="${getResultSection(item)}"><a href="${item.ref}"><div class="title">${item.doc.title}</div><div class="teaser">${makeTeaser(item.doc.body || item.doc.description, terms)}</div><div class="help">ENTER</div></a></div>`}
+function formatSearchResultItem(item,terms){return`<div class="${getResultSection(item)}"><a href="${item.ref}"><div class="title">${item.doc.title} (<date>${item.doc.date.substring(0, 10)}</date>)</div><div class="teaser">${makeTeaser(item.doc.body || item.doc.description, terms)}</div><div class="help">ENTER</div></a></div>`}
 function initSearch(){const $searchInput=document.getElementById('search')
 const $searchResults=document.getElementById('searchResults')
 const $searchResultsItems=document.getElementById('searchResultsItems')

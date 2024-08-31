@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.12.4
+
+- Add author to config. Spelling [`be81bcb3`](../../commit/be81bcb33a368cb85c3fe2be0c443b3eaf14b2f6)
+- Update to Zola 19. Add date to search results [`09228de2`](../../commit/09228de2ba4391434b85b849f8b36bdd61b29855)
+
 ## v2.12.3
 
 - Add user-agents from ai.robots.txt to robots.txt [`6b0e0abf`](../../commit/6b0e0abfa702709d46c18488391521f82795ea4e)

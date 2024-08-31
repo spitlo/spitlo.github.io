@@ -14,7 +14,7 @@
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -50,7 +50,7 @@ Instructions&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -76,7 +76,7 @@ Instructions&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -100,7 +100,7 @@ Instructions&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -251,7 +251,7 @@ Changelog&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -289,7 +289,7 @@ The sound&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -300,10 +300,10 @@ The sound&lt;&#x2F;h2&gt;
         <content type="html" xml:base="https://spitlo.com/code/morsh/">&lt;p&gt;A Bash script to decode&#x2F;encode morse code. Slightly buggy and very, very slow. Could also be used as an extremely unpleasant way to uppercase text.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
 Installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Just put the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Just put the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;&#x2F;a&gt;
 Fancy installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;&#x2F;a&gt;
 Usage examples&lt;&#x2F;h2&gt;
 &lt;p&gt;Quickly decode a message from some ancient online puzzle game:&lt;&#x2F;p&gt;
@@ -326,7 +326,7 @@ Usage examples&lt;&#x2F;h2&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -405,7 +405,7 @@ A Strain, 2022&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -466,7 +466,7 @@ Output text, obfuscation level medium, numbers style&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -544,7 +544,7 @@ A Strain, 2021&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
@@ -618,7 +618,7 @@ A Strain, 2021&lt;&#x2F;h3&gt;
         <author>
           <name>
             
-              Unknown
+              Spitlo
             
           </name>
         </author>
