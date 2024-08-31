@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.12.5
+
+- Fix syntax for linux sed in deploy script [`a0fed1ef`](../../commit/a0fed1efcb6996886e7c43445173650bef626350)
+- Update dotfiles document [`250e7a8f`](../../commit/250e7a8fe0e276581f57298ba301ce4955de4650)
+
 ## v2.12.4
 
 - Add author to config. Spelling [`be81bcb3`](../../commit/be81bcb33a368cb85c3fe2be0c443b3eaf14b2f6)
