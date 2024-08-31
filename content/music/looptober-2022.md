@@ -14,7 +14,7 @@ Looptober? Why not! I saw it mentioned somewhere, but I couldn’t really find a
 
 ## Conclusion
 
-The stats show I’m depressingly consistant. The average BPM, 84.1, is pretty close to the mean BPM, 85. The difference between the the lowest BPM and the average is 25, the difference between the highest BPM and the average is 26. Like a perfectly adequately calibrated but slightly underwhelming pendulum.
+The stats show I’m depressingly consistent. The average BPM, 84.1, is pretty close to the mean BPM, 85. The difference between the lowest BPM and the average is 25, the difference between the highest BPM and the average is 26. Like a perfectly adequately calibrated but slightly underwhelming pendulum.
 
 A crushing majority of the loops are in 4/4 time, with only four in 3/4 time and one in 5/4 time. Probably what you’d expect, especially from someone so defiantly average.
 

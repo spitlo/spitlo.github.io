@@ -19,9 +19,9 @@ I also wanted to try out [Zola](https://www.getzola.org/) and get away from Java
 
 Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:
 
-- GitHub Pages hosting with a custom domain name
-- GitHub Actions
-- Handcoded or programatically generated SVGs
+- Github Pages hosting with a custom domain name
+- Github Actions
+- Hand coded or programmatically generated SVGs
 - Undocumented CSS stuff like animating the `content` value of `::before` and `::after` pseudo-elements
 - Newer/partially supported HTML elements like `<details>`
 - Ever so slightly dipping my toes into the Rust ecosystem

@@ -47,7 +47,7 @@ Basically the same as `weather` but for dictionary definitions.
 
 ## [`squash`](https://github.com/spitlo/dotfiles/blob/master/bin/squash)
 
-I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my harddrive. But they don’t need to look pretty. So every once in a while I run:
+I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my hard drive. But they don’t need to look pretty. So every once in a while I run:
 
 ```bash
 find ./media/images -xdev -name '*.jpg' -mtime +360 -execdir squash {} \;

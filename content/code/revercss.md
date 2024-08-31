@@ -14,7 +14,7 @@ first_commit_message = "Initial commit"
 
 Revercss, sometimes stylized as ƨƨↄ, was made as a joke many years ago, and "marketed" as
 
-> a declaration-first paradigm for lean, consistent CSS and increased project maintainibility
+> a declaration-first paradigm for lean, consistent CSS and increased project maintainability
 
 But I still kinda like the idea, especially for small projects.
 

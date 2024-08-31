@@ -26,7 +26,7 @@ Other than that, anything goes. Examples of possible modifications (on a scale f
 - [ ] Add harmonica
 - [ ] Add harmonica and lyrics
 - [ ] Play it on your computer, record it to your phone while playing harmonica. Save as ogg
-- [ ] Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (opionally saving it as ogg).
+- [ ] Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (optionally saving it as ogg).
 - [ ] Print the file. Keep only the pages whose numbers are included in a fibonacci sequence (you might use an extra copy of page one). Scan these pages. Somehow make a song from that.
 - [ ] Using a magnetoencephalography helmet, record your reactions to the song. Convert those readings to frequencies. Convert the frequencies to actual tones. Record the tones. Add reverb.
 

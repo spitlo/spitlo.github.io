@@ -72,7 +72,7 @@ Smartly in this context means:
 
 ### Symbats
 
-There is also a Spoon for quickly finding glyphs from the "[Miscellaneous Symbols](https://en.wikipedia.org/wiki/Miscellaneous_Symbols)" and "[Dingbats](https://en.wikipedia.org/wiki/Dingbat#Dingbats_Unicode_block)" unicode blocks. I have it mapped to `Hyper` + `S`. When triggered, it shows a searchable list of symbols. When a symbol is selected, it gets copied to the clipboard.
+There is also a Spoon for quickly finding glyphs from the "[Miscellaneous Symbols](https://en.wikipedia.org/wiki/Miscellaneous_Symbols)" and "[Dingbats](https://en.wikipedia.org/wiki/Dingbat#Dingbats_Unicode_block)" Unicode blocks. I have it mapped to `Hyper` + `S`. When triggered, it shows a searchable list of symbols. When a symbol is selected, it gets copied to the clipboard.
 
 ### HttpStatus
 
