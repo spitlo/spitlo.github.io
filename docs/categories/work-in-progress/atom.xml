@@ -552,7 +552,7 @@ A Strain, 2021&lt;&#x2F;h3&gt;
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/dotfiles/"/>
         <id>https://spitlo.com/code/dotfiles/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/dotfiles/">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on two Macs running Mojave, one Pinebook Pro running Manjaro, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/dotfiles/">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on one Mac running Monterey, one Mac running Pop!_OS Cosmic, one Raspberry Pi 400, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
 &lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;
 &lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;&#x2F;a&gt;
