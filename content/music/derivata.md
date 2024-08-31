@@ -38,6 +38,8 @@ On January 25th, 2024, the C Strain was inititated by Lolita Fatjo.
 | c-003.mp3  | 2024-04-12 20:15 | spitlo   |    04:24 | [mp3](https://files.mefirst.se/derivata/snippets/c-003.mp3) (722 KB) |
 | c-004.mp3  | 2024-07-08 22:20 | L.F.     |    03:18 | [mp3](https://files.mefirst.se/derivata/snippets/c-004.mp3) (721 KB) |
 | c-005.mp3  | 2024-07-18 12:15 | spitlo   |    04:40 | [mp3](https://files.mefirst.se/derivata/snippets/c-005.mp3) (722 KB) |
+| c-006.mp3  | 2024-08-15 12:01 | L.F.     |    03:10 | [mp3](https://files.mefirst.se/derivata/snippets/c-006.mp3) (721 KB) |
+| c-007.mp3  | 2024-08-24 00:22 | spitlo   |    05:06 | [mp3](https://files.mefirst.se/derivata/snippets/c-007.mp3) (722 KB) |
 
 ### B Strain, 2023
 
