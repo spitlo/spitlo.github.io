@@ -8,11 +8,15 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
+## v2.13.x _(2024-10-01)_
+
+  - Started on Looptober 2024
+
 ## v2.12.x _(2024-07-11)_
 
   - Added a new background shape, pentagons, for tag pages
   - Changed table layout
-  - Added Derivata c-005
+  - Added Derivata c-005, c-006, c-007
 
 ## v2.10.x - v2.11.x _(2023-12-21)_
 
