@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.13.0
+
+- Update changelog [`7160e75c`](../../commit/7160e75cc9249c4b94920fce89ecf07d0e3f19e8)
+- Looptober 2024: Game on\! [`3673cc6b`](../../commit/3673cc6bff51ffdebd8220e2126982c47f1ef498)
+
 ## v2.12.6
 
 - Add Derivata c-006 and c-007 [`a2f9b40d`](../../commit/a2f9b40dc0f11a6e8e3f56f4aa2599868afaee13)
