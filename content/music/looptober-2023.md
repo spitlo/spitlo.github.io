@@ -1,6 +1,6 @@
 +++
 title = "Looptober 2023"
-description = "One tiny beat a day for all of October"
+description = "Another tiny beat a day for all of October"
 date = 2023-10-01
 
 [taxonomies]
@@ -10,7 +10,7 @@ categories = ["Electronic", "Loops"]
 content_class = "looptober looptober-2023"
 +++
 
-I decided to do looptober this year, too. And this year I’m using the Polyend Tracker. I wanted to try out all the new features of the 1.7 firmware, and experiment a bit with making instruments on it.
+I decided to do Looptober this year, too. And this year I’m using the Polyend Tracker. I wanted to try out all the new features of the 1.7 firmware, and experiment a bit with making instruments on it.
 
 I prepared by using the auto name feature to create 31 named but empty projects, thinking the name will set the direction for the loop.
 
@@ -84,7 +84,7 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 10 - Enchanted Thought (90 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", fail=true) }}
-> Listening to old cambodian soul, I had to make a little loop (2023-10-19)
+> Listening to old Cambodian soul, I had to make a little loop (2023-10-19)
 
 {{ looper(filepath="/audio/looptober/2023/10-enchanted-thought.mp3") }}
 
@@ -119,7 +119,7 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 15 - Fallacious Argument (108 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=48) }}
-> Something for the sunday run
+> Something for the Sunday run
 
 {{ looper(filepath="/audio/looptober/2023/15-fallacious-argument.mp3") }}
 
@@ -133,14 +133,14 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 17 - Needy Bat (101 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=55) }}
-> I don’t know how needy the bat is, but at least the violin is transylvanian
+> I don’t know how needy the bat is, but at least the violin is Transylvanian
 
 {{ looper(filepath="/audio/looptober/2023/17-needy-bat.mp3") }}
 
 ### 18 - Keen Quill (77 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=58) }}
-> What a beautiful wednesday morning!
+> What a beautiful Wednesday morning!
 
 {{ looper(filepath="/audio/looptober/2023/18-keen-quill.mp3") }}
 
@@ -151,7 +151,7 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 {{ looper(filepath="/audio/looptober/2023/19-wild-snails.mp3") }}
 
-### 20 - Nochalant Name (93 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 20 - Nonchalant Name (93 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=65) }}
 > If it’s atonal, you’re too anal
@@ -182,7 +182,7 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 ### 24 - Quickest Week (71 BPM) {{ timesig(numerator="4", denominator="4") }}
 
 > {{ progress(type="circular", percentage=77) }}
-> But it’s only tuesday!
+> But it’s only Tuesday!
 
 {{ looper(filepath="/audio/looptober/2023/24-quickest-week.mp3") }}
 
