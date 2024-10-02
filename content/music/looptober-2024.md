@@ -26,3 +26,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > I feel like I’ve heard this before.
 
 {{ looper(filepath="/audio/looptober/2024/01-lo-fi-wafers.mp3") }}
+
+### 02 - Creepazoids (72 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=6) }}
+> Oh no, I forgot to change key!
+
+{{ looper(filepath="/audio/looptober/2024/02-creepazoids.mp3") }}
