@@ -2,6 +2,16 @@
 
 This changelog is automatically generated.
 
+## v2.13.1
+
+- Looptober: Add beat for October 2 [`a08d1709`](../../commit/a08d17099637d73900b861ea720ab24903e02289)
+- Add some allowed words to Cspell config [`e097073b`](../../commit/e097073bd58cb9c9729bc7f9c7c03ba39a01fda7)
+- Use Cspell instead of Vale [`20182905`](../../commit/2018290567f46e99264d4e3019bf7644b7273bd1)
+- Add Vale configuration [`49d15b75`](../../commit/49d15b7544a024d8d497cedb5ad3ea847ad312ce)
+- Fix spelling [`3b0af88d`](../../commit/3b0af88daa74e482447a4f5b357702e077b81a2f)
+- Add Vale to list of commands in dotfiles document [`4d110261`](../../commit/4d1102611440e0f0af37080fb26b3b0e8723b1d2)
+- Try Vale again. Correct a bunch of sucky spelling [`f99ed99e`](../../commit/f99ed99e9f2f1f18917f451ad347dbeb50919204)
+
 ## v2.13.0
 
 - Update changelog [`7160e75c`](../../commit/7160e75cc9249c4b94920fce89ecf07d0e3f19e8)
