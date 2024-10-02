@@ -279,6 +279,258 @@ I feel like I’ve heard this before.&lt;&#x2F;p&gt;
   })()
 
 &lt;&#x2F;script&gt;
+&lt;h3 id=&quot;02-creepazoids-72-bpm&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#02-creepazoids-72-bpm&quot; aria-label=&quot;Anchor link for: 02-creepazoids-72-bpm&quot;&gt;#&lt;&#x2F;a&gt;
+02 - Creepazoids (72 BPM) &lt;span class=&quot;timesig &quot;&gt;&lt;sup&gt;4&lt;&#x2F;sup&gt;&#x2F;&lt;sub&gt;4&lt;&#x2F;sub&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;progress circular &quot;&gt;
+  
+    &lt;svg viewBox=&quot;0 0 36 36&quot;&gt;
+      
+        &lt;title&gt;6%&lt;&#x2F;title&gt;
+        &lt;path
+          d=&quot;M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831&quot;
+          stroke-dasharray=&quot;6, 100&quot;
+        &#x2F;&gt;
+        &lt;defs&gt;
+          &lt;pattern id=&quot;raster&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;4&quot; height=&quot;4&quot; patternUnits=&quot;userSpaceOnUse&quot; &gt;
+            &lt;line x1=&quot;0&quot; x2=&quot;1&quot; y1=&quot;0&quot; y2=&quot;1&quot; &#x2F;&gt;
+          &lt;&#x2F;pattern&gt;
+        &lt;&#x2F;defs&gt;
+      
+    &lt;&#x2F;svg&gt;
+  
+&lt;&#x2F;span&gt;
+
+Oh no, I forgot to change key!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;div id=&quot;looper-2&quot; class=&quot;looper &quot;&gt;
+  &lt;noscript&gt;
+    &lt;audio loop controls src=&quot;&amp;#x2F;audio&amp;#x2F;looptober&amp;#x2F;2024&amp;#x2F;02-creepazoids.mp3&quot;&gt;&lt;&#x2F;audio&gt;
+  &lt;&#x2F;noscript&gt;
+&lt;&#x2F;div&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+  (async () =&gt; {
+    let context
+    let gainNode
+    let source
+    let isPlaying = false
+    let vizType = &#x27;td&#x27;
+    const avWidth = 200
+    const avHeight = 40
+    const avColors = [
+      &#x27;#74edc4&#x27;, &#x2F;&#x2F; aquamarine
+      &#x27;#8bd1cd&#x27;, &#x2F;&#x2F; lightSeagreen
+      &#x27;#aa9f9f&#x27;, &#x2F;&#x2F; gray
+      &#x27;#b1b098&#x27;, &#x2F;&#x2F; dirtyYellow
+      &#x27;#b55603&#x27;, &#x2F;&#x2F; orange
+      &#x27;#dfcece&#x27;, &#x2F;&#x2F; lightBrown
+      &#x27;#e30000&#x27;, &#x2F;&#x2F; red
+      &#x27;#ecffea&#x27;, &#x2F;&#x2F; honeydew
+      &#x27;#fff1f1&#x27;, &#x2F;&#x2F; mutedPink
+      &#x27;#fffcfc&#x27;, &#x2F;&#x2F; white
+      &#x27;#fffffb&#x27;, &#x2F;&#x2F; lightWhite
+    ]
+
+    &#x2F;&#x2F; Set up player interface
+    const playButton = document.createElement(&#x27;button&#x27;)
+    playButton.id = &#x27;play-2&#x27;
+    playButton.innerHTML = `
+  
+  &lt;span class=&quot;icon play small&quot;&gt;
+    
+    
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Play&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
+  &lt;&#x2F;span&gt;
+`
+    playButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Play loop&#x27;)
+    
+    const stopButton = document.createElement(&#x27;button&#x27;)
+    stopButton.id = &#x27;stop-2&#x27;
+    stopButton.innerHTML = `
+  
+  &lt;span class=&quot;icon stop small&quot;&gt;
+    
+    
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Stop&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M6 5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
+  &lt;&#x2F;span&gt;
+`
+    stopButton.classList.add(&#x27;stop&#x27;)
+    stopButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Stop loop&#x27;)
+    
+    const avCanvas = document.createElement(&#x27;canvas&#x27;)
+    avCanvas.id = &#x27;av-2&#x27;
+    avCanvas.setAttribute(&#x27;width&#x27;, avWidth)
+    avCanvas.setAttribute(&#x27;height&#x27;, avHeight)
+    avCanvas.setAttribute(&#x27;aria-label&#x27;, &#x27;Audio visualizer&#x27;)
+    avCanvas.onclick = () =&gt; {
+      if (isPlaying) {
+        if (vizType === &#x27;fr&#x27;) {
+          vizType = &#x27;td&#x27;
+        } else {
+          vizType = &#x27;fr&#x27;
+        } 
+      }
+    }
+    
+    const muteButton = document.createElement(&#x27;button&#x27;)
+    muteButton.id = &#x27;mute-2&#x27;
+    muteButton.innerHTML = `
+  
+  &lt;span class=&quot;icon mute small&quot;&gt;
+    
+    
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Mute&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm14.525-4l3.536 3.536-1.414 1.414L19 13.414l-3.536 3.536-1.414-1.414L17.586 12 14.05 8.464l1.414-1.414L19 10.586l3.536-3.536 1.414 1.414L20.414 12z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
+  &lt;&#x2F;span&gt;
+`
+    muteButton.classList.add(&#x27;mute&#x27;)
+    muteButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Mute loop&#x27;)
+    muteButton.addEventListener(&#x27;mousedown&#x27;, () =&gt; {
+      if (source &amp;&amp; gainNode) {
+        gainNode.gain.setValueAtTime(0, context.currentTime)
+      }
+    })
+    muteButton.addEventListener(&#x27;mouseup&#x27;, () =&gt; {
+      if (source &amp;&amp; gainNode) {
+        gainNode.gain.setValueAtTime(1, context.currentTime)
+      }
+    })
+    
+    const downloadButton = document.createElement(&#x27;a&#x27;)
+    downloadButton.id = &#x27;download-2&#x27;
+    downloadButton.innerHTML = `
+  
+  &lt;span class=&quot;icon download small&quot;&gt;
+    
+    
+    &lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;title&gt;Download&lt;&#x2F;title&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&#x2F;&gt;&lt;path d=&quot;M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
+  &lt;&#x2F;span&gt;
+`
+    downloadButton.classList.add(&#x27;download&#x27;)
+    downloadButton.setAttribute(&#x27;aria-label&#x27;, &#x27;Download loop&#x27;)
+    downloadButton.setAttribute(&#x27;download&#x27;, &#x27;&#x27;)
+    downloadButton.setAttribute(&#x27;href&#x27;, &#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2024&#x2F;02-creepazoids.mp3&#x27;)
+
+    const loopWrapper = document.getElementById(&#x27;looper-2&#x27;)
+
+    loopWrapper.appendChild(playButton)
+    loopWrapper.appendChild(stopButton)
+    loopWrapper.appendChild(avCanvas)
+    loopWrapper.appendChild(muteButton)
+    loopWrapper.appendChild(downloadButton)
+
+    &#x2F;&#x2F; Get the canvas context for the audio visualizer
+    const canvasContext = avCanvas.getContext(&#x27;2d&#x27;)
+    &#x2F;&#x2F; And paint the baseline
+    const clearAvCanvas = (baseline = true) =&gt; {
+      canvasContext.fillStyle =
+        document.querySelector(&#x27;html&#x27;).classList.contains(&#x27;light&#x27;)
+          ? &#x27;#2d3238&#x27;
+          : &#x27;#fffffb&#x27;
+      canvasContext.clearRect(0, 0, avWidth, avHeight)
+      if (baseline) {
+        canvasContext.fillRect(0, avHeight &#x2F; 2, avWidth, 1)
+      }
+    }
+    clearAvCanvas()
+
+    playButton.addEventListener(&#x27;click&#x27;, async () =&gt; {
+      &#x2F;&#x2F; Initialize audio
+      context = new AudioContext()
+      gainNode = context.createGain()
+      &#x2F;&#x2F; Disable play and set loading class. We don’t want people to start
+      &#x2F;&#x2F; multiple downloads&#x2F;plays accidentally.
+      playButton.classList.add(&#x27;loading&#x27;)
+      playButton.setAttribute(&#x27;disabled&#x27;, &#x27;disabled&#x27;)
+      isPlaying = true
+
+      &#x2F;&#x2F; Fetch audio file. Error handling? Perhaps later.
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch(&#x27;https:&#x2F;&#x2F;spitlo.com&#x2F;audio&#x2F;looptober&#x2F;2024&#x2F;02-creepazoids.mp3&#x27;)
+          .then(response =&gt; response.arrayBuffer())
+        &#x2F;&#x2F; Assume file is loaded. Remove loading class.
+        playButton.classList.remove(&#x27;loading&#x27;)
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;loading&#x27;)
+        return
+      }
+      
+      &#x2F;&#x2F; Ok, do the buffer magic.
+      const buffer = await context.decodeAudioData(arrayBuffer)
+      const analyser = context.createAnalyser()
+      source = context.createBufferSource()
+      source.connect(gainNode)
+      source.connect(analyser)
+      gainNode.connect(context.destination)
+
+      const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      const renderVisualization = () =&gt; {
+        if (isPlaying) {
+          requestAnimationFrame(renderVisualization)
+        }
+
+        if (vizType === &#x27;fr&#x27;) {
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
+        } else {
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
+        }
+
+        clearAvCanvas(vizType === &#x27;fr&#x27; ? false : true)
+        if (vizType === &#x27;td&#x27;) {
+          &#x2F;&#x2F; &quot;Shuffle&quot; colors array. This will do for now, but we could also use
+          &#x2F;&#x2F; `ampValue` to set the color, higher -&gt; red, lower -&gt; white&#x2F;green.
+          avColors.push(avColors.shift())
+        }
+        for (let i = 0; i &lt; amplitude.length; i++) {
+          const ampValue = amplitude[i] &#x2F; (vizType === &#x27;fr&#x27; ? 320 : 256)
+          const y = avHeight - (avHeight * ampValue) - 1
+          if (vizType === &#x27;td&#x27;) {
+            canvasContext.fillStyle = `${avColors[0]}40`
+            canvasContext.fillRect(i - 1, y - 1, 3, 3)
+          }
+          canvasContext.fillStyle = &#x27;#74edc4&#x27;
+          canvasContext.fillRect(i, y, 1, 1)
+        }
+      }
+
+      source.buffer = buffer
+      source.loop = true
+
+      playButton.classList.add(&#x27;playing&#x27;)
+      try {
+        source.start(0)
+        renderVisualization()
+      } catch(error) {
+        console.error(&#x27;Could not load audio&#x27;, error)
+        playButton.classList.remove(&#x27;playing&#x27;)
+      } 
+    })
+    
+    stopButton.addEventListener(&#x27;click&#x27;, () =&gt; {
+      if (source) {
+        playButton.classList.remove(&#x27;loading&#x27;, &#x27;playing&#x27;)
+        playButton.removeAttribute(&#x27;disabled&#x27;)
+        isPlaying = false
+        requestAnimationFrame(clearAvCanvas)
+
+        source.stop(0)
+      }
+    })
+  })()
+
+&lt;&#x2F;script&gt;
 </content>
         
     </entry>
@@ -548,8 +800,8 @@ The sound&lt;&#x2F;h2&gt;
 (* Never as in “very seldom”)&lt;&#x2F;p&gt;
 &lt;p&gt;If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots.&lt;&#x2F;p&gt;
 &lt;p&gt;Hitting “Save” will save the current state of your composition in the URL, copy it from the address bar to share or to keep it safe somewhere. Or bookmark it!&lt;&#x2F;p&gt;
-&lt;p&gt;Channel 10 has a special role (no, it’s not a drum track, sorry MIDI heads) – everytime a note is struck on it, it either plays the sample for that track, or a short sine note. The sine note is picked randomly on each play, from an array of notes (usually a scale) picked randomly on each load. The octave is also set randomly for each note, ranging from 2 to 7. Finally, the duration is set randomly from an eighth note to a sixty-fourth note, with shorter notes being a bit more likely.&lt;&#x2F;p&gt;
-&lt;p&gt;The prompt for ImaginAIry – for anyone interested – was “70’s sci-fi landscape”, the full comand was:&lt;&#x2F;p&gt;
+&lt;p&gt;Channel 10 has a special role (no, it’s not a drum track, sorry MIDI heads) – every time a note is struck on it, it either plays the sample for that track, or a short sine note. The sine note is picked randomly on each play, from an array of notes (usually a scale) picked randomly on each load. The octave is also set randomly for each note, ranging from 2 to 7. Finally, the duration is set randomly from an eighth note to a sixty-fourth note, with shorter notes being a bit more likely.&lt;&#x2F;p&gt;
+&lt;p&gt;The prompt for ImaginAIry – for anyone interested – was “70’s sci-fi landscape”, the full command was:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;imagine&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;70&amp;#39;s sci-fi landscape&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;w&lt;&#x2F;span&gt; 1024&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;h&lt;&#x2F;span&gt; 256&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;r&lt;&#x2F;span&gt; 100&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;tile&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Then I went for a walk while that toasted my battery. From those one hundred images I picked the 78 I liked the best.&lt;&#x2F;p&gt;
@@ -773,9 +1025,9 @@ Add harmonica and lyrics&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
 Play it on your computer, record it to your phone while playing harmonica. Save as ogg&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
-Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (opionally saving it as ogg).&lt;&#x2F;li&gt;
+Record the song to cassette, take the tape out and cut it to pieces. Glue it together again and put it back into the cassette. Record it (optionally saving it as ogg).&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
-Print the file. Keep only the pages whose numbers are included in a fibonacci sequence (you might use an extra copy of page one). Scan these pages. Somehow make a song from that.&lt;&#x2F;li&gt;
+Print the file. Keep only the pages whose numbers are included in a Fibonacci sequence (you might use an extra copy of page one). Scan these pages. Somehow make a song from that.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
 Using a magnetoencephalography helmet, record your reactions to the song. Convert those readings to frequencies. Convert the frequencies to actual tones. Record the tones. Add reverb.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -783,7 +1035,7 @@ Using a magnetoencephalography helmet, record your reactions to the song. Conver
 &lt;p&gt;The first version, &lt;code&gt;a-000.wav&lt;&#x2F;code&gt; was sent on 2021-02-20 at 14:03 CET.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;b-strain&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#b-strain&quot; aria-label=&quot;Anchor link for: b-strain&quot;&gt;#&lt;&#x2F;a&gt;
 B Strain&lt;&#x2F;h2&gt;
-&lt;p&gt;On January 1st, 2022, the B Strain was inititated by Kryptho.&lt;&#x2F;p&gt;
+&lt;p&gt;On January 1st, 2022, the B Strain was initiated by Kryptho.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;files&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;
 Files&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;b-strain-2022&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#b-strain-2022&quot; aria-label=&quot;Anchor link for: b-strain-2022&quot;&gt;#&lt;&#x2F;a&gt;
@@ -853,7 +1105,7 @@ A Strain, 2021&lt;&#x2F;h3&gt;
 &lt;p&gt;Basically the same as &lt;code&gt;weather&lt;&#x2F;code&gt; but for dictionary definitions.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;squash&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#squash&quot; aria-label=&quot;Anchor link for: squash&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;master&#x2F;bin&#x2F;squash&quot;&gt;&lt;code&gt;squash&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my harddrive. But they don’t need to look pretty. So every once in a while I run:&lt;&#x2F;p&gt;
+&lt;p&gt;I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my hard drive. But they don’t need to look pretty. So every once in a while I run:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;find&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; .&#x2F;media&#x2F;images&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;xdev&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;name&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;*.jpg&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;mtime&lt;&#x2F;span&gt; +360&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;execdir&lt;&#x2F;span&gt; squash &lt;span class=&quot;z-meta z-group z-expansion z-brace z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-brace z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-brace z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-character z-escape z-shell&quot;&gt;\;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;code&gt;squash&lt;&#x2F;code&gt; uses ImageMagicks’s &lt;code&gt;mogrify&lt;&#x2F;code&gt; to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable &lt;code&gt;MINIMUM_SIZE&lt;&#x2F;code&gt; set, to only affect images of a significant size.&lt;&#x2F;p&gt;
@@ -881,6 +1133,7 @@ A Strain, 2021&lt;&#x2F;h3&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;xwmx&#x2F;nb&quot;&gt;nb&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;starship&#x2F;starship&quot;&gt;starship&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spaam&#x2F;svtplay-dl&quot;&gt;svtplay-dl&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;errata-ai&#x2F;vale&quot;&gt;vale&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wp-cli&#x2F;wp-cli&quot;&gt;wp-cli&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yt-dlp&#x2F;yt-dlp&quot;&gt;yt-dlp&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;zola&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -908,9 +1161,9 @@ A Strain, 2021&lt;&#x2F;h3&gt;
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
 &lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;GitHub Pages hosting with a custom domain name&lt;&#x2F;li&gt;
-&lt;li&gt;GitHub Actions&lt;&#x2F;li&gt;
-&lt;li&gt;Handcoded or programatically generated SVGs&lt;&#x2F;li&gt;
+&lt;li&gt;Github Pages hosting with a custom domain name&lt;&#x2F;li&gt;
+&lt;li&gt;Github Actions&lt;&#x2F;li&gt;
+&lt;li&gt;Hand coded or programmatically generated SVGs&lt;&#x2F;li&gt;
 &lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
 &lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;

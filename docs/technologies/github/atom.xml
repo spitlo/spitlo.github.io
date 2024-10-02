@@ -26,9 +26,9 @@
 &lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
 &lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;GitHub Pages hosting with a custom domain name&lt;&#x2F;li&gt;
-&lt;li&gt;GitHub Actions&lt;&#x2F;li&gt;
-&lt;li&gt;Handcoded or programatically generated SVGs&lt;&#x2F;li&gt;
+&lt;li&gt;Github Pages hosting with a custom domain name&lt;&#x2F;li&gt;
+&lt;li&gt;Github Actions&lt;&#x2F;li&gt;
+&lt;li&gt;Hand coded or programmatically generated SVGs&lt;&#x2F;li&gt;
 &lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
 &lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;
