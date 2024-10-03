@@ -33,3 +33,11 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Oh no, I forgot to change key!
 
 {{ looper(filepath="/audio/looptober/2024/02-creepazoids.mp3") }}
+
+### 03 - Xpace Xploration (78 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=10) }}
+> Do you say Zavier or Exavier?
+
+{{ looper(filepath="/audio/looptober/2024/03-xpace-xploration.mp3") }}
+
