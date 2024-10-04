@@ -41,3 +41,9 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 
 {{ looper(filepath="/audio/looptober/2024/03-xpace-xploration.mp3") }}
 
+### 04 - Noodletop (106 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=13) }}
+> Hey! Friday! Time to move into triple digit BPMs.
+
+{{ looper(filepath="/audio/looptober/2024/04-noodletop.mp3") }}
