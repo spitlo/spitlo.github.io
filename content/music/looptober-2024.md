@@ -47,3 +47,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Hey! Friday! Time to move into triple digit BPMs.
 
 {{ looper(filepath="/audio/looptober/2024/04-noodletop.mp3") }}
+
+### 05 - Centipedes (83 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=16) }}
+> Which sounds cooler, forcipules or toxicognaths? I think it’s a tie for me.
+
+{{ looper(filepath="/audio/looptober/2024/05-centipedes.mp3") }}
