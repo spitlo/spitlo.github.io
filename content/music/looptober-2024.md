@@ -54,3 +54,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Which sounds cooler, forcipules or toxicognaths? I think it’s a tie for me.
 
 {{ looper(filepath="/audio/looptober/2024/05-centipedes.mp3") }}
+
+### 06 - Seven and One (80 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=19) }}
+> Sundays are perfect for watching old Millennium episodes!
+
+{{ looper(filepath="/audio/looptober/2024/06-seven-and-one.mp3") }}
