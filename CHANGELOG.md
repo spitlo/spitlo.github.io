@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.13.7
+
+- Looptober: Lower volume for October 7 [`866a6232`](../../commit/866a62325e2f5aa2d326adffdcf096766a74fc06)
+
 ## v2.13.6
 
 - Don’t link check tic80.com for now [`5d0a3636`](../../commit/5d0a3636a265ccf1e2550ec1b865c5b14fcebe10)
