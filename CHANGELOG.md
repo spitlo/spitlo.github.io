@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.13.6
+
+- Don’t link check tic80.com for now [`5d0a3636`](../../commit/5d0a3636a265ccf1e2550ec1b865c5b14fcebe10)
+- Looptober: Add beat for October 7 [`a51b4076`](../../commit/a51b4076720c729279029749310f9a7f60e8e8b8)
+
 ## v2.13.5
 
 - Looptober: Add beat for October 6 [`a7a5ace7`](../../commit/a7a5ace7302ec4405bfc8240d592c299bc2b8652)
