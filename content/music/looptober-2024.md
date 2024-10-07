@@ -61,3 +61,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Sundays are perfect for watching old Millennium episodes!
 
 {{ looper(filepath="/audio/looptober/2024/06-seven-and-one.mp3") }}
+
+### 07 - Metasyntactic Variables (69 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=23) }}
+> I guess I could have just named it "Foo Bar".
+
+{{ looper(filepath="/audio/looptober/2024/07-metasyntactic-variables.mp3") }}
