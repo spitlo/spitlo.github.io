@@ -15,6 +15,7 @@ minify_html = true
 [link_checker]
 skip_prefixes = [
   "https://vlang",
+  "https://tic80",
 ]
 skip_anchor_prefixes = [
   "https://github.com",
