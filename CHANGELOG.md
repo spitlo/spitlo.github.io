@@ -2,6 +2,11 @@
 
 This changelog is automatically generated.
 
+## v2.13.8
+
+- Skip link checking for now [`b4e692d0`](../../commit/b4e692d0a271bfbc745d0e55804160dfa71cdb4c)
+- Looptober: Add beat for October 8 [`f30eff09`](../../commit/f30eff09ef6e14cc257414c2de388e2ead5db543)
+
 ## v2.13.7
 
 - Looptober: Lower volume for October 7 [`866a6232`](../../commit/866a62325e2f5aa2d326adffdcf096766a74fc06)
