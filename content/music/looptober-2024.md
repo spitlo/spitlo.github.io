@@ -68,3 +68,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > I guess I could have just named it "Foo Bar".
 
 {{ looper(filepath="/audio/looptober/2024/07-metasyntactic-variables.mp3") }}
+
+### 08 - Last Day of Summer (113 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=26) }}
+> More like the first day of autumn, actually.
+
+{{ looper(filepath="/audio/looptober/2024/08-last-day-of-summer.mp3") }}
