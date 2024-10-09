@@ -75,3 +75,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > More like the first day of autumn, actually.
 
 {{ looper(filepath="/audio/looptober/2024/08-last-day-of-summer.mp3") }}
+
+### 09 - Flaky Bones (111 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=29) }}
+> I don’t even know what flaky bones are, but according to Reddit you should try Paraloid B72 if/when it happens.
+
+{{ looper(filepath="/audio/looptober/2024/09-flaky-bones.mp3") }}
