@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.13.9
+
+- Looptober: Add beat for October 9 [`3961cdd6`](../../commit/3961cdd6d6162bd7c8202970de0d6921dcbe3821)
+
 ## v2.13.8
 
 - Skip link checking for now [`b4e692d0`](../../commit/b4e692d0a271bfbc745d0e55804160dfa71cdb4c)
