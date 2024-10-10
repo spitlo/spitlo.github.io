@@ -82,3 +82,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > I don’t even know what flaky bones are, but according to Reddit you should try Paraloid B72 if/when it happens.
 
 {{ looper(filepath="/audio/looptober/2024/09-flaky-bones.mp3") }}
+
+### 10 - Paraloid (72 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=32) }}
+> Apparently, this is the remedy for the mess yesterday.
+
+{{ looper(filepath="/audio/looptober/2024/10-paraloid.mp3") }}
