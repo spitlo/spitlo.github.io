@@ -89,3 +89,11 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Apparently, this is the remedy for the mess yesterday.
 
 {{ looper(filepath="/audio/looptober/2024/10-paraloid.mp3") }}
+
+### 11 - Southward Equinox (86 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=35) }}
+> I know it was several weeks ago, but we’re still feeling the effect, right?
+
+{{ looper(filepath="/audio/looptober/2024/11-southward-equinox.mp3") }}
+
