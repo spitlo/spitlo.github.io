@@ -97,3 +97,9 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 
 {{ looper(filepath="/audio/looptober/2024/11-southward-equinox.mp3") }}
 
+### 12 - Daytime Travel (100 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=39) }}
+> If I close my eyes, the sun shining through my window feels almost tropical.
+
+{{ looper(filepath="/audio/looptober/2024/12-daytime-travel.mp3") }}
