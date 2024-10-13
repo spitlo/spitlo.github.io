@@ -103,3 +103,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > If I close my eyes, the sun shining through my window feels almost tropical.
 
 {{ looper(filepath="/audio/looptober/2024/12-daytime-travel.mp3") }}
+
+### 13 - Where Cruise Ships Go To Die (75 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=42) }}
+> R.I.P Inspiration, Imagination and Fantasy. You gentle giants.
+
+{{ looper(filepath="/audio/looptober/2024/13-where-cruise-ships-go-to-die.mp3") }}
