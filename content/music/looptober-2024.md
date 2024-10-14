@@ -110,3 +110,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > R.I.P Inspiration, Imagination and Fantasy. You gentle giants.
 
 {{ looper(filepath="/audio/looptober/2024/13-where-cruise-ships-go-to-die.mp3") }}
+
+### 14 - Klondyke Days (110 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=45) }}
+> Do you remember them?
+
+{{ looper(filepath="/audio/looptober/2024/14-klondyke-days.mp3") }}
