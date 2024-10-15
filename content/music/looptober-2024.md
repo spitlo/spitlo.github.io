@@ -117,3 +117,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Do you remember them?
 
 {{ looper(filepath="/audio/looptober/2024/14-klondyke-days.mp3") }}
+
+### 15 - Orichalcum (70 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=48) }}
+> The "reggae" tune came later this year.
+
+{{ looper(filepath="/audio/looptober/2024/15-orichalcum.mp3") }}
