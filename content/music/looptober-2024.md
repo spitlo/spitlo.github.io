@@ -124,3 +124,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > The "reggae" tune came later this year.
 
 {{ looper(filepath="/audio/looptober/2024/15-orichalcum.mp3") }}
+
+### 16 - Slow Realization (89 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=52) }}
+> I really meant to do something other than 4/4 today, but then I forgot.
+
+{{ looper(filepath="/audio/looptober/2024/16-slow-realization.mp3") }}
