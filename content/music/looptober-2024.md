@@ -131,3 +131,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > I really meant to do something other than 4/4 today, but then I forgot.
 
 {{ looper(filepath="/audio/looptober/2024/16-slow-realization.mp3") }}
+
+### 17 - Jedi Rat (100 BPM) {{ timesig(numerator="7", denominator="8") }}
+
+> {{ progress(type="circular", percentage=55) }}
+> Last year’s beat for October 17 was "Needy Bat" which is perhaps the exact opposite of a Jedi rat.
+
+{{ looper(filepath="/audio/looptober/2024/17-jedi-rat.mp3") }}
