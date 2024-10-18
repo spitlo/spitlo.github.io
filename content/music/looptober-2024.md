@@ -138,3 +138,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Last year’s beat for October 17 was "Needy Bat" which is perhaps the exact opposite of a Jedi rat.
 
 {{ looper(filepath="/audio/looptober/2024/17-jedi-rat.mp3") }}
+
+### 18 - Choices (119 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=58) }}
+> It’s Friday, folks! Three digit beat coming up!
+
+{{ looper(filepath="/audio/looptober/2024/18-choices.mp3") }}
