@@ -145,3 +145,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > It’s Friday, folks! Three digit beat coming up!
 
 {{ looper(filepath="/audio/looptober/2024/18-choices.mp3") }}
+
+### 19 - Holography Dept. (91 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=61) }}
+> This sounds like how riding a bike feels.
+
+{{ looper(filepath="/audio/looptober/2024/19-holography-dept.mp3") }}
