@@ -152,3 +152,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > This sounds like how riding a bike feels.
 
 {{ looper(filepath="/audio/looptober/2024/19-holography-dept.mp3") }}
+
+### 20 - Here Come the Probes (46 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=65) }}
+> Slowly but surely.
+
+{{ looper(filepath="/audio/looptober/2024/20-here-come-the-probes.mp3") }}
