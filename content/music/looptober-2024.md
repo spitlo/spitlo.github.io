@@ -159,3 +159,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Slowly but surely.
 
 {{ looper(filepath="/audio/looptober/2024/20-here-come-the-probes.mp3") }}
+
+### 21 - The Donzerly Light (83 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=68) }}
+> Only ten days left! 
+
+{{ looper(filepath="/audio/looptober/2024/21-the-donzerly-light.mp3") }}
