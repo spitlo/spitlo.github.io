@@ -173,3 +173,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > A quarter to midnight I gave up on looking for more USB cables and went to bed.
 
 {{ looper(filepath="/audio/looptober/2024/22-cablage-defectueux.mp3") }}
+
+### 23 - A Predawn Walk (62 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=74) }}
+> Perhaps a stroll through Paris in the Sixties?
+
+{{ looper(filepath="/audio/looptober/2024/23-a-predawn-walk.mp3") }}
