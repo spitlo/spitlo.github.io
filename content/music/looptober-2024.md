@@ -166,3 +166,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Only ten days left! 
 
 {{ looper(filepath="/audio/looptober/2024/21-the-donzerly-light.mp3") }}
+
+### 22 - Câblage Défectueux (123 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=71) }}
+> A quarter to midnight I gave up on looking for more USB cables and went to bed.
+
+{{ looper(filepath="/audio/looptober/2024/22-cablage-defectueux.mp3") }}
