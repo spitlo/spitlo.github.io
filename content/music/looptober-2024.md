@@ -180,3 +180,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Perhaps a stroll through Paris in the Sixties?
 
 {{ looper(filepath="/audio/looptober/2024/23-a-predawn-walk.mp3") }}
+
+### 24 - Day of Departure (98 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=77) }}
+> All aboard!
+
+{{ looper(filepath="/audio/looptober/2024/24-day-of-departure.mp3") }}
