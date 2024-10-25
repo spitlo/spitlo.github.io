@@ -187,3 +187,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > All aboard!
 
 {{ looper(filepath="/audio/looptober/2024/24-day-of-departure.mp3") }}
+
+### 25 - Fatigue (80 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=80) }}
+> I can’t even be bothered to fix the clicky loop. 
+
+{{ looper(filepath="/audio/looptober/2024/25-fatigue.mp3") }}
