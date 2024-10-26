@@ -194,3 +194,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > I can’t even be bothered to fix the clicky loop. 
 
 {{ looper(filepath="/audio/looptober/2024/25-fatigue.mp3") }}
+
+### 26 - Patat Oorlog (78 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=84) }}
+> Extra onion, please.
+
+{{ looper(filepath="/audio/looptober/2024/26-patat-oorlog.mp3") }}
