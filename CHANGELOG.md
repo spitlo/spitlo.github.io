@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.13.27
+
+- Looptober: Add beat for October 27 [`40aea4c4`](../../commit/40aea4c496bb0a412ce66cf08e127bd8d03fb1e4)
+
 ## v2.13.26
 
 - Looptober: Attempt to fix clicky loop [`a7d76995`](../../commit/a7d7699517d9fff05140c477d42705e298ec923f)
