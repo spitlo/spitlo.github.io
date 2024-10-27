@@ -201,3 +201,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Extra onion, please.
 
 {{ looper(filepath="/audio/looptober/2024/26-patat-oorlog.mp3") }}
+
+### 27 - BATT.LO (58 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=87) }}
+> I just spent eight minutes making this loop and 43 minutes trying to figure out what to write here. 
+
+{{ looper(filepath="/audio/looptober/2024/27-batt.lo.mp3") }}
