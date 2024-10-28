@@ -208,3 +208,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > I just spent eight minutes making this loop and 43 minutes trying to figure out what to write here. 
 
 {{ looper(filepath="/audio/looptober/2024/27-batt.lo.mp3") }}
+
+### 28 - Bosan dan Kesepian (105 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=90) }}
+> Sometimes you go for the clicky loop, sometimes you go for the sucky loop.
+
+{{ looper(filepath="/audio/looptober/2024/28-bosan-dan-kesepian.mp3") }}
