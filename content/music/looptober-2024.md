@@ -215,3 +215,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Sometimes you go for the clicky loop, sometimes you go for the sucky loop.
 
 {{ looper(filepath="/audio/looptober/2024/28-bosan-dan-kesepian.mp3") }}
+
+### 29 - The Toupée Fallacy (81 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=94) }}
+> Remember, you only spot the bad ones!
+
+{{ looper(filepath="/audio/looptober/2024/29-the-toupee-fallacy.mp3") }}
