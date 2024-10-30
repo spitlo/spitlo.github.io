@@ -222,3 +222,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Remember, you only spot the bad ones!
 
 {{ looper(filepath="/audio/looptober/2024/29-the-toupee-fallacy.mp3") }}
+
+### 30 - At the Arcades (72 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=97) }}
+> Woop, woop! One day left! I really hate that last chord.
+
+{{ looper(filepath="/audio/looptober/2024/30-at-the-arcades.mp3") }}
