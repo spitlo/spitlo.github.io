@@ -229,3 +229,10 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 > Woop, woop! One day left! I really hate that last chord.
 
 {{ looper(filepath="/audio/looptober/2024/30-at-the-arcades.mp3") }}
+
+### 31 - Finale: Toad-Boy Wins (73 BPM) {{ timesig(numerator="4", denominator="4") }}
+
+> {{ progress(type="circular", percentage=100) }}
+> That’s it for this year, folks. Go, Toad-Boy!
+
+{{ looper(filepath="/audio/looptober/2024/31-finale-toad-boy-wins.mp3") }}
