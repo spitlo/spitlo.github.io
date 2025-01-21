@@ -8,9 +8,14 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
+## v2.14.x _(2025-01-21)_
+
+  - Initiated D Strain of Derivata
+
 ## v2.13.x _(2024-10-01)_
 
   - Started on Looptober 2024
+  - Finished Looptober 2024
 
 ## v2.12.x _(2024-07-11)_
 

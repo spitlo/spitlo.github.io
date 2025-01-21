@@ -20,13 +20,23 @@ The first version, `a-000.mp3` was sent by Lolita Fatjo on 2022-01-24 at 06:49 C
 
 ## B Strain
 
-On January 4th, 2023, the B Strain was inititated by Spitlo.
+On January 4th, 2023, the B Strain was initiated by Spitlo.
 
 ## C Strain
 
-On January 25th, 2024, the C Strain was inititated by Lolita Fatjo.
+On January 25th, 2024, the C Strain was initiated by Lolita Fatjo.
+
+## D Strain
+
+On January 20th, 2025, the D Strain was initiated by Spitlo.
 
 ## Files
+
+### D Strain, 2025
+
+| File       | Sent             | By       | Duration | Snippet (size)                                                       |
+|:-----------|:-----------------|:---------|:---------|:---------------------------------------------------------------------|
+| d-000.mp3  | 2025-01-20 09:01 | spitlo   |    02:46 | [mp3](https://files.mefirst.se/derivata/snippets/d-000.mp3) (722 KB) |
 
 ### C Strain, 2024
 
