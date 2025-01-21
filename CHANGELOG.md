@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.14.0
+
+- Derivata: Initiate D Strain [`e6e212b6`](../../commit/e6e212b6ccc280924c9310debcc6472f362ee399)
+
 ## v2.13.31
 
 - Looptober: Add beat for October 31 [`97d46810`](../../commit/97d468100dce2d51ced731354dc43d1f20247651)
