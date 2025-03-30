@@ -11,6 +11,7 @@ This is the human-readable, curated changelog. For a full (automated) changelog,
 ## v2.14.x _(2025-01-21)_
 
   - Initiated D Strain of Derivata
+  - Added a magic command to teleport to a random page
 
 ## v2.13.x _(2024-10-01)_
 

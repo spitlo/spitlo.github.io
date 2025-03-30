@@ -188,6 +188,17 @@ Commands are tab completable. Type <code>:</code> to try a command.
       'Hell, no!'
     )
   },
+
+  xyzzy: () => {
+    // Let’s teleport
+    if (window.searchIndex && window.searchIndex.documentStore) {
+      const pages = Object.keys(window.searchIndex.documentStore.docs || {})
+      const page = pages[Math.floor(Math.random() * pages.length)]
+      if (page) {
+        location.href = page
+      }
+    }
+  },
 }
 
 const navigation = {
