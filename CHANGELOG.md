@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.14.2
+
+- Make sure magic word doesn’t take us back to the current page [`a9f517fa`](../../commit/a9f517fae70c7d6a91959b16f51c047558f3ec16)
+
 ## v2.14.1
 
 - Add :xyzzy command to teleport to random page [`9dc00bdf`](../../commit/9dc00bdf8b06de7936b1dfedd07b3b8472d94787)
