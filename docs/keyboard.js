@@ -64,7 +64,8 @@ $html.classList.add('light')
 showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','light',365),()=>deleteCookie('theme'),'Yes, please!','I’d rather not')},dark:()=>{if($html.classList.contains('light')){$html.classList.remove('light')}
 $html.classList.add('dark')
 showCommandLineConfirm('Set a cookie?','Do you want to set a cookie to remember this?',()=>setCookie('theme','dark',365),()=>deleteCookie('theme'),'Sure, shoot!','Hell, no!')},xyzzy:()=>{if(window.searchIndex&&window.searchIndex.documentStore){const pages=Object.keys(window.searchIndex.documentStore.docs||{})
-const page=pages[Math.floor(Math.random()*pages.length)]
+let page=location.href
+while(page===location.href){page=pages[Math.floor(Math.random()*pages.length)]}
 if(page){location.href=page}}},}
 const navigation={'H':'/','C':'/code/','M':'/music/','T':'/tags/',}
 const pressed={'ctrlKey':false,}
