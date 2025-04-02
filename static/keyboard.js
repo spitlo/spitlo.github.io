@@ -193,7 +193,11 @@ Commands are tab completable. Type <code>:</code> to try a command.
     // Let’s teleport
     if (window.searchIndex && window.searchIndex.documentStore) {
       const pages = Object.keys(window.searchIndex.documentStore.docs || {})
-      const page = pages[Math.floor(Math.random() * pages.length)]
+      // Make sure we don’t go to the current page
+      let page = location.href
+      while (page === location.href) {
+        page = pages[Math.floor(Math.random() * pages.length)]
+      }
       if (page) {
         location.href = page
       }
