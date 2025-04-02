@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.14.1
+
+- Add :xyzzy command to teleport to random page [`9dc00bdf`](../../commit/9dc00bdf8b06de7936b1dfedd07b3b8472d94787)
+
 ## v2.14.0
 
 - Derivata: Initiate D Strain [`e6e212b6`](../../commit/e6e212b6ccc280924c9310debcc6472f362ee399)
