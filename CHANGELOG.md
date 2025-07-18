@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v2.14.3
+
+- Add Derivata d-001 to d-004 [`0dfc8a1e`](../../commit/0dfc8a1ee765991d0028b5ddcd05e9db56fe9523)
+
 ## v2.14.2
 
 - Make sure magic word doesn’t take us back to the current page [`a9f517fa`](../../commit/a9f517fae70c7d6a91959b16f51c047558f3ec16)
