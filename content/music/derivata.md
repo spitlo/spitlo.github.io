@@ -37,6 +37,10 @@ On January 20th, 2025, the D Strain was initiated by Spitlo.
 | File       | Sent             | By       | Duration | Snippet (size)                                                       |
 |:-----------|:-----------------|:---------|:---------|:---------------------------------------------------------------------|
 | d-000.mp3  | 2025-01-20 09:01 | spitlo   |    02:46 | [mp3](https://files.mefirst.se/derivata/snippets/d-000.mp3) (722 KB) |
+| d-001.mp3  | 2025-05-15 21:52 | L.F.     |    03:38 | [mp3](https://files.mefirst.se/derivata/snippets/d-001.mp3) (721 KB) |
+| d-002.mp3  | 2025-06-23 17:06 | spitlo   |    03:11 | [mp3](https://files.mefirst.se/derivata/snippets/d-002.mp3) (722 KB) |
+| d-003.mp3  | 2025-07-14 14:36 | L.F.     |    06:11 | [mp3](https://files.mefirst.se/derivata/snippets/d-003.mp3) (722 KB) |
+| d-004.mp3  | 2025-07-18 14:50 | spitlo   |    05:12 | [mp3](https://files.mefirst.se/derivata/snippets/d-004.mp3) (722 KB) |
 
 ### C Strain, 2024
 
