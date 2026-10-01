@@ -1,4 +1,3 @@
-{% import "macros.html" as macros %}
 {% extends "index.html" %}
 
 {% block breadcrumbs %}
@@ -17,11 +16,11 @@
     {% for term in terms %}
       <li>
         <a href="{{ term.permalink }}" class="numberedLink">
-          {{ macros::icon(name=term.slug, size="huge", colored=true) }}
+          {{ <icon name={term.slug} size="huge" colored={true} /> }}
         </a>
         <div class="content">
           <p>
-            {{ macros::cardinal(number=term.pages | length) | title }} project{{ term.pages | length | pluralize }} tagged with
+            {{ <cardinal number={term.pages | length} /> | title }} project{{ term.pages | length | pluralize }} tagged with
             <span class="taxonomy">{{ term.name }}</span>. <br/>
             <a class="continue" href="{{ term.permalink }}">View tag {{ term.name }}</a>
           </p>

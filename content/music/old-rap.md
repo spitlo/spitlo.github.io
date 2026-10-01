@@ -13,8 +13,8 @@ The embeds are hosted on the [YewTube](https://yewtu.be/) Invidious instance so 
 
 ## The Longest Time
 
-{{ invidious(video="1ARO-CvqELY") }}
+{{ <invidious video="1ARO-CvqELY" /> }}
 
 ## Bottles Revisited feat. Jaquee
 
-{{ invidious(video="yjNcAA57a6E") }}
+{{ <invidious video="yjNcAA57a6E" /> }}

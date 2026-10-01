@@ -35,7 +35,7 @@ This is my christmas tree, complete with "snow" and "decorations". It’s not th
 
 *254 characters*
 
-{{ gifplayer(basename="img/day-02" width="512" height="288") }}
+{{ <gifplayer basename="img/day-02" width={512} height={288} /> }}
 
 ```lua
 H=136W=240
@@ -62,7 +62,7 @@ I don’t know. It swings.
 
 *107 characters*
 
-{{ gifplayer(basename="img/day-03" width="512" height="288") }}
+{{ <gifplayer basename="img/day-03" width={512} height={288} /> }}
 
 ```lua
 function TIC()t=time()/3600
@@ -78,8 +78,8 @@ I probably got this "wrong", it sort of zooms out indefinately and becomes very 
 
 *118 characters*
 
-{{ gifplayer(basename="img/day-04" width="512" height="288") }}
-{{ gifplayer(basename="img/day-04b" width="512" height="288") }}
+{{ <gifplayer basename="img/day-04" width={512} height={288} /> }}
+{{ <gifplayer basename="img/day-04b" width={512} height={288} /> }}
 
 ```lua
 S=math.sin
@@ -96,7 +96,7 @@ Ok, I must admit I really sucked at this tunnel business. It doesn’t look tunn
 
 *171 characters*
 
-{{ gifplayer(basename="img/day-05" width="512" height="288") }}
+{{ <gifplayer basename="img/day-05" width={512} height={288} /> }}
 
 ```lua
 function TIC()t=time()/90
@@ -113,7 +113,7 @@ A little reggae flavored background action and a sweet sine scroller.
 
 *~~255 characters~~ 248 characters*
 
-{{ gifplayer(basename="img/day-06" width="512" height="288") }}
+{{ <gifplayer basename="img/day-06" width={512} height={288} /> }}
 
 ```lua
 t=1
@@ -134,7 +134,7 @@ Ok, so there’s some kind of plasma beam energy gun going on in the background,
 
 *~~251 characters~~ 246 characters*
 
-{{ gifplayer(basename="img/day-07" width="512" height="288") }}
+{{ <gifplayer basename="img/day-07" width={512} height={288} /> }}
 
 ```lua
 m=math
@@ -154,7 +154,7 @@ The Surveillance Snakes are watching! The instructions had the background bars c
 
 *215 characters*
 
-{{ gifplayer(basename="img/day-08" width="512" height="288") }}
+{{ <gifplayer basename="img/day-08" width={512} height={288} /> }}
 
 ```lua
 t=0
@@ -176,7 +176,7 @@ A little shadebob christmas postcard. You can almost see Tinker Bell flying arou
 
 *255 characters*
 
-{{ gifplayer(basename="img/day-09" width="512" height="288") }}
+{{ <gifplayer basename="img/day-09" width={512} height={288} /> }}
 
 ```lua
 cls()t=0S=math.sin
@@ -197,7 +197,7 @@ Half the challenge was getting it down to 256 BYTES using a packer like [Paketti
 
 *~~455 characters~~ 450 characters*
 
-{{ gifplayer(basename="img/day-10" width="512" height="288") }}
+{{ <gifplayer basename="img/day-10" width={512} height={288} /> }}
 
 ```lua
 t=0M=math
@@ -228,7 +228,7 @@ I think it looks really cool but I should probably stop reusing the sine scrolle
 
 *~~1083 characters~~ 1078 characters*
 
-{{ gifplayer(basename="img/day-11" width="512" height="288") }}
+{{ <gifplayer basename="img/day-11" width={512} height={288} /> }}
 
 ```lua
 S=math.sin
@@ -265,7 +265,7 @@ At this point I have given up on the packer stuff, I hand crunched this and I’
 
 *~~832 characters~~ ~~825 characters~~ 812 characters*
 
-{{ gifplayer(basename="img/day-12" width="512" height="288") }}
+{{ <gifplayer basename="img/day-12" width={512} height={288} /> }}
 
 ```lua
 S=math.sin
@@ -303,7 +303,7 @@ I was on fire so I kept right on with the extras. What better way to illustrate 
 
 *149 characters*
 
-{{ gifplayer(basename="img/day-01-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-01-extra" width={512} height={288} /> }}
 
 ```lua
 P=pix
@@ -325,7 +325,7 @@ I saved one character by using "to the power of" (`time()^.3`) instead of "divid
 
 *203 characters*
 
-{{ gifplayer(basename="img/day-02-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-02-extra" width={512} height={288} /> }}
 
 ```lua
 y=60
@@ -351,7 +351,7 @@ EDIT: Switched to using a ternary expression, saved 15 characters.
 
 *~~956 characters~~ ~~949 characters~~ 930 characters*
 
-{{ gifplayer(basename="img/day-03-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-03-extra" width={512} height={288} /> }}
 
 ```lua
 F={}W=320H=136O='TARGETS SELECTED... CROSS FLEET COMMUNICATIONS ESTABLISHED... AWAITING INSTRUCTIONS... DO WE HAVE GO? .... I REPEAT: DO WE HAVE GO?'P=pix
@@ -397,7 +397,7 @@ I wanted to try using `poke` instead of `pix`. It’s one more character, but on
 
 *152 characters*
 
-{{ gifplayer(basename="img/day-04-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-04-extra" width={512} height={288} /> }}
 
 ```lua
 W=240S=math.sin
@@ -416,7 +416,7 @@ end
 
 *254 characters*
 
-{{ gifplayer(basename="img/day-05-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-05-extra" width={512} height={288} /> }}
 
 ```lua
 W=240S=math.sin
@@ -440,7 +440,7 @@ The challenge was to make the smallest possible implementation of raster bars, b
 
 *146 characters*
 
-{{ gifplayer(basename="img/day-06-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-06-extra" width={512} height={288} /> }}
 
 ```lua
 t=0S=math.sin
@@ -460,7 +460,7 @@ This didn’t go so well, I will need to revisit it. The groundwork is done, but
 
 *381 characters*
 
-{{ gifplayer(basename="img/day-07-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-07-extra" width={512} height={288} /> }}
 
 ```lua
 cls()W=120H=68M=math
@@ -492,7 +492,7 @@ I won’t even pretend to understand the mathematics involved here. This is just
 
 *211 characters*
 
-{{ gifplayer(basename="img/day-08-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-08-extra" width={512} height={288} /> }}
 
 ```lua
 M=math
@@ -514,7 +514,7 @@ I wanted to make this a little less colorful and more natural looking than the e
 
 *232 characters*
 
-{{ gifplayer(basename="img/day-09-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-09-extra" width={512} height={288} /> }}
 
 ```lua
 t=0N=999S=math.sin
@@ -536,7 +536,7 @@ Ok, let’s add grass to the growing list of stuff I suck at visualizing. I gues
 
 *136 characters*
 
-{{ gifplayer(basename="img/day-10-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-10-extra" width={512} height={288} /> }}
 
 ```lua
 t=0S=math.sin
@@ -554,7 +554,7 @@ Wow, this one was hard! I had to learn and then quickly forget a bunch of math t
 
 *462 characters*
 
-{{ gifplayer(basename="img/day-11-extra" width="512" height="288") }}
+{{ <gifplayer basename="img/day-11-extra" width={512} height={288} /> }}
 
 ```lua
 P=math.pi*2S=math.sin

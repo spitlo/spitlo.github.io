@@ -1,5 +1,3 @@
-{% import "macros.html" as macros %}
-
 <li>
   <a href="{{ project.permalink }}" class="numberedLink">
     <h2>{{ project.title }}
@@ -20,14 +18,14 @@
     <div class="taxonomy">
       <span class="label">Tech:</span>
       {% for tech in project.taxonomies.technologies %}
-        {{ macros::icon(name=tech, size="small") }}
+        {{ <icon name={tech} size="small" /> }}
       {% endfor %}
     </div>
   {% elif project.taxonomies.categories %}
     <div class="taxonomy">
       <span class="label">Categories:</span>
       {% for cat in project.taxonomies.categories %}
-        {{ macros::icon(name=cat, size="small", type="remix") }}
+        {{ <icon name={cat} size="small" type="remix" /> }}
       {% endfor %}
     </div>
   {% endif %}

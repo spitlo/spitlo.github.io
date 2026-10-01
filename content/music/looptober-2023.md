@@ -10,6 +10,8 @@ categories = ["Electronic", "Loops"]
 content_class = "looptober looptober-2023"
 +++
 
+{{<icon name="android" size="small" />}}
+{{ <prog type="circular" percentage={37} /> }}
 I decided to do Looptober this year, too. And this year I’m using the Polyend Tracker. I wanted to try out all the new features of the 1.7 firmware, and experiment a bit with making instruments on it.
 
 I prepared by using the auto name feature to create 31 named but empty projects, thinking the name will set the direction for the loop.
@@ -18,219 +20,219 @@ I prepared by using the auto name feature to create 31 named but empty projects,
 
 <mark class="arrow">NB2</mark> Loops marked with X was not finished on time, but created and added later.
 
-### 01 - Political Replacement (96 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 01 - Political Replacement (96 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=3) }}
+> {{ <prog type="circular" percentage={3} /> }}
 > The game is afoot!
 
-{{ looper(filepath="/audio/looptober/2023/01-political-replacement.mp3") }}
+{{ <looper nth={1} filepath="/audio/looptober/2023/01-political-replacement.mp3" /> }}
 
-### 02 - Guarded Pleasure (83 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 02 - Guarded Pleasure (83 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=6) }}
+> {{ <prog type="circular" percentage={6} /> }}
 > Happy whistle tune, R.I.P Roger
 
-{{ looper(filepath="/audio/looptober/2023/02-guarded-pleasure.mp3") }}
+{{ <looper nth={2} filepath="/audio/looptober/2023/02-guarded-pleasure.mp3" /> }}
 
-### 03 - Nostalgic Club (76 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 03 - Nostalgic Club (76 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=10) }}
+> {{ <prog type="circular" percentage={10} /> }}
 > Random radio samples, sorry for the crackling
 
-{{ looper(filepath="/audio/looptober/2023/03-nostalgic-club.mp3") }}
+{{ <looper nth={3} filepath="/audio/looptober/2023/03-nostalgic-club.mp3" /> }}
 
-### 04 - Erratic Toes (103 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 04 - Erratic Toes (103 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=13) }}
+> {{ <prog type="circular" percentage={13} /> }}
 > Only four days in and already a triple digit BPM!
 
-{{ looper(filepath="/audio/looptober/2023/04-erratic-toes.mp3") }}
+{{ <looper nth={4} filepath="/audio/looptober/2023/04-erratic-toes.mp3" /> }}
 
-### 05 - Longing Pump (48 BPM) {{ timesig(numerator="6", denominator="8") }}
+### 05 - Longing Pump (48 BPM) {{ <timesig numerator="6" denominator="8" /> }}
 
-> {{ progress(type="circular", percentage=16) }}
+> {{ <prog type="circular" percentage={16} /> }}
 > Another whistle tune? Well, yessirree!
 
-{{ looper(filepath="/audio/looptober/2023/05-longing-pump.mp3") }}
+{{ <looper nth={5} filepath="/audio/looptober/2023/05-longing-pump.mp3" /> }}
 
-### 06 - Wonderful Order (97 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 06 - Wonderful Order (97 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=19) }}
+> {{ <prog type="circular" percentage={19} /> }}
 > Hey lame 90's sax, nice to hear you again
 
-{{ looper(filepath="/audio/looptober/2023/06-wonderful-order.mp3") }}
+{{ <looper nth={6} filepath="/audio/looptober/2023/06-wonderful-order.mp3" /> }}
 
-### 07 - Hypnotic Magic (69 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 07 - Hypnotic Magic (69 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=23) }}
+> {{ <prog type="circular" percentage={23} /> }}
 > Spooky!
 
-{{ looper(filepath="/audio/looptober/2023/07-hypnotic-magic.mp3") }}
+{{ <looper nth={7} filepath="/audio/looptober/2023/07-hypnotic-magic.mp3" /> }}
 
-### 08 - Necessary Ship (96 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 08 - Necessary Ship (96 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", fail=true) }}
+> {{ <prog type="circular" fail={true} /> }}
 > I fixed the greasy encoder on my Tracker today, let’s celebrate with an extra loop! (2023-10-13)
 
-{{ looper(filepath="/audio/looptober/2023/08-necessary-ship.mp3") }}
+{{ <looper nth={8} filepath="/audio/looptober/2023/08-necessary-ship.mp3" /> }}
 
-### 09 - Callous Engine (87 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 09 - Callous Engine (87 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", fail=true) }}
+> {{ <prog type="circular" fail={true} /> }}
 > I will probably need to remix this when my ears aren’t bleeding (2023-10-13)
 
-{{ looper(filepath="/audio/looptober/2023/09-callous-engine.mp3") }}
+{{ <looper nth={9} filepath="/audio/looptober/2023/09-callous-engine.mp3" /> }}
 
-### 10 - Enchanted Thought (90 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 10 - Enchanted Thought (90 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", fail=true) }}
+> {{ <prog type="circular" fail={true} /> }}
 > Listening to old Cambodian soul, I had to make a little loop (2023-10-19)
 
-{{ looper(filepath="/audio/looptober/2023/10-enchanted-thought.mp3") }}
+{{ <looper nth={10} filepath="/audio/looptober/2023/10-enchanted-thought.mp3" /> }}
 
-### 11 - Statuesque Railway (87 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 11 - Statuesque Railway (87 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", fail=true) }}
+> {{ <prog type="circular" fail={true} /> }}
 > No more catching up to do! For now... (2023-10-23)
 
-{{ looper(filepath="/audio/looptober/2023/11-statuesque-railway.mp3") }}
+{{ <looper nth={11} filepath="/audio/looptober/2023/11-statuesque-railway.mp3" /> }}
 
-### 12 - Dispensable Ladybug (110 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 12 - Dispensable Ladybug (110 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=39) }}
+> {{ <prog type="circular" percentage={39} /> }}
 > There is a very real possibility that this one could get tiresome quickly
 
-{{ looper(filepath="/audio/looptober/2023/12-dispensable-ladybug.mp3") }}
+{{ <looper nth={12} filepath="/audio/looptober/2023/12-dispensable-ladybug.mp3" /> }}
 
-### 13 - Sick Current (75 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 13 - Sick Current (75 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=42) }}
+> {{ <prog type="circular" percentage={42} /> }}
 > More spooky!
 
-{{ looper(filepath="/audio/looptober/2023/13-sick-current.mp3") }}
+{{ <looper nth={13} filepath="/audio/looptober/2023/13-sick-current.mp3" /> }}
 
-### 14 - Irate Skate (82 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 14 - Irate Skate (82 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=45) }}
+> {{ <prog type="circular" percentage={45} /> }}
 > Well, there’s an I in Irate, right?
 
-{{ looper(filepath="/audio/looptober/2023/14-irate-skate.mp3") }}
+{{ <looper nth={14} filepath="/audio/looptober/2023/14-irate-skate.mp3" /> }}
 
-### 15 - Fallacious Argument (108 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 15 - Fallacious Argument (108 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=48) }}
+> {{ <prog type="circular" percentage={48} /> }}
 > Something for the Sunday run
 
-{{ looper(filepath="/audio/looptober/2023/15-fallacious-argument.mp3") }}
+{{ <looper nth={15} filepath="/audio/looptober/2023/15-fallacious-argument.mp3" /> }}
 
-### 16 - Unique Border (75 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 16 - Unique Border (75 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=52) }}
+> {{ <prog type="circular" percentage={52} /> }}
 > Half diggedy-done!
 
-{{ looper(filepath="/audio/looptober/2023/16-unique-border.mp3") }}
+{{ <looper nth={16} filepath="/audio/looptober/2023/16-unique-border.mp3" /> }}
 
-### 17 - Needy Bat (101 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 17 - Needy Bat (101 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=55) }}
+> {{ <prog type="circular" percentage={55} /> }}
 > I don’t know how needy the bat is, but at least the violin is Transylvanian
 
-{{ looper(filepath="/audio/looptober/2023/17-needy-bat.mp3") }}
+{{ <looper nth={17} filepath="/audio/looptober/2023/17-needy-bat.mp3" /> }}
 
-### 18 - Keen Quill (77 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 18 - Keen Quill (77 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=58) }}
+> {{ <prog type="circular" percentage={58} /> }}
 > What a beautiful Wednesday morning!
 
-{{ looper(filepath="/audio/looptober/2023/18-keen-quill.mp3") }}
+{{ <looper nth={18} filepath="/audio/looptober/2023/18-keen-quill.mp3" /> }}
 
-### 19 - Wild Snails (80 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 19 - Wild Snails (80 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=61) }}
+> {{ <prog type="circular" percentage={61} /> }}
 > Lolita Fatjo gave me a Casio DM-100, had to sample it!
 
-{{ looper(filepath="/audio/looptober/2023/19-wild-snails.mp3") }}
+{{ <looper nth={19} filepath="/audio/looptober/2023/19-wild-snails.mp3" /> }}
 
-### 20 - Nonchalant Name (93 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 20 - Nonchalant Name (93 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=65) }}
+> {{ <prog type="circular" percentage={65} /> }}
 > If it’s atonal, you’re too anal
 
-{{ looper(filepath="/audio/looptober/2023/20-nonchalant-name.mp3") }}
+{{ <looper nth={20} filepath="/audio/looptober/2023/20-nonchalant-name.mp3" /> }}
 
-### 21 - Flaky Invention (102 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 21 - Flaky Invention (102 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=68) }}
+> {{ <prog type="circular" percentage={68} /> }}
 > It’s like someone took a twelve-bar blues and broke it
 
-{{ looper(filepath="/audio/looptober/2023/21-flaky-invention.mp3") }}
+{{ <looper nth={21} filepath="/audio/looptober/2023/21-flaky-invention.mp3" /> }}
 
-### 22 - Voracious Rat (73 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 22 - Voracious Rat (73 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=71) }}
+> {{ <prog type="circular" percentage={71} /> }}
 > I believe these are the chords from Nightshift, but in alphabetical order
 
-{{ looper(filepath="/audio/looptober/2023/22-voracious-rat.mp3") }}
+{{ <looper nth={22} filepath="/audio/looptober/2023/22-voracious-rat.mp3" /> }}
 
-### 23 - New Linen (75 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 23 - New Linen (75 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=74) }}
+> {{ <prog type="circular" percentage={74} /> }}
 > Ahh, new linen! That’s the best smell
 
-{{ looper(filepath="/audio/looptober/2023/23-new-linen.mp3") }}
+{{ <looper nth={23} filepath="/audio/looptober/2023/23-new-linen.mp3" /> }}
 
-### 24 - Quickest Week (71 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 24 - Quickest Week (71 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=77) }}
+> {{ <prog type="circular" percentage={77} /> }}
 > But it’s only Tuesday!
 
-{{ looper(filepath="/audio/looptober/2023/24-quickest-week.mp3") }}
+{{ <looper nth={24} filepath="/audio/looptober/2023/24-quickest-week.mp3" /> }}
 
-### 25 - Thin Nation (87 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 25 - Thin Nation (87 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=80) }}
+> {{ <prog type="circular" percentage={80} /> }}
 > Stand with Palestine!
 
-{{ looper(filepath="/audio/looptober/2023/25-thin-nation.mp3") }}
+{{ <looper nth={25} filepath="/audio/looptober/2023/25-thin-nation.mp3" /> }}
 
-### 26 - Rural Dog (66 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 26 - Rural Dog (66 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=84) }}
+> {{ <prog type="circular" percentage={84} /> }}
 > Sebuah sanjungan untuk semua anjing di Sulawesi Utara
 
-{{ looper(filepath="/audio/looptober/2023/26-rural-dog.mp3") }}
+{{ <looper nth={26} filepath="/audio/looptober/2023/26-rural-dog.mp3" /> }}
 
-### 27 - Lackadaisical Stretch (110 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 27 - Lackadaisical Stretch (110 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=87) }}
+> {{ <prog type="circular" percentage={87} /> }}
 > This stretch doesn’t feel lackadaisical at all, I’m looking forward to doing the last four.
 
-{{ looper(filepath="/audio/looptober/2023/27-lackadaisical-stretch.mp3") }}
+{{ <looper nth={27} filepath="/audio/looptober/2023/27-lackadaisical-stretch.mp3" /> }}
 
-### 28 - Waiting Cemetery (112 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 28 - Waiting Cemetery (112 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=90) }}
+> {{ <prog type="circular" percentage={90} /> }}
 > Voyage dans la Nuit!
 
-{{ looper(filepath="/audio/looptober/2023/28-waiting-cemetary.mp3") }}
+{{ <looper nth={28} filepath="/audio/looptober/2023/28-waiting-cemetary.mp3" /> }}
 
-### 29 - Marked Expansion (80 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 29 - Marked Expansion (80 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=94) }}
+> {{ <prog type="circular" percentage={94} /> }}
 > Or is it an invasion?
 
-{{ looper(filepath="/audio/looptober/2023/29-marked-expansion.mp3") }}
+{{ <looper nth={29} filepath="/audio/looptober/2023/29-marked-expansion.mp3" /> }}
 
-### 30 - Dusty Amount (90 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 30 - Dusty Amount (90 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=97) }}
+> {{ <prog type="circular" percentage={97} /> }}
 > Can you feel it? One day left!
 
-{{ looper(filepath="/audio/looptober/2023/30-dusty-amount.mp3") }}
+{{ <looper nth={30} filepath="/audio/looptober/2023/30-dusty-amount.mp3" /> }}
 
-### 31 - Periodic Society (116 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 31 - Periodic Society (116 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ progress(type="circular", percentage=100) }}
+> {{ <prog type="circular" percentage={100} /> }}
 > Going out with a meh!
 
-{{ looper(filepath="/audio/looptober/2023/31-periodic-society.mp3") }}
+{{ <looper nth={31} filepath="/audio/looptober/2023/31-periodic-society.mp3" /> }}

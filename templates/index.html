@@ -1,5 +1,3 @@
-{% import "macros.html" as macros %}
-
 <!doctype html>
 <html lang="en" class="noJS">
   <head>
@@ -38,15 +36,15 @@
       document.documentElement.classList.add('js-nomodule')
     </script>
     
-    <title>{% if section.title %}{{ section.title }} / {% endif %}{% if page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
+    <title>{% if section and section.title %}{{ section.title }} / {% endif %}{% if page and page.title %}{{ page.title }} / {% endif %}{{ config.title }}</title>
 
-    {% if page.title %}
+    {% if page and page.title %}
       {#  This is for Firefox Reader View #}
       <meta property="dc:title" content="{{ page.title }}">
     {% endif %}
 
     {% if current_path %}
-      {% set og_page_url = current_path | trim_end_matches(pat="/") | replace(from="/", to=" SLASH ") %}
+      {% set og_page_url = current_path | trim_end(pat="/") | replace(from="/", to=" SLASH ") %}
       {% set og_title = "Spitlo.com Corporate Overlord Protection Activated" %}
     {% else %}
       {% set og_page_url = "" %}
@@ -86,16 +84,16 @@
   {% set body_class = "circles" %}
   {% set main_section = "home" %}
   {% if current_path %}
-    {% if current_path is starting_with("/code") %}
+    {% if current_path is starting_with(pat="/code") %}
       {% set body_class = "squares" %}
       {% set main_section = "code" %}
-    {% elif current_path is starting_with("/music") %}
+    {% elif current_path is starting_with(pat="/music") %}
       {% set body_class = "triangles" %}
       {% set main_section = "music" %}
     {% elif
-      current_path is starting_with("/tags") or
-      current_path is starting_with("/technologies") or
-      current_path is starting_with("/categories")
+      current_path is starting_with(pat="/tags") or
+      current_path is starting_with(pat="/technologies") or
+      current_path is starting_with(pat="/categories")
     %}
       {% set body_class = "pentagons" %}
       {% set main_section = "tags" %}
@@ -137,7 +135,7 @@
           </ul>
         </nav>
 
-        <div class="colors" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=24, width=680, height=100, type=body_class) | urlencode }});"></div>
+        <div class="colors" style="background-image: url(data:image/svg+xml,{{ <shapes amount={24} width={680} height={100} type="body_class" /> | urlencode }});"></div>
       </header>
 
       <main>
@@ -198,7 +196,7 @@
             <a href="https://en.wikipedia.org/wiki/{{ build_time | date(format="%B_%-d") }}" target="_blank" rel="noopener noreferrer">{{ build_time | date(format="%Y-%m-%d %H:%M") }}</a> CET
           </span>
           <span class="divider">|</span>
-          {% if page.relative_path %}
+          {% if page and page.relative_path %}
             <span class="detail">
               Source:
               <a href="https://github.com/spitlo/spitlo.github.io/blob/main/content/{{ page.relative_path }}" target="_blank" rel="noopener noreferrer">{{ page.relative_path }}</a> / <a href="https://raw.githubusercontent.com/spitlo/spitlo.github.io/main/content/{{ page.relative_path }}" target="_blank" rel="noopener noreferrer">Raw</a>
@@ -214,28 +212,28 @@
         </section>
         <section class="links">
           <span class="link">
-            {{ macros::icon(name="github", size="small") }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
+            {{ <icon name="github" size="small" /> }}<a href="https://github.com/spitlo" target="_blank" rel="noopener noreferrer">spitlo</a>
           </span>
           <span class="link">
-            {{ macros::icon(name="threema", size="small") }}<a href="https://threema.id/" target="_blank" rel="noopener noreferrer" class="scrambled threema">{{ macros::scramble(text="X0X0X0X0") }}</a>
+            {{ <icon name="threema" size="small" /> }}<a href="https://threema.id/" target="_blank" rel="noopener noreferrer" class="scrambled threema">{{ <scramble text="X0X0X0X0" /> }}</a>
           </span>
           <span class="link">
-            {{ macros::icon(name="protonmail", size="small") }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer" class="scrambled email">{{ macros::scramble(text="__@spitlo.com") }}</a>
+            {{ <icon name="protonmail" size="small" /> }}<a href="https://protonmail.com" target="_blank" rel="noopener noreferrer" class="scrambled email">{{ <scramble text="__@spitlo.com"/> }}</a>
           </span>
           {% if config.generate_feeds %}
             <span class="link">
-              {{ macros::icon(name="rss", size="small") }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">atom.xml</a>
+              {{ <icon name="rss" size="small" /> }}<a href="{{ get_url(path="atom.xml", trailing_slash=false) }}" target="_blank" rel="noopener noreferrer">atom.xml</a>
             </span>
           {% endif %}
           <span class="link">
-            {{ macros::icon(name="creative-commons", size="small") }}<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
+            {{ <icon name="creative-commons" size="small" /> }}<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
           </span>
           <span class="shadow link">
             <span>⌃</span> <a href="#top">Back to top</a>
           </span>
         </section>
       </footer>
-      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ macros::shapes(amount=32, width=1080, height=200, type=body_class) | urlencode }});"></div>
+      <div class="heel {{ body_class }}" style="background-image: url(data:image/svg+xml,{{ <shapes amount={32} width={1080} height={200} type="body_class" /> | urlencode }});"></div>
 
       {% include "partials/help.html" %}
 

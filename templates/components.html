@@ -1,0 +1,395 @@
+{% component icon(name, size="medium", colored=false, type="simple") %}
+  {% set slug = name | slugify %}
+  <span class="icon {{ slug }}{% if size %} {{ size }}{% endif %}{% if colored %} colored{% endif %}">
+    {% set icon_path = "static/icons/" ~ type ~ "/" ~  slug ~  ".svg" %}
+    {% set icon_code = load_data(path=icon_path) %}
+    {{ icon_code | safe }}
+  </span>
+{% endcomponent icon %}
+
+{% component shapes(amount=3, width=250, height=250, type="circles") %}
+  {% set colors = [
+    "#0e070c",
+    "#e76f51",
+    "#b1b098",
+    "#3f5469",
+    "#aa9f9f",
+    "#dfcece",
+    "#5a6c7e",
+    "#5ca6a2",
+    "#fff1f1",
+    "#e30000",
+  ] %}
+  <svg height="{{ height }}" width="{{ width }}" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      {% for i in range(start=0, end=amount) %}
+        {% set max_size = width / 5|int(default=80) %}
+        {% set color_amount = colors|length %}
+        {% set color_index = get_random(start=0, end=color_amount) %}
+        {% set color = colors[color_index] %}
+        {% if type == "circles" %}
+          {% set radius = get_random(start=30, end=max_size + 30) %}
+          {% set cx = get_random(start=0, end=width) %}
+          {% set cy = get_random(start=0, end=height) %} <ellipse cx="{{ cx }}" cy="{{ cy }}" fill="{{ color }}" rx="{{ radius }}" ry="{{ radius }}"/>
+        {% elif type == "squares" %}
+          {% set size = get_random(start=30, end=max_size) * 2 %}
+          {% set x = get_random(start=0, end=width) - size %}
+          {% set y = get_random(start=0, end=height) - size %} <rect fill="{{ color }}" height="{{ size }}" width="{{ size }}" x="{{ x }}" y="{{ y }}"/>
+        {% elif type == "triangles" %}
+          {% set size = get_random(start=30, end=max_size) * 2 %}
+          {% set x = get_random(start=0, end=width) - size %}
+          {% set y = get_random(start=0, end=height) - size %} <polygon fill="{{ color }}" points="{{ x }} {{ y }}, {{ x + size * 0.5 }} {{ y + size }}, {{ x - size * 0.5 }} {{ y + size }}"/>
+        {% endif %}
+      {% endfor %}
+    </g>
+  </svg>
+{% endcomponent shapes %}
+
+{% component cardinal(number=0) %}
+  {% set cardinals = [
+    'zero',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+    'ten',
+    'eleven',
+    'twelve',
+    'thirteen',
+    'fourteen',
+    'fifteen',
+    'sixteen',
+    'seventeen',
+    'eighteen',
+    'nineteen',
+  ] %}
+  {% if number < 20 %}
+    {{ cardinals | nth(n=number) }}
+  {% else %}
+    {{ number }}
+  {% endif %}
+{% endcomponent cardinal %}
+
+{% component scramble(text="") %}
+  {% set code_page_437 = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜ¢£¥ƒáíóúñÑªº¿¬½¼¡«»░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀αßΓπΣσµτΦΘΩδ∞φε∩≡±≥≤÷≈°·√ⁿ²" %}
+  {% set code_page_437 = code_page_437 | split(pat="") %}
+  {% set text_length = text | length %}
+  {% set code_page_437_length = code_page_437 | length %}{% set code_page_437_length = code_page_437_length - 1 %}{% for i in range(start=0, end=text_length) %}{% set char_code = get_random(start=0, end=code_page_437_length) %}{% set scrambled_char = code_page_437 | nth(n=char_code) %}{{ scrambled_char }}{% endfor %}
+{% endcomponent scramble %}
+
+
+
+
+{% component gifplayer(basename, width, height) %}
+<div class="gifplayer {% if class %}{{class}}{% endif %}">
+  <div class="container">
+    <a href="{{basename}}.gif" class="idle"><img src="{{basename}}.png" {% if width %}width="{{width}}" {% endif %}{% if height %}height="{{height}}"{% endif %} onclick="if(this.src.endsWith('.gif')){this.src='{{basename}}.png';this.parentElement.className='idle'}else{this.src='{{basename}}.gif';this.parentElement.className='playing'};return false"><div class="playbutton">Click to play</div></a>
+  </div>
+</div>
+{% endcomponent gifplayer %}
+
+{% component invidious(class="", video) %}
+<div class="invidious {% if class %}{{class}}{% endif %}">
+  <div class="container">
+    {{ <icon name="loader" size="large" type="remix" /> }}
+    <iframe src="https://yewtu.be/embed/{{ video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</div>
+{% endcomponent invidious %}
+
+{% component looper(class="", filepath, nth) %}
+<div id="looper-{{nth}}" class="looper {% if class %}{{class}}{% endif %}">
+  <noscript>
+    <audio loop controls src="{{filepath}}"></audio>
+  </noscript>
+</div>
+
+<script type="module">
+  (async () => {
+    let context
+    let gainNode
+    let source
+    let isPlaying = false
+    let vizType = 'td'
+    const avWidth = 200
+    const avHeight = 40
+    const avColors = [
+      '#74edc4', // aquamarine
+      '#8bd1cd', // lightSeagreen
+      '#aa9f9f', // gray
+      '#b1b098', // dirtyYellow
+      '#b55603', // orange
+      '#dfcece', // lightBrown
+      '#e30000', // red
+      '#ecffea', // honeydew
+      '#fff1f1', // mutedPink
+      '#fffcfc', // white
+      '#fffffb', // lightWhite
+    ]
+
+    // Set up player interface
+    const playButton = document.createElement('button')
+    playButton.id = 'play-{{nth}}'
+    playButton.innerHTML = `{{ <icon name="play" size="small" type="remix" /> }}`
+    playButton.setAttribute('aria-label', 'Play loop')
+
+    const stopButton = document.createElement('button')
+    stopButton.id = 'stop-{{nth}}'
+    stopButton.innerHTML = `{{ <icon name="stop" size="small" type="remix" /> }}`
+    stopButton.classList.add('stop')
+    stopButton.setAttribute('aria-label', 'Stop loop')
+
+    const avCanvas = document.createElement('canvas')
+    avCanvas.id = 'av-{{nth}}'
+    avCanvas.setAttribute('width', avWidth)
+    avCanvas.setAttribute('height', avHeight)
+    avCanvas.setAttribute('aria-label', 'Audio visualizer')
+    avCanvas.onclick = () => {
+      if (isPlaying) {
+        if (vizType === 'fr') {
+          vizType = 'td'
+        } else {
+          vizType = 'fr'
+        }
+      }
+    }
+
+    const muteButton = document.createElement('button')
+    muteButton.id = 'mute-{{nth}}'
+    muteButton.innerHTML = `{{ <icon name="mute" size="small" type="remix" /> }}`
+    muteButton.classList.add('mute')
+    muteButton.setAttribute('aria-label', 'Mute loop')
+    muteButton.addEventListener('mousedown', () => {
+      if (source && gainNode) {
+        gainNode.gain.setValueAtTime(0, context.currentTime)
+      }
+    })
+    muteButton.addEventListener('mouseup', () => {
+      if (source && gainNode) {
+        gainNode.gain.setValueAtTime(1, context.currentTime)
+      }
+    })
+
+    const downloadButton = document.createElement('a')
+    downloadButton.id = 'download-{{nth}}'
+    downloadButton.innerHTML = `{{ <icon name="download" size="small" type="remix" /> }}`
+    downloadButton.classList.add('download')
+    downloadButton.setAttribute('aria-label', 'Download loop')
+    downloadButton.setAttribute('download', '')
+    downloadButton.setAttribute('href', '{{ get_url(path=filepath) | safe }}')
+
+    const loopWrapper = document.getElementById('looper-{{nth}}')
+
+    loopWrapper.appendChild(playButton)
+    loopWrapper.appendChild(stopButton)
+    loopWrapper.appendChild(avCanvas)
+    loopWrapper.appendChild(muteButton)
+    loopWrapper.appendChild(downloadButton)
+
+    // Get the canvas context for the audio visualizer
+    const canvasContext = avCanvas.getContext('2d')
+    // And paint the baseline
+    const clearAvCanvas = (baseline = true) => {
+      canvasContext.fillStyle =
+        document.querySelector('html').classList.contains('light')
+          ? '#2d3238'
+          : '#fffffb'
+      canvasContext.clearRect(0, 0, avWidth, avHeight)
+      if (baseline) {
+        canvasContext.fillRect(0, avHeight / 2, avWidth, 1)
+      }
+    }
+    clearAvCanvas()
+
+    playButton.addEventListener('click', async () => {
+      // Initialize audio
+      context = new AudioContext()
+      gainNode = context.createGain()
+      // Disable play and set loading class. We don’t want people to start
+      // multiple downloads/plays accidentally.
+      playButton.classList.add('loading')
+      playButton.setAttribute('disabled', 'disabled')
+      isPlaying = true
+
+      // Fetch audio file. Error handling? Perhaps later.
+      let arrayBuffer
+      try {
+        arrayBuffer = await fetch('{{ get_url(path=filepath) | safe }}')
+          .then(response => response.arrayBuffer())
+        // Assume file is loaded. Remove loading class.
+        playButton.classList.remove('loading')
+      } catch(error) {
+        console.error('Could not load audio', error)
+        playButton.classList.remove('loading')
+        return
+      }
+
+      // Ok, do the buffer magic.
+      const buffer = await context.decodeAudioData(arrayBuffer)
+      const analyser = context.createAnalyser()
+      source = context.createBufferSource()
+      source.connect(gainNode)
+      source.connect(analyser)
+      gainNode.connect(context.destination)
+
+      const amplitude = new Uint8Array(analyser.frequencyBinCount)
+
+      const renderVisualization = () => {
+        if (isPlaying) {
+          requestAnimationFrame(renderVisualization)
+        }
+
+        if (vizType === 'fr') {
+          if (analyser.getByteFrequencyData) {
+            analyser.getByteFrequencyData(amplitude)
+          }
+        } else {
+          if (analyser.getByteTimeDomainData) {
+            analyser.getByteTimeDomainData(amplitude)
+          }
+        }
+
+        clearAvCanvas(vizType === 'fr' ? false : true)
+        if (vizType === 'td') {
+          // "Shuffle" colors array. This will do for now, but we could also use
+          // `ampValue` to set the color, higher -> red, lower -> white/green.
+          avColors.push(avColors.shift())
+        }
+        for (let i = 0; i < amplitude.length; i++) {
+          const ampValue = amplitude[i] / (vizType === 'fr' ? 320 : 256)
+          const y = avHeight - (avHeight * ampValue) - 1
+          if (vizType === 'td') {
+            canvasContext.fillStyle = `${avColors[0]}40`
+            canvasContext.fillRect(i - 1, y - 1, 3, 3)
+          }
+          canvasContext.fillStyle = '#74edc4'
+          canvasContext.fillRect(i, y, 1, 1)
+        }
+      }
+
+      source.buffer = buffer
+      source.loop = true
+
+      playButton.classList.add('playing')
+      try {
+        source.start(0)
+        renderVisualization()
+      } catch(error) {
+        console.error('Could not load audio', error)
+        playButton.classList.remove('playing')
+      }
+    })
+
+    stopButton.addEventListener('click', () => {
+      if (source) {
+        playButton.classList.remove('loading', 'playing')
+        playButton.removeAttribute('disabled')
+        isPlaying = false
+        requestAnimationFrame(clearAvCanvas)
+
+        source.stop(0)
+      }
+    })
+  })()
+
+</script>
+{% endcomponent looper %}
+
+{% component prog(class="", type, fail=false, percentage=0) %}
+<span class="progress {{ type }} {% if class %}{{class}}{% endif %}{% if fail %} fail{% endif %}">
+  {% if type == "circular" %}
+    <svg viewBox="0 0 36 36">
+      {% if fail %}
+        <path
+          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+          stroke-dasharray="0, 100"
+        />
+        <line x1="12" y1="12" x2="24" y2="24" />
+        <line x1="12" y1="24" x2="24" y2="12" />
+      {% else %}
+        <title>{{ percentage }}%</title>
+        <path
+          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+          stroke-dasharray="{{ percentage }}, 100"
+        />
+        <defs>
+          <pattern id="raster" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse" >
+            <line x1="0" x2="1" y1="0" y2="1" />
+          </pattern>
+        </defs>
+      {% endif %}
+    </svg>
+  {% else %}
+    <svg viewBox="0 0 144 36">
+      <title>{{ percentage }}%</title>
+      <rect class="bg" width="144" height="24" y="6" />
+      <rect class="bar" width="{{ (percentage / 100) * 144 }}" height="24" y="6" />
+      <defs>
+        <pattern id="raster" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse" >
+          <line x1="0" x2="1" y1="0" y2="1" />
+        </pattern>
+      </defs>
+    </svg>
+  {% endif %}
+</span>
+{% endcomponent prog %}
+
+{% component timesig(class="", numerator, denominator) %}
+<span class="timesig {% if class %}{{class}}{% endif %}"><sup>{{ numerator }}</sup>/<sub>{{ denominator }}</sub></span>
+{% endcomponent timesig %}
+
+{% component projectListItem(project) %}
+<li>
+  <a href="{{ project.permalink }}" class="numberedLink">
+    <h2>{{ project.title }}
+      {% if project.components and main_section == "tags" %}
+        <div class="postedIn">
+          {% if 'code' in project.components %}
+            <span>code</span>
+          {% endif %}
+          {% if 'music' in project.components %}
+            <span>music</span>
+          {% endif %}
+        </div>
+      {% endif %}
+    </h2>
+  </a>
+
+  {% if project.taxonomies.technologies %}
+    <div class="taxonomy">
+      <span class="label">Tech:</span>
+      {% for tech in project.taxonomies.technologies %}
+        {{ <icon name={tech} size="small" /> }}
+      {% endfor %}
+    </div>
+  {% elif project.taxonomies.categories %}
+    <div class="taxonomy">
+      <span class="label">Categories:</span>
+      {% for cat in project.taxonomies.categories %}
+        {{ <icon name={cat} size="small" type="remix" /> }}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if project.description %}
+    <div class="excerpt">
+      _<br>
+      {{ project.description }}
+      <br>
+      <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
+    </div>
+  {% elif project.content %}
+    <div class="excerpt">
+      _<br>
+      {{ project.content | safe | striptags | truncate(length=100) }}
+      <br>
+      <a class="continue" href="{{ project.permalink }}">More about {{ project.title }}</a>
+    </div>
+  {% endif %}
+</li>
+{% endcomponent projectListItem %}

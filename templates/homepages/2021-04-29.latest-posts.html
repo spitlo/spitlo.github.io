@@ -4,7 +4,7 @@
   "Spitlo.com is a cacophonous contingent of intents to transcribe progressing endeavors in the undoubtedly divergent fields of computer programming and music composition, embarked upon, perhaps disconcertedly, under the same cognomen.",
 ] %}
 {% set introductions_length = introductions | length %}
-{% set introductions_index = get_random(end=introductions_length) %}
+{% set introductions_index = get_random(start=0, end=introductions_length) %}
 {% set introduction = introductions | nth(n=introductions_index) | markdown %}
 
 <h1>Welcome home!</h1>
@@ -24,7 +24,7 @@
 <section class="project code home">
   <ul class="projectList code">
     {% set code = get_section(path="code/_index.md") %}
-    {% for project in code.pages | slice(end=3) %}
+    {% for project in code.pages[0:3] %}
       {% include "partials/list-project.html" %}
     {% endfor %}
   </ul>
