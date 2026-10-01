@@ -18,9 +18,9 @@ My prediction for this year is more live instrumentation and less samples, since
 
 <mark class="arrow">NB2</mark> Loops marked with X was not finished on time, but created and added later.
 
-### 01 - Brank Douche (81 BPM) {{ timesig(numerator="4", denominator="4") }}
+### 01 - Brank Douche (81 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ progress(type="circular", percentage=3) }}
-> I feel like I’ve heard this before.
+> {{ <prog type="circular" percentage={3} /> }}
+> Feel my clarinet power!
 
-{{ looper(filepath="/audio/looptober/2026/01-brank-douche.mp3") }}
+{{ <looper nth={1} filepath="/audio/looptober/2026/01-brank-douche.mp3" /> }}
