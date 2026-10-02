@@ -24,3 +24,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Feel my clarinet power!
 
 {{ <looper nth={1} filepath="/audio/looptober/2026/01-brank-douche.mp3" /> }}
+
+### 02 - Travelogue (63 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={6} /> }}
+> Feel my saxophone power!
+
+{{ <looper nth={2} filepath="/audio/looptober/2026/02-travelogue.mp3" /> }}
