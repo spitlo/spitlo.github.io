@@ -31,3 +31,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Feel my saxophone power!
 
 {{ <looper nth={2} filepath="/audio/looptober/2026/02-travelogue.mp3" /> }}
+
+### 03 - Surp Walk (87 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={10} /> }}
+> Wobble-wobble.
+
+{{ <looper nth={3} filepath="/audio/looptober/2026/03-surp-walk.mp3" /> }}
