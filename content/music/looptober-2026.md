@@ -38,3 +38,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Wobble-wobble.
 
 {{ <looper nth={3} filepath="/audio/looptober/2026/03-surp-walk.mp3" /> }}
+
+### 04 - Sweepstakes (64 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={13} /> }}
+> Sunday Morning Coming Down.
+
+{{ <looper nth={4} filepath="/audio/looptober/2026/04-sweepstakes.mp3" /> }}
