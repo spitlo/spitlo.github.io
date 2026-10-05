@@ -45,3 +45,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Sunday Morning Coming Down.
 
 {{ <looper nth={4} filepath="/audio/looptober/2026/04-sweepstakes.mp3" /> }}
+
+### 05 - Dark Clowds (76 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={16} /> }}
+> Channeling the Ghost of Ozzy.
+
+{{ <looper nth={5} filepath="/audio/looptober/2026/05-dark-clowds.mp3" /> }}
