@@ -52,3 +52,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Channeling the Ghost of Ozzy.
 
 {{ <looper nth={5} filepath="/audio/looptober/2026/05-dark-clowds.mp3" /> }}
+
+### 06 - Struggling Sun (60 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={19} /> }}
+> We all have trouble getting up in the morning.
+
+{{ <looper nth={6} filepath="/audio/looptober/2026/06-struggling-sun.mp3" /> }}
