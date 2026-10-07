@@ -59,3 +59,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > We all have trouble getting up in the morning.
 
 {{ <looper nth={6} filepath="/audio/looptober/2026/06-struggling-sun.mp3" /> }}
+
+### 07 - Nagoya Ohnwe (107 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={23} /> }}
+> 10 TAISHO <br>20 GOTO 10
+
+{{ <looper nth={7} filepath="/audio/looptober/2026/07-nagoya-ohnwe.mp3" /> }}
