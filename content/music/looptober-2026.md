@@ -66,3 +66,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > 10 TAISHO <br>20 GOTO 10
 
 {{ <looper nth={7} filepath="/audio/looptober/2026/07-nagoya-ohnwe.mp3" /> }}
+
+### 08 - The Flautulist (69 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={26} /> }}
+> In medieval times, he was the life of the party.
+
+{{ <looper nth={8} filepath="/audio/looptober/2026/08-the-flautulist.mp3" /> }}
