@@ -73,3 +73,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > In medieval times, he was the life of the party.
 
 {{ <looper nth={8} filepath="/audio/looptober/2026/08-the-flautulist.mp3" /> }}
+
+### 09 - Last Call (57 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={29} /> }}
+> Please, ladies and gentlemen, pick up your tabs and leave.
+
+{{ <looper nth={9} filepath="/audio/looptober/2026/09-last-call.mp3" /> }}
