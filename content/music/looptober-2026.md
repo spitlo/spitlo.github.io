@@ -80,3 +80,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Please, ladies and gentlemen, pick up your tabs and leave.
 
 {{ <looper nth={9} filepath="/audio/looptober/2026/09-last-call.mp3" /> }}
+
+### 10 - Clunky Drummer (112 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={32} /> }}
+> The inevitable whistle track.
+
+{{ <looper nth={10} filepath="/audio/looptober/2026/10-clunky-drummer.mp3" /> }}
