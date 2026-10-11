@@ -87,3 +87,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > The inevitable whistle track.
 
 {{ <looper nth={10} filepath="/audio/looptober/2026/10-clunky-drummer.mp3" /> }}
+
+### 11 - Kentaurion Peak (85 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={35} /> }}
+> One third down!
+
+{{ <looper nth={11} filepath="/audio/looptober/2026/11-kentaurion-peak.mp3" /> }}
