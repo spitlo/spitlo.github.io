@@ -94,3 +94,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > One third down!
 
 {{ <looper nth={11} filepath="/audio/looptober/2026/11-kentaurion-peak.mp3" /> }}
+
+### 12 - Kingston, Ontario (99 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={39} /> }}
+> Poorly performed reggae is a lifelong passion of mine.
+
+{{ <looper nth={12} filepath="/audio/looptober/2026/12-kingston-ontario.mp3" /> }}
