@@ -101,3 +101,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Poorly performed reggae is a lifelong passion of mine.
 
 {{ <looper nth={12} filepath="/audio/looptober/2026/12-kingston-ontario.mp3" /> }}
+
+### 13th Floor Aligators (91 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={42} /> }}
+> Recognize the real threat.
+
+{{ <looper nth={13} filepath="/audio/looptober/2026/13th-floor-aligators.mp3" /> }}
