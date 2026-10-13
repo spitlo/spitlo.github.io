@@ -102,9 +102,9 @@ My prediction for this year is more live instrumentation and less samples, since
 
 {{ <looper nth={12} filepath="/audio/looptober/2026/12-kingston-ontario.mp3" /> }}
 
-### 13th Floor Aligators (91 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+### 13th Floor Alligators (91 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
 > {{ <prog type="circular" percentage={42} /> }}
 > Recognize the real threat.
 
-{{ <looper nth={13} filepath="/audio/looptober/2026/13th-floor-aligators.mp3" /> }}
+{{ <looper nth={13} filepath="/audio/looptober/2026/13th-floor-alligators.mp3" /> }}
