@@ -108,3 +108,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Recognize the real threat.
 
 {{ <looper nth={13} filepath="/audio/looptober/2026/13th-floor-alligators.mp3" /> }}
+
+### 14 - Bewildering Lights (135 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={45} /> }}
+> You know the lights I’m talking about.
+
+{{ <looper nth={14} filepath="/audio/looptober/2026/14-bewildering-lights.mp3" /> }}
