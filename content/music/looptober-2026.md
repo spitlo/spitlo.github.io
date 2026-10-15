@@ -116,7 +116,7 @@ My prediction for this year is more live instrumentation and less samples, since
 
 {{ <looper nth={14} filepath="/audio/looptober/2026/14-bewildering-lights.mp3" /> }}
 
-### 15 - A Contipated Monk (79 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+### 15 - A Constipated Monk (79 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
 > {{ <prog type="circular" percentage={48} /> }}
 > Feel my musical egg power!
