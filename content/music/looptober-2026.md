@@ -122,3 +122,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Feel my musical egg power!
 
 {{ <looper nth={15} filepath="/audio/looptober/2026/15-a-constipated-monk.mp3" /> }}
+
+### 16 - Cave Dweller (133 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={52} /> }}
+> Rainy Days...
+
+{{ <looper nth={16} filepath="/audio/looptober/2026/16-cave-dweller.mp3" /> }}
