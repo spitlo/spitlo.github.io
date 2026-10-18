@@ -136,3 +136,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > I mean, some days you just wanna watch @Notaluthier and don't do music.
 
 {{ <looper nth={17} filepath="/audio/looptober/2026/17-i-forget.mp3" /> }}
+
+### 18 - Sidewalkers (78 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={58} /> }}
+> Took my dog for a walk, it felt like this.
+
+{{ <looper nth={18} filepath="/audio/looptober/2026/18-sidewalkers.mp3" /> }}
