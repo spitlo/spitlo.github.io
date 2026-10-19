@@ -143,3 +143,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Took my dog for a walk, it felt like this.
 
 {{ <looper nth={18} filepath="/audio/looptober/2026/18-sidewalkers.mp3" /> }}
+
+### 19 - Ring the Alarm (108 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={61} /> }}
+> Another sound is dying.
+
+{{ <looper nth={19} filepath="/audio/looptober/2026/19-ring-the-alarm.mp3" /> }}
