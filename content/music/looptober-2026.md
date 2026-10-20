@@ -150,3 +150,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Another sound is dying.
 
 {{ <looper nth={19} filepath="/audio/looptober/2026/19-ring-the-alarm.mp3" /> }}
+
+### 20 - Lunar Bloom (100 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={65} /> }}
+> You can take the flute out of the middle ages, but you can’t take the middle ages out of the flute.
+
+{{ <looper nth={20} filepath="/audio/looptober/2026/20-lunar-bloom.mp3" /> }}
