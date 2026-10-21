@@ -157,3 +157,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > You can take the flute out of the middle ages, but you can’t take the middle ages out of the flute.
 
 {{ <looper nth={20} filepath="/audio/looptober/2026/20-lunar-bloom.mp3" /> }}
+
+### 21 - Remix Time (86 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={68} /> }}
+> Some stems from earlier loops thrown together.
+
+{{ <looper nth={21} filepath="/audio/looptober/2026/21-remix-time.mp3" /> }}
