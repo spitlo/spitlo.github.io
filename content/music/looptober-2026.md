@@ -165,7 +165,7 @@ My prediction for this year is more live instrumentation and less samples, since
 
 {{ <looper nth={21} filepath="/audio/looptober/2026/21-remix-time.mp3" /> }}
 
-### 22 - High Noon Showdown (97 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+### 22 - High Noon Showdown (94 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
 > {{ <prog type="circular" percentage={71} /> }}
 > In Italy, I bought a can of Bud Spencer Beans, and they were not vegetarian.
