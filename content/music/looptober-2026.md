@@ -178,3 +178,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Noun. An extinction-level event caused by an unfortunate series of bit flips affecting an AI data center in orbit.
 
 {{ <looper nth={23} filepath="/audio/looptober/2026/23-bitflipocalypse.mp3" /> }}
+
+### 24 - Holloween (66.6 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={77} /> }}
+> Spooky season coming up!
+
+{{ <looper nth={24} filepath="/audio/looptober/2026/24-holloween.mp3" /> }}
