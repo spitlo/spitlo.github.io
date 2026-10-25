@@ -185,3 +185,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Spooky season coming up!
 
 {{ <looper nth={24} filepath="/audio/looptober/2026/24-holloween.mp3" /> }}
+
+### 25 - The Chop Shop (109 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={80} /> }}
+> Back to the Polyend Tracker!
+
+{{ <looper nth={25} filepath="/audio/looptober/2026/25-the-chop-shop.mp3" /> }}
