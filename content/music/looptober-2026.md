@@ -192,3 +192,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Back to the Polyend Tracker!
 
 {{ <looper nth={25} filepath="/audio/looptober/2026/25-the-chop-shop.mp3" /> }}
+
+### 26 - Uncontrollable Splurge (103 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={84} /> }}
+> If you think this is hard to listen to, imagine making it!
+
+{{ <looper nth={26} filepath="/audio/looptober/2026/26-uncontrollable-splurge.mp3" /> }}
