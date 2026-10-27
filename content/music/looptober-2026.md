@@ -199,3 +199,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > If you think this is hard to listen to, imagine making it!
 
 {{ <looper nth={26} filepath="/audio/looptober/2026/26-uncontrollable-splurge.mp3" /> }}
+
+### 27 - Nearly Finnished (80 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={87} /> }}
+> Todays mission: Only use samples from our beautiful neighbors to the east.
+
+{{ <looper nth={27} filepath="/audio/looptober/2026/27-nearly-finnished.mp3" /> }}
