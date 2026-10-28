@@ -206,3 +206,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Todays mission: Only use samples from our beautiful neighbors to the east.
 
 {{ <looper nth={27} filepath="/audio/looptober/2026/27-nearly-finnished.mp3" /> }}
+
+### 28 - Comfort (64 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={90} /> }}
+> Old Thai music is wild!
+
+{{ <looper nth={28} filepath="/audio/looptober/2026/28-comfort.mp3" /> }}
