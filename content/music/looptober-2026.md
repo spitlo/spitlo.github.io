@@ -213,3 +213,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > Old Thai music is wild!
 
 {{ <looper nth={28} filepath="/audio/looptober/2026/28-comfort.mp3" /> }}
+
+### 28 - Love Machine (City Walker) (89 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={94} /> }}
+> By request I included the jingle from the Citywalker infomercial in today's loop.
+
+{{ <looper nth={29} filepath="/audio/looptober/2026/29-love-machine-city-walker.mp3" /> }}
