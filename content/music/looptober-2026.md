@@ -214,9 +214,16 @@ My prediction for this year is more live instrumentation and less samples, since
 
 {{ <looper nth={28} filepath="/audio/looptober/2026/28-comfort.mp3" /> }}
 
-### 28 - Love Machine (City Walker) (89 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+### 29 - Love Machine (City Walker) (89 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
 > {{ <prog type="circular" percentage={94} /> }}
 > By request I included the jingle from the Citywalker infomercial in today's loop.
 
 {{ <looper nth={29} filepath="/audio/looptober/2026/29-love-machine-city-walker.mp3" /> }}
+
+### 30 - Circus Brazil Jazz (66 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={97} /> }}
+> One last whistle...
+
+{{ <looper nth={30} filepath="/audio/looptober/2026/30-circus-brazil-jazz.mp3" /> }}
