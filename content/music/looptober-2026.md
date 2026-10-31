@@ -227,3 +227,10 @@ My prediction for this year is more live instrumentation and less samples, since
 > One last whistle...
 
 {{ <looper nth={30} filepath="/audio/looptober/2026/30-circus-brazil-jazz.mp3" /> }}
+
+### 31 - 3000 Grit (70 BPM) {{ <timesig numerator={4} denominator={4} /> }}
+
+> {{ <prog type="circular" percentage={100} /> }}
+> Always use 3000 grit for smooth finishes!
+
+{{ <looper nth={31} filepath="/audio/looptober/2026/31-3000-grit.mp3" /> }}
