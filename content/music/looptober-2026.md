@@ -16,8 +16,6 @@ My prediction for this year is more live instrumentation and less samples, since
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
-<mark class="arrow">NB2</mark> Loops marked with X was not finished on time, but created and added later.
-
 ### 01 - Brank Douche (81 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
 > {{ <prog type="circular" percentage={3} /> }}
