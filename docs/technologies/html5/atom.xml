@@ -12,20 +12,16 @@
         <updated>2020-11-25T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/shopify-labels/"/>
         <id>https://spitlo.com/code/shopify-labels/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/shopify-labels/">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
-&lt;p&gt;No files are sent to the server, this is just a one page HTML&#x2F;JavaScript app.&lt;&#x2F;p&gt;
-&lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&quot;&gt;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/shopify-labels/">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;/p&gt;
+&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision/fiddling.&lt;/p&gt;
+&lt;p&gt;No files are sent to the server, this is just a one page HTML/JavaScript app.&lt;/p&gt;
+&lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/shopify-labels/&quot;&gt;https://spitlo.com/shopify-labels/&lt;/a&gt;&lt;/p&gt;
 </content>
         
     </entry>
@@ -35,28 +31,24 @@
         <updated>2020-11-15T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/spitlo-com/"/>
         <id>https://spitlo.com/code/spitlo-com/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/spitlo-com/">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
-&lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
-&lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/spitlo-com/">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;/p&gt;
+&lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://www.getzola.org/&quot;&gt;Zola&lt;/a&gt; and get away from JavaScript for a while.&lt;/p&gt;
+&lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Github Pages hosting with a custom domain name&lt;&#x2F;li&gt;
-&lt;li&gt;Github Actions&lt;&#x2F;li&gt;
-&lt;li&gt;Hand coded or programmatically generated SVGs&lt;&#x2F;li&gt;
-&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
-&lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;
-&lt;li&gt;Using AVIF&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;Github Pages hosting with a custom domain name&lt;/li&gt;
+&lt;li&gt;Github Actions&lt;/li&gt;
+&lt;li&gt;Hand coded or programmatically generated SVGs&lt;/li&gt;
+&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;/code&gt; value of &lt;code&gt;::before&lt;/code&gt; and &lt;code&gt;::after&lt;/code&gt; pseudo-elements&lt;/li&gt;
+&lt;li&gt;Newer/partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;/li&gt;
+&lt;li&gt;Using AVIF&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/getzola/zola/issues/1202&quot;&gt;?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         
     </entry>

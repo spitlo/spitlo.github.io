@@ -12,35 +12,27 @@
         <updated>2022-03-23T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/morsh/"/>
         <id>https://spitlo.com/code/morsh/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/morsh/">&lt;p&gt;A Bash script to decode&#x2F;encode morse code. Slightly buggy and very, very slow. Could also be used as an extremely unpleasant way to uppercase text.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
-Installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Just put the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;&#x2F;a&gt;
-Fancy installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;&#x2F;a&gt;
-Usage examples&lt;&#x2F;h2&gt;
-&lt;p&gt;Quickly decode a message from some ancient online puzzle game:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;morsh&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;...- --- --- -.. --- --- &#x2F; -- .- --. .. -.-.&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Awkwardly uppercase a sentence (removing punctuation, diacritics and fluff in the process):&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-echo z-shell&quot;&gt;echo&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;I Have No Mouth, and I Must Scream&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;morsh&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;e&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;morsh&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;d&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Turn “Crime and Punishment” into something you can reliably broadcast to your entire neighborhood with a simple signal horn and some patience:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;curl&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; https:&#x2F;&#x2F;gutenberg.org&#x2F;files&#x2F;2554&#x2F;2554-0.txt&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;morsh&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;encode&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;less&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</content>
+        <content type="html" xml:base="https://spitlo.com/code/morsh/">&lt;p&gt;A Bash script to decode/encode morse code. Slightly buggy and very, very slow. Could also be used as an extremely unpleasant way to uppercase text.&lt;/p&gt;
+&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;/a&gt;
+Installation&lt;/h2&gt;
+&lt;p&gt;Just put the &lt;code&gt;morsh&lt;/code&gt; script in your &lt;code&gt;~/bin&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;/a&gt;
+Fancy installation&lt;/h2&gt;
+&lt;p&gt;Clone the repo and put a symlink to the &lt;code&gt;morsh&lt;/code&gt; script in your &lt;code&gt;~/bin&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;/a&gt;
+Usage examples&lt;/h2&gt;
+&lt;p&gt;Quickly decode a message from some ancient online puzzle game:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;morsh&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt;...- --- --- -.. --- --- / -- .- --. .. -.-.&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Awkwardly uppercase a sentence (removing punctuation, diacritics and fluff in the process):&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-13 z-d-18&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt;I Have No Mouth, and I Must Scream&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; morsh&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; morsh&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Turn “Crime and Punishment” into something you can reliably broadcast to your entire neighborhood with a simple signal horn and some patience:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;curl&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; https://gutenberg.org/files/2554/2554-0.txt&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; morsh&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;-encode&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; less&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content>
         
     </entry>
     <entry xml:lang="en">
@@ -49,59 +41,38 @@ Usage examples&lt;&#x2F;h2&gt;
         <updated>2021-04-06T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/karakter/"/>
         <id>https://spitlo.com/code/karakter/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/karakter/">&lt;p&gt;Karakter is a Bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.adaic.org&#x2F;&quot;&gt;Ada&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fortran-lang.org&#x2F;&quot;&gt;Fortran&lt;&#x2F;a&gt;. I encourage everyone to not hold their breath for that though – at the moment there is a working (I think) version in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;vlang.io&quot;&gt;V&lt;&#x2F;a&gt; and work-in-progress versions in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;inko-lang.org&#x2F;&quot;&gt;Inko&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nim-lang.org&#x2F;&quot;&gt;Nim&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;odin-lang.org&#x2F;&quot;&gt;Odin&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;vale.dev&#x2F;&quot;&gt;Vale&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ziglang.org&#x2F;&quot;&gt;Zig&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s five less eclectic styles, &lt;code&gt;¢џБ≡┎pμ∩κ&lt;&#x2F;code&gt;, &lt;code&gt;ƒάїгψłάľє&lt;&#x2F;code&gt;, &lt;code&gt;LŌŪĐMŌŪṪH&lt;&#x2F;code&gt;, &lt;code&gt;₥0₦€¥₸₳£₭&lt;&#x2F;code&gt; and &lt;code&gt;num83r5&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Most glyphs are chosen from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ehmicky&#x2F;cross-platform-terminal-characters&quot;&gt;this list&lt;&#x2F;a&gt; of “All the characters that work on most terminals” so they should work on most terminals – the exception being the set “Moneytalk” which is made up entirely of currency symbols (plus &lt;code&gt;1&lt;&#x2F;code&gt; and &lt;code&gt;0&lt;&#x2F;code&gt;, of course) and is not guaranteed to work everywhere.&lt;&#x2F;p&gt;
-&lt;p&gt;There are some other flags, but the project readme has more information.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;&#x2F;a&gt;
-Usage examples&lt;&#x2F;h2&gt;
-&lt;p&gt;Generate a mildly elvish version of your name for an email signature using the Bash version:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;bash&#x2F;karakter&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;md&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;ft&lt;&#x2F;span&gt; John Doe&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Turn A Tale of Two Cities into a cyberpunk novel using the V version and read it comfortably in your terminal:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;curl&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; https:&#x2F;&#x2F;www.gutenberg.org&#x2F;files&#x2F;98&#x2F;98-0.txt&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;sed&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;s&#x2F;one thousand seven&#x2F;two thousand seven&#x2F;g&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;tr&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; a-z A-Z&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;v&#x2F;karakter&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;o&lt;&#x2F;span&gt; md&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;s&lt;&#x2F;span&gt; cp&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;less&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;output-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-examples&quot; aria-label=&quot;Anchor link for: output-examples&quot;&gt;#&lt;&#x2F;a&gt;
-Output examples&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;input-text&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#input-text&quot; aria-label=&quot;Anchor link for: input-text&quot;&gt;#&lt;&#x2F;a&gt;
-Input text&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;output-text-obfuscation-level-low-default-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-low-default-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-low-default-style&quot;&gt;#&lt;&#x2F;a&gt;
-Output text, obfuscation level low, default style&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;It ŵas thє beșt оf timєs, їt was thє worst of times, it waș the αge of wisdom, it was the ąge of foolїshness, it was the epoch of belief, iț ώas łhe epо¢ђ of incredulity, it шas the seąson of Light, it was the seasфη of Đarkness, it was the șpring of hope, it waș țhe winter of despair, we ђαd everything beforє us, we haď nothing before us, ŵe werє a11 going dire¢t to Heaven, we werє all going dїrёct tћe other way – in shoѓt, the pєriod was so fаr 1ike the present period, that some of its nфisiest authoгiłies iηsisted оn ițs bєing recёived, for gooď оr for evїl, in țhe șuperlative degгeё of comparison only.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;output-text-obfuscation-level-medium-cyberpunk-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-medium-cyberpunk-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-medium-cyberpunk-style&quot;&gt;#&lt;&#x2F;a&gt;
-Output text, obfuscation level medium, cyberpunk style&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;It ш@s the bєsŁ of tim≡$, it w@s tHe шоrst of Łim≡$, it шas ŁH≡ аg≡ o⌠ w¡$ďøm, ī┪ ш@s thє ag≡ оf fo●lishπes$, iŁ шas Łhe ≡pø¢H ●f belıef, iŁ ша$ tHє ep●ch о⌠ :nc┍єďulity, īŁ wα$ ┪h≡ $ea$o∩ оf Ľi9ht, īŁ w@$ ŁHe sє@$■Π of Daяκπє$$, :Ł wα$ tHє $p┎īn9 о⌠ høp≡, iŁ ш@s tHe wint≡r of ďєsp@ıя, шє Hαd e▼eгy┪h¡∩g bє⌠оre u$, we Hαď ∩o┪H¡Πg 6єfoгє u$, шe шe┎e αll go¡π9 ďi┎≡ct ┪o He@▼en, we шє┍e a1l 9■iΠg ďir≡ct ŁHe o┪her ш@џ – ¡n $Hort, thє p≡г¡●ď was $o fаr lıke the p┎≡$e∩t pe┍ioď, tHat s●mє ■f it$ πoisie$┪ aμ┪Hor:t:≡s ins:steď ●n its b≡ın9 гec≡ived, fø┎ 9ø●d оr ⌠●r ≡▼ı1, in Łh≡ sup≡гlα┪īvє ďegr≡є о⌠ ¢ompaгıson o∩1y.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;output-text-obfuscation-level-high-fairytale-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-fairytale-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-fairytale-style&quot;&gt;#&lt;&#x2F;a&gt;
-Output text, obfuscation level high, fairytale style&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Ϊṫ шάș ṫђё вєșṫ ºḟ łΐṁєș, ΐł шάș łћё ώºѓșṫ фƒ țΐṁēș, ΐț ώάș ṫђё ąġē σƒ шΐșδσṁ, ΐṫ шάș ṫђє ąġё σƒ ƒооļїșћηєșș, їł шąș łђё єpºςђ ºƒ Бēļїēƒ, їṫ шąș ṫћё єpоςђ фḟ їņςѓєδΰľїłψ, їł ŵąș łђē șєąșфņ фḟ Ļїġђț, ΐł ŵąș łђё șёąșфņ ºḟ Ďąѓkņēșș, їł ώάș țђē șpгїηġ фḟ ђºpē, їṫ ŵąș ṫђє ŵїņțєѓ σḟ ďєșpαΐг, ώё ћαḋ ēνёѓџłћΐñġ вēƒσгє ΰș, шё ђάđ ησṫђΐηġ ḃёƒºѓё υș, ώё ŵєгē αļľ ġºїņġ ďΐѓєςł țф нєάνєη, ώє шєѓē άľļ ġфїņġ ďΐѓєςț ṫћē фṫћёг шąψ – ΐņ șћσѓṫ, ṫђē pёѓΐºđ ŵάș șº ƒάѓ ľΐkē țђё pгёșєñṫ pёѓїоδ, ṫћάł șºṁє оḟ ΐțș ñºΐșїєșł ąΰțћфѓїṫΐєș ΐñșїșłēď ºņ ΐłș Бєїņġ ѓēςёΐνēđ, ḟог ġºфđ σѓ ƒºг ēνΐľ, їη ṫђє șΰpєѓľάṫΐνē δєġѓєё ºḟ ςºṁpαгΐșоñ оņľψ.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;output-text-obfuscation-level-high-loudmouth-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-loudmouth-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-loudmouth-style&quot;&gt;#&lt;&#x2F;a&gt;
-Output text, obfuscation level high, loudmouth style&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;ĪṪ ШĀȘ ṪHĒ ḂĒȘṪ ŌF ṪIMĒȘ, IṪ ШĀȘ ṪHĒ ШŌŔȘṪ ŌF ṪIMĒȘ, IṪ ШĀȘ ṪHĒ ĀGĒ ŌF ШIȘĐŌM, IṪ ШĀȘ ṪHĒ ĀGĒ ŌF FŌŌLIȘHПĒȘȘ, IṪ ШĀȘ ṪHĒ ĒРŌČH ŌF ḂĒLIĒF, IṪ ШĀȘ ṪHĒ ĒРŌČH ŌF IПČŔĒĐŪLIṪЏ, IṪ ШĀȘ ṪHĒ ȘĒĀȘŌП ŌF LIGHṪ, IṪ ШĀȘ ṪHĒ ȘĒĀȘŌП ŌF ĐĀŔЌПĒȘȘ, IṪ ШĀȘ ṪHĒ ȘРŔIПG ŌF HŌРĒ, IṪ ШĀȘ ṪHĒ ШIПṪĒŔ ŌF ĐĒȘРĀIŔ, ШĒ HĀĐ ĒVĒŔЏṪHIПG ḂĒFŌŔĒ ŪȘ, ШĒ HĀĐ ПŌṪHIПG ḂĒFŌŔĒ ŪȘ, ШĒ ШĒŔĒ ĀLL GŌIПG ĐIŔĒČṪ ṪŌ ĦĒĀVĒП, ШĒ ШĒŔĒ ĀLL GŌIПG ĐIŔĒČṪ ṪHĒ ŌṪHĒŔ ШĀЏ – IП ȘHŌŔṪ, ṪHĒ РĒŔIŌĐ ШĀȘ ȘŌ FĀŔ LIЌĒ ṪHĒ РŔĒȘĒПṪ РĒŔIŌĐ, ṪHĀṪ ȘŌMĒ ŌF IṪȘ ПŌIȘIĒȘṪ ĀŪṪHŌŔIṪIĒȘ IПȘIȘṪĒĐ ŌП IṪȘ ḂĒIПG ŔĒČĒIVĒĐ, FŌŔ GŌŌĐ ŌŔ FŌŔ ĒVIL, IП ṪHĒ ȘŪРĒŔLĀṪIVĒ ĐĒGŔĒĒ ŌF ČŌMРĀŔIȘŌП ŌПLЏ. 
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;output-text-obfuscation-level-high-moneytalk-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-moneytalk-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-moneytalk-style&quot;&gt;#&lt;&#x2F;a&gt;
-Output text, obfuscation level high, moneytalk style&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;1₮ ₩₳$ ₺₶€ ฿€$₸ 0₣ ₮1₥€₷, 1₸ ₩₳$ ₺₶€ ₩0₹₷₺ 0₣ ₸1₥€$, 1₺ ₩₳$ ₸₶€ ₳₲€ 0₣ ₩1$₫0₥, 1₺ ₩₳$ ₺₶€ ₳₲€ 0₣ ₣00£1₷₶₪€₷$, 1₮ ₩₳$ ₸₶€ €₱0₵₶ 0₣ ৳€£1€₣, 1₸ ₩₳$ ₺₶€ €₱0₵₶ 0₣ 1₪₵₹€₫U£1₮¥, 1₺ ₩₳$ ₮₶€ ₷€₳₷0₪ 0₣ £1₲₶₸, 1₮ ₩₳₷ ₸₶€ ₷€₳₷0₪ 0₣ ₫₳₹₭₪€$$, 1₮ ₩₳$ ₮₶€ $₽₹1₦₲ 0₣ ₶0₱€, 1₮ ₩₳$ ₸₶€ ₩1₦₸€₹ 0₣ ₫€$₱₳1₹, ₩€ ₶₳₫ €V€₹¥₸₶1₦₲ ฿€₣0₹€ U$, ₩€ ₶₳₫ ₪0₺₶1₦₲ ৳€₣0₹€ U$, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₵₺ ₸0 ₶€₳V€₦, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₡₸ ₮₶€ 0₸₶€₹ ₩₳¥ – 1₪ $₶0₹₸, ₸₶€ ₽€₹10₫ ₩₳₷ ₷0 ₣₳₹ £1₭€ ₺₶€ ₽₹€₷€₪₮ ₱€₹10₫, ₸₳₮ $0₥€ 0₣ 1₸$ ₦01$1€$₮ ₳U₸₶0₹1₸1€$ 1₦₷1$₮€₫ 0₦ 1₸₷ ৳€1₦₲ ₹€₵€1V€₫, ₣0₹ ₲00₫ 0₹ ₣0₹ €V1£, 1₪ ₮₶€ ₷U₽€₹£₳₸1V€ ₫€₲₹€€ 0₣ ₡0₥₱₳₹1$0₦ 0₪£¥.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;output-text-obfuscation-level-medium-numbers-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-medium-numbers-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-medium-numbers-style&quot;&gt;#&lt;&#x2F;a&gt;
-Output text, obfuscation level medium, numbers style&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;It w4s th3 b35t 0f 71m35, 17 wa5 7he w0rst 0f time5, 1t w45 the 4ge of w1sdom, 17 wa5 7he 463 of f0olishness, 1t wa5 the 3poch 0f 83li3f, it w4s 7h3 3poch of incredulity, i7 w45 th3 s3450n of L1gh7, 1t w4s 7he s3450n 0f D4rkne55, i7 was 7he 5pring of hop3, i7 wa5 7h3 wint3r of desp4ir, w3 had 3very7h1n6 bef0re u5, we h4d noth1n6 8ef0r3 us, w3 w3r3 all g01ng direct t0 H34v3n, we w3re all 6o1n6 d1r3c7 7h3 0ther w4y – 1n 5h0rt, 7h3 per10d wa5 5o f4r l1ke the pre53nt per10d, 7h47 5om3 0f 1t5 n0i5ie5t 4uth0ri7ies 1nsis7ed 0n 175 8e1n6 r3ce1ved, for g00d 0r for 3v1l, 1n the sup3rl4tiv3 degre3 of comp4r15on only.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</content>
+        <content type="html" xml:base="https://spitlo.com/code/karakter/">&lt;p&gt;Karakter is a Bash script that takes text input (either from a pipe, as plain text arguments or as a file) and adds a little character to the text by substituting visually similar glyphs for letters a-z and A-Z. I wrote it because I wanted to come up with a pretty basic cli that I could then convert to other languages that I’ve been wanting to try out, like &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://www.adaic.org/&quot;&gt;Ada&lt;/a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://fortran-lang.org/&quot;&gt;Fortran&lt;/a&gt;. I encourage everyone to not hold their breath for that though – at the moment there is a working (I think) version in &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://vlang.io&quot;&gt;V&lt;/a&gt; and work-in-progress versions in &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://inko-lang.org/&quot;&gt;Inko&lt;/a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://nim-lang.org/&quot;&gt;Nim&lt;/a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://odin-lang.org/&quot;&gt;Odin&lt;/a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://vale.dev/&quot;&gt;Vale&lt;/a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://ziglang.org/&quot;&gt;Zig&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There is a default style that’s sort of a kitchen sink mix of very different looking glyphs, and then there’s five less eclectic styles, &lt;code&gt;¢џБ≡┎pμ∩κ&lt;/code&gt;, &lt;code&gt;ƒάїгψłάľє&lt;/code&gt;, &lt;code&gt;LŌŪĐMŌŪṪH&lt;/code&gt;, &lt;code&gt;₥0₦€¥₸₳£₭&lt;/code&gt; and &lt;code&gt;num83r5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Most glyphs are chosen from &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/ehmicky/cross-platform-terminal-characters&quot;&gt;this list&lt;/a&gt; of “All the characters that work on most terminals” so they should work on most terminals – the exception being the set “Moneytalk” which is made up entirely of currency symbols (plus &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;0&lt;/code&gt;, of course) and is not guaranteed to work everywhere.&lt;/p&gt;
+&lt;p&gt;There are some other flags, but the project readme has more information.&lt;/p&gt;
+&lt;h2 id=&quot;usage-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-examples&quot; aria-label=&quot;Anchor link for: usage-examples&quot;&gt;#&lt;/a&gt;
+Usage examples&lt;/h2&gt;
+&lt;p&gt;Generate a mildly elvish version of your name for an email signature using the Bash version:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;bash/karakter&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;-md&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;-ft&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; John&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; Doe&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Turn A Tale of Two Cities into a cyberpunk novel using the V version and read it comfortably in your terminal:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;curl&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; https://www.gutenberg.org/files/98/98-0.txt&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; sed&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; &amp;#39;&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt;s/one thousand seven/two thousand seven/g&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; tr&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; a-z&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; A-Z&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; v/karakter&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; md&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; cp&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; |&lt;/span&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt; less&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;output-examples&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-examples&quot; aria-label=&quot;Anchor link for: output-examples&quot;&gt;#&lt;/a&gt;
+Output examples&lt;/h2&gt;
+&lt;h3 id=&quot;input-text&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#input-text&quot; aria-label=&quot;Anchor link for: input-text&quot;&gt;#&lt;/a&gt;
+Input text&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-low-default-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-low-default-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-low-default-style&quot;&gt;#&lt;/a&gt;
+Output text, obfuscation level low, default style&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;It ŵas thє beșt оf timєs, їt was thє worst of times, it waș the αge of wisdom, it was the ąge of foolїshness, it was the epoch of belief, iț ώas łhe epо¢ђ of incredulity, it шas the seąson of Light, it was the seasфη of Đarkness, it was the șpring of hope, it waș țhe winter of despair, we ђαd everything beforє us, we haď nothing before us, ŵe werє a11 going dire¢t to Heaven, we werє all going dїrёct tћe other way – in shoѓt, the pєriod was so fаr 1ike the present period, that some of its nфisiest authoгiłies iηsisted оn ițs bєing recёived, for gooď оr for evїl, in țhe șuperlative degгeё of comparison only.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-medium-cyberpunk-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-medium-cyberpunk-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-medium-cyberpunk-style&quot;&gt;#&lt;/a&gt;
+Output text, obfuscation level medium, cyberpunk style&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;It ш@s the bєsŁ of tim≡$, it w@s tHe шоrst of Łim≡$, it шas ŁH≡ аg≡ o⌠ w¡$ďøm, ī┪ ш@s thє ag≡ оf fo●lishπes$, iŁ шas Łhe ≡pø¢H ●f belıef, iŁ ша$ tHє ep●ch о⌠ :nc┍єďulity, īŁ wα$ ┪h≡ $ea$o∩ оf Ľi9ht, īŁ w@$ ŁHe sє@$■Π of Daяκπє$$, :Ł wα$ tHє $p┎īn9 о⌠ høp≡, iŁ ш@s tHe wint≡r of ďєsp@ıя, шє Hαd e▼eгy┪h¡∩g bє⌠оre u$, we Hαď ∩o┪H¡Πg 6єfoгє u$, шe шe┎e αll go¡π9 ďi┎≡ct ┪o He@▼en, we шє┍e a1l 9■iΠg ďir≡ct ŁHe o┪her ш@џ – ¡n $Hort, thє p≡г¡●ď was $o fаr lıke the p┎≡$e∩t pe┍ioď, tHat s●mє ■f it$ πoisie$┪ aμ┪Hor:t:≡s ins:steď ●n its b≡ın9 гec≡ived, fø┎ 9ø●d оr ⌠●r ≡▼ı1, in Łh≡ sup≡гlα┪īvє ďegr≡є о⌠ ¢ompaгıson o∩1y.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-high-fairytale-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-fairytale-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-fairytale-style&quot;&gt;#&lt;/a&gt;
+Output text, obfuscation level high, fairytale style&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Ϊṫ шάș ṫђё вєșṫ ºḟ łΐṁєș, ΐł шάș łћё ώºѓșṫ фƒ țΐṁēș, ΐț ώάș ṫђё ąġē σƒ шΐșδσṁ, ΐṫ шάș ṫђє ąġё σƒ ƒооļїșћηєșș, їł шąș łђё єpºςђ ºƒ Бēļїēƒ, їṫ шąș ṫћё єpоςђ фḟ їņςѓєδΰľїłψ, їł ŵąș łђē șєąșфņ фḟ Ļїġђț, ΐł ŵąș łђё șёąșфņ ºḟ Ďąѓkņēșș, їł ώάș țђē șpгїηġ фḟ ђºpē, їṫ ŵąș ṫђє ŵїņțєѓ σḟ ďєșpαΐг, ώё ћαḋ ēνёѓџłћΐñġ вēƒσгє ΰș, шё ђάđ ησṫђΐηġ ḃёƒºѓё υș, ώё ŵєгē αļľ ġºїņġ ďΐѓєςł țф нєάνєη, ώє шєѓē άľļ ġфїņġ ďΐѓєςț ṫћē фṫћёг шąψ – ΐņ șћσѓṫ, ṫђē pёѓΐºđ ŵάș șº ƒάѓ ľΐkē țђё pгёșєñṫ pёѓїоδ, ṫћάł șºṁє оḟ ΐțș ñºΐșїєșł ąΰțћфѓїṫΐєș ΐñșїșłēď ºņ ΐłș Бєїņġ ѓēςёΐνēđ, ḟог ġºфđ σѓ ƒºг ēνΐľ, їη ṫђє șΰpєѓľάṫΐνē δєġѓєё ºḟ ςºṁpαгΐșоñ оņľψ.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-high-loudmouth-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-loudmouth-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-loudmouth-style&quot;&gt;#&lt;/a&gt;
+Output text, obfuscation level high, loudmouth style&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ĪṪ ШĀȘ ṪHĒ ḂĒȘṪ ŌF ṪIMĒȘ, IṪ ШĀȘ ṪHĒ ШŌŔȘṪ ŌF ṪIMĒȘ, IṪ ШĀȘ ṪHĒ ĀGĒ ŌF ШIȘĐŌM, IṪ ШĀȘ ṪHĒ ĀGĒ ŌF FŌŌLIȘHПĒȘȘ, IṪ ШĀȘ ṪHĒ ĒРŌČH ŌF ḂĒLIĒF, IṪ ШĀȘ ṪHĒ ĒРŌČH ŌF IПČŔĒĐŪLIṪЏ, IṪ ШĀȘ ṪHĒ ȘĒĀȘŌП ŌF LIGHṪ, IṪ ШĀȘ ṪHĒ ȘĒĀȘŌП ŌF ĐĀŔЌПĒȘȘ, IṪ ШĀȘ ṪHĒ ȘРŔIПG ŌF HŌРĒ, IṪ ШĀȘ ṪHĒ ШIПṪĒŔ ŌF ĐĒȘРĀIŔ, ШĒ HĀĐ ĒVĒŔЏṪHIПG ḂĒFŌŔĒ ŪȘ, ШĒ HĀĐ ПŌṪHIПG ḂĒFŌŔĒ ŪȘ, ШĒ ШĒŔĒ ĀLL GŌIПG ĐIŔĒČṪ ṪŌ ĦĒĀVĒП, ШĒ ШĒŔĒ ĀLL GŌIПG ĐIŔĒČṪ ṪHĒ ŌṪHĒŔ ШĀЏ – IП ȘHŌŔṪ, ṪHĒ РĒŔIŌĐ ШĀȘ ȘŌ FĀŔ LIЌĒ ṪHĒ РŔĒȘĒПṪ РĒŔIŌĐ, ṪHĀṪ ȘŌMĒ ŌF IṪȘ ПŌIȘIĒȘṪ ĀŪṪHŌŔIṪIĒȘ IПȘIȘṪĒĐ ŌП IṪȘ ḂĒIПG ŔĒČĒIVĒĐ, FŌŔ GŌŌĐ ŌŔ FŌŔ ĒVIL, IП ṪHĒ ȘŪРĒŔLĀṪIVĒ ĐĒGŔĒĒ ŌF ČŌMРĀŔIȘŌП ŌПLЏ. &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-high-moneytalk-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-high-moneytalk-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-high-moneytalk-style&quot;&gt;#&lt;/a&gt;
+Output text, obfuscation level high, moneytalk style&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;1₮ ₩₳$ ₺₶€ ฿€$₸ 0₣ ₮1₥€₷, 1₸ ₩₳$ ₺₶€ ₩0₹₷₺ 0₣ ₸1₥€$, 1₺ ₩₳$ ₸₶€ ₳₲€ 0₣ ₩1$₫0₥, 1₺ ₩₳$ ₺₶€ ₳₲€ 0₣ ₣00£1₷₶₪€₷$, 1₮ ₩₳$ ₸₶€ €₱0₵₶ 0₣ ৳€£1€₣, 1₸ ₩₳$ ₺₶€ €₱0₵₶ 0₣ 1₪₵₹€₫U£1₮¥, 1₺ ₩₳$ ₮₶€ ₷€₳₷0₪ 0₣ £1₲₶₸, 1₮ ₩₳₷ ₸₶€ ₷€₳₷0₪ 0₣ ₫₳₹₭₪€$$, 1₮ ₩₳$ ₮₶€ $₽₹1₦₲ 0₣ ₶0₱€, 1₮ ₩₳$ ₸₶€ ₩1₦₸€₹ 0₣ ₫€$₱₳1₹, ₩€ ₶₳₫ €V€₹¥₸₶1₦₲ ฿€₣0₹€ U$, ₩€ ₶₳₫ ₪0₺₶1₦₲ ৳€₣0₹€ U$, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₵₺ ₸0 ₶€₳V€₦, ₩€ ₩€₹€ ₳££ ₲01₪₲ ₫1₹€₡₸ ₮₶€ 0₸₶€₹ ₩₳¥ – 1₪ $₶0₹₸, ₸₶€ ₽€₹10₫ ₩₳₷ ₷0 ₣₳₹ £1₭€ ₺₶€ ₽₹€₷€₪₮ ₱€₹10₫, ₸₳₮ $0₥€ 0₣ 1₸$ ₦01$1€$₮ ₳U₸₶0₹1₸1€$ 1₦₷1$₮€₫ 0₦ 1₸₷ ৳€1₦₲ ₹€₵€1V€₫, ₣0₹ ₲00₫ 0₹ ₣0₹ €V1£, 1₪ ₮₶€ ₷U₽€₹£₳₸1V€ ₫€₲₹€€ 0₣ ₡0₥₱₳₹1$0₦ 0₪£¥.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;output-text-obfuscation-level-medium-numbers-style&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#output-text-obfuscation-level-medium-numbers-style&quot; aria-label=&quot;Anchor link for: output-text-obfuscation-level-medium-numbers-style&quot;&gt;#&lt;/a&gt;
+Output text, obfuscation level medium, numbers style&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;It w4s th3 b35t 0f 71m35, 17 wa5 7he w0rst 0f time5, 1t w45 the 4ge of w1sdom, 17 wa5 7he 463 of f0olishness, 1t wa5 the 3poch 0f 83li3f, it w4s 7h3 3poch of incredulity, i7 w45 th3 s3450n of L1gh7, 1t w4s 7he s3450n 0f D4rkne55, i7 was 7he 5pring of hop3, i7 wa5 7h3 wint3r of desp4ir, w3 had 3very7h1n6 bef0re u5, we h4d noth1n6 8ef0r3 us, w3 w3r3 all g01ng direct t0 H34v3n, we w3re all 6o1n6 d1r3c7 7h3 0ther w4y – 1n 5h0rt, 7h3 per10d wa5 5o f4r l1ke the pre53nt per10d, 7h47 5om3 0f 1t5 n0i5ie5t 4uth0ri7ies 1nsis7ed 0n 175 8e1n6 r3ce1ved, for g00d 0r for 3v1l, 1n the sup3rl4tiv3 degre3 of comp4r15on only.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content>
         
     </entry>
     <entry xml:lang="en">
@@ -110,31 +81,26 @@ Output text, obfuscation level medium, numbers style&lt;&#x2F;h3&gt;
         <updated>2021-03-26T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/snippetizer/"/>
         <id>https://spitlo.com/code/snippetizer/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/snippetizer/">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;&#x2F;code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;&#x2F;music&#x2F;stromata&quot;&gt;Stromata&lt;&#x2F;a&gt; and &lt;a href=&quot;&#x2F;music&#x2F;derivata&quot;&gt;Derivata&lt;&#x2F;a&gt;. It uses &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; and takes a few arguments:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [start|middle|end]    What part of the file you want to snippet.
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                        Defaults to &amp;#39;middle&amp;#39;.
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                        Defaults to &amp;#39;30&amp;#39;.
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [-o&#x2F;--ogg]            Use ogg as output format instead of mp3.
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  [-n&#x2F;--nofade]         Don’t fade in and out.
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;If no arguments are supplied, it creates a 30 second mp3 snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
-Installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Make sure &lt;code&gt;ffmpeg&lt;&#x2F;code&gt; and &lt;code&gt;ffprobe&lt;&#x2F;code&gt; exists on your path. Then put the &lt;code&gt;snippetizer&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;&#x2F;a&gt;
-Fancy installation&lt;&#x2F;h2&gt;
-&lt;p&gt;Like above, but clone the repo somewhere and put a symlink to the &lt;code&gt;snippetizer&lt;&#x2F;code&gt; script in your &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt; instead.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/snippetizer/">&lt;p&gt;I made &lt;code&gt;snippetizer&lt;/code&gt; to be able to quickly produce snippets of the material from &lt;a href=&quot;/music/stromata&quot;&gt;Stromata&lt;/a&gt; and &lt;a href=&quot;/music/derivata&quot;&gt;Derivata&lt;/a&gt;. It uses &lt;code&gt;ffmpeg&lt;/code&gt; and &lt;code&gt;ffprobe&lt;/code&gt; and takes a few arguments:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  [start|middle|end]    What part of the file you want to snippet.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;                        Defaults to &amp;#39;middle&amp;#39;.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  [&amp;lt;any integer&amp;gt;]       Snippet length in seconds.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;                        Defaults to &amp;#39;30&amp;#39;.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  [-o/--ogg]            Use ogg as output format instead of mp3.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  [-n/--nofade]         Don’t fade in and out.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If no arguments are supplied, it creates a 30 second mp3 snippet from the middle of a file, with 2 second fade-in and 3 second fade-out.&lt;/p&gt;
+&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;/a&gt;
+Installation&lt;/h2&gt;
+&lt;p&gt;Make sure &lt;code&gt;ffmpeg&lt;/code&gt; and &lt;code&gt;ffprobe&lt;/code&gt; exists on your path. Then put the &lt;code&gt;snippetizer&lt;/code&gt; script in your &lt;code&gt;~/bin&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;fancy-installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#fancy-installation&quot; aria-label=&quot;Anchor link for: fancy-installation&quot;&gt;#&lt;/a&gt;
+Fancy installation&lt;/h2&gt;
+&lt;p&gt;Like above, but clone the repo somewhere and put a symlink to the &lt;code&gt;snippetizer&lt;/code&gt; script in your &lt;code&gt;~/bin&lt;/code&gt; instead.&lt;/p&gt;
 </content>
         
     </entry>
@@ -144,33 +110,27 @@ Fancy installation&lt;&#x2F;h2&gt;
         <updated>2020-12-06T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/rotnot/"/>
         <id>https://spitlo.com/code/rotnot/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/rotnot/">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/rotnot/">&lt;p&gt;Rotnot tries to figure out the notes of sound samples based on their filename, and save that note as meta data in the file.&lt;/p&gt;
+&lt;p&gt;At the moment it works on a bunch of multi sampled instruments I had available, where the filenames were either:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
-&lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;&#x2F;code&gt;); or&lt;&#x2F;li&gt;
-&lt;li&gt;The actual midi note (&lt;code&gt;031.wav&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;The midi note is then written back to the wave file as part of the “Sampler Chunk”, in the &lt;code&gt;MIDI Unity Note&lt;&#x2F;code&gt; field.&lt;&#x2F;p&gt;
-&lt;p&gt;The “Instrument Chunk” has a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;&#x2F;code&gt;. Future versions might write to that as well.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;
-Usage&lt;&#x2F;h2&gt;
-&lt;p&gt;In the &lt;code&gt;rotnot&lt;&#x2F;code&gt; directory, enter:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;node&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; index.js&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;
-Rationale&lt;&#x2F;h2&gt;
-&lt;p&gt;I own a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;1010music.com&#x2F;product&#x2F;blackbox&quot;&gt;1010music blackbox hardware sampler&lt;&#x2F;a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;&#x2F;p&gt;
+&lt;li&gt;Note+octave (&lt;code&gt;a#4.wav&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Collection_name-note+octave (&lt;code&gt;MutedTrumpet-Bb2.wav&lt;/code&gt;); or&lt;/li&gt;
+&lt;li&gt;The actual midi note (&lt;code&gt;031.wav&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The midi note is then written back to the wave file as part of the “Sampler Chunk”, in the &lt;code&gt;MIDI Unity Note&lt;/code&gt; field.&lt;/p&gt;
+&lt;p&gt;The “Instrument Chunk” has a field with similar purpose, &lt;code&gt;MIDI Unshifted Note&lt;/code&gt;. Future versions might write to that as well.&lt;/p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;/a&gt;
+Usage&lt;/h2&gt;
+&lt;p&gt;In the &lt;code&gt;rotnot&lt;/code&gt; directory, enter:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; index.js&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;/a&gt;
+Rationale&lt;/h2&gt;
+&lt;p&gt;I own a &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://1010music.com/product/blackbox&quot;&gt;1010music blackbox hardware sampler&lt;/a&gt;. It can load a folder of samples as a multi-sample instrument, but it doesn’t use filenames for note recognition. So I use this to prepare sample packs before moving them to the SD card.&lt;/p&gt;
 </content>
         
     </entry>
@@ -180,25 +140,21 @@ Rationale&lt;&#x2F;h2&gt;
         <updated>2020-12-01T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/firetrak/"/>
         <id>https://spitlo.com/code/firetrak/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/firetrak/">&lt;p&gt;Firetrak is used to develop locally with real https certificates using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;traefik.io&quot;&gt;Traefik&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;letsencrypt.org&#x2F;&quot;&gt;Let’s Encrypt&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;When running Gatsby&#x2F;Next&#x2F;Django&#x2F;node projects (and other projects that expose a single port we can reverse proxy to) you won’t need Docker&#x2F;Pilothouse&#x2F;Nginx or whatever you currently use to serve https locally. Also, you won’t need to add entries to your &lt;code&gt;hosts&lt;&#x2F;code&gt; file.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment, Firetrak supports domains managed by Digitalocean, but it should be pretty easy to extend it to work with any of the Traefik’s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;doc.traefik.io&#x2F;traefik&#x2F;https&#x2F;acme&#x2F;#providers&quot;&gt;supported providers&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;&#x2F;a&gt;
-Rationale&lt;&#x2F;h2&gt;
-&lt;p&gt;A lot of my projects at &lt;code&gt;$WORK&lt;&#x2F;code&gt; demand that we use https in development. In 2017 I got a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Pilothouse-App&#x2F;Pilothouse&#x2F;issues&#x2F;93&quot;&gt;feature request&lt;&#x2F;a&gt; implemented in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.pilothouse-app.org&#x2F;&quot;&gt;Pilothouse&lt;&#x2F;a&gt; that allows for using it as a reverse proxy for local projects, and we have used it with success since. But Pilothouse is mostly made for PHP development, depends on Docker, and downloads a bunch of containers to enable multiple versions of PHP. That’s ok on my work computer, but my laptop struggles with it. Also, Covid means more development done on the laptop, and since we don’t do much WordPress development anymore anyway, I felt it was time to look for a more lightweight solution. Hopefully, Firetrak is that.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
-Installation&lt;&#x2F;h2&gt;
-&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;firetrak&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/firetrak/">&lt;p&gt;Firetrak is used to develop locally with real https certificates using &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://traefik.io&quot;&gt;Traefik&lt;/a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When running Gatsby/Next/Django/node projects (and other projects that expose a single port we can reverse proxy to) you won’t need Docker/Pilothouse/Nginx or whatever you currently use to serve https locally. Also, you won’t need to add entries to your &lt;code&gt;hosts&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;At the moment, Firetrak supports domains managed by Digitalocean, but it should be pretty easy to extend it to work with any of the Traefik’s &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://doc.traefik.io/traefik/https/acme/#providers&quot;&gt;supported providers&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;rationale&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rationale&quot; aria-label=&quot;Anchor link for: rationale&quot;&gt;#&lt;/a&gt;
+Rationale&lt;/h2&gt;
+&lt;p&gt;A lot of my projects at &lt;code&gt;$WORK&lt;/code&gt; demand that we use https in development. In 2017 I got a &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/Pilothouse-App/Pilothouse/issues/93&quot;&gt;feature request&lt;/a&gt; implemented in &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://www.pilothouse-app.org/&quot;&gt;Pilothouse&lt;/a&gt; that allows for using it as a reverse proxy for local projects, and we have used it with success since. But Pilothouse is mostly made for PHP development, depends on Docker, and downloads a bunch of containers to enable multiple versions of PHP. That’s ok on my work computer, but my laptop struggles with it. Also, Covid means more development done on the laptop, and since we don’t do much WordPress development anymore anyway, I felt it was time to look for a more lightweight solution. Hopefully, Firetrak is that.&lt;/p&gt;
+&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;/a&gt;
+Installation&lt;/h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/firetrak&quot;&gt;the repo&lt;/a&gt; for up-to-date install instructions.&lt;/p&gt;
 </content>
         
     </entry>
@@ -208,72 +164,67 @@ Installation&lt;&#x2F;h2&gt;
         <updated>2020-11-26T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/dotfiles/"/>
         <id>https://spitlo.com/code/dotfiles/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/dotfiles/">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on one Mac running Monterey, one Mac running Pop!_OS Cosmic, one Raspberry Pi 400, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;&#x2F;p&gt;
-&lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;&#x2F;p&gt;
-&lt;p&gt;Below are a few of my most used functions&#x2F;aliases:&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L438-L484&quot;&gt;&lt;code&gt;cdp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;This allows me to jump quickly into project folders. If the project contains an &lt;code&gt;.nvmrc&lt;&#x2F;code&gt; or &lt;code&gt;.python-version&lt;&#x2F;code&gt; file, the correct versions of &lt;code&gt;node&lt;&#x2F;code&gt; and &lt;code&gt;python&lt;&#x2F;code&gt; are set.&lt;&#x2F;p&gt;
-&lt;p&gt;The function uses &lt;code&gt;$PROJECT_FOLDER&lt;&#x2F;code&gt; to know where to look. I set it in a file kept out of source control.&lt;&#x2F;p&gt;
-&lt;p&gt;There is a corresponding &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;6f41ade4e2ff75e7ddb147d727ec8ad53917d87a&#x2F;.bash_completions&#x2F;cdp&quot;&gt;bash completion script&lt;&#x2F;a&gt;, so if I set &lt;code&gt;$LOCAL_PROJECTS&lt;&#x2F;code&gt; to a space separated string of project names, I get tab completion and can navigate EVEN QUICKER!&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;xt&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#xt&quot; aria-label=&quot;Anchor link for: xt&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L119-L156&quot;&gt;&lt;code&gt;xt&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al. Cant’t remember where I got this function from initially, but here’s the obligatory &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;xkcd.com&#x2F;&quot;&gt;XKCD&lt;&#x2F;a&gt; strip:&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;tar.png&quot; alt=&quot;XKCD: Tar&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;qrab&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#qrab&quot; aria-label=&quot;Anchor link for: qrab&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L706-L712&quot;&gt;&lt;code&gt;qrab&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;This uses &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fukuchi&#x2F;libqrencode&quot;&gt;&lt;code&gt;qrencode&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; to create a QR code from whatever is in the clipboard and print it to the terminal. Very helpful when I need to move small pieces of information from my laptop to my phone quickly.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;weather&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#weather&quot; aria-label=&quot;Anchor link for: weather&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L771-L773&quot;&gt;&lt;code&gt;weather&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;I can never remember where to &lt;code&gt;curl&lt;&#x2F;code&gt; the weather from and what query strings to use, so now I just run &lt;code&gt;weather london&lt;&#x2F;code&gt; to get the London weather in a compact form.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;dict&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#dict&quot; aria-label=&quot;Anchor link for: dict&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;b601ed079b16e6651545f579d2a437f487af2965&#x2F;.functions#L527-L531&quot;&gt;&lt;code&gt;dict&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;Basically the same as &lt;code&gt;weather&lt;&#x2F;code&gt; but for dictionary definitions.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;squash&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#squash&quot; aria-label=&quot;Anchor link for: squash&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;master&#x2F;bin&#x2F;squash&quot;&gt;&lt;code&gt;squash&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my hard drive. But they don’t need to look pretty. So every once in a while I run:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;find&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; .&#x2F;media&#x2F;images&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;xdev&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;name&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;*.jpg&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;mtime&lt;&#x2F;span&gt; +360&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;execdir&lt;&#x2F;span&gt; squash &lt;span class=&quot;z-meta z-group z-expansion z-brace z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-brace z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-brace z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-character z-escape z-shell&quot;&gt;\;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;&lt;code&gt;squash&lt;&#x2F;code&gt; uses ImageMagicks’s &lt;code&gt;mogrify&lt;&#x2F;code&gt; to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable &lt;code&gt;MINIMUM_SIZE&lt;&#x2F;code&gt; set, to only affect images of a significant size.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;update-tp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update-tp&quot; aria-label=&quot;Anchor link for: update-tp&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;master&#x2F;bin&#x2F;update-tp&quot;&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;code&gt;update-tp&lt;&#x2F;code&gt; helps me to update a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-packages&quot;&gt;Termux package&lt;&#x2F;a&gt; in my fork, then create a consistently worded commit so I can do a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot; aria-label=&quot;Anchor link for: update&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;dotfiles&#x2F;blob&#x2F;master&#x2F;bin&#x2F;update&quot;&gt;&lt;code&gt;update&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;code&gt;update&lt;&#x2F;code&gt; helps me keep some commands fresh across platforms, often by downloading the latest release from Github or similar and moving it to &lt;code&gt;~&#x2F;bin&lt;&#x2F;code&gt;. This was mostly created out of frustration with the way Homebrew works on macOS, but I use it on Android (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-app&quot;&gt;Termux&lt;&#x2F;a&gt;) and Linux as well. At the time of writing, &lt;code&gt;update&lt;&#x2F;code&gt; supports updating the following commands:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/dotfiles/">&lt;p&gt;I keep most of my aliases, functions and config files in a dotfiles repo. They are currently used on one Mac running Monterey, one Mac running Pop!_OS Cosmic, one Raspberry Pi 400, an Android running Termux on LineageOS and on several instances of Ubuntu Server, so I try to make sure everything’s portable.&lt;/p&gt;
+&lt;p&gt;Some of this stuff probably only makes sense for me, but there are a few gems here and there that might be of use for others as well.&lt;/p&gt;
+&lt;p&gt;Below are a few of my most used functions/aliases:&lt;/p&gt;
+&lt;h2 id=&quot;cdp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cdp&quot; aria-label=&quot;Anchor link for: cdp&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L438-L484&quot;&gt;&lt;code&gt;cdp&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This allows me to jump quickly into project folders. If the project contains an &lt;code&gt;.nvmrc&lt;/code&gt; or &lt;code&gt;.python-version&lt;/code&gt; file, the correct versions of &lt;code&gt;node&lt;/code&gt; and &lt;code&gt;python&lt;/code&gt; are set.&lt;/p&gt;
+&lt;p&gt;The function uses &lt;code&gt;$PROJECT_FOLDER&lt;/code&gt; to know where to look. I set it in a file kept out of source control.&lt;/p&gt;
+&lt;p&gt;There is a corresponding &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/6f41ade4e2ff75e7ddb147d727ec8ad53917d87a/.bash_completions/cdp&quot;&gt;bash completion script&lt;/a&gt;, so if I set &lt;code&gt;$LOCAL_PROJECTS&lt;/code&gt; to a space separated string of project names, I get tab completion and can navigate EVEN QUICKER!&lt;/p&gt;
+&lt;h2 id=&quot;xt&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#xt&quot; aria-label=&quot;Anchor link for: xt&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L119-L156&quot;&gt;&lt;code&gt;xt&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is so I never have to learn the flags for unrar, unzip, gunzip, tar et al. Cant’t remember where I got this function from initially, but here’s the obligatory &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://xkcd.com/&quot;&gt;XKCD&lt;/a&gt; strip:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/tar.png&quot; alt=&quot;XKCD: Tar&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;qrab&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#qrab&quot; aria-label=&quot;Anchor link for: qrab&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L706-L712&quot;&gt;&lt;code&gt;qrab&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This uses &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/fukuchi/libqrencode&quot;&gt;&lt;code&gt;qrencode&lt;/code&gt;&lt;/a&gt; to create a QR code from whatever is in the clipboard and print it to the terminal. Very helpful when I need to move small pieces of information from my laptop to my phone quickly.&lt;/p&gt;
+&lt;h2 id=&quot;weather&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#weather&quot; aria-label=&quot;Anchor link for: weather&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L771-L773&quot;&gt;&lt;code&gt;weather&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I can never remember where to &lt;code&gt;curl&lt;/code&gt; the weather from and what query strings to use, so now I just run &lt;code&gt;weather london&lt;/code&gt; to get the London weather in a compact form.&lt;/p&gt;
+&lt;h2 id=&quot;dict&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#dict&quot; aria-label=&quot;Anchor link for: dict&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/b601ed079b16e6651545f579d2a437f487af2965/.functions#L527-L531&quot;&gt;&lt;code&gt;dict&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Basically the same as &lt;code&gt;weather&lt;/code&gt; but for dictionary definitions.&lt;/p&gt;
+&lt;h2 id=&quot;squash&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#squash&quot; aria-label=&quot;Anchor link for: squash&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/master/bin/squash&quot;&gt;&lt;code&gt;squash&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I work on some projects that’s been around since the early 2010s, and I need a local clone, including all assets, for them to work properly when developing. So I need to keep gigs and gigs of images just lying about on my hard drive. But they don’t need to look pretty. So every once in a while I run:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; ./media/images&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;xdev&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; &amp;#39;&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt;*.jpg&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;mtime&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; +360&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;execdir&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; squash&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt; {}&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; \;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;squash&lt;/code&gt; uses ImageMagicks’s &lt;code&gt;mogrify&lt;/code&gt; to set the jpeg quality to one, then resets the file’s timestamp, to prevent possible overwrites when syncing with the production server. I can also run it with the environment variable &lt;code&gt;MINIMUM_SIZE&lt;/code&gt; set, to only affect images of a significant size.&lt;/p&gt;
+&lt;h2 id=&quot;update-tp&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update-tp&quot; aria-label=&quot;Anchor link for: update-tp&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/master/bin/update-tp&quot;&gt;&lt;code&gt;update-tp&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;update-tp&lt;/code&gt; helps me to update a &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/termux/termux-packages&quot;&gt;Termux package&lt;/a&gt; in my fork, then create a consistently worded commit so I can do a PR. It’s pretty scary to contribute to popular projects and I want to make sure I get it right if I do.&lt;/p&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot; aria-label=&quot;Anchor link for: update&quot;&gt;#&lt;/a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/dotfiles/blob/master/bin/update&quot;&gt;&lt;code&gt;update&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;update&lt;/code&gt; helps me keep some commands fresh across platforms, often by downloading the latest release from Github or similar and moving it to &lt;code&gt;~/bin&lt;/code&gt;. This was mostly created out of frustration with the way Homebrew works on macOS, but I use it on Android (&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/termux/termux-app&quot;&gt;Termux&lt;/a&gt;) and Linux as well. At the time of writing, &lt;code&gt;update&lt;/code&gt; supports updating the following commands:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TheZoraiz&#x2F;ascii-image-converter&quot;&gt;ascii-image-converter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sharkdp&#x2F;bat&quot;&gt;bat&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;sloum&#x2F;bombadillo&quot;&gt;bombadillo&lt;&#x2F;a&gt; (Broken at the time)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;schollz&#x2F;croc&quot;&gt;croc&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dandavison&#x2F;delta&quot;&gt;delta&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ogham&#x2F;exa&quot;&gt;exa&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&quot;&gt;fzf&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;climech&#x2F;grit&quot;&gt;grit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tomnomnom&#x2F;gron&quot;&gt;gron&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;curl&#x2F;h2c&quot;&gt;h2c&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sharkdp&#x2F;hyperfine&quot;&gt;hyperfine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stedolan&#x2F;jq&quot;&gt;jq&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zyedidia&#x2F;micro&quot;&gt;micro&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denisidoro&#x2F;navi&quot;&gt;navi&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;xwmx&#x2F;nb&quot;&gt;nb&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;starship&#x2F;starship&quot;&gt;starship&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spaam&#x2F;svtplay-dl&quot;&gt;svtplay-dl&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;errata-ai&#x2F;vale&quot;&gt;vale&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wp-cli&#x2F;wp-cli&quot;&gt;wp-cli&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yt-dlp&#x2F;yt-dlp&quot;&gt;yt-dlp&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;zola&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/TheZoraiz/ascii-image-converter&quot;&gt;ascii-image-converter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/sharkdp/bat&quot;&gt;bat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://tildegit.org/sloum/bombadillo&quot;&gt;bombadillo&lt;/a&gt; (Broken at the time)&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/schollz/croc&quot;&gt;croc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/dandavison/delta&quot;&gt;delta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/ogham/exa&quot;&gt;exa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/junegunn/fzf&quot;&gt;fzf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/climech/grit&quot;&gt;grit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/tomnomnom/gron&quot;&gt;gron&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/curl/h2c&quot;&gt;h2c&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/sharkdp/hyperfine&quot;&gt;hyperfine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/stedolan/jq&quot;&gt;jq&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/zyedidia/micro&quot;&gt;micro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/denisidoro/navi&quot;&gt;navi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/xwmx/nb&quot;&gt;nb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/starship/starship&quot;&gt;starship&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spaam/svtplay-dl&quot;&gt;svtplay-dl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/errata-ai/vale&quot;&gt;vale&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/wp-cli/wp-cli&quot;&gt;wp-cli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/yt-dlp/yt-dlp&quot;&gt;yt-dlp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/getzola/zola&quot;&gt;zola&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         
     </entry>
@@ -283,20 +234,16 @@ Installation&lt;&#x2F;h2&gt;
         <updated>2020-11-26T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/zola-deploy/"/>
         <id>https://spitlo.com/code/zola-deploy/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/zola-deploy/">&lt;p&gt;I prefer to keep my Github Pages files in a &lt;code&gt;docs&lt;&#x2F;code&gt; folder, and not in a separate branch.&lt;&#x2F;p&gt;
-&lt;p&gt;But both available actions for Zola deploys in the marketplace uses the &lt;code&gt;gh-pages&lt;&#x2F;code&gt; (branch) method, so I forked the simplest of them and made it even simpler. Than I made it a bit less simple.&lt;&#x2F;p&gt;
-&lt;p&gt;This action could be used on &lt;code&gt;push&lt;&#x2F;code&gt; for automatic deploys, but I use it with the event &lt;code&gt;workflow_dispatch&lt;&#x2F;code&gt; to be able to trigger a deploy manually from inside Github.&lt;&#x2F;p&gt;
-&lt;p&gt;It runs &lt;code&gt;zola check&lt;&#x2F;code&gt; before building. If you supply a &lt;code&gt;SITE_URL&lt;&#x2F;code&gt; variable, it will try to shrink the search index file by replacing all instances of &lt;code&gt;$SITE_URL&lt;&#x2F;code&gt; with empty space.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/zola-deploy/">&lt;p&gt;I prefer to keep my Github Pages files in a &lt;code&gt;docs&lt;/code&gt; folder, and not in a separate branch.&lt;/p&gt;
+&lt;p&gt;But both available actions for Zola deploys in the marketplace uses the &lt;code&gt;gh-pages&lt;/code&gt; (branch) method, so I forked the simplest of them and made it even simpler. Than I made it a bit less simple.&lt;/p&gt;
+&lt;p&gt;This action could be used on &lt;code&gt;push&lt;/code&gt; for automatic deploys, but I use it with the event &lt;code&gt;workflow_dispatch&lt;/code&gt; to be able to trigger a deploy manually from inside Github.&lt;/p&gt;
+&lt;p&gt;It runs &lt;code&gt;zola check&lt;/code&gt; before building. If you supply a &lt;code&gt;SITE_URL&lt;/code&gt; variable, it will try to shrink the search index file by replacing all instances of &lt;code&gt;$SITE_URL&lt;/code&gt; with empty space.&lt;/p&gt;
 </content>
         
     </entry>
@@ -306,20 +253,16 @@ Installation&lt;&#x2F;h2&gt;
         <updated>2020-11-25T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/shopify-labels/"/>
         <id>https://spitlo.com/code/shopify-labels/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/shopify-labels/">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;&#x2F;p&gt;
-&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision&#x2F;fiddling.&lt;&#x2F;p&gt;
-&lt;p&gt;No files are sent to the server, this is just a one page HTML&#x2F;JavaScript app.&lt;&#x2F;p&gt;
-&lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&quot;&gt;https:&#x2F;&#x2F;spitlo.com&#x2F;shopify-labels&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/shopify-labels/">&lt;p&gt;This is a very basic app for loading a CSV file of orders exported from Shopify, and generating pages suitable for printing address labels.&lt;/p&gt;
+&lt;p&gt;At the moment it’s mostly hardcoded to suit my needs, which are three column A4 pages with eleven rows of labels for shipping inside Sweden. The amount of columns and rows can be changed, but it’s not tested. I might make it more customizable in the future, especially since print CSS is quirky and label printing needs some precision/fiddling.&lt;/p&gt;
+&lt;p&gt;No files are sent to the server, this is just a one page HTML/JavaScript app.&lt;/p&gt;
+&lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/shopify-labels/&quot;&gt;https://spitlo.com/shopify-labels/&lt;/a&gt;&lt;/p&gt;
 </content>
         
     </entry>
@@ -329,56 +272,47 @@ Installation&lt;&#x2F;h2&gt;
         <updated>2020-11-16T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/atadev/"/>
         <id>https://spitlo.com/code/atadev/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/atadev/">&lt;p&gt;At-a-dev is a simple bash script to enable &lt;code&gt;@&lt;&#x2F;code&gt;:ing other devs in code and getting notifications about mentions on &lt;code&gt;git pull&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Use it as a post-merge hook and it will check new files for any mentions and alert the user.&lt;&#x2F;p&gt;
-&lt;p&gt;Use it as a command line tool and it will show you all your messages.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage-example&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-example&quot; aria-label=&quot;Anchor link for: usage-example&quot;&gt;#&lt;&#x2F;a&gt;
-Usage example&lt;&#x2F;h2&gt;
-&lt;p&gt;The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in &lt;code&gt;src&#x2F;index.js&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;var&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;myConst&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt; &lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @John Please use const and not var&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;a&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;2&lt;&#x2F;span&gt; &lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @Bella Please add a trailing comma here, see our style guide&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;When John runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, he sees the following message:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;==========================
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;On line 5:
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  var myConst = { &#x2F;&#x2F; @John Please use const and not var
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;On line 9:
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;When Bella runs &lt;code&gt;git pull&lt;&#x2F;code&gt;, she sees the following message:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Mentions in .&#x2F;src&#x2F;index.js
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;==========================
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;On line 7:
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  b: 2 &#x2F;&#x2F; @Bella Please add a trailing comma here, see our style guide
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;On line 9:
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  &#x2F;&#x2F; @John and @Bella You should both enable an ESLint plugin in your $EDITOR
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Bella and John makes their respective changes and remove the relevant message.&lt;&#x2F;p&gt;
-&lt;p&gt;Perhaps one of them adds a new message:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;const&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-constant z-ts&quot;&gt;myConst&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;a&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;  &lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-object-literal z-key z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-ts&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;mark&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ts&quot;&gt;&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-double-slash z-ts&quot;&gt; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;mark&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;&#x2F;a&gt;
-Installation&lt;&#x2F;h2&gt;
-&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;atadev&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/atadev/">&lt;p&gt;At-a-dev is a simple bash script to enable &lt;code&gt;@&lt;/code&gt;:ing other devs in code and getting notifications about mentions on &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Use it as a post-merge hook and it will check new files for any mentions and alert the user.&lt;/p&gt;
+&lt;p&gt;Use it as a command line tool and it will show you all your messages.&lt;/p&gt;
+&lt;h2 id=&quot;usage-example&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage-example&quot; aria-label=&quot;Anchor link for: usage-example&quot;&gt;#&lt;/a&gt;
+Usage example&lt;/h2&gt;
+&lt;p&gt;The office nitpicker spots a few flagrant style crimes, and commits and pushes the following in &lt;code&gt;src/index.js&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-13 z-d-18&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;z-l-1 z-d-3&quot;&gt; myConst&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; =&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; {&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; //&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; @John Please use const and not var&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  a&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 1&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  b&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 2&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; //&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; @Bella Please add a trailing comma here, see our style guide&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When John runs &lt;code&gt;git pull&lt;/code&gt;, he sees the following message:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Mentions in ./src/index.js&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;==========================&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;On line 5:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  var myConst = { // @John Please use const and not var&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;On line 9:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  // @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When Bella runs &lt;code&gt;git pull&lt;/code&gt;, she sees the following message:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Mentions in ./src/index.js&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;==========================&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;On line 7:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  b: 2 // @Bella Please add a trailing comma here, see our style guide&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;On line 9:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  // @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bella and John makes their respective changes and remove the relevant message.&lt;/p&gt;
+&lt;p&gt;Perhaps one of them adds a new message:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-13 z-d-18&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;z-l-1 z-d-3&quot;&gt; myConst&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-4&quot;&gt; =&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; {&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  a&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 1&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  b&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 2&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; @John and @Bella You should both enable an ESLint plugin in your $EDITOR&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l z-l-hl z-d-hl&quot;&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;z-l-10 z-l-i z-d-5 z-d-i&quot;&gt; Hey, @OfficeNitpicker, it’s better to @ one dev per line, see our style guide&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#installation&quot; aria-label=&quot;Anchor link for: installation&quot;&gt;#&lt;/a&gt;
+Installation&lt;/h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/atadev&quot;&gt;the repo&lt;/a&gt; for up-to-date install instructions.&lt;/p&gt;
 </content>
         
     </entry>
@@ -388,47 +322,41 @@ Installation&lt;&#x2F;h2&gt;
         <updated>2020-11-16T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/merc/"/>
         <id>https://spitlo.com/code/merc/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/merc/">&lt;h2 id=&quot;a-gemini-client-written-for-deno&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-gemini-client-written-for-deno&quot; aria-label=&quot;Anchor link for: a-gemini-client-written-for-deno&quot;&gt;#&lt;&#x2F;a&gt;
-A Gemini client written for Deno&lt;&#x2F;h2&gt;
-&lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildegit.org&#x2F;solderpunk&quot;&gt;100 LOC demos&lt;&#x2F;a&gt; by solderpunk.&lt;&#x2F;p&gt;
-&lt;p&gt;The name is a nod to and a gentle jab at the tendency in both Deno and Gemini communities to name projects after dinosaurs and zodiac stuff, respectively. The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Mercuriceratops&quot;&gt;mercuriceratops&lt;&#x2F;a&gt; is a dinosaur of the type species &lt;em&gt;Mercuriceratops gemini&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/merc/">&lt;h2 id=&quot;a-gemini-client-written-for-deno&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-gemini-client-written-for-deno&quot; aria-label=&quot;Anchor link for: a-gemini-client-written-for-deno&quot;&gt;#&lt;/a&gt;
+A Gemini client written for Deno&lt;/h2&gt;
+&lt;p&gt;Merc (formally Mercuriceratops) is a basic client for Gemini, inspired by the &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://tildegit.org/solderpunk&quot;&gt;100 LOC demos&lt;/a&gt; by solderpunk.&lt;/p&gt;
+&lt;p&gt;The name is a nod to and a gentle jab at the tendency in both Deno and Gemini communities to name projects after dinosaurs and zodiac stuff, respectively. The &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Mercuriceratops&quot;&gt;mercuriceratops&lt;/a&gt; is a dinosaur of the type species &lt;em&gt;Mercuriceratops gemini&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&quot;alert&quot;&gt;
   This project is now on hold, since I can’t figure out how to make Deno accept most certificates.
-&lt;&#x2F;div&gt;
-&lt;h2 id=&quot;install-update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#install-update&quot; aria-label=&quot;Anchor link for: install-update&quot;&gt;#&lt;&#x2F;a&gt;
-Install&#x2F;update&lt;&#x2F;h2&gt;
-&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spitlo&#x2F;mercuriceratops&quot;&gt;the repo&lt;&#x2F;a&gt; for up-to-date install instructions.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;&#x2F;a&gt;
-Usage&lt;&#x2F;h2&gt;
-&lt;p&gt;To visit a Gemini page, enter the URL at the &lt;code&gt;URL&amp;gt;&lt;&#x2F;code&gt; prompt or start it with a URL as argument.
+&lt;/div&gt;
+&lt;h2 id=&quot;install-update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#install-update&quot; aria-label=&quot;Anchor link for: install-update&quot;&gt;#&lt;/a&gt;
+Install/update&lt;/h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/spitlo/mercuriceratops&quot;&gt;the repo&lt;/a&gt; for up-to-date install instructions.&lt;/p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;#&lt;/a&gt;
+Usage&lt;/h2&gt;
+&lt;p&gt;To visit a Gemini page, enter the URL at the &lt;code&gt;URL&amp;gt;&lt;/code&gt; prompt or start it with a URL as argument.
 Merc only handles Gemini links for now, and you can leave out the protocol part of the URL.
 To go back, enter ‘b’ at the prompt. To quit, enter ‘q’.
-To search using gus.guru, enter ‘s’ and then enter your query at the &lt;code&gt;SEARCH&amp;gt;&lt;&#x2F;code&gt; prompt.
-To follow a link, enter the link number and press enter.&lt;&#x2F;p&gt;
-&lt;p&gt;You can also supply a URL directly.&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;&#x2F;a&gt;
-Options&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -h, --help
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Prints help end exits
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -d, --dump
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Prints document body and exits
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -w, --width &amp;lt;number&amp;gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Wraps text at &amp;lt;number&amp;gt; columns
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  -p, --paginate &amp;lt;number&amp;gt;
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Show &amp;lt;number&amp;gt; of rows at a time.
-&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;          Defaults to 50 if no &amp;lt;number&amp;gt; is supplied
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</content>
+To search using gus.guru, enter ‘s’ and then enter your query at the &lt;code&gt;SEARCH&amp;gt;&lt;/code&gt; prompt.
+To follow a link, enter the link number and press enter.&lt;/p&gt;
+&lt;p&gt;You can also supply a URL directly.&lt;/p&gt;
+&lt;h3 id=&quot;options&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#options&quot; aria-label=&quot;Anchor link for: options&quot;&gt;#&lt;/a&gt;
+Options&lt;/h3&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  -h, --help&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;          Prints help end exits&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  -d, --dump&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;          Prints document body and exits&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  -w, --width &amp;lt;number&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;          Wraps text at &amp;lt;number&amp;gt; columns&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  -p, --paginate &amp;lt;number&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;          Show &amp;lt;number&amp;gt; of rows at a time.&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;          Defaults to 50 if no &amp;lt;number&amp;gt; is supplied&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content>
         
     </entry>
     <entry xml:lang="en">
@@ -437,28 +365,24 @@ Options&lt;&#x2F;h3&gt;
         <updated>2020-11-15T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/spitlo-com/"/>
         <id>https://spitlo.com/code/spitlo-com/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/spitlo-com/">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;&#x2F;p&gt;
-&lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and get away from JavaScript for a while.&lt;&#x2F;p&gt;
-&lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/spitlo-com/">&lt;p&gt;I made this site mainly to improve my HTML and UI skills, having done mostly React and back-end work the last few years.&lt;/p&gt;
+&lt;p&gt;I also wanted to try out &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://www.getzola.org/&quot;&gt;Zola&lt;/a&gt; and get away from JavaScript for a while.&lt;/p&gt;
+&lt;p&gt;Lastly, it’s a nice low-stakes place to have some fun and try stuff out, for example:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Github Pages hosting with a custom domain name&lt;&#x2F;li&gt;
-&lt;li&gt;Github Actions&lt;&#x2F;li&gt;
-&lt;li&gt;Hand coded or programmatically generated SVGs&lt;&#x2F;li&gt;
-&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;&#x2F;code&gt; value of &lt;code&gt;::before&lt;&#x2F;code&gt; and &lt;code&gt;::after&lt;&#x2F;code&gt; pseudo-elements&lt;&#x2F;li&gt;
-&lt;li&gt;Newer&#x2F;partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;&#x2F;li&gt;
-&lt;li&gt;Using AVIF&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1202&quot;&gt;?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;li&gt;Github Pages hosting with a custom domain name&lt;/li&gt;
+&lt;li&gt;Github Actions&lt;/li&gt;
+&lt;li&gt;Hand coded or programmatically generated SVGs&lt;/li&gt;
+&lt;li&gt;Undocumented CSS stuff like animating the &lt;code&gt;content&lt;/code&gt; value of &lt;code&gt;::before&lt;/code&gt; and &lt;code&gt;::after&lt;/code&gt; pseudo-elements&lt;/li&gt;
+&lt;li&gt;Newer/partially supported HTML elements like &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ever so slightly dipping my toes into the Rust ecosystem&lt;/li&gt;
+&lt;li&gt;Using AVIF&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/getzola/zola/issues/1202&quot;&gt;?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         
     </entry>

@@ -12,33 +12,29 @@
         <updated>2024-03-24T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/ctgol/"/>
         <id>https://spitlo.com/code/ctgol/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/ctgol/">&lt;p&gt;Conway Twitty’s Game of Life is an experiment in sequencing. It’s an evolving step sequencer that follows the rules of Conway’s Game of Life. Each active cell will trigger a very short fragment of a Conway Twitty song.&lt;&#x2F;p&gt;
-&lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;ctgol&#x2F;&quot;&gt;spitlo.com&#x2F;ctgol&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Conway Twitty’s Game of Life is a part of a growing family of mostly useless sequencers. The family includes:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/ctgol/">&lt;p&gt;Conway Twitty’s Game of Life is an experiment in sequencing. It’s an evolving step sequencer that follows the rules of Conway’s Game of Life. Each active cell will trigger a very short fragment of a Conway Twitty song.&lt;/p&gt;
+&lt;p&gt;It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/ctgol/&quot;&gt;spitlo.com/ctgol/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Conway Twitty’s Game of Life is a part of a growing family of mostly useless sequencers. The family includes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;code&#x2F;pikseq&#x2F;&quot;&gt;PIKSEQ&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;pikseq&#x2F;&quot;&gt;spitlo.com&#x2F;pikseq&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;code&#x2F;sikwent&#x2F;&quot;&gt;Sikwent&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;sikwent&#x2F;&quot;&gt;spitlo.com&#x2F;sikwent&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;code&#x2F;space&#x2F;&quot;&gt;Space&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;instructions&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#instructions&quot; aria-label=&quot;Anchor link for: instructions&quot;&gt;#&lt;&#x2F;a&gt;
-Instructions&lt;&#x2F;h2&gt;
-&lt;p&gt;You can start by just clicking PLAY to check out the randomized pattern. Reload or click RANDOMIZE to generate a new one.&lt;&#x2F;p&gt;
-&lt;p&gt;For more advanced stuff, try picking a pattern from the dropdown. This might give you some inspiration.&lt;&#x2F;p&gt;
-&lt;p&gt;If you want to experiment freely, click CLEAR to get an empty canvas. It’s a good idea to SAVE often, since a) your pattern will change while playing, and b) this is a pretty buggy sequencer :)&lt;&#x2F;p&gt;
-&lt;p&gt;To help you place ticks, there are some keyboard modifiers. If you press &lt;code&gt;alt&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;option&lt;&#x2F;code&gt; while painting a tick, you will get a horizontal line. If you press &lt;code&gt;shift&lt;&#x2F;code&gt; while painting a tick, you will get a vertical line. Lines extend through all inactive ticks, so you can put a start and end tick and the line will cover the area between them. If you press &lt;code&gt;windows&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;command&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;meta&lt;&#x2F;code&gt; (depending on your OS) while drawing a line, the line will only paint every other tick.&lt;&#x2F;p&gt;
-&lt;p&gt;You can enable kaleidoscope mode, either for the X axis, the Y axis, or both. This will mirror the ticks you paint horizontally, vertically or both.&lt;&#x2F;p&gt;
-&lt;p&gt;While playing, you can mute individual tracks by using keys &lt;code&gt;a&lt;&#x2F;code&gt; to &lt;code&gt;z&lt;&#x2F;code&gt; on your keyboard. Or by clicking&#x2F;tapping the track letter to the right of the track. To mute the drum loop, uncheck the box that says “Enable drum loop”.&lt;&#x2F;p&gt;
-&lt;p&gt;To preview what a track sounds like, click the name on the right side of the track. This will play the sound that track represents.&lt;&#x2F;p&gt;
+&lt;li&gt;&lt;a href=&quot;/code/pikseq/&quot;&gt;PIKSEQ&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/pikseq/&quot;&gt;spitlo.com/pikseq/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/code/sikwent/&quot;&gt;Sikwent&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/sikwent/&quot;&gt;spitlo.com/sikwent/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/code/space/&quot;&gt;Space&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/space/&quot;&gt;spitlo.com/space/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;instructions&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#instructions&quot; aria-label=&quot;Anchor link for: instructions&quot;&gt;#&lt;/a&gt;
+Instructions&lt;/h2&gt;
+&lt;p&gt;You can start by just clicking PLAY to check out the randomized pattern. Reload or click RANDOMIZE to generate a new one.&lt;/p&gt;
+&lt;p&gt;For more advanced stuff, try picking a pattern from the dropdown. This might give you some inspiration.&lt;/p&gt;
+&lt;p&gt;If you want to experiment freely, click CLEAR to get an empty canvas. It’s a good idea to SAVE often, since a) your pattern will change while playing, and b) this is a pretty buggy sequencer :)&lt;/p&gt;
+&lt;p&gt;To help you place ticks, there are some keyboard modifiers. If you press &lt;code&gt;alt&lt;/code&gt;/&lt;code&gt;option&lt;/code&gt; while painting a tick, you will get a horizontal line. If you press &lt;code&gt;shift&lt;/code&gt; while painting a tick, you will get a vertical line. Lines extend through all inactive ticks, so you can put a start and end tick and the line will cover the area between them. If you press &lt;code&gt;windows&lt;/code&gt;/&lt;code&gt;command&lt;/code&gt;/&lt;code&gt;meta&lt;/code&gt; (depending on your OS) while drawing a line, the line will only paint every other tick.&lt;/p&gt;
+&lt;p&gt;You can enable kaleidoscope mode, either for the X axis, the Y axis, or both. This will mirror the ticks you paint horizontally, vertically or both.&lt;/p&gt;
+&lt;p&gt;While playing, you can mute individual tracks by using keys &lt;code&gt;a&lt;/code&gt; to &lt;code&gt;z&lt;/code&gt; on your keyboard. Or by clicking/tapping the track letter to the right of the track. To mute the drum loop, uncheck the box that says “Enable drum loop”.&lt;/p&gt;
+&lt;p&gt;To preview what a track sounds like, click the name on the right side of the track. This will play the sound that track represents.&lt;/p&gt;
 </content>
         
     </entry>
@@ -48,23 +44,19 @@ Instructions&lt;&#x2F;h2&gt;
         <updated>2024-03-24T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/pikseq/"/>
         <id>https://spitlo.com/code/pikseq/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/pikseq/">&lt;p&gt;PIKSEQ is an experiment in sequencing. It’s sort of a mix between a pixel art editor and a sequencer.&lt;&#x2F;p&gt;
-&lt;p&gt;PIKSEQ is available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;pikseq&#x2F;&quot;&gt;spitlo.com&#x2F;pikseq&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;PIKSEQ also has a sibling, &lt;a href=&quot;&#x2F;code&#x2F;sikwent&#x2F;&quot;&gt;Sikwent&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;sikwent&#x2F;&quot;&gt;spitlo.com&#x2F;sikwent&#x2F;&lt;&#x2F;a&gt;, and a cousin, &lt;a href=&quot;&#x2F;code&#x2F;space&#x2F;&quot;&gt;Space&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;You pick a color by clicking the color buttons or by pressing keys &lt;code&gt;1&lt;&#x2F;code&gt; to &lt;code&gt;9&lt;&#x2F;code&gt;. Then start painting! You can only paint by clicking one pixel at a time, sorry :( It’s more like Lego and less like painting.&lt;&#x2F;p&gt;
-&lt;p&gt;To help you paint more efficiently, there are some keyboard modifiers. If you press &lt;code&gt;alt&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;option&lt;&#x2F;code&gt; while painting a pixel, you will get a horizontal line. If you press &lt;code&gt;shift&lt;&#x2F;code&gt; while painting a pixel, you will get a vertical line. Lines extend through all pixels of the same color, so you can put a start and end pixel and the line will cover the area between them. If you press &lt;code&gt;windows&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;command&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;meta&lt;&#x2F;code&gt; (depending on your OS) at the same time, the line will only paint every other pixel.&lt;&#x2F;p&gt;
-&lt;p&gt;You can mute individual tracks by using keys &lt;code&gt;a&lt;&#x2F;code&gt; to &lt;code&gt;z&lt;&#x2F;code&gt; on your keyboard. Or by clicking&#x2F;tapping the track note.&lt;&#x2F;p&gt;
-&lt;p&gt;There are also a few different palettes to choose from.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/pikseq/">&lt;p&gt;PIKSEQ is an experiment in sequencing. It’s sort of a mix between a pixel art editor and a sequencer.&lt;/p&gt;
+&lt;p&gt;PIKSEQ is available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/pikseq/&quot;&gt;spitlo.com/pikseq/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PIKSEQ also has a sibling, &lt;a href=&quot;/code/sikwent/&quot;&gt;Sikwent&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/sikwent/&quot;&gt;spitlo.com/sikwent/&lt;/a&gt;, and a cousin, &lt;a href=&quot;/code/space/&quot;&gt;Space&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/space/&quot;&gt;spitlo.com/space/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You pick a color by clicking the color buttons or by pressing keys &lt;code&gt;1&lt;/code&gt; to &lt;code&gt;9&lt;/code&gt;. Then start painting! You can only paint by clicking one pixel at a time, sorry :( It’s more like Lego and less like painting.&lt;/p&gt;
+&lt;p&gt;To help you paint more efficiently, there are some keyboard modifiers. If you press &lt;code&gt;alt&lt;/code&gt;/&lt;code&gt;option&lt;/code&gt; while painting a pixel, you will get a horizontal line. If you press &lt;code&gt;shift&lt;/code&gt; while painting a pixel, you will get a vertical line. Lines extend through all pixels of the same color, so you can put a start and end pixel and the line will cover the area between them. If you press &lt;code&gt;windows&lt;/code&gt;/&lt;code&gt;command&lt;/code&gt;/&lt;code&gt;meta&lt;/code&gt; (depending on your OS) at the same time, the line will only paint every other pixel.&lt;/p&gt;
+&lt;p&gt;You can mute individual tracks by using keys &lt;code&gt;a&lt;/code&gt; to &lt;code&gt;z&lt;/code&gt; on your keyboard. Or by clicking/tapping the track note.&lt;/p&gt;
+&lt;p&gt;There are also a few different palettes to choose from.&lt;/p&gt;
 </content>
         
     </entry>
@@ -74,21 +66,17 @@ Instructions&lt;&#x2F;h2&gt;
         <updated>2024-03-13T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/sikwent/"/>
         <id>https://spitlo.com/code/sikwent/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/sikwent/">&lt;p&gt;Sikwent (actually &lt;code&gt;&#x2F;&#x27;siːkwənt&#x2F;&lt;&#x2F;code&gt; but my fonts don’t have all the needed glyphs) is an experiment in sequencing. The idea is that every new track that is added have one more “tick” than the one before. Ticks are sixteenth notes.&lt;&#x2F;p&gt;
-&lt;p&gt;Sikwent is available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;sikwent&#x2F;&quot;&gt;spitlo.com&#x2F;sikwent&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Sikwent also has a sibling of sorts, &lt;a href=&quot;&#x2F;code&#x2F;space&#x2F;&quot;&gt;Space&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;You start with a single track with a single tick (checkbox). To add a track, you must first activate a tick in the current one. As soon as you do, a new track becomes available. Deactivating every tick in a higher track won’t delete the channels below.&lt;&#x2F;p&gt;
-&lt;p&gt;You can mute individual tracks by using keys &lt;code&gt;a&lt;&#x2F;code&gt; to &lt;code&gt;z&lt;&#x2F;code&gt; on your keyboard. Or by clicking&#x2F;tapping the track name.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/sikwent/">&lt;p&gt;Sikwent (actually &lt;code&gt;/&#39;siːkwənt/&lt;/code&gt; but my fonts don’t have all the needed glyphs) is an experiment in sequencing. The idea is that every new track that is added have one more “tick” than the one before. Ticks are sixteenth notes.&lt;/p&gt;
+&lt;p&gt;Sikwent is available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/sikwent/&quot;&gt;spitlo.com/sikwent/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sikwent also has a sibling of sorts, &lt;a href=&quot;/code/space/&quot;&gt;Space&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/space/&quot;&gt;spitlo.com/space/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You start with a single track with a single tick (checkbox). To add a track, you must first activate a tick in the current one. As soon as you do, a new track becomes available. Deactivating every tick in a higher track won’t delete the channels below.&lt;/p&gt;
+&lt;p&gt;You can mute individual tracks by using keys &lt;code&gt;a&lt;/code&gt; to &lt;code&gt;z&lt;/code&gt; on your keyboard. Or by clicking/tapping the track name.&lt;/p&gt;
 </content>
         
     </entry>
@@ -98,35 +86,30 @@ Instructions&lt;&#x2F;h2&gt;
         <updated>2023-01-28T00:00:00+00:00</updated>
         
         <author>
-          <name>
-            
-              Spitlo
-            
-          </name>
+          <name>Spitlo</name>
         </author>
         
         <link rel="alternate" type="text/html" href="https://spitlo.com/code/space/"/>
         <id>https://spitlo.com/code/space/</id>
         
-        <content type="html" xml:base="https://spitlo.com/code/space/">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycedrennan&#x2F;imaginAIry&#x2F;&quot;&gt;ImaginAIry&lt;&#x2F;a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;space&#x2F;&quot;&gt;spitlo.com&#x2F;space&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Space also has a sibling of sorts, &lt;a href=&quot;&#x2F;code&#x2F;sikwent&#x2F;&quot;&gt;Sikwent&lt;&#x2F;a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spitlo.com&#x2F;sikwent&#x2F;&quot;&gt;spitlo.com&#x2F;sikwent&#x2F;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;the-look&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-look&quot; aria-label=&quot;Anchor link for: the-look&quot;&gt;#&lt;&#x2F;a&gt;
-The look&lt;&#x2F;h2&gt;
-&lt;p&gt;Background images are picked at random on load, from a bank of about 80. The spinning logo thing is done with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;metafizzy&#x2F;zdog&quot;&gt;Zdog&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jaames&#x2F;zfont&quot;&gt;Zfont&lt;&#x2F;a&gt;. Colors are extracted from the current background image using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Vibrant-Colors&#x2F;node-vibrant&quot;&gt;node-vibrant&lt;&#x2F;a&gt;. Random song and band names are based on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tirdadc&#x2F;synthwave&quot;&gt;Synthgen 2000&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;the-sound&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-sound&quot; aria-label=&quot;Anchor link for: the-sound&quot;&gt;#&lt;&#x2F;a&gt;
-The sound&lt;&#x2F;h2&gt;
-&lt;p&gt;The “music” is generated with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tonejs&#x2F;Tone.js&quot;&gt;Tone.js&lt;&#x2F;a&gt;, mostly from samples created with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;huggingface.co&#x2F;spaces&#x2F;harmonai&#x2F;dance-diffusion&quot;&gt;Dance Diffusion&lt;&#x2F;a&gt; using the &lt;code&gt;glitch-440k&lt;&#x2F;code&gt; model and then automatically split on transients.&lt;&#x2F;p&gt;
-&lt;p&gt;The samples are organized in kits, of which there are nine at the moment. Kits one through six contain the Dance Diffusion samples, kits seven through nine contain more traditional drum sounds of the 707&#x2F;808&#x2F;909 variety, and some keys. Those kits are generally more pleasant to listen to, but since the kits are chosen at random on load, Space is only pleasant about every third visit.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://spitlo.com/code/space/">&lt;p&gt;Space is some kind of generative ambient music machine inspired by a bunch of tiling images I created using &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/brycedrennan/imaginAIry/&quot;&gt;ImaginAIry&lt;/a&gt;. It’s available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/space/&quot;&gt;spitlo.com/space/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Space also has a sibling of sorts, &lt;a href=&quot;/code/sikwent/&quot;&gt;Sikwent&lt;/a&gt;, available online at &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://spitlo.com/sikwent/&quot;&gt;spitlo.com/sikwent/&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;the-look&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-look&quot; aria-label=&quot;Anchor link for: the-look&quot;&gt;#&lt;/a&gt;
+The look&lt;/h2&gt;
+&lt;p&gt;Background images are picked at random on load, from a bank of about 80. The spinning logo thing is done with &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/metafizzy/zdog&quot;&gt;Zdog&lt;/a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/jaames/zfont&quot;&gt;Zfont&lt;/a&gt;. Colors are extracted from the current background image using &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/Vibrant-Colors/node-vibrant&quot;&gt;node-vibrant&lt;/a&gt;. Random song and band names are based on &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/tirdadc/synthwave&quot;&gt;Synthgen 2000&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;the-sound&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-sound&quot; aria-label=&quot;Anchor link for: the-sound&quot;&gt;#&lt;/a&gt;
+The sound&lt;/h2&gt;
+&lt;p&gt;The “music” is generated with &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/Tonejs/Tone.js&quot;&gt;Tone.js&lt;/a&gt;, mostly from samples created with &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://huggingface.co/spaces/harmonai/dance-diffusion&quot;&gt;Dance Diffusion&lt;/a&gt; using the &lt;code&gt;glitch-440k&lt;/code&gt; model and then automatically split on transients.&lt;/p&gt;
+&lt;p&gt;The samples are organized in kits, of which there are nine at the moment. Kits one through six contain the Dance Diffusion samples, kits seven through nine contain more traditional drum sounds of the 707/808/909 variety, and some keys. Those kits are generally more pleasant to listen to, but since the kits are chosen at random on load, Space is only pleasant about every third visit.&lt;/p&gt;
 &lt;p&gt;Each sample in a kit is represented by a channel. On load, a pattern is semi-randomly set on each channel. As long as “Auto-evolve” is ticked, this pattern will change over time, creating a never*-repeating soundscape.
-(* Never as in “very seldom”)&lt;&#x2F;p&gt;
-&lt;p&gt;If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots.&lt;&#x2F;p&gt;
-&lt;p&gt;Hitting “Save” will save the current state of your composition in the URL, copy it from the address bar to share or to keep it safe somewhere. Or bookmark it!&lt;&#x2F;p&gt;
-&lt;p&gt;Channel 10 has a special role (no, it’s not a drum track, sorry MIDI heads) – every time a note is struck on it, it either plays the sample for that track, or a short sine note. The sine note is picked randomly on each play, from an array of notes (usually a scale) picked randomly on each load. The octave is also set randomly for each note, ranging from 2 to 7. Finally, the duration is set randomly from an eighth note to a sixty-fourth note, with shorter notes being a bit more likely.&lt;&#x2F;p&gt;
-&lt;p&gt;The prompt for ImaginAIry – for anyone interested – was “70’s sci-fi landscape”, the full command was:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;imagine&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;70&amp;#39;s sci-fi landscape&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;w&lt;&#x2F;span&gt; 1024&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;h&lt;&#x2F;span&gt; 256&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;r&lt;&#x2F;span&gt; 100&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;tile&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Then I went for a walk while that toasted my battery. From those one hundred images I picked the 78 I liked the best.&lt;&#x2F;p&gt;
-&lt;p&gt;Another way to toast your battery is to leave Space running in an open browser tab :)&lt;&#x2F;p&gt;
+(* Never as in “very seldom”)&lt;/p&gt;
+&lt;p&gt;If you want to create your own sequence, simply clear the playing sequence, disable auto-evolve and create your own sequence by clicking the corresponding dots.&lt;/p&gt;
+&lt;p&gt;Hitting “Save” will save the current state of your composition in the URL, copy it from the address bar to share or to keep it safe somewhere. Or bookmark it!&lt;/p&gt;
+&lt;p&gt;Channel 10 has a special role (no, it’s not a drum track, sorry MIDI heads) – every time a note is struck on it, it either plays the sample for that track, or a short sine note. The sine note is picked randomly on each play, from an array of notes (usually a scale) picked randomly on each load. The octave is also set randomly for each note, ranging from 2 to 7. Finally, the duration is set randomly from an eighth note to a sixty-fourth note, with shorter notes being a bit more likely.&lt;/p&gt;
+&lt;p&gt;The prompt for ImaginAIry – for anyone interested – was “70’s sci-fi landscape”, the full command was:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-15 z-d-16&quot;&gt;imagine&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-7 z-d-9&quot;&gt;70&amp;#39;s sci-fi landscape&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 1024&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 256&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; 100&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;-tile&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I went for a walk while that toasted my battery. From those one hundred images I picked the 78 I liked the best.&lt;/p&gt;
+&lt;p&gt;Another way to toast your battery is to leave Space running in an open browser tab :)&lt;/p&gt;
 </content>
         
     </entry>
