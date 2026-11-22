@@ -94,11 +94,6 @@
 }
 
 .contentWrapper.looptober {
-  &.looptober-2023 {
-    --progress-color: #{$orange};
-    --progress-bgcolor: #{$lightSeagreen};
-  }
-
   h3 {
     font-size: 1.8em;
     position: relative;
@@ -140,7 +135,7 @@
     p {
       display: flex;
       max-width: 30em;
-      color: $dirtyYellow;
+      color: var(--loopdesc-textcolor);
     }
 
     span.progress {

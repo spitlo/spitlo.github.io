@@ -18,221 +18,159 @@ Another consequence of my dislike of bluetooth is I won’t be bouncing and expo
 
 <mark class="arrow">NB</mark> These are made to be played in a loop, but if you only want a quick peek they are still playable using the `:play` command.
 
-<mark class="arrow">NB2</mark> Loops marked with X was not finished on time, but created and added later.
-
 ### 01 - Lo-fi Wafers (86 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={3} /> }}
-> I feel like I’ve heard this before.
-
+{{ <loopDesc progress={3} desc="I feel like I’ve heard this before." /> }}
 {{ <looper nth={1} filepath="/audio/looptober/2024/01-lo-fi-wafers.mp3" /> }}
 
 ### 02 - Creepazoids (72 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={6} /> }}
-> Oh no, I forgot to change key!
-
+{{ <loopDesc progress={6} desc="Oh no, I forgot to change key!" /> }}
 {{ <looper nth={2} filepath="/audio/looptober/2024/02-creepazoids.mp3" /> }}
 
 ### 03 - Xpace Xploration (78 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={10} /> }}
-> Do you say Zavier or Exavier?
-
+{{ <loopDesc progress={10} desc="Do you say Zavier or Exavier?" /> }}
 {{ <looper nth={3} filepath="/audio/looptober/2024/03-xpace-xploration.mp3" /> }}
 
 ### 04 - Noodletop (106 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={13} /> }}
-> Hey! Friday! Time to move into triple digit BPMs.
-
+{{ <loopDesc progress={13} desc="Hey! Friday! Time to move into triple digit BPMs." /> }}
 {{ <looper nth={4} filepath="/audio/looptober/2024/04-noodletop.mp3" /> }}
 
 ### 05 - Centipedes (83 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={16} /> }}
-> Which sounds cooler, forcipules or toxicognaths? I think it’s a tie for me.
-
+{{ <loopDesc progress={16} desc="Which sounds cooler, forcipules or toxicognaths? I think it’s a tie for me." /> }}
 {{ <looper nth={5} filepath="/audio/looptober/2024/05-centipedes.mp3" /> }}
 
 ### 06 - Seven and One (80 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={19} /> }}
-> Sundays are perfect for watching old Millennium episodes!
-
+{{ <loopDesc progress={19} desc="Sundays are perfect for watching old Millennium episodes!" /> }}
 {{ <looper nth={6} filepath="/audio/looptober/2024/06-seven-and-one.mp3" /> }}
 
 ### 07 - Metasyntactic Variables (69 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={23} /> }}
-> I guess I could have just named it "Foo Bar".
-
+{{ <loopDesc progress={23} desc="I guess I could have just named it 'Foo Bar'." /> }}
 {{ <looper nth={7} filepath="/audio/looptober/2024/07-metasyntactic-variables.mp3" /> }}
 
 ### 08 - Last Day of Summer (113 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={26} /> }}
-> More like the first day of autumn, actually.
-
+{{ <loopDesc progress={26} desc="More like the first day of autumn, actually." /> }}
 {{ <looper nth={8} filepath="/audio/looptober/2024/08-last-day-of-summer.mp3" /> }}
 
 ### 09 - Flaky Bones (111 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={29} /> }}
-> I don’t even know what flaky bones are, but according to Reddit you should try Paraloid B72 if/when it happens.
-
+{{ <loopDesc progress={29} desc="I don’t even know what flaky bones are, but according to Reddit you should try Paraloid B72 if/when it happens." /> }}
 {{ <looper nth={9} filepath="/audio/looptober/2024/09-flaky-bones.mp3" /> }}
 
 ### 10 - Paraloid (72 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={32} /> }}
-> Apparently, this is the remedy for the mess yesterday.
+{{ <loopDesc progress={32} desc="Apparently, this is the remedy for the mess yesterday." /> }}
 
 {{ <looper nth={10} filepath="/audio/looptober/2024/10-paraloid.mp3" /> }}
 
 ### 11 - Southward Equinox (86 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={35} /> }}
-> I know it was several weeks ago, but we’re still feeling the effect, right?
-
+{{ <loopDesc progress={35} desc="I know it was several weeks ago, but we’re still feeling the effect, right?" /> }}
 {{ <looper nth={11} filepath="/audio/looptober/2024/11-southward-equinox.mp3" /> }}
 
 ### 12 - Daytime Travel (100 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={39} /> }}
-> If I close my eyes, the sun shining through my window feels almost tropical.
-
+{{ <loopDesc progress={39} desc="If I close my eyes, the sun shining through my window feels almost tropical." /> }}
 {{ <looper nth={12} filepath="/audio/looptober/2024/12-daytime-travel.mp3" /> }}
 
 ### 13 - Where Cruise Ships Go To Die (75 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={42} /> }}
-> R.I.P Inspiration, Imagination and Fantasy. You gentle giants.
-
+{{ <loopDesc progress={42} desc="R.I.P Inspiration, Imagination and Fantasy. You gentle giants." /> }}
 {{ <looper nth={13} filepath="/audio/looptober/2024/13-where-cruise-ships-go-to-die.mp3" /> }}
 
 ### 14 - Klondyke Days (110 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={45} /> }}
-> Do you remember them?
-
+{{ <loopDesc progress={45} desc="Do you remember them?" /> }}
 {{ <looper nth={14} filepath="/audio/looptober/2024/14-klondyke-days.mp3" /> }}
 
 ### 15 - Orichalcum (70 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={48} /> }}
-> The "reggae" tune came later this year.
-
+{{ <loopDesc progress={48} desc="The 'reggae' tune came later this year." /> }}
 {{ <looper nth={15} filepath="/audio/looptober/2024/15-orichalcum.mp3" /> }}
 
 ### 16 - Slow Realization (89 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={52} /> }}
-> I really meant to do something other than 4/4 today, but then I forgot.
-
+{{ <loopDesc progress={52} desc="I really meant to do something other than 4/4 today, but then I forgot." /> }}
 {{ <looper nth={16} filepath="/audio/looptober/2024/16-slow-realization.mp3" /> }}
 
 ### 17 - Jedi Rat (100 BPM) {{ <timesig numerator="7" denominator="8" /> }}
 
-> {{ <prog type="circular" percentage={55} /> }}
-> Last year’s beat for October 17 was "Needy Bat" which is perhaps the exact opposite of a Jedi rat.
+{{ <loopDesc progress={55} desc="Last year’s beat for October 17 was 'Needy Bat' which is perhaps the exact opposite of a Jedi rat." /> }}
 
 {{ <looper nth={17} filepath="/audio/looptober/2024/17-jedi-rat.mp3" /> }}
 
 ### 18 - Choices (119 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={58} /> }}
-> It’s Friday, folks! Three digit beat coming up!
-
+{{ <loopDesc progress={58} desc="It’s Friday, folks! Three digit beat coming up!" /> }}
 {{ <looper nth={18} filepath="/audio/looptober/2024/18-choices.mp3" /> }}
 
 ### 19 - Holography Dept. (91 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={61} /> }}
-> This sounds like how riding a bike feels.
-
+{{ <loopDesc progress={61} desc="This sounds like how riding a bike feels." /> }}
 {{ <looper nth={19} filepath="/audio/looptober/2024/19-holography-dept.mp3" /> }}
 
 ### 20 - Here Come the Probes (46 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={65} /> }}
-> Slowly but surely.
-
+{{ <loopDesc progress={65} desc="Slowly but surely." /> }}
 {{ <looper nth={20} filepath="/audio/looptober/2024/20-here-come-the-probes.mp3" /> }}
 
 ### 21 - The Donzerly Light (83 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={68} /> }}
-> Only ten days left! 
-
+{{ <loopDesc progress={68} desc="Only ten days left!" /> }}
 {{ <looper nth={21} filepath="/audio/looptober/2024/21-the-donzerly-light.mp3" /> }}
 
 ### 22 - Câblage Défectueux (123 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={71} /> }}
-> A quarter to midnight I gave up on looking for more USB cables and went to bed.
-
+{{ <loopDesc progress={71} desc="A quarter to midnight I gave up on looking for more USB cables and went to bed." /> }}
 {{ <looper nth={22} filepath="/audio/looptober/2024/22-cablage-defectueux.mp3" /> }}
 
 ### 23 - A Predawn Walk (62 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={74} /> }}
-> Perhaps a stroll through Paris in the Sixties?
-
+{{ <loopDesc progress={74} desc="Perhaps a stroll through Paris in the Sixties?" /> }}
 {{ <looper nth={23} filepath="/audio/looptober/2024/23-a-predawn-walk.mp3" /> }}
 
 ### 24 - Day of Departure (98 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={77} /> }}
-> All aboard!
-
+{{ <loopDesc progress={77} desc="All aboard!" /> }}
 {{ <looper nth={24} filepath="/audio/looptober/2024/24-day-of-departure.mp3" /> }}
 
 ### 25 - Fatigue (80 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={80} /> }}
-> I can’t even be bothered to fix the clicky loop. 
-
+{{ <loopDesc progress={80} desc="I can’t even be bothered to fix the clicky loop." /> }}
 {{ <looper nth={25} filepath="/audio/looptober/2024/25-fatigue.mp3" /> }}
 
 ### 26 - Patat Oorlog (78 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={84} /> }}
-> Extra onion, please.
-
+{{ <loopDesc progress={84} desc="Extra onion, please." /> }}
 {{ <looper nth={26} filepath="/audio/looptober/2024/26-patat-oorlog.mp3" /> }}
 
 ### 27 - BATT.LO (58 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={87} /> }}
-> I just spent eight minutes making this loop and 43 minutes trying to figure out what to write here. 
-
+{{ <loopDesc progress={87} desc="I just spent eight minutes making this loop and 43 minutes trying to figure out what to write here." /> }}
 {{ <looper nth={27} filepath="/audio/looptober/2024/27-batt.lo.mp3" /> }}
 
 ### 28 - Bosan dan Kesepian (105 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={90} /> }}
-> Sometimes you go for the clicky loop, sometimes you go for the sucky loop.
-
+{{ <loopDesc progress={90} desc="Sometimes you go for the clicky loop, sometimes you go for the sucky loop." /> }}
 {{ <looper nth={28} filepath="/audio/looptober/2024/28-bosan-dan-kesepian.mp3" /> }}
 
 ### 29 - The Toupée Fallacy (81 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={94} /> }}
-> Remember, you only spot the bad ones!
-
+{{ <loopDesc progress={94} desc="Remember, you only spot the bad ones!" /> }}
 {{ <looper nth={29} filepath="/audio/looptober/2024/29-the-toupee-fallacy.mp3" /> }}
 
 ### 30 - At the Arcades (72 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={97} /> }}
-> Woop, woop! One day left! I really hate that last chord.
-
+{{ <loopDesc progress={97} desc="Woop, woop! One day left! I really hate that last chord." /> }}
 {{ <looper nth={30} filepath="/audio/looptober/2024/30-at-the-arcades.mp3" /> }}
 
 ### 31 - Finale: Toad-Boy Wins (73 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={100} /> }}
-> That’s it for this year, folks. Go, Toad-Boy!
-
+{{ <loopDesc progress={100} desc="That’s it for this year, folks. Go, Toad-Boy!" /> }}
 {{ <looper nth={31} filepath="/audio/looptober/2024/31-finale-toad-boy-wins.mp3" /> }}

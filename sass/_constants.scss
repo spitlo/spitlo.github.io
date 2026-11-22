@@ -29,7 +29,7 @@ $linkPurple: rgb(0, 0, 238);
   --box-bgcolor: #{$lightWhite};
   --box-shadow-inner: #{$black};
   --box-shadow-outer: #{$mutedPinkTransparent};
-  --button-bgcolor: #{$lightGray};
+  --button-bgcolor: #{$dirtyYellow};
   --code-bgcolor: #{$mutedPink};
   --code-color: #{$black};
   --crumb-bordercolor: #{$darkGray};
@@ -54,8 +54,9 @@ $linkPurple: rgb(0, 0, 238);
   --table-bgcolor-odd: #{$lightWhite};
   --table-color: #{$black};
   --taxonomy-hightlight: #{$honeydew};
-  --progress-color: #{$red};
+  --progress-color: #{$blue};
   --progress-bgcolor: #{$lightSeagreen};
+  --loopdesc-textcolor: #{$darkGray};
 }
 
 @mixin darkTheme() {
@@ -90,8 +91,9 @@ $linkPurple: rgb(0, 0, 238);
   --table-bgcolor-odd: #{$darkGray};
   --table-color: #{$white};
   --taxonomy-hightlight: #{$lightSeagreen};
-  --progress-color: #{$blue};
-  --progress-bgcolor: #{$orange};
+  --progress-color: #{$orange};
+  --progress-bgcolor: #{$lightSeagreen};
+  --loopdesc-textcolor: #{$dirtyYellow};
 }
 
 // Theme

@@ -74,217 +74,157 @@ Sorry for the long-winded back story. It was mostly for my own amusement. Here a
 
 ### 01 - Brank Douche (81 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={3} /> }}
-> Feel my clarinet power!
-
+{{ <loopDesc progress={3} desc="Feel my clarinet power!" /> }}
 {{ <looper nth={1} filepath="/audio/looptober/2026/01-brank-douche.mp3" /> }}
 
 ### 02 - Travelogue (63 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={6} /> }}
-> Feel my saxophone power!
-
+{{ <loopDesc progress={6} desc="Feel my saxophone power!" /> }}
 {{ <looper nth={2} filepath="/audio/looptober/2026/02-travelogue.mp3" /> }}
 
 ### 03 - Surp Walk (87 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={10} /> }}
-> Wobble-wobble.
-
+{{ <loopDesc progress={10} desc="Wobble-wobble." /> }}
 {{ <looper nth={3} filepath="/audio/looptober/2026/03-surp-walk.mp3" /> }}
 
 ### 04 - Sweepstakes (64 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={13} /> }}
-> Sunday Morning Coming Down.
-
+{{ <loopDesc progress={13} desc="Sunday Morning Coming Down." /> }}
 {{ <looper nth={4} filepath="/audio/looptober/2026/04-sweepstakes.mp3" /> }}
 
 ### 05 - Dark Clowds (76 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={16} /> }}
-> Channeling the Ghost of Ozzy.
-
+{{ <loopDesc progress={16} desc="Channeling the Ghost of Ozzy." /> }}
 {{ <looper nth={5} filepath="/audio/looptober/2026/05-dark-clowds.mp3" /> }}
 
 ### 06 - Struggling Sun (60 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={19} /> }}
-> We all have trouble getting up in the morning.
-
+{{ <loopDesc progress={19} desc="We all have trouble getting up in the morning." /> }}
 {{ <looper nth={6} filepath="/audio/looptober/2026/06-struggling-sun.mp3" /> }}
 
 ### 07 - Nagoya Ohnwe (107 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={23} /> }}
-> 10 TAISHO <br>20 GOTO 10
-
+{{ <loopDesc progress={23} desc="10 TAISHO <br>20 GOTO 10" /> }}
 {{ <looper nth={7} filepath="/audio/looptober/2026/07-nagoya-ohnwe.mp3" /> }}
 
 ### 08 - The Flautulist (69 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={26} /> }}
-> In medieval times, he was the life of the party.
-
+{{ <loopDesc progress={26} desc="In medieval times, he was the life of the party." /> }}
 {{ <looper nth={8} filepath="/audio/looptober/2026/08-the-flautulist.mp3" /> }}
 
 ### 09 - Last Call (57 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={29} /> }}
-> Please, ladies and gentlemen, pick up your tabs and leave.
-
+{{ <loopDesc progress={29} desc="Please, ladies and gentlemen, pick up your tabs and leave." /> }}
 {{ <looper nth={9} filepath="/audio/looptober/2026/09-last-call.mp3" /> }}
 
 ### 10 - Clunky Drummer (112 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={32} /> }}
-> The inevitable whistle track.
-
+{{ <loopDesc progress={32} desc="The inevitable whistle track." /> }}
 {{ <looper nth={10} filepath="/audio/looptober/2026/10-clunky-drummer.mp3" /> }}
 
 ### 11 - Kentaurion Peak (85 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={35} /> }}
-> One third down!
-
+{{ <loopDesc progress={35} desc="One third down!" /> }}
 {{ <looper nth={11} filepath="/audio/looptober/2026/11-kentaurion-peak.mp3" /> }}
 
 ### 12 - Kingston, Ontario (99 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={39} /> }}
-> Poorly performed reggae is a lifelong passion of mine.
-
+{{ <loopDesc progress={39} desc="Poorly performed reggae is a lifelong passion of mine." /> }}
 {{ <looper nth={12} filepath="/audio/looptober/2026/12-kingston-ontario.mp3" /> }}
 
 ### 13th Floor Alligators (91 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={42} /> }}
-> Recognize the real threat.
-
+{{ <loopDesc progress={42} desc="Recognize the real threat." /> }}
 {{ <looper nth={13} filepath="/audio/looptober/2026/13th-floor-alligators.mp3" /> }}
 
 ### 14 - Bewildering Lights (135 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={45} /> }}
-> You know the lights I’m talking about.
-
+{{ <loopDesc progress={45} desc="You know the lights I’m talking about." /> }}
 {{ <looper nth={14} filepath="/audio/looptober/2026/14-bewildering-lights.mp3" /> }}
 
 ### 15 - A Constipated Monk (79 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={48} /> }}
-> Feel my musical egg power!
-
+{{ <loopDesc progress={48} desc="Feel my musical egg power!" /> }}
 {{ <looper nth={15} filepath="/audio/looptober/2026/15-a-constipated-monk.mp3" /> }}
 
 ### 16 - Cave Dweller (133 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={52} /> }}
-> Rainy Days...
-
+{{ <loopDesc progress={52} desc="Rainy Days..." /> }}
 {{ <looper nth={16} filepath="/audio/looptober/2026/16-cave-dweller.mp3" /> }}
 
 ### 17 - I Forget (98 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={55} /> }}
-> I mean, some days you just wanna watch @Notaluthier and don't do music.
-
+{{ <loopDesc progress={55} desc="I mean, some days you just wanna watch @Notaluthier and don't do music." /> }}
 {{ <looper nth={17} filepath="/audio/looptober/2026/17-i-forget.mp3" /> }}
 
 ### 18 - Sidewalkers (78 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={58} /> }}
-> Took my dog for a walk, it felt like this.
-
+{{ <loopDesc progress={58} desc="Took my dog for a walk, it felt like this." /> }}
 {{ <looper nth={18} filepath="/audio/looptober/2026/18-sidewalkers.mp3" /> }}
 
 ### 19 - Ring the Alarm (108 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={61} /> }}
-> Another sound is dying.
-
+{{ <loopDesc progress={61} desc="Another sound is dying." /> }}
 {{ <looper nth={19} filepath="/audio/looptober/2026/19-ring-the-alarm.mp3" /> }}
 
 ### 20 - Lunar Bloom (100 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={65} /> }}
-> You can take the flute out of the middle ages, but you can’t take the middle ages out of the flute.
-
+{{ <loopDesc progress={65} desc="You can take the flute out of the middle ages, but you can’t take the middle ages out of the flute." /> }}
 {{ <looper nth={20} filepath="/audio/looptober/2026/20-lunar-bloom.mp3" /> }}
 
 ### 21 - Remix Time (86 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={68} /> }}
-> Some stems from earlier loops thrown together.
-
+{{ <loopDesc progress={68} desc="Some stems from earlier loops thrown together." /> }}
 {{ <looper nth={21} filepath="/audio/looptober/2026/21-remix-time.mp3" /> }}
 
 ### 22 - High Noon Showdown (94 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={71} /> }}
-> In Italy, I bought a can of Bud Spencer Beans, and they were not vegetarian.
-
+{{ <loopDesc progress={71} desc="In Italy, I bought a can of Bud Spencer Beans, and they were not vegetarian." /> }}
 {{ <looper nth={22} filepath="/audio/looptober/2026/22-high-noon-showdown.mp3" /> }}
 
 ### 23 - Bitflipocalypse (76 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={74} /> }}
-> Noun. An extinction-level event caused by an unfortunate series of bit flips affecting an AI data center in orbit.
+{{ <loopDesc progress={74} desc="Noun. An extinction-level event caused by an unfortunate series of bit flips affecting an AI data center in orbit." /> }}
 
 {{ <looper nth={23} filepath="/audio/looptober/2026/23-bitflipocalypse.mp3" /> }}
 
 ### 24 - Holloween (66.6 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={77} /> }}
-> Spooky season coming up!
-
+{{ <loopDesc progress={77} desc="Spooky season coming up!" /> }}
 {{ <looper nth={24} filepath="/audio/looptober/2026/24-holloween.mp3" /> }}
 
 ### 25 - The Chop Shop (109 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={80} /> }}
-> Back to the Polyend Tracker!
-
+{{ <loopDesc progress={80} desc="Back to the Polyend Tracker!" /> }}
 {{ <looper nth={25} filepath="/audio/looptober/2026/25-the-chop-shop.mp3" /> }}
 
 ### 26 - Uncontrollable Splurge (103 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={84} /> }}
-> If you think this is hard to listen to, imagine making it!
-
+{{ <loopDesc progress={84} desc="If you think this is hard to listen to, imagine making it!" /> }}
 {{ <looper nth={26} filepath="/audio/looptober/2026/26-uncontrollable-splurge.mp3" /> }}
 
 ### 27 - Nearly Finnished (80 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={87} /> }}
-> Todays mission: Only use samples from our beautiful neighbors to the east.
+{{ <loopDesc progress={87} desc="Todays mission: Only use samples from our beautiful neighbors to the east." /> }}
 
 {{ <looper nth={27} filepath="/audio/looptober/2026/27-nearly-finnished.mp3" /> }}
 
 ### 28 - Comfort (64 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={90} /> }}
-> Old Thai music is wild!
-
+{{ <loopDesc progress={90} desc="Old Thai music is wild!" /> }}
 {{ <looper nth={28} filepath="/audio/looptober/2026/28-comfort.mp3" /> }}
 
 ### 29 - Love Machine (City Walker) (89 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={94} /> }}
-> By request I included the jingle from the Citywalker infomercial in today's loop.
-
+{{ <loopDesc progress={94} desc="By request I included the jingle from the Citywalker infomercial in today's loop." /> }}
 {{ <looper nth={29} filepath="/audio/looptober/2026/29-love-machine-city-walker.mp3" /> }}
 
 ### 30 - Circus Brazil Jazz (66 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={97} /> }}
-> One last whistle...
-
+{{ <loopDesc progress={97} desc="One last whistle..." /> }}
 {{ <looper nth={30} filepath="/audio/looptober/2026/30-circus-brazil-jazz.mp3" /> }}
 
 ### 31 - 3000 Grit (70 BPM) {{ <timesig numerator={4} denominator={4} /> }}
 
-> {{ <prog type="circular" percentage={100} /> }}
-> Always use 3000 grit for smooth finishes!
-
+{{ <loopDesc progress={100} desc="Always use 3000 grit for smooth finishes!" /> }}
 {{ <looper nth={31} filepath="/audio/looptober/2026/31-3000-grit.mp3" /> }}
