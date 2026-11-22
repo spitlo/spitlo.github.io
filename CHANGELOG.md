@@ -2,6 +2,10 @@
 
 This changelog is automatically generated.
 
+## v3.0.1
+
+- Update Looptober 2022 to use loopSesc component [`0ecbf23e`](../../commit/0ecbf23eb9025b91af3975588924d13fbeeff826)
+
 ## v3.0.0
 
 - Update changelog [`ed1645e3`](../../commit/ed1645e388a30bb46703db3e116e40310b224ffc)
