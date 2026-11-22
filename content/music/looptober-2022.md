@@ -40,217 +40,155 @@ Here are the thirty one loops in order from first to last. I tried to keep the v
 
 ### 01 - Duckboy (86 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={3} /> }}
-> *No comment available*
-
+{{ <loopDesc progress={3} desc="*No comment available*" /> }}
 {{ <looper nth={1} filepath="/audio/looptober/2022/01-duckboy.mp3" /> }}
 
 ### 02 - Grvyrdshft (72 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={6} /> }}
-> *No comment available*
-
+{{ <loopDesc progress={6} desc="*No comment available*" /> }}
 {{ <looper nth={2} filepath="/audio/looptober/2022/02-grvyrdshft.mp3" /> }}
 
 ### 03 - Spacejoust (80 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={10} /> }}
-> *No comment available*
-
+{{ <loopDesc progress={10} desc="*No comment available*" /> }}
 {{ <looper nth={3} filepath="/audio/looptober/2022/03-spacejoust.mp3" /> }}
 
 ### 04 - Cibercryme (89 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={13} /> }}
-> *No comment available*
-
+{{ <loopDesc progress={13} desc="*No comment available*" /> }}
 {{ <looper nth={4} filepath="/audio/looptober/2022/04-cibercryme.mp3" /> }}
 
 ### 05 - Freakshow (75 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={16} /> }}
-> 16% done and not one beat over 90 BPM!
-
+{{ <loopDesc progress={16} desc="16% done and not one beat over 90 BPM!" /> }}
 {{ <looper nth={5} filepath="/audio/looptober/2022/05-freakshow.mp3" /> }}
 
 ### 06 - Ghoulsgrowl (75 BPM) {{ <timesig numerator="3" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={19} /> }}
-> 19% done and first BPM duplicate spotted. Sloppy!
-
+{{ <loopDesc progress={19} desc="19% done and first BPM duplicate spotted. Sloppy!" /> }}
 {{ <looper nth={6} filepath="/audio/looptober/2022/06-ghoulsgrowl.mp3" /> }}
 
 ### 07 - Loungehounds (83 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={23} /> }}
-> 23% done and names are getting weirder
-
+{{ <loopDesc progress={23} desc="23% done and names are getting weirder" /> }}
 {{ <looper nth={7} filepath="/audio/looptober/2022/07-loungehounds.mp3" /> }}
 
 ### 08 - Hira! Hira! (84 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={26} /> }}
-> Weekends are hard.
-
+{{ <loopDesc progress={26} desc="Weekends are hard." /> }}
 {{ <looper nth={8} filepath="/audio/looptober/2022/08-hirahira.mp3" /> }}
 
 ### 09 - Scaredycat (77 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={29} /> }}
-> Now pizza.
-
+{{ <loopDesc progress={29} desc="Now pizza." /> }}
 {{ <looper nth={9} filepath="/audio/looptober/2022/09-scaredycat.mp3" /> }}
 
 ### 10 - Scatterbrain (94 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={32} /> }}
-> 32% done. That’s almost a third!
-
+{{ <loopDesc progress={32} desc="32% done. That’s almost a third!" /> }}
 {{ <looper nth={10} filepath="/audio/looptober/2022/10-scatterbrain.mp3" /> }}
 
 ### 11 - Strongman (81 BPM) {{ <timesig numerator="3" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={35} /> }}
-> Definitely struggling to come up with stuff.
-
+{{ <loopDesc progress={35} desc="Definitely struggling to come up with stuff." /> }}
 {{ <looper nth={11} filepath="/audio/looptober/2022/11-strongman.mp3" /> }}
 
 ### 12 - Incoming (85 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={39} /> }}
-> Time to read the manual for inspiration.
-
+{{ <loopDesc progress={39} desc="Time to read the manual for inspiration." /> }}
 {{ <looper nth={12} filepath="/audio/looptober/2022/12-incoming.mp3" /> }}
 
 ### 13 - Brainhurt (98 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={42} /> }}
-> First barely listenable beat, and the fastest so far as well. Coincidence?
-
+{{ <loopDesc progress={42} desc="First barely listenable beat, and the fastest so far as well. Coincidence?" /> }}
 {{ <looper nth={13} filepath="/audio/looptober/2022/13-brainhurt.mp3" /> }}
 
 ### 14 - Birthright (73 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={45} /> }}
-> So close to the halfway point I can almost feel it!
-
+{{ <loopDesc progress={45} desc="So close to the halfway point I can almost feel it!" /> }}
 {{ <looper nth={14} filepath="/audio/looptober/2022/14-birthright.mp3" /> }}
 
 ### 15 - Dropkick (90 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={48} /> }}
-> This bass line is the most difficult thing I ever programmed.
-
+{{ <loopDesc progress={48} desc="his bass line is the most difficult thing I ever programmed." /> }}
 {{ <looper nth={15} filepath="/audio/looptober/2022/15-dropkick.mp3" /> }}
 
 ### 16 - KENTVCKY (71 BPM) {{ <timesig numerator="5" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={52} /> }}
-> New time signature achievement obtained!
-
+{{ <loopDesc progress={52} desc="New time signature achievement obtained!" /> }}
 {{ <looper nth={16} filepath="/audio/looptober/2022/16-kentvcky.mp3" /> }}
 
 ### 17 - Flatwheeler (64 BPM) {{ <timesig numerator="3" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={55} /> }}
-> Record breaking low BPM!
-
+{{ <loopDesc progress={55} desc="Record breaking low BPM!" /> }}
 {{ <looper nth={17} filepath="/audio/looptober/2022/17-flatwheeler.mp3" /> }}
 
 ### 18 - Fringehead (93 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={58} /> }}
-> 93 is my favorite BPM.
-
+{{ <loopDesc progress={58} desc="93 is my favorite BPM." /> }}
 {{ <looper nth={18} filepath="/audio/looptober/2022/18-fringehead.mp3" /> }}
 
 ### 19 - #haketlove (79 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={62} /> }}
-> Getting some #haketlove in there.
-
+{{ <loopDesc progress={62} desc="Getting some #haketlove in there." /> }}
 {{ <looper nth={19} filepath="/audio/looptober/2022/19-haketlove.mp3" /> }}
 
 ### 20 - Stockjock (85 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={65} /> }}
-> Stock sound challenge accepted!
-
+{{ <loopDesc progress={65} desc="Stock sound challenge accepted!" /> }}
 {{ <looper nth={20} filepath="/audio/looptober/2022/20-stockjock.mp3" /> }}
 
 ### 21 - Ladybugs (98 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={68} /> }}
-> Two thirds officially ~~crushed~~ finished.
-
+{{ <loopDesc progress={68} desc="Two thirds officially ~~crushed~~ finished." /> }}
 {{ <looper nth={21} filepath="/audio/looptober/2022/21-ladybugs.mp3" /> }}
 
 ### 22 - Dirtroad (74 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={70} /> }}
-> Rock organ time.
-
+{{ <loopDesc progress={70} desc="Rock organ time." /> }}
 {{ <looper nth={22} filepath="/audio/looptober/2022/22-dirtroad.mp3" /> }}
 
 ### 23 - Panoptikon (88 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={74} /> }}
-> Watching Laura Kampf restore an old house helps with perspective.
-
+{{ <loopDesc progress={74} desc="Watching Laura Kampf restore an old house helps with perspective." /> }}
 {{ <looper nth={23} filepath="/audio/looptober/2022/23-panoptikon.mp3" /> }}
 
 ### 24 - Snickertick (90 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={77} /> }}
-> Three fourths done, and tomorrow four fifths. The day after that, five sixths.
-
+{{ <loopDesc progress={77} desc="Three fourths done, and tomorrow four fifths. The day after that, five sixths." /> }}
 {{ <looper nth={24} filepath="/audio/looptober/2022/24-snickertick.mp3" /> }}
 
 ### 25 - Payday (111 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={80} /> }}
-> Entering triple digit BPM land.
-
+{{ <loopDesc progress={80} desc="Entering triple digit BPM land." /> }}
 {{ <looper nth={25} filepath="/audio/looptober/2022/25-payday.mp3" /> }}
 
 ### 26 - Algosmosis (59 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={84} /> }}
-> Letting the LFOs do the work today.
-
+{{ <loopDesc progress={84} desc="Letting the LFOs do the work today." /> }}
 {{ <looper nth={26} filepath="/audio/looptober/2022/26-algosmosis.mp3" /> }}
 
 ### 27 - Clowncar (108 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={87} /> }}
-> This is by far the dumbest yet.
-
+{{ <loopDesc progress={87} desc="This is by far the dumbest yet." /> }}
 {{ <looper nth={27} filepath="/audio/looptober/2022/27-clowncar.mp3" /> }}
 
 ### 28 - Indigo Days (89 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={90} /> }}
-> We’re on the home stretch!
-
+{{ <loopDesc progress={90} desc="We’re on the home stretch!" /> }}
 {{ <looper nth={28} filepath="/audio/looptober/2022/28-indigo-days.mp3" /> }}
 
 ### 29 - Sleuthypants (92 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={93} /> }}
-> Something from the Grim Fandango cutting room floor?
-
+{{ <loopDesc progress={93} desc="Something from the Grim Fandango cutting room floor?" /> }}
 {{ <looper nth={29} filepath="/audio/looptober/2022/29-sleuthypants.mp3" /> }}
 
 ### 30 - Poltava (75 BPM) {{ <timesig numerator="4" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={97} /> }}
-> ONE DAY LEFT!
-
+{{ <loopDesc progress={97} desc="ONE DAY LEFT!" /> }}
 {{ <looper nth={30} filepath="/audio/looptober/2022/30-poltava.mp3" /> }}
 
 ### 31 - Rasubosu (90 BPM) {{ <timesig numerator="3" denominator="4" /> }}
 
-> {{ <prog type="circular" percentage={100} /> }}
-> Time for a long vacation from beatmaking!
-
+{{ <loopDesc progress={100} desc="Time for a long vacation from beatmaking!" /> }}
 {{ <looper nth={31} filepath="/audio/looptober/2022/31-rasubosu.mp3" /> }}
