@@ -8,6 +8,11 @@ content_class = "changelogPage"
 
 This is the human-readable, curated changelog. For a full (automated) changelog, visit [the repo](https://github.com/spitlo/spitlo.github.io/blob/main/CHANGELOG.md).
 
+## v3.0.0 _(2026-11-22)_
+
+  - Moved to Zola 0.23
+  - Added Looptober 2026
+
 ## v2.14.x _(2025-01-21)_
 
   - Initiated D Strain of Derivata
